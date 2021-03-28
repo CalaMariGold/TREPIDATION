@@ -1,0 +1,36 @@
+
+[Info]
+	#All values are calculated in minecraft ticks,
+	#20 ticks = 1 second.
+	#The timer always displays complete remaining seconds,
+	#so 620 ticks = 30 seconds displayed by the timer.
+	placeholder = ""
+
+[Configs]
+	#Default duration when the player comes for the first time in this dimension. [default:12000 = 10 minutes]
+	#Range: > 0
+	"Default duration" = 999999
+	#Default tick amount to spend in an other dimension to recover ticks in this dimension. [default:4]
+	#Range: > 1
+	"Default ticks per duration" = 4
+	#Default max duration that can be accumulated for a dimension. [default:72000 = 1 hour]
+	#Range: > 0
+	"Default max duration" = 72000
+	#Default amount of ticks recovered per tick recover. [default:1]
+	#Range: > 1
+	"Default amount recovered" = 1
+	#Play a warning sound at these ticks. [default: [1220, 620] ]
+	Warnings = [1220, 620]
+	#Tick when the timer becomes red. [default:620]
+	#Range: > 0
+	Dangerous = 620
+	#Tick when the timer comes in the front of the screen [default:220]
+	#Range: > 0
+	Emergency = 220
+	#Dimensions where there is NO timer
+	BlackList = [""]
+	#Default timer for each dimension.
+	#Format for one dimension : "dimension_id;default_duration;ticks_per_duration;max_duration;amount_recovered".
+	#Example : "minecraft:the_nether;12000;4;72000;3"
+	"Default timers" = []
+

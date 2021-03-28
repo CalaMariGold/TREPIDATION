@@ -1,0 +1,11 @@
+
+.curseclient
+/.mixin.out/
+/logs
+minecraftinstance.json
+options.txt
+realms_persistence.json
+/saves
+usercache.json
+usernamecache.json
+/screenshots

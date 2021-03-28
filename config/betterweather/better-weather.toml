@@ -1,0 +1,5 @@
+#What dimensions have seasons?
+#Mod IDs or dimension IDs ONLY.
+#Default: ["minecraft:overworld"]
+season_dimension_whitelist = ["minecraft:overworld"]
+

@@ -1,0 +1,93 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 3/28/21 3:41 PM
+Description: Exception in server tick loop
+
+java.util.ConcurrentModificationException: null
+	at java.util.HashMap$HashIterator.nextNode(HashMap.java:1429) ~[?:1.8.0_51] {}
+	at java.util.HashMap$KeyIterator.next(HashMap.java:1453) ~[?:1.8.0_51] {}
+	at net.minecraft.network.play.server.SEntityPropertiesPacket.<init>(SEntityPropertiesPacket.java:27) ~[?:?] {re:classloading}
+	at net.minecraft.world.TrackedEntity.func_219457_c(TrackedEntity.java:277) ~[?:?] {re:mixin,re:classloading,pl:mixin:APP:performant.mixins.json:entity.TrackedEntityMixin,pl:mixin:APP:imm_ptl_mixins.json:common.entity_sync.MixinEntityTrackerEntry,pl:mixin:A}
+	at net.minecraft.world.TrackedEntity.func_219453_a(TrackedEntity.java:156) ~[?:?] {re:mixin,re:classloading,pl:mixin:APP:performant.mixins.json:entity.TrackedEntityMixin,pl:mixin:APP:imm_ptl_mixins.json:common.entity_sync.MixinEntityTrackerEntry,pl:mixin:A}
+	at net.minecraft.world.server.ChunkManager$EntityTracker.tickEntry(ChunkManager.java:1919) ~[?:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:performant.mixins.json:world.chunk.ChunkManagerEntityTrackMixin,pl:mixin:APP:imm_ptl_mixins.json:common.entity_sync.MixinEntityTracker,pl:mixin:A}
+	at com.qouteall.immersive_portals.chunk_loading.EntitySync.lambda$null$0(EntitySync.java:64) ~[?:0.16-mc1.16.5-forge] {re:classloading}
+	at com.qouteall.immersive_portals.chunk_loading.EntitySync$$Lambda$7187/1781356630.run(Unknown Source) ~[?:?] {}
+	at com.qouteall.immersive_portals.network.CommonNetwork.withForceRedirect(CommonNetwork.java:32) ~[?:0.16-mc1.16.5-forge] {re:mixin,re:classloading}
+	at com.qouteall.immersive_portals.chunk_loading.EntitySync.lambda$tick$1(EntitySync.java:62) ~[?:0.16-mc1.16.5-forge] {re:classloading}
+	at com.qouteall.immersive_portals.chunk_loading.EntitySync$$Lambda$7186/210772785.accept(Unknown Source) ~[?:?] {}
+	at java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:600) ~[?:1.8.0_51] {}
+	at com.qouteall.immersive_portals.chunk_loading.EntitySync.tick(EntitySync.java:57) ~[?:0.16-mc1.16.5-forge] {re:classloading}
+	at com.qouteall.immersive_portals.chunk_loading.EntitySync$$Lambda$4861/1292548899.run(Unknown Source) ~[?:?] {}
+	at com.qouteall.immersive_portals.my_util.Signal.lambda$emit$0(Signal.java:18) ~[?:0.16-mc1.16.5-forge] {re:mixin,re:classloading}
+	at com.qouteall.immersive_portals.my_util.Signal$$Lambda$6624/1854285798.accept(Unknown Source) ~[?:?] {}
+	at java.util.ArrayList.forEach(ArrayList.java:1249) ~[?:1.8.0_51] {}
+	at com.qouteall.immersive_portals.my_util.Signal.emit(Signal.java:18) ~[?:0.16-mc1.16.5-forge] {re:mixin,re:classloading}
+	at net.minecraft.server.MinecraftServer.handler$zfd000$onServerTick(MinecraftServer.java:2247) ~[?:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:879) ~[?:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:787) ~[?:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.integrated.IntegratedServer.func_71217_p(IntegratedServer.java:78) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:642) [?:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.func_240783_a_(MinecraftServer.java:232) [?:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer$$Lambda$6665/605435788.run(Unknown Source) [?:?] {}
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_51] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1550265824 bytes (1478 MB) / 2221408256 bytes (2118 MB) up to 3817865216 bytes (3641 MB)
+	CPUs: 20
+	JVM Flags: 5 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss1M -Xmx4096m -Xms256m -XX:PermSize=256m
+	ModLauncher: 8.0.9+86+master.3cf110c
+	ModLauncher launch target: fmlclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/mixin-0.8.2.jar mixin PLUGINSERVICE 
+		/eventbus-4.0.0.jar eventbus PLUGINSERVICE 
+		/forge-1.16.5-36.1.2.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.1.2.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-3.0.1.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.5-36.1.2.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.1.2.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.2.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.5-36.1.2.jar fml TRANSFORMATIONSERVICE 
+	FML: 36.1
+	Forge: net.minecraftforge:36.1.2
+	FML Language Providers: 
+		javafml@36.1
+		minecraft@1
+	Mod List: 
+		forge-1.16.5-36.1.2-client.jar                    |Minecraft                     |minecraft                     |1.16.5              |DONE      |NOSIGNATURE
+		performant-1.16.2-5-3.40m.jar                     |Performant                    |performant                    |3.40m               |DONE      |NOSIGNATURE
+		ClientTweaks_1.16.3-5.3.0.jar                     |Client Tweaks                 |clienttweaks                  |5.3.0               |DONE      |NOSIGNATURE
+		TimeIsUp-1.16-1.1.0.jar                           |Time's up                     |timeisup                      |1.1.0               |DONE      |NOSIGNATURE
+		MouseTweaks-2.14-mc1.16.2.jar                     |Mouse Tweaks                  |mousetweaks                   |2.14                |DONE      |NOSIGNATURE
+		Vanilla Stacked Dimensions - Warden Edition 6.0.ja|Vanilla Stacked Dimensions - W|stacked_dimensions_warden     |1.0.0               |DONE      |NOSIGNATURE
+		HellSpawn-1.16.5-1.0.0.jar                        |Hell Spawn                    |hellspawn                     |1.16.5-1.0.0        |DONE      |NOSIGNATURE
+		randompatches-2.4.4-forge.jar                     |RandomPatches                 |randompatches                 |2.4.4-forge         |DONE      |92:f6:29:d4:09:89:f5:f5:98:5e:20:34:31:d0:7b:58:22:06:bd:a5:d1:6a:92:6e:ac:3d:8d:18:c5:b2:5b:d7
+		restrictedportals-1.16.4-1.1.7.jar                |Restricted Portals            |restrictedportals             |1.16.4-1.1.7        |DONE      |NOSIGNATURE
+		AI-Improvements-1.16.2-0.3.0.jar                  |AI-Improvements               |aiimprovements                |0.3.0               |DONE      |NOSIGNATURE
+		mining_dimension-1.16.5-1.0.3.jar                 |Mining World                  |mining_dimension              |1.16.5-1.0.3        |DONE      |NOSIGNATURE
+		JEITweaker-1.16.5-1.0.1.14.jar                    |JEI Tweaker                   |jeitweaker                    |1.0.1.14            |DONE      |NOSIGNATURE
+		jei-1.16.5-7.6.1.75.jar                           |Just Enough Items             |jei                           |7.6.1.75            |DONE      |NOSIGNATURE
+		The_Undergarden-1.16.5-0.4.5.jar                  |The Undergarden               |undergarden                   |0.4.5               |DONE      |NOSIGNATURE
+		FpsReducer-mc1.16.4-1.18.jar                      |FPS Reducer                   |fpsreducer                    |mc1.16.4-1.18       |DONE      |NOSIGNATURE
+		immersive-portals-0.16-mc1.16.5-forge.jar         |Immersive Portals             |immersive_portals             |0.14                |DONE      |NOSIGNATURE
+		CraftTweaker-1.16.5-7.1.0.177.jar                 |CraftTweaker                  |crafttweaker                  |7.1.0.177           |DONE      |NOSIGNATURE
+		forge-1.16.5-36.1.2-universal.jar                 |Forge                         |forge                         |36.1.2              |DONE      |22:af:21:d8:19:82:7f:93:94:fe:2b:ac:b7:e4:41:57:68:39:87:b1:a7:5c:c6:44:f9:25:74:21:14:f5:0d:90
+		AppleSkin-mc1.16.2-forge-1.0.14.jar               |AppleSkin                     |appleskin                     |1.0.14              |DONE      |NOSIGNATURE
+		invtweaks-1.16.4-1.0.1.jar                        |Inventory Tweaks Renewed      |invtweaks                     |1.16.4-1.0.1        |DONE      |NOSIGNATURE
+		betterweather-2.0-BETA-SEASONS-ONLY-3.jar         |Better Weather                |betterweather                 |2.0-BETA-SEASONS-ONL|DONE      |NOSIGNATURE
+	Crash Report UUID: 7ff1227b-6fc6-4789-a155-8afbb0a18e3e
+	Player Count: 1 / 8; [ServerPlayerEntity['CalaMariGold'/1759, l='ServerWorld minecraft:the_nether New World', x=1.25, y=77.75, z=-10.98]]
+	Data Packs: vanilla, mod:performant (incompatible), file/restrictedportals, mod:clienttweaks (incompatible), mod:timeisup, mod:mousetweaks, mod:stacked_dimensions_warden, mod:hellspawn (incompatible), mod:randompatches, mod:restrictedportals, mod:aiimprovements, mod:mining_dimension, mod:jeitweaker, mod:jei, mod:undergarden, mod:fpsreducer, mod:immersive_portals (incompatible), mod:crafttweaker, mod:forge, mod:appleskin, mod:invtweaks (incompatible), mod:betterweather
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'
