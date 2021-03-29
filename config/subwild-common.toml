@@ -4,7 +4,7 @@
 #Range: 0 ~ 16
 "Slope Threshold" = 3
 #The dimensions in which cave biomes will generate in
-"Dimension Whitelist" = ["minecraft:overworld","stacked_dimensions_warden:deeper_dark","mining_dimension:mining"]
+"Dimension Whitelist" = ["minecraft:overworld", "stacked_dimensions_warden:deeper_dark", "mining_dimension:mining"]
 
 [Features]
 	#Enable to generate stone buttons in rocky cave biomes
