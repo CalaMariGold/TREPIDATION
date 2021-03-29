@@ -1,0 +1,20 @@
+
+[chopping]
+	#Default setting for whether or not the user wishes to chop (can be toggled in-game)
+	choppingEnabled = true
+	#Default setting for whether or not the user wishes to fell tree when chopping (can be toggled in-game)
+	fellingEnabled = true
+	#Default setting for the effect that sneaking has on chopping (can be cycled in-game)
+	#Allowed Values: NONE, INVERT_CHOPPING, INVERT_FELLING
+	sneakBehavior = "INVERT_CHOPPING"
+	#Whether to ignore trees without connected leaves
+	onlyBreakTreesWithLeaves = false
+	#Whether to enable chopping when in creative mode (even when false, sneaking can still enable chopping)
+	chopInCreativeMode = false
+
+[visuals]
+	#Whether to use procedural chopped log models; disable to use models added by a resource pack
+	useProceduralChoppedModels = true
+	#Whether to replace the interior sides of logs with a chopped texture instead of bark
+	removeBarkOnInteriorLogs = true
+
