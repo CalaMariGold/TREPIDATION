@@ -1,0 +1,80 @@
+type = menu
+
+customization-meta {
+  identifier = Main-Menu
+  renderorder = foreground
+}
+
+customization {
+  name = main_slideshow
+  action = setbackgroundslideshow
+}
+
+customization {
+  orientation = mid-centered
+  buttonaction = opengui
+  x = -50
+  width = 100
+  actionid = b5288774-d5e2-44f8-9abe-6e2e810b07ab1617038530810
+  action = addbutton
+  y = -36
+  label = Play Singleplayer
+  value = net.minecraft.client.gui.screen.WorldSelectionScreen
+  height = 20
+}
+
+customization {
+  orientation = top-centered
+  delayappearanceseconds = 0.5
+  path = resources/trepidation_transparent.png
+  fadein = true
+  fadeinspeed = 3.0
+  x = -141
+  width = 282
+  action = addtexture
+  actionid = 5bf54b69-88e3-40c6-ac4e-da6e38cd51131617037545909
+  y = -33
+  delayappearance = true
+  delayappearanceeverytime = false
+  height = 126
+}
+
+customization {
+  orientation = mid-centered
+  buttonaction = opengui
+  x = -50
+  width = 100
+  actionid = a1d85a3a-dce4-4ad2-a1b0-7484329256981617038530821
+  action = addbutton
+  y = -10
+  label = Play Multiplayer
+  value = net.minecraft.client.gui.screen.MultiplayerScreen
+  height = 20
+}
+
+customization {
+  orientation = mid-centered
+  buttonaction = quitgame
+  x = -49
+  width = 100
+  actionid = e3b725d6-4799-4f3a-bdcb-b7e94d6aba931617038530826
+  action = addbutton
+  y = 45
+  label = Quit
+  value = 
+  height = 20
+}
+
+customization {
+  orientation = mid-centered
+  buttonaction = opengui
+  x = -50
+  width = 100
+  actionid = 87b7f524-5973-47d7-af20-ba91d6636a3e1617038530832
+  action = addbutton
+  y = 18
+  label = Options
+  value = net.minecraft.client.gui.screen.OptionsScreen
+  height = 20
+}
+
