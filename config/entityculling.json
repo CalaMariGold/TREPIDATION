@@ -1,0 +1,11 @@
+{
+  "configVersion": 1,
+  "renderNametagsThroughWalls": true,
+  "blockEntityWhitelist": [
+    "create:rope_pulley",
+    "minecraft:beacon",
+    "create:hose_pulley"
+  ],
+  "tracingDistance": 128,
+  "debugMode": false
+}
