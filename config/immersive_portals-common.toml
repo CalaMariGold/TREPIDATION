@@ -16,8 +16,8 @@ loose_movement_check = false
 enable_alternate_dimensions = true
 #Nether Portal Mode
 #Allowed Values: normal, vanilla, adaptive, disabled
-nether_portal_mode = "normal"
+nether_portal_mode = "disabled"
 #End Portal Mode
 #Allowed Values: normal, toObsidianPlatform, scaledView, vanilla
-end_portal_mode = "normal"
+end_portal_mode = "disabled"
 

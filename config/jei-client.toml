@@ -8,7 +8,7 @@
 	LowMemorySlowSearchEnabled = false
 	#How items should be handed to you
 	#Allowed Values: INVENTORY, MOUSE_PICKUP
-	GiveMode = "MOUSE_PICKUP"
+	GiveMode = "INVENTORY"
 	#Max number of columns shown
 	#Range: 4 ~ 100
 	MaxColumns = 100
