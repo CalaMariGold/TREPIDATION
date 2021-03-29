@@ -1,0 +1,20 @@
+
+#Client only settings, mostly things related to rendering
+[client]
+
+	[client.hurtCameraAnimation]
+		#Set this to false to disable hurt camera animations.
+		enabled = true
+
+	[client.particles]
+		#Set this to false to disable health particles.
+		enabled = true
+
+		[client.particles.color]
+			#The color of damage particles.
+			#Range: > 0
+			damage = 16711680
+			#The color of heal particles.
+			#Range: > 0
+			heal = 65280
+
