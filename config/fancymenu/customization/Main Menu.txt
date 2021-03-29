@@ -15,7 +15,7 @@ customization {
   buttonaction = opengui
   x = -50
   width = 100
-  actionid = b5288774-d5e2-44f8-9abe-6e2e810b07ab1617038530810
+  actionid = 889be57f-dc5b-43e3-b043-6ef1fddbd5a21617039843133
   action = addbutton
   y = -36
   label = Play Singleplayer
@@ -44,7 +44,7 @@ customization {
   buttonaction = opengui
   x = -50
   width = 100
-  actionid = a1d85a3a-dce4-4ad2-a1b0-7484329256981617038530821
+  actionid = 7176958e-9620-4629-adc9-5a7f41902da91617039843144
   action = addbutton
   y = -10
   label = Play Multiplayer
@@ -57,7 +57,7 @@ customization {
   buttonaction = quitgame
   x = -49
   width = 100
-  actionid = e3b725d6-4799-4f3a-bdcb-b7e94d6aba931617038530826
+  actionid = 899680f1-3090-43df-b2ce-ce10665242861617039843150
   action = addbutton
   y = 45
   label = Quit
@@ -70,11 +70,24 @@ customization {
   buttonaction = opengui
   x = -50
   width = 100
-  actionid = 87b7f524-5973-47d7-af20-ba91d6636a3e1617038530832
+  actionid = 1a479f7d-9166-4745-a030-cfc1caef53001617039843156
   action = addbutton
   y = 18
   label = Options
   value = net.minecraft.client.gui.screen.OptionsScreen
+  height = 20
+}
+
+customization {
+  orientation = top-left
+  buttonaction = opengui
+  x = 271
+  width = 100
+  actionid = f8f32d52-eb7b-49b3-9514-9da76cfb2a9c1617039843161
+  action = addbutton
+  y = 270
+  label = Mods
+  value = net.minecraftforge.fml.client.gui.screen.ModListScreen
   height = 20
 }
 
