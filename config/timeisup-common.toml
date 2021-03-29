@@ -28,7 +28,7 @@
 	#Range: > 0
 	Emergency = 220
 	#Dimensions where there is NO timer
-	BlackList = [""]
+	BlackList = ["minecraft:the_end"]
 	#Default timer for each dimension.
 	#Format for one dimension : "dimension_id;default_duration;ticks_per_duration;max_duration;amount_recovered".
 	#Example : "minecraft:the_nether;12000;4;72000;3"
