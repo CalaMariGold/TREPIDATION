@@ -19,5 +19,5 @@ enable_alternate_dimensions = true
 nether_portal_mode = "disabled"
 #End Portal Mode
 #Allowed Values: normal, toObsidianPlatform, scaledView, vanilla
-end_portal_mode = "disabled"
+end_portal_mode = "vanilla"
 

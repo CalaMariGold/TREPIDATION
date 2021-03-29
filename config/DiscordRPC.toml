@@ -1,0 +1,32 @@
+
+#Discord RichPresence Config File
+[Rich-Presence]
+	#First line of Rich Presence
+	Client-Name = "TREPIDATION"
+	#Placeholders:
+	#%ip%  Server IP
+	Server-Text = "Playing on a server"
+	#No placeholders supported, Text that shows when you are in the main menu
+	Main-Menu = "In Main Menu"
+	#Placeholders:
+	#%coords% (X:??? Y:??? Z:???)
+	#%world% World name
+	Singleplayer-Text = "Playing singleplayer"
+	#Setting this to true disables name changing through GUI
+	Disable-Name-changing = false
+	#Do you want to print log of this mod to ingame chat?
+	LogToChat = false
+	#Custom client id, see https://github.com/ErdbeerbaerLP/DiscordRichPresence/wiki/Set-up-custom-Icons-(for-Modpacks) for more info
+	#Default: 511106082366554122
+	client-id = "825970691177578516"
+	#Disables config GUI
+	#Requires config file editing to enable again
+	Disable-Config-GUI = true
+	#Do you want to use custom Hypixel integration (show what game you are playing and such)?
+	Hypixel-Integration = true
+	#Do you want to use custom Hivemc integration (show what game you are playing)?
+	Hivemc-Integration = true
+	#Do you want servers to send you a customized rich presence text?
+	#Also toggles hardcoded custom icons and text of not fully integrated servers like mineplex
+	Custom-Messages-From-Server = true
+
