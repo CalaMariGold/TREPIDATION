@@ -227,7 +227,7 @@
 			#Range: > -1
 			generation_separation = 5
 			#Names of dimensions this mob/structure can generate in
-			dimensions = ["stacked_dimensions_warden:deeper_dark"]
+			dimensions = []
 			#Maximum height for generation placement. -1 to ignore
 			#Range: -1.0 ~ 256.0
 			height_max = 55.0
