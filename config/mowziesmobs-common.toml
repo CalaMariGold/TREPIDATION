@@ -164,7 +164,7 @@
 			#A blank entry means all biomes. No entries means no biomes.
 			#For example, 'FOREST,MAGICAL,!SNOWY' would mean all biomes that are magical forests but not snowy
 			#'!MOUNTAIN' would mean all non-mountain biomes
-			biome_type = ["SAVANNA"]
+			biome_type = []
 			#Allow spawns in these biomes regardless of the biome type settings
 			biome_whitelist = []
 			#Prevent spawns in these biomes regardless of the biome type settings
@@ -179,15 +179,15 @@
 			#Smaller number causes more generation, -1 to disable generation
 			#Minimum number of chunks between placements of this mob/structure
 			#Range: > -1
-			generation_separation = 8
+			generation_separation = 7
 			#Names of dimensions this mob/structure can generate in
-			dimensions = ["minecraft:overworld"]
+			dimensions = ["minecraft:nether"]
 			#Maximum height for generation placement. -1 to ignore
 			#Range: -1.0 ~ 256.0
-			height_max = 100.0
+			height_max = -1
 			#Minimum height for generation placement. -1 to ignore
 			#Range: -1.0 ~ 256.0
-			height_min = 50.0
+			height_min = -1
 
 		[mobs.barako.combat_config]
 			#Scale mob health by this value
@@ -227,7 +227,7 @@
 			#Range: > -1
 			generation_separation = 5
 			#Names of dimensions this mob/structure can generate in
-			dimensions = ["minecraft:overworld"]
+			dimensions = ["stacked_dimensions_warden:deeper_dark"]
 			#Maximum height for generation placement. -1 to ignore
 			#Range: -1.0 ~ 256.0
 			height_max = 55.0
@@ -273,12 +273,12 @@
 			#Range: > 1
 			max_group_size = 1
 			#Names of dimensions this mob can spawn in
-			dimensions = ["minecraft:overworld"]
+			dimensions = ["stacked_dimensions_warden:deeper_dark"]
 			#Names of blocks this mob is allowed to spawn on. Leave blank to allow any block.
 			allowed_blocks = []
 			#Maximum height for this spawn. -1 to ignore.
 			#Range: -1 ~ 256
-			height_max = 55
+			height_max = -1
 			#Minimum height for this spawn. -1 to ignore.
 			#Range: -1 ~ 256
 			height_min = -1
@@ -301,9 +301,9 @@
 			#A blank entry means all biomes. No entries means no biomes.
 			#For example, 'FOREST,MAGICAL,!SNOWY' would mean all biomes that are magical forests but not snowy
 			#'!MOUNTAIN' would mean all non-mountain biomes
-			biome_type = ["FOREST,MAGICAL,!SNOWY"]
+			biome_type = []
 			#Allow spawns in these biomes regardless of the biome type settings
-			biome_whitelist = ["minecraft:dark_forest", "minecraft:dark_forest_hills"]
+			biome_whitelist = []
 			#Prevent spawns in these biomes regardless of the biome type settings
 			biome_blacklist = []
 
@@ -311,7 +311,7 @@
 		[mobs.lantern.spawn_config]
 			#Smaller number causes less spawning, 0 to disable spawning
 			#Range: > 0
-			spawn_rate = 5
+			spawn_rate = 4
 			#Minimum number of mobs that appear in a spawn group
 			#Range: > 1
 			min_group_size = 2
@@ -319,15 +319,15 @@
 			#Range: > 1
 			max_group_size = 4
 			#Names of dimensions this mob can spawn in
-			dimensions = ["minecraft:overworld"]
+			dimensions = ["undergarden:undergarden"]
 			#Names of blocks this mob is allowed to spawn on. Leave blank to allow any block.
-			allowed_blocks = ["grass_block", "dark_oak_leaves", "dark_oak_log", "oak_leaves", "oak_log", "birch_leaves", "birch_log"]
+			allowed_blocks = []
 			#Maximum height for this spawn. -1 to ignore.
 			#Range: -1 ~ 256
 			height_max = -1
 			#Minimum height for this spawn. -1 to ignore.
 			#Range: -1 ~ 256
-			height_min = 60
+			height_min = -1
 			#Set to true to only allow this mob to spawn in the dark, like zombies and skeletons.
 			needs_darkness = true
 			#Set to true to only spawn mob if it can see the sky.
@@ -347,7 +347,7 @@
 			#A blank entry means all biomes. No entries means no biomes.
 			#For example, 'FOREST,MAGICAL,!SNOWY' would mean all biomes that are magical forests but not snowy
 			#'!MOUNTAIN' would mean all non-mountain biomes
-			biome_type = ["SAVANNA"]
+			biome_type = []
 			#Allow spawns in these biomes regardless of the biome type settings
 			biome_whitelist = []
 			#Prevent spawns in these biomes regardless of the biome type settings
@@ -365,15 +365,15 @@
 			#Range: > 1
 			max_group_size = 1
 			#Names of dimensions this mob can spawn in
-			dimensions = ["minecraft:overworld"]
+			dimensions = ["minecraft:nether"]
 			#Names of blocks this mob is allowed to spawn on. Leave blank to allow any block.
-			allowed_blocks = ["grass_block", "sand"]
+			allowed_blocks = []
 			#Maximum height for this spawn. -1 to ignore.
 			#Range: -1 ~ 256
 			height_max = -1
 			#Minimum height for this spawn. -1 to ignore.
 			#Range: -1 ~ 256
-			height_min = 60
+			height_min = -1
 			#Set to true to only allow this mob to spawn in the dark, like zombies and skeletons.
 			needs_darkness = false
 			#Set to true to only spawn mob if it can see the sky.
@@ -398,9 +398,9 @@
 			#A blank entry means all biomes. No entries means no biomes.
 			#For example, 'FOREST,MAGICAL,!SNOWY' would mean all biomes that are magical forests but not snowy
 			#'!MOUNTAIN' would mean all non-mountain biomes
-			biome_type = ["BEACH,MOUNTAIN", "BEACH,HILLS"]
+			biome_type = []
 			#Allow spawns in these biomes regardless of the biome type settings
-			biome_whitelist = ["minecraft:stone_shore"]
+			biome_whitelist = []
 			#Prevent spawns in these biomes regardless of the biome type settings
 			biome_blacklist = []
 
@@ -408,17 +408,17 @@
 		[mobs.naga.spawn_config]
 			#Smaller number causes less spawning, 0 to disable spawning
 			#Range: > 0
-			spawn_rate = 70
+			spawn_rate = 69
 			#Minimum number of mobs that appear in a spawn group
 			#Range: > 1
-			min_group_size = 2
+			min_group_size = 1
 			#Maximum number of mobs that appear in a spawn group
 			#Range: > 1
-			max_group_size = 4
+			max_group_size = 3
 			#Names of dimensions this mob can spawn in
-			dimensions = ["minecraft:overworld"]
+			dimensions = ["immersiveportals:alternate1"]
 			#Names of blocks this mob is allowed to spawn on. Leave blank to allow any block.
-			allowed_blocks = ["grass_block", "stone", "sand"]
+			allowed_blocks = []
 			#Maximum height for this spawn. -1 to ignore.
 			#Range: -1 ~ 256
 			height_max = -1
@@ -449,7 +449,7 @@
 			#A blank entry means all biomes. No entries means no biomes.
 			#For example, 'FOREST,MAGICAL,!SNOWY' would mean all biomes that are magical forests but not snowy
 			#'!MOUNTAIN' would mean all non-mountain biomes
-			biome_type = ["JUNGLE"]
+			biome_type = []
 			#Allow spawns in these biomes regardless of the biome type settings
 			biome_whitelist = []
 			#Prevent spawns in these biomes regardless of the biome type settings
@@ -459,7 +459,7 @@
 		[mobs.foliaath.spawn_config]
 			#Smaller number causes less spawning, 0 to disable spawning
 			#Range: > 0
-			spawn_rate = 70
+			spawn_rate = 50
 			#Minimum number of mobs that appear in a spawn group
 			#Range: > 1
 			min_group_size = 1
@@ -467,9 +467,9 @@
 			#Range: > 1
 			max_group_size = 4
 			#Names of dimensions this mob can spawn in
-			dimensions = ["minecraft:overworld"]
+			dimensions = ["undergarden:undergarden"]
 			#Names of blocks this mob is allowed to spawn on. Leave blank to allow any block.
-			allowed_blocks = ["grass_block", "podzol", "jungle_leaves", "oak_leaves", "oak_log", "jungle_log"]
+			allowed_blocks = []
 			#Maximum height for this spawn. -1 to ignore.
 			#Range: -1 ~ 256
 			height_max = -1
