@@ -1,0 +1,7 @@
+
+[client]
+	#Toggles the lantern glow effect, which may look bad with certain shaders
+	glow_effect = true
+	#Use the old Barakoa textures instead of the current ones
+	old_barakoa_textures = false
+
