@@ -15,9 +15,9 @@
 	#Whether the player can dodge whilst sneaking.
 	enable_whilst_sneaking = false
 	#Whether the player can dodge whilst blocking.
-	enable_whilst_blocking = false
+	enable_whilst_blocking = true
 	#Whether the player can dodge whilst airborne.
-	enable_whilst_airborne = false
+	enable_whilst_airborne = true
 	#How many in-game ticks of invincibility the player has after dodging. 20 ticks is 1 second.
 	#Range: 0 ~ 100
 	invincibility_ticks = 10
@@ -33,6 +33,9 @@
 	regen_rate = 80
 	#Whether to enable 'Half Feathers'. Instead of weight values rounding down, they will instead show as a half feather. These can be used if the 'Cost' value is set to an odd number.
 	half_feathers = false
+	#How many half feathers dodging in midair requires. [Enable Whilst Airborne must be Enabled]
+	#Range: 0 ~ 20
+	airborne_cost = 4
 
 [weight]
 	#The weight of each item of Armor. This Overrides the automatically generated values. Each 'Steel Feather' is equivalent to a weight of 2. Insert values as such: modid:itemname=value,modid:itemname=value. Any item with a weight over 24 will not show its weight as a tooltip. Idea Credit: SandwichHorror
@@ -47,6 +50,8 @@
 	end = true
 	#Whether the Player's dodge creates a puff of smoke.
 	particles = true
+	#Whether to use TAN integration.
+	enable_tough_as_nails = false
 
 [integration]
 	#If Tough as Nails is installed: How much exhaustion (thirst) regenerating a feather costs. Idea Credit: ArtyArtyArtemis

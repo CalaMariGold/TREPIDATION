@@ -1,0 +1,109 @@
+
+[debug]
+
+	[debug.overlay]
+		#Position of debug overlay
+		#Valid values: TOP_LEFT, TOP_CENTER, TOP_RIGHT, CENTER_LEFT, CENTER, CENTER_RIGHT, BOTTOM_LEFT, BOTTOM_CENTER, BOTTOM_RIGHT
+		anchor = "TOP_RIGHT"
+		#Overlay text size, where 1 is standard-sized text
+		textScale = 0.75
+
+[hearts]
+
+	[hearts.health]
+
+		#Settings for heart rows
+		[hearts.health.icons]
+			#Heart style
+			#REPLACE_ALL: All rows replaced with Scaling Health style hearts
+			#REPLACE_AFTER_FIRST_ROW: Leave the first row vanilla style, Scaling Health style for additional rows
+			#VANILLA: Do not change heart rendering (use this if you want another mod to handle heart rendering)
+			style = "REPLACE_ALL"
+			#The color of each row of hearts. If the player has more rows than colors, it starts over from the beginning.
+			colors = ["#BF0000", "#E66000", "#E69900", "#E6D300", "#99E600", "#4CE600", "#00E699", "#00E6E6", "#0099E6", "#0000E6", "#9900E6", "#D580FF", "#8C8C8C", "#E6E6E6"]
+			#The player's highest heart will get an outline around it.
+			lastHeartOutline = true
+			#The color of the last heart outline, if enabled (see lastHeartOutline)
+			lastHeartOutlineColor = "#FFFFFF"
+			#If true, heart colors will 'loop around' to the first color after going through the
+			#entire list. Set false to have every row after the last have the same color.
+			colorLooping = true
+
+		[hearts.health.tanks]
+			#Enable heart tanks, the small icons above your hearts which indicate the number of filled health rows
+			enabled = true
+
+		#Settings for the text displayed next to the heart rows
+		[hearts.health.text]
+			#Style of health text
+			#Valid values: DISABLED, ROWS, HEALTH_AND_MAX, HEALTH_ONLY
+			style = "ROWS"
+			#Health text scale, relative to its normal size (which varies by style)
+			scale = 1.0
+			#Fine-tune text position
+			offsetX = 0
+			#Fine-tune text position
+			offsetY = 0
+
+			[hearts.health.text.color]
+				#Health text color style.
+				#TRANSITION: Gradually goes from full color to empty color as health is lost
+				#PSYCHEDELIC: Taste the rainbow!
+				#SOLID: Just stays at full color regardless of health
+				style = "TRANSITION"
+				#Color when health is full or style is SOLID
+				full = "#4CFF4C"
+				#Color when health is empty and style is TRANSITION
+				empty = "#FF4C4C"
+
+	[hearts.absorption]
+
+		[hearts.absorption.icons]
+			#Style of absorption icons
+			#Valid values: SHIELD, GOLD_OUTLINE, VANILLA
+			style = "SHIELD"
+			#The color of each row of absorption hearts. If the player has more rows than colors, it starts over from the beginning.
+			colors = ["#BF0000", "#E66000", "#E69900", "#E6D300", "#99E600", "#4CE600", "#00E699", "#00E6E6", "#0099E6", "#0000E6", "#9900E6", "#D580FF", "#8C8C8C", "#E6E6E6"]
+
+		[hearts.absorption.text]
+			#Style for absorption text. Because there is no 'max' value, the options are more limited.
+			#Valid values: DISABLED, ROWS, HEALTH_ONLY
+			style = "DISABLED"
+			#Fine-tune text position
+			offsetX = 0
+			#Fine-tune text position
+			offsetY = 0
+			#The color of the absorption text
+			color = "#FFFFFF"
+
+[difficulty]
+	#Display a warning to players trying to sleep, to remind them their difficulty may change. Sleeping is still allowed.
+	warnWhenSleeping = true
+
+	[difficulty.meter]
+		#When to show the difficulty meter.
+		# SOMETIMES will show the meter for a few seconds every so often.
+		#KEYPRESS will make the meter keybinded
+		#ALWAYS and NEVER should be obvious enough.
+		show = "ALWAYS"
+		#Show the difficulty meter for this many seconds (only on SOMETIMES mode)
+		showDuration = 8.0
+
+		[difficulty.meter.position]
+			#Position of the difficulty meter.
+			#Valid values: TOP_LEFT, TOP_CENTER, TOP_RIGHT, CENTER_LEFT, CENTER, CENTER_RIGHT, BOTTOM_LEFT, BOTTOM_CENTER, BOTTOM_RIGHT
+			anchor = "BOTTOM_LEFT"
+			#Fine-tune the difficulty meter's position
+			offsetX = 5
+			#Fine-tune the difficulty meter's position
+			offsetY = -30
+
+		[difficulty.meter.text]
+			#Scale of text on the difficulty meter
+			scale = 0.6
+
+[blights]
+	#whether the purple flame should render on blights or not.
+	#This does not change whether the mob is a blight, only hides the effect.
+	render = true
+
