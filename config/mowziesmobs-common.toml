@@ -210,7 +210,7 @@
 			#A blank entry means all biomes. No entries means no biomes.
 			#For example, 'FOREST,MAGICAL,!SNOWY' would mean all biomes that are magical forests but not snowy
 			#'!MOUNTAIN' would mean all non-mountain biomes
-			biome_type = [""]
+			biome_type = []
 			#Allow spawns in these biomes regardless of the biome type settings
 			biome_whitelist = []
 			#Prevent spawns in these biomes regardless of the biome type settings
@@ -221,11 +221,11 @@
 			#Smaller number causes more generation, -1 to disable generation
 			#Maximum number of chunks between placements of this mob/structure
 			#Range: > -1
-			generation_distance = 15
+			generation_distance = -1
 			#Smaller number causes more generation, -1 to disable generation
 			#Minimum number of chunks between placements of this mob/structure
 			#Range: > -1
-			generation_separation = 5
+			generation_separation = -1
 			#Names of dimensions this mob/structure can generate in
 			dimensions = []
 			#Maximum height for generation placement. -1 to ignore
