@@ -11,4 +11,10 @@
 	#Range: 0.0 ~ 1.0
 	dark_end_fog = 0.0
 	dark_skyless = true
+	#Range: 0.0 ~ 1.0
+	minimum_moon_brightness = 0.0
+	#Range: 0.0 ~ 1.0
+	maximum_moon_brightness = 1.0
+	#Range: 0.0 ~ 1.0
+	minimum_light = 0.0
 
