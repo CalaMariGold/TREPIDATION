@@ -1,0 +1,41 @@
+["Better Caves"."Underground Generation".Miscellaneous]
+  "Enable Flooded Underground" = false
+  "Override Surface Detection" = true
+  "Liquid Altitude" = 100
+
+["Better Caves"."Underground Generation"."Water Regions"]
+  "Water Region Spawn Chance" = 100.0
+
+["Better Caves"."Underground Generation".Caves]
+  "Cave Region Size" = "ExtraLarge"
+
+["Better Caves"."Underground Generation".Caves."Surface Caves"]
+  "Enable Surface Caves" = false
+
+["Better Caves"."Underground Generation".Caves."Type 1 Caves"]
+  "Type 1 Cave Maximum Altitude" = 255
+  "Type 1 Cave Surface Cutoff Depth" = 0
+  "Type 1 Cave Priority" = 10
+
+["Better Caves"."Underground Generation".Caves."Type 2 Caves"]
+  "Type 2 Cave Priority" = 0
+
+["Better Caves"."Underground Generation".Caverns]
+  "Cavern Spawn Chance" = 100.0
+  "Cavern Region Size" = "ExtraLarge"
+
+["Better Caves"."Underground Generation".Caverns."Floored Caverns"]
+  "Floored Cavern Maximum Altitude" = 255
+  "Floored Cavern Minimum Altitude" = 1
+  "Compression - Vertical" = 0.5 # 1.3 default
+  "Compression - Horizontal" = 0.3 # 0.7 default
+
+["Better Caves"."Underground Generation".Caverns."Liquid Caverns"]
+  "Liquid Cavern Priority" = 0
+
+["Better Caves"."Underground Generation".Caverns."Floored Caverns"."Advanced Settings"]
+  # "Fractal Frequency" = 0.01 # .03 default
+
+["Better Caves"."Underground Generation".Ravines]
+  "Enable Ravines" = true
+  "Enable Flooded Ravines" = false
