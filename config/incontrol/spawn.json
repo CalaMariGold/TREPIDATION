@@ -1,0 +1,58 @@
+[
+ {
+  "biome":"undergarden:frostfields",
+  "mob":"mowziesmobs:frostmaw",
+  "result":"allow"
+
+ },
+ {
+     "mob":"mowziesmobs:frostmaw",
+     "result":"deny"
+ },
+
+ {
+    "biome":["undergarden:dense_forest","undergarden:wigglewood_forest","undergarden:forgotten_fields","undergarden:smogstem_forest","undergarden:mushroom_bog"],
+    "mob":"mowziesmobs:foliaath",
+    "result":"allow"
+ },
+ {
+    "biome":["undergarden:frostfields","undergarden:barren_abyss","undergarden:smog_spires"],
+    "mob":"mowziesmobs:foliaath",
+    "result":"deny"
+
+ },
+ {
+    "dimension":"immersiveportals:alternate1",
+    "mob":"mowziesmobs:naga",
+    "result":"allow"
+
+ }
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]

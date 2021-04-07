@@ -1,0 +1,94 @@
+[
+    {
+      "mob": "mowziesmobs:foliaath",
+      "persecond": 0.5,
+      "attempts": 21,
+      "amount": {
+        "minimum": 1,
+        "maximum": 2
+      },
+      "conditions": {
+        "dimension": "undergarden:undergarden",
+        "mindist": 24,
+        "maxdist": 120,
+        "minheight": 30,
+        "maxheight": 235,
+        "maxthis": 100
+      }
+    },
+  
+    {
+      "mob": "mowziesmobs:frostmaw",
+      "persecond": 1,
+      "attempts": 200,
+      "amount": {
+        "minimum": 1,
+        "maximum": 1
+      },
+      "conditions": {
+        "dimension": "undergarden:undergarden",
+        "mindist": 24,
+        "maxdist": 120,
+        "minheight": 30,
+        "maxheight": 235,
+        "maxthis": 2
+      }
+    },
+
+    {
+        "mob": "mowziesmobs:naga",
+        "persecond": 0.5,
+        "attempts": 20,
+        "amount": {
+          "minimum": 1,
+          "maximum": 3
+        },
+        "conditions": {
+          "dimension": "immersiveportals:alternate1",
+          "mindist": 20,
+          "maxdist": 120,
+          "minheight": 1,
+          "maxheight": 256,
+          "maxthis": 50
+        }
+      },
+      {
+        "mob": "mowziesmobs:grottol",
+        "persecond": 0.5,
+        "attempts": 40,
+        "amount": {
+          "minimum": 1,
+          "maximum": 1
+        },
+        "conditions": {
+          "dimension": "stacked_dimensions_warden:deeper_dark",
+          "mindist": 24,
+          "maxdist": 120,
+          "minheight": 1,
+          "maxheight": 256,
+          "maxthis": 45
+        }
+      },
+
+      {
+        "mob": "mowziesmobs:lantern",
+        "persecond": 0.5,
+        "attempts": 40,
+        "amount": {
+          "minimum": 1,
+          "maximum": 3
+        },
+        "conditions": {
+          "dimension": "undergarden:undergarden",
+          "mindist": 24,
+          "maxdist": 120,
+          "minheight": 1,
+          "maxheight": 256,
+          "minlight":0,
+          "maxlight":7,
+          "maxthis": 45
+        }
+      }
+
+
+  ]
