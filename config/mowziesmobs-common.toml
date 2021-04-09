@@ -5,8 +5,6 @@
 
 [tools_and_abilities]
 	#Range: 0.0 ~ 1.7976931348623157E308
-	suns_blessing_attack_multiplier = 1.0
-	#Range: 0.0 ~ 1.7976931348623157E308
 	geomancy_attack_multiplier = 1.0
 
 	[tools_and_abilities.wrought_helm]
@@ -100,6 +98,16 @@
 		#Range: 0.0 ~ 1.7976931348623157E308
 		attack_damage = 1.0
 
+	[tools_and_abilities.suns_blessing]
+		#Duration in minutes of the Sun's Blessing effect.
+		#Range: > 0
+		suns_blessing_duration = 60
+		#Range: 0.0 ~ 1.7976931348623157E308
+		suns_blessing_attack_multiplier = 1.0
+		#Cost in minutes of using the solar beam ability.
+		#Range: > 0
+		solar_beam_cost = 5
+
 [mobs]
 
 	[mobs.frostmaw]
@@ -155,6 +163,11 @@
 		has_boss_bar = true
 		#Disable/enable Barako healing while not in combat
 		heals_out_of_battle = true
+		#Which item Barako desires in exchange for the Sun's Blessing
+		trade_which_item = "minecraft:gold_block"
+		#How many of the item Barako desires in exchange for the Sun's Blessing
+		#Range: 0 ~ 64
+		trade_how_many = 7
 
 		#Generation controls for Barakoa villages
 		[mobs.barako.biome_config]

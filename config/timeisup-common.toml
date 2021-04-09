@@ -1,15 +1,12 @@
 
-[Info]
-	#All values are calculated in minecraft ticks,
-	#20 ticks = 1 second.
-	#The timer always displays complete remaining seconds,
-	#so 620 ticks = 30 seconds displayed by the timer.
-	placeholder = ""
-
+#All values are calculated in minecraft ticks,
+#20 ticks = 1 second.
+#The timer always displays complete remaining seconds,
+#so 620 ticks = 30 seconds displayed by the timer.
 [Configs]
 	#Default duration when the player comes for the first time in this dimension. [default:12000 = 10 minutes]
 	#Range: > 0
-	"Default duration" = 999999
+	"Default duration" = 42000
 	#Default tick amount to spend in an other dimension to recover ticks in this dimension. [default:4]
 	#Range: > 1
 	"Default ticks per duration" = 4
@@ -33,4 +30,32 @@
 	#Format for one dimension : "dimension_id;default_duration;ticks_per_duration;max_duration;amount_recovered".
 	#Example : "minecraft:the_nether;12000;4;72000;3"
 	"Default timers" = []
+	#The player respawns at default spawnpoint if their spawnpoint is set to a dimension with little time left.
+	#Set to false to disable this.
+	"Safe Respawn" = false
+	#When time is up, the player die if set to false or receive bad potion effects if set to true
+	"Potion Effects" = true
+
+[Boss]
+	#NBT of the boss.
+	#Every entity matching this NBT is considered as boss.
+	#Once the player has killed the boss, his timers are disabled.
+	#Leaving this blank will disable boss functionality.
+	Boss = "{id:'minecraft:ender_dragon'}"
+	#Message sent when the player killed the boss.
+	"Boss message" = "§6You are now free to travel across dimensions without any limit."
+
+[Effects]
+	#Sets effects for emergency phase. format : effectId;duration;amplifier;show_icon
+	"emergency effects" = ["minecraft:slowness;120;1;true", "minecraft:mining_fatigue;120;0;true", "minecraft:poison;120;0;true", "minecraft:hunger;120;0;true"]
+	#Sets effects for dangerous phase. format : effectId;duration;amplifier;show_icon
+	"dangerous effects" = ["minecraft:slowness;120;1;true"]
+	#Sets effects for when the time is up. format : effectId;duration;amplifier;show_icon
+	"time is up effects" = ["minecraft:slowness;120;3;true", "minecraft:mining_fatigue;120;1;true", "minecraft:poison;120;2;true", "minecraft:hunger;120;1;true", "timeisup:doom_effect;99999;5;true"]
+	#Chances to get Exile Effect by killing a mob.
+	#Range: 0.0 ~ 1.0
+	"Exile chances" = 0.05000000074505806
+	#Exile Effect amplifier
+	#Range: 0 ~ 255
+	"Exile amplifier" = 2
 
