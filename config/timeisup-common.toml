@@ -58,4 +58,19 @@
 	#Exile Effect amplifier
 	#Range: 0 ~ 255
 	"Exile amplifier" = 2
+	#Cooldown before applying effects. [80 ticks by default]
+	#Range: > 1
+	"effects cooldown" = 80
+	#Sets mobs that can be spawned by doom effect.
+	#If a dimension or biome is not set, default spawnset for biome will be used.
+	#format :  dimension_or_biome_name;entry1;entry2; ...
+	#entry format : entity_name,weight,minCount,maxCount
+	#weight - higher weight mean higher chance to spawn
+	#minCount - minimum group size
+	#maxCount - maximum group size
+	"Doom spawners" = []
+	#Sets the spawn chance when doom performs its effect.
+	#Assuming nothing else is preventing spawning.
+	#Range: 0.0 ~ 1.0
+	"Doom spawn chance" = 0.6
 
