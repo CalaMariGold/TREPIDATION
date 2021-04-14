@@ -1,3 +1,4 @@
+/*
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.loot.conditions.LootConditionBuilder;
 import crafttweaker.api.loot.conditions.vanilla.DamageSourceProperties;
@@ -227,3 +228,4 @@ loot.modifiers.register(
 // loot conditions interoperate.
 
 // Happy tweaking!
+*/

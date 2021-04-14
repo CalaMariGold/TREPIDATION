@@ -1,4 +1,4 @@
-//There are two kinds of recipes: Shaped and shapeless
+/* //There are two kinds of recipes: Shaped and shapeless
 //Shaped means that the order of items in the crafting table matters (e.g. for tools)
 //Shapeless means that the items can be anywhere in the crafting grid as long as all items are there (e.g. dye mixing)
 
@@ -23,6 +23,7 @@ craftingTable.addShapeless("chop_ingot", <item:minecraft:gold_nugget> * 10, [<it
   becomes
   [[a, b, c], [d, e, f], [g, h, i]]
 */
+/*
 
 //Here you can see, that you can use <item:minecraft:air> for an empty slot
 //You can also see that this recipe only uses two rows. This means you can either craft this recipe in the first and second row in the crafting grid, or the second and third row.
@@ -46,4 +47,5 @@ craftingTable.addShapeless("exmaple_transformer_anydamage_transform_damage", <it
 
 //The reuse transformer causes the item to stay in the grid
 //This recipe would allow you to extract an infinite number of diamonds when you place a diamond Sword in the crafting grid
-craftingTable.addShapeless("example_transformer_reuse", <item:minecraft:diamond>, [<item:minecraft:diamond_sword>.reuse()]);
+craftingTable.addShapeless("example_transformer_reuse", <item:minecraft:diamond>, [<item:minecraft:diamond_sword>.reuse()]); 
+*/

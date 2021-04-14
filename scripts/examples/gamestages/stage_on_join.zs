@@ -1,3 +1,4 @@
+/* 
 // This example will give players the stage "one" when they log in. In the 
 // context of Minecraft logging in means the player joins a save or server.
 // This is done by registering an event listener which is a bit of code that
@@ -23,3 +24,4 @@ CTEventManager.register<MCPlayerLoggedInEvent>((event) => {
          player.addGameStage("one");
      }
 });
+*/

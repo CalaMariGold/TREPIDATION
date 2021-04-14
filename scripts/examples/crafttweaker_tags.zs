@@ -1,3 +1,4 @@
+/*
 import crafttweaker.api.tag.MCTag;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.item.IIngredient;
@@ -33,6 +34,7 @@ for tag in forge_gems.elements {
 [22:04:39.879][DONE][SERVER][INFO] <item:minecraft:prismarine_crystals>.definition
 [22:04:39.879][DONE][SERVER][INFO] <item:minecraft:quartz>.definition
 */
+/*
 
 //So if you wanted to add redstone to the gems you'd do:
 forge_gems.add(<item:minecraft:redstone>);
@@ -44,6 +46,7 @@ forge_gems.remove(<item:minecraft:prismarine_crystals>);
 for tag in forge_gems.elements {
 	println(tag.commandString); //Tags can implicitly cast to string using their commandString getter
 }
+*/
 /* Which gives us:
 [22:13:38.400][DONE][CLIENT][INFO] <item:minecraft:diamond>.definition
 [22:13:38.400][DONE][CLIENT][INFO] <item:minecraft:emerald>.definition
@@ -51,6 +54,7 @@ for tag in forge_gems.elements {
 [22:13:38.401][DONE][CLIENT][INFO] <item:minecraft:quartz>.definition
 [22:13:38.401][DONE][CLIENT][INFO] <item:minecraft:redstone>.definition
 */
+/*
 
 //As for custom tags, the moment you add something to a tag, if the tag doesnt exist it will be created. Make sure what you are adding and the tagType match!
 
@@ -68,3 +72,4 @@ var pickaxeAll = <tag:items:crafttweaker:all_pickaxes>;
 craftingTable.addShapeless("stairs_to_cobble", <item:minecraft:cobblestone> * 3, [<item:minecraft:cobblestone_stairs>, pickaxeAll.asIIngredient().transformDamage(2)]);
 
 //Have fun with your tags!
+*/
