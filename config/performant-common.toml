@@ -32,7 +32,7 @@ displayTooLargePackets = true
 		TEUnloadLag = false
 
 	["Load balancing settings"."Event load balancing settings"]
-		#Enables event load balancing, this is mostly stuff which is happening outside entityAI/Tile entities on world ticks. default: true
+		#Enables event load balancing, this is mostly stuff which is happening outside entityAI/Tile entities on world ticks. default: false
 		eventLoadBalancing = false
 		#Mean tick time at which event load balancing takes effect, 1000 / mean tick time = TPS. default: 55
 		#Range: 1 ~ 200
@@ -98,6 +98,9 @@ displayTooLargePackets = true
 	fastChunkSave = true
 	#If true hoppers are causing less lag
 	fasterHoppers = true
+	#Set how many scheduled blocks are updated each tick, scheduled block updates are for example fluid flowing. default = 1000, vanilla default = 65536
+	#Range: 1 ~ 65536
+	blockTicks = 3000
 
 ["Utility settings, debugging and other"]
 	#List of mobs disallowed from spawning: e.g. format :  ["minecraft:zombie", "minecraft:creeper"]
