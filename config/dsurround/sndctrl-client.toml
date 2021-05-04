@@ -21,6 +21,9 @@
 	#Number of background threads to handle sound effect calculations (0 is default)
 	#Range: 0 ~ 8
 	"Background Workers" = 0
+	#Number of streaming sound channels to configure
+	#Range: 8 ~ 16
+	"Streaming Sound Count" = 10
 
 #Defines parameters for special effects
 ["Effect Options"]

@@ -2,8 +2,27 @@
 [permissions]
 	#Whether this mod is enabled or not
 	enabled = true
-	#Whether players can deactivate chopping e.g. by sneaking
-	canChooseNotToChop = true
+
+	[permissions.choppingEnabled]
+		canBeFalse = true
+		canBeTrue = true
+
+	[permissions.fellingEnabled]
+		canBeFalse = true
+		canBeTrue = true
+
+	[permissions.sneakBehavior]
+		canBeInvertChopping = true
+		canBeInvertFelling = true
+		canBeNone = true
+
+	[permissions.treeMustHaveLeaves]
+		canBeFalse = true
+		canBeTrue = true
+
+	[permissions.chopInCreativeMode]
+		canBeFalse = true
+		canBeTrue = true
 
 [treeDetection]
 	#Maximum number of log blocks that can be detected to belong to one tree
@@ -14,8 +33,6 @@
 	maxLeavesBlocks = 1024
 	#Whether to destroy leaves when a tree is felled
 	breakLeaves = true
-	#If breakLeaves is true, whether to destroy leaves that are marked as persistent when a tree is felled
-	breakPersistentLeaves = true
 	#Maximum distance from log blocks to destroy non-standard leaves blocks (e.g. mushroom caps) when felling
 	#Range: 0 ~ 16
 	maxBreakLeavesDistance = 7
@@ -23,6 +40,8 @@
 	blockTagForDetectingLogs = "treechop:choppables"
 	#The tag that blocks must have to be considered leaves (default: treechop:leaves_like)
 	blockTagForDetectingLeaves = "treechop:leaves_like"
+	#Whether non-decayable leaves are ignored when detecting leaves
+	ignorePersistentLeaves = true
 
 [chopCounting]
 	#Method to use for computing the number of chops needed to fell a tree
@@ -56,8 +75,23 @@
 		preventChoppingOnRightClick = false
 		#Whether to prevent infinite loops when chopping; fixes crashes when using modded items that break multiple blocks
 		preventChopRecursion = true
-		#List of item registry names (mod:item) and tags (#mod:tag) for items that should not chop when used to break a log
-		choppingToolsBlacklist = ["#forge:saws", "mekanism:atomic_disassembler"]
+
+		[compatibility.general.blacklist]
+			#Whether the listed items should be blacklisted or whitelisted
+			#Allowed Values: BLACKLIST, WHITELIST
+			blacklistOrWhitelist = "BLACKLIST"
+			#List of item registry names (mod:item), tags (#mod:tag), and namespaces (@mod) for items that should not chop when used to break a log
+			#- Items in this list that have special support for TreeChop will not be blacklisted; see https://github.com/hammertater/treechop/blob/main/docs/compatibility.md#blacklist
+			items = ["mekanism:atomic_disassembler", "@lumberjack", "practicaltools:iron_greataxe", "practicaltools:golden_greataxe", "practicaltools:diamond_greataxe", "practicaltools:netherite_greataxe"]
+
+		[compatibility.general.overrides]
+			#List of item registry names (mod:item), tags (#mod:tag), and namespaces (@mod) for items that should not perform their default behavior when chopping
+			#- Add "?chops=N" to specify the number of chops to be performed when breaking a log with the item (defaults to 1)
+			#- Add "?override=always" to disable default behavior even when chopping is disabled
+			#- Add "?override=never" to never disable default behavior
+			#- Items in this list that have special support for TreeChop will not be overridden; see https://github.com/hammertater/treechop/blob/main/docs/compatibility.md#overrides
+			#- This might not work as expected for some items; see https://github.com/hammertater/treechop/blob/main/docs/compatibility.md#caveats
+			items = ["#tconstruct:modifiable/harvest", "silentgear:saw?chops=3,override=always"]
 
 	[compatibility.specific]
 		#Whether to enable compatibility with ProjectMMO; for example, award XP for chopping
