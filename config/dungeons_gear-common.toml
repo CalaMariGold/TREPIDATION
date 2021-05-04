@@ -26,6 +26,14 @@
 	#The emerald value for an artifact [0-64, default: 24]
 	#Range: 0 ~ 64
 	artifactValue = 24
+	#Enable Elenai Dodge 2 compatibility. Effects that trigger on jump will now trigger on dodge. 
+	#Does nothing if Elenai Dodge is not installed. [true / false]
+	enableElenaiDodgeCompat = true
+	#Enable Project: War Dance compatibility. 
+	#Dual wield weapon offhand functions are suppressed in favor of using War Dance's offhand attacks. 
+	#Block reach attributes are added to spears so they benefit from skills. 
+	#Does nothing if Project: War Dance is not installed. [true / false]
+	enableProjectWarDanceCompat = true
 
 #Item Configuration
 [item_configuration]
@@ -137,7 +145,7 @@
 			#Range: 0.0 ~ 1.0
 			artifactRareLoot = 0.75
 
-		#Super Rare Loot Table Configuration
+		#Entity Configuration
 		[item_configuration.armor_durability_multiplier_reference.super_rare_loot_table_configuration]
 			#Add gear from this mod to loot tables considered super rare. 
 			#To do so, enter the full path of the specific loot table, or the path of the folder containing the loot tables.
@@ -152,4 +160,7 @@
 			#The decimal chance for an artifact to appear in super rare loot tables [0.0-1.0, default: 1.0]
 			#Range: 0.0 ~ 1.0
 			artifactSuperRareLoot = 1.0
+			#Add entities that will never be targeted by aggressive Dungeons Gear effects. 
+			#To do so, enter their registry names.
+			effectTargetBlacklist = ["minecraft:chicken", "minecraft:cow", "minecraft:pig", "minecraft:sheep", "minecraft:bee", "minecraft:wolf", "minecraft:fox", "minecraft:villager", "minecraft:horse", "minecraft:donkey", "minecraft:mooshroom", "minecraft:parrot", "minecraft:ocelot", "minecraft:rabbit", "minecraft:squid", "minecraft:strider", "minecraft:turtle", "minecraft:salmon", "minecraft:cod", "minecraft:pufferfish", "minecraft:tropical_fish", "minecraft:dolphin", "minecraft:panda", "minecraft:polar_bear", "minecraft:bat", "minecraft:trader_llama"]
 
