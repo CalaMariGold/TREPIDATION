@@ -1,7 +1,7 @@
 ["Better Caves"."Underground Generation".Miscellaneous]
   "Enable Flooded Underground" = false
   "Override Surface Detection" = true
-  "Liquid Altitude" = 100
+  "Liquid Altitude" = 200
 
 ["Better Caves"."Underground Generation"."Water Regions"]
   "Water Region Spawn Chance" = 100.0
