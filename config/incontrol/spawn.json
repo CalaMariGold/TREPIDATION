@@ -26,7 +26,36 @@
     "mob":"mowziesmobs:naga",
     "result":"allow"
 
- }
+ },
+ { "dimension":"mining_dimension:mining",
+    "mob":"upgrade_aquatic:thrasher",
+    "result":"allow"
+   },
+   {
+   "biome":["mining_dimension:mining"],
+   "mob":"upgrade_aquatic:thrasher",
+   "result":"allow"
+   },
+   {
+    "dimension":"mining_dimension:mining",
+    "mob":"upgrade_aquatic:great_thrasher",
+    "result":"allow"
+   },
+   {
+    "dimension":"mining_dimension:mining",
+    "mob":"outvoted:kraken",
+    "result":"allow"  
+   },
+   {
+    "dimension":"mining_dimension:mining",
+    "mob":"alexsmobs:cachalot_whale",
+    "result":"allow"  
+   },
+   {
+    "dimension":"mining_dimension:mining",
+    "mob":"alexsmobs:mantis_shrimp",
+    "result":"allow"  
+   }
 
 
 
