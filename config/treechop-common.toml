@@ -100,4 +100,7 @@
 		#Whether to prevent conflicts with Carry On when it is configured to allow picking up logs
 		#See https://www.curseforge.com/minecraft/mc-mods/carry-on
 		carryOn = true
+		#Whether to prevent conflicts with DynamicTrees
+		#See https://www.curseforge.com/minecraft/mc-mods/dynamictrees
+		dynamicTrees = true
 
