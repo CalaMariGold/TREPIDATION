@@ -1,3 +1,0 @@
-identifier = Main-Menu
-title = 
-allowesc = false

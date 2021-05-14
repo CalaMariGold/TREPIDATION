@@ -1,7 +1,0 @@
-
-[general]
-	#Clamp FreeLook camera to your shoulders. As your head can only do in the real world.
-	viewClamping = true
-	#Invert mouse on the Y axis.
-	invertMouse = false
-

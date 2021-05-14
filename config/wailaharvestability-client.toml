@@ -1,8 +1,0 @@
-
-[main]
-	"minimal mode separator" = " : "
-	"is currently harvestable string" = "✔"
-	"not currently harvestable string" = "✘"
-	"shearability string" = "✂"
-	"harvest level tooltip" = false
-
