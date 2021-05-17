@@ -1,5 +1,5 @@
 #CONFIG ONLY OPTIONS
-ignoreUpdate:288
+ignoreUpdate:289
 updateNotification:true
 settingsButton:false
 allowWrongWorldTeleportation:false
@@ -18,13 +18,13 @@ showOtherTeam:true
 showTamed:true
 showWaypoints:true
 showIngameWaypoints:true
-displayRedstone:true
+displayRedstone:false
 deathpoints:true
 oldDeathpoints:true
 distance:1
-showCoords:true
+showCoords:false
 lockNorth:false
-zoom:0
+zoom:2
 minimapSize:0
 entityAmount:1
 chunkGrid:-1
@@ -102,7 +102,7 @@ renderAllSets:false
 playerArrowOpacity:100
 ignoreHeightmaps:false
 waypointsBottom:false
-minimapShape:0
+minimapShape:1
 lightOverlayType:0
 lightOverlayMaxLight:7
 lightOverlayMinLight:0
@@ -114,7 +114,7 @@ minimapFrame:0
 minimapFrameColor:9
 compassColor:9
 itemFramesOnRadar:false
-interface:dummy:0:0:true:false:false:false
+interface:dummy:0:36:true:false:false:false
 interface:dummy:0:10000:true:false:false:false
 interface:dummy:0:0:false:false:true:false
 interface:dummy:0:36:true:false:false:false
