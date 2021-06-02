@@ -1,0 +1,19 @@
+{
+    "dimensions": [
+        {
+            "dim": -1,
+            "override": true,
+            "dimensiontype": {
+                "id": -1,
+                "name": "Nether (JED)",
+                "suffix": "_dim-1",
+                "keeploaded": false,
+                "worldprovider": "WorldProviderHellJED"
+            },
+            "jed": {
+                "CanRespawnHere": true,
+                "CanSleepHere": "false"
+            }
+        }
+    ]
+}
