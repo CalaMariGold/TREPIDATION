@@ -53,7 +53,7 @@ INIT() {
 	
 	!stacking dimensions on top of each other so they get connected via portals (order bottom to top):
 	!add("dimstack", [<dimId>...]#);
-	add("dimstack", [-1, 5, 10, 0, 4, 1]#);
+	add("dimstack", [-1, 5, 10, 0, 1]#);
 	
 	!creating new dimensions for the game:
 	!add("dimension", <id>, <generator>, <biome>, <horizonHeight>, <cloudHeight>, <hasSkylight>, <waterEvaporates>, <isNetherlike>, <hasSky&Clouds>, <hasFog>, [<voidFogY>, <fogRed>, <fogGreen>, <fogBlue>]#);
@@ -75,7 +75,6 @@ INIT() {
 	rem_block_gen:0 = "minecraft:bedrock";
 	rem_block_gen:-1 = "minecraft:bedrock"; 
 	rem_block_gen:5 = "minecraft:bedrock";
-	rem_block_gen:4 = "minecraft:bedrock"; 
 	rem_block_gen:1 = "minecraft:bedrock"; 
 	rem_block_gen:10 = "minecraft:bedrock"; 
 	
