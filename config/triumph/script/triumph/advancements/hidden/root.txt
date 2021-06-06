@@ -1,0 +1,13 @@
+setIcon(<minecraft:dirt>)
+setTitle("Root")
+setDescription("")
+
+addRewardFunction("triumph:start")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+addCriteria("location", "minecraft:location")
+
+alwaysHidden()
+setHidden(true)

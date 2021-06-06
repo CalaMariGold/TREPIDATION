@@ -23,3 +23,6 @@ config/jei/worldSettings.cfg
 /llibrary/debug/
 /config/multimob/modInformation/
 /mods/hats/
+mods/LagGoggles-1.12.2-5.8-132.jar
+config/LagGoggles-server.cfg
+config/LagGoggles-client.cfg
