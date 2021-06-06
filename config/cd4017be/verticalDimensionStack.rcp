@@ -85,10 +85,10 @@ INIT() {
 	!custom barrier block properties (block id is "dimstack:bedrock@<id>")
 	!there are 16 (ids 0 ... 15) different blocks available for use in progression barrier layers
 	!barrier_block:<id> = [[<breakingTools>...], <harvestLvl>, <hardness>, <expResistance>, <WhitherProof>];
-	barrier_block:0 = [it(), "pickaxe:3", 8.0, /0, true];
-	barrier_block:1 = [it(), "pickaxe:4", 8.0, /0, true];
-	barrier_block:2 = [it(), "pickaxe:5", 8.0, /0, true];
-	barrier_block:3 = [it(), "pickaxe:6", 8.0, /0, true];
+	barrier_block:0 = [it(), "pickaxe:4", 8.0, /0, true];
+	barrier_block:1 = [it(), "pickaxe:5", 8.0, /0, true];
+	barrier_block:2 = [it(), "pickaxe:6", 8.0, /0, true];
+	barrier_block:3 = [it(), "pickaxe:7", 8.0, /0, true];
 
 	
 	!custom block layers
