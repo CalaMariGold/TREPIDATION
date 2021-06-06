@@ -6,3 +6,7 @@ logOreDict.add(<nethercraft:glowood_log>);
 
 val stickOreDict = <ore:stickWood>;
 stickOreDict.add(<nethercraft:glowood_stick>);
+
+val bowlOreDict = <ore:bowlWood>;
+bowlOreDict.add(<nethercraft:glowood_bowl>);
+bowlOreDict.add(<minecraft:bowl>);
