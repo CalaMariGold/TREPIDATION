@@ -4,8 +4,8 @@ setDescription("")
 
 addRewardFunction("triumph:start")
 
-setShowToast(true)
-setAnnounceToChat(true)
+setShowToast(false)
+setAnnounceToChat(false)
 
 addCriteria("location", "minecraft:location")
 
