@@ -1,0 +1,23 @@
+setIcon(<minecraft:netherrack>)
+setTitle("We Must Go Higher")
+setDescription("Begin your journey.")
+
+addParent("triumph:advancements/dimensions/root")
+
+addRewardFunction("triumph:nether")
+
+
+addCriteria("location", "minecraft:location")
+
+
+//criteria = addCriteria("entered_nether", "triumph:changed_dimension")
+//criteria.setDimensionDestination(-1)
+
+setShowToast(false)
+setAnnounceToChat(false)
+setFrameType("GOAL")
+setUncompletedIconColor(217,255,92)
+
+
+alwaysVisible()
+setPos(32,0)

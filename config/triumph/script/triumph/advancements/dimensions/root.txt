@@ -1,0 +1,15 @@
+//This is a root advancement. It is the base advancement for a page. As such, it has no parent and has to set a background.
+
+setIcon(<minecraft:skull, meta:2>)
+setTitle("TREPIDATION")
+setDescription("Tick. Tock.")
+
+setShowToast(false)
+setAnnounceToChat(false)
+
+addCriteria("location", "minecraft:location")
+
+alwaysHidden()
+setHidden(true)
+
+setBackground("minecraft:textures/gui/advancements/backgrounds/adventure.png")
