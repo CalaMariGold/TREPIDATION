@@ -20,4 +20,4 @@ setUncompletedIconColor(217,255,92)
 
 
 alwaysVisible()
-setPos(32,0)
+setPos(-1,0)

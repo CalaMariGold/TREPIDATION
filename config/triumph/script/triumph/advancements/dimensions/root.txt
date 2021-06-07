@@ -13,3 +13,4 @@ alwaysHidden()
 setHidden(true)
 
 setBackground("minecraft:textures/gui/advancements/backgrounds/adventure.png")
+setPos(-38,0)

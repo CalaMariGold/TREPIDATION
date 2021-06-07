@@ -1,0 +1,21 @@
+setIcon(<minecraft:skull, meta:5>)
+setTitle("The End")
+setDescription("Enter The End")
+
+addParent("triumph:advancements/dimensions/overworld")
+
+addRewardFunction("triumph:end")
+
+
+
+criteria = addCriteria("erebus", "triumph:changed_dimension")
+criteria.setDimensionDestination(-1)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setFrameType("GOAL")
+setUncompletedIconColor(217,255,92)
+
+
+alwaysVisible()
+setPos(329,0)

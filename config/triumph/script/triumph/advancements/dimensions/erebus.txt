@@ -1,0 +1,21 @@
+setIcon(<erebus:umberstone>)
+setTitle("Austrailia Simulator")
+setDescription("Enter The Erebus")
+
+addParent("triumph:advancements/dimensions/nether")
+
+addRewardFunction("triumph:erebus")
+
+
+
+criteria = addCriteria("erebus", "triumph:changed_dimension")
+criteria.setDimensionDestination(5)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setFrameType("GOAL")
+setUncompletedIconColor(217,255,92)
+
+
+alwaysVisible()
+setPos(82,0)

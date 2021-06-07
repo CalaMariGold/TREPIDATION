@@ -1,0 +1,3 @@
+title @p times 40 120 60
+title @p subtitle {"text":"funny parasite mod", "color":"yellow"}
+title @p title {"text":"The Overworld", "bold":false, "italic":false, "color":"blue"}

@@ -1,0 +1,3 @@
+title @p times 40 120 60
+title @p subtitle {"text":"of your journey.", "color":"yellow"}
+title @p title {"text":"The End", "bold":false, "italic":false, "color":"dark_purple"}

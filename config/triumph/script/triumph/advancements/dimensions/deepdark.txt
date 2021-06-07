@@ -1,0 +1,21 @@
+setIcon(<beneath:teleporterbeneath>)
+setTitle("Advanced Darkness")
+setDescription("Enter The Deep Dark")
+
+addParent("triumph:advancements/dimensions/erebus")
+
+addRewardFunction("triumph:deepdark")
+
+
+
+criteria = addCriteria("erebus", "triumph:changed_dimension")
+criteria.setDimensionDestination(10)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setFrameType("GOAL")
+setUncompletedIconColor(217,255,92)
+
+
+alwaysVisible()
+setPos(159,0)

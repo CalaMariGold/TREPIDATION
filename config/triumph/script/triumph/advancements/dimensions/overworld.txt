@@ -1,0 +1,21 @@
+setIcon(<srparasites:parasitestain, meta:2>)
+setTitle("Parasitic Environment")
+setDescription("Enter The Overworld")
+
+addParent("triumph:advancements/dimensions/deepdark")
+
+addRewardFunction("triumph:overworld")
+
+
+
+criteria = addCriteria("erebus", "triumph:changed_dimension")
+criteria.setDimensionDestination(0)
+
+setShowToast(true)
+setAnnounceToChat(true)
+setFrameType("GOAL")
+setUncompletedIconColor(217,255,92)
+
+
+alwaysVisible()
+setPos(241,0)
