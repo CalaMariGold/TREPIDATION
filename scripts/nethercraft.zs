@@ -6,9 +6,6 @@ import mods.dropt.Dropt;
 var green_glowshroom = <nethercraft:green_glowshroom>;
 var purple_glowshroom = <nethercraft:purple_glowshroom>;
 
-<minecraft:mushroom_stew>.maxStackSize = 8;
-<nethercraft:glow_stew>.maxStackSize = 8;
-
 
 // Glow Stew Recipe
 recipes.addShapeless("glowstew", <nethercraft:glow_stew>,[green_glowshroom, purple_glowshroom, <ore:bowlWood>]);
