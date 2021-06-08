@@ -1,0 +1,80 @@
+type = menu
+
+customization-meta {
+  identifier = MainMenu
+  renderorder = foreground
+}
+
+customization {
+  name = main_slideshow
+  action = setbackgroundslideshow
+}
+
+customization {
+  orientation = mid-left
+  buttonaction = opengui
+  x = 136
+  width = 100
+  actionid = dfcfc8ed-fdc3-44c5-a3b8-6671fa150bd21623171050479
+  action = addbutton
+  y = -43
+  label = Play Singleplayer
+  value = net.minecraft.client.gui.GuiWorldSelection
+  height = 20
+}
+
+customization {
+  orientation = mid-left
+  buttonaction = opengui
+  x = 136
+  width = 100
+  actionid = 9da8b203-51d7-4cf7-a461-200f344968db1623171050479
+  action = addbutton
+  y = -9
+  label = Play Multiplayer
+  value = net.minecraft.client.gui.GuiMultiplayer
+  height = 20
+}
+
+customization {
+  orientation = mid-left
+  buttonaction = quitgame
+  x = 136
+  width = 100
+  actionid = 56417273-a386-4fd6-853b-56eee62642f91623171050479
+  action = addbutton
+  y = 60
+  label = Quit
+  value = 
+  height = 20
+}
+
+customization {
+  orientation = mid-left
+  buttonaction = opengui
+  x = 136
+  width = 100
+  actionid = 3239c85f-f340-4832-badc-fb6340c993421623171050479
+  action = addbutton
+  y = 25
+  label = Options
+  value = net.minecraft.client.gui.GuiOptions
+  height = 20
+}
+
+customization {
+  orientation = mid-left
+  delayappearanceseconds = 1.0
+  path = resources/trepidation/trepidation_transparent.png
+  fadein = true
+  fadeinspeed = 1.0
+  x = 36
+  width = 299
+  actionid = 3bea13f8-8d88-4125-8f48-76c6d4ef246c1623127378578
+  action = addtexture
+  y = -177
+  delayappearance = true
+  delayappearanceeverytime = false
+  height = 133
+}
+
