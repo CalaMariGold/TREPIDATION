@@ -9,7 +9,7 @@ addRewardFunction("triumph:end")
 
 
 criteria = addCriteria("erebus", "triumph:changed_dimension")
-criteria.setDimensionDestination(-1)
+criteria.setDimensionDestination(1)
 
 setShowToast(true)
 setAnnounceToChat(true)
