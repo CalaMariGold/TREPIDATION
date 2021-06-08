@@ -13,3 +13,11 @@ bowlOreDict.add(<minecraft:bowl>);
 
 val treeLeavesOreDict = <ore:treeLeaves>;
 treeLeavesOreDict.add(<nethercraft:glowood_leaves>);
+
+val coalOreDict = <ore:coal>;
+coalOreDict.add(<nethercraft:foulite_dust>);
+coalOreDict.add(<minecraft:coal>);
+coalOreDict.add(<minecraft:coal:1>);
+
+val paperOreDict = <ore:paper>;
+paperOreDict.add(<nethercraft:lava_paper>);
