@@ -15,7 +15,7 @@ difficulty:2
 fancyGraphics:true
 ao:2
 renderClouds:false
-resourcePacks:["NewDefault+v1.41[MC1.9-1.12.2]","AudioCraftV1.5.zip","Tissou\u0027s Zombie Pack 1.12.2.zip","EnderDragonReforged_V1.2.zip","RotN_Wither.zip","TREPIDATION Resource Pack"]
+resourcePacks:["NewDefault+v1.41[MC1.9-1.12.2]","AudioCraftV1.5","Tissou\u0027s Zombie Pack 1.12.2.zip","EnderDragonReforged_V1.2.zip","RotN_Wither.zip","TREPIDATION Resource Pack"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
@@ -52,17 +52,17 @@ enableWeakAttacks:false
 autoJump:false
 narrator:0
 tutorialStep:none
-soundCategory_master:0.705298
-soundCategory_music:0.80
+soundCategory_master:0.7000001
+soundCategory_music:1.0
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0
-soundCategory_hostile:1.0
+soundCategory_hostile:0.90140843
 soundCategory_neutral:1.0
 soundCategory_player:0.70422536
 soundCategory_ambient:1.0
 soundCategory_voice:1.0
-soundCategory_ds_footsteps:0.3028169
+soundCategory_ds_footsteps:0.15492958
 soundCategory_ds_biome:1.0
 modelPart_cape:true
 modelPart_jacket:true
