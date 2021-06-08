@@ -1,7 +1,7 @@
 {
   "name": "cfg.theme.dark",
   "background": "#131313",
-  "gradientTop": "#383838",
-  "gradientBottom": "#242424",
+  "gradientTop": "#f54242",
+  "gradientBottom": "#f54242",
   "font": "#A0A0A0"
 }
