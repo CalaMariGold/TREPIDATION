@@ -718,4 +718,22 @@ helper.creator.items.delay.fadein.off = Fade-In: §cOff
 helper.creator.items.delay.fadein.on = Fade-In: §aOn
 helper.creator.items.delay.fadein.speed = Set Fade-In Speed
 
+fancymenu.helper.creator.layoutoptions.randommode.on = Random Mode: §aOn
+fancymenu.helper.creator.layoutoptions.randommode.off = Random Mode: §cOff
+fancymenu.helper.creator.layoutoptions.randommode.btn.desc = Pick a random layout of the same%n%group when the menu gets opened.%n%%n%Can be used to randomize%n%backgrounds and other elements.
+fancymenu.helper.creator.layoutoptions.randommode.setgroup = Set Random Group
+fancymenu.helper.creator.layoutoptions.randommode.setgroup.btn.desc = Set the group of this random layout.%n%One layout per group gets picked%n%when the menu gets opened.
+fancymenu.helper.creator.layoutoptions.randommode.onlyfirsttime.on = Randomize Only First Time: §aOn
+fancymenu.helper.creator.layoutoptions.randommode.onlyfirsttime.off = Randomize Only First Time: §cOff
+fancymenu.helper.creator.layoutoptions.randommode.onlyfirsttime.btn.desc = If layouts of this random group%n%should be random everytime the%n%menu gets opened or if only one layout%n%should be picked the first time%n%the menu gets opened.
+
+fancymenu.helper.creator.backgroundoptions.backgroundanimation.set = Set Background
+fancymenu.helper.creator.backgroundoptions.backgroundanimation.set.desc = Sets the selected animation%n%as active background animation.
+fancymenu.helper.creator.backgroundoptions.backgroundanimation.clear = Clear
+fancymenu.helper.creator.backgroundoptions.backgroundanimation.clear.desc = Removes the currently%n%active background animation.
+
+
+
+
+
 

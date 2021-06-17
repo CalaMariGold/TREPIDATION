@@ -16,7 +16,7 @@ I:defaultguiscale = '-1';
 
 ##[customization]
 
-B:showcustomizationbuttons = 'true';
+B:showcustomizationbuttons = 'false';
 
 
 ##[mainmenu]
@@ -52,14 +52,14 @@ S:customgameintroskiptext = '';
 ##[minecraftwindow]
 
 [A minecraft restart is required after changing this value.]
-S:customwindowtitle = '';
+S:customwindowtitle = 'TREPIDATION v0.1';
 [A minecraft restart is required after changing this value.]
 B:customwindowicon = 'false';
 
 
 ##[layouteditor]
 
-B:editordeleteconfirmation = 'true';
+B:editordeleteconfirmation = 'false';
 [If the warning when trying to move an vanilla button without an orientation should be displayed or not.]
 B:showvanillamovewarning = 'true';
 
