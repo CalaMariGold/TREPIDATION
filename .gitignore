@@ -2,6 +2,7 @@
 /optionsof.txt
 /knownkeys.txt
 .curseclient
+/llibrary/
 /.mixin.out/
 /logs
 minecraftinstance.json
@@ -26,3 +27,9 @@ mods/LagGoggles-1.12.2-5.8-132.jar
 config/LagGoggles-server.cfg
 config/LagGoggles-client.cfg
 mods/TickCentral-3.2.jar
+manifest.json
+modlist.html
+mods/OptiFine_1.12.2_HD_U_G6_pre1.jar
+mods/Sound-Physics-1.12.2-1.0.10.jar
+.ReAuth.cfg
+concheckrmd
