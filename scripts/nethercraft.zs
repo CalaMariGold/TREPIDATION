@@ -10,6 +10,10 @@ var purple_glowshroom = <nethercraft:purple_glowshroom>;
 // Glow Stew Recipe
 recipes.addShapeless("glowstew", <nethercraft:glow_stew>,[green_glowshroom, purple_glowshroom, <ore:bowlWood>]);
 
+recipes.remove(<minecraft:mushroom_stew>);
+recipes.addShapeless("mushroom_stew_new", <minecraft:mushroom_stew>,[<ore:mushroomAny>,<ore:mushroomAny>, <ore:bowlWood>]);
+
+
 
 // Ghast Bones Drop
 Dropt.list("ghast_bones")
