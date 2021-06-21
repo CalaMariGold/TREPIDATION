@@ -1,3 +1,4 @@
 title @p times 40 120 60
 title @p subtitle {"text":"Diapers recommended.", "color":"yellow"}
 title @p title {"text":"The Deep Dark", "bold":false, "italic":false, "color":"white"}
+give @p timeisup:timer_bonus 10
