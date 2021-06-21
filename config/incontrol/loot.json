@@ -1,1 +1,13 @@
-[]
+[
+    {
+        "mob": "nethercraft:camoflague_spider",
+        "remove": "minecraft:string"
+    },
+    {
+        "mob":"nethercraft:camoflague_spider",
+        "player": true,
+        "item": "minecraft:string",
+        "itemcount": "3"
+     }
+
+]
