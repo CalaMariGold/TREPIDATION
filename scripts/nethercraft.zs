@@ -1,6 +1,9 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
+import crafttweaker.block.IBlockDefinition;
 import mods.dropt.Dropt;
+import mods.jei.JEI;
+
 
 
 var green_glowshroom = <nethercraft:green_glowshroom>;
@@ -26,3 +29,8 @@ Dropt.list("ghast_bones")
       )
   );
 <nethercraft:ghast_bones>.addTooltip("Sometimes drops from bone blocks");
+
+
+
+val glowood_log as IItemStack = <nethercraft:glowood_log>;
+glowood_log.hardness = 1;
