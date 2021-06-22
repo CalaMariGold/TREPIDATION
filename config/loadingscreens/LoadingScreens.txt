@@ -1,0 +1,2 @@
+background = addStretchedTexture("top_left", "trepidation:world_loading.png")
+background.setRelRender(1, 1)

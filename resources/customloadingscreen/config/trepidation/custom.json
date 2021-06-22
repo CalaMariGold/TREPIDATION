@@ -1,0 +1,13 @@
+{
+    "renders": [
+        "trepidation/bg",
+        "trepidation/loading_bar_bg",
+        "trepidation/loading_bar",
+        "trepidation/tips"
+    ],
+    "variables": {},
+    "functions": [],
+    "factories": [
+    ],
+    "actions": []
+}
