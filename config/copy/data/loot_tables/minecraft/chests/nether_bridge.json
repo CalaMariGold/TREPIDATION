@@ -1,0 +1,148 @@
+{
+  "pools": [
+    {
+      "name": "main",
+      "entries": [
+        {
+          "entryName": "nethercraft:linium_ingot",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 1.0,
+                "max": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "nethercraft:linium_ingot"
+        },
+        {
+          "entryName": "nethercraft:pyridium_ingot",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 1.0,
+                "max": 5.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "nethercraft:pyridium_ingot"
+        },
+        {
+          "entryName": "nethercraft:neridium_ingot",
+          "weight": 15,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 1.0,
+                "max": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "nethercraft:neridium_ingot"
+        },
+        {
+          "entryName": "nethercraft:pyridium_sword",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "nethercraft:pyridium_sword"
+        },
+        {
+          "entryName": "nethercraft:neridium_chestplate",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "nethercraft:neridium_chestplate"
+        },
+        {
+          "entryName": "realistictorches:matchbox",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "realistictorches:matchbox"
+        },
+        {
+          "entryName": "minecraft:arrow",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 3.0,
+                "max": 7.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:arrow"
+        },
+        {
+          "entryName": "timeisup:timer_bonus",
+          "weight": 3,
+          "quality": 0,
+          "type": "item",
+          "name": "timeisup:timer_bonus"
+        },
+        {
+          "entryName": "cyclicmagic:charm_antidote",
+          "weight": 1,
+          "quality": 0,
+          "type": "item",
+          "name": "cyclicmagic:charm_antidote"
+        },
+        {
+          "entryName": "nethercraft:pyridium_bow",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "nethercraft:pyridium_bow"
+        },
+        {
+          "entryName": "nethercraft:devil_bread",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 1.0,
+                "max": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "nethercraft:devil_bread"
+        },
+        {
+          "entryName": "minecraft:obsidian",
+          "weight": 2,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 2.0,
+                "max": 4.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:obsidian"
+        }
+      ],
+      "rolls": 10.0
+    }
+  ]
+}

@@ -28,33 +28,7 @@
     "Invert Blacklist": false,
     "Requires Tools": true,
     "Griefing": false,
-    "Grief Targets": [
-      "minecraft:chest",
-      "minecraft:furnace",
-      "minecraft:crafting_table",
-      "minecraft:melon_stem",
-      "minecraft:pumpkin_stem",
-      "minecraft:fence_gate",
-      "minecraft:melon_block",
-      "minecraft:pumpkin",
-      "minecraft:glass",
-      "minecraft:glass_pane",
-      "minecraft:stained_glass",
-      "minecraft:stained_glass_pane",
-      "minecraft:carrots",
-      "minecraft:potatoes",
-      "minecraft:brewing_stand",
-      "minecraft:enchanting_table",
-      "minecraft:cake",
-      "minecraft:ladder",
-      "minecraft:wooden_door",
-      "minecraft:farmland",
-      "minecraft:bookshelf",
-      "minecraft:sapling",
-      "minecraft:bed",
-      "minecraft:fence",
-      "minecraft:planks"
-    ],
+    "Grief Targets": [],
     "Demolition": 0.1,
     "Spider Webbing": 25.0,
     "Ender-Tele-Target": true,
@@ -78,27 +52,23 @@
   },
   "entities": {
     "minecraft:polar_bear": {
-      "Digging": true,
-      "Griefing": true
+      "Digging": true
     },
     "minecraft:vindication_illager": {
       "Digging": true,
-      "Griefing": true,
       "Pillaring": true
     },
     "nethercraft:bloody_zombie": {
       "Digging": true,
-      "Griefing": true,
       "Pillaring": true,
-      "Infectious": true
+      "Infectious": true,
+      "Pillar Block": "nethercraft:nether_dirt"
     },
     "primitivemobs:mimic": {
-      "Digging": true,
-      "Griefing": true
+      "Digging": true
     },
     "primitivemobs:goblin": {
       "Digging": true,
-      "Griefing": true,
       "Demolition": 0.05,
       "Pillaring": true
     },
@@ -107,15 +77,15 @@
     },
     "minecraft:zombie_pigman": {
       "Pillaring": true,
-      "Infectious": true
+      "Digging": true,
+      "Infectious": true,
+      "Pillar Block": "nethercraft:nether_dirt"
     },
     "minecraft:wither_skeleton": {
-      "Digging": true,
-      "Griefing": true
+      "Digging": true
     },
     "primitivemobs:skeleton_warrior": {
       "Digging": true,
-      "Griefing": true,
       "Demolition": 0.05,
       "Pillaring": true
     },
@@ -124,31 +94,27 @@
     },
     "nethercraft:dark_zombie": {
       "Digging": true,
-      "Griefing": true,
       "Pillaring": true,
-      "Infectious": true
+      "Infectious": true,
+      "Pillar Block": "nethercraft:nether_dirt"
     },
     "minecraft:zombie_villager": {
       "Digging": true,
-      "Griefing": true,
       "Demolition": 0.05,
       "Pillaring": true,
       "Infectious": true
     },
     "minecraft:silverfish": {
-      "Digging": true,
-      "Griefing": true
+      "Digging": true
     },
     "minecraft:zombie": {
       "Digging": true,
-      "Griefing": true,
       "Demolition": 0.05,
       "Pillaring": true,
       "Infectious": true
     },
     "minecraft:husk": {
       "Digging": true,
-      "Griefing": true,
       "Infectious": true
     },
     "minecraft:enderman": {
@@ -156,7 +122,6 @@
     },
     "quark:dweller": {
       "Digging": true,
-      "Griefing": true,
       "Pillaring": true,
       "Infectious": true
     }
