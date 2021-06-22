@@ -1,5 +1,5 @@
 setIcon(<erebus:umberstone>)
-setTitle("Austrailia Simulator")
+setTitle("Australia Simulator")
 setDescription("Enter The Erebus")
 
 addParent("triumph:advancements/dimensions/nether")
