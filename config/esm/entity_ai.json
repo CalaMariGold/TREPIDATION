@@ -1,7 +1,7 @@
 {
   "default": {
-    "Awareness Radius": 16,
-    "Xray Distance": 16,
+    "Awareness Radius": 12,
+    "Xray Distance": 8,
     "Attack Everything": false,
     "Attack Pets": true,
     "Attack Villagers": false,
@@ -22,7 +22,7 @@
       "minecraft:mining_fatigue:300:2"
     ],
     "Pillaring": false,
-    "Pillar Block": "minecraft:cobblestone:0",
+    "Pillar Block": "minecraft:dirt",
     "Digging": false,
     "Digging Blacklist": [],
     "Invert Blacklist": false,
@@ -77,11 +77,6 @@
     "Debug Targets": false
   },
   "entities": {
-    "zombie_players:zombie_player": {
-      "Digging": true,
-      "Griefing": true,
-      "Pillaring": true
-    },
     "minecraft:polar_bear": {
       "Digging": true,
       "Griefing": true
@@ -94,7 +89,8 @@
     "nethercraft:bloody_zombie": {
       "Digging": true,
       "Griefing": true,
-      "Pillaring": true
+      "Pillaring": true,
+      "Infectious": true
     },
     "primitivemobs:mimic": {
       "Digging": true,
@@ -110,7 +106,8 @@
       "Spider Webbing": 0.15
     },
     "minecraft:zombie_pigman": {
-      "Pillaring": true
+      "Pillaring": true,
+      "Infectious": true
     },
     "minecraft:wither_skeleton": {
       "Digging": true,
@@ -128,13 +125,15 @@
     "nethercraft:dark_zombie": {
       "Digging": true,
       "Griefing": true,
-      "Pillaring": true
+      "Pillaring": true,
+      "Infectious": true
     },
     "minecraft:zombie_villager": {
       "Digging": true,
       "Griefing": true,
       "Demolition": 0.05,
-      "Pillaring": true
+      "Pillaring": true,
+      "Infectious": true
     },
     "minecraft:silverfish": {
       "Digging": true,
@@ -149,7 +148,8 @@
     },
     "minecraft:husk": {
       "Digging": true,
-      "Griefing": true
+      "Griefing": true,
+      "Infectious": true
     },
     "minecraft:enderman": {
       "Pillaring": true
@@ -157,7 +157,8 @@
     "quark:dweller": {
       "Digging": true,
       "Griefing": true,
-      "Pillaring": true
+      "Pillaring": true,
+      "Infectious": true
     }
   }
 }
