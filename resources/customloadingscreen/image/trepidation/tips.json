@@ -3,7 +3,7 @@
     "image": "customloadingscreen:font/ascii.png",
     "position_type": "CENTER",
     "offset_pos": "CENTER",
-    "text": "(has_tips() ? tip(floor(time / 10)) : '')",
+    "text": "(has_tips() ? tip(floor(time / 50)) : '')",
     "position": {
         "x": "0",
         "y": "screen_height * 0.5 - 10",
