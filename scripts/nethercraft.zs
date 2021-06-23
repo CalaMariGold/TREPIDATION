@@ -39,7 +39,7 @@ glowood_log.hardness = 1;
 
 recipes.remove(<minecraft:arrow>);
 
-recipes.addShaped("newarrow", <minecraft:arrow>,
+recipes.addShaped("newarrow", <minecraft:arrow>*4,
 [[null,<ore:arrowIngredient>,null],
 [null,<ore:stickWood>,null],
 [null,<ore:feather>,null]
