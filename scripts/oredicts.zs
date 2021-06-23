@@ -2,10 +2,12 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 
 
+val cobbleOreDict = <ore:cobblestone>;
+cobbleOreDict.remove(<erebus:umberstone:1>);
+
 
 val logOreDict = <ore:logWood>;
 logOreDict.add(<nethercraft:glowood_log>);
-
 
 val stickOreDict = <ore:stickWood>;
 stickOreDict.add(<nethercraft:glowood_stick>);
