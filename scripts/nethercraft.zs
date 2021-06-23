@@ -4,7 +4,10 @@ import crafttweaker.block.IBlockDefinition;
 import mods.dropt.Dropt;
 import mods.jei.JEI;
 
-
+JEI.removeAndHide(<nethercraft:imp_helmet>);
+JEI.removeAndHide(<nethercraft:imp_chestplate>);
+JEI.removeAndHide(<nethercraft:imp_leggings>);
+JEI.removeAndHide(<nethercraft:imp_boots>);
 
 var green_glowshroom = <nethercraft:green_glowshroom>;
 var purple_glowshroom = <nethercraft:purple_glowshroom>;
