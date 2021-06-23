@@ -88,7 +88,7 @@ INIT() {
 	barrier_block:0 = [it(), "pickaxe:4", 8.0, /0, true];
 	barrier_block:1 = [it(), "pickaxe:5", 8.0, /0, true];
 	barrier_block:2 = [it(), "pickaxe:6", 8.0, /0, true];
-	barrier_block:3 = [it(), "pickaxe:7", 8.0, /0, true];
+	barrier_block:3 = [it(), "pickaxe:99", 8.0, 100, true];
 
 	
 	!custom block layers
@@ -97,6 +97,7 @@ INIT() {
 	add("basicLayer", -1, "dimstack:bedrock@0", [126, 126, 127, 127]#);
 	add("basicLayer", 5, "dimstack:bedrock@1", [126, 126, 127, 127]#);
 	add("basicLayer", 10, "dimstack:bedrock@2", [254, 254, 255, 255]#);
+	add("basicLayer", 0, "dimstack:bedrock@3", [254, 254, 255, 255]#);
 	
 	!remove the '!' in the following line to enable top half nether generation
 	!netherTop();
