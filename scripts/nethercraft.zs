@@ -34,3 +34,12 @@ Dropt.list("ghast_bones")
 
 val glowood_log as IItemStack = <nethercraft:glowood_log>;
 glowood_log.hardness = 1;
+
+// Quartz Arrow Recipe
+recipes.addShaped("quartzarrow", <minecraft:arrow>,
+[[null,<minecraft:quartz>,null],
+[null,<ore:stickWood>,null],
+[null,<nethercraft:red_feather>,null]
+]);
+
+
