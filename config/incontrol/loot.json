@@ -7,7 +7,31 @@
         "mob":"nethercraft:camouflage_spider",
         "player": true,
         "item": "minecraft:string",
-        "itemcount": "3"
-     }
+        "itemcount": "1-3"
+     },
 
+    {
+        "mob":"nethercraft:dark_zombie",
+        "remove": "nethercraft:red_feather"
+    },
+    {
+        "mob":"nethercraft:dark_zombie",
+        "player": true,
+        "item": "nethercraft:red_feather",
+        "itemcount": "1-3"
+    },
+    {    
+        "mob":"nethercraft:bloody_zombie",
+        "remove": "nethercraft:red_feather"
+    },
+    {
+        "mob":"nethercraft:bloody_zombie",
+        "player": true,
+        "item": "nethercraft:red_feather",
+        "itemcount": "2-4"
+    
+    }
+    
+    
+    
 ]
