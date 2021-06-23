@@ -1,1 +1,13 @@
-[]
+[
+
+    {
+        "dimension": 1,
+        "mobs": [
+          {
+            "mob": "grue:entitygrue",
+            "weight": 50
+          }
+        ]
+      }
+
+]

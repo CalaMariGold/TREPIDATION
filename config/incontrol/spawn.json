@@ -11,6 +11,45 @@
     {
         "mob": "nethercraft:tribal_warrior",
         "result": "deny"
-    }
+    },
+    {
+        "dimension": 1,
+        "mob": ["minecraft:sheep","minecraft:cow","minecraft:pig","minecraft:chicken","minecraft:parrot","minecraft:wolf","zombie","witch","spider","skeleton","creeper"],
+        "result": "deny",
+        "onjoin":"true"
+    },
+
+
+    {
+        "dimension": 1,
+        "mob": "minecraft:enderman",
+        "minheight": 20,
+        "result": "default"
+     },
+     {
+        "dimension": 1,
+        "mob": "minecraft:enderman",
+        "result": "deny"
+     },
+
+
+
+     {
+        "dimension": 1,
+        "mob": "grue:entitygrue",
+        "maxheight": 5,
+        "maxcount": {
+            "amount": 50,
+            "perplayer": true
+        },
+        "onjoin":"true",
+        "result": "allow"
+     },
+     {
+        "dimension": 1,
+        "mob": "grue:entitygrue",
+        "onjoin":"true",
+        "result": "deny"
+     }
 
 ]
