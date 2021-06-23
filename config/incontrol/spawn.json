@@ -2,15 +2,18 @@
 
     {
         "mob": "nethercraft:imp",
+        "onjoin":"true",
         "result": "deny"
     },
     {
         "mob": "nethercraft:tribal_trainee",
+        "onjoin":"true",
         "result": "deny"
     },
     {
         "mob": "nethercraft:tribal_warrior",
-        "result": "deny"
+        "result": "deny",
+        "onjoin":"true"
     },
     {
         "dimension": 1,
