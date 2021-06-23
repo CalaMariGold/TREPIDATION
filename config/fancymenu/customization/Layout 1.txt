@@ -18,7 +18,7 @@ customization {
   buttonaction = opengui
   x = 114
   width = 145
-  actionid = bc6de5d0-b51c-45ba-826b-900fabe551af1624387129121
+  actionid = 9fe4d8a3-a6ae-40f1-af6c-bef58ae9397c1624418124559
   action = addbutton
   y = -41
   backgroundhovered = resources/trepidation/play_alone_hovered.png
@@ -33,7 +33,7 @@ customization {
   buttonaction = opengui
   x = 83
   width = 205
-  actionid = 790a5a89-b456-40e8-8dbd-51dbbeea6c791624387129121
+  actionid = 35a1fee7-0529-4f4c-afa7-dc78d79535451624418124566
   action = addbutton
   y = 1
   backgroundhovered = resources/trepidation/play_together_hovered.png
@@ -46,13 +46,14 @@ customization {
 customization {
   orientation = mid-left
   buttonaction = quitgame
-  x = 138
-  width = 98
-  actionid = 5da5ab53-81cf-47f6-8fbe-6a586ba4cdca1624387129121
-  action = addbutton
-  y = 83
   backgroundhovered = resources/trepidation/escape_hovered.png
   label = 
+  hoverlabel = 
+  x = 0
+  width = 236
+  actionid = 42de0363-0bc6-4244-9b74-ca367f8a3a051624418124566
+  action = addbutton
+  y = 83
   backgroundnormal = resources/trepidation/escape.png
   value = 
   height = 24
@@ -63,7 +64,7 @@ customization {
   buttonaction = opengui
   x = 135
   width = 104
-  actionid = 674623bd-b567-4e01-987d-516b1afcfdbd1624387129122
+  actionid = 8a0f0a04-b00b-48f6-b42b-42dbe90b0b1a1624418124567
   action = addbutton
   y = 43
   backgroundhovered = resources/trepidation/options_hovered.png
@@ -81,7 +82,7 @@ customization {
   label = v0.1.3
   x = 0
   width = 29
-  actionid = 1dda69e7-5cdf-4f5c-bad0-9c72ceba0c9b1624387129122
+  actionid = d8f82b65-ee88-4d7e-b01d-12f917e6955a1624418124568
   action = addbutton
   y = -12
   backgroundnormal = resources/trepidation/transparent.png
