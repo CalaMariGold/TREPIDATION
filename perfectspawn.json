@@ -1,0 +1,36 @@
+{
+    "general":{
+
+    },
+    "rules":[
+        {
+            "appliesTo":[
+                10
+            ],
+            "respawnDimension": 10
+        },
+        {
+            "appliesTo":[
+                0
+            ],
+            "respawnDimension": 0
+        },
+        {
+            "appliesTo":[
+                5
+            ],
+            "respawnDimension": 5
+        },
+        {
+            "appliesTo":[
+                1
+            ],
+            "respawnDimension": 1,
+            "spawnpoint": {
+                "posX": 0,
+                "posY": 68,
+                "posZ": 0
+            }
+        }
+    ]
+}
