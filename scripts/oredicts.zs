@@ -24,3 +24,9 @@ coalOreDict.add(<minecraft:coal:1>);
 
 val paperOreDict = <ore:paper>;
 paperOreDict.add(<nethercraft:lava_paper>);
+
+val arrow_ingredientOreDict = <ore:arrowIngredient>;
+arrow_ingredientOreDict.add(<minecraft:flint>, <minecraft:quartz>, <erebus:materials:2>);
+
+val featherOreDict = <ore:feather>;
+featherOreDict.add(<nethercraft:red_feather>, <erebus:materials:6>);
