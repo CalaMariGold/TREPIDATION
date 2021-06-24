@@ -17,7 +17,7 @@
     },
     {
         "dimension": 1,
-        "mob": ["minecraft:sheep","minecraft:cow","minecraft:pig","minecraft:chicken","minecraft:parrot","minecraft:wolf","zombie","witch","spider","skeleton","creeper"],
+        "mob": ["minecraft:sheep","minecraft:cow","minecraft:pig","minecraft:chicken","minecraft:parrot","minecraft:wolf","zombie","witch","spider","skeleton","creeper","villager"],
         "result": "deny",
         "onjoin":"true"
     },

@@ -12,7 +12,7 @@
             },
             "jed": {
                 "CanRespawnHere": true,
-                "CanSleepHere": "false"
+                "CanSleepHere": false
             }
         }
     ]
