@@ -52,7 +52,7 @@ S:customgameintroskiptext = '';
 ##[minecraftwindow]
 
 [A minecraft restart is required after changing this value.]
-S:customwindowtitle = 'TREPIDATION v0.1.3';
+S:customwindowtitle = 'TREPIDATION v0.1.5';
 [A minecraft restart is required after changing this value.]
 B:customwindowicon = 'false';
 
