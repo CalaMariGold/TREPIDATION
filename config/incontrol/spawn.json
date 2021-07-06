@@ -1,6 +1,12 @@
 [
 
     {
+        "mob": ["minecraf:wither_skeleton"],
+        "helditem": ["nethercraft:pyridium_sword"],
+        "onjoin":"true"
+    },
+
+    {
         "mob": "nethercraft:imp",
         "onjoin":"true",
         "result": "deny"
