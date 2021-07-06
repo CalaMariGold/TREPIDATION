@@ -12,7 +12,7 @@
             {
               "count": {
                 "min": 1.0,
-                "max": 3.0
+                "max": 2.0
               },
               "function": "minecraft:set_count"
             }
@@ -28,7 +28,7 @@
             {
               "count": {
                 "min": 1.0,
-                "max": 5.0
+                "max": 4.0
               },
               "function": "minecraft:set_count"
             }
@@ -104,7 +104,7 @@
         },
         {
           "entryName": "nethercraft:pyridium_bow",
-          "weight": 5,
+          "weight": 4,
           "quality": 0,
           "type": "item",
           "name": "nethercraft:pyridium_bow"
@@ -142,7 +142,7 @@
           "name": "minecraft:obsidian"
         }
       ],
-      "rolls": 10.0
+      "rolls": 8.0
     }
   ]
 }
