@@ -86,7 +86,6 @@
     },
     "primitivemobs:skeleton_warrior": {
       "Digging": true,
-      "Demolition": 0.05,
       "Pillaring": true
     },
     "minecraft:spider": {
