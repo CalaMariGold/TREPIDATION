@@ -29,7 +29,7 @@
     "Requires Tools": true,
     "Griefing": false,
     "Grief Targets": [],
-    "Demolition": 0.1,
+    "Demolition": 0.0,
     "Spider Webbing": 25.0,
     "Ender-Tele-Target": true,
     "Infectious": false,
@@ -115,7 +115,8 @@
     },
     "minecraft:husk": {
       "Digging": true,
-      "Infectious": true
+      "Infectious": true,
+      "Demolition": 0.05
     },
     "minecraft:enderman": {
       "Pillaring": true
@@ -123,7 +124,8 @@
     "quark:dweller": {
       "Digging": true,
       "Pillaring": true,
-      "Infectious": true
+      "Infectious": true,
+      "Demolition": 0.05
     }
   }
 }
