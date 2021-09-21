@@ -25,14 +25,14 @@
     },
     {
         "dimension": 1,
-        "mob": ["minecraft:sheep","minecraft:cow","minecraft:pig","minecraft:chicken","minecraft:parrot","minecraft:wolf","zombie","witch","spider","skeleton","creeper","villager"],
+        "mob": ["minecraft:sheep","minecraft:cow","minecraft:pig","minecraft:chicken","minecraft:parrot","minecraft:wolf","zombie","witch","spider","skeleton","creeper","villager","srparasites:beckon_si","srparasites:beckon_sii","srparasites:beckon_siii","srparasites:beckon_siv"],
         "result": "deny",
         "onjoin":"true"
     },
 
     {
         "dimension": [0,1,5,10],
-        "mob": ["primitivemobs:festive_creeper"],
+        "mob": ["primitivemobs:festive_creeper","primitivemobs:flame_spewer"],
         "result": "deny",
         "onjoin":"true"
     },
@@ -58,7 +58,7 @@
         "maxheight": 5,
         "maxcount": {
             "amount": 50,
-            "perplayer": true
+            "perchunk": true
         },
         "onjoin":"true",
         "result": "allow"
@@ -68,7 +68,74 @@
         "mob": "grue:entitygrue",
         "onjoin":"true",
         "result": "deny"
+     },
+
+     {
+        "dimension": 0,
+        "mob": ["minecraft:sheep","minecraft:cow","minecraft:pig","minecraft:chicken"],
+        "block": ["minecraft:grass","minecraft:snow","biomesoplenty:grass","minecraft:dirt"],
+        "random": "0.01",
+        "maxcount": {
+            "amount": 20,
+            "perchunk": true
+        },
+        "result": "allow"
+     },
+     {
+        "dimension": 0,
+        "mob": ["minecraft:sheep","minecraft:cow","minecraft:pig","minecraft:chicken"],
+        "result": "deny"
+     },
+
+     {
+        "dimension": 0,
+        "mob": "srparasites:beckon_si",
+        "random": "0.08",
+        "maxcount": {
+            "amount": 30,
+            "perchunk": true
+        },
+        "result": "allow"
+     },
+     {
+        "dimension": 0,
+        "mob": "srparasites:beckon_si",
+        "result": "deny"
+     },
+
+     {
+        "dimension": 0,
+        "mob": "srparasites:beckon_sii",
+        "random": "0.01",
+        "maxcount": {
+            "amount": 20,
+            "perchunk": true
+        },
+        "result": "allow"
+     },
+     {
+        "dimension": 0,
+        "mob": "srparasites:beckon_sii",
+        "result": "deny"
+     },
+
+     {
+        "dimension": 0,
+        "mob": "srparasites:beckon_siv",
+        "random": "0.001",
+        "maxcount": {
+            "amount": 15,
+            "perchunk": true
+        },
+        "result": "allow"
+     },
+     {
+        "dimension": 0,
+        "mob": "srparasites:beckon_siv",
+        "result": "deny"
      }
+
+     
 
 
      

@@ -9,6 +9,7 @@ Escape now
 Let your guard down
 You're being followed
 Relax while you can
+Behind you
 It's coming
 You're running out of time
 Tick Tock
@@ -21,7 +22,7 @@ It's always behind you
 What are you running from?
 It's watching you
 Don't Panic
-Panic.
+Panic
 Move faster
 Ascend and escape
 Time to go

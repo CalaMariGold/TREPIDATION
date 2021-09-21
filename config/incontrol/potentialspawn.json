@@ -8,6 +8,71 @@
             "weight": 50
           }
         ]
+      },
+
+      {
+        "dimension": 0,
+        "mobs": [
+          {
+            "mob": "srparasites:beckon_si",
+            "weight": 90
+          }
+        ]
+      },
+      {
+        "dimension": 0,
+        "mobs": [
+          {
+            "mob": "srparasites:beckon_sii",
+            "weight": 60
+          }
+        ]
+      },
+      {
+        "dimension": 0,
+        "mobs": [
+          {
+            "mob": "srparasites:beckon_siv",
+            "weight": 30
+          }
+        ]
+      },
+
+      {
+        "dimension": 0,
+        "mobs": [
+          {
+            "mob": "minecraft:sheep",
+            "weight": 40
+          }
+        ]
+      },
+      {
+        "dimension": 0,
+        "mobs": [
+          {
+            "mob": "minecraft:pig",
+            "weight": 40
+          }
+        ]
+      },
+      {
+        "dimension": 0,
+        "mobs": [
+          {
+            "mob": "minecraft:cow",
+            "weight": 40
+          }
+        ]
+      },
+      {
+        "dimension": 0,
+        "mobs": [
+          {
+            "mob": "minecraft:chicken",
+            "weight": 40
+          }
+        ]
       }
 
 ]
