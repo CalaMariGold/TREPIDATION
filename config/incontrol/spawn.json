@@ -30,6 +30,13 @@
         "onjoin":"true"
     },
 
+    {
+        "dimension": [0,1,5,10],
+        "mob": ["primitivemobs:festive_creeper"],
+        "result": "deny",
+        "onjoin":"true"
+    },
+
 
     {
         "dimension": 1,
@@ -62,5 +69,8 @@
         "onjoin":"true",
         "result": "deny"
      }
+
+
+     
 
 ]
