@@ -15,7 +15,7 @@ difficulty:2
 fancyGraphics:true
 ao:2
 renderClouds:false
-resourcePacks:["NewDefault+v1.41[MC1.9-1.12.2]","AudioCraftV1.5","Tissou\u0027s Zombie Pack 1.12.2.zip","RotN_Wither.zip","TREPIDATION Resource Pack"]
+resourcePacks:["NewDefault+v1.41[MC1.9-1.12.2].zip","AudioCraftV1.5.zip","Tissou\u0027s Zombie Pack 1.12.2.zip","RotN_Wither.zip","Endermen_404.zip","TREPIDATION Resource Pack"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
