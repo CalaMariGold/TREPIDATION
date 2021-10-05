@@ -1,5 +1,5 @@
 setIcon(<minecraft:skull, meta:5>)
-setTitle("The End")
+setTitle("There Is Escape")
 setDescription("Enter The End")
 
 addParent("triumph:advancements/dimensions/overworld")

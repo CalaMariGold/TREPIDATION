@@ -1,5 +1,5 @@
 setIcon(<srparasites:parasitestain, meta:2>)
-setTitle("Parasitic Environment")
+setTitle("Natural Selection")
 setDescription("Enter The Overworld")
 
 addParent("triumph:advancements/dimensions/deepdark")
