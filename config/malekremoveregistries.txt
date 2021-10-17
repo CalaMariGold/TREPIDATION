@@ -5,3 +5,12 @@ nethercraft:w_obsidian_chestplate
 nethercraft:w_obsidian_ingot
 nethercraft:w_obsidian_helmet
 nethercraft:w_obsidian_leggings
+nethercraft:linium_ore
+nethercraft:linium_block
+nethercraft:linium_ingot
+nethercraft:linium_sword
+nethercraft:linium_pickaxe
+nethercraft:linium_axe
+nethercraft:linium_shovel
+nethercraft:linium_hoe 
+nethercraft:linium_bow
