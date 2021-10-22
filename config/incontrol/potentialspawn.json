@@ -33,7 +33,7 @@
         "mobs": [
           {
             "mob": "srparasites:beckon_siv",
-            "weight": 30
+            "weight": 20
           }
         ]
       },

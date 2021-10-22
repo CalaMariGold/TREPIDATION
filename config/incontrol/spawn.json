@@ -122,9 +122,9 @@
      {
         "dimension": 0,
         "mob": "srparasites:beckon_siv",
-        "random": "0.001",
+        "random": "0.0005",
         "maxcount": {
-            "amount": 15,
+            "amount": 10,
             "perchunk": true
         },
         "result": "allow"
