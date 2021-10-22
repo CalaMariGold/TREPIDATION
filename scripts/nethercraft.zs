@@ -20,6 +20,15 @@ recipes.remove(<minecraft:mushroom_stew>);
 recipes.addShapeless("mushroom_stew_new", <minecraft:mushroom_stew>,[<ore:mushroomAny>,<ore:mushroomAny>, <ore:bowlWood>]);
 
 
+// Slab
+recipes.addShapedMirrored("glowood_slab", <minecraft:wooden_slab>*6,
+[[<nethercraft:glowood_planks>,<nethercraft:glowood_planks>,<nethercraft:glowood_planks>],
+[null,null,null],
+[null,null,null]
+]);
+
+
+
 
 // Ghast Bones Drop
 Dropt.list("ghast_bones")
