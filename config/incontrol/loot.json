@@ -30,8 +30,14 @@
         "item": "nethercraft:red_feather",
         "itemcount": "2-4"
     
-    }
-    
+    },
+    {
+        "mob":"erebus:erebus.beetle",
+        "player": true,
+        "item": "erebus:materials@1",
+        "random": "0.75",
+        "itemcount": "1"
+     }
     
     
 ]
