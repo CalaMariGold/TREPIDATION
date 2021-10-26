@@ -1,6 +1,6 @@
 setIcon(<srparasites:parasitestain, meta:2>)
 setTitle("Natural Selection")
-setDescription("Enter The Overworld")
+setDescription("Reach The Surface")
 
 addParent("triumph:advancements/dimensions/deepdark")
 

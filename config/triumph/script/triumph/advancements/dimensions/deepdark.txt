@@ -1,6 +1,6 @@
 setIcon(<beneath:teleporterbeneath>)
 setTitle("Living Shadows")
-setDescription("Enter The Deep Dark")
+setDescription("Reach The Deep Dark")
 
 addParent("triumph:advancements/dimensions/erebus")
 

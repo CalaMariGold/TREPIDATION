@@ -1,6 +1,6 @@
 setIcon(<erebus:umberstone>)
 setTitle("In Plain Sight")
-setDescription("Enter The Erebus")
+setDescription("Reach The Erebus")
 
 addParent("triumph:advancements/dimensions/nether")
 

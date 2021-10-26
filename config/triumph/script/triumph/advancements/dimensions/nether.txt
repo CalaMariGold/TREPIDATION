@@ -1,6 +1,6 @@
 setIcon(<minecraft:netherrack>)
 setTitle("We Must Go Higher")
-setDescription("Begin your journey.")
+setDescription("Begin your journey")
 
 addParent("triumph:advancements/dimensions/root")
 
