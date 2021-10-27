@@ -1,0 +1,39 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiCreateWorld
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  orientation = bottom-centered
+  shadow = false
+  x = 3
+  actionid = 6a6dfdc0-9ce4-40bf-a62e-a5148f4406211635294413259
+  action = addtext
+  y = -46
+  scale = 1.0
+  alignment = centered
+  value = don't change or customize World Type.
+}
+
+customization {
+  orientation = bottom-centered
+  shadow = false
+  x = 3
+  actionid = 81786b23-fadb-4b02-9fd6-1863452a1c4c1635294831357
+  action = addtext
+  y = -56
+  scale = 1.0
+  alignment = centered
+  value = For the intended experience,
+}
+
