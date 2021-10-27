@@ -9,3 +9,9 @@ net.minecraft.client.gui.GuiWorldSelection {
 net.minecraft.client.gui.GuiCreateWorld {
 }
 
+net.optifine.gui.GuiChatOF {
+}
+
+com.legacy.nethercraft.client.gui.GuiNetherCrafting {
+}
+
