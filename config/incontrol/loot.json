@@ -7,8 +7,18 @@
         "mob":"nethercraft:camouflage_spider",
         "player": true,
         "item": "minecraft:string",
-        "itemcount": "1-3"
+        "itemcount": "2-3"
      },
+
+     {
+        "mob":"minecraft:ghast",
+        "remove": "nethercraft:ghast_bones"
+    },
+    {
+        "mob":"minecraft:ghast",
+        "item": "nethercraft:ghast_bones",
+        "itemcount": "3-4"
+    },
 
     {
         "mob":"nethercraft:dark_zombie",
