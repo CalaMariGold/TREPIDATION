@@ -15,3 +15,9 @@ net.optifine.gui.GuiChatOF {
 com.legacy.nethercraft.client.gui.GuiNetherCrafting {
 }
 
+net.minecraft.client.gui.inventory.GuiContainerCreative {
+}
+
+net.minecraft.client.gui.inventory.GuiInventory {
+}
+
