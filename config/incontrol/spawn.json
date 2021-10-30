@@ -10,6 +10,17 @@
         "mob": "nethercraft:imp",
         "result": "deny",
         "onjoin":"true"
+    },
+    {
+        "mob": "nethercraft:lava_slime",
+        "result": "deny",
+        "onjoin":"true"
+    },
+    {
+        "mob": "minecraft:zombie",
+        "dimension": -1,
+        "result": "deny",
+        "onjoin":"true"
         
     },
     {
