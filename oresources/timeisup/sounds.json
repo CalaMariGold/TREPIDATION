@@ -1,0 +1,13 @@
+{
+  "timer": {
+    "replace": true,
+    "sounds": [
+    	{
+    		"name": "timeisup:bell",
+    		"volume": 1.0,
+        "pitch": 1.0
+      }
+    ],
+    "subtitle": "subtitles.timer"
+   }
+}
