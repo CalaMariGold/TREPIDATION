@@ -9,6 +9,11 @@ JEI.removeAndHide(<nethercraft:imp_chestplate>);
 JEI.removeAndHide(<nethercraft:imp_leggings>);
 JEI.removeAndHide(<nethercraft:imp_boots>);
 
+
+furnace.addRecipe(<contenttweaker:scrambled_slime_eggs>, <nethercraft:slime_eggs>, 0.5);
+recipes.addShapeless("deviled_egg_sandwish", <contenttweaker:deviled_egg_sandwish>,[<contenttweaker:scrambled_slime_eggs>, <nethercraft:devil_bread>, <minecraft:magma_cream>]);
+
+
 var green_glowshroom = <nethercraft:green_glowshroom>;
 var purple_glowshroom = <nethercraft:purple_glowshroom>;
 

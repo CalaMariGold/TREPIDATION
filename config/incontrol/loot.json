@@ -9,6 +9,13 @@
         "item": "minecraft:string",
         "itemcount": "2-3"
      },
+     {
+        "mob":"minecraft:magma_cube",
+        "player": true,
+        "item": "nethercraft:slime_eggs",
+        "random": "0.75",
+        "itemcount": "1"
+     },
 
      {
         "mob":"minecraft:ghast",
