@@ -1,0 +1,39 @@
+type = menu
+
+customization-meta {
+  identifier = net.optifine.gui.GuiPerformanceSettingsOF
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  orientation = top-centered
+  shadow = false
+  x = -100
+  actionid = 73b47768-4510-42f7-ae30-341464e3d3fb1635955033882
+  action = addtext
+  y = 182
+  scale = 1.0
+  alignment = left
+  value = Only touch this if you know what you're doing!
+}
+
+customization {
+  orientation = top-centered
+  shadow = false
+  x = -104
+  actionid = 9bbfdd35-135d-46b3-a17b-21c7788a89a51635955068434
+  action = addtext
+  y = 194
+  scale = 1.0
+  alignment = left
+  value = These options were already set for the best fps
+}
+

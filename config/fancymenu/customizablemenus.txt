@@ -24,3 +24,6 @@ net.minecraft.client.gui.inventory.GuiInventory {
 net.minecraft.client.gui.GuiOptions {
 }
 
+net.optifine.gui.GuiPerformanceSettingsOF {
+}
+
