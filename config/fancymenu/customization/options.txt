@@ -18,8 +18,8 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   buttonaction = copyfile
-  x = -132
-  width = 130
+  x = -153
+  width = 150
   actionid = df00e6a0-7e08-45e7-933a-0a7a626abb5c1635954030698
   action = addbutton
   y = 106
@@ -34,7 +34,7 @@ customization {
   restartbackgroundanimations = true
   buttonaction = copyfile
   x = 6
-  width = 130
+  width = 150
   actionid = df00e6a0-7e08-45e7-933a-0a7a626abb5c1635954030698
   action = addbutton
   y = 106
