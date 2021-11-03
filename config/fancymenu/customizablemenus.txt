@@ -27,3 +27,6 @@ net.minecraft.client.gui.GuiOptions {
 net.optifine.gui.GuiPerformanceSettingsOF {
 }
 
+net.minecraft.client.gui.GuiVideoSettings {
+}
+
