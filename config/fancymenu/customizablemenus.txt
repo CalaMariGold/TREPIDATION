@@ -21,3 +21,6 @@ net.minecraft.client.gui.inventory.GuiContainerCreative {
 net.minecraft.client.gui.inventory.GuiInventory {
 }
 
+net.minecraft.client.gui.GuiOptions {
+}
+

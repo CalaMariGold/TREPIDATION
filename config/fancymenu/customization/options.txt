@@ -1,0 +1,57 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiOptions
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  orientation = mid-centered
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = copyfile
+  x = -132
+  width = 130
+  actionid = df00e6a0-7e08-45e7-933a-0a7a626abb5c1635954030698
+  action = addbutton
+  y = 106
+  label = Switch to regular font
+  value = font_selection/bitter/smoothfont.cfg;config/smoothfont/smoothfont.cfg
+  height = 19
+}
+
+customization {
+  orientation = mid-centered
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = copyfile
+  x = 6
+  width = 130
+  actionid = df00e6a0-7e08-45e7-933a-0a7a626abb5c1635954030698
+  action = addbutton
+  y = 106
+  label = Switch to scary font (default)
+  value = font_selection/october_crow/smoothfont.cfg;config/smoothfont/smoothfont.cfg
+  height = 19
+}
+
+customization {
+  orientation = mid-centered
+  shadow = false
+  x = -44
+  actionid = 77456e86-89bd-4359-911f-96d269ec7de61635954594744
+  action = addtext
+  y = 127
+  scale = 1.0
+  alignment = left
+  value = Requires game restart!
+}
+
