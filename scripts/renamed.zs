@@ -7,7 +7,7 @@ import mods.jei.JEI;
 
 <contenttweaker:scrambled_slime_eggs>.displayName = "Scrambled Slime Eggs";
 
-<contenttweaker:deviled_egg_sandwish>.displayName = "§cDeviled Egg Sandwich";
+<contenttweaker:deviled_egg_sandwich>.displayName = "§cDeviled Egg Sandwich";
 <nethercraft:slime_eggs>.addTooltip("Can be thrown or used to make a delicious meal!");
 
 <nethercraft:devil_bread>.addTooltip("Goes really well with Slime Eggs!");
