@@ -79,7 +79,7 @@ customization {
   buttonaction = openlink
   backgroundhovered = resources/trepidation/transparent.png
   description = Click to view changelog
-  label = v0.1.8.1
+  label = v0.1.9
   x = 0
   width = 29
   actionid = d8f82b65-ee88-4d7e-b01d-12f917e6955a1624418124568
