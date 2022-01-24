@@ -14,3 +14,4 @@ nethercraft:linium_axe
 nethercraft:linium_shovel
 nethercraft:linium_hoe 
 nethercraft:linium_bow
+minecraft:ender_eye

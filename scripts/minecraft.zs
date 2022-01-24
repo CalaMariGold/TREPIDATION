@@ -6,6 +6,9 @@ import mods.jei.JEI;
 import mods.rockytweaks.Anvil;
 import mods.ltt.LootTable;
 
+JEI.removeAndHide(<minecraft:ender_eye>);
+LootTable.removeGlobalItem("minecraft:ender_eye");
+
 val stone as IItemStack = <minecraft:stone:*>;
 stone.hardness = 5.5;
 
