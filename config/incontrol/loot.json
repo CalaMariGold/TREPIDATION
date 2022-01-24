@@ -1,5 +1,12 @@
 [
     {
+        "mob":"minecraft:enderman",
+        "player": true,
+        "item": "cyclicmagic:charm_void",
+        "itemcount": "1",
+        "random": "0.1"
+    },
+    {
         "mob":"primitivemobs:festive_creeper",
         "player": true,
         "item": "artifacts:shiny_red_balloon",
