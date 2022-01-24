@@ -5,3 +5,4 @@ contenttweaker:deviled_egg_sandwich
 nethercraft:devil_bread
 cyclicmagic:charm_fire
 artifacts:flame_pendant
+artifacts:shiny_red_balloon

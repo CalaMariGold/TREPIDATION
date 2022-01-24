@@ -10,9 +10,5 @@ import mods.ltt.LootTable;
 JEI.removeAndHide(<artifacts:magma_stone>);
 JEI.removeAndHide(<artifacts:fire_gauntlet>);
 
-JEI.removeAndHide(<cyclicmagic:charm_air>);
-JEI.removeAndHide(<cyclicmagic:charm_boat>);
-
-
 
 
