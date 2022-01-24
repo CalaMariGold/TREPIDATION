@@ -80,13 +80,6 @@
           "name": "timeisup:timer_bonus"
         },
         {
-          "entryName": "cyclicmagic:charm_antidote",
-          "weight": 1,
-          "quality": 0,
-          "type": "item",
-          "name": "cyclicmagic:charm_antidote"
-        },
-        {
           "entryName": "nethercraft:pyridium_bow",
           "weight": 4,
           "quality": 0,

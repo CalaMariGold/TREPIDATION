@@ -1,5 +1,12 @@
 [
     {
+        "mob":"minecraft:wither_skeleton",
+        "player": true,
+        "item": "cyclicmagic:charm_antidote",
+        "itemcount": "1",
+        "random": "0.1"
+    },
+    {
         "mob": "nethercraft:camouflage_spider",
         "remove": "minecraft:string"
     },
@@ -48,6 +55,18 @@
         "itemcount": "2-4"
     
     },
+
+
+
+
+
+
+
+
+
+
+
+
     {
         "mob":"erebus:erebus.beetle",
         "player": true,
