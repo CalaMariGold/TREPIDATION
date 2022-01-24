@@ -1,5 +1,26 @@
 [
     {
+        "mob":"primitivemobs:festive_creeper",
+        "player": true,
+        "item": "artifacts:shiny_red_balloon",
+        "itemcount": "1",
+        "random": "0.25"
+    },
+    {
+        "mob":"primitivemobs:blazing_juggernaut",
+        "player": true,
+        "item": "artifacts:flame_pendant",
+        "itemcount": "1",
+        "random": "0.1"
+    },
+    {
+        "mob":"primitivemobs:flame_spewer",
+        "player": true,
+        "item": "cyclicmagic:charm_flame",
+        "itemcount": "1",
+        "random": "0.25"
+    },
+    {
         "mob":"minecraft:wither_skeleton",
         "player": true,
         "item": "cyclicmagic:charm_antidote",
