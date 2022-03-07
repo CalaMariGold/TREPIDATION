@@ -32,6 +32,8 @@ key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
 key_of.key.zoom:46
+key_Reload Menu | CTRL + ALT + :19
+key_Toggle Customization Overlay | CTRL + ALT + :27
 key_Options.Reload:27
 key_Force Play:0
 key_Options.Shortcut1:0
@@ -45,6 +47,7 @@ key_Options.Ocarina3:0
 key_Options.Ocarina4:0
 key_Options.Ocarina5:0
 key_keybind.baublesinventory:48
+key_quark.keybind.lockBuilding:0
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -63,7 +66,6 @@ key_quark.emote.dab:0
 key_quark.emote.jet:0
 key_quark.emote.exorcist:0
 key_quark.emote.zombie:0
-key_quark.keybind.lockBuilding:0
 key_quark.keybind.dropoff:0
 key_quark.keybind.changeHotbar:0
 key_quark.keybind.chestSort:0
@@ -71,14 +73,14 @@ key_quark.keybind.chestDropoff:0
 key_quark.keybind.chestMerge:0
 key_quark.keybind.chestRestock:0
 key_quark.keybind.chestExtract:0
-key_key.erebus.glide:34
+key_keys.baubleshud.config:73
+key_key.erebus.glide:0
 key_key.erebus.poweredglide:35
-key_key.erebus.beetleram:19
+key_key.erebus.beetleram:0
 key_key.erebus.beetlemine:56
 key_Difficulty Meter - Show:0
 key_Difficulty Meter - Show Always:0
 key_Reload Default Sound Device:25
-key_Toggle StepUp:0
 key_key.toastcontrol.clear:0
 key_treechop.key.toggle_chopping:0
 key_treechop.key.toggle_felling:0
@@ -86,8 +88,8 @@ key_treechop.key.cycle_sneak_behavior:0
 key_treechop.key.open_settings_overlay:0
 key_walljump.key.walljump:42
 key_key.dismount:42
-key_smoothfont.key.guiOpen:0
-key_key.reveal:34
+key_smoothfont.key.guiOpen:77
+key_key.reveal:0
 key_key.jei.toggleOverlay:24:CONTROL
 key_key.jei.focusSearch:33:CONTROL
 key_key.jei.toggleCheatMode:0
@@ -99,7 +101,26 @@ key_key.jei.previousPage:201
 key_key.jei.nextPage:209
 key_key.jei.bookmark:30
 key_key.jei.toggleBookmarkOverlay:0
+key_key.keyExtraInvo:45
+key_key.keyWheel:0
+key_key.keyExtraCraftin:0
 key_key.elenaidodge2.dodge:56
+key_keybind.enderskills.skill_bound.rotate_right:35
+key_keybind.enderskills.skill_bound.rotate_left:34
+key_keybind.enderskills.skill_bound.use_1:2:SHIFT
+key_keybind.enderskills.skill_bound.use_2:3:SHIFT
+key_keybind.enderskills.skill_bound.use_3:4:SHIFT
+key_keybind.enderskills.skill_bound.use_4:5:SHIFT
+key_keybind.enderskills.skill_bound.use_5:6:SHIFT
+key_keybind.enderskills.skill_bound.use_6:7:SHIFT
+key_keybind.enderskills.skill_bound.use_7:8:SHIFT
+key_keybind.enderskills.skill_bound.use_8:9:SHIFT
+key_keybind.enderskills.skill_bound.use_9:10:SHIFT
+key_keybind.enderskills.skill_bound.assisted_upgrade:29
+key_keybind.enderskills.skill_bound.hide_overlay:0
+key_keybind.enderskills.skill_bound.dash:29
+key_keybind.enderskills.skill_bound.warp:44
+key_keybind.enderskills.skill_bound.smash:42
 key_FpsReducer.key.guiOpen:0
 key_FpsReducer.key.forceIdle:0
 key_waila.keybind.wailaconfig:43
@@ -114,20 +135,29 @@ key_key.quit:1
 key_key.hideHUD:59
 key_key.debugScreen:61
 key_key.narrator:48:CONTROL
-key_gui.xaero_switch_waypoint_set:0
-key_gui.xaero_instant_waypoint:78
-key_gui.xaero_toggle_slime:0
-key_gui.xaero_toggle_grid:0
-key_gui.xaero_toggle_waypoints:0
-key_gui.xaero_toggle_map_waypoints:0
-key_gui.xaero_toggle_map:0
-key_gui.xaero_enlarge_map:44
-key_gui.xaero_waypoints_key:22
-key_gui.xaero_zoom_in:0
-key_gui.xaero_zoom_out:0
-key_gui.xaero_new_waypoint:0
-key_gui.xaero_display_all_sets:0
-key_gui.xaero_toggle_light_overlay:0
-key_gui.xaero_minimap_settings:0
-key_Profile GUI:210
+key_teamsmod.keyhud.desc:47
+key_teamsmod.keycompass.desc:50
+key_teamsmod.keyaccept.desc:27
+key_teamsmod.keyswitch.desc:19
+key_Eatkey:0
+key_Spitkey:0
 key_key.fullscreenwindowed.unused:0
+soundCategory_master:0.49668875
+soundCategory_music:0.0
+soundCategory_record:1.0
+soundCategory_weather:1.0
+soundCategory_block:1.0
+soundCategory_hostile:0.7
+soundCategory_neutral:1.0
+soundCategory_player:0.7
+soundCategory_ambient:1.0
+soundCategory_voice:1.0
+soundCategory_ds_footsteps:0.15
+soundCategory_ds_biome:1.0
+modelPart_cape:true
+modelPart_jacket:true
+modelPart_left_sleeve:true
+modelPart_right_sleeve:true
+modelPart_left_pants_leg:true
+modelPart_right_pants_leg:true
+modelPart_hat:true
