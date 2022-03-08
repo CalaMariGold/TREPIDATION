@@ -6,21 +6,21 @@
         "player": true,
         "item": "enderskills:token",
         "itemcount": "1",
-        "random": "0.1"
+        "random": "0.25"
     },
     {
         "mob":"minecraft:wither_skeleton",
         "player": true,
         "item": "enderskills:token",
         "itemcount": "1",
-        "random": "0.1"
+        "random": "0.25"
     },
     {
         "mob":"primitivemobs:flame_spewer",
         "player": true,
         "item": "enderskills:token",
         "itemcount": "1",
-        "random": "0.2"
+        "random": "0.25"
     },
 
 
