@@ -1,1 +1,41 @@
-[]
+[
+    {
+        "mob":"primitivemobs:blazing_juggernaut",
+        "addxp": 15
+    },
+    {
+        "mob":"minecraft:wither_skeleton",
+        "addxp": 10
+    },
+    {
+        "mob":"primitivemobs:flame_spewer",
+        "addxp": 25
+    },
+    {
+        "mob":"nethercraft:camouflage_spider",
+        "addxp": 5
+    },
+    {
+        "mob":"primitivemobs:festive_creeper",
+        "addxp": 5
+    },
+    {
+        "mob":"minecraft:blaze",
+        "addxp": 10
+    },
+    {
+        "mob":"minecraft:zombie_pigman",
+        "addxp": 5
+    },
+    {
+        "mob":"nethercraft:dark_zombie",
+        "addxp": 5
+    },
+
+
+    {
+        "mob":"minecraft:enderman",
+        "addxp": 50
+    }
+
+]

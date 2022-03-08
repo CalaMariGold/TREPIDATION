@@ -1,4 +1,30 @@
 [
+    // All Traces of Death Drops
+    // EVENTUALLY ALL TRACES OF DEATH DROPS WILL BE FROM BOSSES ONLY
+    {
+        "mob":"primitivemobs:blazing_juggernaut",
+        "player": true,
+        "item": "enderskills:token",
+        "itemcount": "1",
+        "random": "0.1"
+    },
+    {
+        "mob":"minecraft:wither_skeleton",
+        "player": true,
+        "item": "enderskills:token",
+        "itemcount": "1",
+        "random": "0.1"
+    },
+    {
+        "mob":"primitivemobs:flame_spewer",
+        "player": true,
+        "item": "enderskills:token",
+        "itemcount": "1",
+        "random": "0.2"
+    },
+
+
+    // End
     {
         "mob":"minecraft:enderman",
         "player": true,
@@ -6,6 +32,19 @@
         "itemcount": "1",
         "random": "0.1"
     },
+
+
+    // Erebus
+    {
+        "mob":"erebus:erebus.beetle",
+        "player": true,
+        "item": "erebus:materials@1",
+        "random": "0.85",
+        "itemcount": "1"
+    },
+
+
+    // Nether
     {
         "mob":"primitivemobs:festive_creeper",
         "player": true,
@@ -22,14 +61,14 @@
     },
     {
         "mob":"primitivemobs:flame_spewer",
+        "removeall": true
+    },
+    {
+        "mob":"primitivemobs:flame_spewer",
         "player": true,
         "item": "cyclicmagic:charm_fire",
         "itemcount": "1",
         "random": "0.50"
-    },
-    {
-        "mob":"primitivemobs:flame_spewer",
-        "remove": ["minecraft:diamond","minecraft:gunpowder"]
     },
     {
         "mob":"minecraft:wither_skeleton",
@@ -86,26 +125,6 @@
         "item": "nethercraft:red_feather",
         "itemcount": "2-4"
     
-    },
-
-
-
-
-
-
-
-
-
-
-
-
-    {
-        "mob":"erebus:erebus.beetle",
-        "player": true,
-        "item": "erebus:materials@1",
-        "random": "0.75",
-        "itemcount": "1"
-     }
-    
+    }
     
 ]
