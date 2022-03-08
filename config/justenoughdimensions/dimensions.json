@@ -8,7 +8,8 @@
                 "name": "Nether (JED)",
                 "suffix": "_dim-1",
                 "keeploaded": false,
-                "worldprovider": "WorldProviderHellJED"
+                "worldprovider": "WorldProviderHellJED",
+                "worldinfo_onetime": {}
             },
             "jed": {
                 "CanRespawnHere": true,
