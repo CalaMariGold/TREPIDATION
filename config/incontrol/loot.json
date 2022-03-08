@@ -23,9 +23,13 @@
     {
         "mob":"primitivemobs:flame_spewer",
         "player": true,
-        "item": "cyclicmagic:charm_flame",
+        "item": "cyclicmagic:charm_fire",
         "itemcount": "1",
         "random": "0.50"
+    },
+    {
+        "mob":"primitivemobs:flame_spewer",
+        "remove": ["minecraft:diamond","minecraft:gunpowder"]
     },
     {
         "mob":"minecraft:wither_skeleton",
