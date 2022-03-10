@@ -9,7 +9,7 @@
     },
     {
         "mob":"primitivemobs:flame_spewer",
-        "addxp": 25
+        "addxp": 30
     },
     {
         "mob":"nethercraft:camouflage_spider",
@@ -17,19 +17,23 @@
     },
     {
         "mob":"primitivemobs:festive_creeper",
-        "addxp": 5
+        "addxp": 7
     },
     {
         "mob":"minecraft:blaze",
-        "addxp": 10
+        "addxp": 15
     },
     {
         "mob":"minecraft:zombie_pigman",
-        "addxp": 5
+        "addxp": 7
     },
     {
         "mob":"nethercraft:dark_zombie",
         "addxp": 5
+    },
+    {
+        "mob":"nethercraft:bloody_zombie",
+        "addxp": 3
     },
 
 
