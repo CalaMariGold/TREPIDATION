@@ -45,6 +45,7 @@
 
 
     // Nether
+    //Baubles
     {
         "mob":"primitivemobs:festive_creeper",
         "player": true,
@@ -77,6 +78,18 @@
         "itemcount": "1",
         "random": "0.20"
     },
+
+    // Misc
+    {
+        "mob": "minecraft:magma_cube",
+        "remove": "minecraft:magma_cream"
+    },
+    {
+        "mob":"minecraft:blaze",
+        "player": true,
+        "item": "minecraft:fire_charge",
+        "itemcount": "2-3"
+    },
     {
         "mob": "nethercraft:camouflage_spider",
         "remove": "minecraft:string"
@@ -107,7 +120,7 @@
 
     {
         "mob":"nethercraft:dark_zombie",
-        "remove": "nethercraft:red_feather"
+        "remove": ["nethercraft:red_feather","nethercraft:dark_seeds"]
     },
     {
         "mob":"nethercraft:dark_zombie",
@@ -117,7 +130,7 @@
     },
     {    
         "mob":"nethercraft:bloody_zombie",
-        "remove": "nethercraft:red_feather"
+        "remove": ["nethercraft:red_feather","nethercraft:dark_seeds"]
     },
     {
         "mob":"nethercraft:bloody_zombie",

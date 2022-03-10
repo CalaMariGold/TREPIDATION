@@ -9,9 +9,16 @@ JEI.removeAndHide(<nethercraft:imp_chestplate>);
 JEI.removeAndHide(<nethercraft:imp_leggings>);
 JEI.removeAndHide(<nethercraft:imp_boots>);
 
+recipes.remove(<minecraft:magma_cream>);
+recipes.addShapeless("magma_cream", <minecraft:magma_cream>,[<minecraft:blaze_powder>, <nethercraft:slime_eggs>]);
 
-furnace.addRecipe(<contenttweaker:scrambled_slime_eggs>, <nethercraft:slime_eggs>, 0.5);
-recipes.addShapeless("deviled_egg_sandwich", <contenttweaker:deviled_egg_sandwich>,[<contenttweaker:scrambled_slime_eggs>, <nethercraft:devil_bread>, <minecraft:magma_cream>]);
+recipes.remove(<minecraft:fire_charge>);
+recipes.addShapeless("fire_charge", <minecraft:fire_charge>*3,[<minecraft:blaze_powder>, <minecraft:gunpowder>]);
+
+recipes.addShapeless("gunpowder", <minecraft:gunpowder>*5,[<minecraft:tnt>]);
+
+furnace.addRecipe(<contenttweaker:scrambled_magma_eggs>, <nethercraft:slime_eggs>, 0.5);
+recipes.addShapeless("deviled_egg_sandwich", <contenttweaker:deviled_egg_sandwich>,[<contenttweaker:scrambled_magma_eggs>, <nethercraft:devil_bread>, <minecraft:magma_cream>]);
 
 
 var green_glowshroom = <nethercraft:green_glowshroom>;

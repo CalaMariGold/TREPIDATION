@@ -3,6 +3,8 @@ import crafttweaker.item.IItemStack;
 import mods.jei.JEI;
 import mods.vanillaanvilrepair.addRepairEntry;
 
+JEI.removeAndHide(<erebus:death_compass>);
+
 recipes.remove(<erebus:umber_furnace>);
 recipes.addShaped("umber_furnace", <erebus:umber_furnace>,
 [[<erebus:umberstone:1>,<erebus:umberstone:1>,<erebus:umberstone:1>],

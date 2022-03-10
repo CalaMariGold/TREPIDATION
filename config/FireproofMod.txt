@@ -1,4 +1,4 @@
-contenttweaker:scrambled_slime_eggs
+contenttweaker:scrambled_magma_eggs
 minecraft:magma_cream
 nethercraft:slime_eggs
 contenttweaker:deviled_egg_sandwich
