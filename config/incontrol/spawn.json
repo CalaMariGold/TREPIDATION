@@ -82,6 +82,13 @@
      },
 
      {
+         "dimension":0,
+         "mob": ["minecraft:zombie","minecraft:spider","minecraft:creeper","minecraft:slime","minecraft:skeleton"],
+         "onjoin": true,
+         "result": "deny"
+     },
+
+     {
         "dimension": 0,
         "mob": ["minecraft:sheep","minecraft:cow","minecraft:pig","minecraft:chicken"],
         "block": ["minecraft:grass","minecraft:snow","biomesoplenty:grass","minecraft:dirt"],
