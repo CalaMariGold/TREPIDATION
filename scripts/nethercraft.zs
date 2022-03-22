@@ -40,7 +40,15 @@ recipes.addShapedMirrored("glowood_slab", <minecraft:wooden_slab>*6,
 ]);
 
 
+// Remove Glowood Sapling Drop
+Dropt.list("no_glowood_sapling")
 
+  .add(Dropt.rule()
+    .matchBlocks(["nethercraft:glowood_leaves:*"])
+    .matchDrops([<nethercraft:glowood_sapling>])
+    .replaceStrategy("REPLACE_ITEMS")
+    .addDrop(Dropt.drop())
+  );
 
 // Ghast Bones Drop
 Dropt.list("ghast_bones")
