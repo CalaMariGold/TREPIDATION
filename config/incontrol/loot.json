@@ -81,6 +81,10 @@
 
     // Misc
     {
+        "mob": "minecraft:wither_skeleton",
+        "remove": "minecraft:bone"
+    },
+    {
         "mob": "minecraft:magma_cube",
         "remove": "minecraft:magma_cream"
     },
