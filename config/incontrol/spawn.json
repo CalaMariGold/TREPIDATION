@@ -99,10 +99,16 @@
 
      {
          "dimension":0,
-         "mob": ["minecraft:zombie","minecraft:spider","minecraft:creeper","minecraft:slime","minecraft:skeleton","minecraft:zombie_villager"],
+         "mob": ["minecraft:zombie","minecraft:spider","minecraft:creeper","minecraft:slime","minecraft:skeleton","minecraft:zombie_villager","minecraft:witch"],
          "onjoin": true,
          "result": "deny"
      },
+     {
+        "dimension":0,
+        "mod": "primitivemobs",
+        "onjoin": true,
+        "result": "deny"
+    },
 
      {
         "dimension": 0,
