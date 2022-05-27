@@ -1,309 +1,162 @@
 {
-  "music.(deepdark)anxiety_kevinmacleod": {
+  "music.deepdark_anxiety_kevinmacleod": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(deepdark)anxiety_kevinmacleod",
+			"name": "musictriggers:music/deepdark_anxiety_kevinmacleod",
 			"stream": true
 		}]
 	},
-  "music.(deepdark)apprehensionkevinmacleod": {
+  "music.deepdark_apprehensionkevinmacleod": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(deepdark)apprehensionkevinmacleod",
+			"name": "musictriggers:music/deepdark_apprehensionkevinmacleod",
 			"stream": true
 		}]
 	},
-  "music.(deepdark)childrenstheme_kevinmacleod": {
+  "music.deepdark_childrenstheme_kevinmacleod": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(deepdark)childrenstheme_kevinmacleod",
+			"name": "musictriggers:music/deepdark_childrenstheme_kevinmacleod",
 			"stream": true
 		}]
 	},
-  "music.(deepdark)classichorror3_kevinmacleod": {
+  "music.deepdark_classichorror3_kevinmacleod": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(deepdark)classichorror3_kevinmacleod",
+			"name": "musictriggers:music/deepdark_classichorror3_kevinmacleod",
 			"stream": true
 		}]
 	},
-  "music.(deepdark)deepnoise_kevinmacleod": {
+  "music.deepdark_deepnoise_kevinmacleod": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(deepdark)deepnoise_kevinmacleod",
+			"name": "musictriggers:music/deepdark_deepnoise_kevinmacleod",
 			"stream": true
 		}]
 	},
-  "music.(deepdark)distanttension_kevinmacleod": {
+  "music.deepdark_distanttension_kevinmacleod": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(deepdark)distanttension_kevinmacleod",
+			"name": "musictriggers:music/deepdark_distanttension_kevinmacleod",
 			"stream": true
 		}]
 	},
-  "music.(deepdark)eveningofchaos_kevinmacleod": {
+  "music.deepdark_eveningofchaos_kevinmacleod": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(deepdark)eveningofchaos_kevinmacleod",
+			"name": "musictriggers:music/deepdark_eveningofchaos_kevinmacleod",
 			"stream": true
 		}]
 	},
-  "music.(erebus)awkwardmeeting_kevinmacleod": {
+  "music.erebus_awkwardmeeting_kevinmacleod": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(erebus)awkwardmeeting_kevinmacleod",
+			"name": "musictriggers:music/erebus_awkwardmeeting_kevinmacleod",
 			"stream": true
 		}]
 	},
-  "music.(erebus)controlledchaos_kevinmacleod": {
+  "music.erebus_controlledchaos_kevinmacleod": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(erebus)controlledchaos_kevinmacleod",
+			"name": "musictriggers:music/erebus_controlledchaos_kevinmacleod",
 			"stream": true
 		}]
 	},
-  "music.(erebus)dopplerette_kevinmacleod": {
+  "music.erebus_dopplerette_kevinmacleod": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(erebus)dopplerette_kevinmacleod",
+			"name": "musictriggers:music/erebus_dopplerette_kevinmacleod",
 			"stream": true
 		}]
 	},
-  "music.(erebus)echoesoftime_kevinmacleod": {
+  "music.erebus_echoesoftime_kevinmacleod": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(erebus)echoesoftime_kevinmacleod",
+			"name": "musictriggers:music/erebus_echoesoftime_kevinmacleod",
 			"stream": true
 		}]
 	},
-  "music.(erebus)heartofthebeast_kevinmacleod": {
+  "music.erebus_heartofthebeast_kevinmacleod": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(erebus)heartofthebeast_kevinmacleod",
+			"name": "musictriggers:music/erebus_heartofthebeast_kevinmacleod",
 			"stream": true
 		}]
 	},
-  "music.(nether)aftermath_kevinmacleod": {
+  "music.mainmenu_aftermath_kevinmacleod": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(nether)aftermath_kevinmacleod",
+			"name": "musictriggers:music/mainmenu_aftermath_kevinmacleod",
 			"stream": true
 		}]
 	},
-  "music.(nether)babayaga_monst3r": {
+  "music.nether_aftermath_kevinmacleod": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(nether)babayaga_monst3r",
+			"name": "musictriggers:music/nether_aftermath_kevinmacleod",
 			"stream": true
 		}]
 	},
-  "music.(nether)darkwalk_kevinmacleod": {
+  "music.nether_babayaga_monst3r": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(nether)darkwalk_kevinmacleod",
+			"name": "musictriggers:music/nether_babayaga_monst3r",
 			"stream": true
 		}]
 	},
-  "music.(nether)wecannotdefendyou_coagmusic": {
+  "music.nether_darkwalk_kevinmacleod": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(nether)wecannotdefendyou_coagmusic",
+			"name": "musictriggers:music/nether_darkwalk_kevinmacleod",
 			"stream": true
 		}]
 	},
-  "music.(nether)youknowwhatineed_coagmusic": {
+  "music.nether_wecannotdefendyou_coagmusic": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(nether)youknowwhatineed_coagmusic",
+			"name": "musictriggers:music/nether_wecannotdefendyou_coagmusic",
 			"stream": true
 		}]
 	},
-  "music.(overworld)areyouinherewithus_coagmusic": {
+  "music.nether_youknowwhatineed_coagmusic": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(overworld)areyouinherewithus_coagmusic",
+			"name": "musictriggers:music/nether_youknowwhatineed_coagmusic",
 			"stream": true
 		}]
 	},
-  "music.(overworld)bluesizzle_kevinmacleod": {
+  "music.overworld_areyouinherewithus_coagmusic": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(overworld)bluesizzle_kevinmacleod",
+			"name": "musictriggers:music/overworld_areyouinherewithus_coagmusic",
 			"stream": true
 		}]
 	},
-  "music.(overworld)chasepulse_kevinmacleod": {
+  "music.overworld_bluesizzle_kevinmacleod": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(overworld)chasepulse_kevinmacleod",
+			"name": "musictriggers:music/overworld_bluesizzle_kevinmacleod",
 			"stream": true
 		}]
 	},
-  "music.(overworld)controlledchaos(nopercussion)_kevinmacleod": {
+  "music.overworld_chasepulse_kevinmacleod": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(overworld)controlledchaos(nopercussion)_kevinmacleod",
+			"name": "musictriggers:music/overworld_chasepulse_kevinmacleod",
 			"stream": true
 		}]
 	},
-  "music.aftermath_kevinmacleod": {
+  "music.overworld_controlledchaosnopercussion_kevinmacleod": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(nether)aftermath_kevinmacleod",
+			"name": "musictriggers:music/overworld_controlledchaosnopercussion_kevinmacleod",
 			"stream": true
 		}]
 	},
-  "music.babayaga_monst3r": {
+  "music.overworld_thearrival_monst3r": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/(nether)babayaga_monst3r",
-			"stream": true
-		}]
-	},
-  "music.darkwalk_kevinmacleod": {
-		"category": "music",
-		"sounds": [{
-			"name": "musictriggers:music/(nether)darkwalk_kevinmacleod",
-			"stream": true
-		}]
-	},
-  "music.wecannotdefendyou_coagmusic": {
-		"category": "music",
-		"sounds": [{
-			"name": "musictriggers:music/(nether)wecannotdefendyou_coagmusic",
-			"stream": true
-		}]
-	},
-  "music.youknowwhatineed_coagmusic": {
-		"category": "music",
-		"sounds": [{
-			"name": "musictriggers:music/(nether)youknowwhatineed_coagmusic",
-			"stream": true
-		}]
-	},
-  "music.anxiety_kevinmacleod": {
-		"category": "music",
-		"sounds": [{
-			"name": "musictriggers:music/(deepdark)anxiety_kevinmacleod",
-			"stream": true
-		}]
-	},
-  "music.apprehensionkevinmacleod": {
-		"category": "music",
-		"sounds": [{
-			"name": "musictriggers:music/(deepdark)apprehensionkevinmacleod",
-			"stream": true
-		}]
-	},
-  "music.childrenstheme_kevinmacleod": {
-		"category": "music",
-		"sounds": [{
-			"name": "musictriggers:music/(deepdark)childrenstheme_kevinmacleod",
-			"stream": true
-		}]
-	},
-  "music.classichorror3_kevinmacleod": {
-		"category": "music",
-		"sounds": [{
-			"name": "musictriggers:music/(deepdark)classichorror3_kevinmacleod",
-			"stream": true
-		}]
-	},
-  "music.deepnoise_kevinmacleod": {
-		"category": "music",
-		"sounds": [{
-			"name": "musictriggers:music/(deepdark)deepnoise_kevinmacleod",
-			"stream": true
-		}]
-	},
-  "music.distanttension_kevinmacleod": {
-		"category": "music",
-		"sounds": [{
-			"name": "musictriggers:music/(deepdark)distanttension_kevinmacleod",
-			"stream": true
-		}]
-	},
-  "music.eveningofchaos_kevinmacleod": {
-		"category": "music",
-		"sounds": [{
-			"name": "musictriggers:music/(deepdark)eveningofchaos_kevinmacleod",
-			"stream": true
-		}]
-	},
-  "music.awkwardmeeting_kevinmacleod": {
-		"category": "music",
-		"sounds": [{
-			"name": "musictriggers:music/(erebus)awkwardmeeting_kevinmacleod",
-			"stream": true
-		}]
-	},
-  "music.controlledchaos_kevinmacleod": {
-		"category": "music",
-		"sounds": [{
-			"name": "musictriggers:music/(erebus)controlledchaos_kevinmacleod",
-			"stream": true
-		}]
-	},
-  "music.dopplerette_kevinmacleod": {
-		"category": "music",
-		"sounds": [{
-			"name": "musictriggers:music/(erebus)dopplerette_kevinmacleod",
-			"stream": true
-		}]
-	},
-  "music.echoesoftime_kevinmacleod": {
-		"category": "music",
-		"sounds": [{
-			"name": "musictriggers:music/(erebus)echoesoftime_kevinmacleod",
-			"stream": true
-		}]
-	},
-  "music.heartofthebeast_kevinmacleod": {
-		"category": "music",
-		"sounds": [{
-			"name": "musictriggers:music/(erebus)heartofthebeast_kevinmacleod",
-			"stream": true
-		}]
-	},
-  "music.areyouinherewithus_coagmusic": {
-		"category": "music",
-		"sounds": [{
-			"name": "musictriggers:music/(overworld)areyouinherewithus_coagmusic",
-			"stream": true
-		}]
-	},
-  "music.bluesizzle_kevinmacleod": {
-		"category": "music",
-		"sounds": [{
-			"name": "musictriggers:music/(overworld)bluesizzle_kevinmacleod",
-			"stream": true
-		}]
-	},
-  "music.chasepulse_kevinmacleod": {
-		"category": "music",
-		"sounds": [{
-			"name": "musictriggers:music/(overworld)chasepulse_kevinmacleod",
-			"stream": true
-		}]
-	},
-  "music.controlledchaos(nopercussion)_kevinmacleod": {
-		"category": "music",
-		"sounds": [{
-			"name": "musictriggers:music/(overworld)controlledchaos(nopercussion)_kevinmacleod",
-			"stream": true
-		}]
-	},
-  "music.thearrival_monst3r": {
-		"category": "music",
-		"sounds": [{
-			"name": "musictriggers:music/(overworld)thearrival_monst3r",
-			"stream": true
-		}]
-	},
-  "music.(overworld)thearrival_monst3r": {
-		"category": "music",
-		"sounds": [{
-			"name": "musictriggers:music/(overworld)thearrival_monst3r",
+			"name": "musictriggers:music/overworld_thearrival_monst3r",
 			"stream": true
 		}]
 	}

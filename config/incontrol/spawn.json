@@ -82,6 +82,22 @@
      },
 
      {
+        "dimension": 10,
+        "mob": "eyesinthedarkness:eyes",
+        "random": "0.08",
+        "maxcount": {
+            "amount": 30,
+            "perchunk": true
+        },
+        "result": "allow"
+     },
+     {
+        "dimension": 10,
+        "mob": "eyesinthedarkness:eyes",
+        "result": "deny"
+     },
+
+     {
          "dimension":0,
          "mob": ["minecraft:zombie","minecraft:spider","minecraft:creeper","minecraft:slime","minecraft:skeleton","minecraft:zombie_villager"],
          "onjoin": true,
