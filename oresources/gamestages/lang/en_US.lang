@@ -1,0 +1,18 @@
+#Commands
+
+commands.gamestage.add.sender=Stage %s unlocked for %s!
+commands.gamestage.add.target=
+
+commands.gamestage.remove.sender=Stage %s removed for %s!
+commands.gamestage.remove.target=
+
+commands.gamestage.check.failure=%s does not have stage %s
+commands.gamestage.check.success=%s has stage %s
+
+commands.gamestage.info.empty=You have no stages unlocked!
+commands.gamestage.info.noplayer=No player found!
+
+commands.gamestage.clear.sender=%d stages cleared from %s
+commands.gamestage.clear.target=
+
+commands.gamestage.playeronly=Sorry, players only!
