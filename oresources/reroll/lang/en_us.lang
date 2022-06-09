@@ -1,0 +1,25 @@
+commands.reroll.usage=/reroll [lock|unlock|player|all] <playername>
+commands.reroll.permission=You do not have permission to use this command.
+commands.reroll.locked=Reroll locked! Use '/reroll unlock' to unlock yourself.
+commands.reroll.server=The server can't be rerolled.
+commands.reroll.item_required=You need dice to reroll.
+commands.reroll.cooldown=You have to wait %d seconds to use reroll again.
+commands.reroll.playernotfound=Player %s doesn't exist.
+commands.reroll.player=You have been given a new life, %s.
+commands.reroll.player.lock=Reroll locked for %s.
+commands.reroll.player.locked=%s has reroll locked. Use '/reroll unlock <player>' to unlock.
+commands.reroll.player.rerolled=You have been rerolled! Good luck.
+commands.reroll.player.unlock=Reroll unlocked for %s.
+commands.reroll.self=You have been given a new life, runner.
+commands.reroll.self.lock=Reroll locked.
+commands.reroll.self.locked=Reroll locked. Use '/reroll unlock' to unlock yourself.
+commands.reroll.self.unlock=Reroll unlocked. Be careful!
+commands.reroll.all=You have been given new lives, runners.
+
+item.reroll.dice.name=Reroll Dice
+reroll.dice.tooltip.description=Use this item to reroll.
+reroll.dice.tooltip.warning=This can't be undone!
+reroll.dice.cooldown=Trace of Life is on cooldown.
+
+reroll.death_event.player=Oh no, you died! You were rerolled on death. Good luck!
+reroll.death_event.broadcast=Oh no, %s died! Wish them luck on their new reroll.

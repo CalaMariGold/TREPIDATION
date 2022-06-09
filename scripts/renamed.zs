@@ -22,5 +22,11 @@ JEI.addDescription(<enderskills:book>,"There are 3 main classes you can delve in
 <quark:elder_prismarine:2>.displayName = "Deep Stone";
 
 // Misc
+<reroll:dice>.displayName = "§2Trace of Life";
+<reroll:dice>.removeTooltip("Use this item to reroll.");
+<reroll:dice>.removeTooltip("This can't be undone!");
+<reroll:dice>.addTooltip("Use this item to be reborn");
+<reroll:dice>.addTooltip("Does not drop on death");
+<quark:soul_compass>.addTooltip("Points to your most recent death location");
 <quark:soul_compass>.addTooltip("Does not drop on death");
 <minecraft:fire_charge>.addTooltip("Can be thrown");
