@@ -1,3 +1,23 @@
-§e# Add Your ChangeLog to §c'changelog.txt'§r in the config files
+§lTREPIDATION v0.2.3§r
+§l§nThe Performance Update!§r§r
 
-You can use Minecrafts §9Color §2Codes §6to§r §nmake your changlogs look Good.
+§eRead the detailed changelog by clicking on the version number on the main menu.§r
+
+§a§lMods§r§r
+- Removed Biomes O Plenty
+- Removed ATOP
+§4§c- Removed Dynamic Darkness §l(please read!)§r§r§r
+§cBecause of this change, shaders will be extremely recommended for the intended experience. The difference is night and day and it affects gameplay. The recommended shaders have proven to have very little effect on FPS and even works well on low-end PCs.§r
+
+- Added MPUtils
+- Added SimpleOres
+
+§a§lOther Performance Tweaks§r§r
+- Adjusted some default settings for increased shader performance
+- Optimized Entity Culling config
+- Increased TidyChunk tickspan so that there are less items laying on the floor from world gen.
+
+§a§lMisc§r§r
+- Nerfed player dodging
+- Minimally increased Blazing Juggernaut follow range
+- New ways to obtain Soul Compass (points to your death location)
