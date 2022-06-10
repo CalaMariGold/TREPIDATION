@@ -13,39 +13,3 @@ customization {
   action = backgroundoptions
 }
 
-customization {
-  orientation = mid-centered
-  shadow = false
-  x = -100
-  actionid = 244ed144-86a3-42f0-88ae-0570d447e63c1635955366432
-  action = addtext
-  y = 101
-  scale = 1.0
-  alignment = left
-  value = If you're getting bad fps/screen tearing issues
-}
-
-customization {
-  orientation = mid-centered
-  shadow = false
-  x = -88
-  actionid = fee159dc-416c-4501-add5-79e613ba20dd1635955412580
-  action = addtext
-  y = 110
-  scale = 1.0
-  alignment = left
-  value = try removing the "Dynamic Darkness" mod
-}
-
-customization {
-  orientation = mid-centered
-  shadow = false
-  x = -105
-  actionid = 0432bf75-3a5d-46f8-a52b-32df38cb513f1635955438982
-  action = addtext
-  y = 119
-  scale = 1.0
-  alignment = left
-  value = If you do this, shaders are extremly recommended
-}
-
