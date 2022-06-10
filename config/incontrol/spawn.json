@@ -113,7 +113,7 @@
      {
         "dimension": 0,
         "mob": ["minecraft:sheep","minecraft:cow","minecraft:pig","minecraft:chicken"],
-        "block": ["minecraft:grass","minecraft:snow","biomesoplenty:grass","minecraft:dirt"],
+        "block": ["minecraft:grass","minecraft:snow","minecraft:dirt"],
         "random": "0.01",
         "maxcount": {
             "amount": 20,
