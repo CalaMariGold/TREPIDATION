@@ -48,6 +48,13 @@
         "onjoin":"true"
     },
 
+    {   
+        "dimension": [-1,1,5,10],
+        "mob": ["srparasites:buglin"],
+        "result": "deny",
+        "onjoin": "true"
+    },
+
 
     {
         "dimension": 1,
