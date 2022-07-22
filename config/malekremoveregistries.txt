@@ -23,7 +23,6 @@ minecraft:repeater
 minecraft:comparator
 minecraft:redstone_lamp
 quark:lit_lamp
-cyclicmagic:clock
 minecraft:activator_rail
 minecraft:piston
 minecraft:sticky_piston
