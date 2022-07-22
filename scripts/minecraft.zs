@@ -5,6 +5,7 @@ import crafttweaker.data.IData;
 import mods.jei.JEI;
 import mods.rockytweaks.Anvil;
 import mods.ltt.LootTable;
+import mods.dropt.Dropt;
 
 JEI.removeAndHide(<minecraft:ender_eye>);
 LootTable.removeGlobalItem("minecraft:ender_eye");
@@ -32,5 +33,14 @@ val redstoneAdjacent as IItemStack[] = [<minecraft:redstone>, <minecraft:redston
 for item in redstoneAdjacent{
     recipes.remove(item);
 }
+
 JEI.removeAndHide(<minecraft:fishing_rod>);
 recipes.remove(<minecraft:carrot_on_a_stick>);
+
+Dropt.list("no_glowood_sapling")
+
+  .add(Dropt.rule()
+    .matchDrops([<minecraft:barrier>])
+    .replaceStrategy("REPLACE_ITEMS")
+    .addDrop(Dropt.drop())
+  );
