@@ -7,3 +7,9 @@ import mods.rockytweaks.Anvil;
 import mods.ltt.LootTable;
 
 JEI.hideCategory("minecraft.anvil");
+
+//removing all hoes by searching for item id's
+var hoesAll = itemUtils.getItemsByRegexRegistryName(":*_hoe$") as IItemStack[];
+for hoe in hoesAll{
+    JEI.removeAndHide(hoe);
+}
