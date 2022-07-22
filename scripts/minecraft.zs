@@ -37,10 +37,10 @@ for item in redstoneAdjacent{
 JEI.removeAndHide(<minecraft:fishing_rod>);
 recipes.remove(<minecraft:carrot_on_a_stick>);
 
-Dropt.list("no_glowood_sapling")
+Dropt.list("no_dimension_barrier")
 
   .add(Dropt.rule()
-    .matchDrops([<minecraft:barrier>])
+    .matchDrops([<dimstack:bedrock:0>.or(<dimstack:bedrock:1>).or(<dimstack:bedrock:2>).or(<dimstack:bedrock:3>)])
     .replaceStrategy("REPLACE_ITEMS")
     .addDrop(Dropt.drop())
   );
