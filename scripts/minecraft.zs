@@ -32,3 +32,5 @@ val redstoneAdjacent as IItemStack[] = [<minecraft:redstone>, <minecraft:redston
 for item in redstoneAdjacent{
     recipes.remove(item);
 }
+JEI.removeAndHide(<minecraft:fishing_rod>);
+recipes.remove(<minecraft:carrot_on_a_stick>);
