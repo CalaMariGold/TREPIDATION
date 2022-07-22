@@ -27,4 +27,8 @@ biome_cobblestone.hardness = 5.5;
 val slate as IItemStack = <quark:slate:*>;
 slate.hardness = 5.5;
 
+val redstoneAdjacent as IItemStack[] = [<minecraft:redstone>, <minecraft:redstone_block>, <minecraft:redstone_torch>, <minecraft:repeater>, <minecraft:comparator>, <minecraft:redstone_lamp>, <minecraft:activator_rail>, <minecraft:piston>, <minecraft:sticky_piston>, <minecraft:observer>, <minecraft:golden_rail>, <minecraft:detector_rail>, <minecraft:dropper>, <minecraft:dispenser>, <minecraft:clock>, <minecraft:compass>, <minecraft:noteblock>];
 
+for item in redstoneAdjacent{
+    recipes.remove(item);
+}

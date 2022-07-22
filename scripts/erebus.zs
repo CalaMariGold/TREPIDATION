@@ -4,6 +4,8 @@ import mods.jei.JEI;
 import mods.vanillaanvilrepair.addRepairEntry;
 
 JEI.removeAndHide(<erebus:death_compass>);
+recipes.remove(<erebus:liquifier>);
+recipes.remove(<erebus:bamboo_extender>);
 
 recipes.remove(<erebus:umber_furnace>);
 recipes.addShaped("umber_furnace", <erebus:umber_furnace>,

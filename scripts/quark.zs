@@ -6,6 +6,8 @@ import mods.vanillaanvilrepair.addRepairEntry;
 JEI.removeAndHide(<quark:blaze_lantern>);
 recipes.remove(<quark:holding_totem>);
 
+recipes.remove(<quark:lit_lamp>);
+
 recipes.remove(<quark:soul_powder>);
 recipes.addShapeless("soul_powder", <quark:soul_powder>*4,[<minecraft:soul_sand>,<minecraft:soul_sand>,<minecraft:soul_sand>,<quark:soul_bead>]);
 
