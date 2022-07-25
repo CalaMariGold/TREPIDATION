@@ -1,0 +1,197 @@
+{
+  "pools": [
+    {
+      "name": "main",
+      "entries": [
+        {
+          "entryName": "minecraft:book",
+          "weight": 20,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 1.0,
+                "max": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:book"
+        },
+        {
+          "entryName": "minecraft:paper",
+          "weight": 20,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 2.0,
+                "max": 7.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:paper"
+        },
+        {
+          "entryName": "minecraft:map",
+          "weight": 1,
+          "quality": 0,
+          "type": "item",
+          "name": "minecraft:map"
+        },
+        {
+          "entryName": "minecraft:book#0",
+          "weight": 10,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "levels": 30.0,
+              "treasure": true,
+              "function": "minecraft:enchant_with_levels"
+            }
+          ],
+          "name": "minecraft:book"
+        },
+        {
+          "entryName": "quark:ancient_tome",
+          "weight": 12,
+          "quality": 2,
+          "type": "item",
+          "functions": [
+            {
+              "function": "quark:enchant_tome"
+            }
+          ],
+          "name": "quark:ancient_tome"
+        },
+        {
+          "entryName": "cyclicmagic:item.charm_fire",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "cyclicmagic:charm_fire"
+        },
+        {
+          "entryName": "cyclicmagic:item.cyclic_wand_build",
+          "weight": 1,
+          "quality": 0,
+          "type": "item",
+          "name": "cyclicmagic:cyclic_wand_build"
+        },
+        {
+          "entryName": "cyclicmagic:item.ender_lightning",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "cyclicmagic:ender_lightning"
+        },
+        {
+          "entryName": "cyclicmagic:item.ender_tnt_6",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "cyclicmagic:ender_tnt_6"
+        },
+        {
+          "entryName": "cyclicmagic:item.crafting_food",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "cyclicmagic:crafting_food"
+        },
+        {
+          "entryName": "cyclicmagic:item.inventory_food",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "cyclicmagic:inventory_food"
+        },
+        {
+          "entryName": "cyclicmagic:item.evoker_fang",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "cyclicmagic:evoker_fang"
+        },
+        {
+          "entryName": "cyclicmagic:item.tool_warp_home",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "cyclicmagic:tool_warp_home"
+        },
+        {
+          "entryName": "cyclicmagic:item.tool_prospector",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "cyclicmagic:tool_prospector"
+        },
+        {
+          "entryName": "cyclicmagic:item.charm_void",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "cyclicmagic:charm_void"
+        },
+        {
+          "entryName": "cyclicmagic:item.corrupted_chorus",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "cyclicmagic:corrupted_chorus"
+        },
+        {
+          "entryName": "cyclicmagic:item.glove_climb",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "cyclicmagic:glove_climb"
+        },
+        {
+          "entryName": "cyclicmagic:item.charm_antidote",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "cyclicmagic:charm_antidote"
+        },
+        {
+          "entryName": "cyclicmagic:item.tool_push",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "cyclicmagic:tool_push"
+        },
+        {
+          "entryName": "cyclicmagic:item.charm_wing",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "cyclicmagic:charm_wing"
+        },
+        {
+          "entryName": "cyclicmagic:item.sprout_seed",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "cyclicmagic:sprout_seed"
+        },
+        {
+          "entryName": "cyclicmagic:item.tool_warp_spawn",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "cyclicmagic:tool_warp_spawn"
+        }
+      ],
+      "rolls": {
+        "min": 2.0,
+        "max": 10.0
+      }
+    }
+  ]
+}
