@@ -81,20 +81,6 @@
 
     // Misc
     {
-        "mob":"minecraft:wither_skeleton",
-        "player": true,
-        "item": "quark:soul_bead",
-        "itemcount": "1",
-        "random": "0.75"
-    },
-    {
-        "mob":"nethercraft:dark_zombie",
-        "player": true,
-        "item": "quark:soul_bead",
-        "itemcount": "1",
-        "random": "0.1"
-    },
-    {
         "mob": "minecraft:wither_skeleton",
         "remove": "minecraft:bone"
     },

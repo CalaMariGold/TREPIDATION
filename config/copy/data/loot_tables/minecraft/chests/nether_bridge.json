@@ -4,22 +4,6 @@
       "name": "main",
       "entries": [
         {
-          "entryName": "quark:soul_compass",
-          "weight": 10,
-          "quality": 0,
-          "type": "item",
-          "functions": [
-            {
-              "count": {
-                "min": 1.0,
-                "max": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "quark:soul_compass"
-        },
-        {
           "entryName": "nethercraft:pyridium_ingot",
           "weight": 5,
           "quality": 0,

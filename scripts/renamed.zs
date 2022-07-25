@@ -23,5 +23,4 @@ JEI.addDescription(<enderskills:book>,"There are 3 main classes you can delve in
 
 // Misc
 <quark:soul_compass>.addTooltip("Points to your most recent death location");
-<quark:soul_compass>.addTooltip("Does not drop on death");
 <minecraft:fire_charge>.addTooltip("Can be thrown");
