@@ -50,13 +50,6 @@
           "name": "nethercraft:neridium_chestplate"
         },
         {
-          "entryName": "realistictorches:matchbox",
-          "weight": 5,
-          "quality": 0,
-          "type": "item",
-          "name": "realistictorches:matchbox"
-        },
-        {
           "entryName": "minecraft:arrow",
           "weight": 5,
           "quality": 0,
