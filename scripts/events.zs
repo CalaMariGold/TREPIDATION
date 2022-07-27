@@ -72,7 +72,48 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
                 server.commandManager.executeCommand(server, "gamestage silentremove @p nether");
             }
         });
-        
+    }
+
+    // Erebus to Deep Dark
+    if((event.from == 5 && event.to == 10)){
+        EventManager.getInstance().onTimerTick(function(event as TickEvent){
+
+            if(event.player.hasGameStage("erebus") && event.player.hasGameStage("deepdark")){
+                var player_name = event.player.name;
+                var totalSecs = event.tick/20;
+                var minutes = (totalSecs % 3600) / 60;
+                var seconds = totalSecs % 60;
+
+                var totalSecondsElasped = 3600 - totalSecs;
+                var secondsElasped = totalSecondsElasped % 60;
+                var minutesElasped = (totalSecondsElasped % 3600) / 60;
+                event.player.sendChat(player_name + " escaped the Erebus with " + "§4" + minutes + ":" + seconds + " (" + minutesElasped + ":" + secondsElasped + ")" + " §fleft." );
+                server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Times used timer bonus: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"UsedTimerBonus\"},\"color\":\"dark_red\"}]");
+                server.commandManager.executeCommand(event.player, "seed");
+                server.commandManager.executeCommand(server, "gamestage silentremove @p erebus");
+            }
+        });
+    }
+
+    // Deep Dark to Surface
+    if((event.from == 10 && event.to == 0)){
+        EventManager.getInstance().onTimerTick(function(event as TickEvent){
+
+            if(event.player.hasGameStage("deepdark") && event.player.hasGameStage("surface")){
+                var player_name = event.player.name;
+                var totalSecs = event.tick/20;
+                var minutes = (totalSecs % 3600) / 60;
+                var seconds = totalSecs % 60;
+
+                var totalSecondsElasped = 3600 - totalSecs;
+                var secondsElasped = totalSecondsElasped % 60;
+                var minutesElasped = (totalSecondsElasped % 3600) / 60;
+                event.player.sendChat(player_name + " escaped the Deep Dark with " + "§4" + minutes + ":" + seconds + " (" + minutesElasped + ":" + secondsElasped + ")" + " §fleft." );
+                server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Times used timer bonus: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"UsedTimerBonus\"},\"color\":\"dark_red\"}]");
+                server.commandManager.executeCommand(event.player, "seed");
+                server.commandManager.executeCommand(server, "gamestage silentremove @p deepdark");
+            }
+        });
     }
 });
 

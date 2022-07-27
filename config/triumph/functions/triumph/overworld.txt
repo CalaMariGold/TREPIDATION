@@ -1,3 +1,4 @@
+gamestage silentadd @p surface
 time set 42000
 title @p times 40 120 60
 title @p subtitle {"text":"True monstrosities await", "color":"yellow"}
