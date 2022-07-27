@@ -40,6 +40,8 @@ import crafttweaker.api.event.timeisup.TickEvent;
 import crafttweaker.world.IWorldInfo;
 import crafttweaker.event.PlayerAdvancementEvent;
 
+
+// Create a scoreboard for timer bonuses used when the player first logs into the game
 events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent) {
 	if (isNull(event.player.data.firstTimeJoin)) {
         server.commandManager.executeCommand(server, "scoreboard objectives add UsedTimerBonus dummy");
@@ -47,11 +49,15 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
     }
 });
 
+
+// Output some neccessary speedrun information in chat when escaping a dimension for the first time
 events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChangedDimensionEvent){
+
+    // Nether to Erebus
     if((event.from == -1 && event.to == 5)){
         EventManager.getInstance().onTimerTick(function(event as TickEvent){
 
-            if(event.player.hasGameStage("nether")){
+            if(event.player.hasGameStage("nether") && event.player.hasGameStage("erebus")){
                 var player_name = event.player.name;
                 var totalSecs = event.tick/20;
                 var minutes = (totalSecs % 3600) / 60;
@@ -86,12 +92,12 @@ EventManager.getInstance().onTimeIsUp(function(event as TimeIsUpEvent){
 });
 
 
+// Add to the timer bonuses used scoreboard counter when right clicking a timer bonuses
+// NOTE, onPlayerRightClickItem IS CURRENTLY RUNNING TWICE PER CLICK
 static timerBonus as IItemStack = <timeisup:timer_bonus>;
-
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
     val itemStack = event.item as IItemStack;     
     if ((itemStack.definition.id).matches(timerBonus.definition.id)) {  
         server.commandManager.executeCommand(server, "scoreboard players add @p UsedTimerBonus 1");
-        server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Times used timer bonus: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"UsedTimerBonus\"},\"color\":\"dark_red\"}]"); 
     }  
 });
