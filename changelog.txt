@@ -1,7 +1,7 @@
 §lTREPIDATION v0.2.4§r
 §l§nThe Speedrunning Update!§r§r
 
-§eRead the detailed changelog by clicking on the version number on the main menu.§r
+§eMore details are available by clicking on the version number on the main menu.§r
 
 §a§lMods§r§r
 - Added Corpse Complex
@@ -10,7 +10,7 @@
 - Removed Death Counter
 - Removed Realistic Torches
 
-§a§Major Fixes§r§r
+§a§lMajor Fixes§r§r
 - Blocks mined within the first 10 seconds of starting a world now drop! 
 
 §a§lDeath Rework§r§r
@@ -35,5 +35,3 @@
 - Removed all redstone/redstone based items, hoes, and fishing rods from the game (sorry redstone users)
 - Barriers no longer drop themselves when mined
 - Updated mods
-- Added Dart Monkey functionality
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡴⢿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⢧⢎⠊⠈⣇⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⢀⣸⠈⠀⠀⠀⠀⢈⣇⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⣠⠴⠚⠉⠉⠀⠀⠀⠀⠀⠀⠐⢴⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⣠⡪⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠳⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⢰⠣⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢳⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⡏⠃⠀⠀⠀⠀⠀⠀⠀⣀⣤⣖⠀⠐⠂⢄⠀⢸⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⡏⡄⣶⣶⣶⡀⠀⠀⢹⣿⣿⣿⢀⠀⣄⠀⢡⢨⡷⠶⣦⡀⠀⠀⠀⠀⠀⠀⠀ ⠀⢱⡆⡽⠿⢻⠊⠢⣀⠃⢃⠚⢀⣤⡀⠈⢣⠀⣿⠉⠇⠀⡇⠀⠀⠀⠀⠀⠀⠀ ⢠⠾⣷⠁⠀⢠⣵⡀⠈⠀⢠⠀⠸⣿⡧⠀⢈⠀⣿⣠⣃⣼⠃⠀⠀⠀⠀⠀⠀⠀ ⠘⡇⢣⠆⠀⠈⠿⢦⠀⠀⠀⢄⠀⠀⠀⢀⢄⣼⠿⠿⠟⠃⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠙⣾⣾⣤⡄⠀⠐⠀⠀⠀⢀⠝⢨⣽⣾⣿⣏⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⡠⢤⣈⣙⠛⣻⣧⣤⣶⠒⠖⢛⡿⠛⠿⠯⠘⠙⠦⡀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⣀⣵⣦⡤⣜⠟⠉⠀⣹⣿⠗⠀⠑⡀⢲⡤⣄⠀⠀⠀⢙⣆⠀⠀⠀⠀⠀⠀⠀ ⡼⣿⣿⠛⠉⠆⠠⢔⡾⠛⢹⠀⡀⠀⢰⠀⢹⣼⣄⠊⠚⠚⠙⣯⠉⠛⠛⠱⢦⡄ ⢿⡟⢿⣷⣦⠭⠵⠋⠀⠀⢸⣆⣀⡠⠂⣀⣼⢿⢇⠀⠀⠀⠀⠘⡏⠉⠉⣦⠀⢹ ⢸⣳⠟⠋⠀⠀⠀⠀⠀⠀⡟⢻⡿⠿⣿⠿⣿⠺⣠⢥⠀⣠⠠⡇⣻⠀⣾⣧⣶⠟ ⠸⠃⠀⠀⠀⠀⠀⠀⣀⡤⠓⠊⢑⢦⢧⣀⣼⣄⠀⠈⠙⠑⠚⠉⠁⠀⠈⠉⠁⠀ ⠀⠀⠀⠀⠀⠀⠀⠘⠷⣔⣅⡬⠖⠋⢀⡗⠠⠊⢷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣏⣄⣰⣄⡏⠀⠀⠀
