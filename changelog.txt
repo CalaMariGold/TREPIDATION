@@ -1,23 +1,39 @@
-§lTREPIDATION v0.2.3§r
-§l§nThe Performance Update!§r§r
+§lTREPIDATION v0.2.4§r
+§l§nThe Speedrunning Update!§r§r
 
 §eRead the detailed changelog by clicking on the version number on the main menu.§r
 
 §a§lMods§r§r
-- Removed Biomes O Plenty
-- Removed ATOP
-§4§c- Removed Dynamic Darkness §l(please read!)§r§r§r
-§cBecause of this change, shaders will be extremely recommended for the intended experience. The difference is night and day and it affects gameplay. The recommended shaders have proven to have very little effect on FPS and even works well on low-end PCs.§r
+- Added Corpse Complex
+- Added Opticheck
+- Added Shut Up Model Loader
+- Removed Death Counter
+- Removed Realistic Torches
 
-- Added MPUtils
-- Added SimpleOres
+§a§Major Fixes§r§r
+- Blocks mined within the first 10 seconds of starting a world now drop! 
 
-§a§lOther Performance Tweaks§r§r
-- Adjusted some default settings for increased shader performance
-- Optimized Entity Culling config
-- Increased TidyChunk tickspan so that there are less items laying on the floor from world gen.
+§a§lDeath Rework§r§r
+- Armor and baubles are now kept on death.
+- Torches are now kept on death.
+- The Soul Compass is now automatically given to the player on death.
+- The Soul Compass can no longer be crafted or found.
+- Enabled the Soulbinding enchantment. Items with this enchantment are kept on death.
+- Dying after the timer reaches zero will now turn the player into a ghost for all of eternity.
+
+§a§lSpeedrunning§r§r
+- When escaping a dimension for the first time, necessary information for speedrunners are now outputted to chat. This includes:
+- - The time left as soon as you entered the dimension
+- - The elapsed time of the run so far
+- - The amount of Timer Bonuses you used in the run so far
+- - The seed of the world
 
 §a§lMisc§r§r
-- Nerfed player dodging
-- Minimally increased Blazing Juggernaut follow range
-- New ways to obtain Soul Compass (points to your death location)
+- Decreased volume of one of the surface world songs.
+- Gave some items the appropriate tooltip border.
+- Buglins should no longer spawn outside of the Surface world.
+- Removed all redstone/redstone based items, hoes, and fishing rods from the game (sorry redstone users)
+- Barriers no longer drop themselves when mined
+- Updated mods
+- Added Dart Monkey functionality
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡴⢿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⢧⢎⠊⠈⣇⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⢀⣸⠈⠀⠀⠀⠀⢈⣇⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⣠⠴⠚⠉⠉⠀⠀⠀⠀⠀⠀⠐⢴⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⣠⡪⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠳⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⢰⠣⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢳⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⡏⠃⠀⠀⠀⠀⠀⠀⠀⣀⣤⣖⠀⠐⠂⢄⠀⢸⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⡏⡄⣶⣶⣶⡀⠀⠀⢹⣿⣿⣿⢀⠀⣄⠀⢡⢨⡷⠶⣦⡀⠀⠀⠀⠀⠀⠀⠀ ⠀⢱⡆⡽⠿⢻⠊⠢⣀⠃⢃⠚⢀⣤⡀⠈⢣⠀⣿⠉⠇⠀⡇⠀⠀⠀⠀⠀⠀⠀ ⢠⠾⣷⠁⠀⢠⣵⡀⠈⠀⢠⠀⠸⣿⡧⠀⢈⠀⣿⣠⣃⣼⠃⠀⠀⠀⠀⠀⠀⠀ ⠘⡇⢣⠆⠀⠈⠿⢦⠀⠀⠀⢄⠀⠀⠀⢀⢄⣼⠿⠿⠟⠃⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠙⣾⣾⣤⡄⠀⠐⠀⠀⠀⢀⠝⢨⣽⣾⣿⣏⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⡠⢤⣈⣙⠛⣻⣧⣤⣶⠒⠖⢛⡿⠛⠿⠯⠘⠙⠦⡀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⣀⣵⣦⡤⣜⠟⠉⠀⣹⣿⠗⠀⠑⡀⢲⡤⣄⠀⠀⠀⢙⣆⠀⠀⠀⠀⠀⠀⠀ ⡼⣿⣿⠛⠉⠆⠠⢔⡾⠛⢹⠀⡀⠀⢰⠀⢹⣼⣄⠊⠚⠚⠙⣯⠉⠛⠛⠱⢦⡄ ⢿⡟⢿⣷⣦⠭⠵⠋⠀⠀⢸⣆⣀⡠⠂⣀⣼⢿⢇⠀⠀⠀⠀⠘⡏⠉⠉⣦⠀⢹ ⢸⣳⠟⠋⠀⠀⠀⠀⠀⠀⡟⢻⡿⠿⣿⠿⣿⠺⣠⢥⠀⣠⠠⡇⣻⠀⣾⣧⣶⠟ ⠸⠃⠀⠀⠀⠀⠀⠀⣀⡤⠓⠊⢑⢦⢧⣀⣼⣄⠀⠈⠙⠑⠚⠉⠁⠀⠈⠉⠁⠀ ⠀⠀⠀⠀⠀⠀⠀⠘⠷⣔⣅⡬⠖⠋⢀⡗⠠⠊⢷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣏⣄⣰⣄⡏⠀⠀⠀
