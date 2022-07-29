@@ -39,6 +39,19 @@ recipes.addShapedMirrored("glowood_slab", <minecraft:wooden_slab>*6,
 [null,null,null]
 ]);
 
+recipes.remove(<scalinghealth:healingitem:1>);
+recipes.addShapeless("medkit", <scalinghealth:healingitem:1>, [<scalinghealth:healingitem>, <scalinghealth:healingitem>, <scalinghealth:healingitem>]);
+
+recipes.remove(<scalinghealth:healingitem>);
+recipes.addShaped("bandage", <scalinghealth:healingitem>,
+[[null,null,null],
+[<nethercraft:foulite_dust>,<nethercraft:foulite_dust>,<nethercraft:foulite_dust>],
+[<ore:paper>,<ore:paper>,<ore:paper>]
+]);
+
+
+recipes.remove(<nethercraft:neridium_lighter>);
+recipes.addShapeless("neridium lighter", <nethercraft:neridium_lighter>, [<nethercraft:neridium_ingot>, <nethercraft:foulite_dust>]);
 
 // Remove Glowood Sapling Drop
 Dropt.list("no_glowood_sapling")
@@ -57,7 +70,7 @@ Dropt.list("ghast_bones")
       .matchBlocks(["minecraft:bone_block"])
       .addDrop(Dropt.drop()
           .items([<nethercraft:ghast_bones>])
-          .selector(Dropt.weight(50))
+          .selector(Dropt.weight(10))
       )
   );
 <nethercraft:ghast_bones>.addTooltip("Sometimes drops from bone blocks");

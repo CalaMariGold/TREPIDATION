@@ -24,3 +24,7 @@ JEI.addDescription(<enderskills:book>,"There are 3 main classes you can delve in
 // Misc
 <quark:soul_compass>.addTooltip("Points to your most recent death location");
 <minecraft:fire_charge>.addTooltip("Can be thrown");
+
+<scalinghealth:healingitem:0>.addTooltip("§3Can be combined into a medkit.");
+<nethercraft:ghast_bomb>.addTooltip("Can be lit with a Neridium Lighter");
+<nethercraft:ghast_marrow>.addTooltip("Highly flammable and explosive material");
