@@ -34,8 +34,13 @@ for item in redstoneAdjacent{
     recipes.remove(item);
 }
 
+//remove all bed recipes
+for i in 0 to 16{
+  JEI.removeAndHide(<minecraft:bed>.definition.makeStack(i));
+}
+
 JEI.removeAndHide(<minecraft:fishing_rod>);
-recipes.remove(<minecraft:carrot_on_a_stick>);
+recipes.removeByRecipeName("minecraft:carrot_on_a_stick");
 
 Dropt.list("no_dimension_barrier")
 
