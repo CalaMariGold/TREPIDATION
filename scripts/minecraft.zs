@@ -34,6 +34,12 @@ for item in redstoneAdjacent{
     recipes.remove(item);
 }
 
+//remove miscellaneous quartz crafting recipes
+recipes.removeByRecipeName("minecraft:granite");
+recipes.removeByRecipeName("minecraft:diorite");
+recipes.removeByRecipeName("minecraft:daylight_detector");
+recipes.removeByRecipeName("quark:stone");
+
 //remove all bed recipes
 for i in 0 to 16{
   JEI.removeAndHide(<minecraft:bed>.definition.makeStack(i));
