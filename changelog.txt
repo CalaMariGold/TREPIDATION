@@ -1,37 +1,18 @@
-§lTREPIDATION v0.2.4§r
-§l§nThe Speedrunning Update!§r§r
+§lTREPIDATION v0.2.5§r
+§l§nPre-tournament changes§r§r
 
 §eMore details are available by clicking on the version number on the main menu.§r
 
-§a§lMods§r§r
-- Added Corpse Complex
-- Added Opticheck
-- Added Shut Up Model Loader
-- Removed Death Counter
-- Removed Realistic Torches
+§a§lChanges§r§r
+- Reworked the main menu to now include a spooky animation
+- Ghast bones now drop much more commonly from bone blocks
+- Bandages and Medkits can now be crafted with Nether materials
+- Neridium Lighter can now be crafted and has a new texture
+- Added some… helpful tooltips for some Nether items
 
-§a§lMajor Fixes§r§r
-- Blocks mined within the first 10 seconds of starting a world now drop! 
 
-§a§lDeath Rework§r§r
-- Armor and baubles are now kept on death.
-- Torches are now kept on death.
-- The Soul Compass is now automatically given to the player on death.
-- The Soul Compass can no longer be crafted or found.
-- Enabled the Soulbinding enchantment. Items with this enchantment are kept on death.
-- Dying after the timer reaches zero will now turn the player into a ghost for all of eternity.
-
-§a§lSpeedrunning§r§r
-- When escaping a dimension for the first time, necessary information for speedrunners are now outputted to chat. This includes:
-- - The time left as soon as you entered the dimension
-- - The elapsed time of the run so far
-- - The amount of Timer Bonuses you used in the run so far
-- - The seed of the world
-
-§a§lMisc§r§r
-- Decreased volume of one of the surface world songs.
-- Gave some items the appropriate tooltip border.
-- Buglins should no longer spawn outside of the Surface world.
-- Removed all redstone/redstone based items, hoes, and fishing rods from the game (sorry redstone users)
-- Barriers no longer drop themselves when mined
-- Updated mods
+§a§lMiscs§r§r
+- The navigation arrows on the Skill Book are now more visible
+- Removed all bed recipes
+- Removed some recipes that used nether quartz
+- Fixed server console issues, reduced server pack file size
