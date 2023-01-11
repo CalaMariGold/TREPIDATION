@@ -1,18 +1,14 @@
-§lTREPIDATION v0.2.5§r
-§l§nPre-tournament changes§r§r
+§lTREPIDATION v0.2.6§r
+§l§nMisc Tweaks and Improvements§r§r
 
 §eMore details are available by clicking on the version number on the main menu.§r
 
-§a§lChanges§r§r
-- Reworked the main menu to now include a spooky animation
-- Ghast bones now drop much more commonly from bone blocks
-- Bandages and Medkits can now be crafted with Nether materials
-- Neridium Lighter can now be crafted and has a new texture
-- Added some… helpful tooltips for some Nether items
+§a§lMods§r§r
+- Removed 10 mods
+- Added Universal Tweaks (replaces the need for all the above mods by accomplishing the same things, as well as more fixes and tweaks)
+- Updated many mods, some of which should result in better performance
 
 
-§a§lMiscs§r§r
-- The navigation arrows on the Skill Book are now more visible
-- Removed all bed recipes
-- Removed some recipes that used nether quartz
-- Fixed server console issues, reduced server pack file size
+
+§a§lFixes & Improvements§r§r
+- Greatly improved server performance when joining a world for the first time. Breaking blocks will no longer be laggy for the first couple seconds of joining a new world. Speedrunners rejoice!

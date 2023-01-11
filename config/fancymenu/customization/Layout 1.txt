@@ -114,10 +114,10 @@ customization {
   buttonaction = openlink
   backgroundhovered = resources\trepidation\transparent.png
   description = Click to view changelog
-  label = v0.2.5 - Tournament on Aug 6th
+  label = v0.2.6
   loopbackgroundanimations = true
   x = -1
-  width = 157
+  width = 35
   actionid = d8f82b65-ee88-4d7e-b01d-12f917e6955a1624418124568
   action = addbutton
   y = -13
