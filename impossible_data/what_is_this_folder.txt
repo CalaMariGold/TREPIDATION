@@ -1,0 +1,20 @@
+Hi!
+
+This folder is used to store data used by The Impossible Library and other mods that might use it as a dependency
+
+--------------------------------------------------
+
+For mod developers:
+
+
+
+--------------------------------------------------
+
+For modpack creators:
+
+
+--------------------------------------------------
+
+For players:
+
+
