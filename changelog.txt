@@ -1,14 +1,20 @@
-§lTREPIDATION v0.2.6§r
+§lTREPIDATION v0.2.7§r
 §l§nMisc Tweaks and Improvements§r§r
 
 §eMore details are available by clicking on the version number on the main menu.§r
 
+§a§lKnown Issues§r§r
+- Since v0.2.6: Changing dimensions sometimes spawns you in an unintended location, such as inside a wall or some place much higher than the dimension entrance.
+
+
 §a§lMods§r§r
-- Removed 10 mods
-- Added Universal Tweaks (replaces the need for all the above mods by accomplishing the same things, as well as more fixes and tweaks)
-- Updated many mods, some of which should result in better performance
+- Added Dynamic Darkness
 
-
+§a§lMisc§r§r
+- World difficulty is now locked at hard and can not be changed
+- Throwing fire charges no longer lights the player on fire
+- Updated TZP resource pack for more zombie textures and sounds
 
 §a§lFixes & Improvements§r§r
-- Greatly improved server performance when joining a world for the first time. Breaking blocks will no longer be laggy for the first couple seconds of joining a new world. Speedrunners rejoice!
+- Improved initial world load times/dimension changes
+- Further improved server performance by limiting chunk generation per tick
