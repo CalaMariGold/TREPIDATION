@@ -1,2 +1,3 @@
 spawnpoint @p ~ ~ ~
 gamerule doWeatherCycle false
+difficulty hard
