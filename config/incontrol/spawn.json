@@ -36,7 +36,7 @@
     },
     {
         "dimension": 1,
-        "mob": ["minecraft:sheep","minecraft:cow","minecraft:pig","minecraft:chicken","minecraft:parrot","minecraft:wolf","zombie","witch","spider","skeleton","creeper","villager","srparasites:beckon_si","srparasites:beckon_sii","srparasites:beckon_siii","srparasites:beckon_siv"],
+        "mob": ["minecraft:sheep","minecraft:cow","minecraft:pig","minecraft:chicken","minecraft:parrot","minecraft:wolf","zombie","witch","spider","spiderstpo:better_spider","skeleton","creeper","villager","srparasites:beckon_si","srparasites:beckon_sii","srparasites:beckon_siii","srparasites:beckon_siv"],
         "result": "deny",
         "onjoin":"true"
     },
@@ -106,7 +106,7 @@
 
      {
          "dimension":0,
-         "mob": ["minecraft:zombie","minecraft:spider","minecraft:creeper","minecraft:slime","minecraft:skeleton","minecraft:zombie_villager","minecraft:witch"],
+         "mob": ["minecraft:zombie","minecraft:spider","spiderstpo:better_spider","minecraft:creeper","minecraft:slime","minecraft:skeleton","minecraft:zombie_villager","minecraft:witch"],
          "onjoin": true,
          "result": "deny"
      },
