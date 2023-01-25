@@ -105,6 +105,22 @@
      },
 
      {
+        "dimension": 10,
+        "mob": ["spiderstpo:better_spider","spiderstpo:better_cave_spider"],
+        "random": "0.08",
+        "maxcount": {
+            "amount": 20,
+            "perchunk": true
+        },
+        "result": "allow"
+     },
+     {
+        "dimension": 10,
+        "mob": ["spiderstpo:better_spider","spiderstpo:better_cave_spider"],
+        "result": "deny"
+     },
+
+     {
          "dimension":0,
          "mob": ["minecraft:zombie","minecraft:spider","spiderstpo:better_spider","minecraft:creeper","minecraft:slime","minecraft:skeleton","minecraft:zombie_villager","minecraft:witch"],
          "onjoin": true,

@@ -19,6 +19,24 @@
         ]
       },
       {
+        "dimension": 10,
+        "mobs": [
+          {
+            "mob": "spiderstpo:better_spider",
+            "weight": 40
+          }
+        ]
+      },
+      {
+        "dimension": 10,
+        "mobs": [
+          {
+            "mob": "spiderstpo:better_cave_spider",
+            "weight": 40
+          }
+        ]
+      },
+      {
         "dimension": 0,
         "mobs": [
           {
