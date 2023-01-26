@@ -103,6 +103,21 @@
         "mob": "eyesinthedarkness:eyes",
         "result": "deny"
      },
+     {
+        "dimension": 10,
+        "mob": "betterswim:herobrine",
+        "random": "0.08",
+        "maxcount": {
+            "amount": 2,
+            "perchunk": true
+        },
+        "result": "allow"
+     },
+     {
+        "dimension": 10,
+        "mob": "betterswim:herobrine",
+        "result": "deny"
+     },
 
      {
         "dimension": 10,

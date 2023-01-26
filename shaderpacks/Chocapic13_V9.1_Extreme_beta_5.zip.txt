@@ -1,3 +1,14 @@
-#Mon May 30 11:56:40 EDT 2022
+#Wed Jan 25 19:06:50 EST 2023
 Dirt_Amount=0.0
+MIN_LIGHT_AMOUNT=0.0
+moon_illuminance=90.0
 RAY_COUNT=4
+Sky_Brightness=0.1
+sky_coefficientMieB=0.0
+sky_coefficientMieG=0.0
+sky_coefficientMieR=0.0
+sky_coefficientRayleighR=0.0
+sunColorB=0.0
+sunColorG=0.0
+sunColorR=0.0
+sunPathRotation=0

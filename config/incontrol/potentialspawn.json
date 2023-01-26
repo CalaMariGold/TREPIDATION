@@ -22,6 +22,15 @@
         "dimension": 10,
         "mobs": [
           {
+            "mob": "betterswim:herobrine",
+            "weight": 20
+          }
+        ]
+      },
+      {
+        "dimension": 10,
+        "mobs": [
+          {
             "mob": "spiderstpo:better_spider",
             "weight": 40
           }
