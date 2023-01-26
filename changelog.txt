@@ -1,20 +1,23 @@
-§lTREPIDATION v0.2.7§r
-§l§nMisc Tweaks and Improvements§r§r
+§lTREPIDATION v0.2.8§r
 
 §eMore details are available by clicking on the version number on the main menu.§r
 
 §a§lKnown Issues§r§r
 - Since v0.2.6: Changing dimensions sometimes spawns you in an unintended location, such as inside a wall or some place much higher than the dimension entrance.
+- Spawning and respawning in the Nether sometimes knocks you into lava
 
 
 §a§lMods§r§r
-- Added Dynamic Darkness
+- Added Spiders 2.0
+- Added Better Animal Models
 
-§a§lMisc§r§r
-- World difficulty is now locked at hard and can not be changed
-- Throwing fire charges no longer lights the player on fire
-- Updated TZP resource pack for more zombie textures and sounds
 
 §a§lFixes & Improvements§r§r
-- Improved initial world load times/dimension changes
-- Further improved server performance by limiting chunk generation per tick
+- TZP resource pack is now correctly applied 
+- Difficulty is now actually locked on hard
+- The Erebus and Deep Dark no longer have bright/glowing skies when using Chocapic Shaders. This was apparent when chunks in the distance weren’t loaded yet. Now, it is nearly pitch black.
+
+
+§a§lMisc§r§r
+- Increased spawn rate of spiders and cave spiders in the Deep Dark
+- Added Herobrine
