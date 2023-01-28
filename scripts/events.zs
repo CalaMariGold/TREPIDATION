@@ -41,6 +41,36 @@ import crafttweaker.world.IWorldInfo;
 import crafttweaker.event.PlayerAdvancementEvent;
 
 
+// Add potion effects to certain foods
+HungerEvents.onFoodEaten(function(event as mods.hungertweaker.events.FoodEatenEvent) {
+
+    // Fire resist for scrambled magma eggs
+	if (event.food.definition.id == <contenttweaker:scrambled_magma_eggs>.definition.id) {
+		var fire_resistance = <potion:minecraft:fire_resistance>.makePotionEffect(200, 0, false, false);
+		event.player.addPotionEffect(fire_resistance);
+	}
+
+    // Fire resist + strength for deviled egg sandwich
+    if (event.food.definition.id == <contenttweaker:deviled_egg_sandwich>.definition.id) {
+		var fire_resistance = <potion:minecraft:fire_resistance>.makePotionEffect(600, 0, false, false);
+        var strength = <potion:minecraft:strength>.makePotionEffect(600, 0, false, false);
+		event.player.addPotionEffect(fire_resistance);
+        event.player.addPotionEffect(strength);
+	}
+
+    // Glowing for glow apple
+    if (event.food.definition.id == <nethercraft:glow_apple>.definition.id) {
+		var glowing = <potion:minecraft:glowing>.makePotionEffect(100, 0, false, false);
+		event.player.addPotionEffect(glowing);
+	}
+
+    // Glowing for glow stew
+    if (event.food.definition.id == <nethercraft:glow_stew>.definition.id) {
+		var glowing = <potion:minecraft:glowing>.makePotionEffect(200, 0, false, false);
+		event.player.addPotionEffect(glowing);
+	}
+});
+
 // Create a scoreboard for timer bonuses used when the player first logs into the game
 events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent) {
 	if (isNull(event.player.data.firstTimeJoin)) {
