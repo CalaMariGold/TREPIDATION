@@ -58,6 +58,12 @@ HungerEvents.onFoodEaten(function(event as mods.hungertweaker.events.FoodEatenEv
         event.player.addPotionEffect(strength);
 	}
 
+    // Strength for devil's bread
+    if (event.food.definition.id == <nethercraft:devil_bread>.definition.id) {
+        var strength = <potion:minecraft:strength>.makePotionEffect(200, 0, false, false);
+        event.player.addPotionEffect(strength);
+	}
+
     // Glowing for glow apple
     if (event.food.definition.id == <nethercraft:glow_apple>.definition.id) {
 		var glowing = <potion:minecraft:glowing>.makePotionEffect(100, 0, false, false);
