@@ -2,10 +2,21 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import mods.jei.JEI;
 import mods.vanillaanvilrepair.addRepairEntry;
+import moretweaker.erebus.Composter;
 
 JEI.removeAndHide(<erebus:death_compass>);
 recipes.remove(<erebus:liquifier>);
 recipes.remove(<erebus:bamboo_extender>);
+// composter recipes removal thru iterating thru each item and definition
+var compostMatArray = itemUtils.getItemsByRegexRegistryName(".*:.*") as IItemStack[];
+Composter.removeAll(compostMatArray);
+for item in compostMatArray{
+    for i in 0 to 20{
+        Composter.remove(item.definition.makeStack(i));
+    }
+}
+JEI.removeAndHide(<erebus:composter>);
+
 
 recipes.remove(<erebus:umber_furnace>);
 recipes.addShaped("umber_furnace", <erebus:umber_furnace>,
