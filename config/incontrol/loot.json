@@ -93,6 +93,10 @@
         "remove": "minecraft:magma_cream"
     },
     {
+        "mob": "minecraft:zombie_pigman",
+        "remove": "minecraft:gold_nugget"
+    },
+    {
         "mob":"minecraft:blaze",
         "player": true,
         "item": "minecraft:fire_charge",
@@ -128,7 +132,7 @@
 
     {
         "mob":"nethercraft:dark_zombie",
-        "remove": ["nethercraft:red_feather","nethercraft:dark_seeds"]
+        "remove": ["nethercraft:red_feather","nethercraft:dark_seeds","minecraft:iron_pickaxe","minecraft:wooden_pickaxe","minecraft:stone_pickaxe","minecraft:diamond_pickaxe","minecraft:golden_pickaxe"]
     },
     {
         "mob":"nethercraft:dark_zombie",
@@ -138,7 +142,7 @@
     },
     {    
         "mob":"nethercraft:bloody_zombie",
-        "remove": ["nethercraft:red_feather","nethercraft:dark_seeds"]
+        "remove": ["nethercraft:red_feather","nethercraft:dark_seeds","minecraft:iron_pickaxe","minecraft:wooden_pickaxe","minecraft:stone_pickaxe","minecraft:diamond_pickaxe","minecraft:golden_pickaxe"]
     },
     {
         "mob":"nethercraft:bloody_zombie",
