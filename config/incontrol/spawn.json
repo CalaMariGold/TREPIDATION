@@ -136,7 +136,7 @@
      },
 
      {
-         "dimension":0,
+         "dimension":[0,1],
          "mob": ["minecraft:zombie","minecraft:spider","spiderstpo:better_spider","minecraft:creeper","minecraft:slime","minecraft:skeleton","minecraft:zombie_villager","minecraft:witch"],
          "onjoin": true,
          "result": "deny"
@@ -144,6 +144,12 @@
      {
         "dimension":0,
         "mod": "primitivemobs",
+        "onjoin": true,
+        "result": "deny"
+    },
+    {
+        "dimension":1,
+        "mod": "srparasites",
         "onjoin": true,
         "result": "deny"
     },
