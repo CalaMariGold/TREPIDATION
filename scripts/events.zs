@@ -114,7 +114,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
                 var secondsElasped = totalSecondsElasped % 60;
                 var minutesElasped = (totalSecondsElasped % 3600) / 60;
                 event.player.sendChat(player_name + " escaped the Nether with " + "§4" + minutes + ":" + seconds + " (" + minutesElasped + ":" + secondsElasped + ")" + " §fleft." );
-                server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Times used timer bonus: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"newtimer\"},\"color\":\"dark_red\"}]");
+                server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"newtimer\"},\"color\":\"dark_red\"}]");
                 
                 server.commandManager.executeCommand(event.player, "seed");
                 server.commandManager.executeCommand(server, "gamestage silentremove @p nether");
@@ -139,7 +139,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
                 var secondsElasped = totalSecondsElasped % 60;
                 var minutesElasped = (totalSecondsElasped % 3600) / 60;
                 event.player.sendChat(player_name + " escaped the Erebus with " + "§4" + minutes + ":" + seconds + " (" + minutesElasped + ":" + secondsElasped + ")" + " §fleft." );
-                server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Times used timer bonus: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"newtimer\"},\"color\":\"dark_red\"}]");
+                server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"newtimer\"},\"color\":\"dark_red\"}]");
 
                 server.commandManager.executeCommand(event.player, "seed");
                 server.commandManager.executeCommand(server, "gamestage silentremove @p erebus");
@@ -164,7 +164,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
                 var secondsElasped = totalSecondsElasped % 60;
                 var minutesElasped = (totalSecondsElasped % 3600) / 60;
                 event.player.sendChat(player_name + " escaped the Deep Dark with " + "§4" + minutes + ":" + seconds + " (" + minutesElasped + ":" + secondsElasped + ")" + " §fleft." );
-                server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Times used timer bonus: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"newtimer\"},\"color\":\"dark_red\"}]");
+                server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"newtimer\"},\"color\":\"dark_red\"}]");
                 
                 server.commandManager.executeCommand(event.player, "seed");
                 server.commandManager.executeCommand(event.player, "say Developer Note: It's currently not possible to enter the End. Until then, have fun exploring the surface.");
