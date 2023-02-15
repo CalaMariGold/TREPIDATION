@@ -1,0 +1,82 @@
+{
+  "main": {
+    "0": {
+      "title": "NightVision",
+      "icon": {
+        "name": "minecraft:stone",
+        "damage": 0
+      },
+      "action": {
+        "command": {
+          "command": "/effect @p minecraft:night_vision 234323",
+          "clipboard": true
+        }
+      }
+    },
+    "1": {
+      "title": "night vision 2",
+      "icon": {
+        "name": "minecraft:web",
+        "damage": 0
+      },
+      "action": {
+        "command": {
+          "command": "/effect @p minecraft:night_vision 234323",
+          "clipboard": false
+        }
+      }
+    },
+    "2": {
+      "title": "Creative",
+      "icon": {
+        "name": "minecraft:sticky_piston",
+        "damage": 0
+      },
+      "action": {
+        "command": {
+          "command": "/gamemode creative",
+          "clipboard": false
+        }
+      }
+    },
+    "3": {
+      "title": "Survival",
+      "icon": {
+        "name": "minecraft:grass",
+        "damage": 0
+      },
+      "action": {
+        "command": {
+          "command": "/gamemode survival",
+          "clipboard": false
+        }
+      }
+    },
+    "4": {
+      "title": "ow portal",
+      "icon": {
+        "name": "minecraft:leaves",
+        "damage": 0
+      },
+      "action": {
+        "command": {
+          "command": "/setblock ~ ~ ~ minecraft:portal",
+          "clipboard": false
+        }
+      }
+    },
+    "5": {
+      "title": "spectator",
+      "icon": {
+        "name": "minecraft:tallgrass",
+        "damage": 1
+      },
+      "action": {
+        "command": {
+          "command": "/gamemode spectator",
+          "clipboard": false
+        }
+      }
+    }
+  }
+}
