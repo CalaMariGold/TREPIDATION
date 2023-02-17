@@ -12,30 +12,6 @@ furnace.remove(<simpleores:mythril_ingot>);
 furnace.remove(<simpleores:adamantium_ingot>);
 furnace.remove(<simpleores:onyx_gem>);
 
-recipes.addShaped("umber_sword", <simpleores:tin_sword>,
-[[null,<erebus:umberstone:1>,null],
-[null,<erebus:umberstone:1>,null],
-[null,<ore:stickWood>,null]
-]);
-
-recipes.addShaped("umber_pickaxe", <simpleores:tin_pickaxe>,
-[[<erebus:umberstone:1>,<erebus:umberstone:1>,<erebus:umberstone:1>],
-[null,<ore:stickWood>,null],
-[null,<ore:stickWood>,null]
-]);
-
-recipes.addShapedMirrored("umber_axe", <simpleores:tin_axe>,
-[[<erebus:umberstone:1>,<erebus:umberstone:1>,null],
-[<erebus:umberstone:1>,<ore:stickWood>,null],
-[null,<ore:stickWood>,null]
-]);
-
-recipes.addShaped("umber_shovel", <simpleores:tin_shovel>,
-[[null,<erebus:umberstone:1>,null],
-[null,<ore:stickWood>,null],
-[null,<ore:stickWood>,null]
-]);
-
 
 recipes.addShaped("copper_sword", <simpleores:copper_sword>,
 [[null,<erebus:materials:43>,null],
