@@ -2265,7 +2265,7 @@ attribute.name.generic.luck=Luck
 attribute.name.generic.armor=Armor
 attribute.name.generic.armorToughness=Armor Toughness
 
-screenshot.success=Saved screenshot as %s
+screenshot.success=Screenshot saved to clipboard and folder. Press CTRL + V to paste.
 screenshot.failure=Couldn't save screenshot: %s
 
 item.banner.black.name=Black Banner
