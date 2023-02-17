@@ -94,7 +94,7 @@
     },
     {
         "mob": "minecraft:zombie_pigman",
-        "remove": "minecraft:gold_nugget"
+        "remove": ["minecraft:gold_nugget","minecraft:gold_sword"]
     },
     {
         "mob":"minecraft:blaze",
