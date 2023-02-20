@@ -4,6 +4,9 @@ import mods.jei.JEI;
 import mods.vanillaanvilrepair.addRepairEntry;
 import moretweaker.erebus.Composter;
 
+val umberstone as IItemStack = <erebus:umberstone>;
+umberstone.hardness = 0.5;
+
 JEI.removeAndHide(<erebus:death_compass>);
 recipes.remove(<erebus:liquifier>);
 recipes.remove(<erebus:bamboo_extender>);
