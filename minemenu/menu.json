@@ -1,20 +1,20 @@
 {
   "main": {
     "0": {
-      "title": "NightVision",
+      "title": "Clear Effects",
       "icon": {
-        "name": "minecraft:stone",
+        "name": "minecraft:deadbush",
         "damage": 0
       },
       "action": {
         "command": {
-          "command": "/effect @p minecraft:night_vision 234323",
-          "clipboard": true
+          "command": "/effect @p clear",
+          "clipboard": false
         }
       }
     },
     "1": {
-      "title": "night vision 2",
+      "title": "Night vision",
       "icon": {
         "name": "minecraft:web",
         "damage": 0
@@ -74,6 +74,32 @@
       "action": {
         "command": {
           "command": "/gamemode spectator",
+          "clipboard": false
+        }
+      }
+    },
+    "7": {
+      "title": "Strength",
+      "icon": {
+        "name": "minecraft:golden_rail",
+        "damage": 0
+      },
+      "action": {
+        "command": {
+          "command": "/effect @p minecraft:strength 32432 255",
+          "clipboard": false
+        }
+      }
+    },
+    "8": {
+      "title": "Resistance",
+      "icon": {
+        "name": "minecraft:cobblestone",
+        "damage": 0
+      },
+      "action": {
+        "command": {
+          "command": "/effect @p minecraft:resistance 32432 255",
           "clipboard": false
         }
       }
