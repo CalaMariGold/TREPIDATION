@@ -1,23 +1,9 @@
-§lTREPIDATION v0.2.8§r
+§lTREPIDATION v0.2.9§r
 
-§eMore details are available by clicking on the version number on the main menu.§r
+§eToo many changes to put here, click the version number on the main menu for full changelog.§r
 
 §a§lKnown Issues§r§r
-- Since v0.2.6: Changing dimensions sometimes spawns you in an unintended location, such as inside a wall or some place much higher than the dimension entrance.
-- Spawning and respawning in the Nether sometimes knocks you into lava
-
-
-§a§lMods§r§r
-- Added Spiders 2.0
-- Added Better Animal Models
-
-
-§a§lFixes & Improvements§r§r
-- TZP resource pack is now correctly applied 
-- Difficulty is now actually locked on hard
-- The Erebus and Deep Dark no longer have bright/glowing skies when using Chocapic Shaders. This was apparent when chunks in the distance weren’t loaded yet. Now, it is nearly pitch black.
-
-
-§a§lMisc§r§r
-- Increased spawn rate of spiders and cave spiders in the Deep Dark
-- Added Herobrine
+- Since basically forever
+- - Trees don’t generate on the Surface
+- Since v0.2.9
+- - The barrier at the top of the surface is replaced with dirt in river biomes
