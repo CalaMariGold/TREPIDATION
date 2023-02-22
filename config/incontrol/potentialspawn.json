@@ -1,113 +1,121 @@
 [
-
-    {
-        "dimension": 1,
-        "mobs": [
-          {
-            "mob": "grue:entitygrue",
-            "weight": 50
-          }
-        ]
-      },
+  {
+    "dimension": -1,
+    "mobs": [
       {
-        "dimension": 10,
-        "mobs": [
-          {
-            "mob": "eyesinthedarkness:eyes",
-            "weight": 40
-          }
-        ]
-      },
-      {
-        "dimension": 10,
-        "mobs": [
-          {
-            "mob": "betterswim:herobrine",
-            "weight": 20
-          }
-        ]
-      },
-      {
-        "dimension": 10,
-        "mobs": [
-          {
-            "mob": "spiderstpo:better_spider",
-            "weight": 40
-          }
-        ]
-      },
-      {
-        "dimension": 10,
-        "mobs": [
-          {
-            "mob": "spiderstpo:better_cave_spider",
-            "weight": 40
-          }
-        ]
-      },
-      {
-        "dimension": 0,
-        "mobs": [
-          {
-            "mob": "srparasites:beckon_si",
-            "weight": 90
-          }
-        ]
-      },
-      {
-        "dimension": 0,
-        "mobs": [
-          {
-            "mob": "srparasites:beckon_sii",
-            "weight": 60
-          }
-        ]
-      },
-      {
-        "dimension": 0,
-        "mobs": [
-          {
-            "mob": "srparasites:beckon_siv",
-            "weight": 20
-          }
-        ]
-      },
-
-      {
-        "dimension": 0,
-        "mobs": [
-          {
-            "mob": "minecraft:sheep",
-            "weight": 40
-          }
-        ]
-      },
-      {
-        "dimension": 0,
-        "mobs": [
-          {
-            "mob": "minecraft:pig",
-            "weight": 40
-          }
-        ]
-      },
-      {
-        "dimension": 0,
-        "mobs": [
-          {
-            "mob": "minecraft:cow",
-            "weight": 40
-          }
-        ]
-      },
-      {
-        "dimension": 0,
-        "mobs": [
-          {
-            "mob": "minecraft:chicken",
-            "weight": 40
-          }
-        ]
+        "mob": "minecraft:ghast",
+        "weight": 20
       }
+    ]
+  },
+  {
+    "dimension": 1,
+    "mobs": [
+      {
+        "mob": "grue:entitygrue",
+        "weight": 50
+      }
+    ]
+  },
+  {
+    "dimension": 10,
+    "mobs": [
+      {
+        "mob": "eyesinthedarkness:eyes",
+        "weight": 40
+      }
+    ]
+  },
+  {
+    "dimension": 10,
+    "mobs": [
+      {
+        "mob": "betterswim:herobrine",
+        "weight": 20
+      }
+    ]
+  },
+  {
+    "dimension": 10,
+    "mobs": [
+      {
+        "mob": "spiderstpo:better_spider",
+        "weight": 40
+      }
+    ]
+  },
+  {
+    "dimension": 10,
+    "mobs": [
+      {
+        "mob": "spiderstpo:better_cave_spider",
+        "weight": 40
+      }
+    ]
+  },
+  {
+    "dimension": 0,
+    "mobs": [
+      {
+        "mob": "srparasites:beckon_si",
+        "weight": 90
+      }
+    ]
+  },
+  {
+    "dimension": 0,
+    "mobs": [
+      {
+        "mob": "srparasites:beckon_sii",
+        "weight": 60
+      }
+    ]
+  },
+  {
+    "dimension": 0,
+    "mobs": [
+      {
+        "mob": "srparasites:beckon_siv",
+        "weight": 20
+      }
+    ]
+  },
+
+  {
+    "dimension": 0,
+    "mobs": [
+      {
+        "mob": "minecraft:sheep",
+        "weight": 40
+      }
+    ]
+  },
+  {
+    "dimension": 0,
+    "mobs": [
+      {
+        "mob": "minecraft:pig",
+        "weight": 40
+      }
+    ]
+  },
+  {
+    "dimension": 0,
+    "mobs": [
+      {
+        "mob": "minecraft:cow",
+        "weight": 40
+      }
+    ]
+  },
+  {
+    "dimension": 0,
+    "mobs": [
+      {
+        "mob": "minecraft:chicken",
+        "weight": 40
+      }
+    ]
+  }
 
 ]

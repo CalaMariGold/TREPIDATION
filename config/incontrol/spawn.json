@@ -7,6 +7,22 @@
     },
 
     {
+        "dimension": -1,
+        "mob": "minecraft:ghast",
+        "random": "0.001",
+        "maxcount": {
+            "amount": 2,
+            "perchunk": true
+        },
+        "result": "allow"
+    },
+    {
+        "dimension": -1,
+        "mob": "minecraft:ghast",
+        "result": "deny"
+    },
+
+    {
         "mob": "nethercraft:imp",
         "result": "deny",
         "onjoin":"true"
