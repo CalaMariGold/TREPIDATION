@@ -191,7 +191,6 @@ EventManager.getInstance().onTimeIsUp(function(event as TimeIsUpEvent){
 
 
 // Add to the timer bonuses used scoreboard counter when right clicking a timer bonuses
-// NOTE, onPlayerRightClickItem IS CURRENTLY RUNNING TWICE PER CLICK
 static timerBonus as IItemStack = <timeisup:timer_bonus>;
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
     val itemStack = event.item as IItemStack;     

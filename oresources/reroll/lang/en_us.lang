@@ -10,11 +10,13 @@ commands.reroll.player.lock=Reroll locked for %s.
 commands.reroll.player.locked=%s has reroll locked. Use '/reroll unlock <player>' to unlock.
 commands.reroll.player.rerolled=You have been rerolled! Good luck.
 commands.reroll.player.unlock=Reroll unlocked for %s.
-commands.reroll.self=You have been given a new life, runner.
+commands.reroll.self=§4You have been given a new life, runner.
 commands.reroll.self.lock=Reroll locked.
 commands.reroll.self.locked=Reroll locked. Use '/reroll unlock' to unlock yourself.
 commands.reroll.self.unlock=Reroll unlocked. Be careful!
-commands.reroll.all=You have been given new lives, runners.
+commands.reroll.all=§4You have been given new lives, runners.
+commands.reroll.max_tries=Failed to find a valid reroll position. Please try again.
+
 
 item.reroll.dice.name=Reroll Dice
 reroll.dice.tooltip.description=Use this item to reroll.

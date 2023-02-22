@@ -33,3 +33,9 @@ net.minecraft.client.gui.GuiVideoSettings {
 net.minecraft.client.gui.GuiMultiplayer {
 }
 
+net.minecraft.client.gui.GuiGameOver {
+}
+
+net.minecraft.client.gui.GuiIngameMenu {
+}
+
