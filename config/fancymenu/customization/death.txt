@@ -14,6 +14,16 @@ customization {
 }
 
 customization {
+  identifier = %id=button_compatibility_id:mc_deathscreen_respawn_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_deathscreen_titlemenu_button%
+  action = hidebutton
+}
+
+customization {
   orientation = top-centered
   restartbackgroundanimations = true
   buttonaction = runscript
@@ -24,8 +34,38 @@ customization {
   width = 100
   actionid = d3718b4b-fd9d-4fd3-8827-0a17f8ad3e811677090866197
   action = addbutton
-  y = 218
+  y = 204
   value = rerolldeath
+  height = 20
+}
+
+customization {
+  orientation = top-centered
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = runscript
+  x = -100
+  width = 201
+  actionid = 3305ff8e-c06e-4fa0-9311-d66786e638f61677098053927
+  action = addbutton
+  y = 146
+  label = Continue Run
+  value = continuerun
+  height = 20
+}
+
+customization {
+  orientation = top-centered
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = mimicbutton
+  x = -100
+  width = 201
+  actionid = 646d4f9a-1c5e-4f6c-92d5-cea0d9f60f051677098642232
+  action = addbutton
+  y = 169
+  label = Escape
+  value = net.minecraft.client.gui.GuiGameOver:button_compatibility_id:mc_deathscreen_titlemenu_button
   height = 20
 }
 
