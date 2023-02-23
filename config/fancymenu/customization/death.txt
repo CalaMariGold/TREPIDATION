@@ -27,8 +27,8 @@ customization {
   orientation = top-centered
   restartbackgroundanimations = true
   buttonaction = runscript
-  description = resets entire world without having to make a new world.%n%Can't be undone!
-  label = reset run
+  description = Resets entire world without having to make a new world.%n%Can't be undone!
+  label = Reset Run
   loopbackgroundanimations = true
   x = -50
   width = 100
