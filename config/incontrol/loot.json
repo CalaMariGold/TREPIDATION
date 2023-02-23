@@ -6,21 +6,21 @@
         "player": true,
         "item": "enderskills:token",
         "itemcount": "1",
-        "random": "0.20"
+        "random": "0.25"
     },
     {
         "mob":"minecraft:wither_skeleton",
         "player": true,
         "item": "enderskills:token",
         "itemcount": "1",
-        "random": "0.20"
+        "random": "0.25"
     },
     {
         "mob":"primitivemobs:flame_spewer",
         "player": true,
         "item": "enderskills:token",
         "itemcount": "1",
-        "random": "0.20"
+        "random": "0.35"
     },
 
 
@@ -150,6 +150,17 @@
         "item": "nethercraft:red_feather",
         "itemcount": "2-4"
     
+    },
+    {
+        "mob":"primitivemobs:blazing_juggernaut",
+        "player": true,
+        "remove": "minecraft:blaze_powder"
+    },
+    {
+        "mob":"primitivemobs:blazing_juggernaut",
+        "player": true,
+        "item": "minecraft:blaze_rod",
+        "itemcount": "1-2"
     }
     
 ]
