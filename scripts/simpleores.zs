@@ -19,7 +19,7 @@ var quartzPickaxeEnchantmentMap as IData = {};
 
 quartzPickaxeEnchantmentMap += quartzPickaxeEnchantments[0].makeEnchantment(2).makeTag();
 
-recipes.addShaped("quartz_pickaxe", <simpleores:tin_pickaxe>.withTag(quartzPickaxeEnchantmentMap),
+recipes.addShaped("quartz_pickaxe", <simpleores:tin_pickaxe>.withTag(({"Quark:RuneColor": 14, "Quark:RuneAttached": 1 as byte} as IData) + quartzPickaxeEnchantmentMap),
 [[<minecraft:quartz>,<minecraft:quartz>,<minecraft:quartz>],
 [<nethercraft:lava_reeds_item>,<nethercraft:glowood_stick>,<nethercraft:lava_reeds_item>],
 [null,<nethercraft:glowood_stick>,null]
