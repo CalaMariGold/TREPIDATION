@@ -64,15 +64,35 @@ Dropt.list("no_glowood_sapling")
   );
 
 // Ghast Bones Drop
-Dropt.list("ghast_bones")
-
+  Dropt.list("ghast_bones")
   .add(Dropt.rule()
-      .matchBlocks(["minecraft:bone_block"])
+      .matchBlocks(["minecraft:bone_block:*"])
       .addDrop(Dropt.drop()
+          .selector(Dropt.weight(75)) // drop nothing 75% of the time
+      )
+      .addDrop(Dropt.drop()
+          .selector(Dropt.weight(25))
           .items([<nethercraft:ghast_bones>])
-          .selector(Dropt.weight(10))
       )
   );
+
+  Dropt.list("ghast_bones_100")
+  .add(Dropt.rule()
+      .matchBlocks(["minecraft:bone_block:*"])
+      .matchHarvester(Dropt.harvester()
+          .type("PLAYER")
+          .mainHand([
+              <simpleores:tin_pickaxe:*>
+          ])
+      )
+      .addDrop(Dropt.drop()
+          .force()
+          .selector(Dropt.weight(100))
+          .items([<nethercraft:ghast_bones>], Dropt.range(2, 2))
+      )
+  );
+
+  
 <nethercraft:ghast_bones>.addTooltip("Sometimes drops from bone blocks");
 
 

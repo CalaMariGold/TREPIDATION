@@ -13,6 +13,12 @@ furnace.remove(<simpleores:adamantium_ingot>);
 furnace.remove(<simpleores:onyx_gem>);
 
 
+recipes.addShaped("quartz_pickaxe", <simpleores:tin_pickaxe>,
+[[<minecraft:quartz>,<minecraft:quartz>,<minecraft:quartz>],
+[null,<nethercraft:glowood_stick>,null],
+[null,<nethercraft:glowood_stick>,null]
+]);
+
 recipes.addShaped("copper_sword", <simpleores:copper_sword>,
 [[null,<erebus:materials:43>,null],
 [null,<erebus:materials:43>,null],
