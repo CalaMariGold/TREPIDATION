@@ -1,5 +1,17 @@
 [
     {
+        "dimension":5,
+        "multxp": 2
+    },
+    {
+        "dimension":10,
+        "multxp": 3
+    },
+    {
+        "dimension":0,
+        "multxp": 4
+    },
+    {
         "mob":"primitivemobs:blazing_juggernaut",
         "addxp": 15
     },
