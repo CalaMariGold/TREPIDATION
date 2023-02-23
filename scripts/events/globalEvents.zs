@@ -41,54 +41,13 @@ import crafttweaker.world.IWorldInfo;
 import crafttweaker.event.PlayerAdvancementEvent;
 
 
-// Add potion effects to certain foods
-HungerEvents.onFoodEaten(function(event as mods.hungertweaker.events.FoodEatenEvent) {
-
-    // Fire resist for scrambled magma eggs
-	if (event.food.definition.id == <contenttweaker:scrambled_magma_eggs>.definition.id) {
-		var fire_resistance = <potion:minecraft:fire_resistance>.makePotionEffect(200, 0, false, false);
-		event.player.addPotionEffect(fire_resistance);
-	}
-
-    // Fire resist + strength for deviled egg sandwich
-    if (event.food.definition.id == <contenttweaker:deviled_egg_sandwich>.definition.id) {
-		var fire_resistance = <potion:minecraft:fire_resistance>.makePotionEffect(600, 0, false, false);
-        var strength = <potion:minecraft:strength>.makePotionEffect(600, 0, false, false);
-		event.player.addPotionEffect(fire_resistance);
-        event.player.addPotionEffect(strength);
-	}
-
-    // Strength for devil's bread
-    if (event.food.definition.id == <nethercraft:devil_bread>.definition.id) {
-        var strength = <potion:minecraft:strength>.makePotionEffect(200, 0, false, false);
-        event.player.addPotionEffect(strength);
-	}
-
-    // Glowing for glow apple
-    if (event.food.definition.id == <nethercraft:glow_apple>.definition.id) {
-		var glowing = <potion:minecraft:glowing>.makePotionEffect(100, 0, false, false);
-		event.player.addPotionEffect(glowing);
-	}
-
-    // Glowing for glow stew
-    if (event.food.definition.id == <nethercraft:glow_stew>.definition.id) {
-		var glowing = <potion:minecraft:glowing>.makePotionEffect(200, 0, false, false);
-		event.player.addPotionEffect(glowing);
-	}
-});
-
 // Create a scoreboard for timer bonuses used when the player first logs into the game
 events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent) {
 	if (isNull(event.player.data.firstTimeJoin)) {
-        server.commandManager.executeCommand(server, "scoreboard objectives add timerbonus1 dummy");
 
-        server.commandManager.executeCommand(server, "scoreboard objectives add timerbonus2 dummy");
-        server.commandManager.executeCommand(server, "scoreboard players set Fake_Player timerbonus2 2");
-
-        server.commandManager.executeCommand(server, "scoreboard objectives add newtimer dummy");
-
-
+        server.commandManager.executeCommand(server, "scoreboard objectives add timerbonus dummy");
         event.player.update({firstTimeJoin: true});
+
     }
 });
 
@@ -102,9 +61,6 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
 
             if(event.player.hasGameStage("nether") && event.player.hasGameStage("erebus")){
 
-                server.commandManager.executeCommand(server, "scoreboard players operation @p newtimer = @p timerbonus1");
-                server.commandManager.executeCommand(server, "scoreboard players operation @p newtimer /= Fake_Player timerbonus2");
-
                 var player_name = event.player.name;
                 var totalSecs = event.tick/20;
                 var minutes = (totalSecs % 3600) / 60;
@@ -114,7 +70,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
                 var secondsElasped = totalSecondsElasped % 60;
                 var minutesElasped = (totalSecondsElasped % 3600) / 60;
                 event.player.sendChat(player_name + " escaped the Nether with " + "§4" + minutes + ":" + seconds + " (" + minutesElasped + ":" + secondsElasped + ")" + " §fleft." );
-                server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"newtimer\"},\"color\":\"dark_red\"}]");
+                server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"timerbonus\"},\"color\":\"dark_red\"}]");
                 
                 server.commandManager.executeCommand(server, "gamestage silentremove @p nether");
             }
@@ -126,8 +82,6 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
         EventManager.getInstance().onTimerTick(function(event as TickEvent){
 
             if(event.player.hasGameStage("erebus") && event.player.hasGameStage("deepdark")){
-                server.commandManager.executeCommand(server, "scoreboard players operation @p newtimer = @p timerbonus1");
-                server.commandManager.executeCommand(server, "scoreboard players operation @p newtimer /= Fake_Player timerbonus2");
 
                 var player_name = event.player.name;
                 var totalSecs = event.tick/20;
@@ -138,7 +92,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
                 var secondsElasped = totalSecondsElasped % 60;
                 var minutesElasped = (totalSecondsElasped % 3600) / 60;
                 event.player.sendChat(player_name + " escaped the Erebus with " + "§4" + minutes + ":" + seconds + " (" + minutesElasped + ":" + secondsElasped + ")" + " §fleft." );
-                server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"newtimer\"},\"color\":\"dark_red\"}]");
+                server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"timerbonus\"},\"color\":\"dark_red\"}]");
 
                 server.commandManager.executeCommand(server, "gamestage silentremove @p erebus");
             }
@@ -150,8 +104,6 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
         EventManager.getInstance().onTimerTick(function(event as TickEvent){
 
             if(event.player.hasGameStage("deepdark") && event.player.hasGameStage("surface")){
-                server.commandManager.executeCommand(server, "scoreboard players operation @p newtimer = @p timerbonus1");
-                server.commandManager.executeCommand(server, "scoreboard players operation @p newtimer /= Fake_Player timerbonus2");
 
                 var player_name = event.player.name;
                 var totalSecs = event.tick/20;
@@ -162,10 +114,11 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
                 var secondsElasped = totalSecondsElasped % 60;
                 var minutesElasped = (totalSecondsElasped % 3600) / 60;
                 event.player.sendChat(player_name + " escaped the Deep Dark with " + "§4" + minutes + ":" + seconds + " (" + minutesElasped + ":" + secondsElasped + ")" + " §fleft." );
-                server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"newtimer\"},\"color\":\"dark_red\"}]");
+                server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"timerbonus\"},\"color\":\"dark_red\"}]");
                 
-                server.commandManager.executeCommand(event.player, "say Developer Note: It's currently not possible to enter the End. Until then, have fun exploring the surface.");
                 server.commandManager.executeCommand(server, "gamestage silentremove @p deepdark");
+
+                event.player.sendChat("§3Developer Note: It's currently not possible to enter the End and beat the modpack. Until then, have fun exploring the Surface...");
             }
         });
     }
@@ -191,8 +144,10 @@ EventManager.getInstance().onTimeIsUp(function(event as TimeIsUpEvent){
 // onPlayerRightClickItem runs twice per click, which is why we have multiple scoreboards above
 static timerBonus as IItemStack = <timeisup:timer_bonus>;
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
-    val itemStack = event.item as IItemStack;     
-    if ((itemStack.definition.id).matches(timerBonus.definition.id)) {  
-        server.commandManager.executeCommand(server, "scoreboard players add @p timerbonus1 1");
-    }  
+    if(!event.world.isRemote()){
+        val itemStack = event.item as IItemStack;     
+        if ((itemStack.definition.id).matches(timerBonus.definition.id)) {  
+            server.commandManager.executeCommand(server, "scoreboard players add @p timerbonus 1");
+        }  
+    }
 });
