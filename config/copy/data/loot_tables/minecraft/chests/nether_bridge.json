@@ -67,7 +67,7 @@
         },
         {
           "entryName": "timeisup:timer_bonus",
-          "weight": 3,
+          "weight": 1,
           "quality": 0,
           "type": "item",
           "name": "timeisup:timer_bonus"
