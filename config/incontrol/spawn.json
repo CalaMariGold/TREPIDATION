@@ -7,6 +7,21 @@
     },
 
     {
+        "dimension": 10,
+        "mob": "minecraft:skeleton",
+        "random": "0.001",
+        "maxcount": {
+            "amount": 10,
+            "perchunk": true
+        },
+        "result": "allow"
+    },
+    {
+        "dimension": 10,
+        "mob": "minecraft:skeleton",
+        "result": "deny"
+    },
+    {
         "dimension": -1,
         "mob": "minecraft:ghast",
         "random": "0.001",

@@ -8,7 +8,7 @@
     "Neutral Mob": false,
     "Strafe Evade": true,
     "Animal Retaliate": false,
-    "Ranged Atk Dist": 32,
+    "Ranged Atk Dist": 25,
     "Ranged Atk Error": 5,
     "Arrow Tips": [
       "minecraft:slowness:60:0"
@@ -37,7 +37,7 @@
     "Jockey": 0.05,
     "Powered": 0.0,
     "Walking Fuse": true,
-    "Napalm": true,
+    "Napalm": false,
     "Breaching": true,
     "Cena": 0.01,
     "Health": 1.0,
