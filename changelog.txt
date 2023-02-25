@@ -1,9 +1,6 @@
-§lTREPIDATION v0.2.9§r
+§lTREPIDATION v0.3.0§r
 
 §eToo many changes to put here, click the version number on the main menu for full changelog.§r
 
 §a§lKnown Issues§r§r
-- Since basically forever
-- - Trees don’t generate on the Surface
-- Since v0.2.9
-- - The barrier at the top of the surface is replaced with dirt in river biomes
+- None so far!
