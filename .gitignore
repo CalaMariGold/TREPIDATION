@@ -44,3 +44,4 @@ config/splash.properties
 config/customloadingscreen_timings.nbt
 config/cd4017be/compiled.dat
 config/InvTweaks.cfg
+config/fantasticlib/reference/*
