@@ -160,7 +160,18 @@
         "mob":"primitivemobs:blazing_juggernaut",
         "player": true,
         "item": "minecraft:blaze_rod",
-        "itemcount": "1-2"
+        "itemcount": "2-3"
+    }
+    {
+        "mob":"minecraft:blaze",
+        "player": true,
+        "remove": "minecraft:blaze_rod"
+    },
+    {
+        "mob":"minecraft:blaze",
+        "player": true,
+        "item": "minecraft:blaze_rod",
+        "itemcount": "2-3"
     }
     
 ]
