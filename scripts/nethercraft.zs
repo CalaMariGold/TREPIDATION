@@ -111,3 +111,38 @@ recipes.addShaped("newarrow", <minecraft:arrow>*8,
 ]);
 
 
+// new neridium recipes
+recipes.remove(<nethercraft:neridium_sword>);
+recipes.addShaped("neridium_sword", <nethercraft:neridium_sword>,
+[[null,<nethercraft:neridium_ingot>,null],
+[null,<nethercraft:neridium_ingot>,null],
+[null,<minecraft:blaze_rod>,null]
+]);
+
+recipes.remove(<nethercraft:neridium_pickaxe>);
+recipes.addShaped("neridium_pickaxe", <nethercraft:neridium_pickaxe>,
+[[<nethercraft:neridium_ingot>,<nethercraft:neridium_ingot>,<nethercraft:neridium_ingot>],
+[null,<minecraft:blaze_rod>,null],
+[null,<minecraft:blaze_rod>,null]
+]);
+
+recipes.remove(<nethercraft:neridium_axe>);
+recipes.addShapedMirrored("neridium_axe", <nethercraft:neridium_axe>,
+[[<nethercraft:neridium_ingot>,<nethercraft:neridium_ingot>,null],
+[<nethercraft:neridium_ingot>,<minecraft:blaze_rod>,null],
+[null,<minecraft:blaze_rod>,null]
+]);
+
+recipes.remove(<nethercraft:neridium_shovel>);
+recipes.addShaped("neridium_shovel", <nethercraft:neridium_shovel>,
+[[null,<nethercraft:neridium_ingot>,null],
+[null,<minecraft:blaze_rod>,null],
+[null,<minecraft:blaze_rod>,null]
+]);
+
+recipes.remove(<nethercraft:neridium_bow>);
+recipes.addShaped("neridium_bow", <nethercraft:neridium_bow>,
+[[null,<minecraft:blaze_rod>,<minecraft:string>],
+[<nethercraft:neridium_ingot>,null,<minecraft:string>],
+[null,<minecraft:blaze_rod>,<minecraft:string>]
+]);
