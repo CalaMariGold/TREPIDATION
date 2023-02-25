@@ -161,7 +161,7 @@
         "player": true,
         "item": "minecraft:blaze_rod",
         "itemcount": "2-3"
-    }
+    },
     {
         "mob":"minecraft:blaze",
         "player": true,

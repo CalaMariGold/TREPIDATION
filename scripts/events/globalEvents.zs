@@ -41,6 +41,13 @@ import crafttweaker.world.IWorldInfo;
 import crafttweaker.event.PlayerAdvancementEvent;
 
 
+// Give player soul compass with curse of vanishing upon death
+events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
+    if(!event.entity.world.isRemote()){
+        server.commandManager.executeCommand(server, "give @p quark:soul_compass 1 0 {ench:[{id:71,lvl:1}]}");
+    }
+});
+
 // Create a scoreboard for timer bonuses used when the player first logs into the game
 events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent) {
 	if (isNull(event.player.data.firstTimeJoin)) {

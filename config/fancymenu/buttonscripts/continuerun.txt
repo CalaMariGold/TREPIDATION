@@ -1,2 +1,1 @@
 mimicbutton:net.minecraft.client.gui.GuiGameOver:button_compatibility_id:mc_deathscreen_respawn_button
-sendmessage:/give @p quark:soul_compass 1 0 {ench:[{id:71,lvl:1}]}
