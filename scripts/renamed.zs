@@ -9,6 +9,8 @@ import mods.jei.JEI;
 <nethercraft:slime_eggs>.displayName = "Magma Eggs";
 <nethercraft:slime_eggs>.addTooltip("Can be thrown or used to make a delicious meal");
 <nethercraft:devil_bread>.addTooltip("Goes really well with Magma Eggs");
+<nethercraft:glow_apple>.displayName = "Glow Worm";
+
 
 // Skills
 <enderskills:token>.displayName = "§cTrace of Death";
