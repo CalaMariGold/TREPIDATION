@@ -36,6 +36,12 @@ net.minecraft.client.gui.GuiMultiplayer {
 net.minecraft.client.gui.GuiGameOver {
 }
 
+net.minecraft.client.gui.GuiScreenResourcePacks {
+}
+
+net.optifine.shaders.gui.GuiShaders {
+}
+
 net.minecraft.client.gui.GuiIngameMenu {
 }
 
