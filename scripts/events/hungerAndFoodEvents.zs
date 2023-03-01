@@ -43,6 +43,9 @@ import crafttweaker.event.PlayerAdvancementEvent;
 
 // Add potion effects to certain foods
 HungerEvents.onFoodEaten(function(event as mods.hungertweaker.events.FoodEatenEvent) {
+	if (event.player.world.isRemote()) {
+		return;
+	}
 
     // Fire resist for scrambled magma eggs
 	if (event.food.definition.id == <contenttweaker:scrambled_magma_eggs>.definition.id) {
