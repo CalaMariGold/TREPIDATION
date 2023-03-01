@@ -5,10 +5,15 @@ import mods.jei.JEI;
 
 // Food
 <contenttweaker:scrambled_magma_eggs>.displayName = "Scrambled Magma Eggs";
+<contenttweaker:scrambled_magma_eggs>.addTooltip("§3Gives Fire Resistance for 10s");
+
 <contenttweaker:deviled_egg_sandwich>.displayName = "§cDeviled Egg Sandwich";
+<contenttweaker:deviled_egg_sandwich>.addTooltip("§3Gives Fire Resistance and Strength for 30s");
+
 <nethercraft:slime_eggs>.displayName = "Magma Eggs";
 <nethercraft:slime_eggs>.addTooltip("Can be thrown or used to make a delicious meal");
 <nethercraft:devil_bread>.addTooltip("Goes really well with Magma Eggs");
+<nethercraft:devil_bread>.addTooltip("§3Gives Strength for 10s");
 <nethercraft:glow_apple>.displayName = "Glow Worm";
 
 
