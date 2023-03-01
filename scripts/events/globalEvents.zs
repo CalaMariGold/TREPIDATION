@@ -42,6 +42,8 @@ import crafttweaker.event.PlayerAdvancementEvent;
 
 
 // Give player soul compass with curse of vanishing upon death
+// Currently runs for each player in the server when 1 player respawns, giving everyone a compass.
+// No idea how to fix
 events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
     if(!event.entity.world.isRemote()){
         server.commandManager.executeCommand(server, "give @p quark:soul_compass 1 0 {ench:[{id:71,lvl:1}]}");
