@@ -9,6 +9,7 @@ JEI.removeAndHide(<nethercraft:imp_chestplate>);
 JEI.removeAndHide(<nethercraft:imp_leggings>);
 JEI.removeAndHide(<nethercraft:imp_boots>);
 
+
 recipes.remove(<minecraft:magma_cream>);
 recipes.addShapeless("magma_cream", <minecraft:magma_cream>,[<minecraft:blaze_powder>, <nethercraft:slime_eggs>]);
 
@@ -26,10 +27,10 @@ var purple_glowshroom = <nethercraft:purple_glowshroom>;
 
 
 // Glow Stew Recipe
-recipes.addShapeless("glowstew", <nethercraft:glow_stew>,[green_glowshroom, purple_glowshroom, <ore:bowlWood>]);
+recipes.addShapeless("glowstew", <nethercraft:glow_stew>,[green_glowshroom, purple_glowshroom, <nethercraft:glowood_bowl>]);
 
 recipes.remove(<minecraft:mushroom_stew>);
-recipes.addShapeless("mushroom_stew_new", <minecraft:mushroom_stew>,[<ore:mushroomAny>,<ore:mushroomAny>, <ore:bowlWood>]);
+recipes.addShapeless("mushroom_stew_new", <minecraft:mushroom_stew>,[<ore:mushroomAny>,<ore:mushroomAny>, <minecraft:bowl>]);
 
 
 // Slab
