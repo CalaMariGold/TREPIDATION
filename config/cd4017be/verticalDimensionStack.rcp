@@ -94,7 +94,7 @@ INIT() {
 	!add("basicLayer", <dimId>, <blockstate>, [<startY>, <minY>, <maxY>, <endY>]#);
 	add("basicLayer", -1, "minecraft:bedrock@0", [0, 0, 1, 1]#);
 	add("basicLayer", -1, "dimstack:bedrock@0", [126, 126, 127, 127]#);
-	add("basicLayer", 5, "dimstack:bedrock@1", [126, 126, 127, 127]#);
+	add("basicLayer", 5, "dimstack:bedrock@1", [125, 125, 127, 127]#);
 	add("basicLayer", 10, "dimstack:bedrock@2", [254, 254, 255, 255]#);
 		
 	!remove the '!' in the following line to enable top half nether generation
