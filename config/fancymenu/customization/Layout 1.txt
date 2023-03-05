@@ -114,7 +114,7 @@ customization {
   buttonaction = openlink
   backgroundhovered = resources\trepidation\transparent.png
   description = Click to view changelog
-  label = v0.3.0
+  label = v0.3.1
   loopbackgroundanimations = true
   x = -1
   width = 35
