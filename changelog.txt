@@ -1,6 +1,7 @@
-§lTREPIDATION v0.3.0§r
+§lTREPIDATION v0.3.1§r
 
-§eToo many changes to put here, click the version number on the main menu for full changelog.§r
+§eClick the version number on the main menu for full changelog.§r
 
 §a§lKnown Issues§r§r
-- None so far!
+- Since basically forever
+- - Some Erebus structures rarely spawn high up and replace the barrier
