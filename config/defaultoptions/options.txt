@@ -2,7 +2,7 @@ version:1343
 invertYMouse:false
 mouseSensitivity:0.5
 fov:0.5
-gamma:0.0
+gamma:1.0
 saturation:0.0
 renderDistance:10
 guiScale:3
@@ -53,7 +53,7 @@ autoJump:false
 narrator:0
 tutorialStep:none
 soundCategory_master:0.70
-soundCategory_music:1.0
+soundCategory_music:0.70
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0
