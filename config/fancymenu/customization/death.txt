@@ -27,7 +27,7 @@ customization {
   orientation = top-centered
   restartbackgroundanimations = true
   buttonaction = runscript
-  description = Resets entire world without having to make a new world.%n%Can't be undone!%n%Multiplayer only
+  description = Resets entire world without having to make a new world.%n%Can't be undone!%n%Must be OP and server owner!
   label = Reset Run (MP)
   loopbackgroundanimations = true
   x = -101

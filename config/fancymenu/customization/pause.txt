@@ -17,14 +17,14 @@ customization {
   orientation = top-centered
   restartbackgroundanimations = true
   buttonaction = runscript
-  description = Resets entire world without having to make a new world.%n%Can't be undone!%N%Multiplayer Only
+  description = Resets entire world without having to make a new world.%n%Can't be undone!%N%Must be OP and server owner!
   label = Reset Run (MP)
   loopbackgroundanimations = true
   x = -102
   width = 100
   actionid = be03df45-da9b-48bb-82a1-0a4295461af31677092123506
   action = addbutton
-  y = 225
+  y = 260
   value = rerollcontinueMP
   height = 20
 }
@@ -36,11 +36,11 @@ customization {
   description = Resets entire world without having to make a new world.%n%Can't be undone!
   label = Reset Run (SP)
   loopbackgroundanimations = true
-  x = 1
+  x = 2
   width = 100
   actionid = 17d8a50f-c355-4069-95ea-04aa2af1bf281679249539213
   action = addbutton
-  y = 225
+  y = 260
   value = rerollcontinue
   height = 20
 }
