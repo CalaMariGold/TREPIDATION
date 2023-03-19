@@ -1,0 +1,5 @@
+mimicbutton:net.minecraft.client.gui.GuiGameOver:button_compatibility_id:mc_deathscreen_respawn_button
+sendmessage: /reroll all
+sendmessage: /tp @a @p
+sendmessage: /setworldspawn
+sendmessage: /spawnpoint @a ~ ~ ~

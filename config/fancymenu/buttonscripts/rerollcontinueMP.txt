@@ -1,0 +1,5 @@
+mimicbutton:net.minecraft.client.gui.GuiIngameMenu:button_compatibility_id:mc_pausescreen_return_to_game_button
+sendmessage: /reroll all
+sendmessage: /tp @a @p
+sendmessage: /setworldspawn
+sendmessage: /spawnpoint @a ~ ~ ~
