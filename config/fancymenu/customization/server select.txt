@@ -18,7 +18,7 @@ customization {
   enable_scrolling = false
   shadow = true
   scale = 1.0
-  source = Playing with friends? Create a Team by clicking the button at the top of your inventory.
+  source = Playing with friends? No need to create a server!%n%Create a singleplayer world and add friends via the pause menu.%n%Then, you can invite them to your world.%n%%n%Don't forget to create a team by clicking the "T" at the top of your inventory.
   text_border = 0
   case_mode = normal
   source_mode = direct
@@ -27,8 +27,8 @@ customization {
   width = 402
   action = custom_layout_element:fancymenu_customization_item_text
   actionid = 637eb03c-25f6-4c1e-a3df-626f1211bf301676924998213
-  y = -63
+  y = -106
   alignment = centered
-  height = 11
+  height = 54
 }
 
