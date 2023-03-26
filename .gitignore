@@ -45,3 +45,10 @@ config/customloadingscreen_timings.nbt
 config/cd4017be/compiled.dat
 config/InvTweaks.cfg
 config/fantasticlib/reference/*
+essential/avatar-cache/
+essential/cosmetic-cache/
+essential/loader/
+essential/screenshot-cache/
+essential/lwjgl3-natives/
+essential/screenshot-checksum-caches.json
+essential/Essential (forge_1.12.2).jar
