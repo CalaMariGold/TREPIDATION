@@ -1,7 +1,7 @@
-§lTREPIDATION v0.3.1§r
+§lTREPIDATION v0.3.2§r
 
 §eClick the version number on the main menu for full changelog.§r
 
 §a§lKnown Issues§r§r
-- Since basically forever
-- - Some Erebus structures rarely spawn high up and replace the barrier
+- Some Erebus structures rarely spawn high up and replace the barrier
+- Players joining in multiplayer sessions do not spawn at the same place (reset run to fix this)
