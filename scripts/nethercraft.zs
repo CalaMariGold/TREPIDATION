@@ -9,6 +9,8 @@ JEI.removeAndHide(<nethercraft:imp_chestplate>);
 JEI.removeAndHide(<nethercraft:imp_leggings>);
 JEI.removeAndHide(<nethercraft:imp_boots>);
 
+recipes.remove(<nethercraft:devil_bread>);
+
 
 recipes.remove(<minecraft:magma_cream>);
 recipes.addShapeless("magma_cream", <minecraft:magma_cream>,[<minecraft:blaze_powder>, <nethercraft:slime_eggs>]);
