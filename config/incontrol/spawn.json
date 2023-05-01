@@ -248,6 +248,21 @@
         "dimension": 0,
         "mob": "srparasites:beckon_siv",
         "result": "deny"
+     },
+
+     {
+        "dimension": -1,
+        "mob": "minecraft:zombie_pigman",
+        "maxcount": {
+            "amount": 50,
+            "perchunk": true
+        },
+        "result": "allow"
+     },
+     {
+        "dimension": -1,
+        "mob": "minecraft:zombie_pigman",
+        "result": "deny"
      }
 
      
