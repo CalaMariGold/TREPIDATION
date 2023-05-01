@@ -26,62 +26,78 @@ customization {
 customization {
   orientation = top-centered
   restartbackgroundanimations = true
-  buttonaction = runscript
+  delayappearanceseconds = 1.0
+  buttonaction = runscript;rerolldeathMP%btnaction_splitter_fm%
   description = Resets entire world without having to make a new world.%n%Can't be undone!%n%Must be OP and server owner!
   label = Reset Run (MP)
   loopbackgroundanimations = true
+  fadein = true
+  fadeinspeed = 1.0
   x = -101
   width = 100
+  action = addbutton
   actionid = d3718b4b-fd9d-4fd3-8827-0a17f8ad3e811677090866197
-  action = addbutton
   y = 204
-  value = rerolldeathMP
+  delayappearance = true
+  delayappearanceeverytime = true
   height = 20
 }
 
 customization {
   orientation = top-centered
-  loopbackgroundanimations = true
   restartbackgroundanimations = true
-  buttonaction = runscript
-  x = -100
-  width = 201
-  actionid = 3305ff8e-c06e-4fa0-9311-d66786e638f61677098053927
-  action = addbutton
-  y = 146
+  delayappearanceseconds = 1.0
+  buttonaction = runscript;continuerun%btnaction_splitter_fm%
   label = Continue Run
-  value = continuerun
-  height = 20
-}
-
-customization {
-  orientation = top-centered
   loopbackgroundanimations = true
-  restartbackgroundanimations = true
-  buttonaction = mimicbutton
+  fadein = true
+  fadeinspeed = 1.0
   x = -100
   width = 201
-  actionid = 646d4f9a-1c5e-4f6c-92d5-cea0d9f60f051677098642232
   action = addbutton
-  y = 169
-  label = Escape
-  value = net.minecraft.client.gui.GuiGameOver:button_compatibility_id:mc_deathscreen_titlemenu_button
+  actionid = 3305ff8e-c06e-4fa0-9311-d66786e638f61677098053927
+  y = 146
+  delayappearance = true
+  delayappearanceeverytime = true
   height = 20
 }
 
 customization {
   orientation = top-centered
   restartbackgroundanimations = true
-  buttonaction = runscript
+  delayappearanceseconds = 1.0
+  buttonaction = mimicbutton;net.minecraft.client.gui.GuiGameOver:button_compatibility_id:mc_deathscreen_titlemenu_button%btnaction_splitter_fm%
+  label = Escape
+  loopbackgroundanimations = true
+  fadein = true
+  fadeinspeed = 1.0
+  x = -100
+  width = 201
+  action = addbutton
+  actionid = 646d4f9a-1c5e-4f6c-92d5-cea0d9f60f051677098642232
+  y = 169
+  delayappearance = true
+  delayappearanceeverytime = true
+  height = 20
+}
+
+customization {
+  orientation = top-centered
+  restartbackgroundanimations = true
+  delayappearanceseconds = 1.0
+  buttonaction = runscript;rerolldeath%btnaction_splitter_fm%
   description = Resets entire world without having to make a new world.%n%Can't be undone!
   label = Reset Run (SP)
   loopbackgroundanimations = true
+  fadein = true
+  fadeinspeed = 1.0
   x = 2
   width = 100
-  actionid = cb6b82b2-db72-4df8-b918-f5ee67e10d9a1679249886937
   action = addbutton
+  actionid = cb6b82b2-db72-4df8-b918-f5ee67e10d9a1679249886937
   y = 204
-  value = rerolldeath
+  delayappearance = true
+  delayappearanceeverytime = true
   height = 20
 }
 
