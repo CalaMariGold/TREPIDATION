@@ -28,11 +28,23 @@
         },
         {
           "entryName": "nethercraft:pyridium_sword",
-          "weight": 2,
+          "weight": 3,
           "quality": 0,
           "type": "item",
-          "name": "nethercraft:pyridium_sword"
-        },
+          "name": "nethercraft:pyridium_sword",
+          "functions": [
+            {
+                "function": "minecraft:enchant_randomly",
+                "enchantments": [
+                  "minecraft:fire_aspect"
+                ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Quark:RuneColor\": 14, \"Quark:RuneAttached\": 1}"
+            }
+        ]
+        },        
         {
           "entryName": "nethercraft:neridium_chestplate",
           "weight": 5,
@@ -89,8 +101,20 @@
           "weight": 3,
           "quality": 0,
           "type": "item",
-          "name": "nethercraft:pyridium_bow"
-        },
+          "name": "nethercraft:pyridium_bow",
+          "functions": [
+            {
+                "function": "minecraft:enchant_randomly",
+                "enchantments": [
+                  "minecraft:flame"
+                ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Quark:RuneColor\": 14, \"Quark:RuneAttached\": 1}"
+            }
+        ]
+        }, 
         {
           "entryName": "nethercraft:devil_bread",
           "weight": 5,
@@ -108,7 +132,7 @@
           "name": "nethercraft:devil_bread"
         },
         {
-          "entryName": "minecraft:blaze_rod",
+          "entryName": "nethercraft:ghast_bones",
           "weight": 5,
           "quality": 0,
           "type": "item",
@@ -121,7 +145,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:blaze_rod"
+          "name": "nethercraft:ghast_bones"
         }
       ],
       "rolls": 8.0

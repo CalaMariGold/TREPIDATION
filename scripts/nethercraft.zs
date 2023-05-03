@@ -3,14 +3,23 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.block.IBlockDefinition;
 import mods.dropt.Dropt;
 import mods.jei.JEI;
+import crafttweaker.enchantments.IEnchantmentDefinition;
+import crafttweaker.data.IData;
+
 
 JEI.removeAndHide(<nethercraft:imp_helmet>);
 JEI.removeAndHide(<nethercraft:imp_chestplate>);
 JEI.removeAndHide(<nethercraft:imp_leggings>);
 JEI.removeAndHide(<nethercraft:imp_boots>);
 
-recipes.remove(<nethercraft:devil_bread>);
+JEI.removeAndHide(<nethercraft:lava_paper>);
+JEI.removeAndHide(<nethercraft:lava_book>);
+JEI.removeAndHide(<nethercraft:dark_wheat_crops>);
+JEI.removeAndHide(<nethercraft:dark_seeds>);
 
+
+recipes.remove(<nethercraft:devil_bread>);
+furnace.remove(<nethercraft:heat_glass>);
 
 recipes.remove(<minecraft:magma_cream>);
 recipes.addShapeless("magma_cream", <minecraft:magma_cream>,[<minecraft:blaze_powder>, <nethercraft:slime_eggs>]);
@@ -102,11 +111,11 @@ Dropt.list("no_glowood_sapling")
 
 val glowood_log as IItemStack = <nethercraft:glowood_log>;
 glowood_log.hardness = 1;
+glowood_log.asBlock().definition.resistance = 9999;
 
-// Arrow Recipes
 
+// Arrow Recipe
 recipes.remove(<minecraft:arrow>);
-
 recipes.addShaped("newarrow", <minecraft:arrow>*8,
 [[null,<ore:arrowIngredient>,null],
 [null,<ore:stickWood>,null],
@@ -119,33 +128,86 @@ recipes.remove(<nethercraft:neridium_sword>);
 recipes.addShaped("neridium_sword", <nethercraft:neridium_sword>,
 [[null,<nethercraft:neridium_ingot>,null],
 [null,<nethercraft:neridium_ingot>,null],
-[null,<minecraft:blaze_rod>,null]
+[null,<nethercraft:ghast_rod>,null]
 ]);
 
 recipes.remove(<nethercraft:neridium_pickaxe>);
 recipes.addShaped("neridium_pickaxe", <nethercraft:neridium_pickaxe>,
 [[<nethercraft:neridium_ingot>,<nethercraft:neridium_ingot>,<nethercraft:neridium_ingot>],
-[null,<minecraft:blaze_rod>,null],
-[null,<minecraft:blaze_rod>,null]
+[null,<nethercraft:ghast_rod>,null],
+[null,<nethercraft:ghast_rod>,null]
 ]);
 
 recipes.remove(<nethercraft:neridium_axe>);
 recipes.addShapedMirrored("neridium_axe", <nethercraft:neridium_axe>,
 [[<nethercraft:neridium_ingot>,<nethercraft:neridium_ingot>,null],
-[<nethercraft:neridium_ingot>,<minecraft:blaze_rod>,null],
-[null,<minecraft:blaze_rod>,null]
+[<nethercraft:neridium_ingot>,<nethercraft:ghast_rod>,null],
+[null,<nethercraft:ghast_rod>,null]
 ]);
 
 recipes.remove(<nethercraft:neridium_shovel>);
 recipes.addShaped("neridium_shovel", <nethercraft:neridium_shovel>,
 [[null,<nethercraft:neridium_ingot>,null],
+[null,<nethercraft:ghast_rod>,null],
+[null,<nethercraft:ghast_rod>,null]
+]);
+
+recipes.remove(<nethercraft:neridium_bow>);
+recipes.addShaped("quartz_bow", <nethercraft:neridium_bow>,
+[[null,<minecraft:quartz>,<minecraft:string>],
+[<nethercraft:lava_reeds_item>,null,<minecraft:string>],
+[null,<minecraft:quartz>,<minecraft:string>]
+]);
+
+
+
+// new pyridium recipes
+val pyridiumSwordEnchantments as IEnchantmentDefinition[] = [<enchantment:minecraft:fire_aspect>];
+var pyridiumSwordEnchantmentMap as IData = {};
+pyridiumSwordEnchantmentMap += pyridiumSwordEnchantments[0].makeEnchantment(1).makeTag();
+
+val pyridiumBowEnchantments as IEnchantmentDefinition[] = [<enchantment:minecraft:flame>];
+var pyridiumBowEnchantmentMap as IData = {};
+pyridiumBowEnchantmentMap += pyridiumBowEnchantments[0].makeEnchantment(1).makeTag();
+
+recipes.remove(<nethercraft:pyridium_sword>);
+recipes.addShaped("pyridium_sword", <nethercraft:pyridium_sword>.withTag(({"Quark:RuneColor": 14, "Quark:RuneAttached": 1 as byte} as IData) + pyridiumSwordEnchantmentMap),
+[[null,<nethercraft:pyridium_ingot>,null],
+[null,<nethercraft:pyridium_ingot>,null],
+[null,<minecraft:blaze_rod>,null]
+]);
+
+recipes.remove(<nethercraft:pyridium_pickaxe>);
+recipes.addShaped("pyridium_pickaxe", <nethercraft:pyridium_pickaxe>,
+[[<nethercraft:pyridium_ingot>,<nethercraft:pyridium_ingot>,<nethercraft:pyridium_ingot>],
 [null,<minecraft:blaze_rod>,null],
 [null,<minecraft:blaze_rod>,null]
 ]);
 
-recipes.remove(<nethercraft:neridium_bow>);
-recipes.addShaped("neridium_bow", <nethercraft:neridium_bow>,
+recipes.remove(<nethercraft:pyridium_axe>);
+recipes.addShapedMirrored("pyridium_axe", <nethercraft:pyridium_axe>,
+[[<nethercraft:pyridium_ingot>,<nethercraft:pyridium_ingot>,null],
+[<nethercraft:pyridium_ingot>,<minecraft:blaze_rod>,null],
+[null,<minecraft:blaze_rod>,null]
+]);
+
+recipes.remove(<nethercraft:pyridium_shovel>);
+recipes.addShaped("pyridium_shovel", <nethercraft:pyridium_shovel>,
+[[null,<nethercraft:pyridium_ingot>,null],
+[null,<minecraft:blaze_rod>,null],
+[null,<minecraft:blaze_rod>,null]
+]);
+
+recipes.remove(<nethercraft:pyridium_bow>);
+recipes.addShaped("pyridium_bow", <nethercraft:pyridium_bow>.withTag(({"Quark:RuneColor": 14, "Quark:RuneAttached": 1 as byte} as IData) + pyridiumBowEnchantmentMap),
 [[null,<minecraft:blaze_rod>,<minecraft:string>],
-[<nethercraft:neridium_ingot>,null,<minecraft:string>],
+[<nethercraft:pyridium_ingot>,null,<minecraft:string>],
 [null,<minecraft:blaze_rod>,<minecraft:string>]
 ]);
+
+recipes.addShaped("infernal_fortress_scepter", <contenttweaker:infernal_fortress_scepter>,
+[[null,<nethercraft:pyridium_ingot>,<nethercraft:pyridium_ingot>],
+[<nethercraft:ghast_bones>,<minecraft:blaze_rod>,<nethercraft:pyridium_ingot>],
+[<minecraft:blaze_rod>,<nethercraft:ghast_bones>,null]
+]);
+
