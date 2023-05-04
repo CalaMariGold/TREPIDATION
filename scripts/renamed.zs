@@ -11,15 +11,15 @@ import mods.jei.JEI;
 <contenttweaker:deviled_egg_sandwich>.addTooltip("§3Gives Fire Resistance and Strength for 30s");
 
 <nethercraft:slime_eggs>.displayName = "Magma Eggs";
-<nethercraft:slime_eggs>.addTooltip("Can be thrown or used to make a delicious meal");
-<nethercraft:devil_bread>.addTooltip("Goes really well with Magma Eggs");
+<nethercraft:slime_eggs>.addTooltip("§oCan be hurled at foes to ignite them or harnessed to create a deceptively fiery meal.");
+<nethercraft:devil_bread>.addTooltip("§oA smoldering delicacy pairing exquisitely with the deliciousness of Magma Eggs");
 <nethercraft:devil_bread>.addTooltip("§3Gives Strength for 10s");
 <nethercraft:glow_apple>.displayName = "Glow Worm";
 
 
 // Skills
 <enderskills:token>.displayName = "§cTrace of Death";
-<enderskills:token>.addTooltip("Right-click to break and add to your Souls");
+<enderskills:token>.addTooltip("§3Right-click to break and add to your Souls");
 
 JEI.addDescription(<enderskills:token>,"Trace of Death is a mysterious and powerful artifact, its origins shrouded in mystery and tales of terror. Its eerie presence is marked by a cold, ominous aura that seems to permeate the air around it.
 When shattered, the Trace of Death unleashes a torrent of spectral energies that emanate from the broken fragments, reaching out to ensnare the wandering souls that still cling to this realm. These souls are then drawn inexorably towards the one who shattered the artifact, granting them not only an infusion of raw power but also a glimpse into the secrets and knowledge that these spirits once held.
@@ -90,16 +90,28 @@ JEI.addDescription(<nethercraft:glow_apple>,"Glowood Trees are the eerie flora t
 <simpleores:tin_pickaxe>.addTooltip("§3Bone blocks will always drop 2 ghast bones when mined");
 <nethercraft:neridium_bow>.displayName = "Quartz Bow";
 
-<nethercraft:neridium_lighter>.displayName = "Veilstrium Lighter";
-<nethercraft:ghast_bomb>.addTooltip("Can be lit with a Veilstrium Lighter");
-<nethercraft:ghast_marrow>.addTooltip("Highly flammable and explosive material");
+<nethercraft:neridium_lighter>.displayName = "Quartz Lighter";
+<nethercraft:ghast_bomb>.addTooltip("§oA volatile and spectral explosive, awaiting ignition by a Quartz Lighter to unleash its devastating force.");
+<nethercraft:ghast_marrow>.addTooltip("§oAn unstable substance, harboring explosive potential.");
+
+<mysticstaffs:fire_staff>.displayName = "§cStaff of Infernal";
+<mysticstaffs:fire_staff>.addTooltip("§oA potent weapon that engulfs nearby enemies in a searing inferno.");
+<contenttweaker:vitality_orb>.displayName = "Orb of Veilheart";
+JEI.addDescription(<contenttweaker:vitality_orb>,"The Orb of Veilheart, a miraculous fusion of ethereal Veilstrium and enigmatic Foulite dust, possesses a unique duality that unlocks its potent soul-healing powers. The Veilstrium's celestial energies cleanse and purify the spirit, while the Foulite dust's grounding properties restore balance and stability to the physical realm, harmoniously mending both body and soul.");
+
+<mysticstaffs:heal_staff>.displayName = "§cStaff of Veilheart";
+<mysticstaffs:heal_staff>.addTooltip("§oA benevolent staff that rejuvenates the soul and body of allies.");
+<mysticstaffs:heal_staff>.addTooltip("§3Uses 1 feather");
+
+<nethercraft:ghast_bones>.addTooltip("§oOccasionally harvested from bone blocks submerged in the searing lava oceans.");
+
 
 // Deep Dark
 <quark:elder_prismarine:2>.displayName = "Deep Stone";
 
 // Misc
-<quark:soul_compass>.addTooltip("Points to your most recent death location");
-<minecraft:fire_charge>.addTooltip("Can be thrown");
-<scalinghealth:healingitem:0>.addTooltip("§3Can be combined into a medkit.");
+<quark:soul_compass>.addTooltip("§oA guiding relic, directing you unerringly to the site of your most recent demise");
+<minecraft:fire_charge>.addTooltip("§oA blazing projectile, detonating with fiery force upon impact.");
+<scalinghealth:healingitem:0>.addTooltip("§oEssential and versatile, these bandages provide healing and can be combined to form a medkit for enhanced recovery.");
 
 

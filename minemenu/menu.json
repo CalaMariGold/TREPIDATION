@@ -78,6 +78,19 @@
         }
       }
     },
+    "6": {
+      "title": "heal",
+      "icon": {
+        "name": "minecraft:wool",
+        "damage": 11
+      },
+      "action": {
+        "command": {
+          "command": "/heal",
+          "clipboard": false
+        }
+      }
+    },
     "7": {
       "title": "Strength",
       "icon": {

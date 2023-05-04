@@ -1,3 +1,4 @@
+#loader crafttweaker reloadable
 import crafttweaker.block.IBlock;
 import crafttweaker.block.IBlockState;
 
@@ -44,6 +45,9 @@ import mods.contenttweaker.ActionResult;
 
 
 
+
+// Scepter of Infernal Conjuring
+// Summons a structure when right clicked
 static scepter as IItemStack = <contenttweaker:infernal_fortress_scepter>;
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
     if(!event.world.isRemote()){
@@ -52,20 +56,22 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             Commands.call("playsound minecraft:item.totem.use player @p", event.player, event.world, true, true);
             server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The ground begins to tremble as you tightly grasp the scepter, its dark energy pulsating through your veins. As the air crackles with anticipation, the scepter starts to dissolve into a swirling vortex of crimson smoke. Gradually, the smoke weaves itself into the fabric of the surroundings as the scepter's essence becomes one with a hellish structure.\",\"color\":\"dark_red\",\"italic\":true}]");
             Commands.call("pillar-spawn witherarena ~ 10 ~", event.player, event.world, true, true);
-            Commands.call("playsound enderskills:portal_active player @p", event.player, event.world, true, true);
             var i = 0;
-            while(i < 100){
+            while(i < 1000){
                 i+=1;
             }
-            if(i == 100){
+            if(i == 1000){
                 Commands.call("tp @a ~ 10 ~", event.player, event.world, true, true);
+                Commands.call("playsound enderskills:portal_active player @p", event.player, event.world, true, true);
+                // Below causes a nullpointer exception, but doesn't break anything. ChatFlow is used to remove the error log in the chat
+                Commands.call("clear @p contenttweaker:infernal_fortress_scepter", event.player, event.world, true, true);
             }
-            //Commands.call("clear @p contenttweaker:infernal_fortress_scepter", event.player, event.world, true, true);
         }
     }
 });
 
 
+// Trace of Death first time right-clicking
 static traceofdeath as IItemStack = <enderskills:token>;
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
     if(!event.world.isRemote()){

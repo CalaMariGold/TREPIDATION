@@ -21,3 +21,6 @@ deviled_egg_sandwich.register();
 val infernal_fortress_scepter = mods.contenttweaker.VanillaFactory.createItem("infernal_fortress_scepter");
 infernal_fortress_scepter.maxStackSize = 1;
 infernal_fortress_scepter.register();
+
+val vitality_orb = mods.contenttweaker.VanillaFactory.createItem("vitality_orb");
+vitality_orb.register();

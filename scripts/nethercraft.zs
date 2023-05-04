@@ -63,7 +63,7 @@ recipes.addShaped("bandage", <scalinghealth:healingitem>,
 
 
 recipes.remove(<nethercraft:neridium_lighter>);
-recipes.addShapeless("neridium lighter", <nethercraft:neridium_lighter>, [<nethercraft:neridium_ingot>, <nethercraft:foulite_dust>]);
+recipes.addShapeless("neridium lighter", <nethercraft:neridium_lighter>, [<minecraft:quartz>, <nethercraft:foulite_dust>]);
 
 // Remove Glowood Sapling Drop
 Dropt.list("no_glowood_sapling")
@@ -105,13 +105,19 @@ Dropt.list("no_glowood_sapling")
   );
 
   
-<nethercraft:ghast_bones>.addTooltip("Sometimes drops from bone blocks");
 
 
 
 val glowood_log as IItemStack = <nethercraft:glowood_log>;
+val pyridium_ore as IItemStack = <nethercraft:pyridium_ore>;
+val pyridium_block as IItemStack = <nethercraft:pyridium_block>;
+
+
 glowood_log.hardness = 1;
 glowood_log.asBlock().definition.resistance = 9999;
+pyridium_ore.asBlock().definition.lightLevel = 1;
+pyridium_block.asBlock().definition.lightLevel = 10;
+
 
 
 // Arrow Recipe
@@ -211,3 +217,16 @@ recipes.addShaped("infernal_fortress_scepter", <contenttweaker:infernal_fortress
 [<minecraft:blaze_rod>,<nethercraft:ghast_bones>,null]
 ]);
 
+
+
+recipes.addShaped("vitality_orb", <contenttweaker:vitality_orb>,
+[[<nethercraft:foulite_dust>,<nethercraft:foulite_dust>,<nethercraft:foulite_dust>],
+[<nethercraft:foulite_dust>,<nethercraft:neridium_ingot>,<nethercraft:foulite_dust>],
+[<nethercraft:foulite_dust>,<nethercraft:foulite_dust>,<nethercraft:foulite_dust>]
+]);
+
+recipes.addShaped("heal_staff", <mysticstaffs:heal_staff>,
+[[null,<minecraft:ghast_tear>,<contenttweaker:vitality_orb>],
+[null,<nethercraft:glowood_stick>,<minecraft:ghast_tear>],
+[<nethercraft:glowood_stick>,null,null]
+]);

@@ -117,19 +117,35 @@
         }, 
         {
           "entryName": "nethercraft:devil_bread",
-          "weight": 5,
+          "weight": 7,
           "quality": 0,
           "type": "item",
           "functions": [
             {
               "count": {
                 "min": 1.0,
-                "max": 3.0
+                "max": 4.0
               },
               "function": "minecraft:set_count"
             }
           ],
           "name": "nethercraft:devil_bread"
+        },
+        {
+          "entryName": "nethercraft:foulite_dust",
+          "weight": 10,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 3.0,
+                "max": 10.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "nethercraft:foulite_dust"
         },
         {
           "entryName": "nethercraft:ghast_bones",
