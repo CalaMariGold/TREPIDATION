@@ -15,7 +15,7 @@ difficulty:3
 fancyGraphics:true
 ao:2
 renderClouds:false
-resourcePacks:["NewDefault+v1.41[MC1.9-1.12.2].zip","TZP 1.12.2_2.6.zip","AudioCraftV1.5.zip","Endermen_404.zip","RotN_Wither_v.3.0.zip","TREPIDATION Resource Pack"]
+resourcePacks:["NewDefault+v1.41[MC1.9-1.12.2].zip","AudioCraftV1.5.zip","§bDynamic§eSurroundings§6Audio§av2.1.zip","TZP 1.12.2_2.6.zip","Endermen_404.zip","RotN_Wither_v.3.0.zip","Boss Bars+ 1.12.zip","Luminous1.12.2.zip","EclecticTrove-1.12.2-1.0.1.zip","TREPIDATION Resource Pack"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
@@ -53,7 +53,7 @@ autoJump:false
 narrator:0
 tutorialStep:none
 soundCategory_master:0.70
-soundCategory_music:0.70
+soundCategory_music:0.50
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0

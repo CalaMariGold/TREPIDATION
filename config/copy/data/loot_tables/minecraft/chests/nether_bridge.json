@@ -4,13 +4,6 @@
       "name": "main",
       "entries": [
         {
-          "entryName": "adfinders:metals_finder",
-          "weight": 3,
-          "quality": 0,
-          "type": "item",
-          "name": "adfinders:metals_finder"
-        },
-        {
           "entryName": "nethercraft:neridium_ingot",
           "weight": 15,
           "quality": 0,
@@ -149,18 +142,9 @@
         },
         {
           "entryName": "nethercraft:ghast_bones",
-          "weight": 5,
+          "weight": 2,
           "quality": 0,
           "type": "item",
-          "functions": [
-            {
-              "count": {
-                "min": 2.0,
-                "max": 4.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
           "name": "nethercraft:ghast_bones"
         }
       ],

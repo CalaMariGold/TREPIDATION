@@ -116,7 +116,7 @@ val pyridium_block as IItemStack = <nethercraft:pyridium_block>;
 glowood_log.hardness = 1;
 glowood_log.asBlock().definition.resistance = 9999;
 pyridium_ore.asBlock().definition.lightLevel = 1;
-pyridium_block.asBlock().definition.lightLevel = 10;
+pyridium_block.asBlock().definition.lightLevel = 0.1;
 
 
 
