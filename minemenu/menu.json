@@ -116,6 +116,19 @@
           "clipboard": false
         }
       }
+    },
+    "9": {
+      "title": "cure",
+      "icon": {
+        "name": "minecraft:stone",
+        "damage": 0
+      },
+      "action": {
+        "command": {
+          "command": "/effect @p potioncore:cure 5000 255",
+          "clipboard": false
+        }
+      }
     }
   }
 }
