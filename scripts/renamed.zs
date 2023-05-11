@@ -21,14 +21,14 @@ import mods.jei.JEI;
 <enderskills:token>.displayName = "§cTrace of Death";
 <enderskills:token>.addTooltip("§3Right-click to break and add to your Souls");
 
-JEI.addDescription(<enderskills:token>,"Trace of Death is a mysterious and powerful artifact, its origins shrouded in mystery and tales of terror. Its eerie presence is marked by a cold, ominous aura that seems to permeate the air around it.
+JEI.addDescription(<enderskills:token>,"Veiled in cryptic lore, the Trace of Death stands as an enigmatic artifact of potent might. Its origin remains an enigma, whispered in hushed tones and often lost within the labyrinth of fear-stricken narratives. Its eerie presence is marked by a cold, ominous aura that seems to permeate the air around it.
 When shattered, the Trace of Death unleashes a torrent of spectral energies that emanate from the broken fragments, reaching out to ensnare the wandering souls that still cling to this realm. These souls are then drawn inexorably towards the one who shattered the artifact, granting them not only an infusion of raw power but also a glimpse into the secrets and knowledge that these spirits once held.
 However, such power comes at a steep cost, for the Trace of Death is rumored to be cursed, and its influence can drive even the most level-headed adventurer to madness and despair. Its effects are said to linger long after the artifact is destroyed, tainting the very essence of those who wield it and beckoning forth the attentions of entities that thrive in the shadows.
-Few dare to seek out the Trace of Death, for its power is as volatile as it is mysterious, and those who venture into the unknown are often consumed by the very darkness that they sought to master. Yet, for the brave and the bold, the Trace of Death represents a unique opportunity to tap into the forbidden knowledge and power that the realm of The Nether has to offer, no matter the cost.");
+Few dare to seek out the Trace of Death, for its power is as volatile as it is mysterious, and those who venture into the unknown are often consumed by the very darkness that they sought to master. Yet, for the brave and the bold, the Trace of Death represents a unique opportunity to tap into the forbidden knowledge and power that this world has to offer, no matter the cost.");
 
-<enderskills:book>.displayName = "§cSkill Book";
-<enderskills:book>.addTooltip("Press R on this item to learn about skills");
-<enderskills:book>.addTooltip("Does not drop on death");
+<enderskills:book>.displayName = "§cGrimoire of the Veil";
+<enderskills:book>.addTooltip("§3Press R on this item to learn about skills");
+<enderskills:book>.addTooltip("§3Does not drop on death");
 JEI.addDescription(<enderskills:book>,"There are 3 main classes you can delve into and combine: Defense, Mobility, and Offense with multiple subclasses for each. Press SHIFT + [number] to use an ability and G and H to cycle through class ability sets. Unlocking skills cost XP and Souls. You can obtain Souls by breaking Traces of Death. Soul prices increase as you spend and you can only have a max of 9 Souls, meaning that you can't unlock everything, so spend wisely. You can always reset to try a new build!");
 
 // Nether
@@ -90,9 +90,6 @@ JEI.addDescription(<minecraft:blaze_rod>,"Blaze rods, obtained only by slaying t
 JEI.addDescription(<nethercraft:glowood_log>,"Glowood Trees are the eerie flora that dot the burning landscape of The Nether. These ominous trees are composed of a unique blend of Glowstone and Basalt, imbuing them with both the eerie luminescence of the former and the explosive resistance of the latter. They are home to the elusive Gloworms, small creatures that dwell within the leaves of the trees. These bioluminescent insects are prized for their glow and their nourishment, leaving them to be very useful for those seeking to survivein The Nether.");
 JEI.addDescription(<nethercraft:glow_apple>,"Glowood Trees are the eerie flora that dot the burning landscape of The Nether. These ominous trees are composed of a unique blend of Glowstone and Basalt, imbuing them with both the eerie luminescence of the former and the explosive resistance of the latter. They are home to the elusive Gloworms, small creatures that dwell within the leaves of the trees. These bioluminescent insects are prized for their glow and their nourishment, leaving them to be very useful for those seeking to survivein The Nether.");
 
-<adfinders:metals_finder>.displayName = "Infernium Finder";
-<adfinders:metals_finder>.addTooltip("§oAn enigmatic and ancient artifact that reveals hidden deposits of Infernium.");
-
 <simpleores:tin_pickaxe>.displayName = "Quartz Pickaxe";
 <simpleores:tin_pickaxe>.addTooltip("§3Bone blocks will always drop 2 ghast bones when mined");
 <nethercraft:neridium_bow>.displayName = "Quartz Bow";
@@ -120,5 +117,8 @@ JEI.addDescription(<contenttweaker:vitality_orb>,"The Orb of Veilheart, a miracu
 <quark:soul_compass>.addTooltip("§oA guiding relic, directing you unerringly to the site of your most recent demise");
 <minecraft:fire_charge>.addTooltip("§oA blazing projectile, detonating with fiery force upon impact.");
 <scalinghealth:healingitem:0>.addTooltip("§oEssential and versatile, these bandages provide healing and can be combined to form a medkit for enhanced recovery.");
+<scalinghealth:heartcontainer>.removeTooltip("Increases maximum health");
+<scalinghealth:heartcontainer>.addTooltip("§oA precious relic of vitality, bestowing its user with a permanently increased life force.");
+<minecraft:torch>.addTooltip("§3Does not drop on death");
 
 

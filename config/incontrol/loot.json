@@ -37,6 +37,11 @@
     },
     {
         "mob":"minecraft:wither",
+        "item": "nethercraft:neridium_ingot",
+        "itemcount": "15-25"
+    },
+    {
+        "mob":"minecraft:wither",
         "item": "mysticstaffs:fire_staff"
     },
 
