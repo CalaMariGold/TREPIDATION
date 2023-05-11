@@ -35,9 +35,6 @@
 <p style="text-align: center;">&nbsp;</p>
 <p align="center"><span style="font-size: 18px;"><b><strong>Please note, TREPIDATION is in an unfinished state.</strong> More content will be added over the course of development.</b></span></p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p align="center"><span style="font-size: 18px;"><strong>Play with friends by using an Akliz server!<p>
-<p align="center"></strong></span><a href="https://akliz.net/trepidation" target="_blank" rel="noopener noreferrer"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://i.imgur.com/voHwkcg.png" width="450" height="83" /></a></p>
 <p style="text-align: center;">&nbsp;</p>
 <p align="center"><span style="font-size: 24px;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://i.imgur.com/Ead7ZCz.png" alt="" width="450" height="75" /><br /></span></p>
 <p align="center"><span style="font-size: 18px;"><strong>🏆</strong></span><span style="text-decoration: underline; font-size: 18px;"><strong> August Nether Tournament&nbsp;</strong></span><span style="font-size: 18px;"><strong>🏆</strong></span><span style="text-decoration: underline; font-size: 18px;"><strong><br /></strong></span><span style="font-size: 18px;"><strong>4D1OSZ (solo)&nbsp;<br />Gorenebeda (PvP)<br /></strong></span></p>
