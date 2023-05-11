@@ -29,7 +29,7 @@ Few dare to seek out the Trace of Death, for its power is as volatile as it is m
 <enderskills:book>.displayName = "§cSkill Book";
 <enderskills:book>.addTooltip("Press R on this item to learn about skills");
 <enderskills:book>.addTooltip("Does not drop on death");
-JEI.addDescription(<enderskills:book>,"There are 3 main classes you can delve into and combine: Defense, Mobility, and Offense. Each of these classes have multiple subclasses (use the arrows on the bottom corners). Press SHIFT + [number] to use an ability and G and H to cycle through class ability sets. Unlocking most skills cost XP and Souls. You can obtain Souls by breaking Traces of Death, which are dropped by mobs. Soul prices increase as you spend, and there is a soft-cap of how many Souls you can have (9), meaning that you can't unlock everything, so spend wisely. You can always start a new world to try a new build!");
+JEI.addDescription(<enderskills:book>,"There are 3 main classes you can delve into and combine: Defense, Mobility, and Offense with multiple subclasses for each. Press SHIFT + [number] to use an ability and G and H to cycle through class ability sets. Unlocking skills cost XP and Souls. You can obtain Souls by breaking Traces of Death. Soul prices increase as you spend and you can only have a max of 9 Souls, meaning that you can't unlock everything, so spend wisely. You can always reset to try a new build!");
 
 // Nether
 JEI.addDescription(<nethercraft:foulite_dust>,"Foulite Dust, a greenish luminescent substance found throughout The Nether, is believed to originate from the fusion of foul energies and remnants of organic matter. Despite its ominous origins, this highly flammable and volatile dust serves as a valuable resource for illumination, smelting, and oddly enough helps repair wounds. A symbol of hope and ingenuity, Foulite Dust demonstrates the resilience of the human spirit, even when faced with the horrors that pervade The Nether.");
@@ -41,7 +41,11 @@ JEI.addDescription(<nethercraft:foulite_dust>,"Foulite Dust, a greenish luminesc
 JEI.addDescription(<nethercraft:pyridium_ingot>,"Infernium is a rare and powerful ore found exclusively within the The Nether. Born from the ashes of ancient infernal beings that once ruled this realm with their unyielding power of fire and destruction, Infernium is the embodiment of their eternal wrath and fury. This yellow-hued ore glows with an inner light, as if the very souls of those ancient entities still smolder within its core. Harnessing the destructive essence of Infernium requires great courage and skill. When fused with blaze rods, Infernium can create an item capable of summoning the Infernal Fortress. Weapons and artifacts imbued with Infernium are said to possess the strength and intensity of the ancient infernal beings themselves, capable of channeling their fiery powers and unleashing devastating attacks upon their foes.");
 
 <nethercraft:pyridium_sword>.displayName = "Infernium Sword";
-<nethercraft:pyridium_pickaxe>.displayName = "Infernium Pickaxe";
+
+<contenttweaker:wither_infernium>.displayName = "§cWithering Infernium Ingot";
+<nethercraft:pyridium_pickaxe>.displayName = "§cWithering Infernium Pickaxe";
+<nethercraft:pyridium_pickaxe>.addTooltip("§oA tool imbued with the power to wither away an otherwise impervious barrier, a coveted possession of a fearsome adversary.");
+
 <nethercraft:pyridium_axe>.displayName = "Infernium Axe";
 <nethercraft:pyridium_shovel>.displayName = "Infernium Shovel";
 <nethercraft:pyridium_bow>.displayName = "Infernium Bow";
@@ -62,6 +66,9 @@ JEI.addDescription(<nethercraft:neridium_ingot>,"Veilstrium is a rare and mystic
 <nethercraft:neridium_chestplate>.displayName = "Veilstrium Chestplate";
 <nethercraft:neridium_leggings>.displayName = "Veilstrium Leggings";
 <nethercraft:neridium_boots>.displayName = "Veilstrium Boots";
+
+<contenttweaker:riftbreaker_crystal>.displayName = "§cRiftbreaker Crystal";
+<contenttweaker:riftbreaker_crystal>.addTooltip("§oAn explosive gem that obliterates everything in its vertical path and catapults all allies skyward.");
 
 <contenttweaker:infernal_fortress_scepter>.displayName = "§cScepter of Infernal Conjuring";
 <contenttweaker:infernal_fortress_scepter>.addTooltip("§oA formidable artifact that holds the power to beckon forth a gargantuan fortress shrouded in whispers of an ancient and fearsome presence.");

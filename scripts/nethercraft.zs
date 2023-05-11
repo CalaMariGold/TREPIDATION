@@ -111,10 +111,21 @@ Dropt.list("no_glowood_sapling")
 val glowood_log as IItemStack = <nethercraft:glowood_log>;
 val pyridium_ore as IItemStack = <nethercraft:pyridium_ore>;
 val pyridium_block as IItemStack = <nethercraft:pyridium_block>;
+val basalt as IItemStack = <quark:basalt>;
+val basalt1 as IItemStack = <quark:basalt:1>;
+val black_glazed_terracotta as IItemStack = <minecraft:black_glazed_terracotta>;
+val biotite_block2 as IItemStack = <quark:biotite_block:1>;
+val biotite_block as IItemStack = <quark:biotite_block>;
+
 
 
 glowood_log.hardness = 1;
 glowood_log.asBlock().definition.resistance = 9999;
+biotite_block2.asBlock().definition.resistance = 9999;
+biotite_block.asBlock().definition.resistance = 9999;
+black_glazed_terracotta.asBlock().definition.resistance = 9999;
+basalt.asBlock().definition.resistance = 9999;
+basalt1.asBlock().definition.resistance = 9999;
 pyridium_ore.asBlock().definition.lightLevel = 1;
 pyridium_block.asBlock().definition.lightLevel = 0.1;
 
@@ -176,17 +187,20 @@ val pyridiumBowEnchantments as IEnchantmentDefinition[] = [<enchantment:minecraf
 var pyridiumBowEnchantmentMap as IData = {};
 pyridiumBowEnchantmentMap += pyridiumBowEnchantments[0].makeEnchantment(1).makeTag();
 
+
+recipes.remove(<nethercraft:pyridium_pickaxe>);
+recipes.addShaped("pyridium_pickaxe", <nethercraft:pyridium_pickaxe>,
+[[<contenttweaker:wither_infernium>,<contenttweaker:wither_infernium>,<contenttweaker:wither_infernium>],
+[null,<minecraft:blaze_rod>,null],
+[null,<minecraft:blaze_rod>,null]
+]);
+
+
+
 recipes.remove(<nethercraft:pyridium_sword>);
 recipes.addShaped("pyridium_sword", <nethercraft:pyridium_sword>.withTag(({"Quark:RuneColor": 14, "Quark:RuneAttached": 1 as byte} as IData) + pyridiumSwordEnchantmentMap),
 [[null,<nethercraft:pyridium_ingot>,null],
 [null,<nethercraft:pyridium_ingot>,null],
-[null,<minecraft:blaze_rod>,null]
-]);
-
-recipes.remove(<nethercraft:pyridium_pickaxe>);
-recipes.addShaped("pyridium_pickaxe", <nethercraft:pyridium_pickaxe>,
-[[<nethercraft:pyridium_ingot>,<nethercraft:pyridium_ingot>,<nethercraft:pyridium_ingot>],
-[null,<minecraft:blaze_rod>,null],
 [null,<minecraft:blaze_rod>,null]
 ]);
 

@@ -22,5 +22,12 @@ val infernal_fortress_scepter = mods.contenttweaker.VanillaFactory.createItem("i
 infernal_fortress_scepter.maxStackSize = 1;
 infernal_fortress_scepter.register();
 
+val riftbreaker_crystal = mods.contenttweaker.VanillaFactory.createItem("riftbreaker_crystal");
+riftbreaker_crystal.maxStackSize = 1;
+riftbreaker_crystal.register();
+
+val wither_infernium = mods.contenttweaker.VanillaFactory.createItem("wither_infernium");
+wither_infernium.register();
+
 val vitality_orb = mods.contenttweaker.VanillaFactory.createItem("vitality_orb");
 vitality_orb.register();

@@ -63,28 +63,6 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
 // Output some neccessary speedrun information in chat when escaping a dimension for the first time
 events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChangedDimensionEvent){
 
-    // Nether to Erebus
-    if((event.from == -1 && event.to == 5)){
-        EventManager.getInstance().onTimerTick(function(event as TickEvent){
-
-            if(event.player.hasGameStage("nether") && event.player.hasGameStage("erebus")){
-
-                var player_name = event.player.name;
-                var totalSecs = event.tick/20;
-                var minutes = (totalSecs % 3600) / 60;
-                var seconds = totalSecs % 60;
-
-                var totalSecondsElasped = 3600 - totalSecs;
-                var secondsElasped = totalSecondsElasped % 60;
-                var minutesElasped = (totalSecondsElasped % 3600) / 60;
-                event.player.sendChat(player_name + " escaped the Nether with " + "§4" + minutes + ":" + seconds + " (" + minutesElasped + ":" + secondsElasped + ")" + " §fleft." );
-                server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"timerbonus\"},\"color\":\"dark_red\"}]");
-                
-                server.commandManager.executeCommand(server, "gamestage silentremove @p nether");
-            }
-        });
-    }
-
     // Erebus to Deep Dark
     if((event.from == 5 && event.to == 10)){
         EventManager.getInstance().onTimerTick(function(event as TickEvent){
