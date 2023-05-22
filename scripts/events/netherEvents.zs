@@ -115,6 +115,8 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 Commands.call("playsound enderskills:portal_active player @p", event.player, event.world, true, true);
                 // Below causes a nullpointer exception, but doesn't break anything. ChatFlow is used to remove the error log in the chat
                 Commands.call("clear @p contenttweaker:infernal_fortress_scepter", event.player, event.world, true, true);
+                Commands.call("setworldspawn ~ ~ ~", event.player, event.world, true, true);
+                Commands.call("spawnpoint @a ~ ~ ~", event.player, event.world, true, true);
             }
         }
     }
