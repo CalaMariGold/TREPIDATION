@@ -42,6 +42,9 @@ import crafttweaker.event.PlayerAdvancementEvent;
 import mods.contenttweaker.Commands;
 import mods.contenttweaker.ActionResult;
 import crafttweaker.event.EntityLivingDeathEvent;
+import crafttweaker.entity.IEntityLivingBase;
+
+
 
 
 events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeathEvent){
@@ -111,6 +114,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 i+=1;
             }
             if(i == 1000){
+                Commands.call("ctrlkill all", event.player, event.world, true, true);
                 Commands.call("tp @a ~ 10 ~", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:portal_active player @p", event.player, event.world, true, true);
                 // Below causes a nullpointer exception, but doesn't break anything. ChatFlow is used to remove the error log in the chat
