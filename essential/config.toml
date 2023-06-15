@@ -14,6 +14,7 @@
 		show_essential_indicator_on_nametags = true
 
 	[general.experience]
+		closer_placement_of_minimal_essential_menu = true
 		essential_menu_layout = 1
 		essential_full = true
 		enable_essential = true
@@ -88,7 +89,10 @@
 		hide_cosmetics_on_server_skins = false
 		disable_cosmetics = false
 		show_my_cosmetics = true
+		"cosmetic_&_armor_conflict_-_on_myself" = 0
 		disable_cosmetics_in_inventory = false
 		show_my_armor = 0
+		"cosmetic_&_armor_conflict_-_on_others" = 0
 		"show_other_players'_armor" = 0
+		hide_your_cosmetics = false
 
