@@ -50,6 +50,10 @@ JEI.addDescription(<nethercraft:pyridium_ingot>,"Infernium is a rare and powerfu
 <nethercraft:pyridium_shovel>.displayName = "Infernium Shovel";
 <nethercraft:pyridium_bow>.displayName = "Infernium Bow";
 
+<nethercraft:pyridium_bow>.addTooltip("§20.75s Draw Speed");
+<nethercraft:pyridium_bow>.addTooltip("§21.55 Arrow Velocity");
+<nethercraft:pyridium_bow>.addTooltip("§24-6 Attack Damage");
+
 // Veilstrium
 <nethercraft:neridium_ore>.displayName = "Veilstrium Ore";
 <nethercraft:neridium_block>.displayName = "Veilstrium Block";
@@ -92,7 +96,14 @@ JEI.addDescription(<nethercraft:glow_apple>,"Glowood Trees are the eerie flora t
 
 <simpleores:tin_pickaxe>.displayName = "Quartz Pickaxe";
 <simpleores:tin_pickaxe>.addTooltip("§3Bone blocks will always drop 2 ghast bones when mined");
+
 <nethercraft:neridium_bow>.displayName = "Quartz Bow";
+<nethercraft:neridium_bow>.addTooltip("§21.0s Draw Speed");
+<nethercraft:neridium_bow>.addTooltip("§21.0 Arrow Velocity");
+<nethercraft:neridium_bow>.addTooltip("§23-4 Attack Damage");
+
+
+
 
 <nethercraft:neridium_lighter>.displayName = "Quartz Lighter";
 <nethercraft:ghast_bomb>.addTooltip("§oA volatile and spectral explosive, awaiting ignition by a Quartz Lighter to unleash its devastating force.");
