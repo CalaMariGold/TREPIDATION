@@ -52,7 +52,7 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
         if(event.entity.definition.id == <entity:minecraft:wither>.id)
         {
             server.commandManager.executeCommand(server, "give @a timeisup:timer_bonus 3");
-            server.commandManager.executeCommand(server, "gamestage add @a killedWither");
+            server.commandManager.executeCommand(server, "gamestage silentadd @a killedWither");
 
 
             EventManager.getInstance().onTimerTick(function(event as TickEvent){
@@ -66,9 +66,11 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                     var totalSecondsElasped = 3600 - totalSecs;
                     var secondsElasped = totalSecondsElasped % 60;
                     var minutesElasped = (totalSecondsElasped % 3600) / 60;
-                    event.player.sendChat(player_name + " killed The Wither in §4" + minutesElasped + ":" + secondsElasped + ". (" + minutes + ":" + seconds + " §fleft)" );
+                    event.player.sendChat(player_name + " killed The Wither in §4" + minutesElasped + ":" + secondsElasped + "§f (§4" + minutes + ":" + seconds + " §fleft)." );
                     server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"timerbonus\"},\"color\":\"dark_red\"}]");
-                    
+                    server.commandManager.executeCommand(server, "effect @a fire_resistance 120");
+                    event.player.sendChat("§6Fire resistance has been granted to all allies.");
+
                     server.commandManager.executeCommand(server, "gamestage silentremove @p nether");
                 }
         });

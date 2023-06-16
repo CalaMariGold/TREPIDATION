@@ -7,3 +7,8 @@ cyclicmagic:charm_fire
 artifacts:flame_pendant
 artifacts:shiny_red_balloon
 enderskills:token
+scalinghealth:heartcontainer
+nethercraft:pyridium_ingot
+scalinghealth:crystalshard
+nethercraft:neridium_ingot
+contenttweaker:wither_infernium
