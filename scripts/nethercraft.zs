@@ -206,8 +206,8 @@ recipes.addShaped("pyridium_sword", <nethercraft:pyridium_sword>.withTag(({"Quar
 
 recipes.remove(<nethercraft:pyridium_axe>);
 recipes.addShapedMirrored("pyridium_axe", <nethercraft:pyridium_axe>,
-[[<nethercraft:pyridium_ingot>,<nethercraft:pyridium_ingot>,null],
-[<nethercraft:pyridium_ingot>,<minecraft:blaze_rod>,null],
+[[<nethercraft:pyridium_ingot>,<nethercraft:pyridium_ingot>,<nethercraft:pyridium_ingot>],
+[<nethercraft:pyridium_ingot>,<minecraft:blaze_rod>,<nethercraft:pyridium_ingot>],
 [null,<minecraft:blaze_rod>,null]
 ]);
 
