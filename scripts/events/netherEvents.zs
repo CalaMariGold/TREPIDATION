@@ -78,69 +78,73 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
     }
 });
 
-// Riftbreaker Crystal
-// Summons a structure when right clicked, gives player launch effect
+
 static riftbreaker as IItemStack = <contenttweaker:riftbreaker_crystal>;
+static traceofdeath as IItemStack = <enderskills:token>;
+static scepter as IItemStack = <contenttweaker:infernal_fortress_scepter>;
+
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
     if(!event.world.isRemote()){
-        val itemStack = event.item as IItemStack; 
-        if ((itemStack.definition.id).matches(riftbreaker.definition.id)) {  
-            if(event.player.dimension == -1){
-                Commands.call("playsound minecraft:item.totem.use player @p", event.player, event.world, true, true);
-                Commands.call("playsound dsurround:wind player @p", event.player, event.world, true, true);
-                Commands.call("pillar-spawn deletebarrier ~ 3 ~", event.player, event.world, true, true);
-                Commands.call("effect @a potioncore:launch 200", event.player, event.world, true, true);
-                // Below causes a nullpointer exception, but doesn't break anything. ChatFlow is used to remove the error log in the chat
-                Commands.call("clear @p contenttweaker:riftbreaker_crystal", event.player, event.world, true, true);
+
+        // Riftbreaker Crystal
+        // Summons a structure when right clicked, gives player launch effect
+        val itemStack1 = event.item as IItemStack; 
+        if(!isNull(itemStack1)){
+            if (riftbreaker.matches(itemStack1)) {  
+
+                if(event.player.dimension == -1){
+                    Commands.call("playsound minecraft:item.totem.use player @p", event.player, event.world, true, true);
+                    Commands.call("playsound dsurround:wind player @p", event.player, event.world, true, true);
+                    Commands.call("pillar-spawn deletebarrier ~ 3 ~", event.player, event.world, true, true);
+                    Commands.call("effect @a potioncore:launch 200", event.player, event.world, true, true);
+                    itemStack1.mutable().shrink(1);
+                }
+                else
+                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Only useable in the Nether\",\"color\":\"dark_red\",\"italic\":false}]");
             }
-            else
-                server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Only useable in the Nether\",\"color\":\"dark_red\",\"italic\":false}]");
+        }
+
+
+        // Trace of Death first time right-clicking
+        val itemStack2 = event.item as IItemStack; 
+        if(!isNull(itemStack2)){
+            if (traceofdeath.matches(itemStack2)) {  
+
+                if(isNull(event.player.data.shatteredTraceOfDeath)){
+                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"As the final pieces of the Trace of Death crumble at your feet, you are suddenly consumed by a rush of spectral energies. The secrets you now possess are both a blessing and a curse, for the shadows that surround you have been stirred, and you cannot escape the feeling that you are being watched by something far beyond your comprehension.\",\"color\":\"dark_red\",\"italic\":true}]");
+                    Commands.call("playsound cyclicmagic:chaos_reaper master @p ~ ~ ~ 0.6 0.7", event.player, event.world, true, true);
+                    event.player.update({shatteredTraceOfDeath: true});
+                }
+            }
+        }
+
+
+
+        // Scepter of Infernal Conjuring
+        // Summons a structure when right clicked
+        val itemStack3 = event.item as IItemStack; 
+        if(!isNull(itemStack3)){
+            if (scepter.matches(itemStack3)) {  
+                
+                Commands.call("playsound minecraft:item.totem.use player @p", event.player, event.world, true, true);
+                server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The ground begins to tremble as you tightly grasp the scepter. As the air crackles with anticipation, the scepter dissolves into a swirling vortex of crimson smoke. In the blink of an eye, the smoke weaves itself into the fabric of space as the scepter's essence becomes one with a hellish structure.\",\"color\":\"dark_red\",\"italic\":true}]");
+                Commands.call("pillar-spawn witherarena ~ 9 ~", event.player, event.world, true, true);
+                var i = 0;
+                while(i < 1000){
+                    i+=1;
+                }
+                if(i == 1000){
+                    Commands.call("ctrlkill all", event.player, event.world, true, true);
+                    Commands.call("tp @a ~ 10 ~", event.player, event.world, true, true);
+                    Commands.call("playsound enderskills:portal_active player @p", event.player, event.world, true, true);
+                    itemStack3.mutable().shrink(1);
+                    Commands.call("setworldspawn ~ ~ ~", event.player, event.world, true, true);
+                    Commands.call("spawnpoint @a ~ ~ ~", event.player, event.world, true, true);
+                }
+            }
         }
         
     }
 });
 
 
-// Scepter of Infernal Conjuring
-// Summons a structure when right clicked
-static scepter as IItemStack = <contenttweaker:infernal_fortress_scepter>;
-events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
-    if(!event.world.isRemote()){
-        val itemStack = event.item as IItemStack; 
-        if ((itemStack.definition.id).matches(scepter.definition.id)) {  
-            Commands.call("playsound minecraft:item.totem.use player @p", event.player, event.world, true, true);
-            server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The ground begins to tremble as you tightly grasp the scepter. As the air crackles with anticipation, the scepter dissolves into a swirling vortex of crimson smoke. In the blink of an eye, the smoke weaves itself into the fabric of space as the scepter's essence becomes one with a hellish structure.\",\"color\":\"dark_red\",\"italic\":true}]");
-            Commands.call("pillar-spawn witherarena ~ 9 ~", event.player, event.world, true, true);
-            var i = 0;
-            while(i < 1000){
-                i+=1;
-            }
-            if(i == 1000){
-                Commands.call("ctrlkill all", event.player, event.world, true, true);
-                Commands.call("tp @a ~ 10 ~", event.player, event.world, true, true);
-                Commands.call("playsound enderskills:portal_active player @p", event.player, event.world, true, true);
-                // Below line causes a nullpointer exception, but doesn't break anything. ChatFlow is used to remove the error log in the chat
-                itemStack.mutable().shrink(1);
-                Commands.call("setworldspawn ~ ~ ~", event.player, event.world, true, true);
-                Commands.call("spawnpoint @a ~ ~ ~", event.player, event.world, true, true);
-            }
-        }
-    }
-});
-
-
-// Trace of Death first time right-clicking
-static traceofdeath as IItemStack = <enderskills:token>;
-events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
-    if(!event.world.isRemote()){
-        val itemStack = event.item as IItemStack; 
-        if ((itemStack.definition.id).matches(traceofdeath.definition.id)) {  
-
-            if(isNull(event.player.data.shatteredTraceOfDeath)){
-                server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"As the final pieces of the Trace of Death crumble at your feet, you are suddenly consumed by a rush of spectral energies. The secrets you now possess are both a blessing and a curse, for the shadows that surround you have been stirred, and you cannot escape the feeling that you are being watched by something far beyond your comprehension.\",\"color\":\"dark_red\",\"italic\":true}]");
-                Commands.call("playsound cyclicmagic:chaos_reaper master @p ~ ~ ~ 0.6 0.7", event.player, event.world, true, true);
-                event.player.update({shatteredTraceOfDeath: true});
-            }
-        }
-    }
-});

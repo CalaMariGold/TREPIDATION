@@ -118,6 +118,10 @@
         "remove": "minecraft:bone"
     },
     {
+        "mob": "primitivemobs:festive_creeper",
+        "remove": "minecraft:tnt"
+    },
+    {
         "mob": "minecraft:magma_cube",
         "remove": "minecraft:magma_cream"
     },
