@@ -12,3 +12,10 @@ nethercraft:pyridium_ingot
 scalinghealth:crystalshard
 nethercraft:neridium_ingot
 contenttweaker:wither_infernium
+mysticstaffs:fire_staff
+contenttweaker:riftbreaker_crystal
+nethercraft:pyridium_pickaxe
+nethercraft:pyridium_axe
+nethercraft:pyridium_sword
+nethercraft:pyridium_shovel
+nethercraft:pyridium_bow

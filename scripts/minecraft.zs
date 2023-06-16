@@ -10,6 +10,10 @@ import mods.dropt.Dropt;
 JEI.removeAndHide(<minecraft:ender_eye>);
 LootTable.removeGlobalItem("minecraft:ender_eye");
 
+// will be reworked later, maybe deep dark or erebus bow
+recipes.remove(<minecraft:bow>);
+
+
 val stone as IItemStack = <minecraft:stone:*>;
 stone.hardness = 5.5;
 

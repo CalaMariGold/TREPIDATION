@@ -1,4 +1,15 @@
 [
+    {
+        "mob":"minecraft:wither_skeleton",
+        "remove": "minecraft:name_tag",
+        "onjoin": true
+    },
+    {
+        "mob":"primitivemobs:blazing_juggernaut",
+        "remove": "minecraft:name_tag",
+        "onjoin": true
+    },
+
     // Wither Drops
     {
         "mob":"minecraft:wither",
@@ -12,10 +23,6 @@
     {
         "mob":"minecraft:wither",
         "remove": "minecraft:nether_star"
-    },
-    {
-        "mob":"minecraft:wither",
-        "remove": "progressivebosses:nether_star_shard"
     },
     {
         "mob":"minecraft:wither",
@@ -115,6 +122,10 @@
         "remove": "minecraft:magma_cream"
     },
     {
+        "mob": "nethercraft:camouflage_spider",
+        "remove": "minecraft:spider_eye"
+    },
+    {
         "mob": "minecraft:zombie_pigman",
         "remove": ["minecraft:gold_nugget","minecraft:gold_sword"]
     },
@@ -127,6 +138,10 @@
     {
         "mob": "nethercraft:camouflage_spider",
         "remove": "minecraft:string"
+    },
+    {
+        "mob": "minecraft:wither_skeleton",
+        "remove": "quark:black_ash"
     },
     {
         "mob":"nethercraft:camouflage_spider",
