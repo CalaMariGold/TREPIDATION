@@ -18,6 +18,10 @@
     },
     {
         "mob":"minecraft:wither",
+        "item": "enderskills:book"
+    },
+    {
+        "mob":"minecraft:wither",
         "remove": "quark:black_ash"
     },
     {
