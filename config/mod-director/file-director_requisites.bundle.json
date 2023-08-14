@@ -2,12 +2,6 @@
 	"url":
 	[
 		{
-			"url": "https://optifine.net/adloadx?f=preview_OptiFine_1.12.2_HD_U_G6_pre1.jar",
-			"follows": ["preview OptiFine 1.12.2 HD U G6 pre1"],
-			"fileName": "OptiFine_1.12.2_HD_U_G6_pre1.jar",
-			"options": { "launchwrapperTweakerForceNext": true }
-		},
-		{
 			"url": "https://github.com/CalaMariGold/RPG-Hud-1.12/releases/download/v3.8.1/1.12.Forge.RPG-HUD-3.8.1.jar"
 		}
 	]
