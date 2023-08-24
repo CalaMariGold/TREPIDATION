@@ -16,7 +16,7 @@
 		resource_name = [ "5" ]
 	[triggers.mob]
 		identifier = "wither"
-		resource_name = [ "minecraft:wither" ]
+		resource_name = [ "The Wither" ]
 		level = "1"
 		detection_range = "300"
 		mob_targeting = false
