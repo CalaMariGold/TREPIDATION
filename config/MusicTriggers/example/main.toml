@@ -3,6 +3,8 @@
 # for any specific questions you might have regarding the main config file
 
 [triggers]
+	[triggers.menu]
+	[triggers.loading]
 	[[triggers.dimension]]
 		identifier = "overworld"
 		resource_name = [ "0" ]
@@ -33,7 +35,7 @@
 	[songs.overworld_chasepulse_kevinmacleod]
 		triggers = [ "dimension-overworld" ]
 	[songs.overworld_thearrival_monst3r]
-		triggers = [ "dimension-overworld" ]
+		triggers = [ "dimension-overworld", "menu" ]
 	[songs.overworld_bluesizzle_kevinmacleod]
 		triggers = [ "dimension-overworld" ]
 	[songs.overworld_controlledchaosnopercussion_kevinmacleod]
@@ -51,7 +53,7 @@
 	[songs.deepdark_childrenstheme_kevinmacleod]
 		triggers = [ "dimension-deepdark" ]
 	[songs.deepdark_anxiety_kevinmacleod]
-		triggers = [ "dimension-deepdark" ]
+		triggers = [ "dimension-deepdark", "loading"]
 	[songs.deepdark_deepnoise_kevinmacleod]
 		triggers = [ "dimension-deepdark" ]
 	[songs.erebus_controlledchaos_kevinmacleod]
