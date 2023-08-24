@@ -1,0 +1,81 @@
+# Please refer to the wiki page located at https://github.com/TheComputerizer/Music-Triggers/wiki
+# or the discord server located at https://discord.gg/FZHXFYp8fc
+# for any specific questions you might have regarding the main config file
+
+[triggers]
+	[[triggers.dimension]]
+		identifier = "overworld"
+		resource_name = [ "0" ]
+	[[triggers.dimension]]
+		identifier = "deepdark"
+		resource_name = [ "10" ]
+	[[triggers.dimension]]
+		identifier = "erebus"
+		resource_name = [ "5" ]
+	[triggers.mob]
+		identifier = "wither"
+		resource_name = [ "minecraft:wither" ]
+		level = "1"
+		detection_range = "300"
+		mob_targeting = false
+		priority = "10"
+	[[triggers.dimension]]
+		identifier = "nether"
+		resource_name = [ "-1" ]
+	[triggers.universal]
+		fade_out = "0"
+		persistence = "0"
+		trigger_delay = "0"
+		song_delay = "0"
+		start_delay = "0"
+		fade_in = "0"
+[songs]
+	[songs.overworld_chasepulse_kevinmacleod]
+		triggers = [ "dimension-overworld" ]
+	[songs.overworld_thearrival_monst3r]
+		triggers = [ "dimension-overworld" ]
+	[songs.overworld_bluesizzle_kevinmacleod]
+		triggers = [ "dimension-overworld" ]
+	[songs.overworld_controlledchaosnopercussion_kevinmacleod]
+		triggers = [ "dimension-overworld" ]
+	[songs.overworld_areyouinherewithus_coagmusic]
+		triggers = [ "dimension-overworld" ]
+	[songs.deepdark_eveningofchaos_kevinmacleod]
+		triggers = [ "dimension-deepdark" ]
+	[songs.deepdark_distanttension_kevinmacleod]
+		triggers = [ "dimension-deepdark" ]
+	[songs.deepdark_apprehensionkevinmacleod]
+		triggers = [ "dimension-deepdark" ]
+	[songs.deepdark_classichorror3_kevinmacleod]
+		triggers = [ "dimension-deepdark" ]
+	[songs.deepdark_childrenstheme_kevinmacleod]
+		triggers = [ "dimension-deepdark" ]
+	[songs.deepdark_anxiety_kevinmacleod]
+		triggers = [ "dimension-deepdark" ]
+	[songs.deepdark_deepnoise_kevinmacleod]
+		triggers = [ "dimension-deepdark" ]
+	[songs.erebus_controlledchaos_kevinmacleod]
+		triggers = [ "dimension-erebus" ]
+	[songs.erebus_awkwardmeeting_kevinmacleod]
+		triggers = [ "dimension-erebus" ]
+	[songs.erebus_heartofthebeast_kevinmacleod]
+		triggers = [ "dimension-erebus" ]
+	[songs.erebus_dopplerette_kevinmacleod]
+		triggers = [ "dimension-erebus" ]
+	[songs.erebus_echoesoftime_kevinmacleod]
+		triggers = [ "dimension-erebus" ]
+	[songs.wither_aatrox_login_screen]
+		[songs.wither_aatrox_login_screen.loop]
+			to = "3000"
+			num_loops = "999"
+			from = "127000"
+		triggers = [ "mob-wither" ]
+	[songs.universal]
+	[songs.nether_youknowwhatineed_coagmusic]
+		triggers = [ "dimension-nether" ]
+	[songs.nether_babayaga_monst3r]
+		triggers = [ "dimension-nether" ]
+	[songs.nether_aftermath_kevinmacleod]
+		triggers = [ "dimension-nether" ]
+	[songs.nether_wecannotdefendyou_coagmusic]
+		triggers = [ "dimension-nether" ]
