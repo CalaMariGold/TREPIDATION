@@ -1,7 +1,14 @@
-#Wed Jan 25 19:06:50 EST 2023
+#Thu Aug 24 13:54:34 EDT 2023
+cloudCoverage=1.00
+cloudDensity=0.2000
 Dirt_Amount=0.0
+Emissive_Strength=3.17
+EXPOSURE_MULTIPLIER=0.5
+Exposure_Speed=2.0
+FAR_BLUR_ONLY=true
 MIN_LIGHT_AMOUNT=0.0
-moon_illuminance=90.0
+moon_illuminance=0.0
+Purkinje_strength=0.5
 RAY_COUNT=4
 Sky_Brightness=0.1
 sky_coefficientMieB=0.0
@@ -12,3 +19,6 @@ sunColorB=0.0
 sunColorG=0.0
 sunColorR=0.0
 sunPathRotation=0
+TORCH_AMOUNT=2.0
+TORCH_G=0.42
+TORCH_R=0.73

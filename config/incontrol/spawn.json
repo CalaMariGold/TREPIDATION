@@ -6,20 +6,12 @@
         "onjoin":"true"
     },
 
+
     {
         "dimension": 10,
-        "mob": "minecraft:skeleton",
-        "random": "0.001",
-        "maxcount": {
-            "amount": 15,
-            "perchunk": true
-        },
-        "result": "allow"
-    },
-    {
-        "dimension": 10,
-        "mob": "minecraft:skeleton",
-        "result": "deny"
+        "mob": ["minecraft:witch","minecraft:skeleton","minecraft:zombie","minecraft:zombie_villager","minecraft:spider", "spiderstpo:better_spider", "spiderstpo:better_cave_spider"],
+        "result": "deny",
+        "onjoin": "true"
     },
     {
         "dimension": -1,
@@ -98,33 +90,28 @@
         "mob": "minecraft:enderman",
         "result": "deny"
      },
-
-
-
      {
-        "dimension": 1,
-        "mob": "grue:entitygrue",
-        "maxheight": 5,
+        "dimension": 10,
+        "mob": "weeping-angels:weepingangel",
         "maxcount": {
-            "amount": 50,
+            "amount": 10,
             "perchunk": true
         },
-        "onjoin":"true",
         "result": "allow"
      },
      {
-        "dimension": 1,
-        "mob": "grue:entitygrue",
-        "onjoin":"true",
+        "dimension": 10,
+        "mob": "weeping-angels:weepingangel",
         "result": "deny"
      },
+
 
      {
         "dimension": 10,
         "mob": "eyesinthedarkness:eyes",
         "random": "0.08",
         "maxcount": {
-            "amount": 30,
+            "amount": 100,
             "perchunk": true
         },
         "result": "allow"
@@ -134,6 +121,9 @@
         "mob": "eyesinthedarkness:eyes",
         "result": "deny"
      },
+
+
+
      {
         "dimension": 10,
         "mob": "betterswim:herobrine",
@@ -150,21 +140,7 @@
         "result": "deny"
      },
 
-     {
-        "dimension": 10,
-        "mob": ["spiderstpo:better_spider","spiderstpo:better_cave_spider"],
-        "random": "0.08",
-        "maxcount": {
-            "amount": 20,
-            "perchunk": true
-        },
-        "result": "allow"
-     },
-     {
-        "dimension": 10,
-        "mob": ["spiderstpo:better_spider","spiderstpo:better_cave_spider"],
-        "result": "deny"
-     },
+
 
      {
          "dimension":[0,1],
