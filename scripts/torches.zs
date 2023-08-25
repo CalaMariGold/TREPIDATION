@@ -10,6 +10,6 @@ JEI.removeAndHide(<quark:arrow_torch>);
 
 
 recipes.remove(<minecraft:torch>);
-recipes.addShapeless("torch", <minecraft:torch>,[<ore:coal>, <ore:stickWood>]);
+recipes.addShapeless("torch", <minecraft:torch> * 2,[<ore:coal>, <ore:stickWood>]);
         
         
