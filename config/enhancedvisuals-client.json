@@ -36,13 +36,13 @@
       },
       "blur": {
         "disabled": false,
-        "opacity": 0.4984326
+        "opacity": 0.10031348
       },
       "maxBlur": {
         "min": 0,
-        "minValue": 50,
+        "minValue": 10,
         "max": 10,
-        "maxValue": 100
+        "maxValue": 50
       },
       "explosionBlurTime": {
         "min": 0,
