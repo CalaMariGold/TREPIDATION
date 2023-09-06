@@ -12,6 +12,10 @@
         "multxp": 4
     },
     {
+        "mob":"minecraft:wither",
+        "addxp": 500
+    },
+    {
         "mob":"primitivemobs:blazing_juggernaut",
         "addxp": 15
     },

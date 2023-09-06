@@ -13,6 +13,11 @@
     // Wither Drops
     {
         "mob":"minecraft:wither",
+        "item": "cyclicmagic:charm_antidote",
+        "itemcount": "1"
+    },
+    {
+        "mob":"minecraft:wither",
         "item": "enderskills:token",
         "itemcount": "3"
     },
@@ -165,7 +170,7 @@
         "itemcount": "1"
      },
 
-     {
+    {
         "mob":"minecraft:ghast",
         "remove": "nethercraft:ghast_bones"
     },
@@ -173,6 +178,16 @@
         "mob":"minecraft:ghast",
         "item": "nethercraft:ghast_bones",
         "itemcount": "3-4"
+    },
+
+    {
+        "mob":"minecraft:ghast",
+        "remove": "minecraft:ghast_tear"
+    },
+    {
+        "mob":"minecraft:ghast",
+        "item": "minecraft:ghast_tear",
+        "itemcount": "2"
     },
 
     {

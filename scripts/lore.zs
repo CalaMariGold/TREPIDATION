@@ -29,7 +29,8 @@ Few dare to seek out the Trace of Death, for its power is as volatile as it is m
 <enderskills:book>.displayName = "§cGrimoire of the Veil";
 <enderskills:book>.addTooltip("§3Press R on this item to learn about skills");
 <enderskills:book>.addTooltip("§3Does not drop on death");
-JEI.addDescription(<enderskills:book>,"There are 3 main classes you can delve into and combine: Defense, Mobility, and Offense with multiple subclasses for each. Press SHIFT + [number] to use an ability and G and H to cycle through class ability sets. Unlocking skills cost XP and Souls. You can obtain Souls by breaking Traces of Death. Soul prices increase as you spend and you can only have a max of 9 Souls, meaning that you can't unlock everything, so spend wisely. You can always reset to try a new build!");
+JEI.addDescription(<enderskills:book>,"There are 3 classes you can delve into: Defense, Mobility, and Offense. Each have multiple subclasses. 
+Press ALT + [number] to use an ability and G and H to cycle through ability groups. Unlocking skills cost XP and Souls. You can obtain Souls by breaking Traces of Death. Soul prices increase as you spend and there is a cap of 9 Souls, so spend wisely. You can always reset to try a new build.");
 
 // Nether
 JEI.addDescription(<nethercraft:foulite_dust>,"Foulite Dust, a greenish luminescent substance found throughout The Nether, is believed to originate from the fusion of foul energies and remnants of organic matter. Despite its ominous origins, this highly flammable and volatile dust serves as a valuable resource for illumination, smelting, and oddly enough helps repair wounds. A symbol of hope and ingenuity, Foulite Dust demonstrates the resilience of the human spirit, even when faced with the horrors that pervade The Nether.");
@@ -43,16 +44,16 @@ JEI.addDescription(<nethercraft:pyridium_ingot>,"Infernium is a rare and powerfu
 <nethercraft:pyridium_sword>.displayName = "Infernium Sword";
 
 <contenttweaker:wither_infernium>.displayName = "§cWithering Infernium Ingot";
-<nethercraft:pyridium_pickaxe>.displayName = "§cWithering Infernium Pickaxe";
-<nethercraft:pyridium_pickaxe>.addTooltip("§oA tool imbued with the power to wither away an otherwise impervious barrier; a coveted possession of a fearsome adversary.");
+<nethercraft:pyridium_pickaxe.*>.displayName = "§cWithering Infernium Pickaxe";
+<nethercraft:pyridium_pickaxe.*>.addTooltip("§oA tool imbued with the power to wither away an otherwise impervious barrier; a coveted possession of a fearsome adversary.");
 
 <nethercraft:pyridium_axe>.displayName = "Infernium Axe";
 <nethercraft:pyridium_shovel>.displayName = "Infernium Shovel";
 <nethercraft:pyridium_bow>.displayName = "Infernium Bow";
 
-<nethercraft:pyridium_bow>.addTooltip("§20.75s Draw Speed");
-<nethercraft:pyridium_bow>.addTooltip("§21.55 Arrow Velocity");
-<nethercraft:pyridium_bow>.addTooltip("§24-6 Attack Damage");
+<nethercraft:pyridium_bow.*>.addTooltip("§20.75s Draw Speed");
+<nethercraft:pyridium_bow.*>.addTooltip("§21.55 Arrow Velocity");
+<nethercraft:pyridium_bow.*>.addTooltip("§24-6 Attack Damage");
 
 // Veilstrium
 <nethercraft:neridium_ore>.displayName = "Veilstrium Ore";
@@ -94,13 +95,13 @@ JEI.addDescription(<minecraft:blaze_rod>,"Blaze rods, obtained only by slaying t
 JEI.addDescription(<nethercraft:glowood_log>,"Glowood Trees are the eerie flora that dot the burning landscape of The Nether. These ominous trees are composed of a unique blend of Glowstone and Basalt, imbuing them with both the eerie luminescence of the former and the explosive resistance of the latter. They are home to the elusive Gloworms, small creatures that dwell within the leaves of the trees. These bioluminescent insects are prized for their glow and their nourishment, leaving them to be very useful for those seeking to survive in The Nether.");
 JEI.addDescription(<nethercraft:glow_apple>,"Glowood Trees are the eerie flora that dot the burning landscape of The Nether. These ominous trees are composed of a unique blend of Glowstone and Basalt, imbuing them with both the eerie luminescence of the former and the explosive resistance of the latter. They are home to the elusive Gloworms, small creatures that dwell within the leaves of the trees. These bioluminescent insects are prized for their glow and their nourishment, leaving them to be very useful for those seeking to survive in The Nether.");
 
-<simpleores:tin_pickaxe>.displayName = "Quartz Pickaxe";
-<simpleores:tin_pickaxe>.addTooltip("§3Bone blocks will always drop 2 ghast bones when mined");
+<simpleores:tin_pickaxe.*>.displayName = "Quartz Pickaxe";
+<simpleores:tin_pickaxe.*>.addTooltip("§3Bone blocks will always drop 2 ghast bones when mined");
 
-<nethercraft:neridium_bow>.displayName = "Quartz Bow";
-<nethercraft:neridium_bow>.addTooltip("§21.0s Draw Speed");
-<nethercraft:neridium_bow>.addTooltip("§21.0 Arrow Velocity");
-<nethercraft:neridium_bow>.addTooltip("§23-4 Attack Damage");
+<nethercraft:neridium_bow.*>.displayName = "Quartz Bow";
+<nethercraft:neridium_bow.*>.addTooltip("§21.0s Draw Speed");
+<nethercraft:neridium_bow.*>.addTooltip("§21.0 Arrow Velocity");
+<nethercraft:neridium_bow.*>.addTooltip("§23-4 Attack Damage");
 
 
 
@@ -109,14 +110,14 @@ JEI.addDescription(<nethercraft:glow_apple>,"Glowood Trees are the eerie flora t
 <nethercraft:ghast_bomb>.addTooltip("§oA volatile and spectral explosive, awaiting ignition by a Quartz Lighter to unleash its devastating force.");
 <nethercraft:ghast_marrow>.addTooltip("§oAn unstable substance, harboring explosive potential.");
 
-<mysticstaffs:fire_staff>.displayName = "§cStaff of Infernal";
-<mysticstaffs:fire_staff>.addTooltip("§oA potent weapon that engulfs nearby enemies in a searing inferno.");
+<mysticstaffs:fire_staff:*>.displayName = "§cStaff of Infernal";
+<mysticstaffs:fire_staff:*>.addTooltip("§oA potent weapon that engulfs nearby enemies in a searing inferno.");
 <contenttweaker:vitality_orb>.displayName = "Orb of Veilheart";
 JEI.addDescription(<contenttweaker:vitality_orb>,"The Orb of Veilheart, a miraculous fusion of ethereal Veilstrium and enigmatic Foulite dust, possesses a unique duality that unlocks its potent soul-healing powers. The Veilstrium's celestial energies cleanse and purify the spirit, while the Foulite dust's grounding properties restore balance and stability to the physical realm, harmoniously mending both body and soul.");
 
-<mysticstaffs:heal_staff>.displayName = "§cStaff of Veilheart";
-<mysticstaffs:heal_staff>.addTooltip("§oA benevolent staff that rejuvenates the soul and body of allies.");
-<mysticstaffs:heal_staff>.addTooltip("§3Uses 1 feather");
+<mysticstaffs:heal_staff:*>.displayName = "§cStaff of Veilheart";
+<mysticstaffs:heal_staff:*>.addTooltip("§oA benevolent staff that rejuvenates the soul and body of allies.");
+<mysticstaffs:heal_staff:*>.addTooltip("§3Uses 1 feather");
 
 <nethercraft:ghast_bones>.addTooltip("§oOccasionally harvested from bone blocks submerged in the searing lava oceans.");
 
@@ -127,9 +128,10 @@ JEI.addDescription(<contenttweaker:vitality_orb>,"The Orb of Veilheart, a miracu
 // Misc
 <quark:soul_compass>.addTooltip("§oA guiding relic, directing you unerringly to the site of your most recent demise");
 <minecraft:fire_charge>.addTooltip("§oA blazing projectile, detonating with fiery force upon impact.");
-<scalinghealth:healingitem:0>.addTooltip("§oEssential and versatile, these bandages provide healing and can be combined to form a medkit for enhanced recovery.");
+<scalinghealth:healingitem:0>.addTooltip("§oProvide healing and can be combined to form a medkit for enhanced recovery.");
 <scalinghealth:heartcontainer>.removeTooltip("Increases maximum health");
 <scalinghealth:heartcontainer>.addTooltip("§oA precious relic of vitality, bestowing its user with a permanently increased life force.");
+<scalinghealth:heartcontainer>.addTooltip("§3Uses 2 levels");
 <minecraft:torch>.addTooltip("§3Does not drop on death");
 
 

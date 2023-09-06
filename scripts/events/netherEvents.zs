@@ -66,10 +66,25 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                     var totalSecondsElasped = 3600 - totalSecs;
                     var secondsElasped = totalSecondsElasped % 60;
                     var minutesElasped = (totalSecondsElasped % 3600) / 60;
-                    event.player.sendChat(player_name + " killed The Wither in §4" + minutesElasped + ":" + secondsElasped + "§f (§4" + minutes + ":" + seconds + " §fleft)." );
+                    event.player.sendChat(player_name + " killed The Wither with §4" + minutes + ":" + seconds + " §fleft (" + minutesElasped + ":" + secondsElasped + " elasped)." );
                     server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"timerbonus\"},\"color\":\"dark_red\"}]");
                     server.commandManager.executeCommand(server, "effect @a fire_resistance 120");
-                    event.player.sendChat("§6Fire resistance has been granted to all allies.");
+                    server.commandManager.executeCommand(server, "effect @a regeneration 120");
+                    server.commandManager.executeCommand(server, "effect @a invisibility 120");
+                    server.commandManager.executeCommand(server, "effect @a potioncore:slow_fall 120");
+                    event.player.sendChat("§6A mysterious yet benevolent aura surrounds you, for now...");
+
+                    Commands.call("kill @e[type=nethercraft:dark_zombie]", event.player, event.world, true, true);
+                    Commands.call("kill @e[type=nethercraft:camouflage_spider]", event.player, event.world, true, true);
+                    Commands.call("kill @e[type=nethercraft:bloody_zombie]", event.player, event.world, true, true);
+                    Commands.call("kill @e[type=primitivemobs:blazing_juggernaut]", event.player, event.world, true, true);
+                    Commands.call("kill @e[type=primitivemobs:festive_creeper]", event.player, event.world, true, true);
+                    Commands.call("kill @e[type=primitivemobs:flame_spewer]", event.player, event.world, true, true);
+                    Commands.call("kill @e[type=quark:foxhound]", event.player, event.world, true, true);
+                    Commands.call("kill @e[type=minecraft:zombie_pigman]", event.player, event.world, true, true);
+                    Commands.call("kill @e[type=minecraft:blaze]", event.player, event.world, true, true);
+                    Commands.call("kill @e[type=minecraft:wither_skeleton]", event.player, event.world, true, true);
+                    Commands.call("kill @e[type=minecraft:ghast]", event.player, event.world, true, true);
 
                     server.commandManager.executeCommand(server, "gamestage silentremove @p nether");
                 }
@@ -125,7 +140,6 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
         val itemStack3 = event.item as IItemStack; 
         if(!isNull(itemStack3)){
             if (scepter.matches(itemStack3)) {  
-                
                 Commands.call("playsound minecraft:item.totem.use player @p", event.player, event.world, true, true);
                 server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The ground begins to tremble as you tightly grasp the scepter. As the air crackles with anticipation, the scepter dissolves into a swirling vortex of crimson smoke. In the blink of an eye, the smoke weaves itself into the fabric of space as the scepter's essence becomes one with a hellish structure.\",\"color\":\"dark_red\",\"italic\":true}]");
                 Commands.call("pillar-spawn witherarena ~ 9 ~", event.player, event.world, true, true);
@@ -134,12 +148,23 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                     i+=1;
                 }
                 if(i == 1000){
-                    Commands.call("ctrlkill all", event.player, event.world, true, true);
                     Commands.call("tp @a ~ 10 ~", event.player, event.world, true, true);
                     Commands.call("playsound enderskills:portal_active player @p", event.player, event.world, true, true);
                     itemStack3.mutable().shrink(1);
                     Commands.call("setworldspawn ~ ~ ~", event.player, event.world, true, true);
                     Commands.call("spawnpoint @a ~ ~ ~", event.player, event.world, true, true);
+                    Commands.call("kill @e[type=nethercraft:dark_zombie]", event.player, event.world, true, true);
+                    Commands.call("kill @e[type=nethercraft:camouflage_spider]", event.player, event.world, true, true);
+                    Commands.call("kill @e[type=nethercraft:bloody_zombie]", event.player, event.world, true, true);
+                    Commands.call("kill @e[type=primitivemobs:blazing_juggernaut]", event.player, event.world, true, true);
+                    Commands.call("kill @e[type=primitivemobs:festive_creeper]", event.player, event.world, true, true);
+                    Commands.call("kill @e[type=primitivemobs:flame_spewer]", event.player, event.world, true, true);
+                    Commands.call("kill @e[type=quark:foxhound]", event.player, event.world, true, true);
+                    Commands.call("kill @e[type=minecraft:zombie_pigman]", event.player, event.world, true, true);
+                    Commands.call("kill @e[type=minecraft:blaze]", event.player, event.world, true, true);
+                    Commands.call("kill @e[type=minecraft:wither_skeleton]", event.player, event.world, true, true);
+                    Commands.call("kill @e[type=minecraft:ghast]", event.player, event.world, true, true);
+                    Commands.call("kill @e[type=item]", event.player, event.world, true, true);
                 }
             }
         }

@@ -1,0 +1,88 @@
+{
+  "pools": [
+    {
+      "name": "main",
+      "entries": [ 
+        {
+          "entryName": "healing potion",
+          "weight": 12,
+          "type": "item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion: \"minecraft:healing\"}"
+            }
+        ]
+        },       
+        {
+          "entryName": "nethercraft:glow_apple",
+          "weight": 10,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 1.0,
+                "max": 5.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "nethercraft:glow_apple"
+        },
+        {
+          "entryName": "contenttweaker:deviled_egg_sandwich",
+          "weight": 1,
+          "type": "item",
+          "name": "contenttweaker:deviled_egg_sandwich"
+        }
+      ],
+      "rolls": 4.0
+    },
+    {
+      "name": "second",
+      "entries": [
+        {
+          "entryName": "fire resist potion",
+          "weight": 50,
+          "type": "item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion: \"minecraft:fire_resistance\"}"
+            }
+        ]
+        },
+        {
+          "entryName": "nethercraft:glow_apple",
+          "weight": 50,
+          "type": "item",
+          "name": "nethercraft:glow_apple"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "name": "third",
+      "entries": [
+        {
+          "entryName": "minecraft:arrow",
+          "weight": 5,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 15.0,
+                "max": 30.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:arrow"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}
