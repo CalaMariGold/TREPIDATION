@@ -1,15 +1,5 @@
 [
-    {
-        "mob":"minecraft:wither_skeleton",
-        "remove": "minecraft:name_tag",
-        "onjoin": true
-    },
-    {
-        "mob":"primitivemobs:blazing_juggernaut",
-        "remove": "minecraft:name_tag",
-        "onjoin": true
-    },
-
+    
     // Wither Drops
     {
         "mob":"minecraft:wither",
@@ -74,10 +64,17 @@
 
     // Erebus
     {
-        "mob":"erebus:erebus.beetle",
+        "mod":"erebus",
         "player": true,
         "item": "erebus:materials@1",
-        "random": "0.85",
+        "random": "0.10",
+        "itemcount": "1"
+    },
+    {
+        "mod":"erebus",
+        "player": true,
+        "item": "contenttweaker:bug_meat",
+        "random": "0.40",
         "itemcount": "1"
     },
 

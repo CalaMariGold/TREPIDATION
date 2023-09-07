@@ -34,3 +34,6 @@ recipes.addShaped("jade_shield", <erebus:jade_shield>,
 [<erebus:materials:1>,null,<erebus:materials:1>],
 [null,<erebus:materials:1>,null]
 ]);
+
+
+furnace.addRecipe(<contenttweaker:bug_meat>, <contenttweaker:cooked_bug_meat>, 0.5);

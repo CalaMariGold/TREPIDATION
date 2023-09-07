@@ -11,11 +11,15 @@ import mods.jei.JEI;
 <contenttweaker:deviled_egg_sandwich>.addTooltip("§3Gives Fire Resistance and Strength for 30s");
 
 <nethercraft:slime_eggs>.displayName = "Magma Eggs";
-<nethercraft:slime_eggs>.addTooltip("§oCan be hurled at foes to ignite them or harnessed to create a deceptively fiery meal.");
+<nethercraft:slime_eggs>.addTooltip("§oCan be hurled at foes to ignite them or harnessed to create a deceptively fiery meal");
 <nethercraft:devil_bread>.addTooltip("§oA smoldering delicacy pairing exquisitely with the deliciousness of Magma Eggs");
 <nethercraft:devil_bread>.addTooltip("§3Gives Strength for 10s");
 <nethercraft:glow_apple>.displayName = "Glow Worm";
 
+<contenttweaker:bug_meat>.displayName = "Bug Meat";
+<contenttweaker:bug_meat>.addTooltip("§oA pulsating lump of slimy chitin and twitching legs");
+<contenttweaker:cooked_bug_meat>.displayName = "Cooked Bug Meat";
+<contenttweaker:cooked_bug_meat>.addTooltip("§oAlthough cooked, it doesn't taste much better");
 
 // Skills
 <enderskills:token>.displayName = "§cTrace of Death";
@@ -44,16 +48,16 @@ JEI.addDescription(<nethercraft:pyridium_ingot>,"Infernium is a rare and powerfu
 <nethercraft:pyridium_sword>.displayName = "Infernium Sword";
 
 <contenttweaker:wither_infernium>.displayName = "§cWithering Infernium Ingot";
-<nethercraft:pyridium_pickaxe.*>.displayName = "§cWithering Infernium Pickaxe";
-<nethercraft:pyridium_pickaxe.*>.addTooltip("§oA tool imbued with the power to wither away an otherwise impervious barrier; a coveted possession of a fearsome adversary.");
+<nethercraft:pyridium_pickaxe:*>.displayName = "§cWithering Infernium Pickaxe";
+<nethercraft:pyridium_pickaxe:*>.addTooltip("§oA tool imbued with the power to wither away an otherwise impervious barrier; a coveted possession of a fearsome adversary");
 
 <nethercraft:pyridium_axe>.displayName = "Infernium Axe";
 <nethercraft:pyridium_shovel>.displayName = "Infernium Shovel";
 <nethercraft:pyridium_bow>.displayName = "Infernium Bow";
 
-<nethercraft:pyridium_bow.*>.addTooltip("§20.75s Draw Speed");
-<nethercraft:pyridium_bow.*>.addTooltip("§21.55 Arrow Velocity");
-<nethercraft:pyridium_bow.*>.addTooltip("§24-6 Attack Damage");
+<nethercraft:pyridium_bow:*>.addTooltip("§20.75s Draw Speed");
+<nethercraft:pyridium_bow:*>.addTooltip("§21.55 Arrow Velocity");
+<nethercraft:pyridium_bow:*>.addTooltip("§24-6 Attack Damage");
 
 // Veilstrium
 <nethercraft:neridium_ore>.displayName = "Veilstrium Ore";
@@ -73,10 +77,10 @@ JEI.addDescription(<nethercraft:neridium_ingot>,"Veilstrium is a rare and mystic
 <nethercraft:neridium_boots>.displayName = "Veilstrium Boots";
 
 <contenttweaker:riftbreaker_crystal>.displayName = "§cRiftbreaker Crystal";
-<contenttweaker:riftbreaker_crystal>.addTooltip("§oAn explosive gem that obliterates everything in its vertical path and catapults all allies skyward.");
+<contenttweaker:riftbreaker_crystal>.addTooltip("§oAn explosive gem that obliterates everything in its vertical path and catapults all allies skyward");
 
 <contenttweaker:infernal_fortress_scepter>.displayName = "§cScepter of Infernal Conjuring";
-<contenttweaker:infernal_fortress_scepter>.addTooltip("§oA formidable artifact that holds the power to beckon forth a gargantuan fortress shrouded in whispers of an ancient and fearsome presence.");
+<contenttweaker:infernal_fortress_scepter>.addTooltip("§oA formidable artifact that holds the power to beckon forth a gargantuan fortress shrouded in whispers of an ancient and fearsome presence");
 JEI.addDescription(<contenttweaker:infernal_fortress_scepter>,"In shadows' embrace, a fortress concealed,
 A realm of whispers and secrets, unyielded,
 Tales of dread and despair, unrevealed,
@@ -95,31 +99,31 @@ JEI.addDescription(<minecraft:blaze_rod>,"Blaze rods, obtained only by slaying t
 JEI.addDescription(<nethercraft:glowood_log>,"Glowood Trees are the eerie flora that dot the burning landscape of The Nether. These ominous trees are composed of a unique blend of Glowstone and Basalt, imbuing them with both the eerie luminescence of the former and the explosive resistance of the latter. They are home to the elusive Gloworms, small creatures that dwell within the leaves of the trees. These bioluminescent insects are prized for their glow and their nourishment, leaving them to be very useful for those seeking to survive in The Nether.");
 JEI.addDescription(<nethercraft:glow_apple>,"Glowood Trees are the eerie flora that dot the burning landscape of The Nether. These ominous trees are composed of a unique blend of Glowstone and Basalt, imbuing them with both the eerie luminescence of the former and the explosive resistance of the latter. They are home to the elusive Gloworms, small creatures that dwell within the leaves of the trees. These bioluminescent insects are prized for their glow and their nourishment, leaving them to be very useful for those seeking to survive in The Nether.");
 
-<simpleores:tin_pickaxe.*>.displayName = "Quartz Pickaxe";
-<simpleores:tin_pickaxe.*>.addTooltip("§3Bone blocks will always drop 2 ghast bones when mined");
+<simpleores:tin_pickaxe:*>.displayName = "Quartz Pickaxe";
+<simpleores:tin_pickaxe:*>.addTooltip("§3Bone blocks will always drop 2 ghast bones when mined");
 
-<nethercraft:neridium_bow.*>.displayName = "Quartz Bow";
-<nethercraft:neridium_bow.*>.addTooltip("§21.0s Draw Speed");
-<nethercraft:neridium_bow.*>.addTooltip("§21.0 Arrow Velocity");
-<nethercraft:neridium_bow.*>.addTooltip("§23-4 Attack Damage");
+<nethercraft:neridium_bow:*>.displayName = "Quartz Bow";
+<nethercraft:neridium_bow:*>.addTooltip("§21.0s Draw Speed");
+<nethercraft:neridium_bow:*>.addTooltip("§21.0 Arrow Velocity");
+<nethercraft:neridium_bow:*>.addTooltip("§23-4 Attack Damage");
 
 
 
 
 <nethercraft:neridium_lighter>.displayName = "Quartz Lighter";
-<nethercraft:ghast_bomb>.addTooltip("§oA volatile and spectral explosive, awaiting ignition by a Quartz Lighter to unleash its devastating force.");
-<nethercraft:ghast_marrow>.addTooltip("§oAn unstable substance, harboring explosive potential.");
+<nethercraft:ghast_bomb>.addTooltip("§oA volatile and spectral explosive, awaiting ignition by a Quartz Lighter to unleash its devastating force");
+<nethercraft:ghast_marrow>.addTooltip("§oAn unstable substance, harboring explosive potential");
 
 <mysticstaffs:fire_staff:*>.displayName = "§cStaff of Infernal";
-<mysticstaffs:fire_staff:*>.addTooltip("§oA potent weapon that engulfs nearby enemies in a searing inferno.");
+<mysticstaffs:fire_staff:*>.addTooltip("§oA potent weapon that engulfs nearby enemies in a searing inferno");
 <contenttweaker:vitality_orb>.displayName = "Orb of Veilheart";
 JEI.addDescription(<contenttweaker:vitality_orb>,"The Orb of Veilheart, a miraculous fusion of ethereal Veilstrium and enigmatic Foulite dust, possesses a unique duality that unlocks its potent soul-healing powers. The Veilstrium's celestial energies cleanse and purify the spirit, while the Foulite dust's grounding properties restore balance and stability to the physical realm, harmoniously mending both body and soul.");
 
 <mysticstaffs:heal_staff:*>.displayName = "§cStaff of Veilheart";
-<mysticstaffs:heal_staff:*>.addTooltip("§oA benevolent staff that rejuvenates the soul and body of allies.");
+<mysticstaffs:heal_staff:*>.addTooltip("§oA benevolent staff that rejuvenates the soul and body of allies");
 <mysticstaffs:heal_staff:*>.addTooltip("§3Uses 1 feather");
 
-<nethercraft:ghast_bones>.addTooltip("§oOccasionally harvested from bone blocks submerged in the searing lava oceans.");
+<nethercraft:ghast_bones>.addTooltip("§oOccasionally harvested from bone blocks submerged in the searing lava oceans");
 
 
 // Deep Dark
@@ -127,10 +131,10 @@ JEI.addDescription(<contenttweaker:vitality_orb>,"The Orb of Veilheart, a miracu
 
 // Misc
 <quark:soul_compass>.addTooltip("§oA guiding relic, directing you unerringly to the site of your most recent demise");
-<minecraft:fire_charge>.addTooltip("§oA blazing projectile, detonating with fiery force upon impact.");
-<scalinghealth:healingitem:0>.addTooltip("§oProvide healing and can be combined to form a medkit for enhanced recovery.");
+<minecraft:fire_charge>.addTooltip("§oA blazing projectile, detonating with fiery force upon impact");
+<scalinghealth:healingitem:0>.addTooltip("§oProvide healing and can be combined to form a medkit for enhanced recovery");
 <scalinghealth:heartcontainer>.removeTooltip("Increases maximum health");
-<scalinghealth:heartcontainer>.addTooltip("§oA precious relic of vitality, bestowing its user with a permanently increased life force.");
+<scalinghealth:heartcontainer>.addTooltip("§oA precious relic of vitality, bestowing its user with a permanently increased life force");
 <scalinghealth:heartcontainer>.addTooltip("§3Uses 2 levels");
 <minecraft:torch>.addTooltip("§3Does not drop on death");
 

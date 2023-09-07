@@ -48,6 +48,14 @@ HungerEvents.onFoodEaten(function(event as mods.hungertweaker.events.FoodEatenEv
 		return;
 	}
 
+	// Bug Meat
+	if (event.food.definition.id == <contenttweaker:bug_meat>.definition.id) {
+		var poison = <potion:minecraft:poison>.makePotionEffect(140, 0, false, false);
+		var nausea = <potion:minecraft:nausea>.makePotionEffect(140, 0, false, false);
+		event.player.addPotionEffect(nausea);
+		event.player.addPotionEffect(poison);
+	}
+
     // Fire resist for scrambled magma eggs
 	if (event.food.definition.id == <contenttweaker:scrambled_magma_eggs>.definition.id) {
 		var fire_resistance = <potion:minecraft:fire_resistance>.makePotionEffect(200, 0, false, false);
