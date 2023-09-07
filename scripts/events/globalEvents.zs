@@ -40,11 +40,19 @@ import crafttweaker.events.timeisup.EventManager;
 import crafttweaker.api.event.timeisup.TickEvent;
 import crafttweaker.world.IWorldInfo;
 import crafttweaker.event.PlayerAdvancementEvent;
+import crafttweaker.entity.AttributeInstance;
+import crafttweaker.entity.Attribute;
+import crafttweaker.entity.AttributeModifier;
 
+//val uuid = "84f27e8d-85d7-45f4-9b59-b2f5c19da11d";
+//val attribute_modifier = AttributeModifier.createModifier("prepspeed", 5.0, 2, uuid);
 
 // Give player soul compass with curse of vanishing upon death
 events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
     if(!event.entity.world.isRemote()){
+        //val attribute = event.player.getAttribute("battlecorrection.preparationSpeed");
+        //attribute.applyModifier(attribute_modifier);
+
         event.player.give(<quark:soul_compass>.withTag({ench:[{id:71,lvl:1}]}));
     }
 });
@@ -52,10 +60,8 @@ events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
 // Create a scoreboard for timer bonuses used when the player first logs into the game
 events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent) {
 	if (isNull(event.player.data.firstTimeJoin)) {
-
         server.commandManager.executeCommand(server, "scoreboard objectives add timerbonus dummy");
         event.player.update({firstTimeJoin: true});
-
     }
 });
 
