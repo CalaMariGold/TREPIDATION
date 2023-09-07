@@ -80,11 +80,15 @@ Dropt.list("no_glowood_sapling")
   .add(Dropt.rule()
       .matchBlocks(["minecraft:bone_block:*"])
       .addDrop(Dropt.drop()
-          .selector(Dropt.weight(75)) // drop nothing 75% of the time
+          .selector(Dropt.weight(65)) // drop nothing 75% of the time
       )
       .addDrop(Dropt.drop()
           .selector(Dropt.weight(25))
           .items([<nethercraft:ghast_bones>])
+      )
+      .addDrop(Dropt.drop()
+          .selector(Dropt.weight(10))
+          .items([<minecraft:ghast_tear>])
       )
   );
 
