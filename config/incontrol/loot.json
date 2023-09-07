@@ -8,15 +8,6 @@
     },
     {
         "mob":"minecraft:wither",
-        "item": "enderskills:token",
-        "itemcount": "3"
-    },
-    {
-        "mob":"minecraft:wither",
-        "item": "enderskills:book"
-    },
-    {
-        "mob":"minecraft:wither",
         "remove": "quark:black_ash"
     },
     {
@@ -25,16 +16,8 @@
     },
     {
         "mob":"minecraft:wither",
-        "item": "contenttweaker:riftbreaker_crystal"
-    },
-    {
-        "mob":"minecraft:wither",
         "item": "contenttweaker:wither_infernium",
         "itemcount": "4-6"
-    },
-    {
-        "mob":"minecraft:wither",
-        "item": "nethercraft:pyridium_pickaxe"
     },
     {
         "mob":"minecraft:wither",

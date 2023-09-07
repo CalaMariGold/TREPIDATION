@@ -3,6 +3,14 @@ import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
 import mods.jei.JEI;
 
+
+<contenttweaker:soul_anchor>.displayName = "§cSoul Anchor";
+<contenttweaker:soul_anchor>.addTooltip("§3Right-click to set your spawn point to where you are standing");
+<contenttweaker:soul_anchor>.addTooltip("§3Use this at the start of each dimension to set your spawn in a safe place away from the barrier so you don't accidently fall back in");
+<contenttweaker:soul_anchor>.addTooltip("§3SINGLE USE");
+
+
+
 // Food
 <contenttweaker:scrambled_magma_eggs>.displayName = "Scrambled Magma Eggs";
 <contenttweaker:scrambled_magma_eggs>.addTooltip("§3Gives Fire Resistance for 10s");

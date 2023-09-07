@@ -4,3 +4,4 @@ title @p subtitle {"text":"Go into the darkness", "color":"yellow"}
 title @p title {"text":"The Deep Dark", "bold":false, "italic":false, "color":"white"}
 give @p timeisup:timer_bonus 4
 spawnpoint @p ~ ~ ~
+give @p contenttweaker:soul_anchor

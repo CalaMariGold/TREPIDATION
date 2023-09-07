@@ -120,6 +120,7 @@ val basalt1 as IItemStack = <quark:basalt:1>;
 val black_glazed_terracotta as IItemStack = <minecraft:black_glazed_terracotta>;
 val biotite_block2 as IItemStack = <quark:biotite_block:1>;
 val biotite_block as IItemStack = <quark:biotite_block>;
+val soul_sand as IItemStack = <minecraft:soul_sand>;
 
 
 
@@ -130,6 +131,7 @@ biotite_block.asBlock().definition.resistance = 9999;
 black_glazed_terracotta.asBlock().definition.resistance = 9999;
 basalt.asBlock().definition.resistance = 9999;
 basalt1.asBlock().definition.resistance = 9999;
+soul_sand.asBlock().definition.resistance = 9999;
 pyridium_ore.asBlock().definition.lightLevel = 1;
 pyridium_block.asBlock().definition.lightLevel = 0.1;
 

@@ -43,6 +43,26 @@ import crafttweaker.event.PlayerAdvancementEvent;
 import crafttweaker.entity.AttributeInstance;
 import crafttweaker.entity.Attribute;
 import crafttweaker.entity.AttributeModifier;
+import mods.contenttweaker.Commands;
+
+
+
+// Soul Anchor: sets spawn
+static soul_anchor as IItemStack = <contenttweaker:soul_anchor>;
+events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
+    if(!event.world.isRemote()){
+        val itemstack = event.item as IItemStack; 
+        if(!isNull(itemstack)){
+            if (soul_anchor.matches(itemstack)) {  
+                server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your soul has been bound. Be sure not to obstruct this position.\",\"color\":\"dark_red\",\"italic\":true}]");
+                Commands.call("setworldspawn ~ ~ ~", event.player, event.world, true, true);
+                Commands.call("spawnpoint @p ~ ~ ~", event.player, event.world, true, true);
+                itemstack.mutable().shrink(1);
+            }
+        }
+    }
+});
+
 
 //val uuid = "84f27e8d-85d7-45f4-9b59-b2f5c19da11d";
 //val attribute_modifier = AttributeModifier.createModifier("prepspeed", 5.0, 2, uuid);

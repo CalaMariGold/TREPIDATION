@@ -180,3 +180,4 @@ key_keybind.name.EMOTE_SLOT_7:0
 key_keybind.name.EMOTE_SLOT_8:0
 key_teamsmod.keyhud.desc:0
 key_teamsmod.keycompass.desc:0
+key_key.musictriggers.gui:0

@@ -4,3 +4,4 @@ title @p subtitle {"text":"There is always something lurking", "color":"yellow"}
 title @p title {"text":"The Erebus", "bold":false, "italic":false, "color":"dark_green"}
 spawnpoint @p ~ ~ ~
 tellraw @p ["",{"text":"DEVELOPER NOTE: Please turn off shaders for this dimension ONLY. You can reenable shaders once you've reached the next level.","color":"dark_green","italic":true}]
+give @p contenttweaker:soul_anchor

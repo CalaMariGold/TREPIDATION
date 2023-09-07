@@ -5,3 +5,4 @@ title @p subtitle {"text":"True monstrosities await", "color":"yellow"}
 title @p title {"text":"The Surface", "bold":false, "italic":false, "color":"dark_blue"}
 give @p timeisup:timer_bonus 3
 spawnpoint @p ~ ~ ~
+give @p contenttweaker:soul_anchor

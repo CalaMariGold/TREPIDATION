@@ -51,9 +51,8 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
     if(!event.entity.world.isRemote()){
         if(event.entity.definition.id == <entity:minecraft:wither>.id)
         {
-            server.commandManager.executeCommand(server, "give @a timeisup:timer_bonus 3");
+    
             server.commandManager.executeCommand(server, "gamestage silentadd @a killedWither");
-
 
             EventManager.getInstance().onTimerTick(function(event as TickEvent){
                 if(event.player.hasGameStage("nether") && event.player.hasGameStage("killedWither")){
@@ -73,6 +72,12 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                     server.commandManager.executeCommand(server, "effect @a invisibility 120");
                     server.commandManager.executeCommand(server, "effect @a potioncore:slow_fall 120");
                     event.player.sendChat("§6A mysterious yet benevolent aura surrounds you, for now...");
+
+                    server.commandManager.executeCommand(server, "give @a timeisup:timer_bonus 3");
+                    server.commandManager.executeCommand(server, "give @a enderskills:book 1");
+                    server.commandManager.executeCommand(server, "give @a enderskills:token 3");
+                    server.commandManager.executeCommand(server, "give @a contenttweaker:riftbreaker_crystal 1");
+                    server.commandManager.executeCommand(server, "give @a nethercraft:pyridium_pickaxe 1");
 
                     Commands.call("kill @e[type=nethercraft:dark_zombie]", event.player, event.world, true, true);
                     Commands.call("kill @e[type=nethercraft:camouflage_spider]", event.player, event.world, true, true);
@@ -111,7 +116,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                     Commands.call("playsound minecraft:item.totem.use player @p", event.player, event.world, true, true);
                     Commands.call("playsound dsurround:wind player @p", event.player, event.world, true, true);
                     Commands.call("pillar-spawn deletebarrier ~ 3 ~", event.player, event.world, true, true);
-                    Commands.call("effect @a potioncore:launch 200", event.player, event.world, true, true);
+                    Commands.call("effect @a potioncore:launch 300", event.player, event.world, true, true);
                     itemStack1.mutable().shrink(1);
                 }
                 else
