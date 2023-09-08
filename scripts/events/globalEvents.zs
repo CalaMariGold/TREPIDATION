@@ -145,7 +145,7 @@ EventManager.getInstance().onTimeIsUp(function(event as TimeIsUpEvent){
         if (event.entity instanceof IPlayer) {
             events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
                 server.commandManager.executeCommand(server, "gamemode 3 @p");
-                server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your effort is meaningless. Welcome to the afterlife.\",\"color\":\"dark_red\",\"italic\":false}]");
+                server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your effort is meaningless. Welcome to eternity.\",\"color\":\"dark_red\",\"italic\":false}]");
             });
         }
     });

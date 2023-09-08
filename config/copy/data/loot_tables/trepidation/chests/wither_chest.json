@@ -29,12 +29,6 @@
             }
           ],
           "name": "nethercraft:glow_apple"
-        },
-        {
-          "entryName": "contenttweaker:deviled_egg_sandwich",
-          "weight": 1,
-          "type": "item",
-          "name": "contenttweaker:deviled_egg_sandwich"
         }
       ],
       "rolls": 4.0
@@ -80,6 +74,18 @@
             }
           ],
           "name": "minecraft:arrow"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "name": "fourth",
+      "entries": [
+        {
+          "entryName": "contenttweaker:deviled_egg_sandwich",
+          "weight": 1,
+          "type": "item",
+          "name": "contenttweaker:deviled_egg_sandwich"
         }
       ],
       "rolls": 1.0
