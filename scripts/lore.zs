@@ -6,8 +6,11 @@ import mods.jei.JEI;
 
 <contenttweaker:soul_anchor>.displayName = "§cSoul Anchor";
 <contenttweaker:soul_anchor>.addTooltip("§3Right-click to set your spawn point to where you are standing");
-<contenttweaker:soul_anchor>.addTooltip("§3Use this at the start of each dimension to set your spawn in a safe place away from the barrier so you don't accidently fall back in");
+<contenttweaker:soul_anchor>.addTooltip("§3Use at dimension start for safe spawn, avoiding barrier falls");
 <contenttweaker:soul_anchor>.addTooltip("§3SINGLE USE");
+<contenttweaker:soul_anchor>.addTooltip("§oWhen brought to your ear, you can hear faint unsettling laughter.");
+JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with ancient blood, the Soul Anchor hums in the dark, its eerie blue aura a beacon to the lost. Use it, and find yourself forever tethered to its haunting pull. A new life granted, but at what cost? For each return bears a toll on the soul's uncharted map.");
+
 
 
 
@@ -145,5 +148,6 @@ JEI.addDescription(<contenttweaker:vitality_orb>,"The Orb of Veilheart, a miracu
 <scalinghealth:heartcontainer>.addTooltip("§oA precious relic of vitality, bestowing its user with a permanently increased life force");
 <scalinghealth:heartcontainer>.addTooltip("§3Uses 2 levels");
 <minecraft:torch>.addTooltip("§3Does not drop on death");
+<artifacts:shiny_red_balloon>.addTooltip("§3You must wait until the end of the jump animation to initiate double jump with this equipped");
 
 
