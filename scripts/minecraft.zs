@@ -13,6 +13,16 @@ LootTable.removeGlobalItem("minecraft:ender_eye");
 // will be reworked later, maybe deep dark or erebus bow
 recipes.remove(<minecraft:bow>);
 
+recipes.remove(<minecraft:tnt>);
+JEI.removeAndHide(<minecraft:end_crystal>);
+JEI.removeAndHide(<minecraft:end_rod>);
+JEI.removeAndHide(<minecraft:potion:*>);
+JEI.removeAndHide(<minecraft:brewing_stand>);
+JEI.removeAndHide(<minecraft:magma>);
+JEI.removeAndHide(<minecraft:writable_book>);
+
+
+
 
 val stone as IItemStack = <minecraft:stone:*>;
 stone.hardness = 5.5;

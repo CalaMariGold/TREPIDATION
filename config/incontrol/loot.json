@@ -69,14 +69,24 @@
         "player": true,
         "item": "artifacts:shiny_red_balloon",
         "itemcount": "1",
-        "random": "0.50"
+        "random": "0.20"
+    },
+    {
+        "mob":"primitivemobs:festive_creeper",
+        "remove": "artifacts:shiny_red_balloon",
+        "gamestage": "balloon"
     },
     {
         "mob":"primitivemobs:blazing_juggernaut",
         "player": true,
         "item": "artifacts:flame_pendant",
         "itemcount": "1",
-        "random": "0.25"
+        "random": "0.20"
+    },
+    {
+        "mob":"primitivemobs:blazing_juggernaut",
+        "remove": "artifacts:flame_pendant",
+        "gamestage": "flame_pendant"
     },
     {
         "mob":"primitivemobs:flame_spewer",
@@ -107,6 +117,18 @@
         "remove": "minecraft:bone"
     },
     {
+        "mob": "minecraft:zombie_pigman",
+        "remove": "minecraft:rotten_flesh"
+    },
+    {
+        "mob": "nethercraft:dark_zombie",
+        "remove": "minecraft:rotten_flesh"
+    },
+    {
+        "mob": "nethercraft:bloody_zombie",
+        "remove": "minecraft:rotten_flesh"
+    },
+    {
         "mob": "primitivemobs:festive_creeper",
         "remove": "minecraft:tnt"
     },
@@ -120,7 +142,7 @@
     },
     {
         "mob": "minecraft:zombie_pigman",
-        "remove": ["minecraft:gold_nugget","minecraft:gold_sword"]
+        "remove": ["minecraft:gold_nugget","minecraft:gold_ingot","minecraft:golden_sword:*","minecraft:iron_pickaxe:*"]
     },
     {
         "mob":"minecraft:blaze",

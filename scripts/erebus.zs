@@ -4,6 +4,17 @@ import mods.jei.JEI;
 import mods.vanillaanvilrepair.addRepairEntry;
 import moretweaker.erebus.Composter;
 
+
+
+
+JEI.removeAndHide(<erebus:bamboo_pipe>);
+JEI.removeAndHide(<erebus:bambucket>);
+JEI.removeAndHide(<erebus:silk>);
+JEI.removeAndHide(<erebus:bamboo_bridge>);
+JEI.removeAndHide(<erebus:bamboo_ladder>);
+
+
+
 val umberstone as IItemStack = <erebus:umberstone>;
 umberstone.hardness = 0.5;
 

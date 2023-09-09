@@ -1,0 +1,24 @@
+setIcon(<artifacts:shiny_red_balloon>)
+setTitle("Shiny Red Balloon")
+setDescription("")
+
+
+addParent("triumph:advancements/hidden/root")
+
+addRewardFunction("triumph:balloon")
+
+
+
+//Set the toast notification in the top right corner of the screen to not show up when this advancement is achieved.
+setShowToast(false)
+
+//Set the advancement to not send a chat message when it is achieved.
+setAnnounceToChat(false)
+
+criteria = addCriteria("Balloon", "minecraft:inventory_changed")
+criteria.addItem("artifacts:shiny_red_balloon")
+
+hideLines()
+
+alwaysHidden()
+setHidden(true)

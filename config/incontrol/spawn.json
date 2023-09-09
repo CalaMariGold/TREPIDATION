@@ -16,7 +16,7 @@
     {
         "dimension": -1,
         "mob": "minecraft:ghast",
-        "random": "0.001",
+        "random": "0.0005",
         "maxcount": {
             "amount": 2,
             "perchunk": true
