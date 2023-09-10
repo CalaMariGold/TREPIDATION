@@ -1,10 +1,10 @@
 {
   "name": "TREPIDATION",
   "description": "Go into the darkness.",
-  "version": "0.4",
+  "version": "0.4.1",
   "url": "https://www.curseforge.com/minecraft/modpacks/trepidation",
   "authorList": [
     "CalaMariGold"
   ],
-  "credits": "cutcat101, Foreck, voidwyrm, Polarity, QuietBorb"
+  "credits": "cutcat101, Foreck, voidwyrm, Polarity, QuietBorb, LavenderWolf"
 }
