@@ -15,7 +15,7 @@ difficulty:3
 fancyGraphics:true
 ao:2
 renderClouds:false
-resourcePacks:["NewDefault+v1.41[MC1.9-1.12.2].zip","AudioCraftV1.5.zip","§bDynamic§eSurroundings§6Audio§av2.1.zip","TZP 1.12.2_2.6.zip","Endermen_404.zip","RotN_Wither_v.3.0.zip","Boss Bars+ 1.12.zip","Luminous1.12.2.zip","EclecticTrove-1.12.2-1.0.1.zip","TREPIDATION Resource Pack"]
+resourcePacks:["NewDefault+v1.41[MC1.9-1.12.2].zip","Endermen_404.zip","AudioCraftV1.5.zip","TZP 1.12.2_2.6.zip","Boss Bars+ 1.12.zip","LowOnFire_1.12.zip","AnimEmis_srparasites.zip","EclecticTrove-1.12.2-1.0.1.zip","Luminous1.12.2.zip","RotN_Wither_v.3.0.zip","TREPIDATION Resource Pack"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
