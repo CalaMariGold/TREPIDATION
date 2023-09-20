@@ -36,6 +36,9 @@ recipes.addShapeless("gunpowder", <minecraft:gunpowder>*5,[<minecraft:tnt>]);
 furnace.addRecipe(<contenttweaker:scrambled_magma_eggs>, <nethercraft:slime_eggs>, 0.5);
 recipes.addShapeless("deviled_egg_sandwich", <contenttweaker:deviled_egg_sandwich>,[<contenttweaker:scrambled_magma_eggs>, <nethercraft:devil_bread>, <minecraft:magma_cream>]);
 
+recipes.remove(<corpsecomplex:scroll>);
+recipes.addShapeless("dreadstone_tablet", <corpsecomplex:scroll>,[<contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>,<contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>,<contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>]);
+
 
 var green_glowshroom = <nethercraft:green_glowshroom>;
 var purple_glowshroom = <nethercraft:purple_glowshroom>;

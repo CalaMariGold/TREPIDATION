@@ -21,3 +21,5 @@ nethercraft:pyridium_shovel
 nethercraft:pyridium_bow
 minecraft:ghast_tear
 nethercraft:ghast_bones
+contenttweaker:dreadstone_fragment
+corpsecomplex:scroll

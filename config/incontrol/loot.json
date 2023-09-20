@@ -109,6 +109,13 @@
 
     // Misc
     {
+        "mob":"minecraft:zombie_pigman",
+        "player": true,
+        "item": "contenttweaker:dreadstone_fragment",
+        "itemcount": "1",
+        "random": "0.50"
+    },
+    {
         "mob": "minecraft:witch",
         "remove": "minecraft:redstone"
     },

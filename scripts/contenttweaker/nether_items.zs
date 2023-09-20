@@ -31,3 +31,7 @@ wither_infernium.register();
 
 val vitality_orb = mods.contenttweaker.VanillaFactory.createItem("vitality_orb");
 vitality_orb.register();
+
+val dreadstone_fragment = mods.contenttweaker.VanillaFactory.createItem("dreadstone_fragment");
+dreadstone_fragment.register();
+dreadstone_fragment.maxStackSize = 256;

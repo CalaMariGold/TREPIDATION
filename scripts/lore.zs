@@ -4,11 +4,23 @@ import crafttweaker.item.IItemStack;
 import mods.jei.JEI;
 
 
+<corpsecomplex:scroll>.displayName = "§cDreadstone Tablet";
+<corpsecomplex:scroll>.addTooltip("§3Use to teleport to your last death");
+<corpsecomplex:scroll>.addTooltip("§3Does not drop on death");
+<corpsecomplex:scroll>.removeTooltip("Return to death location");
+JEI.addDescription(<corpsecomplex:scroll>,"For millennia, the Dreadswine have roamed the suffocating abyss of the Nether in ceaseless agony. Once beings of flesh and soul, they were damned to an undead disgusting existence, their humanity dissolved in a mire of despair and malevolence. Driven by a single purpose, they scour the infernal depths for the fabled Dreadstone Tablet, an ancient relic that promises the return of their lost souls and a harrowing passage back to the moment of their undoing. Yet, for these lost souls, they have only come across fragments; cruel teases of the oblivion they crave. And so they trudge on, their twisted forms an eternal testament to a torment that edges always on the brink of hope for a soul's reclamation, forever beyond reach. ");
+
+<contenttweaker:dreadstone_fragment>.displayName = "Dreadstone Fragment";
+<contenttweaker:dreadstone_fragment>.addTooltip("§3Does not drop on death");
+<contenttweaker:dreadstone_fragment>.addTooltip("§oWhen touched, the fragment makes a subtle vibration in sync with the pulse of your heartbeat");
+JEI.addDescription(<contenttweaker:dreadstone_fragment>,"For millennia, the Dreadswine have roamed the suffocating abyss of the Nether in ceaseless agony. Once beings of flesh and soul, they were damned to an undead disgusting existence, their humanity dissolved in a mire of despair and malevolence. Driven by a single purpose, they scour the infernal depths for the fabled Dreadstone Tablet, an ancient relic that promises the return of their lost souls and a harrowing passage back to the moment of their undoing. Yet, for these lost souls, they have only come across fragments; cruel teases of the oblivion they crave. And so they trudge on, their twisted forms an eternal testament to a torment that edges always on the brink of hope for a soul's reclamation, forever beyond reach. ");
+
+
 <contenttweaker:soul_anchor>.displayName = "§cSoul Anchor";
-<contenttweaker:soul_anchor>.addTooltip("§3Right-click to set your spawn point to where you are standing");
+<contenttweaker:soul_anchor>.addTooltip("§3Use to set your spawn point to where you are standing");
 <contenttweaker:soul_anchor>.addTooltip("§3Use at dimension start for safe spawn, avoiding barrier falls");
 <contenttweaker:soul_anchor>.addTooltip("§3SINGLE USE");
-<contenttweaker:soul_anchor>.addTooltip("§oWhen brought to your ear, you can hear faint unsettling laughter.");
+<contenttweaker:soul_anchor>.addTooltip("§oWhen brought to your ear, you can hear faint unsettling laughter");
 JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with ancient blood, the Soul Anchor hums in the dark, its eerie blue aura a beacon to the lost. Use it, and find yourself forever tethered to its haunting pull. A new life granted, but at what cost? For each return bears a toll on the soul's uncharted map.");
 
 
@@ -34,7 +46,7 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 
 // Skills
 <enderskills:token>.displayName = "§cTrace of Death";
-<enderskills:token>.addTooltip("§3Right-click to break and add to your Souls");
+<enderskills:token>.addTooltip("§3Use to break and add to your Souls");
 
 JEI.addDescription(<enderskills:token>,"The Trace of Death stands as an enigmatic artifact of potent might. Its origin remains an enigma, whispered in hushed tones and often lost within the labyrinth of fear-stricken narratives. Its eerie presence is marked by a cold, ominous aura that seems to permeate the air around it.
 When shattered, the Trace of Death unleashes a torrent of spectral energies reaching out to ensnare the wandering souls that still cling to this realm. These souls are then drawn inexorably towards the one who shattered the artifact, granting them not only an infusion of raw power but also a glimpse into the secrets and knowledge that these spirits once held.
@@ -132,7 +144,7 @@ JEI.addDescription(<contenttweaker:vitality_orb>,"The Orb of Veilheart, a miracu
 
 <mysticstaffs:heal_staff:*>.displayName = "§cStaff of Veilheart";
 <mysticstaffs:heal_staff:*>.addTooltip("§oA benevolent staff that rejuvenates the soul and body of allies");
-<mysticstaffs:heal_staff:*>.addTooltip("§3Uses 1 feather");
+<mysticstaffs:heal_staff:*>.addTooltip("§3Uses 1 dash feather");
 
 <nethercraft:ghast_bones>.addTooltip("§oOccasionally harvested from bone blocks submerged in the searing lava oceans");
 
