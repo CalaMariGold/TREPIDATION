@@ -7,8 +7,17 @@ CURRENT_SONG_ONLY = false
 # If SHOW_DEBUG and CURRENT_SONG_ONLY are both enabled, but you want to see the timestamps as well
 ALLOW_TIMESTAMPS = false
 
+# Turing this down will potentially help with audio stutters (Min:1/Max:10)
+ENCODING_QUALITY = 10
+
+# Turing this down will potentially help with audio stutters (HIGH/MEDIUM/LOW)
+RESAMPLING_QUALITY = "HIGH"
+
 # The lowest level of logging (DEBUG/INFO/WARN/ERROR/FATAL) to include in the GUI log visualizer
 LOG_LEVEL = "INFO"
+
+# The maximum number of elements that will be rendered in the GUI when hovering over something that lists things out
+MAX_HOVER_ELEMENTS = 15
 
 # Allows vanilla and blocked music to play when there is music from Music Triggers already playing
 PLAY_NORMAL_MUSIC = false
