@@ -44,13 +44,13 @@ customization {
 customization {
   orientation = mid-centered
   shadow = false
-  x = -44
+  x = -72
   actionid = 77456e86-89bd-4359-911f-96d269ec7de61635954594744
   action = addtext
   y = 127
   scale = 1.0
   alignment = left
-  value = Requires game restart!
+  value = Font change requires game restart!
 }
 
 customization {
@@ -58,18 +58,32 @@ customization {
   enable_scrolling = true
   shadow = true
   scale = 1.0
-  source = Shaders enabled by default!%n%Go to Video Settings to adjust performance presets
+  source = Shaders enabled by default!%n%Go to Shader Performance Options to change presets
   text_border = 0
   case_mode = normal
   source_mode = direct
   line_spacing = 1
-  x = -104
-  width = 212
+  x = -115
+  width = 231
   action = custom_layout_element:fancymenu_customization_item_text
   actionid = c29034c3-d8bd-41b9-931c-887cbb0cfea01697151063271
   y = 195
   alignment = centered
   base_color = FF0000
   height = 24
+}
+
+customization {
+  orientation = top-left
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = opengui;net.optifine.shaders.gui.GuiShaderOptions%btnaction_splitter_fm%
+  x = 325
+  width = 150
+  action = addbutton
+  actionid = 4df5719e-6d46-413e-b74f-0b40c2c6f4911697151855262
+  y = 170
+  label = !! Shader Performance Options !!
+  height = 20
 }
 
