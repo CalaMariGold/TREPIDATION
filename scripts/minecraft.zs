@@ -22,10 +22,10 @@ JEI.removeAndHide(<minecraft:magma>);
 JEI.removeAndHide(<minecraft:writable_book>);
 
 
-recipes.removeAndHide(<minecraft:iron_pickaxe>);
-recipes.removeAndHide(<minecraft:wood_pickaxe>);
-recipes.removeAndHide(<minecraft:stone_pickaxe>);
-recipes.removeAndHide(<minecraft:golden_pickaxe>);
+JEI.removeAndHide(<minecraft:iron_pickaxe>);
+JEI.removeAndHide(<minecraft:wooden_pickaxe>);
+JEI.removeAndHide(<minecraft:stone_pickaxe>);
+JEI.removeAndHide(<minecraft:golden_pickaxe>);
 
 
 
