@@ -71,8 +71,10 @@ JEI.addDescription(<nethercraft:pyridium_ingot>,"Infernium is a rare and powerfu
 <nethercraft:pyridium_sword>.displayName = "Infernium Sword";
 
 <contenttweaker:wither_infernium>.displayName = "§cWithering Infernium Ingot";
+<contenttweaker:wither_infernium>.addTooltip("§oWhen touched, your hands begin to dry and slowly crumble. A destructive alloy, impossible to craft by mortals.");
 <nethercraft:pyridium_pickaxe:*>.displayName = "§cWithering Infernium Pickaxe";
 <nethercraft:pyridium_pickaxe:*>.addTooltip("§oA tool imbued with the power to wither away an otherwise impervious barrier; a coveted possession of a fearsome adversary");
+
 
 <nethercraft:pyridium_axe>.displayName = "Infernium Axe";
 <nethercraft:pyridium_shovel>.displayName = "Infernium Shovel";
