@@ -18,7 +18,7 @@ customization {
   enable_scrolling = false
   shadow = true
   scale = 1.3
-  source = Changing shaders takes awhile! Be patient.%n% Please use Chocapic v9.1 Beta 5.
+  source = Changing shaders takes awhile! Be patient.%n% Please use Complementary Unbound r5.0.1.
   text_border = 0
   case_mode = normal
   source_mode = direct
