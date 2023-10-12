@@ -10,3 +10,7 @@ recipes.remove(<quark:lit_lamp>);
 
 recipes.remove(<quark:soul_powder>);
 recipes.remove(<quark:soul_compass>);
+
+// add back later maybe
+recipes.remove(<quark:pickarang>);
+

@@ -22,6 +22,11 @@ JEI.removeAndHide(<minecraft:magma>);
 JEI.removeAndHide(<minecraft:writable_book>);
 
 
+recipes.removeAndHide(<minecraft:iron_pickaxe>);
+recipes.removeAndHide(<minecraft:wood_pickaxe>);
+recipes.removeAndHide(<minecraft:stone_pickaxe>);
+recipes.removeAndHide(<minecraft:golden_pickaxe>);
+
 
 
 val stone as IItemStack = <minecraft:stone:*>;
