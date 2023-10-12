@@ -112,8 +112,7 @@
         "mob":"minecraft:zombie_pigman",
         "player": true,
         "item": "contenttweaker:dreadstone_fragment",
-        "itemcount": "1",
-        "random": "0.50"
+        "itemcount": "1"
     },
     {
         "mob": "minecraft:witch",
