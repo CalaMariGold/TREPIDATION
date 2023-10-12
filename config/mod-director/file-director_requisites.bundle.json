@@ -9,6 +9,11 @@
 		},
 		{
 			"url": "https://github.com/CalaMariGold/RPG-Hud-1.12/releases/download/v3.8.2/1.12.Forge.RPG-HUD-3.8.2.jar"
+		},
+		{
+			"url": "https://cdn.modrinth.com/data/R6NEzAwj/versions/JHN3K1Ng/ComplementaryUnbound_r5.0.1.zip",
+			"folder": "shaderpacks",
+			"fileName": "ComplementaryUnbound_r5.0.1.zip"
 		}
 	]
 }
