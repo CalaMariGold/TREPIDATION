@@ -29,6 +29,27 @@ customization {
   actionid = c353540a-7c2b-4d6b-b8bf-f27eb43c6b1a1677690788631
   y = -99
   alignment = centered
+  base_color = FF0000
   height = 27
+}
+
+customization {
+  orientation = bottom-right
+  enable_scrolling = true
+  shadow = true
+  scale = 1.0
+  source = Performance presets%n%              |%n%             \/
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = -112
+  width = 88
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 1241e29e-1efe-41ca-b963-8deaa5861d9c1697150768172
+  y = -58
+  alignment = left
+  base_color = FF0000
+  height = 34
 }
 

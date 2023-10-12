@@ -17,14 +17,13 @@ customization {
   orientation = mid-centered
   loopbackgroundanimations = true
   restartbackgroundanimations = true
-  buttonaction = copyfile
+  buttonaction = copyfile;font_selection/bitter/smoothfont.cfg;config/smoothfont/smoothfont.cfg%btnaction_splitter_fm%
   x = -153
   width = 150
-  actionid = df00e6a0-7e08-45e7-933a-0a7a626abb5c1635954030698
   action = addbutton
+  actionid = df00e6a0-7e08-45e7-933a-0a7a626abb5c1635954030698
   y = 106
   label = Switch to regular font
-  value = font_selection/bitter/smoothfont.cfg;config/smoothfont/smoothfont.cfg
   height = 19
 }
 
@@ -32,14 +31,13 @@ customization {
   orientation = mid-centered
   loopbackgroundanimations = true
   restartbackgroundanimations = true
-  buttonaction = copyfile
+  buttonaction = copyfile;font_selection/october_crow/smoothfont.cfg;config/smoothfont/smoothfont.cfg%btnaction_splitter_fm%
   x = 6
   width = 150
-  actionid = df00e6a0-7e08-45e7-933a-0a7a626abb5c1635954030698
   action = addbutton
+  actionid = df00e6a0-7e08-45e7-933a-0a7a626abb5c1635954030698
   y = 106
   label = Switch to scary font (default)
-  value = font_selection/october_crow/smoothfont.cfg;config/smoothfont/smoothfont.cfg
   height = 19
 }
 
@@ -53,5 +51,25 @@ customization {
   scale = 1.0
   alignment = left
   value = Requires game restart!
+}
+
+customization {
+  orientation = top-centered
+  enable_scrolling = true
+  shadow = true
+  scale = 1.0
+  source = Shaders enabled by default!%n%Go to Video Settings to adjust performance presets
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = -104
+  width = 212
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = c29034c3-d8bd-41b9-931c-887cbb0cfea01697151063271
+  y = 195
+  alignment = centered
+  base_color = FF0000
+  height = 24
 }
 

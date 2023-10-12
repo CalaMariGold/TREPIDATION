@@ -21,9 +21,6 @@ net.minecraft.client.gui.inventory.GuiContainerCreative {
 net.minecraft.client.gui.inventory.GuiInventory {
 }
 
-net.minecraft.client.gui.GuiOptions {
-}
-
 net.optifine.gui.GuiPerformanceSettingsOF {
 }
 
@@ -43,5 +40,11 @@ net.optifine.shaders.gui.GuiShaders {
 }
 
 net.minecraft.client.gui.GuiIngameMenu {
+}
+
+net.optifine.shaders.gui.GuiShaderOptions {
+}
+
+net.minecraft.client.gui.GuiOptions {
 }
 

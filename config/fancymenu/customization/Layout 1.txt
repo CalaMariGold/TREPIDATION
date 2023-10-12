@@ -23,7 +23,7 @@ customization {
   orientation = mid-left
   restartbackgroundanimations = true
   delayappearanceseconds = 3.0
-  buttonaction = opengui
+  buttonaction = opengui;net.minecraft.client.gui.GuiWorldSelection%btnaction_splitter_fm%
   backgroundhovered = resources\trepidation\play_alone_hovered.png
   label = 
   loopbackgroundanimations = true
@@ -31,12 +31,11 @@ customization {
   fadeinspeed = 1.0
   x = 114
   width = 145
-  actionid = 9fe4d8a3-a6ae-40f1-af6c-bef58ae9397c1624418124559
   action = addbutton
+  actionid = 9fe4d8a3-a6ae-40f1-af6c-bef58ae9397c1624418124559
   y = -41
   delayappearance = true
   backgroundnormal = resources\trepidation\play_alone.png
-  value = net.minecraft.client.gui.GuiWorldSelection
   delayappearanceeverytime = false
   height = 24
 }
@@ -45,7 +44,7 @@ customization {
   orientation = mid-left
   restartbackgroundanimations = true
   delayappearanceseconds = 3.0
-  buttonaction = opengui
+  buttonaction = opengui;net.minecraft.client.gui.GuiMultiplayer%btnaction_splitter_fm%
   backgroundhovered = resources\trepidation\play_together_hovered.png
   label = 
   loopbackgroundanimations = true
@@ -53,12 +52,11 @@ customization {
   fadeinspeed = 1.0
   x = 83
   width = 205
-  actionid = 35a1fee7-0529-4f4c-afa7-dc78d79535451624418124566
   action = addbutton
+  actionid = 35a1fee7-0529-4f4c-afa7-dc78d79535451624418124566
   y = 1
   delayappearance = true
   backgroundnormal = resources\trepidation\play_together.png
-  value = net.minecraft.client.gui.GuiMultiplayer
   delayappearanceeverytime = false
   height = 24
 }
@@ -67,7 +65,7 @@ customization {
   orientation = mid-left
   restartbackgroundanimations = true
   delayappearanceseconds = 3.0
-  buttonaction = quitgame
+  buttonaction = quitgame;%btnaction_splitter_fm%
   backgroundhovered = resources\trepidation\escape_hovered.png
   label = 
   loopbackgroundanimations = true
@@ -76,12 +74,11 @@ customization {
   fadeinspeed = 1.0
   x = 0
   width = 236
-  actionid = 42de0363-0bc6-4244-9b74-ca367f8a3a051624418124566
   action = addbutton
+  actionid = 42de0363-0bc6-4244-9b74-ca367f8a3a051624418124566
   y = 83
   delayappearance = true
   backgroundnormal = resources\trepidation\escape.png
-  value = 
   delayappearanceeverytime = false
   height = 24
 }
@@ -90,7 +87,7 @@ customization {
   orientation = mid-left
   restartbackgroundanimations = true
   delayappearanceseconds = 3.0
-  buttonaction = opengui
+  buttonaction = opengui;net.minecraft.client.gui.GuiOptions%btnaction_splitter_fm%
   backgroundhovered = resources\trepidation\options_hovered.png
   label = 
   loopbackgroundanimations = true
@@ -98,12 +95,11 @@ customization {
   fadeinspeed = 1.0
   x = 135
   width = 104
-  actionid = 8a0f0a04-b00b-48f6-b42b-42dbe90b0b1a1624418124567
   action = addbutton
+  actionid = 8a0f0a04-b00b-48f6-b42b-42dbe90b0b1a1624418124567
   y = 43
   delayappearance = true
   backgroundnormal = resources\trepidation\options.png
-  value = net.minecraft.client.gui.GuiOptions
   delayappearanceeverytime = false
   height = 24
 }
@@ -111,18 +107,17 @@ customization {
 customization {
   orientation = bottom-left
   restartbackgroundanimations = true
-  buttonaction = openlink
+  buttonaction = openlink;https://docs.google.com/document/d/1ChK55p_9aA9wusMZYTBIUbV1P_ucuhZCtudwK_244H0/edit#%btnaction_splitter_fm%
   backgroundhovered = resources\trepidation\transparent.png
   description = Click to view changelog
   label = v0.4.2
   loopbackgroundanimations = true
   x = -1
   width = 35
-  actionid = d8f82b65-ee88-4d7e-b01d-12f917e6955a1624418124568
   action = addbutton
+  actionid = d8f82b65-ee88-4d7e-b01d-12f917e6955a1624418124568
   y = -13
   backgroundnormal = resources\trepidation\transparent.png
-  value = https://docs.google.com/document/d/1ChK55p_9aA9wusMZYTBIUbV1P_ucuhZCtudwK_244H0/edit#
   height = 12
 }
 

@@ -1,7 +1,7 @@
 type = menu
 
 customization-meta {
-  identifier = net.minecraft.client.gui.GuiVideoSettings
+  identifier = net.optifine.shaders.gui.GuiShaderOptions
   randomgroup = 1
   renderorder = foreground
   randommode = false
@@ -14,22 +14,22 @@ customization {
 }
 
 customization {
-  orientation = top-left
+  orientation = top-centered
   enable_scrolling = true
   shadow = true
   scale = 1.0
-  source = Performance%n%presets --->
+  source = Change performance preset above /\
   text_border = 0
   case_mode = normal
   source_mode = direct
   line_spacing = 1
-  x = 109
-  width = 55
+  x = -182
+  width = 166
   action = custom_layout_element:fancymenu_customization_item_text
-  actionid = ed6ef78f-3c3f-41f9-b037-b0cd1f80e1411697150929615
-  y = 166
+  actionid = 12520fcd-a9b9-46bf-8e59-646caaa239b41697150569672
+  y = 92
   alignment = left
   base_color = FF0000
-  height = 25
+  height = 14
 }
 
