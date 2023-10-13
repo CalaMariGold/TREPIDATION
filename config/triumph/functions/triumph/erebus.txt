@@ -3,4 +3,5 @@ title @p times 40 120 60
 title @p subtitle {"text":"There is always something lurking", "color":"yellow"}
 title @p title {"text":"The Erebus", "bold":false, "italic":false, "color":"dark_green"}
 spawnpoint @p ~ ~ ~
+effect @p clear
 give @p contenttweaker:soul_anchor
