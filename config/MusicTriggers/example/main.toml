@@ -57,7 +57,7 @@
 	[songs.deepdark_deepnoise_kevinmacleod]
 		triggers = [ "dimension-deepdark" ]
 	[songs.erebus_controlledchaos_kevinmacleod]
-		volume = "0.5"
+		volume = "0.25"
 		triggers = [ "dimension-erebus" ]
 	[songs.erebus_awkwardmeeting_kevinmacleod]
 		triggers = [ "dimension-erebus" ]
