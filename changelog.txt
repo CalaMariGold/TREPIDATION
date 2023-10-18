@@ -1,7 +1,8 @@
-§lTREPIDATION v0.3.3§r
+§lTREPIDATION v0.4.2§r
 
 §eClick the version number on the main menu for full changelog.§r
 
 §a§lKnown Issues§r§r
 - Some Erebus structures rarely spawn high up and replace the barrier
-- Players joining in multiplayer sessions do not spawn at the same place (reset run to fix this)
+- Players joining in multiplayer sessions do not spawn at the same place (reset run to fix this). Players also sometimes permanently spawn in different locations on each reset
+- Certain actions in multiplayer sometimes trigger many times for all players (ie, killing the wither spams item rewards and chat messages)
