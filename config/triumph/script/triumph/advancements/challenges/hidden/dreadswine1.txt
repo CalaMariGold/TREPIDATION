@@ -1,0 +1,14 @@
+setIcon(<contenttweaker:dreadstone_fragment>)
+setTitle("Dreadswine1")
+setDescription("Kill 1 Dreadswine")
+
+addParent("triumph:advancements/challenges/root")
+
+criteria = addCriteria("dreadswine", "minecraft:player_killed_entity")
+criteria.setEntityType("minecraft:zombie_pigman")
+
+setAnnounceToChat(false)
+hideLines()
+alwaysHidden()
+setHidden(true)
+setPos(200,0)

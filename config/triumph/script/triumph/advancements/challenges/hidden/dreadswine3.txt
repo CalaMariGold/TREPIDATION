@@ -1,0 +1,25 @@
+setIcon(<contenttweaker:dreadstone_fragment>)
+setTitle("Dreadswine2")
+setDescription("Kill 3 Dreadswine")
+
+addParent("triumph:advancements/challenges/root")
+
+criteria = addCriteria("dreadswine1", "triumph:completed_advancement")
+criteria.setAdvancement("triumph:advancements/challenges/hidden/dreadswine1")
+
+criteria = addCriteria("dreadswine2", "triumph:completed_advancement")
+criteria.setAdvancement("triumph:advancements/challenges/hidden/dreadswine2")
+
+criteria2 = addCriteria("dreadswine3", "minecraft:player_killed_entity")
+criteria.setEntityType("minecraft:zombie_pigman")
+
+criteria2.setCount(3)
+
+setRequirements("all")
+
+
+setAnnounceToChat(false)
+hideLines()
+alwaysHidden()
+setHidden(true)
+setPos(200,0)

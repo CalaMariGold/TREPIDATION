@@ -1,0 +1,36 @@
+setIcon(<contenttweaker:dreadstone_fragment>)
+setTitle("Dreadswine2")
+setDescription("Kill 2 Dreadswine")
+
+addParent("triumph:advancements/challenges/root")
+
+criteria = addCriteria("dreadswine1", "triumph:completed_advancement")
+criteria.setAdvancement("triumph:advancements/challenges/hidden/dreadswine1")
+criteria = addCriteria("dreadswine2", "triumph:completed_advancement")
+criteria.setAdvancement("triumph:advancements/challenges/hidden/dreadswine2")
+criteria = addCriteria("dreadswine3", "triumph:completed_advancement")
+criteria.setAdvancement("triumph:advancements/challenges/hidden/dreadswine3")
+criteria = addCriteria("dreadswine4", "triumph:completed_advancement")
+criteria.setAdvancement("triumph:advancements/challenges/hidden/dreadswine4")
+criteria = addCriteria("dreadswine5", "triumph:completed_advancement")
+criteria.setAdvancement("triumph:advancements/challenges/hidden/dreadswine5")
+criteria = addCriteria("dreadswine6", "triumph:completed_advancement")
+criteria.setAdvancement("triumph:advancements/challenges/hidden/dreadswine6")
+criteria = addCriteria("dreadswine7", "triumph:completed_advancement")
+criteria.setAdvancement("triumph:advancements/challenges/hidden/dreadswine7")
+criteria = addCriteria("dreadswine8", "triumph:completed_advancement")
+criteria.setAdvancement("triumph:advancements/challenges/hidden/dreadswine8")
+
+criteria2 = addCriteria("dreadswine9", "minecraft:player_killed_entity")
+criteria.setEntityType("minecraft:zombie_pigman")
+
+criteria2.setCount(9)
+
+setRequirements("all")
+
+
+setAnnounceToChat(false)
+hideLines()
+alwaysHidden()
+setHidden(true)
+setPos(200,0)
