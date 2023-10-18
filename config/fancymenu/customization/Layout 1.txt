@@ -137,3 +137,21 @@ customization {
   height = 42
 }
 
+customization {
+  orientation = bottom-right
+  restartbackgroundanimations = false
+  buttonaction = openlink;https://mmcreviews.com/all/modpacks/trepidation/%btnaction_splitter_fm%
+  backgroundhovered = resources/trepidation/rateushover2.png
+  description = Review TREPIDATION on MMCReviews.com!
+  label = 
+  loopbackgroundanimations = true
+  hoverlabel = 
+  x = -69
+  width = 69
+  action = addbutton
+  actionid = b774d2af-c0c8-4acb-9603-1702d04b34f61697652435157
+  y = -18
+  backgroundnormal = resources/trepidation/rateus.png
+  height = 18
+}
+
