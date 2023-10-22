@@ -54,7 +54,7 @@ customization {
 }
 
 customization {
-  orientation = top-centered
+  orientation = element
   enable_scrolling = true
   shadow = true
   scale = 1.0
@@ -63,26 +63,28 @@ customization {
   case_mode = normal
   source_mode = direct
   line_spacing = 1
-  x = -115
+  orientation_element = vanillabtn:505256
+  x = -119
   width = 231
   action = custom_layout_element:fancymenu_customization_item_text
   actionid = c29034c3-d8bd-41b9-931c-887cbb0cfea01697151063271
-  y = 195
+  y = 50
   alignment = centered
   base_color = FF0000
   height = 24
 }
 
 customization {
-  orientation = top-left
+  orientation = element
   loopbackgroundanimations = true
   restartbackgroundanimations = true
+  orientation_element = vanillabtn:505256
   buttonaction = opengui;net.optifine.shaders.gui.GuiShaderOptions%btnaction_splitter_fm%
-  x = 325
+  x = 0
   width = 150
   action = addbutton
   actionid = 4df5719e-6d46-413e-b74f-0b40c2c6f4911697151855262
-  y = 170
+  y = 24
   label = !! Shader Performance Options !!
   height = 20
 }

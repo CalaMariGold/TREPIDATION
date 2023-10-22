@@ -13,23 +13,3 @@ customization {
   action = backgroundoptions
 }
 
-customization {
-  orientation = top-left
-  enable_scrolling = true
-  shadow = true
-  scale = 1.0
-  source = Performance%n%presets --->
-  text_border = 0
-  case_mode = normal
-  source_mode = direct
-  line_spacing = 1
-  x = 109
-  width = 55
-  action = custom_layout_element:fancymenu_customization_item_text
-  actionid = ed6ef78f-3c3f-41f9-b037-b0cd1f80e1411697150929615
-  y = 166
-  alignment = left
-  base_color = FF0000
-  height = 25
-}
-
