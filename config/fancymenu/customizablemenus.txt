@@ -24,9 +24,6 @@ net.minecraft.client.gui.inventory.GuiInventory {
 net.optifine.gui.GuiPerformanceSettingsOF {
 }
 
-net.minecraft.client.gui.GuiVideoSettings {
-}
-
 net.minecraft.client.gui.GuiMultiplayer {
 }
 
@@ -46,5 +43,8 @@ net.optifine.shaders.gui.GuiShaderOptions {
 }
 
 net.minecraft.client.gui.GuiOptions {
+}
+
+net.minecraft.client.gui.GuiVideoSettings {
 }
 
