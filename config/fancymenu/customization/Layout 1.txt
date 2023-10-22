@@ -141,17 +141,35 @@ customization {
   orientation = bottom-right
   restartbackgroundanimations = false
   buttonaction = openlink;https://mmcreviews.com/all/modpacks/trepidation/%btnaction_splitter_fm%
-  backgroundhovered = resources/trepidation/rateushover2.png
+  backgroundhovered = resources/trepidation/mmcrhover.png
   description = Review TREPIDATION on MMCReviews.com!
   label = 
   loopbackgroundanimations = true
   hoverlabel = 
-  x = -69
-  width = 69
+  x = -34
+  width = 32
   action = addbutton
   actionid = b774d2af-c0c8-4acb-9603-1702d04b34f61697652435157
-  y = -18
-  backgroundnormal = resources/trepidation/rateus.png
-  height = 18
+  y = -33
+  backgroundnormal = resources/trepidation/mmcr.png
+  height = 32
+}
+
+customization {
+  orientation = bottom-right
+  restartbackgroundanimations = false
+  buttonaction = openlink;https://discord.gg/g6Ss7fzD2u%btnaction_splitter_fm%
+  backgroundhovered = resources/trepidation/discordhover.png
+  description = Join the TREPIDATION community on Discord!
+  label = 
+  loopbackgroundanimations = true
+  hoverlabel = 
+  x = -68
+  width = 32
+  action = addbutton
+  actionid = 68581d2c-f96c-4203-9091-1bbd872c0bd71698008088972
+  y = -33
+  backgroundnormal = resources/trepidation/discord1.png
+  height = 32
 }
 
