@@ -7,6 +7,12 @@ import mods.rockytweaks.Anvil;
 import mods.ltt.LootTable;
 import mods.dropt.Dropt;
 
+Dropt.list("no_soul_sand_drop")
+  .add(Dropt.rule()
+    .matchDrops([(<minecraft:soul_sand>)])
+    .replaceStrategy("REPLACE_ITEMS")
+    .addDrop(Dropt.drop())
+  );
 
 Dropt.list("no_brick_drop")
   .add(Dropt.rule()
