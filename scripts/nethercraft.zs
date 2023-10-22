@@ -51,12 +51,6 @@ recipes.remove(<minecraft:mushroom_stew>);
 recipes.addShapeless("mushroom_stew_new", <minecraft:mushroom_stew>,[<ore:mushroomAny>,<ore:mushroomAny>, <minecraft:bowl>]);
 
 
-// Slab
-recipes.addShapedMirrored("glowood_slab", <minecraft:wooden_slab>*6,
-[[<nethercraft:glowood_planks>,<nethercraft:glowood_planks>,<nethercraft:glowood_planks>],
-[null,null,null],
-[null,null,null]
-]);
 
 recipes.remove(<scalinghealth:healingitem:1>);
 recipes.addShapeless("medkit", <scalinghealth:healingitem:1>, [<scalinghealth:healingitem>, <scalinghealth:healingitem>, <scalinghealth:healingitem>]);
