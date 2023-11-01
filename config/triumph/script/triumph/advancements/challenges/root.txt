@@ -1,6 +1,6 @@
 //This is a root advancement. It is the base advancement for a page. As such, it has no parent and has to set a background.
 
-setIcon(<minecraft:skull, meta:2>)
+setIcon(<contenttweaker:trophy>)
 setTitle("TREPIDATION Challenges")
 setDescription("All of these challenges are part of TREPIDATION's monthly challenges with cash prizes. Join the Discord to compete.")
 

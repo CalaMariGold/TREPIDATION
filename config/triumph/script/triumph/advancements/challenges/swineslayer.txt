@@ -1,6 +1,6 @@
 setIcon(<contenttweaker:dreadstone_fragment>)
 setTitle("Swine Slayer")
-setDescription("Kill 15 Dreadswine")
+setDescription("Kill 15 Dreadswine (Winner: 1997 Toyota Corolla, September 2023)")
 
 addParent("triumph:advancements/challenges/root")
 

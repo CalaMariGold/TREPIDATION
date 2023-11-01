@@ -1,0 +1,13 @@
+setIcon(<contenttweaker:skull_and_bones>)
+setTitle("Quick to the Grave")
+setDescription("Die in the first 30 seconds of starting a run. (Winner: TBA, October 2023)")
+
+addParent("triumph:advancements/challenges/root")
+
+criteria1 = addCriteria("impossible", "minecraft:impossible")
+
+
+setAnnounceToChat(true)
+hideLines()
+alwaysVisible()
+setPos(30,0)

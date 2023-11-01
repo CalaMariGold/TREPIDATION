@@ -11,3 +11,9 @@ import crafttweaker.block.IBlockDefinition;
 
 val soul_anchor = mods.contenttweaker.VanillaFactory.createItem("soul_anchor");
 soul_anchor.register();
+
+val skull_and_bones = mods.contenttweaker.VanillaFactory.createItem("skull_and_bones");
+skull_and_bones.register();
+
+val trophy = mods.contenttweaker.VanillaFactory.createItem("trophy");
+trophy.register();
