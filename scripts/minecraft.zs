@@ -13,6 +13,7 @@ LootTable.removeGlobalItem("minecraft:ender_eye");
 // will be reworked later, maybe deep dark or erebus bow
 recipes.remove(<minecraft:bow>);
 
+recipes.remove(<minecraft:lead>);
 recipes.remove(<minecraft:tnt>);
 JEI.removeAndHide(<minecraft:end_crystal>);
 JEI.removeAndHide(<minecraft:end_rod>);
