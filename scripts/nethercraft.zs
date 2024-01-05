@@ -20,6 +20,8 @@ JEI.removeAndHide(<nethercraft:glowood_bookshelf>);
 
 JEI.removeAndHide(<nethercraft:pyridium_block>);
 JEI.removeAndHide(<nethercraft:neridium_block>);
+JEI.removeAndHide(<nethercraft:lava_boat>);
+
 
 
 recipes.remove(<nethercraft:devil_bread>);
