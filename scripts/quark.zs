@@ -14,3 +14,9 @@ recipes.remove(<quark:soul_compass>);
 // add back later maybe
 recipes.remove(<quark:pickarang>);
 
+
+recipes.addShaped("backpack", <quark:backpack>,
+[[<nethercraft:lava_reeds_item>,<nethercraft:lava_reeds_item>,<nethercraft:lava_reeds_item>],
+[<minecraft:string>,null,<nethercraft:ghast_bones>],
+[<nethercraft:lava_reeds_item>,<nethercraft:lava_reeds_item>,<nethercraft:lava_reeds_item>]
+]);
