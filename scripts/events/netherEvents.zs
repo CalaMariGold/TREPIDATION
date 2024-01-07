@@ -92,7 +92,7 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                     Commands.call("kill @e[type=minecraft:wither_skeleton]", event.player, event.world, true, true);
                     Commands.call("kill @e[type=minecraft:ghast]", event.player, event.world, true, true);
 
-                    server.commandManager.executeCommand(server, "gamestage silentremove @p nether");
+                    server.commandManager.executeCommand(server, "gamestage silentremove @a nether");
                 }
         });
         }
