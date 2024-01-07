@@ -88,7 +88,7 @@ key_treechop.key.cycle_sneak_behavior:0
 key_treechop.key.open_settings_overlay:0
 key_walljump.key.walljump:42
 key_key.dismount:42
-key_smoothfont.key.guiOpen:77
+key_smoothfont.key.guiOpen:0
 key_key.reveal:0
 key_key.jei.toggleOverlay:24:CONTROL
 key_key.jei.focusSearch:33:CONTROL
@@ -101,7 +101,7 @@ key_key.jei.previousPage:201
 key_key.jei.nextPage:209
 key_key.jei.bookmark:30
 key_key.jei.toggleBookmarkOverlay:0
-key_key.keyExtraInvo:45
+key_key.keyExtraInvo:0
 key_key.keyWheel:0
 key_key.keyExtraCraftin:0
 key_key.elenaidodge2.dodge:56
@@ -123,7 +123,7 @@ key_keybind.enderskills.skill_bound.warp:44
 key_keybind.enderskills.skill_bound.smash:42
 key_FpsReducer.key.guiOpen:0
 key_FpsReducer.key.forceIdle:0
-key_waila.keybind.wailaconfig:43
+key_waila.keybind.wailaconfig:0
 key_waila.keybind.wailadisplay:0
 key_waila.keybind.liquid:0
 key_waila.keybind.recipe:0
@@ -142,25 +142,6 @@ key_teamsmod.keyswitch.desc:19
 key_Eatkey:0
 key_Spitkey:0
 key_key.fullscreenwindowed.unused:0
-soundCategory_master:0.49668875
-soundCategory_music:0.0
-soundCategory_record:1.0
-soundCategory_weather:1.0
-soundCategory_block:1.0
-soundCategory_hostile:0.7
-soundCategory_neutral:1.0
-soundCategory_player:0.7
-soundCategory_ambient:1.0
-soundCategory_voice:1.0
-soundCategory_ds_footsteps:0.15
-soundCategory_ds_biome:1.0
-modelPart_cape:true
-modelPart_jacket:true
-modelPart_left_sleeve:true
-modelPart_right_sleeve:true
-modelPart_left_pants_leg:true
-modelPart_right_pants_leg:true
-modelPart_hat:true
 key_key.reload_musictriggers:0
 key_Open Friends Gui:0
 key_Open Cosmetic Studio:0
@@ -181,3 +162,7 @@ key_keybind.name.EMOTE_SLOT_8:0
 key_teamsmod.keyhud.desc:0
 key_teamsmod.keycompass.desc:0
 key_key.musictriggers.gui:0
+key_key.betterfoliage.gui:0
+key_keys.baubleshud.config:0
+key_Quick Commands:0
+key_ChatFlow:0
