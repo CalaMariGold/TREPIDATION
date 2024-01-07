@@ -71,6 +71,7 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                     server.commandManager.executeCommand(server, "effect @a regeneration 120");
                     server.commandManager.executeCommand(server, "effect @a invisibility 120");
                     server.commandManager.executeCommand(server, "effect @a potioncore:slow_fall 120");
+                    server.commandManager.executeCommand(server, "effect @a minecraft:glowing 120");
                     event.player.sendChat("§6A mysterious yet benevolent aura surrounds you, for now...");
 
                     server.commandManager.executeCommand(server, "give @a timeisup:timer_bonus 3");
