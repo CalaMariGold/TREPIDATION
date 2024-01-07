@@ -2,7 +2,7 @@
 
 setIcon(<contenttweaker:trophy>)
 setTitle("TREPIDATION Challenges")
-setDescription("All of these challenges are part of TREPIDATION's monthly challenges with cash prizes. Join the Discord to compete.")
+setDescription("All of these challenges are part of TREPIDATION's Discord challenges with cash prizes. Join the Discord to compete.")
 
 setShowToast(false)
 setAnnounceToChat(false)

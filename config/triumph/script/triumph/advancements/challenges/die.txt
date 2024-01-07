@@ -1,6 +1,6 @@
 setIcon(<contenttweaker:skull_and_bones>)
 setTitle("Quick to the Grave")
-setDescription("Die in the first 30 seconds of starting a run. (Winner: TBA, October 2023)")
+setDescription("Die in the first 30 seconds of starting a run. (Winner: a1qs, November 2023)")
 
 addParent("triumph:advancements/challenges/root")
 
