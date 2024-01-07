@@ -54,7 +54,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
         val itemstack = event.item as IItemStack; 
         if(!isNull(itemstack)){
             if (soul_anchor.matches(itemstack)) {  
-                server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your soul has been bound. Be sure not to obstruct this position.\",\"color\":\"dark_red\",\"italic\":true}]");
+                server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your soul has been bound to this position. Be sure not to obstruct this area.\",\"color\":\"dark_red\",\"italic\":true}]");
                 Commands.call("setworldspawn ~ ~ ~", event.player, event.world, true, true);
                 Commands.call("spawnpoint @p ~ ~ ~", event.player, event.world, true, true);
                 itemstack.mutable().shrink(1);

@@ -170,6 +170,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                     Commands.call("kill @e[type=minecraft:wither_skeleton]", event.player, event.world, true, true);
                     Commands.call("kill @e[type=minecraft:ghast]", event.player, event.world, true, true);
                     Commands.call("kill @e[type=item]", event.player, event.world, true, true);
+                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your soul has been bound to this position.\",\"color\":\"dark_red\",\"italic\":true}]");
                 }
             }
         }
