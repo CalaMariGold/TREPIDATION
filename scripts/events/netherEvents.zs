@@ -43,9 +43,29 @@ import mods.contenttweaker.Commands;
 import mods.contenttweaker.ActionResult;
 import crafttweaker.event.EntityLivingDeathEvent;
 import crafttweaker.entity.IEntityLivingBase;
+import crafttweaker.event.PlayerLeftClickBlockEvent;
 
 
+static veilstriumPick as IItemStack = <nethercraft:neridium_pickaxe:*>;
+static netherrackPick as IItemStack = <nethercraft:netherrack_pickaxe:*>;
 
+
+events.onPlayerLeftClickBlock(function(event as crafttweaker.event.PlayerLeftClickBlockEvent){
+    if(!event.entity.world.isRemote()){
+        if(isNull(event.player.data.clickedNetherBarrier)){       
+            val playerHoldItemStack = event.player.currentItem as IItemStack; 
+            if(event.block.displayName == "Barrier §4Alpha"){
+                if(!isNull(playerHoldItemStack)){
+                    if (veilstriumPick.matches(playerHoldItemStack) || netherrackPick.matches(playerHoldItemStack)) {  
+                        event.player.sendChat("§4As you strike the barrier above you, a haunting realization dawns: A tool much stronger than your " + event.player.currentItem.displayName + " will be required to shatter this engimatic veil - one steeped in the essence of Withering, forged by a dark, concealed entity...");
+                        Commands.call("playsound quark:item.soul_bead.curse player @s ~ ~ ~ 5.0 1.0 1.0", event.player, event.world, true, true);
+                    }
+                }
+                event.player.update({clickedNetherBarrier: true});
+            }
+        }
+    }
+});
 
 events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeathEvent){
     if(!event.entity.world.isRemote()){
