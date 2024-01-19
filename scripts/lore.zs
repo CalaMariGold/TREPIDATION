@@ -48,10 +48,10 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <enderskills:token>.displayName = "§cTrace of Death";
 <enderskills:token>.addTooltip("§3Use to break and add to your Souls");
 
-JEI.addDescription(<enderskills:token>,"The Trace of Death stands as an enigmatic artifact of potent might. Its origin remains an enigma, whispered in hushed tones and often lost within the labyrinth of fear-stricken narratives. Its eerie presence is marked by a cold, ominous aura that seems to permeate the air around it.
-When shattered, the Trace of Death unleashes a torrent of spectral energies reaching out to ensnare the wandering souls that still cling to this realm. These souls are then drawn inexorably towards the one who shattered the artifact, granting them not only an infusion of raw power but also a glimpse into the secrets and knowledge that these spirits once held.
-However, such power comes at a steep cost, for the Trace of Death is rumored to be cursed, and its influence can drive even the most level-headed adventurer to madness and despair. Its effects are said to linger long after the artifact is destroyed, tainting the very essence of those who wield it and beckoning forth the attentions of entities that thrive in the shadows.
-Few dare to seek out the Trace of Death, for its power is as volatile as it is mysterious, and those who venture into the unknown are often consumed by the very darkness that they sought to master. Yet, for the brave and the bold, the Trace of Death represents a unique opportunity to tap into the forbidden knowledge and power that this world has to offer, no matter the cost.");
+JEI.addDescription(<enderskills:token>,"The Trace of Death stands as a cursed artifact. Its origin remains an enigma, whispered in hushed tones and often lost within fear-stricken narratives. Its presence is marked by a cold, ominous aura that seems to permeate the air around it.
+When shattered, the Trace of Death unleashes a torrent of spectral energies reaching out to ensnare the wandering souls that still cling to this realm. These souls are then forcably drawn towards the one who shattered the artifact, granting them not only an infusion of raw power but also a glimpse into the secrets and knowledge that these spirits once held.
+However, such power comes at a steep cost, for the Trace of Death can drive even the most level-headed adventurer to madness and despair. Its effects are said to linger long after the artifact is destroyed, tainting the very essence of those who wield it and beckoning forth a specific entity who trives in the shadows.
+Few dare to seek out the Trace of Death, for its power is as volatile as it is mysterious, and those who venture into the unknown are often consumed by the very darkness that they sought to master. Yet, for the brave, the Trace of Death represents an opportunity to tap into the forbidden knowledge and power that this world has to offer, no matter the cost.");
 
 <enderskills:book>.displayName = "§cGrimoire of the Veil";
 <enderskills:book>.addTooltip("§3Press R on this item to learn about skills");
@@ -66,7 +66,7 @@ JEI.addDescription(<nethercraft:foulite_dust>,"Foulite Dust, a greenish luminesc
 <nethercraft:pyridium_ore>.displayName = "Infernium Ore";
 <nethercraft:pyridium_block>.displayName = "Infernium Block";
 <nethercraft:pyridium_ingot>.displayName = "Infernium Ingot";
-JEI.addDescription(<nethercraft:pyridium_ingot>,"Infernium is a rare and powerful ore found exclusively within the The Nether. Born from the ashes of ancient infernal beings that once ruled this realm with their unyielding power of fire and destruction, Infernium is the embodiment of their eternal wrath and fury. This yellow-hued ore glows with an inner light, as if the very souls of those ancient entities still smolder within its core. Harnessing the destructive essence of Infernium requires great courage and skill. When fused with blaze rods and ghast bones, Infernium can create an item capable of summoning the Infernal Fortress.");
+JEI.addDescription(<nethercraft:pyridium_ingot>,"Infernium is a rare and powerful ore found exclusively within the The Nether. Born from the ashes of ancient infernal beings that once ruled this realm with their unyielding power of fire and destruction, Infernium is the embodiment of their eternal wrath and fury. This yellow-hued ore glows with an inner light, as if the very souls of those ancient entities still smolder within its core. Harnessing the destructive essence of Infernium requires great courage and skill. When fused with infernal rods and ghast bones, Infernium can create an item capable of summoning the Infernal Fortress.");
 
 <nethercraft:pyridium_sword>.displayName = "Infernium Sword";
 
@@ -85,6 +85,12 @@ JEI.addDescription(<nethercraft:pyridium_ingot>,"Infernium is a rare and powerfu
 <nethercraft:pyridium_bow:*>.addTooltip("§20.75s Draw Speed");
 <nethercraft:pyridium_bow:*>.addTooltip("§21.55 Arrow Velocity");
 <nethercraft:pyridium_bow:*>.addTooltip("§24-6 Attack Damage");
+
+
+
+<minecraft:blaze_rod>.displayName = "Infernal Rod";
+<minecraft:blaze_powder>.displayName = "Infernal Powder";
+
 
 // Veilstrium
 <nethercraft:neridium_ore>.displayName = "Veilstrium Ore";
@@ -121,11 +127,11 @@ The secret of escape, in shadows, draws near.
 For only this alloy, both dreadful and dire,
 Can shatter the barrier, birthed in hellfire.");
 
-JEI.addDescription(<nethercraft:ghast_bones>,"Ghasts are enigmatic and terrifying creatures that dwell within the depths of The Nether. With their ghostly white skin, tentacle-like appendages, and piercing wails, they have become one of the most iconic symbols of this cursed realm.
-Ghasts play a crucial role in the creation of Veilstrium tools. Their bones possess a unique resonance that enables them to interact with the otherworldly properties of Veilstrium.
+JEI.addDescription(<nethercraft:ghast_bones>,"With their ghostly white skin, tentacle-like appendages, and piercing wails, Ghasts have become one of the most iconic symbols of this cursed realm.
+Deadly as they may be, they play a crucial role in the creation of Veilstrium tools. Their bones possess a unique resonance that enables them to interact with the otherworldly properties of Veilstrium.
 Some even claim that the bones of Ghasts hold a deeper significance, serving as a conduit between the physical realm and the ethereal plane that underlies some aspects of The Nether.");
 
-JEI.addDescription(<minecraft:blaze_rod>,"Blaze rods, obtained only by slaying the fearsome Blazes and their mightier kin, the Blazing Juggernauts, serve as a potent source of fuel and illumination. When combined with the fiery essence of Infernium, they can be forged into powerful artifacts and weapons that harness intense heat and destructive energy.");
+JEI.addDescription(<minecraft:blaze_rod>,"Infernal rods, obtained only by slaying the fearsome Infernals and their mightier kin, the Infernal Juggernauts, serve as a potent source of fuel and illumination. When combined with the fiery essence of Infernium, they can be forged into powerful artifacts and weapons that harness intense heat and destructive energy.");
 
 JEI.addDescription(<nethercraft:glowood_log>,"Glowood Trees are the eerie flora that dot the burning landscape of The Nether. These ominous trees are composed of a unique blend of Glowstone and Basalt, imbuing them with both the eerie luminescence of the former and the explosive resistance of the latter. They are home to the elusive Gloworms, small creatures that dwell within the leaves of the trees. These bioluminescent insects are prized for their glow and their nourishment, leaving them to be very useful for those seeking to survive in The Nether.");
 JEI.addDescription(<nethercraft:glow_apple>,"Glowood Trees are the eerie flora that dot the burning landscape of The Nether. These ominous trees are composed of a unique blend of Glowstone and Basalt, imbuing them with both the eerie luminescence of the former and the explosive resistance of the latter. They are home to the elusive Gloworms, small creatures that dwell within the leaves of the trees. These bioluminescent insects are prized for their glow and their nourishment, leaving them to be very useful for those seeking to survive in The Nether.");
