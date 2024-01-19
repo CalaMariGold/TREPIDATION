@@ -8,12 +8,12 @@ import mods.jei.JEI;
 <corpsecomplex:scroll>.addTooltip("§3Use to teleport to your last death");
 <corpsecomplex:scroll>.addTooltip("§3Does not drop on death");
 <corpsecomplex:scroll>.removeTooltip("Return to death location");
-JEI.addDescription(<corpsecomplex:scroll>,"For millennia, the Dreadswine have roamed the suffocating abyss of the Nether in ceaseless agony. Once beings of flesh and soul, they were damned to an undead disgusting existence, their humanity dissolved in a mire of despair and malevolence. Driven by a single purpose, they scour the infernal depths for the fabled Dreadstone Tablet, an ancient relic that promises the return of their lost souls and a harrowing passage back to the moment of their undoing. Yet, for these lost souls, they have only come across fragments; cruel teases of the oblivion they crave. And so they trudge on, their twisted forms an eternal testament to a torment that edges always on the brink of hope for a soul's reclamation, forever beyond reach. ");
+JEI.addDescription(<corpsecomplex:scroll>,"For millennia, the Dreadswine have roamed the suffocating abyss of the Nether in ceaseless agony. Once beings of flesh and soul, they were damned to an undead disgusting existence, their humanity dissolved in a mire of despair and malevolence. These wretched creatures will lash out at any who draw near, their attacks persisting even through their target's rebirth. Driven by a single purpose, they scour the infernal depths for the fabled Dreadstone Tablet, an ancient relic that promises the return of their lost souls and a harrowing passage back to the moment of their undoing. Yet, for these lost souls, they have only come across fragments; cruel teases of the oblivion they crave.");
 
 <contenttweaker:dreadstone_fragment>.displayName = "Dreadstone Fragment";
 <contenttweaker:dreadstone_fragment>.addTooltip("§3Does not drop on death");
 <contenttweaker:dreadstone_fragment>.addTooltip("§oWhen touched, the fragment makes a subtle vibration in sync with the pulse of your heartbeat");
-JEI.addDescription(<contenttweaker:dreadstone_fragment>,"For millennia, the Dreadswine have roamed the suffocating abyss of the Nether in ceaseless agony. Once beings of flesh and soul, they were damned to an undead disgusting existence, their humanity dissolved in a mire of despair and malevolence. Driven by a single purpose, they scour the infernal depths for the fabled Dreadstone Tablet, an ancient relic that promises the return of their lost souls and a harrowing passage back to the moment of their undoing. Yet, for these lost souls, they have only come across fragments; cruel teases of the oblivion they crave. And so they trudge on, their twisted forms an eternal testament to a torment that edges always on the brink of hope for a soul's reclamation, forever beyond reach. ");
+JEI.addDescription(<contenttweaker:dreadstone_fragment>,"For millennia, the Dreadswine have roamed the suffocating abyss of the Nether in ceaseless agony. Once beings of flesh and soul, they were damned to an undead disgusting existence, their humanity dissolved in a mire of despair and malevolence. These wretched creatures will lash out at any who draw near, their attacks persisting even through their target's rebirth. Driven by a single purpose, they scour the infernal depths for the fabled Dreadstone Tablet, an ancient relic that promises the return of their lost souls and a harrowing passage back to the moment of their undoing. Yet, for these lost souls, they have only come across fragments; cruel teases of the oblivion they crave.");
 
 
 <contenttweaker:soul_anchor>.displayName = "§cSoul Anchor";
@@ -71,9 +71,11 @@ JEI.addDescription(<nethercraft:pyridium_ingot>,"Infernium is a rare and powerfu
 <nethercraft:pyridium_sword>.displayName = "Infernium Sword";
 
 <contenttweaker:wither_infernium>.displayName = "§cWithering Infernium Ingot";
-<contenttweaker:wither_infernium>.addTooltip("§oWhen touched, your hands begin to dry and slowly crumble. A destructive alloy, impossible to craft by mortals.");
+<contenttweaker:wither_infernium>.addTooltip("§oA destructive alloy, impossible to craft by mortals. When held, your hands slowly begin to dry and crumble");
 <nethercraft:pyridium_pickaxe:*>.displayName = "§cWithering Infernium Pickaxe";
-<nethercraft:pyridium_pickaxe:*>.addTooltip("§oA tool imbued with the power to wither away an otherwise impervious barrier; a coveted possession of a fearsome adversary");
+<nethercraft:pyridium_pickaxe:*>.addTooltip("§oA tool imbued with the power to wither away an otherwise impervious barrier");
+<nethercraft:pyridium_pickaxe:*>.addTooltip("§3When mining the purple barrier, be sure to TAP left click to break it. Don't hold it down.");
+
 
 
 <nethercraft:pyridium_axe>.displayName = "Infernium Axe";
@@ -105,15 +107,19 @@ JEI.addDescription(<nethercraft:neridium_ingot>,"Veilstrium is a rare and mystic
 <contenttweaker:riftbreaker_crystal>.addTooltip("§oAn explosive gem that obliterates everything in its vertical path and catapults all allies skyward");
 
 <contenttweaker:infernal_fortress_scepter>.displayName = "§cScepter of Infernal Conjuring";
-<contenttweaker:infernal_fortress_scepter>.addTooltip("§oA formidable artifact that holds the power to beckon forth a gargantuan fortress shrouded in whispers of an ancient and fearsome presence");
-JEI.addDescription(<contenttweaker:infernal_fortress_scepter>,"In shadows' embrace, a fortress concealed,
-A realm of whispers and secrets, unyielded,
-Tales of dread and despair, unrevealed,
-A citadel forlorn, to mortal eyes sealed.
-Through veiled pathways, where darkness abounds,
-Echoes of anguish, the air resounds,
-The scent of sulfur, infernal surrounds,
-A dominion of torment, where hope is impounded.");
+<contenttweaker:infernal_fortress_scepter>.addTooltip("§oA formidable artifact that holds the power to materialize a gargantuan fortress, shrouded in whispers of an ancient and fearsome presence");
+JEI.addDescription(<contenttweaker:infernal_fortress_scepter>,"In the heart of shadows where whispers wane and wax,
+Lies a fortress born from the void's insidious cracks.
+Within these walls of despair and smoldering fright,
+The Wither toiled under the cloak of eternal night.
+Forging a union of fire and decay,
+Infernium and withering power did he sway.
+Born from despair and flame,
+A material so potent, it whispered his name.
+In halls echoing with a ghastly, unspoken fear,
+The secret of escape, in shadows, draws near.
+For only this alloy, both dreadful and dire,
+Can shatter the barrier, birthed in hellfire.");
 
 JEI.addDescription(<nethercraft:ghast_bones>,"Ghasts are enigmatic and terrifying creatures that dwell within the depths of The Nether. With their ghostly white skin, tentacle-like appendages, and piercing wails, they have become one of the most iconic symbols of this cursed realm.
 Ghasts play a crucial role in the creation of Veilstrium tools. Their bones possess a unique resonance that enables them to interact with the otherworldly properties of Veilstrium.
