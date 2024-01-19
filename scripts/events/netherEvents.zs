@@ -97,8 +97,8 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                     server.commandManager.executeCommand(server, "give @a timeisup:timer_bonus 3");
                     server.commandManager.executeCommand(server, "give @a enderskills:book 1");
                     server.commandManager.executeCommand(server, "give @a enderskills:token 3");
+                    server.commandManager.executeCommand(server, "give @a scalinghealth:heartcontainer 2");
                     server.commandManager.executeCommand(server, "give @a contenttweaker:riftbreaker_crystal 1");
-                    server.commandManager.executeCommand(server, "give @a nethercraft:pyridium_pickaxe 1");
 
                     Commands.call("kill @e[type=nethercraft:dark_zombie]", event.player, event.world, true, true);
                     Commands.call("kill @e[type=nethercraft:camouflage_spider]", event.player, event.world, true, true);

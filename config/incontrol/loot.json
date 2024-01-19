@@ -12,12 +12,16 @@
     },
     {
         "mob":"minecraft:wither",
+        "remove": "scalinghealth:crystalshard"
+    },
+    {
+        "mob":"minecraft:wither",
         "remove": "minecraft:nether_star"
     },
     {
         "mob":"minecraft:wither",
         "item": "contenttweaker:wither_infernium",
-        "itemcount": "4-6"
+        "itemcount": "10-14"
     },
     {
         "mob":"minecraft:wither",
