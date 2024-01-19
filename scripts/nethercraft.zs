@@ -240,3 +240,9 @@ recipes.addShapedMirrored("heal_staff", <mysticstaffs:heal_staff>,
 [null,<nethercraft:glowood_stick>,<minecraft:ghast_tear>],
 [<nethercraft:glowood_stick>,null,null]
 ]);
+
+recipes.addShaped("riftbreaker", <contenttweaker:riftbreaker_crystal>,
+[[null,<contenttweaker:wither_infernium>,null],
+[<contenttweaker:wither_infernium>,<minecraft:blaze_powder>,<contenttweaker:wither_infernium>],
+[null,<contenttweaker:wither_infernium>,null]
+]);
