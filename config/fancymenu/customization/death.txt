@@ -56,15 +56,15 @@ customization {
 customization {
   orientation = top-centered
   restartbackgroundanimations = true
-  delayappearanceseconds = 2.0
+  delayappearanceseconds = 1.5
   buttonaction = runscript;rerolldeathMP%btnaction_splitter_fm%
-  description = Resets entire world without having to make a new world.%n%Can't be undone!%n%Must be OP and server owner!
+  description = Resets entire world without having to make a new world.%n%MUST BE OP/SERVER OWNER!
   label = Reset Run (MP)
   loopbackgroundanimations = true
   fadein = true
   fadeinspeed = 1.0
-  x = -101
-  width = 100
+  x = -100
+  width = 99
   action = addbutton
   actionid = d3718b4b-fd9d-4fd3-8827-0a17f8ad3e811677090866197
   y = 227
@@ -95,7 +95,7 @@ customization {
 customization {
   orientation = top-centered
   restartbackgroundanimations = true
-  delayappearanceseconds = 2.0
+  delayappearanceseconds = 1.5
   buttonaction = mimicbutton;net.minecraft.client.gui.GuiGameOver:button_compatibility_id:mc_deathscreen_titlemenu_button%btnaction_splitter_fm%
   label = Escape
   loopbackgroundanimations = true
@@ -114,7 +114,7 @@ customization {
 customization {
   orientation = top-centered
   restartbackgroundanimations = true
-  delayappearanceseconds = 2.0
+  delayappearanceseconds = 1.5
   buttonaction = runscript;rerolldeath%btnaction_splitter_fm%
   description = Resets entire world without having to make a new world.%n%Can't be undone!
   label = Reset Run (SP)
@@ -122,7 +122,7 @@ customization {
   fadein = true
   fadeinspeed = 1.0
   x = 2
-  width = 100
+  width = 99
   action = addbutton
   actionid = cb6b82b2-db72-4df8-b918-f5ee67e10d9a1679249886937
   y = 227
