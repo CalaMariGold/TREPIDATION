@@ -1,2 +1,4 @@
 mimicbutton:net.minecraft.client.gui.GuiIngameMenu:button_compatibility_id:mc_pausescreen_return_to_game_button
 sendmessage: /reroll
+sendmessage: /fmvariable set timesup false false
+sendmessage: /effect @p minecraft:resistance 10 255

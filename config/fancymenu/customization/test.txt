@@ -1,0 +1,39 @@
+type = menu
+
+customization-meta {
+  identifier = com.ezrol.terry.minecraft.defaultworldgenerator.gui.GuiCreateCustomWorld
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  orientation = top-left
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = mimicbutton;com.ezrol.terry.minecraft.defaultworldgenerator.gui.GuiCreateCustomWorld:345151%btnaction_splitter_fm%mimicbutton;com.ezrol.terry.minecraft.defaultworldgenerator.gui.GuiCreateCustomWorld:345972%btnaction_splitter_fm%
+  x = 178
+  width = 142
+  action = addbutton
+  actionid = d75805a8-d5b3-4ca4-a94b-82ad9776f0bf1705787684149
+  y = 311
+  label = Start Run
+  height = 20
+}
+
+customization {
+  identifier = %id=345151%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=345972%
+  action = hidebutton
+}
+

@@ -14,38 +14,6 @@ customization {
 }
 
 customization {
-  orientation = top-centered
-  restartbackgroundanimations = true
-  buttonaction = runscript
-  description = Resets entire world without having to make a new world.%n%Can't be undone!%n%Must be OP and server owner!
-  label = Reset Run (MP)
-  loopbackgroundanimations = true
-  x = -102
-  width = 100
-  actionid = be03df45-da9b-48bb-82a1-0a4295461af31677092123506
-  action = addbutton
-  y = 260
-  value = rerollcontinueMP
-  height = 20
-}
-
-customization {
-  orientation = top-centered
-  restartbackgroundanimations = true
-  buttonaction = runscript
-  description = Resets entire world without having to make a new world.%n%Can't be undone!
-  label = Reset Run (SP)
-  loopbackgroundanimations = true
-  x = 2
-  width = 100
-  actionid = 17d8a50f-c355-4069-95ea-04aa2af1bf281679249539213
-  action = addbutton
-  y = 260
-  value = rerollcontinue
-  height = 20
-}
-
-customization {
   identifier = %id=902302%
   orientation = bottom-right
   x = -99
@@ -59,5 +27,56 @@ customization {
   x = -99
   action = movebutton
   y = -81
+}
+
+customization {
+  orientation = top-centered
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = runscript;rerollcontinueMP%btnaction_splitter_fm%set_variable;timesup:false%btnaction_splitter_fm%
+  x = -102
+  width = 100
+  action = addbutton
+  actionid = be03df45-da9b-48bb-82a1-0a4295461af31677092123506
+  y = 260
+  description = Resets entire world without having to make a new world.%n%Can't be undone!%n%Must be OP and server owner!
+  label = Reset Run (MP)
+  height = 20
+}
+
+customization {
+  orientation = top-centered
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = runscript;rerollcontinue%btnaction_splitter_fm%set_variable;timesup:false%btnaction_splitter_fm%
+  x = 2
+  width = 100
+  action = addbutton
+  actionid = 17d8a50f-c355-4069-95ea-04aa2af1bf281679249539213
+  y = 260
+  description = Resets entire world without having to make a new world.%n%Can't be undone!
+  label = Reset Run (SP)
+  height = 20
+}
+
+customization {
+  orientation = top-left
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = closegui%btnaction_splitter_fm%sendmessage;/tellraw @p ["",{"text":"THERE IS NO ESCAPE","color":"dark_red","italic":false}]%btnaction_splitter_fm%
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:54711401-02f8-4d27-9ebe-caaba5bd083c1705783020525] = timesup:true
+  x = 220
+  width = 200
+  action = addbutton
+  actionid = 0eb8b4de-2a95-489c-b42d-db6d001695cb1705782988978
+  y = 188
+  label = Save and Escape
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_disconnect_button%
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:d41e21bc-a212-4316-8fb8-51bfbfedc34c1705782865876] = timesup:false
+  action = vanilla_button_visibility_requirements
 }
 

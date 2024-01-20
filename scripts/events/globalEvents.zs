@@ -141,11 +141,19 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
 EventManager.getInstance().onTimeIsUp(function(event as TimeIsUpEvent){
     // On entity death
     events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeathEvent){
+        if(event.entity.world.isRemote())
+            return;
+
         // If event entity is a player
         if (event.entity instanceof IPlayer) {
+            var player1 as IPlayer = event.entity;
+            player1.executeCommand("fmvariable set timesup true false");
+
             events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
-                server.commandManager.executeCommand(server, "gamemode 3 @p");
-                server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your effort is meaningless. Welcome to eternity.\",\"color\":\"dark_red\",\"italic\":false}]");
+                //server.commandManager.executeCommand(server, "tpp " + event.player.name + " 686 100 300 100");
+                server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your effort is meaningless. Welcome to your eternity.\",\"color\":\"dark_red\",\"italic\":false}]");
+                server.commandManager.executeCommand(server, "effect @p minecraft:resistance 99999 255");
+                server.commandManager.executeCommand(server, "clear @p");
             });
         }
     });

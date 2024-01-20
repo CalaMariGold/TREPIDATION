@@ -23,7 +23,7 @@ customization {
   orientation = mid-left
   restartbackgroundanimations = true
   delayappearanceseconds = 3.0
-  buttonaction = opengui;net.minecraft.client.gui.GuiWorldSelection%btnaction_splitter_fm%
+  buttonaction = opengui;net.minecraft.client.gui.GuiWorldSelection%btnaction_splitter_fm%set_variable;timesup:false%btnaction_splitter_fm%
   backgroundhovered = resources\trepidation\play_alone_hovered.png
   label = 
   loopbackgroundanimations = true
@@ -44,7 +44,7 @@ customization {
   orientation = mid-left
   restartbackgroundanimations = true
   delayappearanceseconds = 3.0
-  buttonaction = opengui;net.minecraft.client.gui.GuiMultiplayer%btnaction_splitter_fm%
+  buttonaction = opengui;net.minecraft.client.gui.GuiMultiplayer%btnaction_splitter_fm%set_variable;timesup:false%btnaction_splitter_fm%
   backgroundhovered = resources\trepidation\play_together_hovered.png
   label = 
   loopbackgroundanimations = true

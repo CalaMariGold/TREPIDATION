@@ -48,3 +48,6 @@ net.minecraft.client.gui.GuiVideoSettings {
 net.minecraft.client.gui.GuiGameOver {
 }
 
+com.ezrol.terry.minecraft.defaultworldgenerator.gui.GuiCreateCustomWorld {
+}
+

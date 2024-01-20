@@ -49,6 +49,12 @@ customization {
 }
 
 customization {
+  identifier = %id=400322%
+  action = vanilla_button_visibility_requirements
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:501bde10-c996-41a4-8fcd-7844e5834a5f1705784707096] = timesup:false
+}
+
+customization {
   identifier = %id=button_compatibility_id:mc_deathscreen_respawn_button%
   action = hidebutton
 }
@@ -62,6 +68,7 @@ customization {
   label = Reset Run (MP)
   loopbackgroundanimations = true
   fadein = true
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:36e80811-8ec4-4adf-813f-bb1fe4dba9591705784740663] = timesup:false
   fadeinspeed = 1.0
   x = -100
   width = 99
@@ -78,6 +85,7 @@ customization {
   restartbackgroundanimations = true
   delayappearanceseconds = 1.0
   buttonaction = runscript;continuerun%btnaction_splitter_fm%
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:44cd7438-106e-4eaf-bf93-a79a0775bc591705784685375] = timesup:false
   label = Rebirth At Spawn Point
   loopbackgroundanimations = true
   fadein = true
@@ -108,12 +116,14 @@ customization {
   y = 203
   delayappearance = true
   delayappearanceeverytime = true
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:129df319-3967-4d32-a993-248a7687e4271705784728918] = timesup:false
   height = 20
 }
 
 customization {
   orientation = top-centered
   restartbackgroundanimations = true
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:28f43163-135f-43bb-9cd6-046ee9803c561705784757016] = timesup:false
   delayappearanceseconds = 1.5
   buttonaction = runscript;rerolldeath%btnaction_splitter_fm%
   description = Resets entire world without having to make a new world.%n%Can't be undone!
@@ -128,6 +138,21 @@ customization {
   y = 227
   delayappearance = true
   delayappearanceeverytime = true
+  height = 20
+}
+
+customization {
+  orientation = top-left
+  loopbackgroundanimations = true
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:b417a917-3a36-492c-a3f3-1f5e970ed4e21705786087262] = timesup:true
+  restartbackgroundanimations = true
+  buttonaction = runscript;continuerun%btnaction_splitter_fm%sendmessage;/tpp {"placeholder":"playername"} 686 100 500 100%btnaction_splitter_fm%sendmessage;/effect @p minecraft:resistance 99999 255%btnaction_splitter_fm%
+  x = 271
+  width = 100
+  action = addbutton
+  actionid = bc036a40-285e-4196-91d6-a7ceefb3277e1705786038406
+  y = 144
+  label = Give up
   height = 20
 }
 
