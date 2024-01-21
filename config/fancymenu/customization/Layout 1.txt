@@ -182,12 +182,12 @@ customization {
   label = 
   loopbackgroundanimations = true
   hoverlabel = 
-  x = -103
-  width = 32
+  x = -105
+  width = 34
   action = addbutton
   actionid = 720b96f8-1d99-4d4e-8461-1c9d9dcaa49c1705807093233
-  y = -33
+  y = -34
   backgroundnormal = resources/trepidation/kofi.png
-  height = 32
+  height = 34
 }
 
