@@ -14,6 +14,40 @@ customization {
 }
 
 customization {
+  identifier = %id=345972%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=345151%
+  orientation = top-centered
+  x = -248
+  action = movebutton
+  y = 214
+}
+
+customization {
+  identifier = %id=345151%
+  width = 50
+  action = resizebutton
+  advanced_width = 0
+  height = 15
+}
+
+customization {
+  identifier = %id=345151%
+  action = setbuttonlabel
+  value = 
+}
+
+customization {
+  identifier = %id=345151%
+  seconds = 99999.0
+  onlyfirsttime = false
+  action = hidebuttonfor
+}
+
+customization {
   orientation = top-left
   loopbackgroundanimations = true
   restartbackgroundanimations = true
@@ -25,15 +59,5 @@ customization {
   y = 311
   label = Start Run
   height = 20
-}
-
-customization {
-  identifier = %id=345151%
-  action = hidebutton
-}
-
-customization {
-  identifier = %id=345972%
-  action = hidebutton
 }
 
