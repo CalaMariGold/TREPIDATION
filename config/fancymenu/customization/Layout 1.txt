@@ -173,3 +173,21 @@ customization {
   height = 32
 }
 
+customization {
+  orientation = bottom-right
+  restartbackgroundanimations = false
+  buttonaction = openlink;https://ko-fi.com/calamarigoldmodpacks%btnaction_splitter_fm%
+  backgroundhovered = resources/trepidation/kofi_hover.png
+  description = Support development by donating to the Kofi!
+  label = 
+  loopbackgroundanimations = true
+  hoverlabel = 
+  x = -103
+  width = 32
+  action = addbutton
+  actionid = 720b96f8-1d99-4d4e-8461-1c9d9dcaa49c1705807093233
+  y = -33
+  backgroundnormal = resources/trepidation/kofi.png
+  height = 32
+}
+
