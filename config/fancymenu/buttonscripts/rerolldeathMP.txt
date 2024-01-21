@@ -5,3 +5,4 @@ sendmessage: /setworldspawn
 sendmessage: /spawnpoint @a ~ ~ ~
 sendmessage: /fmvariable set timesup false false
 sendmessage: /effect @p minecraft:resistance 10 255
+sendmessage: /playsound enderskills:sacrifice master @p
