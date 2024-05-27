@@ -48,16 +48,15 @@ customization {
 }
 
 customization {
-  orientation = top-left
+  orientation = bottom-centered
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   buttonaction = mimicbutton;com.ezrol.terry.minecraft.defaultworldgenerator.gui.GuiCreateCustomWorld:345151%btnaction_splitter_fm%mimicbutton;com.ezrol.terry.minecraft.defaultworldgenerator.gui.GuiCreateCustomWorld:345972%btnaction_splitter_fm%
-  x = 178
+  x = -145
   width = 142
   action = addbutton
   actionid = d75805a8-d5b3-4ca4-a94b-82ad9776f0bf1705787684149
-  y = 311
+  y = -28
   label = Start Run
   height = 20
 }
-
