@@ -143,6 +143,27 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
         server.commandManager.executeCommand(server, "title @p subtitle {\"text\":\"There is no escape\", \"color\":\"gray\"}");
         server.commandManager.executeCommand(server, "title @p title {\"text\":\"§kLimbo\", \"bold\":false, \"italic\":false, \"color\":\"white\"}");
     }
+
+    if((event.from == 684 && event.to == 1) || (event.from == 684 && event.to == 0)){
+        server.commandManager.executeCommand(server, "tpp " + event.player.name + " 684 100 500 100");
+        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"YOUR EFFORT IS MEANINGLESS. THERE IS NO ESCAPE.\",\"color\":\"dark_red\",\"italic\":false}]");
+    }
+});
+
+events.onEntityLivingUpdate(function(event as crafttweaker.event.EntityLivingUpdateEvent) {
+    if(!event.entity.world.isRemote()){
+        if (event.entityLivingBase instanceof IPlayer) {
+            var player as IPlayer = event.entityLivingBase;
+            
+            if(player.dimension == 684){
+                server.commandManager.executeCommand(server, "effect @p minecraft:resistance 99999 255");
+                server.commandManager.executeCommand(server, "effect @p minecraft:wither 99999 0");
+                server.commandManager.executeCommand(server, "effect @p minecraft:slowness 99999 1");
+                server.commandManager.executeCommand(server, "effect @p srparasites:fear 99999 0");
+                server.commandManager.executeCommand(server, "effect @p elenaidodge2:weight 99999 0");
+            }
+        }
+    }
 });
 
 
@@ -161,12 +182,8 @@ EventManager.getInstance().onTimeIsUp(function(event as TimeIsUpEvent){
             events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
                 //player teleported via fancymenu
                 server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your effort is meaningless. Welcome to your eternity.\",\"color\":\"dark_red\",\"italic\":false}]");
-                server.commandManager.executeCommand(server, "effect @p minecraft:resistance 99999 255");
-                server.commandManager.executeCommand(server, "effect @p minecraft:wither 99999 0");
-                server.commandManager.executeCommand(server, "effect @p minecraft:slowness 99999 1");
-                server.commandManager.executeCommand(server, "effect @p srparasites:fear 99999 0");
-                server.commandManager.executeCommand(server, "effect @p elenaidodge2:weight 99999 0");
                 
+                /*
                 event.player.world.catenation()
                 .run(function(world, context) {
                     context.data = world.time;
@@ -176,6 +193,7 @@ EventManager.getInstance().onTimeIsUp(function(event as TimeIsUpEvent){
                     // moved to onPlayerChangedDimension function (wasn't working here or in triumph) 
                 })
                 .start();
+                */
             });
         }
     });
