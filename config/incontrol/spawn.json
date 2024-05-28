@@ -6,7 +6,26 @@
         "onjoin":"true"
     },
 
-
+    {
+        "dimension": 684,
+        "mob": "betterswim:herobrine",
+        "maxcount": {
+            "amount": 100,
+            "perchunk": true
+        },
+        "result": "allow"
+     },
+     {
+        "dimension": 684,
+        "mob": "betterswim:herobrine",
+        "result": "deny"
+     },
+    {
+        "dimension": 684,
+        "mod": ["srparasites","minecraft"],
+        "result": "deny",
+        "onjoin": "true"
+    },
     {
         "dimension": 10,
         "mob": ["minecraft:witch","minecraft:skeleton","minecraft:zombie","minecraft:zombie_villager","minecraft:spider", "spiderstpo:better_spider", "spiderstpo:better_cave_spider"],

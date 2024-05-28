@@ -136,7 +136,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
     }
 });
 
-// Change player to spectator after dying when time is up
+
 // On time is up
 EventManager.getInstance().onTimeIsUp(function(event as TimeIsUpEvent){
     // On entity death
@@ -153,15 +153,16 @@ EventManager.getInstance().onTimeIsUp(function(event as TimeIsUpEvent){
                 //player teleported via fancymenu
                 server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your effort is meaningless. Welcome to your eternity.\",\"color\":\"dark_red\",\"italic\":false}]");
                 server.commandManager.executeCommand(server, "effect @p minecraft:resistance 99999 255");
+                server.commandManager.executeCommand(server, "effect @p minecraft:wither 99999 0");
                 server.commandManager.executeCommand(server, "effect @p minecraft:slowness 99999 1");
-                server.commandManager.executeCommand(server, "effect @p srparasites:fear 99999 1");
-                server.commandManager.executeCommand(server, "effect @p elenaidodge2:weight 99999 1");
+                server.commandManager.executeCommand(server, "effect @p srparasites:fear 99999 0");
+                server.commandManager.executeCommand(server, "effect @p elenaidodge2:weight 99999 0");
                 
                 event.player.world.catenation()
                 .run(function(world, context) {
                     context.data = world.time;
                 })
-                .sleep(200)
+                .sleep(400)
                 .then(function(world, context) {
                     server.commandManager.executeCommand(server, "clear @p");
                     server.commandManager.executeCommand(server, "give @p minecraft:torch");

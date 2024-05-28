@@ -47,6 +47,15 @@
     ]
   },
   {
+    "dimension": 684,
+    "mobs": [
+      {
+        "mob": "betterswim:herobrine",
+        "weight": 20
+      }
+    ]
+  },
+  {
     "dimension": 0,
     "mobs": [
       {
