@@ -134,6 +134,15 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
             }
         });
     }
+
+
+    if((event.to == 684)){
+        server.commandManager.executeCommand(server, "clear @p");
+        server.commandManager.executeCommand(server, "give @p minecraft:torch");
+        server.commandManager.executeCommand(server, "title @p times 40 120 60");
+        server.commandManager.executeCommand(server, "title @p subtitle {\"text\":\"There is no escape\", \"color\":\"gray\"}");
+        server.commandManager.executeCommand(server, "title @p title {\"text\":\"§kLimbo\", \"bold\":false, \"italic\":false, \"color\":\"white\"}");
+    }
 });
 
 
@@ -164,11 +173,7 @@ EventManager.getInstance().onTimeIsUp(function(event as TimeIsUpEvent){
                 })
                 .sleep(400)
                 .then(function(world, context) {
-                    server.commandManager.executeCommand(server, "clear @p");
-                    server.commandManager.executeCommand(server, "give @p minecraft:torch");
-                    server.commandManager.executeCommand(server, "title @p times 40 120 60");
-                    server.commandManager.executeCommand(server, "title @p subtitle {\"text\":\"There is no escape\", \"color\":\"gray\"}");
-                    server.commandManager.executeCommand(server, "title @p title {\"text\":\"§kLimbo\", \"bold\":false, \"italic\":false, \"color\":\"white\"}");
+                    // moved to onPlayerChangedDimension function (wasn't working here or in triumph) 
                 })
                 .start();
             });
