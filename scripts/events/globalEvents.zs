@@ -187,6 +187,7 @@ EventManager.getInstance().onTimeIsUp(function(event as TimeIsUpEvent){
 
             events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
                 //player teleported via fancymenu
+                server.commandManager.executeCommand(server, "advancement grant @p only triumph:advancements/dimensions/limbo");
                 server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your effort is meaningless. Welcome to your eternity.\",\"color\":\"dark_red\",\"italic\":false}]");
                 
                 /*

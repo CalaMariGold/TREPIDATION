@@ -1,0 +1,14 @@
+setIcon(<dimdoors:eternal_fabric>)
+setTitle("")
+setDescription("")
+
+addParent("triumph:advancements/dimensions/root")
+
+
+criteria = addCriteria("limbo", "triumph:changed_dimension")
+criteria.setDimensionDestination(684)
+
+setShowToast(false)
+setAnnounceToChat(false)
+hideLines()
+setHidden(true)
