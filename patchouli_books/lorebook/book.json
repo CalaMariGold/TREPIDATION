@@ -1,0 +1,18 @@
+﻿{
+  "name": "My Journal",
+  "landing_text": "A place to jot down my thoughts and gather documents I find throughout my journey.",
+  "subtitle": "A tattered book.",
+  "version": 0,
+  "book_texture": "trepidation:textures/book_texture.png",
+  "macros": {
+    "$(info)": "$(thing)$(bold)$(t:Vital and Fundamental Details)[!]$()",
+    "$(warning)": "$(#ff6600)$(bold)$(t:Important)[!]$()",
+    "$(severe)": "$(#f00)$(bold)$(t:Warning!)[!]$()",
+    "$(info_cn)": "$(thing)$(bold)$(t:重要细节)[!]$()",
+    "$(warning_cn)": "$(#f00)$(bold)$(t:警告！)[!]$()",
+    "$(severe_cn)": "$(#f00)$(bold)$(t:严重警告！！)[!!]$()",
+    "$(todo)": "$(#f00)$(bold)TODO: $()",
+    "$(sneak)": "$(thing)$(bold)[$(k:sneak)]$()",
+    "$(use)": "$(thing)$(bold)[$(k:use)]$()"
+  }
+}

@@ -17,3 +17,6 @@ skull_and_bones.register();
 
 val trophy = mods.contenttweaker.VanillaFactory.createItem("trophy");
 trophy.register();
+
+val trepidation = mods.contenttweaker.VanillaFactory.createItem("trepidation");
+trepidation.register();

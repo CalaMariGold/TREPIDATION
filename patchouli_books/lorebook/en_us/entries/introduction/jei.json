@@ -1,0 +1,28 @@
+{
+  "name": "Welcome",
+  "icon": "contenttweaker:trepidation",
+  "category": "introduction",
+  "entry_color": "CC1717",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "image",
+      "images": ["trepidation:trepidation_logo.png"],
+      "border": "true",
+      "title": "Welcome To TREPIDATION",
+      "text": "$(bold)$(#CC1717)The game PAUSES when checking recipes and reading this book!$()"
+    },
+    {
+      "type": "text",
+      "text": "$(#551012)This book is here to assist you and provide lore, but it won't hold your hand.$(br2)Progression relies on your curiosity and diligence.$(br2)Make sure to frequently check recipes (hover over item, press R) and uses (press U) as you acquire new items.$(br2)Nearly every item has a valuable use!$()"
+    },
+    {
+      "type": "text",
+      "text": "$(italics)$(#551012)Take your time and read carefully!$() $(br2)$(#551012)TREPIDATION provides plenty of hints and information scattered in tooltips, recipes, and descriptions.$(br2)Remember, tooltips are your friend!$()"
+    },
+    {
+      "type": "text",
+      "text": "$(#551012)Be sure to check this book frequently as your acquire new items and progress. It will provide hints and lore in a concise format to respect your time. The other categories in this book will be written in lore-friendly 1st person perspective.$()"
+    }
+  ]
+}

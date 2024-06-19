@@ -1,0 +1,16 @@
+{
+  "name": "Movement Abilities",
+  "icon": "trepidation:movement.png",
+  "category": "introduction",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(#551012)$(bold)Dashing:$()$(#551012) Tap $(#104455)Left ALT + WASD $(#551012)to dash in the specified direction. Each dash uses up half a feather above your hotbar. Dashing provides 1s invulnerability. You can dash mid-air infinitely to cross large gaps.$(br2)Use dashing frequently to get out of sticky situations and race against the timer."
+    },
+    {
+      "type": "text",
+      "text": "$(#551012)$(bold)Double Jump:$()$(#551012) Unlike dashing, double jumping resets your fall damage. Timing your double jump is crucial to take no damage from long falls.$(br2)$(bold)Wall Hang:$()$(#551012) You can hang on walls for a few seconds by holding $(#104455)SHIFT$(#551012). Wall hanging resets your double jump, allowing you to double jump, wall hang, then double jump again."
+    }
+  ]
+}

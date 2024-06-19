@@ -1,0 +1,15 @@
+{
+  "name": "ASCEND",
+  "icon": "minecraft:netherrack",
+  "category": "nether",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(#551012)I awaken abruptly, disoriented and confused. The heat is overwhelming, and the air is thick with the stench of sulfur and ash. A strange sense of urgency pushes me to move. I don't know where it's coming from but it feels... $(italics)relentless.$()"
+    },
+    {
+      "type": "text",
+      "text": "$(#551012)Survival instincts kick in—I need to gather and craft basic equipment from the environment. The mushrooms scattered around look edible, and there might be some food in the trees as well. I have no idea why I'm here, but perhaps I can piece together the mystery. Glancing at my right wrist, I notice a red eye etched into my skin. On my left wrist, a scar spells out \"ASCEND\". Is that my handwriting?"
+    }
+  ]
+}

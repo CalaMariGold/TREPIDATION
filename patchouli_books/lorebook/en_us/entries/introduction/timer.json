@@ -1,0 +1,21 @@
+{
+  "name": "Runs & Timer",
+  "icon": "timeisup:timer_bonus",
+  "category": "introduction",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(#551012)TREPIDATION is a roguelike, meaning that resetting and starting new runs is expected and encouraged.$(br2)You can reset a run by clicking the Reset Run button on the pause menu (SP for singleplayer, MP for multiplayer).$()"
+    },
+    {
+      "type": "text",
+      "text": "$(#551012)When dying, you have to option to \"Rebirth Nearby\" which will spawn you 50-75 blocks from your death. Use this with caution.$(br2)You may have noticed a timer at the bottom left of your screen ticking down.$(br2)$(bold)Do not let that get to 0 or else $(obf)you will be sent to Limbo$()$(#551012).$()"
+    },
+    {
+      "type": "spotlight",
+      "item": "timeisup:timer_bonus",
+      "text": "$(#551012)You are given a few timer bonuses throughout your run to add more time. You can also find them scattered in the world.$()"
+    }
+  ]
+}
