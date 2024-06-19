@@ -34,8 +34,8 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <contenttweaker:deviled_egg_sandwich>.addTooltip("§3Gives Fire Resistance and Strength for 30s");
 
 <nethercraft:slime_eggs>.displayName = "Magma Eggs";
-<nethercraft:slime_eggs>.addTooltip("§oCan be hurled at foes to ignite them or harnessed to create a deceptively fiery meal");
-<nethercraft:devil_bread>.addTooltip("§oA smoldering delicacy pairing exquisitely with the deliciousness of Magma Eggs");
+<nethercraft:slime_eggs>.addTooltip("§oCan be hurled at foes or used to create a balanced meal");
+<nethercraft:devil_bread>.addTooltip("§oA smoldering delicacy, paired exquisitely with Magma Eggs");
 <nethercraft:devil_bread>.addTooltip("§3Gives Strength for 10s");
 <nethercraft:glow_apple>.displayName = "Glow Worm";
 
@@ -54,7 +54,6 @@ However, such power comes at a steep cost, for the Trace of Death can drive even
 Few dare to seek out the Trace of Death, for its power is as volatile as it is mysterious, and those who venture into the unknown are often consumed by the very darkness that they sought to master. Yet, for the brave, the Trace of Death represents an opportunity to tap into the forbidden knowledge and power that this world has to offer, no matter the cost.");
 
 <enderskills:book>.displayName = "§cGrimoire of the Veil";
-<enderskills:book>.addTooltip("§3Press R on this item to learn about skills");
 <enderskills:book>.addTooltip("§3Does not drop on death");
 JEI.addDescription(<enderskills:book>,"There are 3 classes you can delve into: Defense, Mobility, and Offense. Each have multiple subclasses. 
 Press ALT + [number] to use an ability and G and H to cycle through ability groups. Unlocking skills cost XP and Souls. You can obtain Souls by breaking Traces of Death. Soul prices increase as you spend and there is a cap of 9 Souls, so spend wisely. You can always reset to try a new build.");
@@ -148,7 +147,7 @@ JEI.addDescription(<nethercraft:glow_apple>,"Glowood Trees are the eerie flora t
 
 
 <nethercraft:neridium_lighter>.displayName = "Quartz Lighter";
-<nethercraft:ghast_bomb>.addTooltip("§oA volatile and spectral explosive, awaiting ignition by a Quartz Lighter to unleash its devastating force");
+<nethercraft:ghast_bomb>.addTooltip("§oA volatile explosive, awaiting ignition by a Quartz Lighter");
 <nethercraft:ghast_marrow>.addTooltip("§oAn unstable substance, harboring explosive potential");
 
 <mysticstaffs:fire_staff:*>.displayName = "§cStaff of Infernal";
@@ -160,14 +159,14 @@ JEI.addDescription(<contenttweaker:vitality_orb>,"The Orb of Veilheart, a miracu
 <mysticstaffs:heal_staff:*>.addTooltip("§oA benevolent staff that rejuvenates the soul and body of allies");
 <mysticstaffs:heal_staff:*>.addTooltip("§3Uses 1 dash feather");
 
-<nethercraft:ghast_bones>.addTooltip("§oOccasionally harvested from bone blocks submerged in the searing lava oceans");
+<nethercraft:ghast_bones>.addTooltip("§oOccasionally harvested from bone blocks floating in the searing lava oceans");
 
 
 // Deep Dark
 <quark:elder_prismarine:2>.displayName = "Deep Stone";
 
 // Misc
-<quark:soul_compass>.addTooltip("§oA guiding relic, directing you unerringly to the site of your most recent demise");
+<quark:soul_compass>.addTooltip("§oA guiding relic, directing you to the site of your most recent demise");
 <minecraft:fire_charge>.addTooltip("§oA blazing projectile, detonating with fiery force upon impact");
 <scalinghealth:healingitem:0>.addTooltip("§oProvide healing and can be combined to form a medkit for enhanced recovery");
 <scalinghealth:heartcontainer>.removeTooltip("Increases maximum health");
