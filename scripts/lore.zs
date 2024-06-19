@@ -157,7 +157,7 @@ JEI.addDescription(<contenttweaker:vitality_orb>,"The Orb of Veilheart, a miracu
 
 <mysticstaffs:heal_staff:*>.displayName = "§cStaff of Veilheart";
 <mysticstaffs:heal_staff:*>.addTooltip("§oA benevolent staff that rejuvenates the soul and body of allies");
-<mysticstaffs:heal_staff:*>.addTooltip("§3Uses 1 dash feather");
+<mysticstaffs:heal_staff:*>.addTooltip("§3Uses 2 dash feathers");
 
 <nethercraft:ghast_bones>.addTooltip("§oOccasionally harvested from bone blocks floating in the searing lava oceans");
 
