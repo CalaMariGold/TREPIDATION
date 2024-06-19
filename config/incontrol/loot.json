@@ -172,7 +172,7 @@
         "mob":"nethercraft:camouflage_spider",
         "player": true,
         "item": "minecraft:string",
-        "itemcount": "2-3"
+        "itemcount": "3-5"
      },
      {
         "mob":"minecraft:magma_cube",
