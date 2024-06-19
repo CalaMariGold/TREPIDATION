@@ -1,7 +1,7 @@
 [
     {
         "dimension":5,
-        "multxp": 2
+        "multxp": 3
     },
     {
         "dimension":10,
@@ -13,7 +13,7 @@
     },
     {
         "mob":"minecraft:wither",
-        "addxp": 500
+        "addxp": 1000
     },
     {
         "mob":"primitivemobs:blazing_juggernaut",
