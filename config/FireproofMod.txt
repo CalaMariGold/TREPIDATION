@@ -23,3 +23,4 @@ minecraft:ghast_tear
 nethercraft:ghast_bones
 contenttweaker:dreadstone_fragment
 corpsecomplex:scroll
+contenttweaker:soul_anchor
