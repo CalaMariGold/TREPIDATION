@@ -169,30 +169,26 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 Commands.call("playsound minecraft:item.totem.use player @p", event.player, event.world, true, true);
                 server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The ground begins to tremble as you tightly grasp the scepter. As the air crackles with anticipation, the scepter dissolves into a swirling vortex of crimson smoke. In the blink of an eye, the smoke weaves itself into the fabric of space as the scepter's essence becomes one with a hellish structure.\",\"color\":\"dark_red\",\"italic\":true}]");
                 Commands.call("pillar-spawn witherarena ~ 9 ~", event.player, event.world, true, true);
-                var i = 0;
-                while(i < 1000){
-                    i+=1;
-                }
-                if(i == 1000){
-                    Commands.call("tp @a ~ 10 ~", event.player, event.world, true, true);
-                    Commands.call("playsound enderskills:portal_active player @p", event.player, event.world, true, true);
-                    itemStack3.mutable().shrink(1);
-                    Commands.call("setworldspawn ~ ~ ~", event.player, event.world, true, true);
-                    Commands.call("spawnpoint @a ~ ~ ~", event.player, event.world, true, true);
-                    Commands.call("kill @e[type=nethercraft:dark_zombie]", event.player, event.world, true, true);
-                    Commands.call("kill @e[type=nethercraft:camouflage_spider]", event.player, event.world, true, true);
-                    Commands.call("kill @e[type=nethercraft:bloody_zombie]", event.player, event.world, true, true);
-                    Commands.call("kill @e[type=primitivemobs:blazing_juggernaut]", event.player, event.world, true, true);
-                    Commands.call("kill @e[type=primitivemobs:festive_creeper]", event.player, event.world, true, true);
-                    Commands.call("kill @e[type=primitivemobs:flame_spewer]", event.player, event.world, true, true);
-                    Commands.call("kill @e[type=quark:foxhound]", event.player, event.world, true, true);
-                    Commands.call("kill @e[type=minecraft:zombie_pigman]", event.player, event.world, true, true);
-                    Commands.call("kill @e[type=minecraft:blaze]", event.player, event.world, true, true);
-                    Commands.call("kill @e[type=minecraft:wither_skeleton]", event.player, event.world, true, true);
-                    Commands.call("kill @e[type=minecraft:ghast]", event.player, event.world, true, true);
-                    Commands.call("kill @e[type=item]", event.player, event.world, true, true);
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your soul has been bound to this position.\",\"color\":\"dark_red\",\"italic\":true}]");
-                }
+
+                Commands.call("tp @a ~ 10 ~", event.player, event.world, true, true);
+                Commands.call("playsound enderskills:portal_active player @p", event.player, event.world, true, true);
+                itemStack3.mutable().shrink(1);
+                Commands.call("setworldspawn ~ ~ ~", event.player, event.world, true, true);
+                Commands.call("spawnpoint @a ~ ~ ~", event.player, event.world, true, true);
+                Commands.call("kill @e[type=nethercraft:dark_zombie]", event.player, event.world, true, true);
+                Commands.call("kill @e[type=nethercraft:camouflage_spider]", event.player, event.world, true, true);
+                Commands.call("kill @e[type=nethercraft:bloody_zombie]", event.player, event.world, true, true);
+                Commands.call("kill @e[type=primitivemobs:blazing_juggernaut]", event.player, event.world, true, true);
+                Commands.call("kill @e[type=primitivemobs:festive_creeper]", event.player, event.world, true, true);
+                Commands.call("kill @e[type=primitivemobs:flame_spewer]", event.player, event.world, true, true);
+                Commands.call("kill @e[type=quark:foxhound]", event.player, event.world, true, true);
+                Commands.call("kill @e[type=minecraft:zombie_pigman]", event.player, event.world, true, true);
+                Commands.call("kill @e[type=minecraft:blaze]", event.player, event.world, true, true);
+                Commands.call("kill @e[type=minecraft:wither_skeleton]", event.player, event.world, true, true);
+                Commands.call("kill @e[type=minecraft:ghast]", event.player, event.world, true, true);
+                Commands.call("kill @e[type=item]", event.player, event.world, true, true);
+                server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your soul has been bound to this position.\",\"color\":\"dark_red\",\"italic\":true}]");
+                
             }
         }
         
