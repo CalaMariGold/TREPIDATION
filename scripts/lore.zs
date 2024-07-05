@@ -59,7 +59,7 @@ JEI.addDescription(<enderskills:book>,"There are 3 classes you can delve into: D
 Press ALT + [number] to use an ability and G and H to cycle through ability groups. Unlocking skills cost XP and Souls. You can obtain Souls by breaking Traces of Death. Soul prices increase as you spend and there is a cap of 9 Souls, so spend wisely. You can always reset to try a new build.");
 
 // Nether
-JEI.addDescription(<nethercraft:foulite_dust>,"Foulite Dust, a greenish luminescent substance found throughout The Nether, is believed to originate from the fusion of foul energies and remnants of organic matter. Despite its ominous origins, this highly flammable and volatile dust serves as a valuable resource for illumination, smelting, and oddly enough helps repair wounds.");
+JEI.addDescription(<nethercraft:foulite_dust>,"Foulite Dust, a greenish substance found throughout The Nether, is believed to originate from the fusion of foul energies and remnants of organic matter. Despite its ominous origins, this highly flammable dust serves as a valuable resource for illumination, smelting, and oddly enough helps repair wounds.");
 
 // Infernium
 <nethercraft:pyridium_ore>.displayName = "Infernium Ore";
@@ -95,7 +95,7 @@ JEI.addDescription(<nethercraft:pyridium_ingot>,"Infernium is a rare and powerfu
 <nethercraft:neridium_ore>.displayName = "Veilstrium Ore";
 <nethercraft:neridium_block>.displayName = "Veilstrium Block";
 <nethercraft:neridium_ingot>.displayName = "Veilstrium Ingot";
-JEI.addDescription(<nethercraft:neridium_ingot>,"Veilstrium is a rare and mystical ore that can only be found within the treacherous depths of The Nether. Born from the amalgamation of ethereal energies and the elemental forces of the underworld, it is said to have formed when the essence of countless lost souls seeped into the very fabric of the realm, eventually coalescing and crystallizing into this unique purplish mineral. Veilstrium's origin grants it a supernatural resilience, making it a valuable material for crafting weapons and armor. Its unique properties allow it to absorb and dissipate the malevolent energies that pervade The Nether, bestowing its wielders with an otherworldly endurance. Legends whisper that those who possess items crafted from Veilstrium are not only protected from the dangers of The Nether but may also find themselves attuned to the whispers of the long-forgotten souls trapped within the ore. Such spectral guidance can grant travelers valuable insights and instincts, allowing them to navigate the treacherous realms with greater ease.");
+JEI.addDescription(<nethercraft:neridium_ingot>,"Veilstrium is a rare and mystical ore that can only be found within the depths of The Nether. It is thought to have formed when the essence of countless lost souls seeped into the very fabric of the realm, eventually coalescing and crystallizing into this unique purplish mineral. Veilstrium's origin grants it a supernatural resilience, making it a valuable material for crafting weapons and armor. Its unique properties allow it to absorb and dissipate the malevolent energies that pervade The Nether, bestowing its wielders with an otherworldly endurance. Legends whisper that those who possess items crafted from Veilstrium are not only protected from the dangers of The Nether but may also find themselves attuned to the whispers of the long-forgotten souls trapped within the ore. Such spectral guidance can grant travelers valuable insights and instincts, allowing them to navigate the treacherous realms with greater ease.");
 
 
 <nethercraft:neridium_sword>.displayName = "Veilstrium Sword";
@@ -126,14 +126,14 @@ The secret of escape, in shadows, draws near.
 For only this alloy, both dreadful and dire,
 Can shatter the barrier, birthed in hellfire.");
 
-JEI.addDescription(<nethercraft:ghast_bones>,"With their ghostly white skin, tentacle-like appendages, and piercing wails, Ghasts have become one of the most iconic symbols of this cursed realm.
-Deadly as they may be, they play a crucial role in the creation of Veilstrium tools. Their bones possess a unique resonance that enables them to interact with the otherworldly properties of Veilstrium.
-Some even claim that the bones of Ghasts hold a deeper significance, serving as a conduit between the physical realm and the ethereal plane that underlies some aspects of The Nether.");
+JEI.addDescription(<nethercraft:ghast_bones>,"With ghostly white skin, tentacle-like appendages, and piercing wails, Ghasts are both fearsome and deadly. They possess extreme explosive potential and stalk their prey from a distance. Despite their terrifying nature, Ghasts play a crucial role in the creation of Veilstrium tools. Their bones, which hold a unique resonance, enable interaction with the otherworldly properties of Veilstrium. It's even possible that Ghast bones hold a deeper significance, serving as a conduit between the physical realm and the ethereal plane that underlies some aspects of The Nether.
 
-JEI.addDescription(<minecraft:blaze_rod>,"Infernal rods, obtained only by slaying the fearsome Infernals and their mightier kin, the Infernal Juggernauts, serve as a potent source of fuel and illumination. When combined with the fiery essence of Infernium, they can be forged into powerful artifacts and weapons that harness intense heat and destructive energy.");
+Once a formidable presence, the Ghast species has largely faded into extinction. Their skeletal remains now lie scattered across the searing lava oceans. ");
 
-JEI.addDescription(<nethercraft:glowood_log>,"Glowood Trees are the eerie flora that dot the burning landscape of The Nether. These ominous trees are composed of a unique blend of Glowstone and Basalt, imbuing them with both the eerie luminescence of the former and the explosive resistance of the latter. They are home to the elusive Gloworms, small creatures that dwell within the leaves of the trees. These bioluminescent insects are prized for their glow and their nourishment, leaving them to be very useful for those seeking to survive in The Nether.");
-JEI.addDescription(<nethercraft:glow_apple>,"Glowood Trees are the eerie flora that dot the burning landscape of The Nether. These ominous trees are composed of a unique blend of Glowstone and Basalt, imbuing them with both the eerie luminescence of the former and the explosive resistance of the latter. They are home to the elusive Gloworms, small creatures that dwell within the leaves of the trees. These bioluminescent insects are prized for their glow and their nourishment, leaving them to be very useful for those seeking to survive in The Nether.");
+JEI.addDescription(<minecraft:blaze_rod>,"Infernal rods, obtained by slaying the fearsome Infernals, serve as a potent source of fuel and illumination. When combined with the fiery essence of Infernium, they can be forged into powerful artifacts and weapons that harness intense heat and destructive energy.");
+
+JEI.addDescription(<nethercraft:glowood_log>,"Glowood Trees are the eerie flora that dot the burning landscape of The Nether. These trees are composed of a unique blend of Glowstone and Basalt, imbuing them with both luminescence and explosive resistance. They are home to the elusive Gloworms, small bioluminescent creatures that dwell within the leaves and are prized for their glow and nourishment.");
+JEI.addDescription(<nethercraft:glow_apple>,"Glowood Trees are the eerie flora that dot the burning landscape of The Nether. Fused long ago, these trees are composed of a unique blend of Glowstone and Basalt, imbuing them with both luminescence and explosive resistance. They are home to the elusive Gloworms, small bioluminescent creatures that dwell within the leaves and are prized for their glow and nourishment.");
 
 <simpleores:tin_pickaxe:*>.displayName = "Quartz Pickaxe";
 <simpleores:tin_pickaxe:*>.addTooltip("§3Bone blocks will always drop 2 ghast bones when mined");
@@ -153,7 +153,7 @@ JEI.addDescription(<nethercraft:glow_apple>,"Glowood Trees are the eerie flora t
 <mysticstaffs:fire_staff:*>.displayName = "§cStaff of Infernal";
 <mysticstaffs:fire_staff:*>.addTooltip("§oA potent weapon that engulfs nearby enemies in a searing inferno");
 <contenttweaker:vitality_orb>.displayName = "Orb of Veilheart";
-JEI.addDescription(<contenttweaker:vitality_orb>,"The Orb of Veilheart, a miraculous fusion of ethereal Veilstrium and enigmatic Foulite dust, possesses a unique duality that unlocks its potent soul-healing powers. The Veilstrium's celestial energies cleanse and purify the spirit, while the Foulite dust's grounding properties restore balance and stability to the physical realm, harmoniously mending both body and soul.");
+JEI.addDescription(<contenttweaker:vitality_orb>,"The Orb of Veilheart, a miraculous fusion of Veilstrium and Foulite dust, possesses a unique duality that unlocks its potent soul-healing powers. Veilstrium's celestial energies cleanse the spirit, while the Foulite dust's grounding properties restore balance and stability to the physical realm, harmoniously mending both body and soul.");
 
 <mysticstaffs:heal_staff:*>.displayName = "§cStaff of Veilheart";
 <mysticstaffs:heal_staff:*>.addTooltip("§oA benevolent staff that rejuvenates the soul and body of allies");
@@ -168,7 +168,7 @@ JEI.addDescription(<contenttweaker:vitality_orb>,"The Orb of Veilheart, a miracu
 // Misc
 <quark:soul_compass>.addTooltip("§oA guiding relic, directing you to the site of your most recent demise");
 <minecraft:fire_charge>.addTooltip("§oA blazing projectile, detonating with fiery force upon impact");
-<scalinghealth:healingitem:0>.addTooltip("§oProvide healing and can be combined to form a medkit for enhanced recovery");
+<scalinghealth:healingitem:0>.addTooltip("§oCan be combined to form a medkit for enhanced recovery");
 <scalinghealth:heartcontainer>.removeTooltip("Increases maximum health");
 <scalinghealth:heartcontainer>.addTooltip("§oA precious relic of vitality, bestowing its user with a permanently increased life force");
 <scalinghealth:heartcontainer>.addTooltip("§3Uses 2 levels");
