@@ -59,7 +59,7 @@ JEI.addDescription(<enderskills:book>,"There are 3 classes you can delve into: D
 Press ALT + [number] to use an ability and G and H to cycle through ability groups. Unlocking skills cost XP and Souls. You can obtain Souls by breaking Traces of Death. Soul prices increase as you spend and there is a cap of 9 Souls, so spend wisely. You can always reset to try a new build.");
 
 // Nether
-JEI.addDescription(<nethercraft:foulite_dust>,"Foulite Dust, a greenish luminescent substance found throughout The Nether, is believed to originate from the fusion of foul energies and remnants of organic matter. Despite its ominous origins, this highly flammable and volatile dust serves as a valuable resource for illumination, smelting, and oddly enough helps repair wounds. A symbol of hope and ingenuity, Foulite Dust demonstrates the resilience of the human spirit, even when faced with the horrors that pervade The Nether.");
+JEI.addDescription(<nethercraft:foulite_dust>,"Foulite Dust, a greenish luminescent substance found throughout The Nether, is believed to originate from the fusion of foul energies and remnants of organic matter. Despite its ominous origins, this highly flammable and volatile dust serves as a valuable resource for illumination, smelting, and oddly enough helps repair wounds.");
 
 // Infernium
 <nethercraft:pyridium_ore>.displayName = "Infernium Ore";
