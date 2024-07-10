@@ -1,3 +1,4 @@
+#loader crafttweaker reloadable
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.enchantments.IEnchantmentDefinition;

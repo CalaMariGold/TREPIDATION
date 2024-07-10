@@ -1,3 +1,4 @@
+#loader crafttweaker reloadable
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.block.IBlockDefinition;
@@ -147,6 +148,21 @@ recipes.remove(<minecraft:arrow>);
 recipes.addShaped("newarrow", <minecraft:arrow>*8,
 [[<ore:arrowIngredient>],[<ore:stickWood>],[<ore:feather>]]);
 
+// tools can be made using prev tier tools
+recipes.addShaped("netherrack_sword_alt", <nethercraft:netherrack_sword>,
+[[<minecraft:netherrack>],[<minecraft:netherrack>],[<nethercraft:glowood_sword:*>]]);
+recipes.addShaped("netherrack_pickaxe_alt", <nethercraft:netherrack_pickaxe>,
+[[<minecraft:netherrack>,<minecraft:netherrack>,<minecraft:netherrack>],
+[null,<nethercraft:glowood_pickaxe:*>,null],
+[null,null,null]
+]);
+recipes.addShaped("netherrack_shovel_alt", <nethercraft:netherrack_shovel>,
+[[<minecraft:netherrack>],[<nethercraft:glowood_shovel:*>]]);
+recipes.addShapedMirrored("netherrack_axe_alt", <nethercraft:netherrack_axe>,
+[[<minecraft:netherrack>,<minecraft:netherrack>,null],
+[<minecraft:netherrack>,<nethercraft:glowood_axe:*>,null],
+[null,null,null]
+]);
 
 // new neridium recipes
 recipes.remove(<nethercraft:neridium_sword>);
