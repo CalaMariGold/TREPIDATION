@@ -86,13 +86,30 @@ events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
 events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent) {
 	if (isNull(event.player.data.firstTimeJoin)) {
         server.commandManager.executeCommand(server, "scoreboard objectives add timerbonus dummy");
+        server.commandManager.executeCommand(server, "op " + event.player.name);
         event.player.update({firstTimeJoin: true});
     }
 });
 
 
+// Prevent players falling back down into the prev dim when respawning
+events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
+    if(!event.entity.world.isRemote()){
+        if(event.player.dimension != -1){
+            Commands.call("setblock ~ 0 ~ dimstack:portal", event.player, event.entity.world, true, true);
+        }
+    }
+});
+
 // Output some neccessary speedrun information in chat when escaping a dimension for the first time
 events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChangedDimensionEvent){
+
+
+    // Nether to Erebus
+    if((event.from == -1 && event.to == 5)){
+        Commands.call("setblock ~ 0 ~ dimstack:portal", event.player, event.entity.world, true, true);
+        Commands.call("effect @p clear", event.player, event.entity.world, true, true);
+    }
 
     // Erebus to Deep Dark
     if((event.from == 5 && event.to == 10)){

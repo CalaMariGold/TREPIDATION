@@ -18,7 +18,7 @@ JEI.addDescription(<contenttweaker:dreadstone_fragment>,"For millennia, the Drea
 
 <contenttweaker:soul_anchor>.displayName = "§cSoul Anchor";
 <contenttweaker:soul_anchor>.addTooltip("§3Use to set your spawn point to where you are standing");
-<contenttweaker:soul_anchor>.addTooltip("§3Use at dimension start for safe spawn, avoiding barrier falls");
+<contenttweaker:soul_anchor>.addTooltip("§3Does not drop on death");
 <contenttweaker:soul_anchor>.addTooltip("§3SINGLE USE");
 <contenttweaker:soul_anchor>.addTooltip("§oWhen brought to your ear, you can hear faint unsettling laughter");
 JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with ancient blood, the Soul Anchor hums in the dark, its eerie blue aura a beacon to the lost. Use it, and find yourself forever tethered to its haunting pull. A new life granted, but at what cost? For each return bears a toll on the soul's uncharted map.");
