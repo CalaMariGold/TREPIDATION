@@ -58,3 +58,4 @@ mods/memory_repo/*
 config/mod-director/file-director_requisites.bundle.json
 shaderpacks/ComplementaryUnbound_r5.0.1.zip
 config/normalasm/methods-stable_39.csv
+/config/spark
