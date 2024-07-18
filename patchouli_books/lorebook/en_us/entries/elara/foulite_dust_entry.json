@@ -7,7 +7,7 @@
       {
         "type": "spotlight",
         "item": "nethercraft:foulite_dust",
-        "text": "$(#551012)Entry #9 $(br2)I have encountered a peculiar substance in the depths of the Nether, one I have come to call Foulite Dust. This greenish powder seems to originate from the fusion of foul energies and remnants of organic matter."
+        "text": "$(#551012)Cycle 13, Entry 9 $(br2)I have encountered a peculiar substance in the depths of the Nether, one I have come to call Foulite Dust. This greenish powder seems to originate from the fusion of foul energies and remnants of organic matter."
       },
       {
         "type": "text",
@@ -15,7 +15,7 @@
       },
       {
         "type": "text",
-        "text": "$(#551012)I've discovered that, strangely enough, Foulite Dust has a restorative effect on wounds. I have used it to mend my own injuries on more than one occasion, marveling at the way it accelerates healing, even as I question the cost of its use. I must look into this further. $(br2)- Elara"
+        "text": "$(#551012)I've discovered that, strangely enough, Foulite Dust has a restorative effect on wounds. I have used it to mend my own injuries on more than one occasion, marveling at the way it accelerates healing, even as I question the cost of its use. I must look into this further. $(br2)—Elara"
       }
       
     ]
