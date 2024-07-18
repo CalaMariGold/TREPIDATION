@@ -8,6 +8,21 @@ import crafttweaker.enchantments.IEnchantmentDefinition;
 import crafttweaker.data.IData;
 
 
+// dyna ores
+
+furnace.remove(<nethercraft:pyridium_ingot>, <nethercraft:pyridium_ore>);
+furnace.remove(<nethercraft:neridium_ingot>, <nethercraft:neridium_ore>);
+JEI.removeAndHide(<dynaores:raw_iron_block>);
+JEI.removeAndHide(<dynaores:raw_pyridium_block>);
+JEI.removeAndHide(<dynaores:raw_neridium_block>);
+JEI.removeAndHide(<dynaores:raw_gold_block>);
+recipes.remove(<dynaores:raw_pyridium>);
+recipes.remove(<dynaores:raw_neridium>);
+
+furnace.addRecipe(<nethercraft:pyridium_ingot>, <dynaores:raw_pyridium>, 1.0);
+furnace.addRecipe(<nethercraft:neridium_ingot>, <dynaores:raw_neridium>, 1.0);
+
+
 JEI.removeAndHide(<nethercraft:imp_helmet>);
 JEI.removeAndHide(<nethercraft:imp_chestplate>);
 JEI.removeAndHide(<nethercraft:imp_leggings>);
@@ -40,7 +55,7 @@ furnace.addRecipe(<contenttweaker:scrambled_magma_eggs>, <nethercraft:slime_eggs
 recipes.addShapeless("deviled_egg_sandwich", <contenttweaker:deviled_egg_sandwich>,[<contenttweaker:scrambled_magma_eggs>, <nethercraft:devil_bread>, <minecraft:magma_cream>]);
 
 recipes.remove(<corpsecomplex:scroll>);
-recipes.addShapeless("dreadstone_tablet", <corpsecomplex:scroll>,[<contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>,<contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>,<contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>]);
+recipes.addShapeless("dreadstone_tablet", <corpsecomplex:scroll>,[<contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>,<contenttweaker:dreadstone_fragment>, <nethercraft:foulite_dust>, <contenttweaker:dreadstone_fragment>,<contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>]);
 
 
 var green_glowshroom = <nethercraft:green_glowshroom>;

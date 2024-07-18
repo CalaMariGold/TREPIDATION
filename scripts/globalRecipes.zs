@@ -16,3 +16,14 @@ var hoesAll = itemUtils.getItemsByRegexRegistryName(":*_hoe$") as IItemStack[];
 for hoe in hoesAll{
     JEI.removeAndHide(hoe);
 }
+
+
+val neridiumOreDict = <ore:oreNeridium>;
+neridiumOreDict.add(<nethercraft:neridium_ore>);
+val pyridiumOreDict = <ore:orePyridium>;
+pyridiumOreDict.add(<nethercraft:pyridium_ore>);
+
+val neridiumIngotDict = <ore:ingotNeridium>;
+neridiumIngotDict.add(<nethercraft:neridium_ingot>);
+val pyridiumIngotDict = <ore:ingotPyridium>;
+pyridiumIngotDict.add(<nethercraft:pyridium_ingot>);
