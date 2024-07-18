@@ -7,19 +7,19 @@
       {
         "type": "spotlight",
         "item": "enderskills:token",
-        "text": "$(#551012)Cycle 213, Entry 27 $(br2)This accursed artifact—that I have coined as \"Trace of Death\"—is marked by an eerie, bone-chilling cold that permeates the air around it, an ominous aura that forewarns of the darkness within."
+        "text": "$(#551012)Cycle 213, Entry 27 $(br2)I have spent many cycles now meticulously studying an artifact that has captivated my curiosity—something I’ve come to call the Trace of Death."
       },
       {
         "type": "text",
-        "text": "$(#551012)When shattered, the Trace of Death unleashes a torrent of spectral energies that reach out to ensnare the wandering souls still clinging to this realm. These souls are forcibly drawn to the one who destroyed the artifact, bestowing upon them a surge of raw power and a glimpse into the secrets and knowledge these spirits once held.$(br2)However, such power comes at a steep cost..."
+        "text": "$(#551012)This accursed artifact is marked by an eerie, bone-chilling cold that permeates the air around it, an ominous aura that forewarns of the darkness within. When shattered, the Trace of Death unleashes a torrent of spectral energies that reach out to ensnare the wandering souls still clinging to this realm. These souls are forcibly drawn to the one who destroyed the artifact, bestowing upon them"
       },
       {
         "type": "text",
-        "text": "$(#551012)I've discovered that the Trace of Death can drive even the most level-headed Runners to madness and despair. Its effects linger long after the artifact is destroyed, tainting the mind of those who destroyed it. Out of desperation and curiosity, I have broken a Trace of Death myself, and in those harrowing moments, I felt an... $(italics)entity$()$(#551012) notice me, as if simply the gaze of this entity placed a heavy weight upon my soul."
+        "text": "$(#551012)a surge of raw power and a glimpse into the secrets and knowledge these spirits once held.$(br)However, such power comes at a steep cost... I've discovered that the Trace of Death can drive even the most level-headed Runners to madness and despair. Its effects linger long after the artifact is destroyed, tainting the mind of those who destroyed it. In my research, I have broken a Trace of Death myself,"
       },
       {
         "type": "text",
-        "text": "$(#551012)The encounter left me with a chilling realization: this power is not just dangerous, but malevolent. Yet, for the brave—or the desperate—the Trace of Death represents an opportunity to tap into the forbidden knowledge and power this world has to offer, no matter the cost. $(br2)- Elara"
+        "text": "$(#551012)and in those harrowing moments, I felt an... $(italics)entity$()$(#551012) notice me, as if simply the gaze of this entity placed a heavy weight upon my soul. The encounter left me with a chilling realization: this power is not just dangerous, but malevolent. Yet, for the brave—or the desperate—the Trace of Death represents an opportunity to tap into the forbidden knowledge and power this world has to offer, no matter the cost. $(br)—Elara"
       }
     ]
   }
