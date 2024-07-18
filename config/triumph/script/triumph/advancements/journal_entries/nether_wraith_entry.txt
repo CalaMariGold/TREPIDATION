@@ -1,0 +1,13 @@
+setIcon(<nethercraft:ghast_bones>)
+setTitle("Entry #")
+setDescription("Nether Wraiths")
+
+addParent("triumph:advancements/journal_entries/root")
+
+addCriteria("impossible", "minecraft:impossible")
+
+setShowToast(false)
+setAnnounceToChat(false)
+setFrameType("GOAL")
+hideLines()
+setPos(60,0)

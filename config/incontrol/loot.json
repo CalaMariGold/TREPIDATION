@@ -125,6 +125,18 @@
         "remove": "contenttweaker:dreadswine_entry",
         "gamestage": "dreadswine_entry"
     },
+    {
+        "mob":"minecraft:ghast",
+        "player": true,
+        "item": "contenttweaker:nether_wraith_entry",
+        "itemcount": "1",
+        "random": "0.40"
+    },
+    {
+        "mob":"minecraft:ghast",
+        "remove": "contenttweaker:nether_wraith_entry",
+        "gamestage": "nether_wraith_entry"
+    },
 
     // Misc
     {

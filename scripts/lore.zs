@@ -11,7 +11,9 @@ import mods.jei.JEI;
 <contenttweaker:foulite_dust_entry>.displayName = "§cElara's Journal - Entry #9";
 <contenttweaker:foulite_dust_entry>.addTooltip("§oA tattered page that was torn from a journal");
 <contenttweaker:foulite_dust_entry>.addTooltip("§3Right-click to add to your Journal");
-
+<contenttweaker:nether_wraith_entry>.displayName = "§cElara's Journal - Entry #5";
+<contenttweaker:nether_wraith_entry>.addTooltip("§oA tattered page that was torn from a journal");
+<contenttweaker:nether_wraith_entry>.addTooltip("§3Right-click to add to your Journal");
 
 
 <corpsecomplex:scroll>.displayName = "§cDreadstone Tablet";
@@ -125,9 +127,6 @@ The secret of escape, in shadows, draws near.
 For only this alloy, both dreadful and dire,
 Can shatter the barrier, birthed in hellfire.");
 
-JEI.addDescription(<nethercraft:ghast_bones>,"With ghostly white skin, tentacle-like appendages, and piercing wails, Ghasts are both fearsome and deadly. They possess extreme explosive potential and stalk their prey from a distance. Despite their terrifying nature, Ghasts play a crucial role in the creation of Veilstrium tools. Their bones, which hold a unique resonance, enable interaction with the otherworldly properties of Veilstrium. It's even possible that Ghast bones hold a deeper significance, serving as a conduit between the physical realm and the ethereal plane that underlies some aspects of The Nether.
-
-Once a formidable presence, the Ghast species has largely faded into extinction. Their skeletal remains now lie scattered across the searing lava oceans. ");
 
 JEI.addDescription(<minecraft:blaze_rod>,"Infernal rods, obtained by slaying the fearsome Infernals, serve as a potent source of fuel and illumination. When combined with the fiery essence of Infernium, they can be forged into powerful artifacts and weapons that harness intense heat and destructive energy.");
 
@@ -146,8 +145,7 @@ JEI.addDescription(<nethercraft:glow_apple>,"Glowood Trees are the eerie flora t
 
 
 <nethercraft:neridium_lighter>.displayName = "Quartz Lighter";
-<nethercraft:ghast_bomb>.addTooltip("§oA volatile explosive, awaiting ignition by a Quartz Lighter");
-<nethercraft:ghast_marrow>.addTooltip("§oAn unstable substance, harboring explosive potential");
+
 
 <mysticstaffs:fire_staff:*>.displayName = "§cStaff of Infernal";
 <mysticstaffs:fire_staff:*>.addTooltip("§oA potent weapon that engulfs nearby enemies in a searing inferno");
@@ -158,6 +156,12 @@ JEI.addDescription(<contenttweaker:vitality_orb>,"The Orb of Veilheart, a miracu
 <mysticstaffs:heal_staff:*>.addTooltip("§oA benevolent staff that rejuvenates the soul and body of allies");
 <mysticstaffs:heal_staff:*>.addTooltip("§3Uses 2 dash feathers");
 
+<nethercraft:ghast_bones>.displayName = "Nether Wraith Bones";
+<nethercraft:ghast_rod>.displayName = "Nether Wraith Rod";
+<nethercraft:ghast_marrow>.displayName = "Nether Wraith Marrow";
+<nethercraft:ghast_bomb>.displayName = "Nether Wraith Bomb";
+<nethercraft:ghast_bomb>.addTooltip("§oA volatile explosive, awaiting ignition by a Quartz Lighter");
+<nethercraft:ghast_marrow>.addTooltip("§oAn unstable substance, harboring explosive potential");
 <nethercraft:ghast_bones>.addTooltip("§oOccasionally harvested from bone blocks floating in the searing lava oceans");
 
 

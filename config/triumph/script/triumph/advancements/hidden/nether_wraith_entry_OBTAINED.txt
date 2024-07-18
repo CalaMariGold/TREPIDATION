@@ -1,0 +1,20 @@
+setIcon(<minecraft:grass>)
+setTitle("hidden")
+setDescription("")
+
+
+addParent("triumph:advancements/hidden/root")
+
+addRewardFunction("triumph:nether_wraith_entry_OBTAINED")
+
+
+setShowToast(false)
+setAnnounceToChat(false)
+
+criteria = addCriteria("Nether Wraith Entry", "minecraft:inventory_changed")
+criteria.addItem("contenttweaker:nether_wraith_entry")
+
+hideLines()
+
+alwaysHidden()
+setHidden(true)

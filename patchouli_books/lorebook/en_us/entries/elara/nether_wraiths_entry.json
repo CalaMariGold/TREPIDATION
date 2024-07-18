@@ -1,0 +1,28 @@
+{
+    "name": "Nether Wraiths",
+    "icon": "nethercraft:ghast_bones",
+    "category": "elara",
+    "advancement": "triumph:advancements/journal_entries/nether_wraith_entry",
+    "pages": [
+      {
+        "type": "text",
+        "text": "$(#551012)Cycle 9, Entry 5 $(br2)I encountered a creature that sent chills through my spine. It had ghostly white skin and tentacle-like appendages, and its wail pierced through the air, freezing me in my tracks. I remember them from before, Nether Wraiths they were called, but they were not like this."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)Back then, they were more elusive than deadly. Now, they are something else entirely. These wraiths possess a terrifying, explosive potential. They stalk their prey from a distance, their intent clear and menacing. Why have they changed so drastically? Did our actions transform them, too? Despite their fearsome nature, there’s something about them that seems... significant."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)Their bones, which I found scattered near the lava oceans, hold a unique resonance. When I held one, it felt as though it vibrated with a connection to something beyond our world. Could these bones be a conduit, linking the physical realm with the ethereal plane that underlies the Nether? Their presence, or rather the lack of it in recent times, suggests they are fading into extinction."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)Could their bones hold the key to understanding Veilstrium? The ore seems to respond to their resonance, enhancing its otherworldly properties. There is so much I do not know, so many questions that remain unanswered. How did these wraiths come to be? What role do they play in the grand scheme of this cursed world?"
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)I must continue to experiment with their bones and Veilstrium. Perhaps, through understanding the Nether Wraiths, I can uncover more how the world has changed and find a way to make amends.$(br2)—Elara"
+      }
+    ]
+}

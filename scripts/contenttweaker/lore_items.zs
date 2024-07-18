@@ -14,3 +14,6 @@ dreadswine_entry.register();
 
 val foulite_dust_entry = mods.contenttweaker.VanillaFactory.createItem("foulite_dust_entry");
 foulite_dust_entry.register();
+
+val nether_wraith_entry = mods.contenttweaker.VanillaFactory.createItem("nether_wraith_entry");
+nether_wraith_entry.register();

@@ -26,3 +26,4 @@ corpsecomplex:scroll
 contenttweaker:soul_anchor
 contenttweaker:dreadswine_entry
 contenttweaker:foulite_dust_entry
+contenttweaker:nether_wraith_entry

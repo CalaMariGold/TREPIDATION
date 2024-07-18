@@ -1,0 +1,1 @@
+gamestage silentadd @p nether_wraith_entry
