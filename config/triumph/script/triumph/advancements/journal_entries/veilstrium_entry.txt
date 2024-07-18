@@ -1,0 +1,13 @@
+setIcon(<dynaores:raw_neridium>)
+setTitle("Entry #")
+setDescription("Veilstrium")
+
+addParent("triumph:advancements/journal_entries/root")
+
+addCriteria("impossible", "minecraft:impossible")
+
+setShowToast(false)
+setAnnounceToChat(false)
+setFrameType("GOAL")
+hideLines()
+setPos(40,0)

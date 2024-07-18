@@ -1,0 +1,20 @@
+setIcon(<minecraft:grass>)
+setTitle("hidden")
+setDescription("")
+
+
+addParent("triumph:advancements/hidden/root")
+
+addRewardFunction("triumph:veilstrium_entry_OBTAINED")
+
+
+setShowToast(false)
+setAnnounceToChat(false)
+
+criteria = addCriteria("Veilstrium Entry", "minecraft:inventory_changed")
+criteria.addItem("contenttweaker:veilstrium_entry")
+
+hideLines()
+
+alwaysHidden()
+setHidden(true)

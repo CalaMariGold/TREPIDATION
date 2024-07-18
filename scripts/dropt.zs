@@ -17,10 +17,22 @@ Dropt.list("foulite_dust_journal_entry")
         .gameStages("BLACKLIST", "ALL", ["foulite_dust_entry"])
       )
       .addDrop(Dropt.drop()
-          .selector(Dropt.weight(5))
+          .selector(Dropt.weight(1))
           .items([<contenttweaker:foulite_dust_entry>,<nethercraft:foulite_dust>])
       )
   );
+
+Dropt.list("veilstrium_journal_entry")
+  .add(Dropt.rule()
+      .matchBlocks(["nethercraft:neridium_ore"])
+      .matchHarvester(Dropt.harvester()
+        .gameStages("BLACKLIST", "ALL", ["veilstrium_entry"])
+      )
+      .addDrop(Dropt.drop()
+          .selector(Dropt.weight(3))
+          .items([<contenttweaker:veilstrium_entry>,<dynaores:raw_neridium>])
+      )
+);
 
 Dropt.list("no_soul_sand_drop")
   .add(Dropt.rule()

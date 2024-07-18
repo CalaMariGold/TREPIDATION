@@ -48,6 +48,7 @@ import crafttweaker.event.PlayerLeftClickBlockEvent;
 static dreadswine_entry as IItemStack = <contenttweaker:dreadswine_entry>;
 static foulite_dust_entry as IItemStack = <contenttweaker:foulite_dust_entry>;
 static nether_wraith_entry as IItemStack = <contenttweaker:nether_wraith_entry>;
+static veilstrium_entry as IItemStack = <contenttweaker:veilstrium_entry>;
 
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
     if(!event.world.isRemote()){
@@ -72,6 +73,13 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             // Entry # - Nether Wraith
             if (nether_wraith_entry.matches(itemStack1)) {  
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/nether_wraith_entry", event.player, event.world, true, true);
+                //Commands.call("playsound [PAPER SOUND EFFECT] player @p", event.player, event.world, true, true);
+                itemStack1.mutable().shrink(1);
+            }
+
+            // Entry # - Veilstrium
+            if (veilstrium_entry.matches(itemStack1)) {  
+                Commands.call("advancement grant @p only triumph:advancements/journal_entries/veilstrium_entry", event.player, event.world, true, true);
                 //Commands.call("playsound [PAPER SOUND EFFECT] player @p", event.player, event.world, true, true);
                 itemStack1.mutable().shrink(1);
             }

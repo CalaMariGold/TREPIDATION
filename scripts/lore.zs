@@ -14,6 +14,9 @@ import mods.jei.JEI;
 <contenttweaker:nether_wraith_entry>.displayName = "§cElara's Journal - Entry #5";
 <contenttweaker:nether_wraith_entry>.addTooltip("§oA tattered page that was torn from a journal");
 <contenttweaker:nether_wraith_entry>.addTooltip("§3Right-click to add to your Journal");
+<contenttweaker:veilstrium_entry>.displayName = "§cElara's Journal - Entry #5";
+<contenttweaker:veilstrium_entry>.addTooltip("§oA tattered page that was torn from a journal");
+<contenttweaker:veilstrium_entry>.addTooltip("§3Right-click to add to your Journal");
 
 
 <corpsecomplex:scroll>.displayName = "§cDreadstone Tablet";
@@ -96,7 +99,6 @@ JEI.addDescription(<nethercraft:pyridium_ingot>,"Infernium is a rare and powerfu
 <nethercraft:neridium_ore>.displayName = "Veilstrium Ore";
 <nethercraft:neridium_block>.displayName = "Veilstrium Block";
 <nethercraft:neridium_ingot>.displayName = "Veilstrium Ingot";
-JEI.addDescription(<nethercraft:neridium_ingot>,"Veilstrium is a rare and mystical ore that can only be found within the depths of The Nether. It is thought to have formed when the essence of countless lost souls seeped into the very fabric of the realm, eventually coalescing and crystallizing into this unique purplish mineral. Veilstrium's origin grants it a supernatural resilience, making it a valuable material for crafting weapons and armor. Its unique properties allow it to absorb and dissipate the malevolent energies that pervade The Nether, bestowing its wielders with an otherworldly endurance. Legends whisper that those who possess items crafted from Veilstrium are not only protected from the dangers of The Nether but may also find themselves attuned to the whispers of the long-forgotten souls trapped within the ore. Such spectral guidance can grant travelers valuable insights and instincts, allowing them to navigate the treacherous realms with greater ease.");
 
 
 <nethercraft:neridium_sword>.displayName = "Veilstrium Sword";

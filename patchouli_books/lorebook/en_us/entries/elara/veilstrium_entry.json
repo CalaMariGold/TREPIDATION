@@ -1,0 +1,26 @@
+{
+    "name": "Veilstrium",
+    "icon": "dynaores:raw_neridium",
+    "category": "elara",
+    "advancement": "triumph:advancements/journal_entries/veilstrium_entry",
+    "pages": [
+      {
+        "type": "spotlight",
+        "item": "dynaores:raw_neridium",
+        "text": "$(#551012)Cycle 23, Entry 11 $(br2)I've stumbled upon a vein of Veilstrium, its purplish glow calling to me. As I mined the ore, I felt the whispers of lost souls, guiding my hands. Veilstrium seems to absorb the malevolent energies around it, making it incredibly resilient."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)Crafting with Veilstrium has granted me a strange connection to the Nether, almost as if the souls trapped within it are aiding my journey. The armor I’ve forged seem to offer protection and insight into this cursed world. Each piece I create feels like a step closer to understanding my plight, yet I can’t shake the feeling that I’m only scratching the surface."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)What secrets does this ore hold, and what price will I pay for its power? I must continue to explore and learn, for the answers lie somewhere within these depths.$(br2)—Elara"
+      }
+      
+    ]
+  }
+
+
+
+  

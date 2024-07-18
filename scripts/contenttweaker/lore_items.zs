@@ -17,3 +17,6 @@ foulite_dust_entry.register();
 
 val nether_wraith_entry = mods.contenttweaker.VanillaFactory.createItem("nether_wraith_entry");
 nether_wraith_entry.register();
+
+val veilstrium_entry = mods.contenttweaker.VanillaFactory.createItem("veilstrium_entry");
+veilstrium_entry.register();
