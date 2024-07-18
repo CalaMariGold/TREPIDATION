@@ -1,0 +1,35 @@
+type = menu
+
+customization-meta {
+  identifier = arekkuusu.enderskills.client.gui.GuiScreenSkillAdvancements
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  orientation = bottom-left
+  enable_scrolling = false
+  shadow = true
+  scale = 1.2
+  source = PAUSED
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = 42
+  width = 46
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = a4acffc4-0b27-419d-9e3a-9c0e4c46a9f71721266715026
+  y = -15
+  alignment = left
+  base_color = 000000
+  height = 14
+}
+

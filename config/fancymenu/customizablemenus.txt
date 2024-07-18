@@ -51,3 +51,18 @@ net.minecraft.client.gui.GuiGameOver {
 com.ezrol.terry.minecraft.defaultworldgenerator.gui.GuiCreateCustomWorld {
 }
 
+vazkii.patchouli.client.book.gui.GuiBookLanding {
+}
+
+vazkii.patchouli.client.book.gui.GuiBookCategory {
+}
+
+arekkuusu.enderskills.client.gui.GuiScreenSkillAdvancements {
+}
+
+vazkii.patchouli.client.book.gui.GuiBookEntry {
+}
+
+mezz.jei.gui.recipes.RecipesGui {
+}
+
