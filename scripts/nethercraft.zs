@@ -9,7 +9,6 @@ import crafttweaker.data.IData;
 
 
 // dyna ores
-
 furnace.remove(<nethercraft:pyridium_ingot>, <nethercraft:pyridium_ore>);
 furnace.remove(<nethercraft:neridium_ingot>, <nethercraft:neridium_ore>);
 JEI.removeAndHide(<dynaores:raw_iron_block>);
@@ -18,6 +17,8 @@ JEI.removeAndHide(<dynaores:raw_neridium_block>);
 JEI.removeAndHide(<dynaores:raw_gold_block>);
 recipes.remove(<dynaores:raw_pyridium>);
 recipes.remove(<dynaores:raw_neridium>);
+recipes.remove(<dynaores:raw_iron>);
+recipes.remove(<dynaores:raw_gold>);
 
 furnace.addRecipe(<nethercraft:pyridium_ingot>, <dynaores:raw_pyridium>, 1.0);
 furnace.addRecipe(<nethercraft:neridium_ingot>, <dynaores:raw_neridium>, 1.0);
