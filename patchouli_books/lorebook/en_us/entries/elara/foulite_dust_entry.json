@@ -1,0 +1,27 @@
+{
+    "name": "Foulite Dust",
+    "icon": "nethercraft:foulite_dust",
+    "category": "elara",
+    "advancement": "triumph:advancements/journal_entries/foulite_dust_entry",
+    "pages": [
+      {
+        "type": "spotlight",
+        "item": "nethercraft:foulite_dust",
+        "text": "$(#551012)Entry #9 $(br2)I have encountered a peculiar substance in the depths of the Nether, one I have come to call Foulite Dust. This greenish powder seems to originate from the fusion of foul energies and remnants of organic matter."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)Its ominous origins are evident in the way it clings to the air, almost as if it possesses a malevolent will of its own. Despite its unsettling nature, I have found Foulite Dust to be an invaluable resource. It is highly flammable, providing much-needed illumination and smelting of other materials. $(br2)Its properties extend beyond simple combustion as well..."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)I've discovered that, strangely enough, Foulite Dust has a restorative effect on wounds. I have used it to mend my own injuries on more than one occasion, marveling at the way it accelerates healing, even as I question the cost of its use. I must look into this further."
+      }
+      
+    ]
+  }
+
+
+
+  
+

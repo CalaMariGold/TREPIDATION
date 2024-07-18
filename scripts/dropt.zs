@@ -7,6 +7,20 @@ import mods.jei.JEI;
 import mods.rockytweaks.Anvil;
 import mods.ltt.LootTable;
 import mods.dropt.Dropt;
+import mods.dropt.Harvester;
+
+
+Dropt.list("foulite_dust_journal_entry")
+  .add(Dropt.rule()
+      .matchBlocks(["nethercraft:foulite_ore"])
+      .matchHarvester(Dropt.harvester()
+        .gameStages("BLACKLIST", "ALL", ["foulite_dust_entry"])
+      )
+      .addDrop(Dropt.drop()
+          .selector(Dropt.weight(5))
+          .items([<contenttweaker:foulite_dust_entry>,<nethercraft:foulite_dust>])
+      )
+  );
 
 Dropt.list("no_soul_sand_drop")
   .add(Dropt.rule()

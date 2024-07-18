@@ -25,3 +25,4 @@ contenttweaker:dreadstone_fragment
 corpsecomplex:scroll
 contenttweaker:soul_anchor
 contenttweaker:dreadswine_entry
+contenttweaker:foulite_dust_entry

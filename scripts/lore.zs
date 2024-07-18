@@ -8,6 +8,9 @@ import mods.jei.JEI;
 <contenttweaker:dreadswine_entry>.displayName = "§cElara's Journal - Entry #7";
 <contenttweaker:dreadswine_entry>.addTooltip("§oA tattered page that was torn from a journal");
 <contenttweaker:dreadswine_entry>.addTooltip("§3Right-click to add to your Journal");
+<contenttweaker:foulite_dust_entry>.displayName = "§cElara's Journal - Entry #9";
+<contenttweaker:foulite_dust_entry>.addTooltip("§oA tattered page that was torn from a journal");
+<contenttweaker:foulite_dust_entry>.addTooltip("§3Right-click to add to your Journal");
 
 
 
@@ -55,15 +58,12 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <enderskills:book>.displayName = "§cGrimoire of the Veil";
 <enderskills:book>.addTooltip("§3Does not drop on death");
 
-// Nether
-JEI.addDescription(<nethercraft:foulite_dust>,"Foulite Dust, a greenish substance found throughout The Nether, is believed to originate from the fusion of foul energies and remnants of organic matter. Despite its ominous origins, this highly flammable dust serves as a valuable resource for illumination, smelting, and oddly enough helps repair wounds.");
 
 // Infernium
 <nethercraft:pyridium_ore>.displayName = "Infernium Ore";
 <nethercraft:pyridium_block>.displayName = "Infernium Block";
 <nethercraft:pyridium_ingot>.displayName = "Infernium Ingot";
 JEI.addDescription(<nethercraft:pyridium_ingot>,"Infernium is a rare and powerful ore found exclusively within the The Nether. Born from the ashes of ancient infernal beings that once ruled this realm with their unyielding power of fire and destruction, Infernium is the embodiment of their eternal wrath and fury. This yellow-hued ore glows with an inner light, as if the very souls of those ancient entities still smolder within its core. Harnessing the destructive essence of Infernium requires great courage and skill. When fused with infernal rods and ghast bones, Infernium can create an item capable of summoning the Infernal Fortress.");
-JEI.addDescription(<dynaores:raw_pyridium>,"Infernium is a rare and powerful ore found exclusively within the The Nether. Born from the ashes of ancient infernal beings that once ruled this realm with their unyielding power of fire and destruction, Infernium is the embodiment of their eternal wrath and fury. This yellow-hued ore glows with an inner light, as if the very souls of those ancient entities still smolder within its core. Harnessing the destructive essence of Infernium requires great courage and skill. When fused with infernal rods and ghast bones, Infernium can create an item capable of summoning the Infernal Fortress.");
 
 
 <nethercraft:pyridium_sword>.displayName = "Infernium Sword";
@@ -95,7 +95,6 @@ JEI.addDescription(<dynaores:raw_pyridium>,"Infernium is a rare and powerful ore
 <nethercraft:neridium_block>.displayName = "Veilstrium Block";
 <nethercraft:neridium_ingot>.displayName = "Veilstrium Ingot";
 JEI.addDescription(<nethercraft:neridium_ingot>,"Veilstrium is a rare and mystical ore that can only be found within the depths of The Nether. It is thought to have formed when the essence of countless lost souls seeped into the very fabric of the realm, eventually coalescing and crystallizing into this unique purplish mineral. Veilstrium's origin grants it a supernatural resilience, making it a valuable material for crafting weapons and armor. Its unique properties allow it to absorb and dissipate the malevolent energies that pervade The Nether, bestowing its wielders with an otherworldly endurance. Legends whisper that those who possess items crafted from Veilstrium are not only protected from the dangers of The Nether but may also find themselves attuned to the whispers of the long-forgotten souls trapped within the ore. Such spectral guidance can grant travelers valuable insights and instincts, allowing them to navigate the treacherous realms with greater ease.");
-JEI.addDescription(<dynaores:raw_neridium>,"Veilstrium is a rare and mystical ore that can only be found within the depths of The Nether. It is thought to have formed when the essence of countless lost souls seeped into the very fabric of the realm, eventually coalescing and crystallizing into this unique purplish mineral. Veilstrium's origin grants it a supernatural resilience, making it a valuable material for crafting weapons and armor. Its unique properties allow it to absorb and dissipate the malevolent energies that pervade The Nether, bestowing its wielders with an otherworldly endurance. Legends whisper that those who possess items crafted from Veilstrium are not only protected from the dangers of The Nether but may also find themselves attuned to the whispers of the long-forgotten souls trapped within the ore. Such spectral guidance can grant travelers valuable insights and instincts, allowing them to navigate the treacherous realms with greater ease.");
 
 
 <nethercraft:neridium_sword>.displayName = "Veilstrium Sword";

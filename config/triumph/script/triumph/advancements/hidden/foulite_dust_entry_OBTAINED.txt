@@ -1,0 +1,20 @@
+setIcon(<minecraft:grass>)
+setTitle("hidden")
+setDescription("")
+
+
+addParent("triumph:advancements/hidden/root")
+
+addRewardFunction("triumph:foulite_dust_entry_OBTAINED")
+
+
+setShowToast(false)
+setAnnounceToChat(false)
+
+criteria = addCriteria("Foulite Dust Entry", "minecraft:inventory_changed")
+criteria.addItem("contenttweaker:foulite_dust_entry")
+
+hideLines()
+
+alwaysHidden()
+setHidden(true)

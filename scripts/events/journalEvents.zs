@@ -46,20 +46,27 @@ import crafttweaker.entity.IEntityLivingBase;
 import crafttweaker.event.PlayerLeftClickBlockEvent;
 
 static dreadswine_entry as IItemStack = <contenttweaker:dreadswine_entry>;
+static foulite_dust_entry as IItemStack = <contenttweaker:foulite_dust_entry>;
 
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
     if(!event.world.isRemote()){
+        val itemStack1 = event.item as IItemStack; 
 
         // Entry #7 - Dreadswine
-        val itemStack1 = event.item as IItemStack; 
         if(!isNull(itemStack1)){
             if (dreadswine_entry.matches(itemStack1)) {  
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/dreadswine_entry", event.player, event.world, true, true);
                 //Commands.call("playsound [PAPER SOUND EFFECT] player @p", event.player, event.world, true, true);
                 itemStack1.mutable().shrink(1);
             }
+
+            // Entry #9 - Foulite Dust
+            if (foulite_dust_entry.matches(itemStack1)) {  
+                Commands.call("advancement grant @p only triumph:advancements/journal_entries/foulite_dust_entry", event.player, event.world, true, true);
+                //Commands.call("playsound [PAPER SOUND EFFECT] player @p", event.player, event.world, true, true);
+                itemStack1.mutable().shrink(1);
+            }
         }
-        
     }
 });
 
