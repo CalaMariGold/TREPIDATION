@@ -1,0 +1,27 @@
+{
+  "name": "Grimoire of the Veil",
+  "icon": "enderskills:book",
+  "category": "introduction",
+  "advancement": "triumph:advancements/journal_entries/skill_book",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "enderskills:book",
+      "text": "$(#551012)The Grimoire of the Veil is a book used to learn and upgrade abilities and passive skills. Utilizing it will be crucial for successful runs. $()"
+    },
+    {
+      "type": "text",
+      "text": "$(#551012)There are 3 classes you can delve into and combine: $(bold)Defense$()$(#551012), $(bold)Offense$()$(#551012), and $(bold)Mobility$()$(#551012).$(br2)Each have multiple subclasses where you can specialize further to fit your gameplay style.$(br2)Press $(#104455)ALT + [number]$(#551012) to use an ability and $(#104455)G$(#551012) and $(#104455)H$(#551012) to cycle through ability groups. "
+    },
+    {
+      "type": "text",
+      "text": "$(#551012)Unlocking skills cost XP and Souls. You can obtain Souls by breaking Traces of Death. Soul prices increase as you spend and there is a cap of 9 Souls, so spend wisely. You can always reset to try a new build."
+    },
+    {
+      "type": "relations",
+      "entries": ["elara/trace_of_death_entry"],
+      "title": "Related Entries"
+    }
+  ]
+}

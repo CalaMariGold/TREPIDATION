@@ -1,0 +1,16 @@
+setIcon(<minecraft:dirt>)
+setTitle("Skill book")
+setDescription("Skill book")
+
+
+addParent("triumph:advancements/journal_entries/root")
+
+setShowToast(false)
+setAnnounceToChat(false)
+
+criteria = addCriteria("Skill Book", "minecraft:inventory_changed")
+criteria.addItem("enderskills:book")
+
+hideLines()
+setHidden(true)
+setPos(99999999,0)

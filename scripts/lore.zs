@@ -54,8 +54,6 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 
 <enderskills:book>.displayName = "§cGrimoire of the Veil";
 <enderskills:book>.addTooltip("§3Does not drop on death");
-JEI.addDescription(<enderskills:book>,"There are 3 classes you can delve into: Defense, Mobility, and Offense. Each have multiple subclasses. 
-Press ALT + [number] to use an ability and G and H to cycle through ability groups. Unlocking skills cost XP and Souls. You can obtain Souls by breaking Traces of Death. Soul prices increase as you spend and there is a cap of 9 Souls, so spend wisely. You can always reset to try a new build.");
 
 // Nether
 JEI.addDescription(<nethercraft:foulite_dust>,"Foulite Dust, a greenish substance found throughout The Nether, is believed to originate from the fusion of foul energies and remnants of organic matter. Despite its ominous origins, this highly flammable dust serves as a valuable resource for illumination, smelting, and oddly enough helps repair wounds.");
