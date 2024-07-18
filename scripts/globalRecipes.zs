@@ -18,6 +18,8 @@ for hoe in hoesAll{
     JEI.removeAndHide(hoe);
 }
 
+val paperOreDict = <ore:paper>;
+paperOreDict.add(<nethercraft:lava_paper>);
 
 val neridiumOreDict = <ore:oreNeridium>;
 neridiumOreDict.add(<nethercraft:neridium_ore>);

@@ -1,6 +1,6 @@
 {
   "name": "Elara's Journal",
   "description": "Torn journal entries are scattered throughout the world. After obtaining, they will show up here.",
-  "icon": "minecraft:book",
+  "icon": "nethercraft:lava_book",
   "sortnum": 1
 }

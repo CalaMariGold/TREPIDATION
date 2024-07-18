@@ -17,7 +17,9 @@ import mods.jei.JEI;
 <contenttweaker:veilstrium_entry>.displayName = "§cElara's Journal - Entry #5";
 <contenttweaker:veilstrium_entry>.addTooltip("§oA tattered page that was torn from a journal");
 <contenttweaker:veilstrium_entry>.addTooltip("§3Right-click to add to your Journal");
-
+<contenttweaker:infernium_entry>.displayName = "§cElara's Journal - Entry #5";
+<contenttweaker:infernium_entry>.addTooltip("§oA tattered page that was torn from a journal");
+<contenttweaker:infernium_entry>.addTooltip("§3Right-click to add to your Journal");
 
 <corpsecomplex:scroll>.displayName = "§cDreadstone Tablet";
 <corpsecomplex:scroll>.addTooltip("§3Use to teleport to your last death");

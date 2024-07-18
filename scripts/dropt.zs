@@ -34,6 +34,18 @@ Dropt.list("veilstrium_journal_entry")
       )
 );
 
+Dropt.list("infernium_journal_entry")
+  .add(Dropt.rule()
+      .matchBlocks(["nethercraft:pyridium_ore"])
+      .matchHarvester(Dropt.harvester()
+        .gameStages("BLACKLIST", "ALL", ["infernium_entry"])
+      )
+      .addDrop(Dropt.drop()
+          .selector(Dropt.weight(5))
+          .items([<contenttweaker:infernium_entry>,<dynaores:raw_pyridium>])
+      )
+);
+
 Dropt.list("no_soul_sand_drop")
   .add(Dropt.rule()
     .matchDrops([(<minecraft:soul_sand>)])

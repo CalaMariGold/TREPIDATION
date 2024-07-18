@@ -1,0 +1,39 @@
+{
+    "name": "Infernium",
+    "icon": "dynaores:raw_pyridium",
+    "category": "elara",
+    "advancement": "triumph:advancements/journal_entries/infernium_entry",
+    "pages": [
+      {
+        "type": "spotlight",
+        "item": "dynaores:raw_pyridium",
+        "text": "$(#551012)Cycle 23, Entry 11 $(br2)I was finally able to mine this extraordinary ore, one that seems to pulse with an inner light. This yellow-hued mineral radiates an intense heat and almost feels... alive."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)Mining it was no easy task; the Veilstrium pickaxe was barely enough to extract it. The ore seemed to resist, almost as if it possessed a will of its own. During my exploration, I stumbled upon an ancient fortress, half-buried in the ash and ruins. Inside, I found an inscription etched into the brick walls, a poem that spoke of a powerful substance called Infernium."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)The words were cryptic and some impossible to read, but hinted at its origins:$(br2)Ashes of ancients, fierce and -----,$(br)Infernium ------- souls' trapped light.$(br)Wrath and ----, destruction's core,$(br)In this ore, their power's stored."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)While I know little about its true potential, I have managed to experiment with Infernium in small amounts. When combined with infernal rods and Nether Wraith bones, it appears to react in unique and powerful ways. There's something about this combination that feels like it could unlock greater secrets of the Nether."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)For now, I must tread carefully. The line between harnessing this power and being consumed by it feels perilously thin. I will continue to experiment with that particular combination.$(br2)—Elara"
+      }
+      
+    ]
+  }
+
+
+
+  
+
+
+
+
+

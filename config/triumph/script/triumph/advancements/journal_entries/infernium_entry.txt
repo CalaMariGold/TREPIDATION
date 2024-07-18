@@ -1,0 +1,13 @@
+setIcon(<dynaores:raw_pyridium>)
+setTitle("Entry #")
+setDescription("Infernium")
+
+addParent("triumph:advancements/journal_entries/root")
+
+addCriteria("impossible", "minecraft:impossible")
+
+setShowToast(false)
+setAnnounceToChat(false)
+setFrameType("GOAL")
+hideLines()
+setPos(40,0)

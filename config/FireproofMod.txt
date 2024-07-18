@@ -28,3 +28,4 @@ contenttweaker:dreadswine_entry
 contenttweaker:foulite_dust_entry
 contenttweaker:nether_wraith_entry
 contenttweaker:veilstrium_entry
+contenttweaker:infernium_entry

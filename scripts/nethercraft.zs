@@ -29,7 +29,6 @@ JEI.removeAndHide(<nethercraft:imp_chestplate>);
 JEI.removeAndHide(<nethercraft:imp_leggings>);
 JEI.removeAndHide(<nethercraft:imp_boots>);
 
-JEI.removeAndHide(<nethercraft:lava_paper>);
 JEI.removeAndHide(<nethercraft:lava_book>);
 JEI.removeAndHide(<nethercraft:dark_wheat_crops>);
 JEI.removeAndHide(<nethercraft:dark_seeds>);
@@ -38,7 +37,7 @@ JEI.removeAndHide(<nethercraft:glowood_bookshelf>);
 JEI.removeAndHide(<nethercraft:pyridium_block>);
 JEI.removeAndHide(<nethercraft:neridium_block>);
 JEI.removeAndHide(<nethercraft:lava_boat>);
-
+JEI.removeAndHide(<nethercraft:nether_painting>);
 
 
 recipes.remove(<nethercraft:devil_bread>);

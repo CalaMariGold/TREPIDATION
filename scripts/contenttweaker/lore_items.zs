@@ -20,3 +20,6 @@ nether_wraith_entry.register();
 
 val veilstrium_entry = mods.contenttweaker.VanillaFactory.createItem("veilstrium_entry");
 veilstrium_entry.register();
+
+val infernium_entry = mods.contenttweaker.VanillaFactory.createItem("infernium_entry");
+infernium_entry.register();
