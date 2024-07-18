@@ -1,0 +1,13 @@
+setIcon(<corpsecomplex:scroll>)
+setTitle("Entry #7")
+setDescription("The Dreadswine")
+
+addParent("triumph:advancements/journal_entries/root")
+
+addCriteria("impossible", "minecraft:impossible")
+
+setShowToast(false)
+setAnnounceToChat(false)
+setFrameType("GOAL")
+hideLines()
+setPos(-1,0)

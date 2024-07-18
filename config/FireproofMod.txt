@@ -24,3 +24,4 @@ nethercraft:ghast_bones
 contenttweaker:dreadstone_fragment
 corpsecomplex:scroll
 contenttweaker:soul_anchor
+contenttweaker:dreadswine_entry

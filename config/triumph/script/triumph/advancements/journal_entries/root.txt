@@ -1,0 +1,16 @@
+//This is a root advancement. It is the base advancement for a page. As such, it has no parent and has to set a background.
+
+setIcon(<minecraft:book>)
+setTitle("Journal Entries")
+setDescription("Journal Entries")
+
+setShowToast(false)
+setAnnounceToChat(false)
+
+addCriteria("impossible", "minecraft:impossible")
+
+alwaysHidden()
+setHidden(true)
+
+setBackground("minecraft:textures/gui/advancements/backgrounds/adventure.png")
+setPos(-38,0)

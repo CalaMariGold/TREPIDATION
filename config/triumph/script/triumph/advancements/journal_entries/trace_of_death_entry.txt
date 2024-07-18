@@ -1,0 +1,13 @@
+setIcon(<enderskills:token>)
+setTitle("Entry #13")
+setDescription("Trace of Death")
+
+addParent("triumph:advancements/journal_entries/root")
+
+addCriteria("impossible", "minecraft:impossible")
+
+setShowToast(false)
+setAnnounceToChat(false)
+setFrameType("GOAL")
+hideLines()
+setPos(20,0)

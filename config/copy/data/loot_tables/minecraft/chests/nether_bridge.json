@@ -90,6 +90,13 @@
           "name": "timeisup:timer_bonus"
         },
         {
+          "entryName": "contenttweaker:dreadswine_entry",
+          "weight": 1,
+          "quality": 0,
+          "type": "item",
+          "name": "contenttweaker:dreadswine_entry"
+        },
+        {
           "entryName": "nethercraft:pyridium_bow",
           "weight": 3,
           "quality": 0,

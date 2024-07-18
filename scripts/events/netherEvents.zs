@@ -46,6 +46,20 @@ import crafttweaker.entity.IEntityLivingBase;
 import crafttweaker.event.PlayerLeftClickBlockEvent;
 
 
+// This is a roundabout (kinda shitty) way to reset player IData between runs.
+// Ideally setting the IData to null would be directly part of resetting the run (ie via the button or mod itself), but I don't think that's possible
+
+// Only thing I could see going wrong is if the player did any of these events, then used a timer bonus to get above 60 minutes
+// Not a big deal since these are just lore related so far
+EventManager.getInstance().onTimerTick(function(event as TickEvent){
+    var totalSecs = event.tick/20;
+    if(totalSecs>=3604){
+        event.player.update({clickedNetherBarrier: null});
+        event.player.update({shatteredTraceOfDeath: null});
+    }            
+});
+
+
 static veilstriumPick as IItemStack = <nethercraft:neridium_pickaxe:*>;
 static netherrackPick as IItemStack = <nethercraft:netherrack_pickaxe:*>;
 
@@ -155,7 +169,20 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                     server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"As the final pieces of the Trace of Death crumble at your feet, you are suddenly consumed by a rush of spectral energies. The secrets you now possess are both a blessing and a curse, for the shadows that surround you have been stirred, and you cannot escape the feeling that you are being watched by something far beyond your comprehension.\",\"color\":\"dark_red\",\"italic\":true}]");
                     Commands.call("playsound cyclicmagic:chaos_reaper master @p ~ ~ ~ 0.6 0.7", event.player, event.world, true, true);
                     event.player.update({shatteredTraceOfDeath: true});
+                    
+                    event.player.world.catenation()
+                    .run(function(world, context) {
+                        context.data = world.time;
+                    })
+                    .sleep(300)
+                    .then(function(world, context) {
+                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Memories that don't seem to be your own begin to flood your mind. You quickly bring out your notebook to write it down.\",\"color\":\"dark_red\",\"italic\":true}]");
+                        Commands.call("advancement grant @p only triumph:advancements/journal_entries/trace_of_death_entry", event.player, event.world, true, true);
+
+                    })
+                    .start();
                 }
+                Commands.call("effect @p minecraft:nausea 10", event.player, event.world, true, true);
             }
         }
 

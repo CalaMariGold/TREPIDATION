@@ -1,0 +1,24 @@
+setIcon(<minecraft:grass>)
+setTitle("hidden")
+setDescription("")
+
+
+addParent("triumph:advancements/hidden/root")
+
+addRewardFunction("triumph:dreadswine_entry_OBTAINED")
+
+
+
+//Set the toast notification in the top right corner of the screen to not show up when this advancement is achieved.
+setShowToast(false)
+
+//Set the advancement to not send a chat message when it is achieved.
+setAnnounceToChat(false)
+
+criteria = addCriteria("Dreadswine Entry", "minecraft:inventory_changed")
+criteria.addItem("contenttweaker:dreadswine_entry")
+
+hideLines()
+
+alwaysHidden()
+setHidden(true)

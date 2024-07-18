@@ -4,17 +4,20 @@ import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
 import mods.jei.JEI;
 
+// Lore entries
+<contenttweaker:dreadswine_entry>.displayName = "§cElara's Journal - Entry #7";
+<contenttweaker:dreadswine_entry>.addTooltip("§oA tattered page that was torn from a journal");
+<contenttweaker:dreadswine_entry>.addTooltip("§3Right-click to add to your Journal");
+
+
 
 <corpsecomplex:scroll>.displayName = "§cDreadstone Tablet";
 <corpsecomplex:scroll>.addTooltip("§3Use to teleport to your last death");
 <corpsecomplex:scroll>.addTooltip("§3Does not drop on death");
 <corpsecomplex:scroll>.removeTooltip("Return to death location");
-JEI.addDescription(<corpsecomplex:scroll>,"For millennia, the Dreadswine have roamed the suffocating abyss of the Nether in ceaseless agony. Once beings of flesh and soul, they were damned to an undead disgusting existence by their own doing, their humanity dissolved in a mire of despair and malevolence. These wretched creatures will lash out at any who draw near, their attacks persisting even through their target's rebirth. Driven by a single purpose, they scour the infernal depths for the fabled Dreadstone Tablet, an ancient relic from before their fall, which promises the return of their lost souls and a harrowing passage back to the moment of their undoing. Yet, for these lost souls, they have only come across fragments; cruel teases of the oblivion they crave.");
-
 <contenttweaker:dreadstone_fragment>.displayName = "Dreadstone Fragment";
 <contenttweaker:dreadstone_fragment>.addTooltip("§3Does not drop on death");
 <contenttweaker:dreadstone_fragment>.addTooltip("§oWhen touched, the fragment makes a subtle vibration in sync with the pulse of your heartbeat");
-JEI.addDescription(<contenttweaker:dreadstone_fragment>,"For millennia, the Dreadswine have roamed the suffocating abyss of the Nether in ceaseless agony. Once beings of flesh and soul, they were damned to an undead disgusting existence, their humanity dissolved in a mire of despair and malevolence. These wretched creatures will lash out at any who draw near, their attacks persisting even through their target's rebirth. Driven by a single purpose, they scour the infernal depths for the fabled Dreadstone Tablet, an ancient relic that promises the return of their lost souls and a harrowing passage back to the moment of their undoing. Yet, for these lost souls, they have only come across fragments; cruel teases of the oblivion they crave.");
 
 
 <contenttweaker:soul_anchor>.displayName = "§cSoul Anchor";
@@ -49,11 +52,6 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <enderskills:token>.displayName = "§cTrace of Death";
 <enderskills:token>.addTooltip("§3Use to break and add to your Souls");
 
-JEI.addDescription(<enderskills:token>,"The Trace of Death stands as a cursed artifact. Its origin remains an enigma, whispered in hushed tones and often lost within fear-stricken narratives. Its presence is marked by a cold, ominous aura that seems to permeate the air around it.
-When shattered, the Trace of Death unleashes a torrent of spectral energies reaching out to ensnare the wandering souls that still cling to this realm. These souls are then forcably drawn towards the one who shattered the artifact, granting them not only an infusion of raw power but also a glimpse into the secrets and knowledge that these spirits once held.
-However, such power comes at a steep cost, for the Trace of Death can drive even the most level-headed adventurer to madness and despair. Its effects are said to linger long after the artifact is destroyed, tainting the very essence of those who wield it and beckoning forth a specific entity who trives in the shadows.
-Few dare to seek out the Trace of Death, for its power is as volatile as it is mysterious, and those who venture into the unknown are often consumed by the very darkness that they sought to master. Yet, for the brave, the Trace of Death represents an opportunity to tap into the forbidden knowledge and power that this world has to offer, no matter the cost.");
-
 <enderskills:book>.displayName = "§cGrimoire of the Veil";
 <enderskills:book>.addTooltip("§3Does not drop on death");
 JEI.addDescription(<enderskills:book>,"There are 3 classes you can delve into: Defense, Mobility, and Offense. Each have multiple subclasses. 
@@ -67,6 +65,8 @@ JEI.addDescription(<nethercraft:foulite_dust>,"Foulite Dust, a greenish substanc
 <nethercraft:pyridium_block>.displayName = "Infernium Block";
 <nethercraft:pyridium_ingot>.displayName = "Infernium Ingot";
 JEI.addDescription(<nethercraft:pyridium_ingot>,"Infernium is a rare and powerful ore found exclusively within the The Nether. Born from the ashes of ancient infernal beings that once ruled this realm with their unyielding power of fire and destruction, Infernium is the embodiment of their eternal wrath and fury. This yellow-hued ore glows with an inner light, as if the very souls of those ancient entities still smolder within its core. Harnessing the destructive essence of Infernium requires great courage and skill. When fused with infernal rods and ghast bones, Infernium can create an item capable of summoning the Infernal Fortress.");
+JEI.addDescription(<dynaores:raw_pyridium>,"Infernium is a rare and powerful ore found exclusively within the The Nether. Born from the ashes of ancient infernal beings that once ruled this realm with their unyielding power of fire and destruction, Infernium is the embodiment of their eternal wrath and fury. This yellow-hued ore glows with an inner light, as if the very souls of those ancient entities still smolder within its core. Harnessing the destructive essence of Infernium requires great courage and skill. When fused with infernal rods and ghast bones, Infernium can create an item capable of summoning the Infernal Fortress.");
+
 
 <nethercraft:pyridium_sword>.displayName = "Infernium Sword";
 
@@ -97,6 +97,7 @@ JEI.addDescription(<nethercraft:pyridium_ingot>,"Infernium is a rare and powerfu
 <nethercraft:neridium_block>.displayName = "Veilstrium Block";
 <nethercraft:neridium_ingot>.displayName = "Veilstrium Ingot";
 JEI.addDescription(<nethercraft:neridium_ingot>,"Veilstrium is a rare and mystical ore that can only be found within the depths of The Nether. It is thought to have formed when the essence of countless lost souls seeped into the very fabric of the realm, eventually coalescing and crystallizing into this unique purplish mineral. Veilstrium's origin grants it a supernatural resilience, making it a valuable material for crafting weapons and armor. Its unique properties allow it to absorb and dissipate the malevolent energies that pervade The Nether, bestowing its wielders with an otherworldly endurance. Legends whisper that those who possess items crafted from Veilstrium are not only protected from the dangers of The Nether but may also find themselves attuned to the whispers of the long-forgotten souls trapped within the ore. Such spectral guidance can grant travelers valuable insights and instincts, allowing them to navigate the treacherous realms with greater ease.");
+JEI.addDescription(<dynaores:raw_neridium>,"Veilstrium is a rare and mystical ore that can only be found within the depths of The Nether. It is thought to have formed when the essence of countless lost souls seeped into the very fabric of the realm, eventually coalescing and crystallizing into this unique purplish mineral. Veilstrium's origin grants it a supernatural resilience, making it a valuable material for crafting weapons and armor. Its unique properties allow it to absorb and dissipate the malevolent energies that pervade The Nether, bestowing its wielders with an otherworldly endurance. Legends whisper that those who possess items crafted from Veilstrium are not only protected from the dangers of The Nether but may also find themselves attuned to the whispers of the long-forgotten souls trapped within the ore. Such spectral guidance can grant travelers valuable insights and instincts, allowing them to navigate the treacherous realms with greater ease.");
 
 
 <nethercraft:neridium_sword>.displayName = "Veilstrium Sword";

@@ -1,0 +1,27 @@
+{
+    "name": "The Dreadswine",
+    "icon": "corpsecomplex:scroll",
+    "category": "elara",
+    "advancement": "triumph:advancements/journal_entries/dreadswine_entry",
+    "pages": [
+      {
+        "type": "text",
+        "text": "$(#551012)Entry #7 $(br2)For millennia, I have watched the Dreadswine roam the suffocating abyss of the Nether in ceaseless agony. Once beings of flesh and soul, they were damned to an undead, disgusting existence, their humanity dissolved in a mire of despair and malevolence."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012) These wretched creatures lash out at any who draw near, persisting even through a Runner's rebirth. Driven by a single purpose, they scour these depths for the fabled Dreadstone Tablet, an ancient relic from before their fall, which promises the return of their lost souls and a passage back to the moment of their undoing. Yet, for these lost souls, they have only come across fragments; cruel teases of the oblivion they crave."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)There is a familiarity in their despair that haunts me, a connection to a life long lost. The relic they seek holds more than just a promise of redemption; it holds a mirror to a past intertwined with my own.   I have seen their torment firsthand, my own eyes witnessing their endless search. Each cycle, I return to this hell, memories still intact."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)The Dreadswine are but shadows of what they once were, echoes of a tragic past that cannot be undone. $(br2)Beware, for they are relentless and know no mercy. Seek the fragments if you must, but tread carefully. For in this cursed world, knowledge is as much a burden as it is a boon.$(br2)- Elara"
+      }
+
+
+      
+    ]
+  }
