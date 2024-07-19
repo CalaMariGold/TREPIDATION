@@ -50,6 +50,7 @@ static foulite_dust_entry as IItemStack = <contenttweaker:foulite_dust_entry>;
 static nether_wraith_entry as IItemStack = <contenttweaker:nether_wraith_entry>;
 static veilstrium_entry as IItemStack = <contenttweaker:veilstrium_entry>;
 static infernium_entry as IItemStack = <contenttweaker:infernium_entry>;
+static glowood_entry as IItemStack = <contenttweaker:glowood_entry>;
 
 
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
@@ -89,6 +90,13 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             // Entry # - Infernium
             if (infernium_entry.matches(itemStack1)) {  
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/infernium_entry", event.player, event.world, true, true);
+                //Commands.call("playsound [PAPER SOUND EFFECT] player @p", event.player, event.world, true, true);
+                itemStack1.mutable().shrink(1);
+            }
+
+            // Entry # - Glowood
+            if (glowood_entry.matches(itemStack1)) {  
+                Commands.call("advancement grant @p only triumph:advancements/journal_entries/glowood_entry", event.player, event.world, true, true);
                 //Commands.call("playsound [PAPER SOUND EFFECT] player @p", event.player, event.world, true, true);
                 itemStack1.mutable().shrink(1);
             }

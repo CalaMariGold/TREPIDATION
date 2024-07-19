@@ -20,6 +20,9 @@ import mods.jei.JEI;
 <contenttweaker:infernium_entry>.displayName = "§cElara's Journal - Entry #5";
 <contenttweaker:infernium_entry>.addTooltip("§oA tattered page that was torn from a journal");
 <contenttweaker:infernium_entry>.addTooltip("§3Right-click to add to your Journal");
+<contenttweaker:glowood_entry>.displayName = "§cElara's Journal - Entry #5";
+<contenttweaker:glowood_entry>.addTooltip("§oA tattered page that was torn from a journal");
+<contenttweaker:glowood_entry>.addTooltip("§3Right-click to add to your Journal");
 
 <corpsecomplex:scroll>.displayName = "§cDreadstone Tablet";
 <corpsecomplex:scroll>.addTooltip("§3Use to teleport to your last death");
@@ -134,8 +137,6 @@ Can shatter the barrier, birthed in hellfire.");
 
 JEI.addDescription(<minecraft:blaze_rod>,"Infernal rods, obtained by slaying the fearsome Infernals, serve as a potent source of fuel and illumination. When combined with the fiery essence of Infernium, they can be forged into powerful artifacts and weapons that harness intense heat and destructive energy.");
 
-JEI.addDescription(<nethercraft:glowood_log>,"Glowood Trees are the eerie flora that dot the burning landscape of The Nether. These trees are composed of a unique blend of Glowstone and Basalt, imbuing them with both luminescence and explosive resistance. They are home to the elusive Gloworms, small bioluminescent creatures that dwell within the leaves and are prized for their glow and nourishment.");
-JEI.addDescription(<nethercraft:glow_apple>,"Glowood Trees are the eerie flora that dot the burning landscape of The Nether. Fused long ago, these trees are composed of a unique blend of Glowstone and Basalt, imbuing them with both luminescence and explosive resistance. They are home to the elusive Gloworms, small bioluminescent creatures that dwell within the leaves and are prized for their glow and nourishment.");
 
 <simpleores:tin_pickaxe:*>.displayName = "Quartz Pickaxe";
 <simpleores:tin_pickaxe:*>.addTooltip("§3Bone blocks will always drop 2 ghast bones when mined");

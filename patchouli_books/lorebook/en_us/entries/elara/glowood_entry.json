@@ -1,0 +1,26 @@
+{
+    "name": "Glowood",
+    "icon": "nethercraft:glowood_log",
+    "category": "elara",
+    "advancement": "triumph:advancements/journal_entries/glowood_entry",
+    "pages": [
+      {
+        "type": "spotlight",
+        "item": "nethercraft:glowood_log",
+        "text": "$(#551012)Cycle 4, Entry 2 $(br2)Among the few things that remain familiar to me so far are the Glowood Trees. They stand as eerie beacons amidst the desolation, their luminescent trunks a stark contrast to the darkness around them."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)Composed of a blend of Glowstone and Basalt, these trees have always been a source of both light and materials. I vaguely remember the Nether brimming with life, a rich landscape of diverse flora. The Glowood Trees were among the many vibrant plants that thrived here. Now, these trees—as well as mushrooms dotted across the landscape—seem to be the last remnants of that once lush ecosystem."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)The trees still seem to be home to the Gloworms, tiny bioluminescent creatures that have always fascinated me. These small beings dwell within the leaves, their soft glow providing a mesmerizing light. The Gloworms not only thrive within the protective canopy of the Glowood Trees but also played a crucial role in the ecosystem. Fortunately, they are edible us as well."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)I suppose I will start by making myself some basic materials from the Glowood Trees and get my bearings.$(br2)—Elara"
+      }
+      
+    ]
+}

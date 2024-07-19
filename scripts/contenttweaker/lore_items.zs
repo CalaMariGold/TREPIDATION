@@ -23,3 +23,6 @@ veilstrium_entry.register();
 
 val infernium_entry = mods.contenttweaker.VanillaFactory.createItem("infernium_entry");
 infernium_entry.register();
+
+val glowood_entry = mods.contenttweaker.VanillaFactory.createItem("glowood_entry");
+glowood_entry.register();
