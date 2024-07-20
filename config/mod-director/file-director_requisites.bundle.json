@@ -21,6 +21,18 @@
 	            "installationPolicy": {
 	                "description": "MANDATORY! Downloads CalaMariGold's fork of RPG-HUD from GitHub."
 	            }
+	        },
+		{
+	            "url": "https://cdn.modrinth.com/data/65qOM4nb/versions/1m3gvzYh/Nether-API-v1.3.0-mc1.12.2.jar",
+	            "installationPolicy": {
+	                "description": "MANDATORY! Downloads Nether API from Modrinth."
+	            }
+	        },
+		{
+	            "url": "https://cdn.modrinth.com/data/1JXyEoxt/versions/rBxuYmiX/wyrmsofnyrus-0.5.124.jar",
+	            "installationPolicy": {
+	                "description": "MANDATORY! Downloads Wyrms of Nyrus from Modrinth."
+	            }
 	        }
 	]
 }
