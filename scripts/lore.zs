@@ -14,13 +14,13 @@ import mods.jei.JEI;
 <contenttweaker:nether_wraith_entry>.displayName = "§cElara's Journal - Entry #5";
 <contenttweaker:nether_wraith_entry>.addTooltip("§oA tattered page that was torn from a journal");
 <contenttweaker:nether_wraith_entry>.addTooltip("§3Right-click to add to your Journal");
-<contenttweaker:veilstrium_entry>.displayName = "§cElara's Journal - Entry #5";
+<contenttweaker:veilstrium_entry>.displayName = "§cElara's Journal - Entry #11";
 <contenttweaker:veilstrium_entry>.addTooltip("§oA tattered page that was torn from a journal");
 <contenttweaker:veilstrium_entry>.addTooltip("§3Right-click to add to your Journal");
-<contenttweaker:infernium_entry>.displayName = "§cElara's Journal - Entry #5";
+<contenttweaker:infernium_entry>.displayName = "§cElara's Journal - Entry #15";
 <contenttweaker:infernium_entry>.addTooltip("§oA tattered page that was torn from a journal");
 <contenttweaker:infernium_entry>.addTooltip("§3Right-click to add to your Journal");
-<contenttweaker:glowood_entry>.displayName = "§cElara's Journal - Entry #5";
+<contenttweaker:glowood_entry>.displayName = "§cElara's Journal - Entry #2";
 <contenttweaker:glowood_entry>.addTooltip("§oA tattered page that was torn from a journal");
 <contenttweaker:glowood_entry>.addTooltip("§3Right-click to add to your Journal");
 

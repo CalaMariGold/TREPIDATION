@@ -59,6 +59,8 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
 
         
         if(!isNull(itemStack1)){
+            // Entry #22 - Trace of Death
+
             // Entry #7 - Dreadswine
             if (dreadswine_entry.matches(itemStack1)) {  
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/dreadswine_entry", event.player, event.world, true, true);
@@ -73,28 +75,28 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 itemStack1.mutable().shrink(1);
             }
 
-            // Entry # - Nether Wraith
+            // Entry #5 - Nether Wraith
             if (nether_wraith_entry.matches(itemStack1)) {  
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/nether_wraith_entry", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
                 itemStack1.mutable().shrink(1);
             }
 
-            // Entry # - Veilstrium
+            // Entry #11 - Veilstrium
             if (veilstrium_entry.matches(itemStack1)) {  
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/veilstrium_entry", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
                 itemStack1.mutable().shrink(1);
             }
 
-            // Entry # - Infernium
+            // Entry #15 - Infernium
             if (infernium_entry.matches(itemStack1)) {  
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/infernium_entry", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
                 itemStack1.mutable().shrink(1);
             }
 
-            // Entry # - Glowood
+            // Entry #2 - Glowood
             if (glowood_entry.matches(itemStack1)) {  
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/glowood_entry", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
