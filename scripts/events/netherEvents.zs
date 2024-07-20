@@ -134,6 +134,52 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
 });
 
 
+// Player interact with Dreadswine
+static tablet as IItemStack = <corpsecomplex:scroll>;
+static dreadstone_fragment as IItemStack = <contenttweaker:dreadstone_fragment>;
+events.onPlayerInteractEntity(function(event as crafttweaker.event.PlayerInteractEntityEvent){
+    
+    if(!event.world.isRemote()){
+        val itemStack1 = event.player.currentItem as IItemStack; 
+        if(!isNull(itemStack1)){
+
+            // Dreadstone Tablet
+            if (tablet.matches(itemStack1)) {  
+                if(event.target.definition.name == "PigZombie"){
+                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"As you raise the Dreadstone Tablet to the Dreadswine, it shatters in your hands, releasing a surge of dark energy. You notice faint tear trace down the Dreadswine's face as the fragments of the tablet disintegrate into dust.\",\"color\":\"dark_red\",\"italic\":true}]");
+                    Commands.call("playsound enderskills:syphon player @p ~ ~ ~ 100 0.6", event.player, event.world, true, true);
+                    Commands.call("effect @p wither 5", event.player, event.world, true, true);
+                    itemStack1.mutable().shrink(1);
+                }
+            }
+
+            // Dreadstone Fragment
+            if (dreadstone_fragment.matches(itemStack1)) {  
+                if(event.target.definition.name == "PigZombie"){
+                    if(isNull(event.player.data.testing)){
+                        itemStack1.mutable().shrink(1);
+                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"You carefully hand a fragment of the Dreadstone Tablet to the Dreadswine. It grasps the piece with trembling hands, staring at it intensely before carrying on. \",\"color\":\"dark_red\",\"italic\":true}]");
+                        event.player.update({testing: true});
+                    }
+                    // really stupid work around for interact event triggering twice (only for the fragment?)
+                    event.player.world.catenation()
+                    .run(function(world, context) {
+                        context.data = world.time;
+                    })
+                    .sleep(10)
+                    .then(function(world, context) {
+                        event.player.update({testing: null});
+                    })
+                    .start();
+                    
+                }
+            }
+        }
+    }
+});
+
+
+
 static riftbreaker as IItemStack = <contenttweaker:riftbreaker_crystal>;
 static traceofdeath as IItemStack = <enderskills:token>;
 static scepter as IItemStack = <contenttweaker:infernal_fortress_scepter>;
@@ -218,7 +264,6 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 
             }
         }
-        
     }
 });
 
