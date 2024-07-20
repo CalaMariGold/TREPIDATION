@@ -139,26 +139,9 @@ key_teamsmod.keyhud.desc:47
 key_teamsmod.keycompass.desc:50
 key_teamsmod.keyaccept.desc:27
 key_teamsmod.keyswitch.desc:19
-key_Eatkey:0
-key_Spitkey:0
 key_key.fullscreenwindowed.unused:0
+key_keybind.universaltweaks.clear_toasts:0
 key_key.reload_musictriggers:0
-key_Open Friends Gui:0
-key_Open Cosmetic Studio:0
-key_keybind.name.SCREENSHOT_MANAGER:0
-key_Cosmetic Visibility Toggle:0
-key_Add Friend:0
-key_Chat Peek:0
-key_Invite Friends:0
-key_keybind.name.EMOTE_WHEEL:0
-key_keybind.name.EMOTE_SLOT_1:0
-key_keybind.name.EMOTE_SLOT_2:0
-key_keybind.name.EMOTE_SLOT_3:0
-key_keybind.name.EMOTE_SLOT_4:0
-key_keybind.name.EMOTE_SLOT_5:0
-key_keybind.name.EMOTE_SLOT_6:0
-key_keybind.name.EMOTE_SLOT_7:0
-key_keybind.name.EMOTE_SLOT_8:0
 key_teamsmod.keyhud.desc:0
 key_teamsmod.keycompass.desc:0
 key_key.musictriggers.gui:0
