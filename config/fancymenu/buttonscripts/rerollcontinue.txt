@@ -2,4 +2,3 @@ mimicbutton:net.minecraft.client.gui.GuiIngameMenu:button_compatibility_id:mc_pa
 sendmessage: /reroll
 sendmessage: /fmvariable set timesup false false
 sendmessage: /effect @p minecraft:resistance 10 255
-sendmessage: /playsound enderskills:sacrifice master @p
