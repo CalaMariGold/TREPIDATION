@@ -3,6 +3,7 @@
   "icon": "trepidation:movement.png",
   "category": "introduction",
   "sortnum": 2,
+  "advancement": "triumph:advancements/dimensions/start",
   "pages": [
     {
       "type": "text",

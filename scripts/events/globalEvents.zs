@@ -87,6 +87,8 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
 	if (isNull(event.player.data.firstTimeJoin)) {
         server.commandManager.executeCommand(server, "scoreboard objectives add timerbonus dummy");
         server.commandManager.executeCommand(server, "op " + event.player.name);
+        server.commandManager.executeCommand(server, "advancement grant @p only triumph:advancements/dimensions/start");
+        
         event.player.update({firstTimeJoin: true});
     }
 });

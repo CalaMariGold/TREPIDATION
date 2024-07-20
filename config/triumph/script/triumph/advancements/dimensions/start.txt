@@ -1,0 +1,14 @@
+setIcon(<minecraft:netherrack>)
+setTitle("Start")
+setDescription("Start")
+
+addParent("triumph:advancements/dimensions/root")
+
+
+addCriteria("impossible", "minecraft:impossible")
+
+
+setShowToast(false)
+setAnnounceToChat(false)
+hideLines()
+setPos(999999,99999)

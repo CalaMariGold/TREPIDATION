@@ -2,6 +2,7 @@
   "name": "ASCEND",
   "icon": "minecraft:netherrack",
   "category": "nether",
+  "advancement": "triumph:advancements/dimensions/start",
   "pages": [
     {
       "type": "text",

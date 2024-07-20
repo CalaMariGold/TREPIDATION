@@ -3,6 +3,7 @@
   "icon": "timeisup:timer_bonus",
   "category": "introduction",
   "sortnum": 1,
+  "advancement": "triumph:advancements/dimensions/start",
   "pages": [
     {
       "type": "text",
