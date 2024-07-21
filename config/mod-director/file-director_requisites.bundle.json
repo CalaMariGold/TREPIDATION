@@ -33,6 +33,12 @@
 	            "installationPolicy": {
 	                "description": "MANDATORY! Downloads Wyrms of Nyrus from Modrinth."
 	            }
+	        },
+		{
+	            "url": "https://cdn.modrinth.com/data/56lchpxd/versions/lb2yrQHr/synlib-2.0.jar",
+	            "installationPolicy": {
+	                "description": "MANDATORY! Downloads SynapseLib (depedency of Wryms) from Modrinth."
+	            }
 	        }
 	]
 }
