@@ -7,10 +7,10 @@
   "handlers": {
     "explosion": {
       "enabled": true,
-      "opacity": 0.69905955,
+      "opacity": 0.59874606,
       "dust": {
         "disabled": false,
-        "opacity": 1.0,
+        "opacity": 0.5956113,
         "animationSpeed": 0,
         "scale": {
           "min": 0.2,
@@ -18,14 +18,14 @@
         }
       },
       "dustDuration": {
-        "min": 500,
-        "max": 1000
+        "min": 100,
+        "max": 200
       },
       "dustAmount": {
         "min": 0,
         "minValue": 0,
-        "max": 20,
-        "maxValue": 30
+        "max": 5,
+        "maxValue": 15
       },
       "maxExplosionVolume": 0.2,
       "explosionSoundTime": {
@@ -47,8 +47,8 @@
       "explosionBlurTime": {
         "min": 0,
         "minValue": 10,
-        "max": 15,
-        "maxValue": 15
+        "max": 13,
+        "maxValue": 13
       }
     },
     "potion": {
@@ -109,7 +109,7 @@
       "hitEffectIntensity": 0.0,
       "hitDuration": {
         "min": 1,
-        "max": 10
+        "max": 5
       },
       "splatter": {
         "disabled": false,
@@ -149,7 +149,7 @@
       },
       "bloodDuration": {
         "min": 500,
-        "max": 1500
+        "max": 800
       },
       "fire": {
         "disabled": false,
