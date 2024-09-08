@@ -3,3 +3,4 @@ title @p subtitle {"text":"Move quickly, but watch your step", "color":"yellow"}
 title @p title {"text":"The Nether", "bold":false, "italic":false, "color":"red"}
 gamestage silentadd @p nether
 playsound enderskills:sacrifice master @p
+advancement grant @p only triumph:advancements/dimensions/start
