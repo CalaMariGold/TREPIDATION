@@ -73,7 +73,7 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <nethercraft:pyridium_ore>.displayName = "Infernium Ore";
 <nethercraft:pyridium_block>.displayName = "Infernium Block";
 <nethercraft:pyridium_ingot>.displayName = "Infernium Ingot";
-JEI.addDescription(<nethercraft:pyridium_ingot>,"Infernium is a rare and powerful ore found exclusively within the The Nether. Born from the ashes of ancient infernal beings that once ruled this realm with their unyielding power of fire and destruction, Infernium is the embodiment of their eternal wrath and fury. This yellow-hued ore glows with an inner light, as if the very souls of those ancient entities still smolder within its core. Harnessing the destructive essence of Infernium requires great courage and skill. When fused with infernal rods and ghast bones, Infernium can create an item capable of summoning the Infernal Fortress.");
+JEI.addDescription(<nethercraft:pyridium_ingot>,"Infernium is a rare and powerful ore found exclusively within the The Nether. Born from the ashes of ancient infernal beings that once ruled this realm with their unyielding power of fire and destruction, Infernium is the embodiment of their eternal wrath and fury. This yellow-hued ore glows with an inner light, as if the very souls of those ancient entities still smolder within its core. Harnessing the destructive essence of Infernium requires great courage and skill. When fused with infernal rods and nether wraith bones, Infernium can create an item capable of summoning the Infernal Fortress.");
 
 
 <nethercraft:pyridium_sword>.displayName = "Infernium Sword";
@@ -139,7 +139,7 @@ JEI.addDescription(<minecraft:blaze_rod>,"Infernal rods, obtained by slaying the
 
 
 <simpleores:tin_pickaxe:*>.displayName = "Quartz Pickaxe";
-<simpleores:tin_pickaxe:*>.addTooltip("§3Bone blocks will always drop 2 ghast bones when mined");
+<simpleores:tin_pickaxe:*>.addTooltip("§3Bone blocks will always drop 2 nether wraith bones when mined");
 
 <nethercraft:neridium_bow:*>.displayName = "Quartz Bow";
 <nethercraft:neridium_bow:*>.addTooltip("§21.0s Draw Speed");
