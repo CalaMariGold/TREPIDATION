@@ -94,12 +94,31 @@ Dropt.list("no_glowood_sapling")
     .addDrop(Dropt.drop())
   );
 
+
+
+
 // Ghast Bones Drop
-  Dropt.list("ghast_bones")
+Dropt.list("ghast_bones")
+    .add(Dropt.rule()
+        .matchBlocks(["minecraft:bone_block:*"])
+        .matchHarvester(Dropt.harvester()
+            .type("PLAYER")
+            .mainHand([
+                <simpleores:tin_pickaxe:*>
+            ])
+        )
+        .addDrop(Dropt.drop()
+            .force()
+            .selector(Dropt.weight(100))
+            .items([<nethercraft:ghast_bones>], Dropt.range(2, 2))
+        )
+);
+
+Dropt.list("ghast_bones")
   .add(Dropt.rule()
       .matchBlocks(["minecraft:bone_block:*"])
       .addDrop(Dropt.drop()
-          .selector(Dropt.weight(65)) // drop nothing 75% of the time
+          .selector(Dropt.weight(70)) // drop nothing 70% of the time
       )
       .addDrop(Dropt.drop()
           .selector(Dropt.weight(25))
@@ -107,25 +126,11 @@ Dropt.list("no_glowood_sapling")
       )
       .addDrop(Dropt.drop()
           .selector(Dropt.weight(10))
-          .items([<minecraft:ghast_tear>])
+          .items([<nethercraft:ghast_bones>,<minecraft:ghast_tear>])
       )
   );
 
-  Dropt.list("ghast_bones_100")
-  .add(Dropt.rule()
-      .matchBlocks(["minecraft:bone_block:*"])
-      .matchHarvester(Dropt.harvester()
-          .type("PLAYER")
-          .mainHand([
-              <simpleores:tin_pickaxe:*>
-          ])
-      )
-      .addDrop(Dropt.drop()
-          .force()
-          .selector(Dropt.weight(100))
-          .items([<nethercraft:ghast_bones>], Dropt.range(2, 2))
-      )
-  );
+  
 
   
 
