@@ -1,9 +1,9 @@
 type = menu
 
 customization-meta {
-  identifier = vazkii.patchouli.client.book.gui.GuiBookCategory
+  identifier = vazkii.patchouli.client.book.gui.GuiBookIndex
   randomgroup = 1
-  renderorder = background
+  renderorder = foreground
   randommode = false
   randomonlyfirsttime = false
 }
@@ -27,7 +27,7 @@ customization {
   x = -37
   width = 106
   action = custom_layout_element:fancymenu_customization_item_text
-  actionid = fa6d5fa6-0697-4c42-ae59-3ef17f2c0d7a1729719610862
+  actionid = 92658a0e-a86a-4f7c-a233-b94154943b221729719628264
   y = -191
   alignment = left
   base_color = 000000

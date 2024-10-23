@@ -66,3 +66,9 @@ vazkii.patchouli.client.book.gui.GuiBookEntry {
 mezz.jei.gui.recipes.RecipesGui {
 }
 
+vazkii.patchouli.client.book.gui.GuiBookIndex {
+}
+
+vazkii.patchouli.client.book.gui.GuiBookHistory {
+}
+
