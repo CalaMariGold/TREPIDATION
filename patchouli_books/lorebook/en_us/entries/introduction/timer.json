@@ -3,7 +3,7 @@
   "icon": "timeisup:timer_bonus",
   "category": "introduction",
   "sortnum": 1,
-  "advancement": "triumph:advancements/dimensions/start",
+  "advancement": "triumph:advancements/dimensions/nether",
   "pages": [
     {
       "type": "text",
