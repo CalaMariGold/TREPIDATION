@@ -118,6 +118,7 @@ JEI.addDescription(<nethercraft:pyridium_ingot>,"Infernium is a rare and powerfu
 
 <contenttweaker:riftbreaker_crystal>.displayName = "§cRiftbreaker Crystal";
 <contenttweaker:riftbreaker_crystal>.addTooltip("§oAn explosive gem that obliterates everything in its vertical path and catapults all allies skyward");
+<contenttweaker:riftbreaker_crystal>.addTooltip("§3Only usable in the Nether");
 
 <contenttweaker:infernal_fortress_scepter>.displayName = "§cScepter of Infernal Conjuring";
 <contenttweaker:infernal_fortress_scepter>.addTooltip("§oA formidable artifact that holds the power to materialize a gargantuan fortress, shrouded in whispers of an ancient and fearsome presence");
