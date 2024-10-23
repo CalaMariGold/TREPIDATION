@@ -14,12 +14,12 @@ customization {
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_deathscreen_titlemenu_button%
+  identifier = %id=button_compatibility_id:mc_deathscreen_respawn_button%
   action = hidebutton
 }
 
 customization {
-  identifier = %id=400322%
+  identifier = %id=button_compatibility_id:mc_deathscreen_respawn_button%
   orientation = top-centered
   x = -100
   action = movebutton
@@ -27,20 +27,20 @@ customization {
 }
 
 customization {
-  identifier = %id=400322%
+  identifier = %id=button_compatibility_id:mc_deathscreen_respawn_button%
   width = 201
   action = resizebutton
   height = 20
 }
 
 customization {
-  identifier = %id=400322%
+  identifier = %id=button_compatibility_id:mc_deathscreen_respawn_button%
   action = setbuttonlabel
   value = Rebirth Nearby
 }
 
 customization {
-  identifier = %id=400322%
+  identifier = %id=button_compatibility_id:mc_deathscreen_respawn_button%
   seconds = 1.0
   onlyfirsttime = false
   fadein = true
@@ -49,13 +49,13 @@ customization {
 }
 
 customization {
-  identifier = %id=400322%
+  identifier = %id=button_compatibility_id:mc_deathscreen_respawn_button%
   action = vanilla_button_visibility_requirements
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:501bde10-c996-41a4-8fcd-7844e5834a5f1705784707096] = timesup:false
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_deathscreen_respawn_button%
+  identifier = %id=button_compatibility_id:mc_deathscreen_titlemenu_button%
   action = hidebutton
 }
 
@@ -74,7 +74,7 @@ customization {
   width = 99
   action = addbutton
   actionid = d3718b4b-fd9d-4fd3-8827-0a17f8ad3e811677090866197
-  y = 227
+  y = 150
   delayappearance = true
   delayappearanceeverytime = true
   height = 20
@@ -94,7 +94,7 @@ customization {
   width = 201
   action = addbutton
   actionid = 3305ff8e-c06e-4fa0-9311-d66786e638f61677098053927
-  y = 144
+  y = 121
   delayappearance = true
   delayappearanceeverytime = true
   height = 20
@@ -103,7 +103,7 @@ customization {
 customization {
   orientation = top-centered
   restartbackgroundanimations = true
-  delayappearanceseconds = 1.5
+  delayappearanceseconds = 1.7
   buttonaction = mimicbutton;net.minecraft.client.gui.GuiGameOver:button_compatibility_id:mc_deathscreen_titlemenu_button%btnaction_splitter_fm%
   label = Escape
   loopbackgroundanimations = true
@@ -113,7 +113,7 @@ customization {
   width = 201
   action = addbutton
   actionid = 646d4f9a-1c5e-4f6c-92d5-cea0d9f60f051677098642232
-  y = 203
+  y = 258
   delayappearance = true
   delayappearanceeverytime = true
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:129df319-3967-4d32-a993-248a7687e4271705784728918] = timesup:false
@@ -135,23 +135,23 @@ customization {
   width = 99
   action = addbutton
   actionid = cb6b82b2-db72-4df8-b918-f5ee67e10d9a1679249886937
-  y = 227
+  y = 150
   delayappearance = true
   delayappearanceeverytime = true
   height = 20
 }
 
 customization {
-  orientation = top-left
+  orientation = top-centered
   loopbackgroundanimations = true
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:b417a917-3a36-492c-a3f3-1f5e970ed4e21705786087262] = timesup:true
   restartbackgroundanimations = true
   buttonaction = runscript;continuerun%btnaction_splitter_fm%sendmessage;/tpp {"placeholder":"playername"} 684 100 500 100%btnaction_splitter_fm%sendmessage;/effect @p minecraft:resistance 99999 255%btnaction_splitter_fm%
-  x = 271
+  x = -50
   width = 100
   action = addbutton
   actionid = bc036a40-285e-4196-91d6-a7ceefb3277e1705786038406
-  y = 144
+  y = 121
   label = Give up
   height = 20
 }
