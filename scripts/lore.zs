@@ -4,6 +4,11 @@ import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
 import mods.jei.JEI;
 
+var pickaxes = itemUtils.getItemsByRegexRegistryName(".*pickaxe.*");
+for pickaxe in pickaxes{
+    pickaxe.addTooltip("§3Does not drop on death");
+}
+
 // Lore entries
 <contenttweaker:dreadswine_entry>.displayName = "§cElara's Journal - Entry #7";
 <contenttweaker:dreadswine_entry>.addTooltip("§oA tattered page that was torn from a journal");
