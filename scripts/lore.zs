@@ -186,6 +186,9 @@ JEI.addDescription(<contenttweaker:vitality_orb>,"The Orb of Veilheart, a miracu
 <scalinghealth:heartcontainer>.removeTooltip("Increases maximum health");
 <scalinghealth:heartcontainer>.addTooltip("§oA precious relic of vitality, bestowing its user with a permanently increased life force");
 <scalinghealth:heartcontainer>.addTooltip("§3Uses 2 levels");
+<scalinghealth:heartdust>.addTooltip("§3Right-click to restore 1 heart");
+
+
 <minecraft:torch>.addTooltip("§3Does not drop on death");
 <artifacts:shiny_red_balloon>.addTooltip("§3You must wait until the end of the jump animation to initiate double jump with this equipped");
 

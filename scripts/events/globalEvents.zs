@@ -46,6 +46,23 @@ import crafttweaker.entity.AttributeModifier;
 import mods.contenttweaker.Commands;
 
 
+// Heart Dust Healing
+static heart_dust as IItemStack = <scalinghealth:heartdust>;
+events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
+    if(!event.world.isRemote()){
+        val itemstack = event.item as IItemStack; 
+        if(!isNull(itemstack)){
+            if (heart_dust.matches(itemstack)) {  
+
+                Commands.call("heal 1 @p", event.player, event.world, true, true);
+                event.player.health = event.player.health + 1;  
+                
+                itemstack.mutable().shrink(1);
+            }
+        }
+    }
+});
+
 
 // Soul Anchor: sets spawn
 static soul_anchor as IItemStack = <contenttweaker:soul_anchor>;
