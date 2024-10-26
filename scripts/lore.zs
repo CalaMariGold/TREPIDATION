@@ -30,11 +30,9 @@ for pickaxe in pickaxes{
 <contenttweaker:glowood_entry>.addTooltip("§3Right-click to add to your Journal");
 
 <corpsecomplex:scroll>.displayName = "§cDreadstone Tablet";
-<corpsecomplex:scroll>.addTooltip("§3Use to teleport to your last death");
-<corpsecomplex:scroll>.addTooltip("§3Does not drop on death");
+<corpsecomplex:scroll>.addTooltip("§3Use to teleport to your last death location");
 <corpsecomplex:scroll>.removeTooltip("Return to death location");
 <contenttweaker:dreadstone_fragment>.displayName = "Dreadstone Fragment";
-<contenttweaker:dreadstone_fragment>.addTooltip("§3Does not drop on death");
 <contenttweaker:dreadstone_fragment>.addTooltip("§oWhen touched, the fragment makes a subtle vibration in sync with the pulse of your heartbeat");
 
 

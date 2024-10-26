@@ -55,7 +55,7 @@ furnace.addRecipe(<contenttweaker:scrambled_magma_eggs>, <nethercraft:slime_eggs
 recipes.addShapeless("deviled_egg_sandwich", <contenttweaker:deviled_egg_sandwich>,[<contenttweaker:scrambled_magma_eggs>, <nethercraft:devil_bread>, <minecraft:magma_cream>]);
 
 recipes.remove(<corpsecomplex:scroll>);
-recipes.addShapeless("dreadstone_tablet", <corpsecomplex:scroll>,[<contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>,<contenttweaker:dreadstone_fragment>, <nethercraft:foulite_dust>, <contenttweaker:dreadstone_fragment>,<contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>]);
+recipes.addShapeless("dreadstone_tablet", <corpsecomplex:scroll>,[<contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>,<contenttweaker:dreadstone_fragment>, <nethercraft:foulite_dust>]);
 
 
 var green_glowshroom = <nethercraft:green_glowshroom>;
@@ -68,17 +68,6 @@ recipes.addShapeless("glowstew", <nethercraft:glow_stew>,[green_glowshroom, purp
 recipes.remove(<minecraft:mushroom_stew>);
 recipes.addShapeless("mushroom_stew_new", <minecraft:mushroom_stew>,[<ore:mushroomAny>,<ore:mushroomAny>, <minecraft:bowl>]);
 
-
-
-recipes.remove(<scalinghealth:healingitem:1>);
-recipes.addShapeless("medkit", <scalinghealth:healingitem:1>, [<scalinghealth:healingitem>, <scalinghealth:healingitem>, <scalinghealth:healingitem>]);
-
-recipes.remove(<scalinghealth:healingitem>);
-recipes.addShaped("bandage", <scalinghealth:healingitem>,
-[[null,null,null],
-[<nethercraft:foulite_dust>,<nethercraft:foulite_dust>,<nethercraft:foulite_dust>],
-[<ore:paper>,<ore:paper>,<ore:paper>]
-]);
 
 
 recipes.remove(<nethercraft:neridium_lighter>);
