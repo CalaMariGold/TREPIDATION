@@ -12,7 +12,7 @@
 	            "installationPolicy": {
 	                "description": "MANDATORY! Downloads OptiFine from the official site."
 	            }
-	        },
+	    },
 		{
 	            "url": "https://github.com/CalaMariGold/RPG-Hud-1.12/releases/download/v3.8.2.1/1.12.Forge.RPG-HUD-3.8.2.jar",
 	            "metadata": {
@@ -21,25 +21,25 @@
 	            "installationPolicy": {
 	                "description": "MANDATORY! Downloads CalaMariGold's fork of RPG-HUD from GitHub."
 	            }
-	        },
+	    },
 		{
 	            "url": "https://cdn.modrinth.com/data/65qOM4nb/versions/1m3gvzYh/Nether-API-v1.3.0-mc1.12.2.jar",
 	            "installationPolicy": {
 	                "description": "MANDATORY! Downloads Nether API from Modrinth."
 	            }
-	        },
+	    },
 		{
 	            "url": "https://cdn.modrinth.com/data/1JXyEoxt/versions/rBxuYmiX/wyrmsofnyrus-0.5.124.jar",
 	            "installationPolicy": {
 	                "description": "MANDATORY! Downloads Wyrms of Nyrus from Modrinth."
 	            }
-	        },
+	    },
 		{
 	            "url": "https://cdn.modrinth.com/data/56lchpxd/versions/lb2yrQHr/synlib-2.0.jar",
 	            "installationPolicy": {
 	                "description": "MANDATORY! Downloads SynapseLib (depedency of Wryms) from Modrinth."
 	            }
-	        },
+	    },
 		{
 	            "url": "https://cdn.modrinth.com/data/Si3V1hU5/versions/rikVrppT/hitindication-1.12.2-2.0.jar",
 	            "metadata": {
@@ -48,6 +48,24 @@
 	            "installationPolicy": {
 	                "description": "MANDATORY! Downloads Hit Indication from Modrinth."
 	            }
-	        }
+	    },
+		{
+            "url": "https://raw.githubusercontent.com/CalaMariGold/TREPIDATION/refs/heads/main/config/triumph/script/triumph/advancements/hidden/unlock_journal.txt",
+            "folder": "config/triumph/script/triumph/advancements/hidden",
+            "installationPolicy": {
+                "downloadAlways": true,
+                "description": "Hotfix for Journal Entries"
+            }
+        },
+		{
+            "url": "https://raw.githubusercontent.com/CalaMariGold/TREPIDATION/refs/heads/main/scripts/events/globalEvents.zs",
+            "folder": "scripts/events",
+            "installationPolicy": {
+                "downloadAlways": true,
+                "description": "Hotfix for Journal Entries"
+            }
+        }
+
+		
 	]
 }
