@@ -103,7 +103,18 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
 	if (isNull(event.player.data.firstTimeJoin)) {
         server.commandManager.executeCommand(server, "scoreboard objectives add timerbonus dummy");
         server.commandManager.executeCommand(server, "op " + event.player.name);
-        server.commandManager.executeCommand(server, "advancement grant @p only triumph:advancements/dimensions/start");
+        Commands.call("advancement grant @p only triumph:advancements/dimensions/start", event.player, event.entity.world, true, true);
+
+        // for some reason, journal entries only unlock after an achievement is granted a few seconds after world start
+        event.player.world.catenation()
+        .run(function(world, context) {
+            context.data = world.time;
+        })
+        .sleep(100)
+        .then(function(world, context) {
+            Commands.call("advancement grant @p only triumph:advancements/hidden/unlock_journal", event.player, event.entity.world, true, true);
+        })
+        .start();
         
         event.player.update({firstTimeJoin: true});
     }

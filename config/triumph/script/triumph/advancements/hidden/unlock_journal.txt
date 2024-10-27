@@ -1,0 +1,17 @@
+setIcon(<minecraft:grass>)
+setTitle("hidden")
+setDescription("")
+
+
+addParent("triumph:advancements/hidden/root")
+
+setShowToast(false)
+setAnnounceToChat(false)
+
+criteria = addCriteria("unlock_journal", "minecraft:inventory_changed")
+criteria.addItem("minecraft:bedrock")
+
+hideLines()
+
+alwaysHidden()
+setHidden(true)
