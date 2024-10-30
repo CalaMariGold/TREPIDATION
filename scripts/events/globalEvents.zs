@@ -54,7 +54,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
         if(!isNull(itemstack)){
             if (heart_dust.matches(itemstack)) {  
 
-                Commands.call("playsound enderskills:heal_self master CalaMariGold ~ ~ ~ 0.5 1.7", event.player, event.world, true, true);
+                Commands.call("playsound enderskills:heal_self master @p ~ ~ ~ 0.5 1.7", event.player, event.world, true, true);
                 event.player.health = event.player.health + 1;  
                 itemstack.mutable().shrink(1);
             }
