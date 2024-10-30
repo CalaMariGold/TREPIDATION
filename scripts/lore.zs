@@ -73,7 +73,7 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 
 <da:abberrant_eye>.displayName = "§fEcho of Betrayal";
 <da:abberrant_eye>.removeTooltip("Crafting Material");
-<da:abberrant_eye>.addTooltip("§oPress it to ancient stone, and the past will ignite once more");
+<da:abberrant_eye>.addTooltip("§oPress it to an ancient stone, and the past will ignite once more");
 
 
 <da:flame_helmet>.removeTooltip("Full set gives Strength 1, Fire Resistance 1 and boosts AOE range by the Sword of Ambition");

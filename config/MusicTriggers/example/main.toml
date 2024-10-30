@@ -80,7 +80,7 @@
 			num_loops = "999"
 			from = "127800"
 		triggers = [ "mob-wither" ]
-	[songs.warden_malicious_kevinmacleod]
+	[songs.warden_might_have_fallen_aaron_woodhouse]
 		triggers = [ "mob-warden" ]
 	[songs.universal]
 	[songs.nether_youknowwhatineed_coagmusic]
