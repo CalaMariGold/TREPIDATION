@@ -15,6 +15,11 @@
     },
     {
         "mob":"da:flame_knight",
+        "item": "nethercraft:ghast_bones",
+        "itemcount": "4-6"
+    },
+    {
+        "mob":"da:flame_knight",
         "item": "contenttweaker:infernal_core",
         "itemcount": "1"
     },
