@@ -133,6 +133,20 @@ events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
 // Output some neccessary speedrun information in chat when escaping a dimension for the first time
 events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChangedDimensionEvent){
 
+    if((event.to == 684)){
+
+        // visitor in limbo
+        event.player.world.catenation()
+            .run(function(world, context) {
+                context.data = world.time;
+            })
+            .sleep(500)
+            .then(function(world, context) {
+                Commands.call("summon wyrmsofnyrus:thevisitor ~ ~+100 ~", event.player, event.entity.world, true, true);
+                Commands.call("playsound wyrmsofnyrus:visitormessage master @p ~ ~ ~ 10.0 0.5", event.player, event.entity.world, true, true);
+            })
+            .start();
+    }
 
     // Nether to Erebus
     if((event.from == -1 && event.to == 5)){
@@ -213,6 +227,7 @@ events.onEntityLivingUpdate(function(event as crafttweaker.event.EntityLivingUpd
                 server.commandManager.executeCommand(server, "effect @p srparasites:fear 99999 0");
                 server.commandManager.executeCommand(server, "effect @p elenaidodge2:weight 99999 0");
                 server.commandManager.executeCommand(server, "hunger @p 20");
+                player.health = player.health + 1;  
             }
         }
     }
@@ -235,18 +250,6 @@ EventManager.getInstance().onTimeIsUp(function(event as TimeIsUpEvent){
                 //player teleported via fancymenu
                 server.commandManager.executeCommand(server, "advancement grant @p only triumph:advancements/dimensions/limbo");
                 server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your effort is meaningless. Welcome to your eternity.\",\"color\":\"dark_red\",\"italic\":false}]");
-                
-                
-                event.player.world.catenation()
-                .run(function(world, context) {
-                    context.data = world.time;
-                })
-                .sleep(300)
-                .then(function(world, context) {
-                    Commands.call("summon wyrmsofnyrus:thevisitor ~ ~+100 ~", event.player, event.entity.world, true, true);
-                    Commands.call("playsound wyrmsofnyrus:visitormessage master CalaMariGold ~ ~ ~ 10.0 0.5", event.player, event.entity.world, true, true);
-                })
-                .start();
                 
             });
         }
