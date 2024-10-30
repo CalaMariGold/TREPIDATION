@@ -49,10 +49,10 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <contenttweaker:infernal_core>.addTooltip("§oA core forged in fire and grief, held only by an Ashen who remembers its purpose.");
 
 
-<da:flame_helmet>.displayName = "§cInfernal Ashen Helmet";
-<da:flame_chestplate>.displayName = "§cInfernal Ashen Chestplate";
-<da:flame_boots>.displayName = "§cInfernal Ashen Boots";
-<da:flame_leggings>.displayName = "§cInfernal Ashen Leggings";
+<da:flame_helmet:*>.displayName = "§cInfernal Ashen Helmet";
+<da:flame_chestplate:*>.displayName = "§cInfernal Ashen Chestplate";
+<da:flame_boots:*>.displayName = "§cInfernal Ashen Boots";
+<da:flame_leggings:*>.displayName = "§cInfernal Ashen Leggings";
 
 <da:fire_stone_lit>.displayName = "§cAncient Infernal Brick";
 <da:fire_stone>.displayName = "Ashen Stone Brick";
@@ -61,14 +61,14 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <da:fire_stone_half>.displayName = "Ashen Stone Brick Slab";
 
 <da:flame_metal_scrap>.displayName = "§fInert Infernium";
-<da:ambition_sword>.displayName = "§cBlade of the Last Vigil";
+<da:ambition_sword:*>.displayName = "§cBlade of the Last Vigil";
 <da:ambition_flame>.displayName = "§cIn the Wake of Fire, We Were Forsaken";
 <da:ambition_sword:*>.removeTooltip("May it spark you forward! Right clicking launches an AOE attack, and sword is resistant to fire");
 <da:flame_metal_scrap>.removeTooltip("Crafting Material");
 <da:ambition_flame>.removeTooltip("Crafting Material");
 <da:ambition_flame>.removeTooltip("§cUsed to light the floating obelisk in the dungeon");
-<da:ambition_sword>.addTooltip("§oThis blade carries not rage, but the weight of what could not be saved");
-<da:ambition_sword>.addTooltip("§3Right-click to launch an AOE attack around you");
+<da:ambition_sword:*>.addTooltip("§oThis blade carries not rage, but the weight of what could not be saved");
+<da:ambition_sword:*>.addTooltip("§3Right-click to launch an AOE attack around you");
 <da:ambition_flame>.addTooltip("§oTouch it, and remember what even time could not erase.");
 
 <da:abberrant_eye>.displayName = "§fEcho of Betrayal";
@@ -76,10 +76,10 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <da:abberrant_eye>.addTooltip("§oPress it to an ancient stone, and the past will ignite once more");
 
 
-<da:flame_helmet>.removeTooltip("Full set gives Strength 1, Fire Resistance 1 and boosts AOE range by the Sword of Ambition");
-<da:flame_chestplate>.removeTooltip("Full set gives Strength 1, Fire Resistance 1 and boosts AOE range by the Sword of Ambition");
-<da:flame_leggings>.removeTooltip("Full set gives Strength 1, Fire Resistance 1 and boosts AOE range by the Sword of Ambition");
-<da:flame_boots>.removeTooltip("Full set gives Strength 1, Fire Resistance 1 and boosts AOE range by the Sword of Ambition");
+<da:flame_helmet:*>.removeTooltip("Full set gives Strength 1, Fire Resistance 1 and boosts AOE range by the Sword of Ambition");
+<da:flame_chestplate:*>.removeTooltip("Full set gives Strength 1, Fire Resistance 1 and boosts AOE range by the Sword of Ambition");
+<da:flame_leggings:*>.removeTooltip("Full set gives Strength 1, Fire Resistance 1 and boosts AOE range by the Sword of Ambition");
+<da:flame_boots:*>.removeTooltip("Full set gives Strength 1, Fire Resistance 1 and boosts AOE range by the Sword of Ambition");
 
 
 
