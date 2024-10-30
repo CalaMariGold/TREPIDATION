@@ -53,7 +53,7 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
     if(!event.world.isRemote()){
         val itemStack = event.item as IItemStack;     
         if ((itemStack.definition.id).matches(abberrant_mana.definition.id)) {  
-            if(event.block.displayName == "Fiery Lit Stonebrick"){
+            if(event.block.displayName == "§cAncient Infernal Brick"){
                 Commands.call("summon item " + event.x + " " + event.y + " " + event.z + " {Item:{id:\"da:flame_metal_scrap\", Count:1}}", event.player, event.entity.world, true, true);
                 Commands.call("setblock " + event.x + " " + event.y + " " + event.z + " minecraft:air", event.player, event.entity.world, true, true);
                 
