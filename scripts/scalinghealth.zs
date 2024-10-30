@@ -9,6 +9,8 @@ import mods.ltt.LootTable;
 import mods.dropt.Dropt;
 
 
+recipes.addShapeless("heartcrystals", <scalinghealth:crystalshard>*8,[<scalinghealth:heartcontainer>]);
+
 
 recipes.remove(<scalinghealth:heartdust>);
 recipes.addShapeless("heartdust", <scalinghealth:heartdust>*2,[<scalinghealth:crystalshard>]);
