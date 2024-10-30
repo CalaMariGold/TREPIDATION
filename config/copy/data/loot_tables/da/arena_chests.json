@@ -20,6 +20,22 @@
           "name": "nethercraft:neridium_ingot"
         },
         {
+          "entryName": "da:flame_metal_scrap",
+          "weight": 15,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 1.0,
+                "max": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "da:flame_metal_scrap"
+        },
+        {
           "entryName": "nethercraft:pyridium_sword",
           "weight": 3,
           "quality": 0,
@@ -84,7 +100,7 @@
         },
         {
           "entryName": "timeisup:timer_bonus",
-          "weight": 1,
+          "weight": 3,
           "quality": 0,
           "type": "item",
           "name": "timeisup:timer_bonus"
