@@ -44,18 +44,34 @@ for pickaxe in pickaxes{
 JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with ancient blood, the Soul Anchor hums in the dark, its eerie blue aura a beacon to the lost. Use it, and find yourself forever tethered to its haunting pull. A new life granted, but at what cost? For each return bears a toll on the soul's uncharted map.");
 
 
-// RENAME THESE!!!!
-<da:flame_metal_scrap>.displayName = "Flame Metal Scrap";
-<da:ambition_sword>.displayName = "§cGreatsword of Ambition";
-<da:ambition_flame>.displayName = "§cFlame of Ambition";
-<da:ambition_sword>.removeTooltip("May it spark you forward! Right clicking launches an AOE attack, and sword is resistant to fire");
-<da:ambition_flame>.removeTooltip("§cUsed to light the floating obelisk in the dungeon");
-<da:ambition_sword>.addTooltip("§oLORE GOES HERE!!!!!");
-<da:ambition_sword>.addTooltip("§3Right-click to launch an AOE attack around you");
-<da:ambition_flame>.addTooltip("§oLORE GOES HERE!!!!!");
+// Ashen and Infernals
+<contenttweaker:infernal_core>.displayName = "§cInfernal Core";
 
-<da:abberrant_eye>.displayName = "Abberant Mana";
-<da:abberrant_eye>.addTooltip("§oLORE GOES HERE!!!!!");
+<da:flame_helmet>.displayName = "§cInfernal Ashen Helmet";
+<da:flame_chestplate>.displayName = "§cInfernal Ashen Chestplate";
+<da:flame_boots>.displayName = "§cInfernal Ashen Boots";
+<da:flame_leggings>.displayName = "§cInfernal Ashen Leggings";
+
+<da:fire_stone_lit>.displayName = "§cAncient Infernal Brick";
+<da:fire_stone>.displayName = "Ashen Stone Brick";
+<da:fire_stone_stairs>.displayName = "Ashen Stone Brick Stairs";
+<da:fire_stone_wall>.displayName = "Ashen Stone Brick Wall";
+<da:fire_stone_half>.displayName = "Ashen Stone Brick Slab";
+
+<da:flame_metal_scrap>.displayName = "Inert Infernium";
+<da:ambition_sword>.displayName = "§cBlade of the Last Vigil";
+<da:ambition_flame>.displayName = "§cIn the Wake of Fire, We Were Forsaken";
+<da:ambition_sword>.removeTooltip("May it spark you forward! Right clicking launches an AOE attack, and sword is resistant to fire");
+<da:flame_metal_scrap>.removeTooltip("Crafting Material");
+<da:ambition_flame>.removeTooltip("Crafting Material");
+<da:ambition_flame>.removeTooltip("§cUsed to light the floating obelisk in the dungeon");
+<da:ambition_sword>.addTooltip("§oThis blade carries not rage, but the weight of what could not be saved");
+<da:ambition_sword>.addTooltip("§3Right-click to launch an AOE attack around you");
+<da:ambition_flame>.addTooltip("§oTouch it, and remember what even time could not erase.");
+
+<da:abberrant_eye>.displayName = "§fEcho of Betrayal";
+<da:abberrant_eye>.removeTooltip("Crafting Material");
+<da:abberrant_eye>.addTooltip("§oPress it to ancient stone, and the past will ignite once more");
 
 
 <da:flame_helmet>.removeTooltip("Full set gives Strength 1, Fire Resistance 1 and boosts AOE range by the Sword of Ambition");

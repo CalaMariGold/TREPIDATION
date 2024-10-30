@@ -30,3 +30,11 @@ contenttweaker:nether_wraith_entry
 contenttweaker:veilstrium_entry
 contenttweaker:infernium_entry
 contenttweaker:glowood_entry
+contenttweaker:infernal_core
+da:flame_helmet
+da:flame_chestplate
+da:flame_boots
+da:flame_leggings
+da:flame_metal_scrap
+da:ambition_sword
+da:abberrant_eye

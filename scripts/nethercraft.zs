@@ -250,7 +250,7 @@ recipes.addShapedMirrored("pyridium_bow", <nethercraft:pyridium_bow>.withTag(({"
 ]);
 
 recipes.addShapedMirrored("infernal_fortress_scepter", <contenttweaker:infernal_fortress_scepter>,
-[[null,<nethercraft:pyridium_ingot>,<nethercraft:pyridium_ingot>],
+[[null,<nethercraft:pyridium_ingot>,<contenttweaker:infernal_core>],
 [<nethercraft:ghast_bones>,<minecraft:blaze_rod>,<nethercraft:pyridium_ingot>],
 [<minecraft:blaze_rod>,<nethercraft:ghast_bones>,null]
 ]);
@@ -278,9 +278,38 @@ recipes.addShaped("riftbreaker", <contenttweaker:riftbreaker_crystal>,
 
 recipes.remove(<da:ambition_flame>);
 recipes.addShaped("ambition_flame", <da:ambition_flame>,
-[[<da:flame_metal_scrap>,null,<da:flame_metal_scrap>],
-[null,<nethercraft:pyridium_ingot>,null],
-[<da:flame_metal_scrap>,null,<da:flame_metal_scrap>]
+[[<da:abberrant_eye>,<da:abberrant_eye>,<da:abberrant_eye>],
+[<da:abberrant_eye>,<nethercraft:pyridium_ingot>,<da:abberrant_eye>],
+[<da:abberrant_eye>,<da:abberrant_eye>,<da:abberrant_eye>]
+]);
+
+
+recipes.remove(<da:flame_helmet>);
+recipes.addShaped("flame_helmet", <da:flame_helmet>,
+[[<da:abberrant_eye>,<nethercraft:pyridium_ingot>,<da:abberrant_eye>],
+[<da:abberrant_eye>,null,<da:abberrant_eye>],
+[null,null,null]
+]);
+
+recipes.remove(<da:flame_chestplate>);
+recipes.addShaped("flame_chestplate", <da:flame_chestplate>,
+[[<da:abberrant_eye>,null,<da:abberrant_eye>],
+[<da:abberrant_eye>,<nethercraft:pyridium_ingot>,<da:abberrant_eye>],
+[<da:abberrant_eye>,<da:abberrant_eye>,<da:abberrant_eye>]
+]);
+
+recipes.remove(<da:flame_leggings>);
+recipes.addShaped("flame_leggings", <da:flame_leggings>,
+[[<da:abberrant_eye>,<nethercraft:pyridium_ingot>,<da:abberrant_eye>],
+[<da:abberrant_eye>,null,<da:abberrant_eye>],
+[<da:abberrant_eye>,null,<da:abberrant_eye>]
+]);
+
+recipes.remove(<da:flame_boots>);
+recipes.addShaped("flame_boots", <da:flame_boots>,
+[[null,null,null],
+[<da:abberrant_eye>,null,<da:abberrant_eye>],
+[<da:abberrant_eye>,null,<da:abberrant_eye>]
 ]);
 
 

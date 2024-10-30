@@ -167,14 +167,25 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
 });
 
 
-// Player interact with Dreadswine
+// Player interact with Entities
 static tablet as IItemStack = <corpsecomplex:scroll>;
+static ambition_flame as IItemStack = <da:ambition_flame>;
 static dreadstone_fragment as IItemStack = <contenttweaker:dreadstone_fragment>;
 events.onPlayerInteractEntity(function(event as crafttweaker.event.PlayerInteractEntityEvent){
     
     if(!event.world.isRemote()){
         val itemStack1 = event.player.currentItem as IItemStack; 
         if(!isNull(itemStack1)){
+
+            // Warden Summon
+            if (ambition_flame.matches(itemStack1)) {
+                if(event.target.definition.name == "nether_pyre"){
+                    Commands.call("setworldspawn ~ ~ ~", event.player, event.world, true, true);
+                    Commands.call("spawnpoint @a ~ ~ ~", event.player, event.world, true, true);
+                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The air thickens, the embers pulse—once bound by betrayal, the past now rises to face the living.\",\"color\":\"dark_red\",\"italic\":true}]");
+                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your soul has been bound to this position.\",\"color\":\"blue\",\"italic\":true}]");
+                }
+            }
 
             // Dreadstone Tablet
             if (tablet.matches(itemStack1)) {  

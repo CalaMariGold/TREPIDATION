@@ -35,3 +35,6 @@ vitality_orb.register();
 val dreadstone_fragment = mods.contenttweaker.VanillaFactory.createItem("dreadstone_fragment");
 dreadstone_fragment.register();
 dreadstone_fragment.maxStackSize = 256;
+
+val infernal_core = mods.contenttweaker.VanillaFactory.createItem("infernal_core");
+infernal_core.register();

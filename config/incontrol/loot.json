@@ -9,6 +9,11 @@
         "itemcount": "3-5"
     },
     {
+        "mob":"da:flame_knight",
+        "item": "contenttweaker:infernal_core",
+        "itemcount": "1"
+    },
+    {
         "mob":"da:nether_aberant",
         "item": "nethercraft:devil_bread",
         "itemcount": "1-2",
