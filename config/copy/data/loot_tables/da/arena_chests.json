@@ -1,0 +1,170 @@
+{
+  "pools": [
+    {
+      "name": "da:arena_chests",
+      "entries": [
+        {
+          "entryName": "nethercraft:neridium_ingot",
+          "weight": 15,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 1.0,
+                "max": 3.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "nethercraft:neridium_ingot"
+        },
+        {
+          "entryName": "nethercraft:pyridium_sword",
+          "weight": 3,
+          "quality": 0,
+          "type": "item",
+          "name": "nethercraft:pyridium_sword",
+          "functions": [
+            {
+                "function": "minecraft:enchant_randomly",
+                "enchantments": [
+                  "minecraft:fire_aspect"
+                ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Quark:RuneColor\": 14, \"Quark:RuneAttached\": 1}"
+            }
+        ]
+        },        
+        {
+          "entryName": "nethercraft:neridium_chestplate",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "nethercraft:neridium_chestplate"
+        },
+        {
+          "entryName": "nethercraft:neridium_helmet",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "nethercraft:neridium_helmet"
+        },
+        {
+          "entryName": "nethercraft:neridium_leggings",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "nethercraft:neridium_leggings"
+        },
+        {
+          "entryName": "nethercraft:neridium_boots",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "name": "nethercraft:neridium_boots"
+        },
+        {
+          "entryName": "minecraft:arrow",
+          "weight": 5,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 15.0,
+                "max": 40.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:arrow"
+        },
+        {
+          "entryName": "timeisup:timer_bonus",
+          "weight": 1,
+          "quality": 0,
+          "type": "item",
+          "name": "timeisup:timer_bonus"
+        },
+        {
+          "entryName": "contenttweaker:dreadswine_entry",
+          "weight": 1,
+          "quality": 0,
+          "type": "item",
+          "name": "contenttweaker:dreadswine_entry"
+        },
+        {
+          "entryName": "nethercraft:pyridium_bow",
+          "weight": 3,
+          "quality": 0,
+          "type": "item",
+          "name": "nethercraft:pyridium_bow",
+          "functions": [
+            {
+                "function": "minecraft:enchant_randomly",
+                "enchantments": [
+                  "minecraft:flame"
+                ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{\"Quark:RuneColor\": 14, \"Quark:RuneAttached\": 1}"
+            }
+        ]
+        }, 
+        {
+          "entryName": "nethercraft:devil_bread",
+          "weight": 7,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 1.0,
+                "max": 4.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "nethercraft:devil_bread"
+        },
+        {
+          "entryName": "nethercraft:foulite_dust",
+          "weight": 10,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 3.0,
+                "max": 10.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "nethercraft:foulite_dust"
+        },
+        {
+          "entryName": "da:abberrant_eye",
+          "weight": 10,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "count": {
+                "min": 3.0,
+                "max": 10.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "da:abberrant_eye"
+        }
+      ],
+      "rolls": 8.0
+    }
+  ]
+}

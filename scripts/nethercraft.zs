@@ -23,6 +23,9 @@ recipes.remove(<dynaores:raw_gold>);
 furnace.addRecipe(<nethercraft:pyridium_ingot>, <dynaores:raw_pyridium>, 1.0);
 furnace.addRecipe(<nethercraft:neridium_ingot>, <dynaores:raw_neridium>, 1.0);
 
+// da
+JEI.removeAndHide(<da:enflamed_meat>);
+JEI.removeAndHide(<da:endless_enderpearl>);
 
 JEI.removeAndHide(<nethercraft:imp_helmet>);
 JEI.removeAndHide(<nethercraft:imp_chestplate>);
@@ -271,3 +274,14 @@ recipes.addShaped("riftbreaker", <contenttweaker:riftbreaker_crystal>,
 [<contenttweaker:wither_infernium>,<minecraft:blaze_powder>,<contenttweaker:wither_infernium>],
 [null,<contenttweaker:wither_infernium>,null]
 ]);
+
+
+recipes.remove(<da:ambition_flame>);
+recipes.addShaped("ambition_flame", <da:ambition_flame>,
+[[<da:flame_metal_scrap>,null,<da:flame_metal_scrap>],
+[null,<nethercraft:pyridium_ingot>,null],
+[<da:flame_metal_scrap>,null,<da:flame_metal_scrap>]
+]);
+
+
+recipes.addShapeless("raw_infernium", <dynaores:raw_pyridium>, [<minecraft:blaze_powder>, <da:flame_metal_scrap>, <minecraft:blaze_powder>]);

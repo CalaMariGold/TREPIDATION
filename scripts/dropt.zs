@@ -10,6 +10,23 @@ import mods.dropt.Dropt;
 import mods.dropt.Harvester;
 
 
+Dropt.list("fiery_lit1")
+  .add(Dropt.rule()
+        .matchBlocks(["da:fire_stone_lit:*"])
+        .matchHarvester(Dropt.harvester()
+            .type("PLAYER")
+            .mainHand([
+                <nethercraft:netherrack_pickaxe:*>,
+                <simpleores:tin_pickaxe:*>,
+                <nethercraft:neridium_pickaxe:*>,
+                <nethercraft:pyridium_pickaxe:*>
+            ])
+        )
+        .addDrop(Dropt.drop())
+);
+
+
+
 Dropt.list("foulite_dust_journal_entry")
   .add(Dropt.rule()
       .matchBlocks(["nethercraft:foulite_ore:*"])
@@ -91,7 +108,14 @@ Dropt.list("no_brick_drop")
 
 Dropt.list("no_misc_block_drops")
   .add(Dropt.rule()
-    .matchDrops([<quark:basalt>.or(<quark:biotite_block>).or(<quark:basalt:1>).or(<minecraft:black_glazed_terracotta>.or(<quark:biotite_slab>))])
+    .matchDrops([<minecraft:magma>.or(<quark:basalt>).or(<quark:biotite_block>).or(<quark:basalt:1>).or(<minecraft:black_glazed_terracotta>).or(<quark:biotite_slab>)])
+    .replaceStrategy("REPLACE_ITEMS")
+    .addDrop(Dropt.drop())
+  );
+
+Dropt.list("no_dungeon_boss_drops")
+  .add(Dropt.rule()
+    .matchDrops([<minecraft:gold_block>.or(<da:fire_stone_stairs>).or(<minecraft:iron_bars>).or(<da:fire_stone_wall>).or(<da:fire_stone_half>).or(<da:change_block>).or(<da:fire_stone>).or(<da:fire_stone_lit>)])
     .replaceStrategy("REPLACE_ITEMS")
     .addDrop(Dropt.drop())
   );

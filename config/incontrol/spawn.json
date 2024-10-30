@@ -7,6 +7,14 @@
     },
 
     {
+        "mod": "srrevenants",
+        "dimension": -1,
+        "result": "deny",
+        "onjoin":"true"
+        
+    },
+
+    {
         "dimension": 684,
         "mob": "betterswim:herobrine",
         "maxcount": {

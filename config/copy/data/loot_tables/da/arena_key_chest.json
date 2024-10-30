@@ -1,0 +1,15 @@
+{
+  "pools": [
+    {
+      "name" : "da:arena_key_chest",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "da:ambition_flame",
+          "weight": 100
+        }
+      ]
+    }
+  ]
+}

@@ -44,6 +44,25 @@ for pickaxe in pickaxes{
 JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with ancient blood, the Soul Anchor hums in the dark, its eerie blue aura a beacon to the lost. Use it, and find yourself forever tethered to its haunting pull. A new life granted, but at what cost? For each return bears a toll on the soul's uncharted map.");
 
 
+// RENAME THESE!!!!
+<da:flame_metal_scrap>.displayName = "Flame Metal Scrap";
+<da:ambition_sword>.displayName = "§cGreatsword of Ambition";
+<da:ambition_flame>.displayName = "§cFlame of Ambition";
+<da:ambition_sword>.removeTooltip("May it spark you forward! Right clicking launches an AOE attack, and sword is resistant to fire");
+<da:ambition_flame>.removeTooltip("§cUsed to light the floating obelisk in the dungeon");
+<da:ambition_sword>.addTooltip("§oLORE GOES HERE!!!!!");
+<da:ambition_sword>.addTooltip("§3Right-click to launch an AOE attack around you");
+<da:ambition_flame>.addTooltip("§oLORE GOES HERE!!!!!");
+
+<da:abberrant_eye>.displayName = "Abberant Mana";
+<da:abberrant_eye>.addTooltip("§oLORE GOES HERE!!!!!");
+
+
+<da:flame_helmet>.removeTooltip("Full set gives Strength 1, Fire Resistance 1 and boosts AOE range by the Sword of Ambition");
+<da:flame_chestplate>.removeTooltip("Full set gives Strength 1, Fire Resistance 1 and boosts AOE range by the Sword of Ambition");
+<da:flame_leggings>.removeTooltip("Full set gives Strength 1, Fire Resistance 1 and boosts AOE range by the Sword of Ambition");
+<da:flame_boots>.removeTooltip("Full set gives Strength 1, Fire Resistance 1 and boosts AOE range by the Sword of Ambition");
+
 
 
 // Food
@@ -76,7 +95,6 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <nethercraft:pyridium_ore>.displayName = "Infernium Ore";
 <nethercraft:pyridium_block>.displayName = "Infernium Block";
 <nethercraft:pyridium_ingot>.displayName = "Infernium Ingot";
-JEI.addDescription(<nethercraft:pyridium_ingot>,"Infernium is a rare and powerful ore found exclusively within the The Nether. Born from the ashes of ancient infernal beings that once ruled this realm with their unyielding power of fire and destruction, Infernium is the embodiment of their eternal wrath and fury. This yellow-hued ore glows with an inner light, as if the very souls of those ancient entities still smolder within its core. Harnessing the destructive essence of Infernium requires great courage and skill. When fused with infernal rods and nether wraith bones, Infernium can create an item capable of summoning the Infernal Fortress.");
 
 
 <nethercraft:pyridium_sword>.displayName = "Infernium Sword";
@@ -125,18 +143,6 @@ JEI.addDescription(<nethercraft:pyridium_ingot>,"Infernium is a rare and powerfu
 
 <contenttweaker:infernal_fortress_scepter>.displayName = "§cScepter of Infernal Conjuring";
 <contenttweaker:infernal_fortress_scepter>.addTooltip("§oA formidable artifact that holds the power to materialize a gargantuan fortress, shrouded in whispers of an ancient and fearsome presence");
-JEI.addDescription(<contenttweaker:infernal_fortress_scepter>,"In the heart of shadows where whispers wane and wax,
-Lies a fortress born from the void's insidious cracks.
-Within these walls of despair and smoldering fright,
-The Wither toiled under the cloak of eternal night.
-Forging a union of fire and decay,
-Infernium and withering power did he sway.
-Born from despair and flame,
-A material so potent, it whispered his name.
-In halls echoing with a ghastly, unspoken fear,
-The secret of escape, in shadows, draws near.
-For only this alloy, both dreadful and dire,
-Can shatter the barrier, birthed in hellfire.");
 
 
 JEI.addDescription(<minecraft:blaze_rod>,"Infernal rods, obtained by slaying the fearsome Infernals, serve as a potent source of fuel and illumination. When combined with the fiery essence of Infernium, they can be forged into powerful artifacts and weapons that harness intense heat and destructive energy.");

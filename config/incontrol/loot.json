@@ -1,5 +1,15 @@
 [
-    
+    {
+        "mob":"da:flame_knight",
+        "remove": "da:enflamed_meat"
+    },
+    {
+        "mob":"da:flame_knight",
+        "item": "contenttweaker:deviled_egg_sandwich",
+        "itemcount": "1-3"
+    },
+
+
     // Wither Drops
     {
         "mob":"minecraft:wither",
@@ -139,6 +149,12 @@
     },
 
     // Misc
+    {
+        "mob":"da:nether_aberant",
+        "item": "da:abberrant_eye",
+        "itemcount": "1-3",
+        "random": "0.50"
+    },
     {
         "mob":"minecraft:zombie_pigman",
         "player": true,

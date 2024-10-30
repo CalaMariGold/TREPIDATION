@@ -44,6 +44,39 @@ import mods.contenttweaker.ActionResult;
 import crafttweaker.event.EntityLivingDeathEvent;
 import crafttweaker.entity.IEntityLivingBase;
 import crafttweaker.event.PlayerLeftClickBlockEvent;
+import crafttweaker.util.IRandom;
+
+
+
+static abberrant_mana as IItemStack = <da:abberrant_eye>;
+events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteractBlockEvent){
+    if(!event.world.isRemote()){
+        val itemStack = event.item as IItemStack;     
+        if ((itemStack.definition.id).matches(abberrant_mana.definition.id)) {  
+            if(event.block.displayName == "Fiery Lit Stonebrick"){
+                Commands.call("summon item " + event.x + " " + event.y + " " + event.z + " {Item:{id:\"da:flame_metal_scrap\", Count:1}}", event.player, event.entity.world, true, true);
+                Commands.call("setblock " + event.x + " " + event.y + " " + event.z + " minecraft:air", event.player, event.entity.world, true, true);
+                
+                if(event.world.random.nextInt(0, 2) == 1){
+                    if(event.world.random.nextInt(0, 2) == 1){
+                        Commands.call("summon primitivemobs:blazing_juggernaut " + event.x + " " + event.y + " " + event.z + "", event.player, event.world, true, true);
+                        Commands.call("playsound enderskills:fireball_explode player @p ~ ~ ~ 1.0 1.0 1.0", event.player, event.world, true, true);
+                    } 
+                    else {
+                        Commands.call("summon minecraft:blaze " + event.x + " " + event.y + " " + event.z + "", event.player, event.world, true, true);
+                        Commands.call("playsound enderskills:fireball_explode player @p ~ ~ ~ 1.0 1.0 1.0", event.player, event.world, true, true);
+                    }
+                }
+                else {
+                    Commands.call("playsound enderskills:flares player @p ~ ~ ~ 1.0 1.0 1.0", event.player, event.world, true, true);
+                }
+            }
+        }  
+        
+    }
+});
+
+
 
 
 // This is a roundabout (kinda shitty) way to reset player IData between runs.
