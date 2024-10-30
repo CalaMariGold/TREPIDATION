@@ -236,17 +236,18 @@ EventManager.getInstance().onTimeIsUp(function(event as TimeIsUpEvent){
                 server.commandManager.executeCommand(server, "advancement grant @p only triumph:advancements/dimensions/limbo");
                 server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your effort is meaningless. Welcome to your eternity.\",\"color\":\"dark_red\",\"italic\":false}]");
                 
-                /*
+                
                 event.player.world.catenation()
                 .run(function(world, context) {
                     context.data = world.time;
                 })
-                .sleep(400)
+                .sleep(300)
                 .then(function(world, context) {
-                    // moved to onPlayerChangedDimension function (wasn't working here or in triumph) 
+                    Commands.call("summon wyrmsofnyrus:thevisitor ~ ~+100 ~", event.player, event.entity.world, true, true);
+                    Commands.call("playsound wyrmsofnyrus:visitormessage master CalaMariGold ~ ~ ~ 10.0 0.5", event.player, event.entity.world, true, true);
                 })
                 .start();
-                */
+                
             });
         }
     });

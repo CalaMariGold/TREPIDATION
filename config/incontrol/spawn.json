@@ -22,7 +22,7 @@
      },
     {
         "dimension": 684,
-        "mod": ["srparasites","minecraft","wyrmsofnyrus"],
+        "mod": ["srparasites","minecraft", "quark"],
         "result": "deny",
         "onjoin": "true"
     },
