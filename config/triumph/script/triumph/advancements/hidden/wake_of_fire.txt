@@ -1,0 +1,24 @@
+setIcon(<da:ambition_flame>)
+setTitle("wake of fire")
+setDescription("")
+
+
+addParent("triumph:advancements/hidden/root")
+
+addRewardFunction("triumph:wake_of_fire")
+
+
+
+//Set the toast notification in the top right corner of the screen to not show up when this advancement is achieved.
+setShowToast(false)
+
+//Set the advancement to not send a chat message when it is achieved.
+setAnnounceToChat(false)
+
+criteria = addCriteria("Wake of fire", "minecraft:inventory_changed")
+criteria.addItem("da:ambition_flame")
+
+hideLines()
+
+alwaysHidden()
+setHidden(true)
