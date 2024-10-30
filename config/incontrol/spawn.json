@@ -22,7 +22,7 @@
      },
     {
         "dimension": 684,
-        "mod": ["srparasites","minecraft", "quark"],
+        "mod": ["srparasites","minecraft", "quark", "srrevenants"],
         "result": "deny",
         "onjoin": "true"
     },
@@ -121,6 +121,21 @@
      {
         "dimension": 10,
         "mob": "weeping-angels:weepingangel",
+        "result": "deny"
+     },
+
+     {
+        "dimension": 10,
+        "mob": "srrevenants:for_human",
+        "maxcount": {
+            "amount": 10,
+            "perchunk": true
+        },
+        "result": "allow"
+     },
+     {
+        "dimension": 10,
+        "mob": "srrevenants:for_human",
         "result": "deny"
      },
 

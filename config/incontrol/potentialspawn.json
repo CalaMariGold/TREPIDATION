@@ -32,6 +32,15 @@
     "dimension": 10,
     "mobs": [
       {
+        "mob": "srrevenants:for_human",
+        "weight": 50
+      }
+    ]
+  },
+  {
+    "dimension": 10,
+    "mobs": [
+      {
         "mob": "eyesinthedarkness:eyes",
         "weight": 40
       }
