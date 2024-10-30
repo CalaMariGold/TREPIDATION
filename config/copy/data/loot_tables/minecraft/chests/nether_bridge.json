@@ -20,23 +20,11 @@
           "name": "nethercraft:neridium_ingot"
         },
         {
-          "entryName": "nethercraft:pyridium_sword",
+          "entryName": "nethercraft:neridium_sword",
           "weight": 3,
           "quality": 0,
           "type": "item",
-          "name": "nethercraft:pyridium_sword",
-          "functions": [
-            {
-                "function": "minecraft:enchant_randomly",
-                "enchantments": [
-                  "minecraft:fire_aspect"
-                ]
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{\"Quark:RuneColor\": 14, \"Quark:RuneAttached\": 1}"
-            }
-        ]
+          "name": "nethercraft:neridium_sword"
         },        
         {
           "entryName": "nethercraft:neridium_chestplate",
@@ -97,23 +85,11 @@
           "name": "contenttweaker:dreadswine_entry"
         },
         {
-          "entryName": "nethercraft:pyridium_bow",
+          "entryName": "nethercraft:neridium_bow",
           "weight": 3,
           "quality": 0,
           "type": "item",
-          "name": "nethercraft:pyridium_bow",
-          "functions": [
-            {
-                "function": "minecraft:enchant_randomly",
-                "enchantments": [
-                  "minecraft:flame"
-                ]
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{\"Quark:RuneColor\": 14, \"Quark:RuneAttached\": 1}"
-            }
-        ]
+          "name": "nethercraft:neridium_bow"
         }, 
         {
           "entryName": "nethercraft:devil_bread",
