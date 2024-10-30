@@ -63,6 +63,9 @@ id="nethercraft:lava_reeds_item" -> 512
 id="nethercraft:devil_bread" -> 512
 id="nethercraft:glow_apple" -> 512
 
+id="da:abberrant_eye" -> 512
+id="da:flame_metal_scrap" -> 512
+
 id="quark:glass_shards" -> 512
 id="quark:soul_powder" -> 512
 id="quark:diamond_heart" -> 512
