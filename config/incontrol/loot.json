@@ -6,8 +6,21 @@
     {
         "mob":"da:flame_knight",
         "item": "contenttweaker:deviled_egg_sandwich",
-        "itemcount": "1-3"
+        "itemcount": "3-5"
     },
+    {
+        "mob":"da:nether_aberant",
+        "item": "nethercraft:devil_bread",
+        "itemcount": "1-2",
+        "random": "0.25"
+    },
+    {
+        "mob":"nethercraft:bloody_zombie",
+        "item": "minecraft:magma_cream",
+        "itemcount": "1-2",
+        "random": "0.25"
+    },
+    
 
 
     // Wither Drops
