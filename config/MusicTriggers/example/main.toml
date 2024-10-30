@@ -14,9 +14,16 @@
 	[[triggers.dimension]]
 		identifier = "erebus"
 		resource_name = [ "5" ]
-	[triggers.mob]
+	[[triggers.mob]]
 		identifier = "wither"
 		resource_name = [ "The Wither" ]
+		level = "1"
+		detection_range = "300"
+		mob_targeting = false
+		priority = "10"
+	[[triggers.mob]]
+		identifier = "warden"
+		resource_name = [ "Ashen Warden" ]
 		level = "1"
 		detection_range = "300"
 		mob_targeting = false
@@ -73,6 +80,8 @@
 			num_loops = "999"
 			from = "127800"
 		triggers = [ "mob-wither" ]
+	[songs.warden_malicious_kevinmacleod]
+		triggers = [ "mob-warden" ]
 	[songs.universal]
 	[songs.nether_youknowwhatineed_coagmusic]
 		triggers = [ "dimension-nether" ]

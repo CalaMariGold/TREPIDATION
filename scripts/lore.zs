@@ -46,6 +46,8 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 
 // Ashen and Infernals
 <contenttweaker:infernal_core>.displayName = "§cInfernal Core";
+<contenttweaker:infernal_core>.addTooltip("§oA core forged in fire and grief, held only by an Ashen who remembers its purpose.");
+
 
 <da:flame_helmet>.displayName = "§cInfernal Ashen Helmet";
 <da:flame_chestplate>.displayName = "§cInfernal Ashen Chestplate";
@@ -58,10 +60,10 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <da:fire_stone_wall>.displayName = "Ashen Stone Brick Wall";
 <da:fire_stone_half>.displayName = "Ashen Stone Brick Slab";
 
-<da:flame_metal_scrap>.displayName = "Inert Infernium";
+<da:flame_metal_scrap>.displayName = "§fInert Infernium";
 <da:ambition_sword>.displayName = "§cBlade of the Last Vigil";
 <da:ambition_flame>.displayName = "§cIn the Wake of Fire, We Were Forsaken";
-<da:ambition_sword>.removeTooltip("May it spark you forward! Right clicking launches an AOE attack, and sword is resistant to fire");
+<da:ambition_sword:*>.removeTooltip("May it spark you forward! Right clicking launches an AOE attack, and sword is resistant to fire");
 <da:flame_metal_scrap>.removeTooltip("Crafting Material");
 <da:ambition_flame>.removeTooltip("Crafting Material");
 <da:ambition_flame>.removeTooltip("§cUsed to light the floating obelisk in the dungeon");
