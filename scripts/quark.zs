@@ -21,3 +21,6 @@ recipes.addShaped("backpack", <quark:backpack>,
 [<minecraft:string>,null,<nethercraft:ghast_bones>],
 [<nethercraft:lava_reeds_item>,<nethercraft:lava_reeds_item>,<nethercraft:lava_reeds_item>]
 ]);
+
+recipes.remove(<quark:arrow_explosive>);
+recipes.addShapeless("explosive_arrow", <quark:arrow_explosive>,[<minecraft:arrow>, <minecraft:fire_charge>]);
