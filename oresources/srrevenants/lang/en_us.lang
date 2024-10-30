@@ -1,0 +1,81 @@
+//Entities
+
+entity.srrevenants.for_cow.name=Forgotten Cow
+entity.srrevenants.for_bear.name=Forgotten Bear
+entity.srrevenants.for_pig.name=Forgotten Pig
+entity.srrevenants.for_sheep.name=Forgotten Sheep
+entity.srrevenants.for_human.name=Forgotten Runner
+entity.srrevenants.for_horse.name=Forgotten Horse
+entity.srrevenants.angst.name=Angst
+entity.srrevenants.oppressor.name=Oppressor
+entity.srrevenants.duran.name=Duran
+
+
+//Creative Tab
+
+itemGroup.Scape & Run: Revenants=Scape and Run: Revenants
+
+//Items
+item.srrevenants.itemtab.name=§dNULL
+item.srrevenants.itemmobspawner_forcow.name=Spawn Forgotten Cow
+item.srrevenants.itemmobspawner_forbear.name=Spawn Forgotten Bear
+item.srrevenants.itemmobspawner_forpig.name=Spawn Forgotten Pig
+item.srrevenants.itemmobspawner_forsheep.name=Spawn Forgotten Sheep
+item.srrevenants.itemmobspawner_forhuman.name=Spawn Forgotten Runner
+item.srrevenants.itemmobspawner_forhorse.name=Spawn Forgotten Horse
+
+
+//Effects
+
+
+
+mob_effect.srrevenants:freeze=Freeze
+splash_potion.effect.srrevenants:freeze=Splash Potion of Freeze
+potion.effect.srrevenants:freeze=Potion of Freeze
+lingering_potion.effect.srrevenants:freeze=Lingering Potion of Freeze
+tipped_arrow.effect.srrevenants:freeze=Arrow of Freeze
+
+mob_effect.srrevenants:cotv=COTV
+splash_potion.effect.srrevenants:cotv=Splash Potion of COTV
+potion.effect.srrevenants:cotv=Potion of COTV
+lingering_potion.effect.srrevenants:cotv=Lingering Potion of COTV
+tipped_arrow.effect.srrevenants:cotv=Arrow of COTV
+
+mob_effect.srrevenants:draining=Draining
+splash_potion.effect.srrevenants:draining=Splash Potion of Draining
+potion.effect.srrevenants:draining=Potion of Draining
+lingering_potion.effect.srrevenants:draining=Lingering Potion of Draining
+tipped_arrow.effect.srrevenants:draining=Arrow of Draining
+
+mob_effect.srrevenants:vampyri=Vampyri
+splash_potion.effect.srrevenants:vampyri=Splash Potion of Vampyri
+potion.effect.srrevenants:vampyri=Potion of Vampyri
+lingering_potion.effect.srrevenants:vampyri=Lingering Potion of Vampyri
+tipped_arrow.effect.srrevenants:vampyri=Arrow of Vampyri
+
+mob_effect.srrevenants:anathema=Anathema
+splash_potion.effect.srrevenants:anathema=Splash Potion of Anathema
+potion.effect.srrevenants:anathema=Potion of Anathema
+lingering_potion.effect.srrevenants:anathema=Lingering Potion of Anathema
+tipped_arrow.effect.srrevenants:anathema=Arrow of Anathema
+
+mob_effect.srrevenants:hoist=Hanging
+splash_potion.effect.srrevenants:hoist=Splash Potion of Hanging
+potion.effect.srrevenants:hoist=Potion of Hanging
+lingering_potion.effect.srrevenants:hoist=Lingering Potion of Hanging
+tipped_arrow.effect.srrevenants:hoist=Arrow of Hanging
+
+mob_effect.srrevenants:tredam=Bane
+splash_potion.effect.srrevenants:tredam=Splash Potion of Bane
+potion.effect.srrevenants:tredam=Potion of Bane
+lingering_potion.effect.srrevenants:tredam=Lingering Potion of Bane
+tipped_arrow.effect.srrevenants:tredam=Arrow of Bane
+
+mob_effect.srrevenants:nonhos=Rotten
+splash_potion.effect.srrevenants:nonhos=Splash Potion of Rotten
+potion.effect.srrevenants:nonhos=Potion of Rotten
+lingering_potion.effect.srrevenants:nonhos=Lingering Potion of Rotten
+tipped_arrow.effect.srrevenants:nonhos=Arrow of Rotten
+
+//extra
+
