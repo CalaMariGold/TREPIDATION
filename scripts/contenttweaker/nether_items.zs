@@ -17,6 +17,10 @@ var deviled_egg_sandwich = VanillaFactory.createItemFood("deviled_egg_sandwich",
 deviled_egg_sandwich.setSaturation(0.6);
 deviled_egg_sandwich.register();
 
+var glow_stew = VanillaFactory.createItemFood("glow_stew", 8);
+glow_stew.setSaturation(0.4);
+glow_stew.register();
+
 
 val infernal_fortress_scepter = mods.contenttweaker.VanillaFactory.createItem("infernal_fortress_scepter");
 infernal_fortress_scepter.maxStackSize = 1;

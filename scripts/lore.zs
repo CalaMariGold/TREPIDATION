@@ -84,6 +84,8 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 
 
 // Food
+<contenttweaker:glow_stew>.displayName = "Glow Stew";
+
 <contenttweaker:scrambled_magma_eggs>.displayName = "Scrambled Magma Eggs";
 <contenttweaker:scrambled_magma_eggs>.addTooltip("§3Gives Fire Resistance for 10s");
 
