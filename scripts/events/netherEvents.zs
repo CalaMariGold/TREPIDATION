@@ -95,6 +95,8 @@ EventManager.getInstance().onTimerTick(function(event as TickEvent){
 
 static veilstriumPick as IItemStack = <nethercraft:neridium_pickaxe:*>;
 static netherrackPick as IItemStack = <nethercraft:netherrack_pickaxe:*>;
+static glowoodPick as IItemStack = <nethercraft:glowood_pickaxe:*>;
+
 
 
 events.onPlayerLeftClickBlock(function(event as crafttweaker.event.PlayerLeftClickBlockEvent){
@@ -103,7 +105,7 @@ events.onPlayerLeftClickBlock(function(event as crafttweaker.event.PlayerLeftCli
             val playerHoldItemStack = event.player.currentItem as IItemStack; 
             if(event.block.displayName == "Barrier §4Alpha"){
                 if(!isNull(playerHoldItemStack)){
-                    if (veilstriumPick.matches(playerHoldItemStack) || netherrackPick.matches(playerHoldItemStack)) {  
+                    if (veilstriumPick.matches(playerHoldItemStack) || netherrackPick.matches(playerHoldItemStack) || glowoodPick.matches(playerHoldItemStack)) {  
                         event.player.sendChat("§4As you strike the barrier above you, a haunting realization dawns: A tool much stronger than your " + event.player.currentItem.displayName + " will be required to shatter this engimatic veil - one steeped in the essence of Withering, forged by a dark, concealed entity...");
                         Commands.call("playsound quark:item.soul_bead.curse player @s ~ ~ ~ 5.0 1.0 1.0", event.player, event.world, true, true);
                         event.player.update({clickedNetherBarrier: true});
