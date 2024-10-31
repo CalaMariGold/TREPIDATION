@@ -118,6 +118,38 @@ events.onPlayerLeftClickBlock(function(event as crafttweaker.event.PlayerLeftCli
 
 events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeathEvent){
     if(!event.entity.world.isRemote()){
+        if(event.entity.definition.id == <entity:da:flame_knight>.id)
+        {
+            server.commandManager.executeCommand(server, "gamestage silentadd @a killedWarden");
+
+            EventManager.getInstance().onTimerTick(function(event as TickEvent){
+                if(event.player.hasGameStage("preWarden") && event.player.hasGameStage("killedWarden")){
+
+                    var player_name = event.player.name;
+                    var totalSecs = event.tick/20;
+                    var minutes = (totalSecs % 3600) / 60;
+                    var seconds = totalSecs % 60;
+
+                    var totalSecondsElasped = 3600 - totalSecs;
+                    var secondsElasped = totalSecondsElasped % 60;
+                    var minutesElasped = (totalSecondsElasped % 3600) / 60;
+                    event.player.sendChat(player_name + " killed The Ashen Warden with §4" + minutes + ":" + seconds + " §fleft (" + minutesElasped + ":" + secondsElasped + " elasped)." );
+                    server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"timerbonus\"},\"color\":\"dark_red\"}]");
+                    server.commandManager.executeCommand(server, "effect @a regeneration 60");
+                    server.commandManager.executeCommand(server, "effect @a invisibility 60");
+                    server.commandManager.executeCommand(server, "effect @a minecraft:glowing 60");
+                    event.player.sendChat("§6A mysterious yet benevolent aura surrounds you, for now...");
+
+                    server.commandManager.executeCommand(server, "give @a timeisup:timer_bonus 2");
+                    server.commandManager.executeCommand(server, "give @a enderskills:book 1");
+                    server.commandManager.executeCommand(server, "give @a enderskills:token 1");
+                    server.commandManager.executeCommand(server, "give @a scalinghealth:heartcontainer 1");
+                    server.commandManager.executeCommand(server, "give @a quark:backpack");
+
+                    server.commandManager.executeCommand(server, "gamestage silentremove @a preWarden");
+                }
+            });
+        }
         if(event.entity.definition.id == <entity:minecraft:wither>.id)
         {
     
@@ -144,7 +176,6 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                     event.player.sendChat("§6A mysterious yet benevolent aura surrounds you, for now...");
 
                     server.commandManager.executeCommand(server, "give @a timeisup:timer_bonus 3");
-                    server.commandManager.executeCommand(server, "give @a enderskills:book 1");
                     server.commandManager.executeCommand(server, "give @a enderskills:token 3");
                     server.commandManager.executeCommand(server, "give @a scalinghealth:heartcontainer 2");
                     server.commandManager.executeCommand(server, "give @a contenttweaker:riftbreaker_crystal 1");

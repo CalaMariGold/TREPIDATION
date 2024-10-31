@@ -16,11 +16,9 @@ recipes.remove(<quark:soul_compass>);
 recipes.remove(<quark:pickarang>);
 
 
-recipes.addShaped("backpack", <quark:backpack>,
-[[<nethercraft:lava_reeds_item>,<nethercraft:lava_reeds_item>,<nethercraft:lava_reeds_item>],
-[<minecraft:string>,null,<nethercraft:ghast_bones>],
-[<nethercraft:lava_reeds_item>,<nethercraft:lava_reeds_item>,<nethercraft:lava_reeds_item>]
-]);
+// dropped from ashen warden
+recipes.remove(<quark:backpack>);
+
 
 recipes.remove(<quark:arrow_explosive>);
 recipes.addShapeless("explosive_arrow", <quark:arrow_explosive>,[<minecraft:arrow>, <minecraft:fire_charge>]);
