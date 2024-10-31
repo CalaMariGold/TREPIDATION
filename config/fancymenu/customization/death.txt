@@ -64,7 +64,7 @@ customization {
   restartbackgroundanimations = true
   delayappearanceseconds = 1.5
   buttonaction = runscript;rerolldeathMP%btnaction_splitter_fm%
-  description = Resets entire world without having to make a new world.%n%MUST BE OP/SERVER OWNER!
+  description = Resets entire world without having to make a new world.%n%SERVERS ONLY!
   label = Reset Run (MP)
   loopbackgroundanimations = true
   fadein = true

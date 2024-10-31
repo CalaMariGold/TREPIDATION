@@ -39,7 +39,7 @@ customization {
   action = addbutton
   actionid = be03df45-da9b-48bb-82a1-0a4295461af31677092123506
   y = 260
-  description = Resets entire world without having to make a new world.%n%Can't be undone!%n%Must be OP and server owner!
+  description = Resets entire world without having to make a new world.%n%Can't be undone!%n%SERVERS ONLY!
   label = Reset Run (MP)
   height = 20
 }
