@@ -60,3 +60,14 @@ customization {
   label = Start Run
   height = 20
 }
+
+customization {
+  identifier = %id=425187%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=425115%
+  action = hidebutton
+}
+
