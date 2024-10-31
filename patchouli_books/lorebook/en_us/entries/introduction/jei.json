@@ -19,7 +19,7 @@
     },
     {
       "type": "text",
-      "text": "$(italics)$(#551012)Take your time and read carefully!$() $(br2)$(#551012)TREPIDATION provides plenty of hints and information scattered in tooltips, recipes, and descriptions.$(br2)Remember, tooltips are your friend! $(br2)You'll also want to keep your inventory sorted. Use Middle-click while in your inventory to auto-sort.$()"
+      "text": "$(italics)$(#551012)Take your time and read carefully!$() $(br2)$(#551012)TREPIDATION provides plenty of hints and information scattered in tooltips, recipes, and descriptions.$(br2)Remember, tooltips are your friend! $(br2)You'll also want to keep your inventory sorted. Use $(#104455)middle-click$(#551012) while in any inventory to auto-sort.$()"
     },
     {
       "type": "text",
