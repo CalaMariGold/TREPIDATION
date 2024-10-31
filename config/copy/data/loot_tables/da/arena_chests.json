@@ -36,11 +36,11 @@
           "name": "da:flame_metal_scrap"
         },
         {
-          "entryName": "nethercraft:nerdium_sword",
+          "entryName": "nethercraft:neridium_sword",
           "weight": 3,
           "quality": 0,
           "type": "item",
-          "name": "nethercraft:nerdium_sword"
+          "name": "nethercraft:neridium_sword"
         },        
         {
           "entryName": "nethercraft:neridium_chestplate",
