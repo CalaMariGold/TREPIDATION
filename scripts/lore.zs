@@ -4,10 +4,7 @@ import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
 import mods.jei.JEI;
 
-var pickaxes = itemUtils.getItemsByRegexRegistryName(".*pickaxe.*");
-for pickaxe in pickaxes{
-    pickaxe.addTooltip("§3Does not drop on death");
-}
+
 
 // Lore entries
 <contenttweaker:dreadswine_entry>.displayName = "§cElara's Journal - Entry #7";
@@ -217,3 +214,23 @@ JEI.addDescription(<contenttweaker:vitality_orb>,"The Orb of Veilheart, a miracu
 <artifacts:shiny_red_balloon>.addTooltip("§3You must wait until the end of the jump animation to initiate double jump with this equipped");
 
 
+
+
+
+var axesandpickaxes = itemUtils.getItemsByRegexRegistryName(".*axe.*");
+var swords = itemUtils.getItemsByRegexRegistryName(".*sword.*");
+var shovels = itemUtils.getItemsByRegexRegistryName(".*shovel.*");
+var staves = itemUtils.getItemsByRegexRegistryName(".*staff.*");
+
+for axe in axesandpickaxes{
+    axe.addTooltip("§3Does not drop on death");
+}
+for sword in swords{
+    sword.addTooltip("§3Does not drop on death");
+}
+for shovel in shovels{
+    shovel.addTooltip("§3Does not drop on death");
+}
+for staff in staves{
+    staff.addTooltip("§3Does not drop on death");
+}
