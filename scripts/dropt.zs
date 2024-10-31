@@ -16,6 +16,7 @@ Dropt.list("fiery_lit1")
         .matchHarvester(Dropt.harvester()
             .type("PLAYER")
             .mainHand([
+                <nethercraft:glowood_pickaxe:*>,
                 <nethercraft:netherrack_pickaxe:*>,
                 <simpleores:tin_pickaxe:*>,
                 <nethercraft:neridium_pickaxe:*>,
