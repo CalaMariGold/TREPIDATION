@@ -29,18 +29,6 @@
 	            }
 	    },
 		{
-	            "url": "https://cdn.modrinth.com/data/1JXyEoxt/versions/rBxuYmiX/wyrmsofnyrus-0.5.124.jar",
-	            "installationPolicy": {
-	                "description": "MANDATORY! Downloads Wyrms of Nyrus from Modrinth."
-	            }
-	    },
-		{
-	            "url": "https://cdn.modrinth.com/data/56lchpxd/versions/lb2yrQHr/synlib-2.0.jar",
-	            "installationPolicy": {
-	                "description": "MANDATORY! Downloads SynapseLib (depedency of Wryms) from Modrinth."
-	            }
-	    },
-		{
 	            "url": "https://cdn.modrinth.com/data/Si3V1hU5/versions/rikVrppT/hitindication-1.12.2-2.0.jar",
 	            "metadata": {
 	                "side": "CLIENT"
@@ -48,24 +36,6 @@
 	            "installationPolicy": {
 	                "description": "MANDATORY! Downloads Hit Indication from Modrinth."
 	            }
-	    },
-		{
-            "url": "https://raw.githubusercontent.com/CalaMariGold/TREPIDATION/refs/heads/main/config/triumph/script/triumph/advancements/hidden/unlock_journal.txt",
-            "folder": "config/triumph/script/triumph/advancements/hidden",
-            "installationPolicy": {
-                "downloadAlways": true,
-                "description": "Hotfix for Journal Entries"
-            }
-        },
-		{
-            "url": "https://raw.githubusercontent.com/CalaMariGold/TREPIDATION/refs/heads/main/scripts/events/globalEvents.zs",
-            "folder": "scripts/events",
-            "installationPolicy": {
-                "downloadAlways": true,
-                "description": "Hotfix for Journal Entries"
-            }
-        }
-
-		
+	    }
 	]
 }

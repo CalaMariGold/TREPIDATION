@@ -1,4 +1,4 @@
-§lTREPIDATION v0.5.4§r
+§lTREPIDATION v0.5.5§r
 
 §eClick the version number on the main menu for full changelog.§r
 
@@ -7,5 +7,4 @@
 - Creating a 2nd world or rejoining the same world in the same game session will cause a crash. Use the “Reset Run” button to avoid needing to create new worlds.
 Multiplayer Only:
 - Players joining in multiplayer sessions do not spawn at the same place (reset run to fix this). Players also sometimes permanently spawn in different locations on each reset
-- The Journal isn’t available when first joining a server. Dying and respawning seems to fix this.
 
