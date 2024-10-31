@@ -46,6 +46,51 @@ import crafttweaker.entity.AttributeModifier;
 import mods.contenttweaker.Commands;
 
 
+// This is a roundabout (kinda shitty) way to reset player IData between runs.
+// Ideally setting the IData to null would be directly part of resetting the run (ie via the button or mod itself), but I don't think that's possible
+// Only thing I could see going wrong is if the player did any of these events, then used a timer bonus to get above 60 minutes
+// Not a big deal since these are just lore related so far
+EventManager.getInstance().onTimerTick(function(event as TickEvent){
+    var totalSecs = event.tick/20;
+    if(totalSecs>=3604){
+        event.player.update({clickedNetherBarrier: null});
+        event.player.update({shatteredTraceOfDeath: null});
+        event.player.update({clickedNetherObelisk: null});
+    }            
+});
+
+
+// Give player soul compass with curse of vanishing upon death
+events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
+    if(!event.entity.world.isRemote()){
+        event.player.give(<quark:soul_compass>.withTag({ench:[{id:71,lvl:1}]}));
+    }
+});
+
+// Create a scoreboard for timer bonuses used when the player first logs into the game
+events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent) {
+	if (isNull(event.player.data.firstTimeJoin)) {
+        server.commandManager.executeCommand(server, "scoreboard objectives add timerbonus dummy");
+        server.commandManager.executeCommand(server, "op " + event.player.name);
+        Commands.call("advancement grant @p only triumph:advancements/dimensions/start", event.player, event.entity.world, true, true);
+
+        // for some reason, journal entries only unlock after an achievement is granted a few seconds after world start
+        event.player.world.catenation()
+        .run(function(world, context) {
+            context.data = world.time;
+        })
+        .sleep(100)
+        .then(function(world, context) {
+            Commands.call("advancement grant @p only triumph:advancements/hidden/unlock_journal", event.player, event.entity.world, true, true);
+        })
+        .start();
+        
+        event.player.update({firstTimeJoin: true});
+    }
+});
+
+
+
 // Heart Dust Healing
 static heart_dust as IItemStack = <scalinghealth:heartdust>;
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
@@ -84,41 +129,6 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
     }
 });
 
-
-//val uuid = "84f27e8d-85d7-45f4-9b59-b2f5c19da11d";
-//val attribute_modifier = AttributeModifier.createModifier("prepspeed", 5.0, 2, uuid);
-
-// Give player soul compass with curse of vanishing upon death
-events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
-    if(!event.entity.world.isRemote()){
-        //val attribute = event.player.getAttribute("battlecorrection.preparationSpeed");
-        //attribute.applyModifier(attribute_modifier);
-
-        event.player.give(<quark:soul_compass>.withTag({ench:[{id:71,lvl:1}]}));
-    }
-});
-
-// Create a scoreboard for timer bonuses used when the player first logs into the game
-events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent) {
-	if (isNull(event.player.data.firstTimeJoin)) {
-        server.commandManager.executeCommand(server, "scoreboard objectives add timerbonus dummy");
-        server.commandManager.executeCommand(server, "op " + event.player.name);
-        Commands.call("advancement grant @p only triumph:advancements/dimensions/start", event.player, event.entity.world, true, true);
-
-        // for some reason, journal entries only unlock after an achievement is granted a few seconds after world start
-        event.player.world.catenation()
-        .run(function(world, context) {
-            context.data = world.time;
-        })
-        .sleep(100)
-        .then(function(world, context) {
-            Commands.call("advancement grant @p only triumph:advancements/hidden/unlock_journal", event.player, event.entity.world, true, true);
-        })
-        .start();
-        
-        event.player.update({firstTimeJoin: true});
-    }
-});
 
 
 // Prevent players falling back down into the prev dim when respawning

@@ -70,6 +70,10 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
                 else {
                     Commands.call("playsound enderskills:flares player @p ~ ~ ~ 1.0 1.0 1.0", event.player, event.world, true, true);
                 }
+            } 
+            else {
+                server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"As you stare into the eye of this artifact, it seems to draw you to an ancient stone of some kind—a place where buried power might yet be unearthed.\",\"color\":\"dark_red\",\"italic\":false}]");
+                Commands.call("playsound enderskills:contaminate player @p", event.player, event.world, true, true);
             }
         }  
         
@@ -77,20 +81,6 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
 });
 
 
-
-
-// This is a roundabout (kinda shitty) way to reset player IData between runs.
-// Ideally setting the IData to null would be directly part of resetting the run (ie via the button or mod itself), but I don't think that's possible
-
-// Only thing I could see going wrong is if the player did any of these events, then used a timer bonus to get above 60 minutes
-// Not a big deal since these are just lore related so far
-EventManager.getInstance().onTimerTick(function(event as TickEvent){
-    var totalSecs = event.tick/20;
-    if(totalSecs>=3604){
-        event.player.update({clickedNetherBarrier: null});
-        event.player.update({shatteredTraceOfDeath: null});
-    }            
-});
 
 
 static veilstriumPick as IItemStack = <nethercraft:neridium_pickaxe:*>;
@@ -208,17 +198,31 @@ events.onPlayerInteractEntity(function(event as crafttweaker.event.PlayerInterac
     
     if(!event.world.isRemote()){
         val itemStack1 = event.player.currentItem as IItemStack; 
-        if(!isNull(itemStack1)){
+        
 
-            // Warden Summon
-            if (ambition_flame.matches(itemStack1)) {
-                if(event.target.definition.name == "nether_pyre"){
-                    Commands.call("setworldspawn ~ ~ ~", event.player, event.world, true, true);
-                    Commands.call("spawnpoint @a ~ ~ ~", event.player, event.world, true, true);
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The air thickens, the embers pulse—once bound by betrayal, the past now rises to face the living.\",\"color\":\"dark_red\",\"italic\":true}]");
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your soul has been bound to this position.\",\"color\":\"blue\",\"italic\":true}]");
+        // Warden Summon
+        
+            if(event.target.definition.name == "nether_pyre"){
+                if (ambition_flame.matches(itemStack1)) {
+                    
+                    
+                        Commands.call("setworldspawn ~ ~ ~", event.player, event.world, true, true);
+                        Commands.call("spawnpoint @a ~ ~ ~", event.player, event.world, true, true);
+                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The air thickens, the embers pulse—once bound by betrayal, the past now rises to face the living.\",\"color\":\"dark_red\",\"italic\":true}]");
+                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your soul has been bound to this position.\",\"color\":\"blue\",\"italic\":true}]");
                 }
+                else {
+                    if(isNull(event.player.data.clickedNetherObelisk)){
+                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"A chill settles as you approach the obelisk, but nothing stirs. Something waits, requiring a relic forged in wrath and memory\",\"color\":\"dark_red\",\"italic\":true}]");
+                        event.player.update({clickedNetherObelisk: true});
+                    }
+
+                }
+                
             }
+        
+
+        if(!isNull(itemStack1)){ 
 
             // Dreadstone Tablet
             if (tablet.matches(itemStack1)) {  
