@@ -1,10 +1,13 @@
-§lTREPIDATION v0.5.5.1§r
+§lTREPIDATION v0.5.5.2§r
 
 §eClick the version number on the main menu for full changelog.§r
 
 §a§lKnown Issues§r§r
 - Rarely, Erebus structures will spawn high up and replace the barrier
 - Creating a 2nd world or rejoining the same world in the same game session will cause a crash. Use the “Reset Run” button to avoid needing to create new worlds.
+
 Multiplayer Only:
 - Players joining in multiplayer sessions do not spawn at the same place (reset run to fix this). Players also sometimes permanently spawn in different locations on each reset
+- Boss music will not play in multiplayer
+
 
