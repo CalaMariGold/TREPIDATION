@@ -27,6 +27,9 @@ furnace.addRecipe(<nethercraft:neridium_ingot>, <dynaores:raw_neridium>, 1.0);
 JEI.removeAndHide(<da:enflamed_meat>);
 JEI.removeAndHide(<da:endless_enderpearl>);
 
+
+JEI.removeAndHide(<nethercraft:glowood_bowl>);
+
 JEI.removeAndHide(<nethercraft:imp_helmet>);
 JEI.removeAndHide(<nethercraft:imp_chestplate>);
 JEI.removeAndHide(<nethercraft:imp_leggings>);
@@ -66,10 +69,10 @@ var purple_glowshroom = <nethercraft:purple_glowshroom>;
 
 
 // Glow Stew Recipe
-recipes.addShapeless("glowstew", <nethercraft:glow_stew>,[green_glowshroom, purple_glowshroom, <nethercraft:glowood_bowl>]);
+recipes.addShapeless("glowstew", <nethercraft:glow_stew>,[green_glowshroom, purple_glowshroom, <nethercraft:glowood_planks>]);
 
 recipes.remove(<minecraft:mushroom_stew>);
-recipes.addShapeless("mushroom_stew_new", <minecraft:mushroom_stew>,[<ore:mushroomAny>,<ore:mushroomAny>, <minecraft:bowl>]);
+recipes.addShapeless("mushroom_stew_new", <minecraft:mushroom_stew>,[<ore:mushroomAny>,<ore:mushroomAny>, <ore:plankWood>]);
 
 
 
