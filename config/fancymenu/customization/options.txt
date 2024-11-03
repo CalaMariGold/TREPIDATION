@@ -14,46 +14,6 @@ customization {
 }
 
 customization {
-  orientation = mid-centered
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
-  buttonaction = copyfile;font_selection/bitter/smoothfont.cfg;config/smoothfont/smoothfont.cfg%btnaction_splitter_fm%
-  x = -153
-  width = 150
-  action = addbutton
-  actionid = df00e6a0-7e08-45e7-933a-0a7a626abb5c1635954030698
-  y = 106
-  label = Switch to regular font
-  height = 19
-}
-
-customization {
-  orientation = mid-centered
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
-  buttonaction = copyfile;font_selection/october_crow/smoothfont.cfg;config/smoothfont/smoothfont.cfg%btnaction_splitter_fm%
-  x = 6
-  width = 150
-  action = addbutton
-  actionid = df00e6a0-7e08-45e7-933a-0a7a626abb5c1635954030698
-  y = 106
-  label = Switch to scary font (default)
-  height = 19
-}
-
-customization {
-  orientation = mid-centered
-  shadow = false
-  x = -72
-  actionid = 77456e86-89bd-4359-911f-96d269ec7de61635954594744
-  action = addtext
-  y = 127
-  scale = 1.0
-  alignment = left
-  value = Font change requires game restart!
-}
-
-customization {
   orientation = element
   enable_scrolling = true
   shadow = true
