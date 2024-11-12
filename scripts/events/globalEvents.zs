@@ -116,7 +116,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
         if(!isNull(itemstack)){
             if (soul_anchor.matches(itemstack)) {  
                 if (event.player.dimension == -1) {
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Can not be used in the Nether.\",\"color\":\"dark_red\",\"italic\":true}]");
+                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Can not be used in the Nether.\",\"color\":\"blue\",\"italic\":false}]");
                 }
                 else {
                     server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your soul has been bound to this position. Be sure not to obstruct this area.\",\"color\":\"dark_red\",\"italic\":true}]");

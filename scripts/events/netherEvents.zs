@@ -72,7 +72,7 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
                 }
             } 
             else {
-                server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"As you stare into the eye of this artifact, it seems to draw you to an ancient stone of some kind—a place where buried power might yet be unearthed.\",\"color\":\"dark_red\",\"italic\":false}]");
+                server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"As you stare into the eye of this artifact, it seems to draw you to an ancient stone of some kind—a place where buried power might yet be unearthed.\",\"color\":\"red\",\"italic\":true}]");
                 Commands.call("playsound enderskills:contaminate player @p", event.player, event.world, true, true);
             }
         }  
@@ -96,7 +96,7 @@ events.onPlayerLeftClickBlock(function(event as crafttweaker.event.PlayerLeftCli
             if(event.block.displayName == "Barrier §4Alpha"){
                 if(!isNull(playerHoldItemStack)){
                     if (veilstriumPick.matches(playerHoldItemStack) || netherrackPick.matches(playerHoldItemStack) || glowoodPick.matches(playerHoldItemStack)) {  
-                        event.player.sendChat("§4As you strike the barrier above you, a haunting realization dawns: A tool much stronger than your " + event.player.currentItem.displayName + " will be required to shatter this engimatic veil - one steeped in the essence of Withering, forged by a dark, concealed entity...");
+                        event.player.sendChat("§cAs you strike the barrier above you, a haunting realization dawns: A tool much stronger than your " + event.player.currentItem.displayName + " will be required to shatter this engimatic veil - one steeped in the essence of Withering, forged by a dark, concealed entity...");
                         Commands.call("playsound quark:item.soul_bead.curse player @s ~ ~ ~ 5.0 1.0 1.0", event.player, event.world, true, true);
                         event.player.update({clickedNetherBarrier: true});
                     }
@@ -124,7 +124,7 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                     var secondsElasped = totalSecondsElasped % 60;
                     var minutesElasped = (totalSecondsElasped % 3600) / 60;
                     event.player.sendChat(player_name + " killed The Ashen Warden with §4" + minutes + ":" + seconds + " §fleft (" + minutesElasped + ":" + secondsElasped + " elasped)." );
-                    server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"timerbonus\"},\"color\":\"dark_red\"}]");
+                    server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"timerbonus\"},\"color\":\"red\"}]");
                     server.commandManager.executeCommand(server, "effect @a regeneration 60");
                     server.commandManager.executeCommand(server, "effect @a invisibility 60");
                     server.commandManager.executeCommand(server, "effect @a minecraft:glowing 60");
@@ -157,7 +157,7 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                     var secondsElasped = totalSecondsElasped % 60;
                     var minutesElasped = (totalSecondsElasped % 3600) / 60;
                     event.player.sendChat(player_name + " killed The Wither with §4" + minutes + ":" + seconds + " §fleft (" + minutesElasped + ":" + secondsElasped + " elasped)." );
-                    server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"timerbonus\"},\"color\":\"dark_red\"}]");
+                    server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"timerbonus\"},\"color\":\"red\"}]");
                     server.commandManager.executeCommand(server, "effect @a fire_resistance 120");
                     server.commandManager.executeCommand(server, "effect @a regeneration 120");
                     server.commandManager.executeCommand(server, "effect @a invisibility 120");
@@ -208,12 +208,12 @@ events.onPlayerInteractEntity(function(event as crafttweaker.event.PlayerInterac
                     
                         Commands.call("setworldspawn ~ ~ ~", event.player, event.world, true, true);
                         Commands.call("spawnpoint @a ~ ~ ~", event.player, event.world, true, true);
-                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The air thickens, the embers pulse—once bound by betrayal, the past now rises to face the living.\",\"color\":\"dark_red\",\"italic\":true}]");
+                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The air thickens, the embers pulse—once bound by betrayal, the past now rises to face the living.\",\"color\":\"red\",\"italic\":true}]");
                         server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your soul has been bound to this position.\",\"color\":\"blue\",\"italic\":true}]");
                 }
                 else {
                     if(isNull(event.player.data.clickedNetherObelisk)){
-                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"A chill settles as you approach the obelisk, but nothing stirs. Something waits, requiring a relic forged in wrath and memory\",\"color\":\"dark_red\",\"italic\":true}]");
+                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"A chill settles as you approach the obelisk, but nothing stirs. Something waits, requiring a relic forged in wrath and memory\",\"color\":\"red\",\"italic\":true}]");
                         event.player.update({clickedNetherObelisk: true});
                     }
 
@@ -227,7 +227,7 @@ events.onPlayerInteractEntity(function(event as crafttweaker.event.PlayerInterac
             // Dreadstone Tablet
             if (tablet.matches(itemStack1)) {  
                 if(event.target.definition.name == "PigZombie"){
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"As you raise the Dreadstone Tablet to the Dreadswine, it shatters in your hands, releasing a surge of dark energy. You notice faint tear trace down the Dreadswine's face as the fragments of the tablet disintegrate into dust.\",\"color\":\"dark_red\",\"italic\":true}]");
+                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"As you raise the Dreadstone Tablet to the Dreadswine, it shatters in your hands, releasing a surge of dark energy. You notice faint tear trace down the Dreadswine's face as the fragments of the tablet disintegrate into dust.\",\"color\":\"red\",\"italic\":true}]");
                     Commands.call("playsound enderskills:syphon player @p ~ ~ ~ 100 0.6", event.player, event.world, true, true);
                     Commands.call("effect @p wither 5", event.player, event.world, true, true);
                     itemStack1.mutable().shrink(1);
@@ -239,7 +239,7 @@ events.onPlayerInteractEntity(function(event as crafttweaker.event.PlayerInterac
                 if(event.target.definition.name == "PigZombie"){
                     if(isNull(event.player.data.testing)){
                         itemStack1.mutable().shrink(1);
-                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"You carefully hand a fragment of the Dreadstone Tablet to the Dreadswine. It grasps the piece with trembling hands, staring at it intensely before carrying on. \",\"color\":\"dark_red\",\"italic\":true}]");
+                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"You carefully hand a fragment of the Dreadstone Tablet to the Dreadswine. It grasps the piece with trembling hands, staring at it intensely before carrying on. \",\"color\":\"red\",\"italic\":true}]");
                         event.player.update({testing: true});
                     }
                     // really stupid work around for interact event triggering twice (only for the fragment?)
@@ -282,7 +282,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                     itemStack1.mutable().shrink(1);
                 }
                 else
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Only useable in the Nether\",\"color\":\"dark_red\",\"italic\":false}]");
+                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Only useable in the Nether\",\"color\":\"blue\",\"italic\":false}]");
             }
         }
 
@@ -293,7 +293,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             if (traceofdeath.matches(itemStack2)) {  
 
                 if(isNull(event.player.data.shatteredTraceOfDeath)){
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"As the final pieces of the Trace of Death crumble at your feet, you are suddenly consumed by a rush of spectral energies. The secrets you now possess are both a blessing and a curse, for the shadows that surround you have been stirred, and you cannot escape the feeling that you are being watched by something far beyond your comprehension.\",\"color\":\"dark_red\",\"italic\":true}]");
+                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"As the final pieces of the Trace of Death crumble at your feet, you are suddenly consumed by a rush of spectral energies. The secrets you now possess are both a blessing and a curse, for the shadows that surround you have been stirred, and you cannot escape the feeling that you are being watched by something far beyond your comprehension.\",\"color\":\"red\",\"italic\":true}]");
                     Commands.call("playsound cyclicmagic:chaos_reaper master @p ~ ~ ~ 0.6 0.7", event.player, event.world, true, true);
                     event.player.update({shatteredTraceOfDeath: true});
                     
@@ -303,7 +303,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                     })
                     .sleep(300)
                     .then(function(world, context) {
-                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Memories that don't seem to be your own begin to flood your mind. You quickly bring out your notebook to write it down.\",\"color\":\"dark_red\",\"italic\":true}]");
+                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Memories that don't seem to be your own begin to flood your mind. You quickly bring out your notebook to write it down.\",\"color\":\"red\",\"italic\":true}]");
                         Commands.call("advancement grant @p only triumph:advancements/journal_entries/trace_of_death_entry", event.player, event.world, true, true);
 
                     })
@@ -321,7 +321,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
         if(!isNull(itemStack3)){
             if (scepter.matches(itemStack3)) {  
                 Commands.call("playsound minecraft:item.totem.use player @p", event.player, event.world, true, true);
-                server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The ground begins to tremble as you tightly grasp the scepter. As the air crackles with anticipation, the scepter dissolves into a swirling vortex of crimson smoke. In the blink of an eye, the smoke weaves itself into the fabric of space as the scepter's essence becomes one with a hellish structure.\",\"color\":\"dark_red\",\"italic\":true}]");
+                server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The ground begins to tremble as you tightly grasp the scepter. As the air crackles with anticipation, the scepter dissolves into a swirling vortex of crimson smoke. In the blink of an eye, the smoke weaves itself into the fabric of space as the scepter's essence becomes one with a hellish structure.\",\"color\":\"red\",\"italic\":true}]");
                 Commands.call("pillar-spawn witherarena ~ 9 ~", event.player, event.world, true, true);
 
                 Commands.call("tp @a ~ 10 ~", event.player, event.world, true, true);
