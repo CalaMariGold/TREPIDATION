@@ -87,13 +87,6 @@
           "name": "minecraft:arrow"
         },
         {
-          "entryName": "timeisup:timer_bonus",
-          "weight": 3,
-          "quality": 0,
-          "type": "item",
-          "name": "timeisup:timer_bonus"
-        },
-        {
           "entryName": "contenttweaker:dreadswine_entry",
           "weight": 1,
           "quality": 0,
@@ -116,7 +109,7 @@
             {
               "count": {
                 "min": 1.0,
-                "max": 4.0
+                "max": 2.0
               },
               "function": "minecraft:set_count"
             }
@@ -147,8 +140,8 @@
           "functions": [
             {
               "count": {
-                "min": 3.0,
-                "max": 5.0
+                "min": 1.0,
+                "max": 3.0
               },
               "function": "minecraft:set_count"
             }
@@ -156,7 +149,7 @@
           "name": "da:abberrant_eye"
         }
       ],
-      "rolls": 8.0
+      "rolls": 6.0
     }
   ]
 }
