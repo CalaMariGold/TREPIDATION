@@ -61,3 +61,7 @@ config/normalasm/methods-stable_39.csv
 /config/spark
 mods/hitindication-1.12.2-2.0.jar
 /classOut
+config/acronym/saved/material_parts_contenttweaker-original.json
+config/acronym/saved/material_parts_contenttweaker.json
+config/acronym/saved/saved_sub_blocks_contenttweaker-original.json
+config/acronym/saved/saved_sub_blocks_contenttweaker.json
