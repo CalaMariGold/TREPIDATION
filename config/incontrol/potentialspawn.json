@@ -12,8 +12,35 @@
     "dimension": -1,
     "mobs": [
       {
+        "mob": "minecraft:blaze",
+        "weight": 50
+      }
+    ]
+  },
+  {
+    "dimension": -1,
+    "mobs": [
+      {
+        "mob": "minecraft:magma_cube",
+        "weight": 15
+      }
+    ]
+  },
+  {
+    "dimension": -1,
+    "mobs": [
+      {
+        "mob": "minecraft:wither_skeleton",
+        "weight": 20
+      }
+    ]
+  },
+  {
+    "dimension": -1,
+    "mobs": [
+      {
         "mob": "minecraft:zombie_pigman",
-        "weight": 50,
+        "weight": 40,
         "groupcountmin": 4,
         "groupcountmax": 10
       }

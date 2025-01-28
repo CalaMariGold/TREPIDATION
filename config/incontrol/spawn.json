@@ -1,19 +1,53 @@
 [
 
     {
+        "dimension": -1,
         "mob": ["minecraft:wither_skeleton"],
         "helditem": ["nethercraft:pyridium_sword"],
-        "onjoin":"true"
+        "block": ["minecraft:nether_brick","minecraft:red_nether_brick"],
+        "onjoin": "true",
+        "random": "0.01",
+        "result": "allow"
     },
+    {
+        "dimension": -1,
+        "mob": ["minecraft:wither_skeleton"],
+        "result": "deny"
+    },
+
+    {
+        "dimension": -1,
+        "mob": ["minecraft:blaze"],
+        "block": ["minecraft:glowstone"],
+        "random": "0.75",
+        "result": "allow"
+    },
+    {
+        "dimension": -1,
+        "mob": ["minecraft:blaze"],
+        "result": "deny"
+    },
+
+    {
+        "dimension": -1,
+        "mob": ["minecraft:magma_cube"],
+        "block": ["nethercraft:nether_dirt"],
+        "random": "0.001",
+        "result": "allow"
+    },
+    {
+        "dimension": -1,
+        "mob": ["minecraft:magma_cube"],
+        "result": "deny"
+    },
+
 
     {
         "mod": "srrevenants",
         "dimension": -1,
         "result": "deny",
         "onjoin":"true"
-        
     },
-
     {
         "dimension": 684,
         "mob": "betterswim:herobrine",
@@ -272,9 +306,10 @@
         "dimension": -1,
         "mob": "minecraft:zombie_pigman",
         "maxcount": {
-            "amount": 50,
+            "amount": 45,
             "perchunk": true
         },
+        "random": "0.5",
         "result": "allow"
      },
      {
