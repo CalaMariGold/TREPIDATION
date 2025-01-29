@@ -72,8 +72,11 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
                 }
             } 
             else {
-                server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"As you stare into the eye of this artifact, it seems to draw you to an ancient stone of some kind—a place where buried power might yet be unearthed.\",\"color\":\"red\",\"italic\":true}]");
-                Commands.call("playsound enderskills:contaminate player @p", event.player, event.world, true, true);
+                if(isNull(event.player.data.clickedEchoOfBetrayal)){  
+                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"As you stare into the eye of this artifact, it seems to draw you to an ancient stone of some kind—a place where buried power might yet be unearthed.\",\"color\":\"red\",\"italic\":true}]");
+                    Commands.call("playsound enderskills:contaminate player @p", event.player, event.world, true, true);
+                    event.player.update({clickedEchoOfBetrayal: true});
+                }
             }
         }  
         

@@ -56,6 +56,7 @@ EventManager.getInstance().onTimerTick(function(event as TickEvent){
         event.player.update({clickedNetherBarrier: null});
         event.player.update({shatteredTraceOfDeath: null});
         event.player.update({clickedNetherObelisk: null});
+        event.player.update({clickedEchoOfBetrayal: null});
     }            
 });
 
