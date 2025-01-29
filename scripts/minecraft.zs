@@ -23,6 +23,9 @@ JEI.removeAndHide(<minecraft:potion:*>);
 JEI.removeAndHide(<minecraft:brewing_stand>);
 JEI.removeAndHide(<minecraft:magma>);
 JEI.removeAndHide(<minecraft:writable_book>);
+JEI.removeAndHide(<minecraft:quartz_block:*>);
+JEI.removeAndHide(<minecraft:quartz_stairs>);
+JEI.removeAndHide(<minecraft:stone_slab:7>); // quartz slab
 
 
 JEI.removeAndHide(<minecraft:iron_pickaxe>);
