@@ -1,0 +1,34 @@
+{
+    "name": "Ashen Revenant",
+    "icon": "da:abberrant_eye",
+    "category": "elara",
+    //"advancement": "triumph:advancements/journal_entries/ashen_revenant_entry",
+    "pages": [
+      {
+        "type": "spotlight",
+        "item": "da:abberrant_eye",
+        "text": "$(#551012)Cycle 89, Entry 22 $(br2)They glide through the smog-choked halls like living obituaries - these petrified arbiters whose mere proximity makes Veilstrium scream. The Revenants... my fractured reflection? No, that comfort reeks of delusion's perfume. Their "
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)damnation crystallizes rather than corrupts, each warrior a walking mausoleum for the world we unmade. The world $(o)I$()$(#551012) helped dismantle. Their armor weeps rust in perfect counterpoint to my trembling hands, each corroded groove singing of vigils spanning dead epochs. When they pass through the ancient archways, the air itself curdles - not in fear, but in communion with their ossified resolve."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)The metal murmurs they were the canny ones, nostrils flaring at ambition's gangrenous stench. Now they enact some grand inquisition, though its articles remain sealed to my blighted mind. The Veilstrium writhes in my grip as they near, its vibrations mapping dread's cartography across my bones. These are no Dreadswine rabble lost to hunger's cacophony."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)The Revenants clutch... something. Conviction? Penance? The ore thrums with portents of censured truths that would unravel mortal sanity. I've witnessed their hunts - balletic rage where Dreadswine dissolve into mist. Each cleansing feels like watching time devour its own offspring, yet the Veilstrium cadence crescendos in grim accord. There's retribution here, sentencing for crimes I helped author. "
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)So I scream into the smog-choked void: What alchemy preserves this singular horror? Why does the curse that made beasts of my brethren leave me whole? What eyes in the ash deem me worthy to remember, when oblivion claims all others? The Watcher's silence rings louder than any answer.$(br2)—Elara"
+      }
+      
+    ]
+  }
+
+
+
+  

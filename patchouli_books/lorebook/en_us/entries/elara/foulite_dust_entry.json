@@ -7,15 +7,23 @@
       {
         "type": "spotlight",
         "item": "nethercraft:foulite_dust",
-        "text": "$(#551012)Cycle 13, Entry 9 $(br2)I have encountered a peculiar substance in the depths of the Nether, one I have come to call Foulite Dust. This greenish powder seems to originate from the fusion of foul energies and remnants of organic matter."
+        "text": "$(#551012)Cycle 13, Entry 9 $(br2)The ash-choked winds carry new blasphemies - a viridescent powder that clings to flesh like a lover's final breath. This Foulite Dust whispers of dissolution and reconstitution, its particles dancing between states like shards of"
       },
       {
         "type": "text",
-        "text": "$(#551012)Its ominous origins are evident in the way it clings to the air, almost as if it possesses a malevolent will of its own. Despite its unsettling nature, I have found Foulite Dust to be an invaluable resource. It is highly flammable, providing much-needed illumination and smelting of other materials. $(br2)Its properties extend beyond simple combustion as well..."
+        "text": "$(#551012)broken promises. The substance mocks purity, born from the marriage of blighted energies and that which should have remained buried. Yet in its perverse alchemy lies an unlikely boon. When pressed to weeping wounds, it cauterizes with spectral fire - not true healing, but a stolen reprieve paid for in marrow-deep shivers."
       },
       {
         "type": "text",
-        "text": "$(#551012)I've discovered that, strangely enough, Foulite Dust has a restorative effect on wounds. I have used it to mend my own injuries on more than one occasion, marveling at the way it accelerates healing, even as I question the cost of its use. I must look into this further. $(br2)—Elara"
+        "text": "$(#551012)Its sickly verdant luminescence now lights my path, these emerald flames casting shadows that twitch with unnatural life. The dust remembers its making, each spark a stolen scream given form. I've learned to parse its language of crackles and hisses - warnings written in pyrophoric verse."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)But the flesh forgets nothing. My hands bear the truth in their new pallor, veins mapping alien tributaries where the dust's kiss lingers. What pact have I sealed with this false salvation? The answer lies in the way my blood now sings in harmony with the Realm's corruption, a duet scored by forces that care not for their instrument's survival."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)Let the dust work its cruel miracles. I'll drink this poisoned chalice to the dregs if it buys one more cycle to atone. Even fool's pyrite holds value when the alternative is the chasm's embrace.$(br2)—Elara"
       }
       
     ]

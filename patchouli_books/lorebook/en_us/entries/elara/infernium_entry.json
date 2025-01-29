@@ -7,25 +7,20 @@
       {
         "type": "spotlight",
         "item": "dynaores:raw_pyridium",
-        "text": "$(#551012)Cycle 23, Entry 15 $(br2)I was finally able to mine this extraordinary ore, one that seems to pulse with an inner light. This yellow-hued mineral radiates an intense heat and almost feels... alive."
+        "text": "$(#551012)Cycle 23, Entry 15 $(br2)The Nether's fever burns in my palms - this golden malignancy that thrums with imprisoned fury. Infernium's song vibrates at the edge of audibility, a harmonic that resonates with the rot festering in our shared soul. To hold it is to cradle dying stars; to"
       },
       {
         "type": "text",
-        "text": "$(#551012)Mining it was no easy task; the Veilstrium pickaxe was barely enough to extract it. The ore seemed to resist, almost as if it possessed a will of its own. During my exploration, I stumbled upon an ancient fortress, half-buried in the ash and ruins. Inside, I found an inscription etched into the brick walls, a poem that spoke of a powerful substance called Infernium."
+        "text": "$(#551012)mine it invites accusations from the air itself. The Veilstrium pickaxe wept as it bit into the living stratum, its song of remembrance drowned by Infernium's screaming counterpoint. The dissonant chorus chased me through trembling passages, deep in the Ashen bowels, where the fortress walls breathe their last. Here, I found the truth etched in bleeding basalt:"
       },
       {
         "type": "text",
-        "text": "$(#551012)The words were cryptic and some impossible to read, but hinted at its origins:$(br2)Ashes of ancients, fierce and -----,$(br)Infernium ------- souls' trapped light.$(br)Wrath and ----, destruction's core,$(br)In this ore, their power's stored."
+        "text": "$(#551012)$(o)Flesh of fallen lords$(br)Condemned to smolder$(br)In this ore, their final breath$(br)Wrath becomes the welder$(br2)$()$(#551012)What blasphemous crucible birthed this metal? Its heat mocks the Realm's dying embers, each ingot a prison for ancient rage. When joined with jagged scepters from the Infernal beings, the metal awakens - its song now a chorus of gateways screaming to be unsealed."
       },
       {
         "type": "text",
-        "text": "$(#551012)While I know little about its true potential, I have managed to experiment with Infernium in small amounts. When combined with infernal rods and Nether Wraith bones, it appears to react in unique and powerful ways. There's something about this combination that feels like it could unlock greater secrets of the Nether."
-      },
-      {
-        "type": "text",
-        "text": "$(#551012)For now, I must tread carefully. The line between harnessing this power and being consumed by it feels perilously thin. I will continue to experiment with that particular combination.$(br2)—Elara"
+        "text": "$(#551012)The forge's glow paints shadow-puppets of giants on crumbling walls. Let them dance their accusatory jig - I'll wield this damned metal until my hands blister or the Realms remember their true shape.$(br2)—Elara"
       }
-      
     ]
   }
 

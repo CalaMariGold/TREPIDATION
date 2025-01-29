@@ -7,19 +7,23 @@
       {
         "type": "spotlight",
         "item": "enderskills:token",
-        "text": "$(#551012)Cycle 213, Entry 22 $(br2)I have spent many cycles now meticulously studying an artifact that has captivated my curiosity—something I’ve come to call the Trace of Death."
+        "text": "$(#551012)Cycle 213, Entry 22 $(br2)The Wither's exhalation takes crystalline form - this frozen scream that burns with anti-heat. To hold the Trace is to cup eternity's absence in trembling palms, its chill etching fractal regrets into the meat of one's being."
       },
       {
         "type": "text",
-        "text": "$(#551012)This accursed artifact is marked by an eerie, bone-chilling cold that permeates the air around it, an ominous aura that forewarns of the darkness within. When shattered, the Trace of Death unleashes a torrent of spectral energies that reach out to ensnare the wandering souls still clinging to this realm. These souls are forcibly drawn to the one who destroyed the artifact, bestowing upon them"
+        "text": "$(#551012)When shattered, the artifact births a vacuum that hungers for wandering spirits. These orphaned souls cling to the breaker like stillborn stars, their stolen luminance a poisoned sacrament. The power comes sweet - ambrosia laced with hemlock - each sip from the chalice leaving deeper stains."
       },
       {
         "type": "text",
-        "text": "$(#551012)a surge of raw power and a glimpse into the secrets and knowledge these spirits once held.$(br)However, such power comes at a steep cost... I've discovered that the Trace of Death can drive even the most level-headed Runners to madness and despair. Its effects linger long after the artifact is destroyed, tainting the mind of those who destroyed it. In my research, I have broken a Trace of Death myself,"
+        "text": "$(#551012)I've tasted its false promises. The shard's rupture birthed a symphony of whispers, dead tongues licking at the cracks in my psyche. In that cacophony of stolen memories, I felt $(o)it$()$(#551012) - the Watcher behind the veil. Its gaze fell upon me like a glacier's crush, imprinting truths that festered into cankers. My blood now thrums with alien harmonics, a choir of absences where certainty once dwelled."
       },
       {
         "type": "text",
-        "text": "$(#551012)and in those harrowing moments, I felt an... $(italics)entity$()$(#551012) notice me, as if simply the gaze of this entity placed a heavy weight upon my soul. The encounter left me with a chilling realization: this power is not just dangerous, but malevolent. Yet, for the brave—or the desperate—the Trace of Death represents an opportunity to tap into the forbidden knowledge and power this world has to offer, no matter the cost. $(br)—Elara"
+        "text": "$(#551012)The Trace's legacy lingers in phantom sensations: static on the tongue, pressure behind the eyes, the taste of copper where no wound bleeds. Each experiment leaves my journal's pages heavier, the ink pooling into shapes that squirm when unobserved."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)Let fools call it a key to power. This artifact is a lockpick for realities best left sealed. Yet when the cycle's teeth gnash at my heels, even a blade of broken promises holds appeal. I'll carve my path with this cursed edge until either the veil or my resolve breaks.$(br)—Elara"
       }
     ]
   }

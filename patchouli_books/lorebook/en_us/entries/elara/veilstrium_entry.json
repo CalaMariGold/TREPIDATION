@@ -7,15 +7,23 @@
       {
         "type": "spotlight",
         "item": "dynaores:raw_neridium",
-        "text": "$(#551012)Cycle 23, Entry 11 $(br2)I've stumbled upon a vein of Veilstrium, its purplish glow calling to me. As I mined the ore, I felt the whispers of lost souls, guiding my hands. Veilstrium seems to absorb the malevolent energies around it, making it incredibly resilient."
+        "text": "$(#551012)Cycle 23, Entry 11 $(br2)The stone remembers what the flesh cannot. This amethyst malignancy pulses with stolen breath, its veins mapping the Nether's dying exhalations. To touch it is to drown in whispered confessions - a thousand tongues licking at the"
       },
       {
         "type": "text",
-        "text": "$(#551012)Crafting with Veilstrium has granted me a strange connection to the Nether, almost as if the souls trapped within it are aiding my journey. The armor I’ve forged seem to offer protection and insight into this cursed world. Each piece I create feels like a step closer to understanding my plight, yet I can’t shake the feeling that I’m only scratching the surface."
+        "text": "$(#551012)cracks in one's sanity, each syllable a shard of some greater blasphemy. It called to me through basalt and fire, this mineral amnesiac. The pickaxe's song shifted as it bit deep - no longer tool and wielder, but penitent and confessor. The ore's embrace left my hands stained with phantom ink, fingers tracing sigils I cannot recall learning. Veilstrium, I name it - for the way it shrouds truth in riddles, each crystal"
       },
       {
         "type": "text",
-        "text": "$(#551012)What secrets does this ore hold, and what price will I pay for its power? I must continue to explore and learn, for the answers lie somewhere within these depths.$(br2)—Elara"
+        "text": "$(#551012)a veil between memory and void. Crafted into armor, the metal becomes a second skin that *itches*. Its purulent glow maps old scars into new constellations, each plate a tombstone for the souls it devours. The visions come sweet at first - memories not my own of cold marble halls and chanting voices. But the stone's mercy curdles quickly; now I wake choking on ash from pyres I never lit, my tongue"
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)heavy with oaths to dead gods. Yet still I return to its violet embrace. The armor's whispers guide me through lava flows that part like grieving lovers, reveal hidden paths in what should be solid rock. A fair trade, this slow erosion of self for slivers of forbidden knowledge? The pickaxe's edge grows dull with secrets, its song now a dirge in a language that bleeds from my pores."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)What ancient compact have I renewed through this metallic baptism? The answer festers in the way the ore's glow intensifies when my resolve wavers, how its weight shifts to steer me toward buried altars. Let it consume me whole if it grants one more fragment of the truth. Even a poisoned compass points $(o)somewhere$()$(#551012).$(br2)—Elara"
       }
       
     ]

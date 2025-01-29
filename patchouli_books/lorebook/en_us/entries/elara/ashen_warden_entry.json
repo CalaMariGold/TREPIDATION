@@ -1,0 +1,37 @@
+{
+    "name": "Ashen Warden",
+    "icon": "da:ambition_flame",
+    "category": "elara",
+    //"advancement": "triumph:advancements/journal_entries/ashen_warden_entry",
+    "pages": [
+      {
+        "type": "text",
+        "text": "$(#551012)Cycle 93, Entry 24 $(br2)His essence unraveled like effervescent rot in a lava flow - this architect of forbidden vigil now reduced to prismatic afterimages dancing on my retinas. The Infernal Core lies quiescent in my palms, its arrhythmic pulse a funerary drum for the maestro who conducted reality's unraveling."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)In dissolution's wake, I taste the bitter vintage of his truth - fermented through centuries of vigil, now decanted into my unworthy vessel. The Veilstrium weeps acid revelations against my skin, its tears etching his warnings into flesh-made-parchment. How we preened in our ritual vestments, blind to the abyss yawning beneath our sigil-scorched feet! He alone kept watch while we danced our damnation"
+      },
+      {
+        "type": "text",
+        "text": "$(#551012) into being, his dissent preserved in the Core's labyrinthine memory-crystals. The Wither's power, he insisted through a thousand metallic tongues, is but a scalpel for excising tumors from the Realms' rotting flesh. Through the artifact's visions, I've supped on his vigil's bitter harvest - aeons spent communing with Infernal essence not as conqueror but crucible. His Revenant chorus wore their curse as chrysalis"
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)rather than chain, their half-life a bridge between what was and what must never be. Even now, Infernium keens for its fallen conductor, the ore's song warping into dissonant requiems that blister my dreamscapes. The Core flares anew, its light carving bas-relief accusations from the choking smog. How many Runners' hopes shattered against his trials before my cursed constancy prevailed?"
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)Did he glimpse the scholar's hunger gnawing at my marrow, or the rot festering where my soul once pulsed? His parting gaze - all obsidian and dying stars - bestowed neither benediction nor condemnation, only the terrible weight of an unbroken chain."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)Another link forged. Another sin to bear through the Cycle's grinding gears. Let the Core's poisoned wisdom guide me deeper into the labyrinth - better a heretic's truth than the sweet lies of oblivion's embrace.$(br2)—Elara"
+      }
+      
+    ]
+  }
+
+
+
+  
