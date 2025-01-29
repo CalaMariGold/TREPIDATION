@@ -67,15 +67,12 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <da:ambition_sword:*>.displayName = "§cBlade of the Last Vigil";
 <da:ambition_flame>.displayName = "§cIn the Wake of Fire, We Were Forsaken";
 <da:ambition_sword:*>.removeTooltip("May it spark you forward! Right clicking launches an AOE attack, and sword is resistant to fire");
-<da:flame_metal_scrap>.removeTooltip("Crafting Material");
-<da:ambition_flame>.removeTooltip("Crafting Material");
 <da:ambition_flame>.removeTooltip("§cUsed to light the floating obelisk in the dungeon");
 <da:ambition_sword:*>.addTooltip("§oThis blade carries not rage, but the weight of what could not be saved");
 <da:ambition_sword:*>.addTooltip("§3Right-click to launch an AOE attack around you");
 <da:ambition_flame>.addTooltip("§oTouch it, and remember what even time could not erase.");
 
 <da:abberrant_eye>.displayName = "§fEcho of Betrayal";
-<da:abberrant_eye>.removeTooltip("Crafting Material");
 <da:abberrant_eye>.addTooltip("§oPress it to an ancient stone, and the past will ignite once more");
 
 

@@ -23,9 +23,8 @@ recipes.remove(<dynaores:raw_gold>);
 furnace.addRecipe(<nethercraft:pyridium_ingot>, <dynaores:raw_pyridium>, 1.0);
 furnace.addRecipe(<nethercraft:neridium_ingot>, <dynaores:raw_neridium>, 1.0);
 
-// da
-JEI.removeAndHide(<da:enflamed_meat>);
-JEI.removeAndHide(<da:endless_enderpearl>);
+// BOMD DA Backport
+recipes.removeByMod("da");
 
 
 JEI.removeAndHide(<nethercraft:glowood_bowl>);
