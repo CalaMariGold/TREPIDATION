@@ -27,8 +27,8 @@ infernium_entry.register();
 val glowood_entry = mods.contenttweaker.VanillaFactory.createItem("glowood_entry");
 glowood_entry.register();
 
-val ashen_warden_entry = mods.contenttweaker.VanillaFactory.createItem("ashen_warden_entry");
-ashen_warden_entry.register();
+val ashen_oracle_entry = mods.contenttweaker.VanillaFactory.createItem("ashen_oracle_entry");
+ashen_oracle_entry.register();
 
 val ashen_revenant_entry = mods.contenttweaker.VanillaFactory.createItem("ashen_revenant_entry");
 ashen_revenant_entry.register();

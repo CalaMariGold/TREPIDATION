@@ -1,8 +1,8 @@
 {
-    "name": "Ashen Warden",
+    "name": "Ashen Oracle",
     "icon": "da:ambition_flame",
     "category": "elara",
-    "advancement": "triumph:advancements/journal_entries/ashen_warden_entry",
+    "advancement": "triumph:advancements/journal_entries/ashen_oracle_entry",
     "pages": [
       {
         "type": "text",

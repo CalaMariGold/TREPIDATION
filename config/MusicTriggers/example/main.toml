@@ -22,8 +22,8 @@
 		mob_targeting = false
 		priority = "10"
 	[[triggers.mob]]
-		identifier = "warden"
-		resource_name = [ "Ashen Warden" ]
+		identifier = "oracle"
+		resource_name = [ "Ashen Oracle" ]
 		level = "1"
 		detection_range = "300"
 		mob_targeting = false
@@ -80,8 +80,8 @@
 			num_loops = "999"
 			from = "127800"
 		triggers = [ "mob-wither" ]
-	[songs.warden_might_have_fallen_aaron_woodhouse]
-		triggers = [ "mob-warden" ]
+	[songs.oracle_might_have_fallen_aaron_woodhouse]
+		triggers = [ "mob-oracle" ]
 	[songs.universal]
 	[songs.nether_youknowwhatineed_coagmusic]
 		triggers = [ "dimension-nether" ]

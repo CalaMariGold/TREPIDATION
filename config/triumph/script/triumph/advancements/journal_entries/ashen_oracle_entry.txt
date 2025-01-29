@@ -1,6 +1,6 @@
 setIcon(<da:ambition_flame>)
 setTitle("Entry #24")
-setDescription("The Ashen Warden")
+setDescription("The Ashen Oracle")
 
 addParent("triumph:advancements/journal_entries/root")
 

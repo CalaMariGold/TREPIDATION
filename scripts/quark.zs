@@ -16,7 +16,7 @@ recipes.remove(<quark:soul_compass>);
 recipes.remove(<quark:pickarang>);
 
 
-// dropped from ashen warden
+// dropped from Ashen Oracle
 recipes.remove(<quark:backpack>);
 
 
