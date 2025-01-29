@@ -113,10 +113,10 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
     if(!event.entity.world.isRemote()){
         if(event.entity.definition.id == <entity:da:flame_knight>.id)
         {
-            server.commandManager.executeCommand(server, "gamestage silentadd @a killedWarden");
+            server.commandManager.executeCommand(server, "gamestage silentadd @a killedOracle");
 
             EventManager.getInstance().onTimerTick(function(event as TickEvent){
-                if(event.player.hasGameStage("preWarden") && event.player.hasGameStage("killedWarden")){
+                if(event.player.hasGameStage("preOracle") && event.player.hasGameStage("killedOracle")){
 
                     var player_name = event.player.name;
                     var totalSecs = event.tick/20;
@@ -139,7 +139,7 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                     server.commandManager.executeCommand(server, "give @a scalinghealth:heartcontainer 1");
                     server.commandManager.executeCommand(server, "give @a quark:backpack");
 
-                    server.commandManager.executeCommand(server, "gamestage silentremove @a preWarden");
+                    server.commandManager.executeCommand(server, "gamestage silentremove @a preOracle");
                 }
             });
         }
@@ -203,7 +203,7 @@ events.onPlayerInteractEntity(function(event as crafttweaker.event.PlayerInterac
         val itemStack1 = event.player.currentItem as IItemStack; 
         
 
-        // Warden Summon
+        // Oracle Summon
         
             if(event.target.definition.name == "nether_pyre"){
                 if (ambition_flame.matches(itemStack1)) {
