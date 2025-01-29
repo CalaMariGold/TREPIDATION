@@ -63,6 +63,10 @@ recipes.addShapeless("deviled_egg_sandwich", <contenttweaker:deviled_egg_sandwic
 recipes.remove(<corpsecomplex:scroll>);
 recipes.addShapeless("dreadstone_tablet", <corpsecomplex:scroll>,[<contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>,<contenttweaker:dreadstone_fragment>, <nethercraft:foulite_dust>]);
 
+recipes.remove(<nethercraft:lava_paper>);
+recipes.addShapeless("lava_paper", <nethercraft:lava_paper>, [<nethercraft:lava_reeds_item>,<nethercraft:lava_reeds_item>,<nethercraft:lava_reeds_item>]);
+
+
 
 var green_glowshroom = <nethercraft:green_glowshroom>;
 var purple_glowshroom = <nethercraft:purple_glowshroom>;
@@ -317,3 +321,4 @@ recipes.addShaped("flame_boots", <da:flame_boots>,
 
 
 recipes.addShapeless("raw_infernium", <dynaores:raw_pyridium>, [<minecraft:blaze_powder>, <da:flame_metal_scrap>, <minecraft:blaze_powder>]);
+
