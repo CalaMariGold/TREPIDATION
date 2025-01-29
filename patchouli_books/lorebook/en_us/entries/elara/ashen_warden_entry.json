@@ -2,7 +2,7 @@
     "name": "Ashen Warden",
     "icon": "da:ambition_flame",
     "category": "elara",
-    //"advancement": "triumph:advancements/journal_entries/ashen_warden_entry",
+    "advancement": "triumph:advancements/journal_entries/ashen_warden_entry",
     "pages": [
       {
         "type": "text",
@@ -14,7 +14,7 @@
       },
       {
         "type": "text",
-        "text": "$(#551012) into being, his dissent preserved in the Core's labyrinthine memory-crystals. The Wither's power, he insisted through a thousand metallic tongues, is but a scalpel for excising tumors from the Realms' rotting flesh. Through the artifact's visions, I've supped on his vigil's bitter harvest - aeons spent communing with Infernal essence not as conqueror but crucible. His Revenant chorus wore their curse as chrysalis"
+        "text": "$(#551012)into being, his dissent preserved in the Core's labyrinthine memory-crystals. The Wither's power, he insisted through a thousand metallic tongues, is but a scalpel for excising tumors from the Realms' rotting flesh. Through the artifact's visions, I've supped on his vigil's bitter harvest - aeons spent communing with Infernal essence not as conqueror but crucible. His Revenant chorus wore their curse as chrysalis"
       },
       {
         "type": "text",

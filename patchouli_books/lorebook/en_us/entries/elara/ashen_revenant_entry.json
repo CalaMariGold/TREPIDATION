@@ -2,7 +2,7 @@
     "name": "Ashen Revenant",
     "icon": "da:abberrant_eye",
     "category": "elara",
-    //"advancement": "triumph:advancements/journal_entries/ashen_revenant_entry",
+    "advancement": "triumph:advancements/journal_entries/ashen_revenant_entry",
     "pages": [
       {
         "type": "spotlight",

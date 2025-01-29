@@ -51,6 +51,8 @@ static nether_wraith_entry as IItemStack = <contenttweaker:nether_wraith_entry>;
 static veilstrium_entry as IItemStack = <contenttweaker:veilstrium_entry>;
 static infernium_entry as IItemStack = <contenttweaker:infernium_entry>;
 static glowood_entry as IItemStack = <contenttweaker:glowood_entry>;
+static ashen_warden_entry as IItemStack = <contenttweaker:ashen_warden_entry>;
+static ashen_revenant_entry as IItemStack = <contenttweaker:ashen_revenant_entry>;
 
 
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
@@ -59,6 +61,21 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
 
         
         if(!isNull(itemStack1)){
+
+            // Entry #24 - Ashen Warden
+            if (ashen_warden_entry.matches(itemStack1)) {  
+                Commands.call("advancement grant @p only triumph:advancements/journal_entries/ashen_warden_entry", event.player, event.world, true, true);
+                Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
+                itemStack1.mutable().shrink(1);
+            }
+
+            // Entry #22 - Ashen Revenant
+            if (ashen_revenant_entry.matches(itemStack1)) {  
+                Commands.call("advancement grant @p only triumph:advancements/journal_entries/ashen_revenant_entry", event.player, event.world, true, true);
+                Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
+                itemStack1.mutable().shrink(1);
+            }
+
             // Entry #22 - Trace of Death
 
             // Entry #7 - Dreadswine

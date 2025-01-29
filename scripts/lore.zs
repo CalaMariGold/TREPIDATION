@@ -25,6 +25,12 @@ import mods.jei.JEI;
 <contenttweaker:glowood_entry>.displayName = "§cElara's Journal - Entry #2";
 <contenttweaker:glowood_entry>.addTooltip("§oA tattered page that was torn from a journal");
 <contenttweaker:glowood_entry>.addTooltip("§3Right-click to add to your Journal");
+<contenttweaker:ashen_warden_entry>.displayName = "§cElara's Journal - Entry #24";
+<contenttweaker:ashen_warden_entry>.addTooltip("§oA tattered page that was torn from a journal");
+<contenttweaker:ashen_warden_entry>.addTooltip("§3Right-click to add to your Journal");
+<contenttweaker:ashen_revenant_entry>.displayName = "§cElara's Journal - Entry #22";
+<contenttweaker:ashen_revenant_entry>.addTooltip("§oA tattered page that was torn from a journal");
+<contenttweaker:ashen_revenant_entry>.addTooltip("§3Right-click to add to your Journal");
 
 <corpsecomplex:scroll>.displayName = "§cDreadstone Tablet";
 <corpsecomplex:scroll>.addTooltip("§3Use to teleport to your last death location");

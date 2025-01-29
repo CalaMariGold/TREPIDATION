@@ -147,6 +147,29 @@
 
     // LORE DROPS
     {
+        "mob":"da:nether_aberant",
+        "player": true,
+        "item": "contenttweaker:ashen_revenant_entry",
+        "itemcount": "1",
+        "random": "0.20"
+    },
+    {
+        "mob":"da:nether_aberant",
+        "remove": "contenttweaker:ashen_revenant_entry",
+        "gamestage": "ashen_revenant_entry"
+    },
+    {
+        "mob":"da:flame_knight",
+        "player": true,
+        "item": "contenttweaker:ashen_warden_entry",
+        "itemcount": "1"
+    },
+    {
+        "mob":"da:flame_knight",
+        "remove": "contenttweaker:ashen_warden_entry",
+        "gamestage": "ashen_warden_entry"
+    },
+    {
         "mob":"minecraft:zombie_pigman",
         "player": true,
         "item": "contenttweaker:dreadswine_entry",

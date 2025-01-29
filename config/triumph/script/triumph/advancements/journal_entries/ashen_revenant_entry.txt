@@ -1,0 +1,13 @@
+setIcon(<da:abberrant_eye>)
+setTitle("Entry #22")
+setDescription("The Ashen Revenant")
+
+addParent("triumph:advancements/journal_entries/root")
+
+addCriteria("impossible", "minecraft:impossible")
+
+setShowToast(false)
+setAnnounceToChat(false)
+setFrameType("GOAL")
+hideLines()
+setPos(-1,0)
