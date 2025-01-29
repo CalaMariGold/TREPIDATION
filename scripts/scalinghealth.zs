@@ -15,20 +15,6 @@ recipes.addShapeless("heartcrystals", <scalinghealth:crystalshard>*8,[<scalinghe
 recipes.remove(<scalinghealth:heartdust>);
 recipes.addShapeless("heartdust", <scalinghealth:heartdust>*2,[<scalinghealth:crystalshard>]);
 
-
+// removed because they're stinky
 recipes.remove(<scalinghealth:healingitem:1>);
-recipes.addShapeless("medkit", <scalinghealth:healingitem:1>, [<scalinghealth:healingitem>, <nethercraft:foulite_dust>, <scalinghealth:heartdust>]);
-
 recipes.remove(<scalinghealth:healingitem>);
-recipes.addShaped("bandage", <scalinghealth:healingitem>,
-[[null,null,null],
-[<nethercraft:foulite_dust>,<nethercraft:foulite_dust>,<nethercraft:foulite_dust>],
-[<ore:paper>,<ore:paper>,<ore:paper>]
-]);
-
-recipes.addShaped("bandage2", <scalinghealth:healingitem>,
-[[null,null,null],
-[<scalinghealth:heartdust>,<scalinghealth:heartdust>,<scalinghealth:heartdust>],
-[<ore:paper>,<ore:paper>,<ore:paper>]
-]);
-
