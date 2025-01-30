@@ -60,13 +60,22 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
                 
                     Commands.call("summon item " + event.x + " " + event.y + " " + event.z + " {Item:{id:\"da:flame_metal_scrap\", Count:1}}", event.player, event.entity.world, true, true);
                     Commands.call("setblock " + event.x + " " + event.y + " " + event.z + " minecraft:air", event.player, event.entity.world, true, true);
+
+                    
                     itemStack.mutable().shrink(1);
+
                     if(event.world.random.nextInt(0, 2) == 1){
                         if(event.world.random.nextInt(0, 2) == 1){
-                            Commands.call("summon primitivemobs:blazing_juggernaut " + event.x + " " + event.y + " " + event.z + "", event.player, event.world, true, true);
+                            val worldY = event.y + 1.0;
+                            Commands.call("setblock " + event.x + " " + worldY + " " + event.z + " minecraft:air", event.player, event.entity.world, true, true);
+
+                            Commands.call("summon primitivemobs:blazing_juggernaut " + event.x + " " + worldY + " " + event.z + "", event.player, event.world, true, true);
                             Commands.call("playsound enderskills:fireball_explode player @p ~ ~ ~ 1.0 1.0 1.0", event.player, event.world, true, true);
                         } 
-                        else {
+                        else {   
+                            val worldY = event.y + 1.0;
+                            Commands.call("setblock " + event.x + " " + worldY + " " + event.z + " minecraft:air", event.player, event.entity.world, true, true);
+                                                     
                             Commands.call("summon minecraft:blaze " + event.x + " " + event.y + " " + event.z + "", event.player, event.world, true, true);
                             Commands.call("playsound enderskills:fireball_explode player @p ~ ~ ~ 1.0 1.0 1.0", event.player, event.world, true, true);
                         }
