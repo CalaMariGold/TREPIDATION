@@ -2,6 +2,10 @@
   "pools": [
     {
       "name": "da:arena_chests",
+      "rolls": {
+        "min": 5,
+        "max": 8
+      },
       "entries": [
         {
           "entryName": "nethercraft:neridium_ingot",
@@ -12,7 +16,7 @@
             {
               "count": {
                 "min": 1.0,
-                "max": 2.0
+                "max": 3.0
               },
               "function": "minecraft:set_count"
             }
@@ -27,8 +31,8 @@
           "functions": [
             {
               "count": {
-                "min": 1.0,
-                "max": 3.0
+                "min": 2.0,
+                "max": 5.0
               },
               "function": "minecraft:set_count"
             }
@@ -203,8 +207,8 @@
           "functions": [
             {
               "count": {
-                "min": 1.0,
-                "max": 3.0
+                "min": 2.0,
+                "max": 4.0
               },
               "function": "minecraft:set_count"
             }
@@ -212,7 +216,7 @@
           "name": "minecraft:magma_cream"
         },
         {
-          "entryName": "scalinghealth:crystal_shard",
+          "entryName": "scalinghealth:crystalshard",
           "weight": 3,
           "quality": 0,
           "type": "item",
@@ -225,10 +229,9 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "scalinghealth:crystal_shard"
+          "name": "scalinghealth:crystalshard"
         }
-      ],
-      "rolls": 6.0
+      ]
     }
   ]
 }
