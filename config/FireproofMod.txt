@@ -32,6 +32,7 @@ contenttweaker:veilstrium_entry
 contenttweaker:infernium_entry
 contenttweaker:glowood_entry
 contenttweaker:infernal_core
+contenttweaker:raw_unstable_infernium
 da:flame_helmet
 da:flame_chestplate
 da:flame_boots
