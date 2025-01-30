@@ -3,6 +3,15 @@
         "mob":"da:flame_knight",
         "remove": "da:enflamed_meat"
     },
+    // default flame sword drop has enchantments
+    {
+        "mob":"da:flame_knight",
+        "remove": "da:ambition_sword"
+    },
+    {
+        "mob":"da:flame_knight",
+        "item": "da:ambition_sword"
+    },
     {
         "mob":"da:flame_knight",
         "item": "contenttweaker:deviled_egg_sandwich",
@@ -10,8 +19,13 @@
     },
     {
         "mob":"da:flame_knight",
-        "item": "dynaores:raw_pyridium",
-        "itemcount": "3-6"
+        "item": "da:abberrant_eye",
+        "itemcount": "10-20"
+    },
+    {
+        "mob":"da:flame_knight",
+        "item": "contenttweaker:raw_unstable_infernium",
+        "itemcount": "2-3"
     },
     {
         "mob":"da:flame_knight",
