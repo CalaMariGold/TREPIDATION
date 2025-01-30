@@ -145,7 +145,7 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                     server.commandManager.executeCommand(server, "effect @a minecraft:glowing 60");
                     event.player.sendChat("§6A mysterious yet benevolent aura surrounds you, for now...");
 
-                    server.commandManager.executeCommand(server, "give @a timeisup:timer_bonus 2");
+                    server.commandManager.executeCommand(server, "give @a timeisup:timer_bonus 1");
                     server.commandManager.executeCommand(server, "give @a enderskills:book 1");
                     server.commandManager.executeCommand(server, "give @a enderskills:token 1");
                     server.commandManager.executeCommand(server, "give @a scalinghealth:heartcontainer 1");
@@ -180,7 +180,7 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                     server.commandManager.executeCommand(server, "effect @a minecraft:glowing 120");
                     event.player.sendChat("§6A mysterious yet benevolent aura surrounds you, for now...");
 
-                    server.commandManager.executeCommand(server, "give @a timeisup:timer_bonus 3");
+                    server.commandManager.executeCommand(server, "give @a timeisup:timer_bonus 2");
                     server.commandManager.executeCommand(server, "give @a enderskills:token 3");
                     server.commandManager.executeCommand(server, "give @a scalinghealth:heartcontainer 2");
                     server.commandManager.executeCommand(server, "give @a contenttweaker:riftbreaker_crystal 1");

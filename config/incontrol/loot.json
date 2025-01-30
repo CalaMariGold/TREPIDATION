@@ -10,8 +10,8 @@
     },
     {
         "mob":"da:flame_knight",
-        "item": "nethercraft:pyridium_ingot",
-        "itemcount": "4-6"
+        "item": "dynaores:raw_pyridium",
+        "itemcount": "3-6"
     },
     {
         "mob":"da:flame_knight",
@@ -21,7 +21,7 @@
     {
         "mob":"da:nether_aberant",
         "item": "nethercraft:devil_bread",
-        "itemcount": "1-2",
+        "itemcount": "1",
         "random": "0.25"
     },
     {

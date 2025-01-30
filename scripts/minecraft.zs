@@ -17,6 +17,7 @@ recipes.remove(<minecraft:bow>);
 recipes.remove(<minecraft:book>);
 recipes.remove(<minecraft:lead>);
 recipes.remove(<minecraft:tnt>);
+JEI.removeAndHide(<minecraft:map>);
 JEI.removeAndHide(<minecraft:end_crystal>);
 JEI.removeAndHide(<minecraft:end_rod>);
 JEI.removeAndHide(<minecraft:potion:*>);

@@ -1,7 +1,7 @@
 {
   "pools": [
     {
-      "name" : "da:arena_key_chest",
+      "name": "da:arena_key_chest",
       "entries": [
         {
           "entryName": "nethercraft:neridium_ingot",
@@ -20,26 +20,19 @@
           "name": "nethercraft:neridium_ingot"
         },
         {
-          "entryName": "da:flame_metal_scrap",
-          "weight": 5,
-          "quality": 0,
-          "type": "item",
-          "functions": [
-            {
-              "count": {
-                "min": 1.0,
-                "max": 1.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "da:flame_metal_scrap"
-        },
-        {
           "entryName": "nethercraft:neridium_sword",
           "weight": 3,
           "quality": 0,
           "type": "item",
+          "functions": [
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.7
+              }
+            }
+          ],
           "name": "nethercraft:neridium_sword"
         },        
         {
@@ -47,6 +40,15 @@
           "weight": 5,
           "quality": 0,
           "type": "item",
+          "functions": [
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.7
+              }
+            }
+          ],
           "name": "nethercraft:neridium_chestplate"
         },
         {
@@ -54,6 +56,15 @@
           "weight": 5,
           "quality": 0,
           "type": "item",
+          "functions": [
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.7
+              }
+            }
+          ],
           "name": "nethercraft:neridium_helmet"
         },
         {
@@ -61,6 +72,15 @@
           "weight": 5,
           "quality": 0,
           "type": "item",
+          "functions": [
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.7
+              }
+            }
+          ],
           "name": "nethercraft:neridium_leggings"
         },
         {
@@ -68,6 +88,15 @@
           "weight": 5,
           "quality": 0,
           "type": "item",
+          "functions": [
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.7
+              }
+            }
+          ],
           "name": "nethercraft:neridium_boots"
         },
         {
@@ -87,17 +116,19 @@
           "name": "minecraft:arrow"
         },
         {
-          "entryName": "contenttweaker:dreadswine_entry",
-          "weight": 1,
-          "quality": 0,
-          "type": "item",
-          "name": "contenttweaker:dreadswine_entry"
-        },
-        {
           "entryName": "nethercraft:neridium_bow",
           "weight": 3,
           "quality": 0,
           "type": "item",
+          "functions": [
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 0.1,
+                "max": 0.7
+              }
+            }
+          ],
           "name": "nethercraft:neridium_bow"
         }, 
         {
@@ -149,7 +180,29 @@
           "name": "da:abberrant_eye"
         }
       ],
-      "rolls": 6.0
+      "rolls": 10.0
+    },
+    {
+      "name": "da:heart_container",
+      "entries": [
+        {
+          "entryName": "scalinghealth:heartcontainer",
+          "weight": 1,
+          "quality": 0,
+          "type": "item",
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": 1
+            }
+          ],
+          "name": "scalinghealth:heartcontainer"
+        }
+      ],
+      "rolls": {
+        "min": 0,
+        "max": 1
+      }
     }
   ]
 }
