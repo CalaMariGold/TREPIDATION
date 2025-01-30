@@ -1,12 +1,12 @@
 {
     "name": "Infernium",
-    "icon": "dynaores:raw_pyridium",
+    "icon": "contenttweaker:raw_unstable_infernium",
     "category": "elara",
     "advancement": "triumph:advancements/journal_entries/infernium_entry",
     "pages": [
       {
         "type": "spotlight",
-        "item": "dynaores:raw_pyridium",
+        "item": "contenttweaker:raw_unstable_infernium",
         "text": "$(#551012)Cycle 23, Entry 15 $(br2)The Nether's fever burns in my palms - this golden malignancy that thrums with imprisoned fury. Infernium's song vibrates at the edge of audibility, a harmonic that resonates with the rot festering in our shared soul. To hold it is to cradle dying stars; to"
       },
       {
@@ -15,11 +15,19 @@
       },
       {
         "type": "text",
-        "text": "$(#551012)$(o)Flesh of fallen lords$(br)Condemned to smolder$(br)In this ore, their final breath$(br)Wrath becomes the welder$(br2)$()$(#551012)What blasphemous crucible birthed this metal? Its heat mocks the Realm's dying embers, each ingot a prison for ancient rage. When joined with jagged scepters from the Infernal beings, the metal awakens - its song now a chorus of gateways screaming to be unsealed."
+        "text": "$(#551012)$(o)Flesh of fallen lords$(br)Condemned to smolder$(br)In this ore, their final breath$(br)Wrath becomes the welder$(br2)$()$(#551012)"
       },
       {
         "type": "text",
-        "text": "$(#551012)The forge's glow paints shadow-puppets of giants on crumbling walls. Let them dance their accusatory jig - I'll wield this damned metal until my hands blister or the Realms remember their true shape.$(br2)—Elara"
+        "text": "$(#551012)What blasphemous crucible birthed this metal? Its heat mocks the Realm's dying embers, each fragment a prison for ancient rage. The raw shards blister my pouch - golden malignancies that warp the air with their hunger. They resist the forge's kiss, lying inert like cursed lead. Rods from the Infernals brings momentary focus, but our union births only shattered prototypes."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)Yet within the walls... The Revenants's mock my failure - their hollowed forms thrum with contained cataclysm, weapons of Infernal origin singing stable destruction. What did they press against the metal's rage to achieve such impossible balance? I will find the truth in negative space - hollows where some keystone component once kissed the molten gold."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)The Rod's resonance suggests there is a missing harmonic, its prison-breath rhythm incomplete. Let the unstable ore sear my palms raw; its fractures map the path forward. I'll wield this damned metal until my hands are bone or the Realms remember their true shape.$(br2)—Elara"
       }
     ]
   }

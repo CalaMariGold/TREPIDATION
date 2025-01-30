@@ -63,7 +63,10 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <da:fire_stone_wall>.displayName = "Ashen Stone Brick Wall";
 <da:fire_stone_half>.displayName = "Ashen Stone Brick Slab";
 
-<da:flame_metal_scrap>.displayName = "§fInert Infernium";
+<da:flame_metal_scrap>.displayName = "§fAshen Catalyst";
+<da:flame_metal_scrap>.addTooltip("§o\"To master the Infernals, you must first become their vessel, forged from sacrifice and memory.\"");
+
+
 <da:ambition_sword:*>.displayName = "§cBlade of the Last Vigil";
 <da:ambition_flame>.displayName = "§cIn the Wake of Fire, We Were Forsaken";
 <da:ambition_sword:*>.removeTooltip("May it spark you forward! Right clicking launches an AOE attack, and sword is resistant to fire");
@@ -112,10 +115,9 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 
 
 // Infernium
-<nethercraft:pyridium_ore>.displayName = "Infernium Ore";
-<nethercraft:pyridium_block>.displayName = "Infernium Block";
-<nethercraft:pyridium_ingot>.displayName = "Infernium Ingot";
-
+<contenttweaker:raw_unstable_infernium>.displayName = "Raw Unstable Infernium";
+<nethercraft:pyridium_ore>.displayName = "Unstable Infernium Ore";
+<nethercraft:pyridium_ingot>.displayName = "Stable Infernium Ingot";
 
 <nethercraft:pyridium_sword>.displayName = "Infernium Sword";
 

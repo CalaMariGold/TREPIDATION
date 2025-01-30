@@ -47,28 +47,40 @@ import crafttweaker.event.PlayerLeftClickBlockEvent;
 import crafttweaker.util.IRandom;
 
 
-
+// echo of betrayal & ancient infernal brick
 static abberrant_mana as IItemStack = <da:abberrant_eye>;
 events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteractBlockEvent){
     if(!event.world.isRemote()){
         val itemStack = event.item as IItemStack;     
         if ((itemStack.definition.id).matches(abberrant_mana.definition.id)) {  
             if(event.block.displayName == "§cAncient Infernal Brick"){
-                Commands.call("summon item " + event.x + " " + event.y + " " + event.z + " {Item:{id:\"da:flame_metal_scrap\", Count:1}}", event.player, event.entity.world, true, true);
-                Commands.call("setblock " + event.x + " " + event.y + " " + event.z + " minecraft:air", event.player, event.entity.world, true, true);
-                itemStack.mutable().shrink(1);
-                if(event.world.random.nextInt(0, 2) == 1){
+
+                // if player killed the oracle, randomly spawn ashen catalyst and infernal mobs
+                if(event.player.hasGameStage("killedOracle")){
+                
+                    Commands.call("summon item " + event.x + " " + event.y + " " + event.z + " {Item:{id:\"da:flame_metal_scrap\", Count:1}}", event.player, event.entity.world, true, true);
+                    Commands.call("setblock " + event.x + " " + event.y + " " + event.z + " minecraft:air", event.player, event.entity.world, true, true);
+                    itemStack.mutable().shrink(1);
                     if(event.world.random.nextInt(0, 2) == 1){
-                        Commands.call("summon primitivemobs:blazing_juggernaut " + event.x + " " + event.y + " " + event.z + "", event.player, event.world, true, true);
-                        Commands.call("playsound enderskills:fireball_explode player @p ~ ~ ~ 1.0 1.0 1.0", event.player, event.world, true, true);
-                    } 
+                        if(event.world.random.nextInt(0, 2) == 1){
+                            Commands.call("summon primitivemobs:blazing_juggernaut " + event.x + " " + event.y + " " + event.z + "", event.player, event.world, true, true);
+                            Commands.call("playsound enderskills:fireball_explode player @p ~ ~ ~ 1.0 1.0 1.0", event.player, event.world, true, true);
+                        } 
+                        else {
+                            Commands.call("summon minecraft:blaze " + event.x + " " + event.y + " " + event.z + "", event.player, event.world, true, true);
+                            Commands.call("playsound enderskills:fireball_explode player @p ~ ~ ~ 1.0 1.0 1.0", event.player, event.world, true, true);
+                        }
+                    }
                     else {
-                        Commands.call("summon minecraft:blaze " + event.x + " " + event.y + " " + event.z + "", event.player, event.world, true, true);
-                        Commands.call("playsound enderskills:fireball_explode player @p ~ ~ ~ 1.0 1.0 1.0", event.player, event.world, true, true);
+                        Commands.call("playsound enderskills:flares player @p ~ ~ ~ 1.0 1.0 1.0", event.player, event.world, true, true);
                     }
                 }
+
+                // if player did not kill the oracle, give hint
                 else {
-                    Commands.call("playsound enderskills:flares player @p ~ ~ ~ 1.0 1.0 1.0", event.player, event.world, true, true);
+                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The artifact pulses weakly against the Infernal brick and dissipates. You sense an ancient power lock secrets behind trial and judgement.\",\"color\":\"red\",\"italic\":true}]");
+                    Commands.call("playsound enderskills:syphon player @p ~ ~ ~ 100 0.6", event.player, event.world, true, true);
+                    itemStack.mutable().shrink(1);
                 }
             } 
             else {
@@ -198,17 +210,13 @@ static tablet as IItemStack = <corpsecomplex:scroll>;
 static ambition_flame as IItemStack = <da:ambition_flame>;
 static dreadstone_fragment as IItemStack = <contenttweaker:dreadstone_fragment>;
 events.onPlayerInteractEntity(function(event as crafttweaker.event.PlayerInteractEntityEvent){
-    
     if(!event.world.isRemote()){
         val itemStack1 = event.player.currentItem as IItemStack; 
-        
 
         // Oracle Summon
-        
             if(event.target.definition.name == "nether_pyre"){
                 if (ambition_flame.matches(itemStack1)) {
-                    
-                    
+                        event.player.update({clickedNetherObelisk: true});
                         Commands.call("setworldspawn ~ ~ ~", event.player, event.world, true, true);
                         Commands.call("spawnpoint @a ~ ~ ~", event.player, event.world, true, true);
                         server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The air thickens, the embers pulse—once bound by betrayal, the past now rises to face the living.\",\"color\":\"red\",\"italic\":true}]");

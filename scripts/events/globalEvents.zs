@@ -80,7 +80,7 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
         .run(function(world, context) {
             context.data = world.time;
         })
-        .sleep(150)
+        .sleep(200)
         .then(function(world, context) {
             Commands.call("advancement grant @p only triumph:advancements/hidden/unlock_journal", event.player, event.entity.world, true, true);
             server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Disoriented, you awaken to find a journal attached to your belt. As you begin to write, you notice a scar on your left wrist.\",\"color\":\"red\",\"italic\":true}]");

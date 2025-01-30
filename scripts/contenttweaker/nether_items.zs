@@ -42,3 +42,7 @@ dreadstone_fragment.maxStackSize = 256;
 
 val infernal_core = mods.contenttweaker.VanillaFactory.createItem("infernal_core");
 infernal_core.register();
+
+val raw_unstable_infernium = mods.contenttweaker.VanillaFactory.createItem("raw_unstable_infernium");
+raw_unstable_infernium.register();
+raw_unstable_infernium.maxStackSize = 256;

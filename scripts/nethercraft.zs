@@ -20,8 +20,13 @@ recipes.remove(<dynaores:raw_neridium>);
 recipes.remove(<dynaores:raw_iron>);
 recipes.remove(<dynaores:raw_gold>);
 
-furnace.addRecipe(<nethercraft:pyridium_ingot>, <dynaores:raw_pyridium>, 1.0);
-furnace.addRecipe(<nethercraft:neridium_ingot>, <dynaores:raw_neridium>, 1.0);
+recipes.remove(<nethercraft:pyridium_ingot>);
+
+
+recipes.addShapeless("raw_stable_infernium", <dynaores:raw_pyridium>,[<contenttweaker:raw_unstable_infernium>, <da:flame_metal_scrap>]);
+
+furnace.addRecipe(<nethercraft:pyridium_ingot>, <dynaores:raw_pyridium>, 20.0);
+furnace.addRecipe(<nethercraft:neridium_ingot>, <dynaores:raw_neridium>, 10.0);
 
 // BOMD DA Backport
 recipes.removeByMod("da");
@@ -285,9 +290,12 @@ recipes.addShaped("riftbreaker", <contenttweaker:riftbreaker_crystal>,
 recipes.remove(<da:ambition_flame>);
 recipes.addShaped("ambition_flame", <da:ambition_flame>,
 [[<da:abberrant_eye>,<da:abberrant_eye>,<da:abberrant_eye>],
-[<da:abberrant_eye>,<nethercraft:pyridium_ingot>,<da:abberrant_eye>],
+[<da:abberrant_eye>,<dynaores:raw_pyridium>,<da:abberrant_eye>],
 [<da:abberrant_eye>,<da:abberrant_eye>,<da:abberrant_eye>]
 ]);
+
+
+
 
 
 recipes.remove(<da:flame_helmet>);
@@ -318,6 +326,4 @@ recipes.addShaped("flame_boots", <da:flame_boots>,
 [<da:abberrant_eye>,null,<da:abberrant_eye>]
 ]);
 
-
-recipes.addShapeless("raw_infernium", <dynaores:raw_pyridium>, [<minecraft:blaze_powder>, <da:flame_metal_scrap>, <minecraft:blaze_powder>]);
 

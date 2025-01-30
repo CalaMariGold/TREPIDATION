@@ -30,6 +30,20 @@
         "itemcount": "1-2",
         "random": "0.25"
     },
+
+    // infernals rarely drop raw unstable infernium
+    {
+        "mob":"primitivemobs:blazing_juggernaut",
+        "item": "contenttweaker:raw_unstable_infernium",
+        "itemcount": "1",
+        "random": "0.20"
+    },
+    {
+        "mob":"minecraft:blaze",
+        "item": "contenttweaker:raw_unstable_infernium",
+        "itemcount": "1",
+        "random": "0.15"
+    },
     
 
 

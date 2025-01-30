@@ -10,6 +10,7 @@ import mods.dropt.Dropt;
 import mods.dropt.Harvester;
 
 
+
 Dropt.list("fiery_lit1")
   .add(Dropt.rule()
         .matchBlocks(["da:fire_stone_lit:*"])
@@ -60,6 +61,15 @@ Dropt.list("veilstrium_journal_entry")
       )
 );
 
+Dropt.list("raw_unstable_infernium")
+  .add(Dropt.rule()
+      .matchBlocks(["nethercraft:pyridium_ore:*"])
+      .replaceStrategy("REPLACE_ALL")
+      .addDrop(Dropt.drop()
+          .items([<contenttweaker:raw_unstable_infernium>])
+      )
+);
+
 Dropt.list("infernium_journal_entry")
   .add(Dropt.rule()
       .matchBlocks(["nethercraft:pyridium_ore:*"])
@@ -67,12 +77,12 @@ Dropt.list("infernium_journal_entry")
         .gameStages("BLACKLIST", "ALL", ["infernium_entry"])
       )
       .addDrop(Dropt.drop()
-          .selector(Dropt.weight(80))
-          .items([<dynaores:raw_pyridium>])
+          .selector(Dropt.weight(70))
+          .items([<contenttweaker:raw_unstable_infernium>])
       )
       .addDrop(Dropt.drop()
-          .selector(Dropt.weight(20))
-          .items([<contenttweaker:infernium_entry>,<dynaores:raw_pyridium>])
+          .selector(Dropt.weight(30))
+          .items([<contenttweaker:infernium_entry>,<contenttweaker:raw_unstable_infernium>])
       )
 );
 
@@ -91,6 +101,9 @@ Dropt.list("glowood_journal_entry")
           .items([<contenttweaker:glowood_entry>,<nethercraft:glowood_log>])
       )
 );
+
+
+
 
 Dropt.list("no_soul_sand_drop")
   .add(Dropt.rule()
