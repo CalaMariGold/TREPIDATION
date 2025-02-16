@@ -61,7 +61,7 @@ recipes.addShapeless("fire_charge", <minecraft:fire_charge>*3,[<minecraft:blaze_
 
 recipes.addShapeless("gunpowder", <minecraft:gunpowder>*5,[<minecraft:tnt>]);
 
-furnace.addRecipe(<contenttweaker:scrambled_magma_eggs>, <nethercraft:slime_eggs>, 0.5);
+furnace.addRecipe(<contenttweaker:scrambled_magma_eggs>, <nethercraft:slime_eggs>, 1.0);
 recipes.addShapeless("deviled_egg_sandwich", <contenttweaker:deviled_egg_sandwich>,[<contenttweaker:scrambled_magma_eggs>, <nethercraft:devil_bread>, <minecraft:magma_cream>]);
 
 recipes.remove(<corpsecomplex:scroll>);

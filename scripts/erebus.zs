@@ -48,7 +48,7 @@ recipes.addShaped("jade_shield", <erebus:jade_shield>,
 ]);
 
 
-furnace.addRecipe(<contenttweaker:cooked_bug_meat>, <contenttweaker:bug_meat>, 0.5);
+furnace.addRecipe(<contenttweaker:cooked_bug_meat>, <contenttweaker:bug_meat>, 1.0);
 
 
 // jade pickaxe requires withering infernium pickaxe
