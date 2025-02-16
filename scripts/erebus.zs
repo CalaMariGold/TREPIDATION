@@ -49,3 +49,14 @@ recipes.addShaped("jade_shield", <erebus:jade_shield>,
 
 
 furnace.addRecipe(<contenttweaker:cooked_bug_meat>, <contenttweaker:bug_meat>, 0.5);
+
+
+// jade pickaxe requires withering infernium pickaxe
+// reduces inventory bloat
+recipes.remove(<erebus:jade_pickaxe>);
+recipes.addShaped("jade_pickaxe", <erebus:jade_pickaxe>,
+[[<erebus:materials:1>,<erebus:materials:1>,<erebus:materials:1>],
+[null,<nethercraft:pyridium_pickaxe:*>,null],
+[null,null,null]
+]);
+

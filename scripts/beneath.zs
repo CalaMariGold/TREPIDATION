@@ -12,3 +12,13 @@ recipes.remove(<quark:elder_prismarine:2>);
 
 val deep_stone as IItemStack = <quark:elder_prismarine:2>;
 deep_stone.hardness = 0.2;
+
+// diamond pickaxe requires jade pickaxe
+// reduces inventory bloat
+recipes.remove(<minecraft:diamond_pickaxe>);
+recipes.addShaped("diamond_pickaxe", <minecraft:diamond_pickaxe>,
+[[<minecraft:diamond>,<minecraft:diamond>,<minecraft:diamond>],
+[null,<erebus:jade_pickaxe:*>,null],
+[null,null,null]
+]);
+
