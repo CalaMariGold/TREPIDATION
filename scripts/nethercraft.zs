@@ -290,7 +290,7 @@ recipes.addShaped("riftbreaker", <contenttweaker:riftbreaker_crystal>,
 recipes.remove(<da:ambition_flame>);
 recipes.addShaped("ambition_flame", <da:ambition_flame>,
 [[<da:abberrant_eye>,<da:abberrant_eye>,<da:abberrant_eye>],
-[<da:abberrant_eye>,<dynaores:raw_pyridium>,<da:abberrant_eye>],
+[<da:abberrant_eye>,<contenttweaker:raw_unstable_infernium>,<da:abberrant_eye>],
 [<da:abberrant_eye>,<da:abberrant_eye>,<da:abberrant_eye>]
 ]);
 
