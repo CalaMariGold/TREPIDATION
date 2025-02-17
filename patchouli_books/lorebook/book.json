@@ -4,6 +4,8 @@
   "subtitle": "A tattered book.",
   "version": 0,
   "book_texture": "trepidation:textures/book_texture.png",
+  "model": "trepidation:textures/journal_texture.png",
+  "index_icon": "trepidation:textures/journal_texture.png",
   "macros": {
     "$(info)": "$(thing)$(bold)$(t:Vital and Fundamental Details)[!]$()",
     "$(warning)": "$(#ff6600)$(bold)$(t:Important)[!]$()",
