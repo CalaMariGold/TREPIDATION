@@ -146,7 +146,7 @@ customization {
   loopbackgroundanimations = true
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:b417a917-3a36-492c-a3f3-1f5e970ed4e21705786087262] = timesup:true
   restartbackgroundanimations = true
-  buttonaction = runscript;continuerun%btnaction_splitter_fm%sendmessage;/tpp {"placeholder":"playername"} 684 100 500 100%btnaction_splitter_fm%sendmessage;/effect @p minecraft:resistance 99999 255%btnaction_splitter_fm%
+  buttonaction = runscript;continuerun%btnaction_splitter_fm%sendmessage;/tpp {"placeholder":"playername"} 684 100 500 100%btnaction_splitter_fm%sendmessage;/tellraw @p ["",{"text":"Your effort is meaningless. Welcome to your eternity.","color":"dark_red","italic":false}]%btnaction_splitter_fm%sendmessage;/advancement grant @p only triumph:advancements/dimensions/limbo%btnaction_splitter_fm%sendmessage;/effect @p minecraft:resistance 99999 255%btnaction_splitter_fm%
   x = -50
   width = 100
   action = addbutton

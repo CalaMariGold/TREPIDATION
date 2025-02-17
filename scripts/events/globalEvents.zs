@@ -247,25 +247,30 @@ events.onEntityLivingUpdate(function(event as crafttweaker.event.EntityLivingUpd
 
 
 // On time is up
-EventManager.getInstance().onTimeIsUp(function(event as TimeIsUpEvent){
-    // On entity death
-    events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeathEvent){
-        if(event.entity.world.isRemote())
-            return;
+EventManager.getInstance().onTimerTick(function(event as TickEvent){
+    if(event.world.isRemote())
+        return;
 
-        // If event entity is a player
-        if (event.entity instanceof IPlayer) {
-            var player1 as IPlayer = event.entity;
-            player1.executeCommand("fmvariable set timesup true false");
+    var totalSecs = event.tick/20;
+    if(totalSecs <= 0) {
+        event.player.update({timesup: true});
+        // On entity death
+        events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeathEvent){
+            if(event.entity.world.isRemote())
+                return;
 
-            events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
-                //player teleported via fancymenu
-                server.commandManager.executeCommand(server, "advancement grant @p only triumph:advancements/dimensions/limbo");
-                server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your effort is meaningless. Welcome to your eternity.\",\"color\":\"dark_red\",\"italic\":false}]");
+            // If event entity is a player
+            if (event.entity instanceof IPlayer) {
                 
-            });
-        }
-    });
+                var player1 as IPlayer = event.entity;
+                if(player1.data.timesup == true){
+                    player1.executeCommand("fmvariable set timesup true false");
+                }
+            }
+        });
+    } else {
+        event.player.update({timesup: false});
+    }
 });
 
 
