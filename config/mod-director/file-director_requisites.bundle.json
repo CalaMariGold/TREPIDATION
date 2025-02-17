@@ -36,6 +36,14 @@
 	            "installationPolicy": {
 	                "description": "MANDATORY! Downloads Hit Indication from Modrinth."
 	            }
-	    }
+	    },
+		{
+			"url":"https://raw.githubusercontent.com/CalaMariGold/TREPIDATION/refs/heads/main/patchouli_books/lorebook/book.json",
+			"folder":"patchouli_books/lorebook",
+			"installationPolicy": {
+				"downloadAlways":true,
+				"description":"Hotfix for journal texture"
+			}
+		}
 	]
 }
