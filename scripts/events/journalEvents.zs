@@ -66,12 +66,14 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             if (ashen_oracle_entry.matches(itemStack1)) {  
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/ashen_oracle_entry", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
+                Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 itemStack1.mutable().shrink(1);
             }
 
             // Entry #22 - Ashen Revenant
             if (ashen_revenant_entry.matches(itemStack1)) {  
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/ashen_revenant_entry", event.player, event.world, true, true);
+                Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
                 itemStack1.mutable().shrink(1);
             }
@@ -81,6 +83,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             // Entry #7 - Dreadswine
             if (dreadswine_entry.matches(itemStack1)) {  
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/dreadswine_entry", event.player, event.world, true, true);
+                Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
                 itemStack1.mutable().shrink(1);
             }
@@ -88,6 +91,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             // Entry #9 - Foulite Dust
             if (foulite_dust_entry.matches(itemStack1)) {  
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/foulite_dust_entry", event.player, event.world, true, true);
+                Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
                 itemStack1.mutable().shrink(1);
             }
@@ -95,6 +99,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             // Entry #5 - Nether Wraith
             if (nether_wraith_entry.matches(itemStack1)) {  
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/nether_wraith_entry", event.player, event.world, true, true);
+                Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
                 itemStack1.mutable().shrink(1);
             }
@@ -102,6 +107,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             // Entry #11 - Veilstrium
             if (veilstrium_entry.matches(itemStack1)) {  
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/veilstrium_entry", event.player, event.world, true, true);
+                Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
                 itemStack1.mutable().shrink(1);
             }
@@ -109,6 +115,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             // Entry #15 - Infernium
             if (infernium_entry.matches(itemStack1)) {  
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/infernium_entry", event.player, event.world, true, true);
+                Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
                 itemStack1.mutable().shrink(1);
             }
@@ -116,6 +123,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             // Entry #2 - Glowood
             if (glowood_entry.matches(itemStack1)) {  
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/glowood_entry", event.player, event.world, true, true);
+                Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
                 itemStack1.mutable().shrink(1);
             }

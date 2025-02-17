@@ -164,6 +164,11 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
     if((event.from == -1 && event.to == 5)){
         Commands.call("setblock ~ 0 ~ dimstack:portal", event.player, event.entity.world, true, true);
         Commands.call("effect @p clear", event.player, event.entity.world, true, true);
+
+        if(event.player.hasGameStage("killedWither") && event.player.hasGameStage("erebus")){
+            Commands.call("sanity add " + event.player.name + " 25", event.player, event.player.world, true, true);
+            server.commandManager.executeCommand(server, "gamestage silentremove @a killedWither");
+        }
     }
 
     // Erebus to Deep Dark
@@ -182,10 +187,20 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
                 var minutesElasped = (totalSecondsElasped % 3600) / 60;
                 event.player.sendChat(player_name + " escaped the Erebus with " + "§4" + minutes + ":" + seconds + " (" + minutesElasped + ":" + secondsElasped + ")" + " §fleft." );
                 server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"timerbonus\"},\"color\":\"dark_red\"}]");
+                Commands.call("sanity add " + event.player.name + " 25", event.player, event.player.world, true, true);
 
                 server.commandManager.executeCommand(server, "gamestage silentremove @p erebus");
             }
         });
+        event.player.world.catenation()
+            .run(function(world, context) {
+                context.data = world.time;
+            })
+            .sleep(500)
+            .then(function(world, context) {
+                server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"You feel a bone-deep chill settle behind your eyes; a dreadful feeling that grows with each passing moment in this realm.\",\"color\":\"red\",\"italic\":true}]");
+            })
+            .start();
     }
 
     // Deep Dark to Surface
@@ -204,8 +219,9 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
                 var minutesElasped = (totalSecondsElasped % 3600) / 60;
                 event.player.sendChat(player_name + " escaped the Deep Dark with " + "§4" + minutes + ":" + seconds + " (" + minutesElasped + ":" + secondsElasped + ")" + " §fleft." );
                 server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"timerbonus\"},\"color\":\"dark_red\"}]");
-                
+                Commands.call("sanity add " + event.player.name + " 25", event.player, event.player.world, true, true);
                 server.commandManager.executeCommand(server, "gamestage silentremove @p deepdark");
+                
 
                 event.player.sendChat("§3Developer Note: It's currently not possible to enter the End and beat the modpack. Until then, have fun exploring the Surface...");
             }

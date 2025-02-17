@@ -206,6 +206,7 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                     Commands.call("kill @e[type=minecraft:wither_skeleton]", event.player, event.world, true, true);
                     Commands.call("kill @e[type=minecraft:ghast]", event.player, event.world, true, true);
 
+                    server.commandManager.executeCommand(server, "gamestage silentremove @a killedOracle");
                     server.commandManager.executeCommand(server, "gamestage silentremove @a nether");
                 }
         });
@@ -249,6 +250,7 @@ events.onPlayerInteractEntity(function(event as crafttweaker.event.PlayerInterac
                 if(event.target.definition.name == "PigZombie"){
                     server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"As you raise the Dreadstone Tablet to the Dreadswine, it shatters in your hands, releasing a surge of dark energy. You notice faint tear trace down the Dreadswine's face as the fragments of the tablet disintegrate into dust.\",\"color\":\"red\",\"italic\":true}]");
                     Commands.call("playsound enderskills:syphon player @p ~ ~ ~ 100 0.6", event.player, event.world, true, true);
+                    Commands.call("sanity remove " + event.player.name + " 5", event.player, event.world, true, true);
                     Commands.call("effect @p wither 5", event.player, event.world, true, true);
                     itemStack1.mutable().shrink(1);
                 }
