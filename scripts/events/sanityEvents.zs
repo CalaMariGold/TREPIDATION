@@ -29,27 +29,15 @@ static veilstrium_boots as IItemStack = <nethercraft:neridium_boots:*>;
 
 // Store sanity value in player data
 zenClass SanityData {
-    static sanityBeforeDeath as int = 0;
     static hasShownTimerWarning as bool = false;
     static hasTriggeredTimerEnd as bool = false;
 }
 
-// Player death sanity decrease
-events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeathEvent) {
-    if(!event.entity.world.isRemote()) {
-        if (event.entity instanceof IPlayer) {
-            var player as IPlayer = event.entity;
-            // Store current sanity value
-            SanityData.sanityBeforeDeath = player.sanity;
-        }
-    }
-});
 
-// Restore sanity on respawn with death penalty
+// Remove sanity on respawn
 events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent) {
     if(!event.entity.world.isRemote()) {
-        var newSanity = SanityData.sanityBeforeDeath - 5;
-        Commands.call("sanity set " + event.player.name + " " + newSanity, event.player, event.entity.world, true, true);
+        Commands.call("sanity remove " + event.player.name + " 5", event.player, event.entity.world, true, true);
     }
 });
 
@@ -74,20 +62,26 @@ EventManager.getInstance().onTimerTick(function(event as TickEvent) {
         // Reset the warning flag when above 5 minutes
         SanityData.hasShownTimerWarning = false;
     }
-});
 
-// Timer end sanity drain
-EventManager.getInstance().onTimerTick(function(event as TickEvent) {
-    if(event.player.world.isRemote())
-        return;
-        
-    var totalSecs = event.tick/20;
-    if(totalSecs == 1 && !SanityData.hasTriggeredTimerEnd) {
-        server.commandManager.executeCommand(server, "sanity remove @p 100");
-        SanityData.hasTriggeredTimerEnd = true;
+    if(minutes == 3) {
+        if(event.tick % 80 == 0) { // Every 4 seconds
+            Commands.call("sanity remove " + event.player.name + " 1", event.player, event.player.world, true, true);
+        }
     }
-    else {
-        SanityData.hasTriggeredTimerEnd = false;
+    if(minutes == 2) {
+        if(event.tick % 60 == 0) { // Every 3 seconds
+            Commands.call("sanity remove " + event.player.name + " 1", event.player, event.player.world, true, true);
+        }
+    }
+    if(minutes == 1) {
+        if(event.tick % 40 == 0) { // Every 2 seconds
+            Commands.call("sanity remove " + event.player.name + " 1", event.player, event.player.world, true, true);
+        }
+    }
+    if(totalSecs <= 60) {
+        if(event.tick % 20 == 0) { // Every second
+            Commands.call("sanity remove " + event.player.name + " 1", event.player, event.player.world, true, true);
+        }
     }
 });
 

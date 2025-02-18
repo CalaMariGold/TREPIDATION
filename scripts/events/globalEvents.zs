@@ -255,6 +255,7 @@ events.onEntityLivingUpdate(function(event as crafttweaker.event.EntityLivingUpd
                 server.commandManager.executeCommand(server, "effect @p srparasites:fear 99999 0");
                 server.commandManager.executeCommand(server, "effect @p elenaidodge2:weight 99999 0");
                 server.commandManager.executeCommand(server, "hunger @p 20");
+                server.commandManager.executeCommand(server, "sanity remove @p 1");
                 player.health = player.health + 1;  
             }
         }
@@ -269,29 +270,14 @@ EventManager.getInstance().onTimerTick(function(event as TickEvent){
 
     var totalSecs = event.tick/20;
     if(totalSecs <= 0) {
-        event.player.update({timesup: true});
-        // On entity death
-        events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeathEvent){
-            if(event.entity.world.isRemote())
-                return;
-
-            // If event entity is a player
-            if (event.entity instanceof IPlayer) {
-                
-                var player1 as IPlayer = event.entity;
-                if(player1.data.timesup == true){
-                    player1.executeCommand("fmvariable set timesup true false");
-                }
-            }
-        });
-    } else {
-        event.player.update({timesup: false});
+        if(!isNull(event.player)){
+            Commands.call("fmvariable set timesup true false", event.player, event.player.world, true, true);
+        }
     }
 });
 
 
 // Add to the timer bonuses used scoreboard counter when right clicking a timer bonuses
-// onPlayerRightClickItem runs twice per click, which is why we have multiple scoreboards above
 static timerBonus as IItemStack = <timeisup:timer_bonus>;
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
     if(!event.world.isRemote()){
