@@ -152,10 +152,20 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
         Commands.call("setblock ~ 0 ~ dimstack:portal", event.player, event.entity.world, true, true);
         Commands.call("effect @p clear", event.player, event.entity.world, true, true);
 
-        if(event.player.hasGameStage("killedWither") && event.player.hasGameStage("erebus")){
-            Commands.call("sanity add " + event.player.name + " 25", event.player, event.player.world, true, true);
-            server.commandManager.executeCommand(server, "gamestage silentremove @a killedWither");
-        }
+        // sleep 100 ticks to ensure the player gets erebus gamestage
+        event.player.world.catenation()
+        .run(function(world, context) {
+            context.data = world.time;
+        })
+        .sleep(100)
+        .then(function(world, context) {
+            if(event.player.hasGameStage("killedWither") && event.player.hasGameStage("erebus")){
+                Commands.call("sanity add " + event.player.name + " 25", event.player, event.player.world, true, true);
+                server.commandManager.executeCommand(server, "gamestage silentremove @a killedWither");
+            }   
+        })
+        .start();
+        
     }
 
     // Erebus to Deep Dark
@@ -173,7 +183,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
                 var totalSecondsElasped = 3600 - totalSecs;
                 var secondsElasped = totalSecondsElasped % 60;
                 var minutesElasped = (totalSecondsElasped % 3600) / 60;
-                event.player.sendChat("§a" + player_name + " escaped the Erebus with " + "§4" + minutes + ":" + seconds + " (" + minutesElasped + ":" + secondsElasped + ")" + " §aleft." );
+                event.player.sendChat("§a" + player_name + " escaped the Erebus with " + "§c" + minutes + ":" + seconds + " (" + minutesElasped + ":" + secondsElasped + ")" + " §aleft." );
                 if(timerBonusCount > 0){
                     event.player.sendChat("§aTimer Bonuses Used: §4" + timerBonusCount);
                 }
@@ -208,7 +218,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
                 var totalSecondsElasped = 3600 - totalSecs;
                 var secondsElasped = totalSecondsElasped % 60;
                 var minutesElasped = (totalSecondsElasped % 3600) / 60;
-                event.player.sendChat("§a" + player_name + " escaped the Deep Dark with " + "§4" + minutes + ":" + seconds + " (" + minutesElasped + ":" + secondsElasped + ")" + " §aleft." );
+                event.player.sendChat("§a" + player_name + " escaped the Deep Dark with " + "§c" + minutes + ":" + seconds + " (" + minutesElasped + ":" + secondsElasped + ")" + " §aleft." );
                 if(timerBonusCount > 0){
                     event.player.sendChat("§aTimer Bonuses Used: §4" + timerBonusCount);
                 }
@@ -317,7 +327,6 @@ events.onCommand(function(event as crafttweaker.event.CommandEvent) {
             .sleep(100)
             .then(function(world, context) {
                 server.commandManager.executeCommand(server, "timer @p set " + newTimerValue);
-                server.commandManager.executeCommand(server, "say bonusCount2: " + bonusCount);
                 if(bonusCount == 1){
                     server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The Veil whispers of debts unpaid. Your timer bears fresh scars from another's ambition.\",\"color\":\"red\",\"italic\":true}]");
                 }

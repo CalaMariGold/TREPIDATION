@@ -148,7 +148,7 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                     var totalSecondsElasped = 3600 - totalSecs;
                     var secondsElasped = totalSecondsElasped % 60;
                     var minutesElasped = (totalSecondsElasped % 3600) / 60;
-                    event.player.sendChat("§a" + player_name + " killed The Ashen Oracle with §4" + minutes + ":" + seconds + " §aleft (" + minutesElasped + ":" + secondsElasped + " elasped)." );
+                    event.player.sendChat("§a" + player_name + " killed The Ashen Oracle with §c" + minutes + ":" + seconds + " §aleft (" + minutesElasped + ":" + secondsElasped + " elasped)." );
                     if(timerBonusCount >= 1){
                         event.player.sendChat("§aTimer Bonuses Used: §4" + timerBonusCount);
                     }
@@ -184,7 +184,7 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                     var totalSecondsElasped = 3600 - totalSecs;
                     var secondsElasped = totalSecondsElasped % 60;
                     var minutesElasped = (totalSecondsElasped % 3600) / 60;
-                    event.player.sendChat("§a" + player_name + " killed The Wither with §4" + minutes + ":" + seconds + " §aleft (" + minutesElasped + ":" + secondsElasped + " elasped)." );
+                    event.player.sendChat("§a" + player_name + " killed The Wither with §c" + minutes + ":" + seconds + " §aleft (" + minutesElasped + ":" + secondsElasped + " elasped)." );
                     if(timerBonusCount >= 1){
                         event.player.sendChat("§aTimer Bonuses Used: §4" + timerBonusCount);
                     }
