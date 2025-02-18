@@ -1,0 +1,11 @@
+setIcon(<timeisup:timer_bonus>)
+setTitle("Chrono Usurpation")
+setDescription("A haunting account of time's cruel arithmetic.")
+setShowToast(false)
+setAnnounceToChat(false)
+
+// Criteria
+addCriteria("impossible", "minecraft:impossible")
+
+// Parent
+setParent("triumph:advancements/journal_entries/root") 

@@ -143,12 +143,15 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                     var totalSecs = event.tick/20;
                     var minutes = (totalSecs % 3600) / 60;
                     var seconds = totalSecs % 60;
+                    var timerBonusCount = event.player.data.timerbonus as int;
 
                     var totalSecondsElasped = 3600 - totalSecs;
                     var secondsElasped = totalSecondsElasped % 60;
                     var minutesElasped = (totalSecondsElasped % 3600) / 60;
-                    event.player.sendChat(player_name + " killed The Ashen Oracle with §4" + minutes + ":" + seconds + " §fleft (" + minutesElasped + ":" + secondsElasped + " elasped)." );
-                    server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"timerbonus\"},\"color\":\"red\"}]");
+                    event.player.sendChat("§a" + player_name + " killed The Ashen Oracle with §4" + minutes + ":" + seconds + " §aleft (" + minutesElasped + ":" + secondsElasped + " elasped)." );
+                    if(timerBonusCount >= 1){
+                        event.player.sendChat("§aTimer Bonuses Used: §4" + timerBonusCount);
+                    }
                     server.commandManager.executeCommand(server, "effect @a regeneration 60");
                     server.commandManager.executeCommand(server, "effect @a invisibility 60");
                     server.commandManager.executeCommand(server, "effect @a minecraft:glowing 60");
@@ -176,12 +179,15 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                     var totalSecs = event.tick/20;
                     var minutes = (totalSecs % 3600) / 60;
                     var seconds = totalSecs % 60;
+                    var timerBonusCount = event.player.data.timerbonus as int;
 
                     var totalSecondsElasped = 3600 - totalSecs;
                     var secondsElasped = totalSecondsElasped % 60;
                     var minutesElasped = (totalSecondsElasped % 3600) / 60;
-                    event.player.sendChat(player_name + " killed The Wither with §4" + minutes + ":" + seconds + " §fleft (" + minutesElasped + ":" + secondsElasped + " elasped)." );
-                    server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"timerbonus\"},\"color\":\"red\"}]");
+                    event.player.sendChat("§a" + player_name + " killed The Wither with §4" + minutes + ":" + seconds + " §aleft (" + minutesElasped + ":" + secondsElasped + " elasped)." );
+                    if(timerBonusCount >= 1){
+                        event.player.sendChat("§aTimer Bonuses Used: §4" + timerBonusCount);
+                    }
                     server.commandManager.executeCommand(server, "effect @a fire_resistance 120");
                     server.commandManager.executeCommand(server, "effect @a regeneration 120");
                     server.commandManager.executeCommand(server, "effect @a invisibility 120");

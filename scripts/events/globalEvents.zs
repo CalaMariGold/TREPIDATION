@@ -44,21 +44,8 @@ import crafttweaker.entity.AttributeInstance;
 import crafttweaker.entity.Attribute;
 import crafttweaker.entity.AttributeModifier;
 import mods.contenttweaker.Commands;
+import crafttweaker.event.CommandEvent;
 
-
-// This is a roundabout (kinda shitty) way to reset player IData between runs.
-// Ideally setting the IData to null would be directly part of resetting the run (ie via the button or mod itself), but I don't think that's possible
-// Only thing I could see going wrong is if the player did any of these events, then used a timer bonus to get above 60 minutes
-// Not a big deal since these are just lore related so far
-EventManager.getInstance().onTimerTick(function(event as TickEvent){
-    var totalSecs = event.tick/20;
-    if(totalSecs>=3604){
-        event.player.update({clickedNetherBarrier: null});
-        event.player.update({shatteredTraceOfDeath: null});
-        event.player.update({clickedNetherObelisk: null});
-        event.player.update({clickedEchoOfBetrayal: null});
-    }            
-});
 
 
 // Give player soul compass with curse of vanishing upon death
@@ -71,7 +58,7 @@ events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
 // Create a scoreboard for timer bonuses used when the player first logs into the game
 events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent) {
 	if (isNull(event.player.data.firstTimeJoin)) {
-        server.commandManager.executeCommand(server, "scoreboard objectives add timerbonus dummy");
+        event.player.update({timerbonus: 0});
         server.commandManager.executeCommand(server, "op " + event.player.name);
         Commands.call("advancement grant @p only triumph:advancements/dimensions/start", event.player, event.entity.world, true, true);
 
@@ -181,12 +168,15 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
                 var totalSecs = event.tick/20;
                 var minutes = (totalSecs % 3600) / 60;
                 var seconds = totalSecs % 60;
+                var timerBonusCount = event.player.data.timerbonus as int;
 
                 var totalSecondsElasped = 3600 - totalSecs;
                 var secondsElasped = totalSecondsElasped % 60;
                 var minutesElasped = (totalSecondsElasped % 3600) / 60;
-                event.player.sendChat(player_name + " escaped the Erebus with " + "§4" + minutes + ":" + seconds + " (" + minutesElasped + ":" + secondsElasped + ")" + " §fleft." );
-                server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"timerbonus\"},\"color\":\"dark_red\"}]");
+                event.player.sendChat("§a" + player_name + " escaped the Erebus with " + "§4" + minutes + ":" + seconds + " (" + minutesElasped + ":" + secondsElasped + ")" + " §aleft." );
+                if(timerBonusCount > 0){
+                    event.player.sendChat("§aTimer Bonuses Used: §4" + timerBonusCount);
+                }
                 Commands.call("sanity add " + event.player.name + " 25", event.player, event.player.world, true, true);
 
                 server.commandManager.executeCommand(server, "gamestage silentremove @p erebus");
@@ -213,12 +203,15 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
                 var totalSecs = event.tick/20;
                 var minutes = (totalSecs % 3600) / 60;
                 var seconds = totalSecs % 60;
+                var timerBonusCount = event.player.data.timerbonus as int;
 
                 var totalSecondsElasped = 3600 - totalSecs;
                 var secondsElasped = totalSecondsElasped % 60;
                 var minutesElasped = (totalSecondsElasped % 3600) / 60;
-                event.player.sendChat(player_name + " escaped the Deep Dark with " + "§4" + minutes + ":" + seconds + " (" + minutesElasped + ":" + secondsElasped + ")" + " §fleft." );
-                server.commandManager.executeCommand(server, "tellraw @a [\"\",{\"text\":\"Timer Bonuses Used: \"},{\"score\":{\"name\":\"@p\",\"objective\":\"timerbonus\"},\"color\":\"dark_red\"}]");
+                event.player.sendChat("§a" + player_name + " escaped the Deep Dark with " + "§4" + minutes + ":" + seconds + " (" + minutesElasped + ":" + secondsElasped + ")" + " §aleft." );
+                if(timerBonusCount > 0){
+                    event.player.sendChat("§aTimer Bonuses Used: §4" + timerBonusCount);
+                }
                 Commands.call("sanity add " + event.player.name + " 25", event.player, event.player.world, true, true);
                 server.commandManager.executeCommand(server, "gamestage silentremove @p deepdark");
                 
@@ -281,9 +274,71 @@ EventManager.getInstance().onTimerTick(function(event as TickEvent){
 static timerBonus as IItemStack = <timeisup:timer_bonus>;
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
     if(!event.world.isRemote()){
-        val itemStack = event.item as IItemStack;     
-        if ((itemStack.definition.id).matches(timerBonus.definition.id)) {  
-            server.commandManager.executeCommand(server, "scoreboard players add @p timerbonus 1");
+        if(!isNull(event.item.definition.id) && event.hand == "MAIN_HAND" && (event.item.definition.id).matches(timerBonus.definition.id)) {
+            if(isNull(event.player.data.timerbonus)){
+                event.player.update({timerbonus: 0});
+            }
+
+            event.player.update({timerbonus: event.player.data.timerbonus + 1});
         }  
     }
+});
+
+// Handle run reset and adjust timer based on bonuses used
+events.onCommand(function(event as crafttweaker.event.CommandEvent) {
+    if (event.command.name == "reroll") {
+
+    val sender = event.commandSender;
+    if(!isNull(sender) && !isNull(sender.world)) {
+        val playerName = sender.displayName;
+        
+        // Cast sender to IPlayer if it is a player
+        if (sender instanceof IPlayer) {
+            val player as IPlayer = sender;
+
+            // Reset player data between runs
+            player.update({clickedNetherBarrier: null});
+            player.update({shatteredTraceOfDeath: null});
+            player.update({clickedNetherObelisk: null});
+            player.update({clickedEchoOfBetrayal: null});
+
+            // Get the player's timer bonus count
+            var bonusCount = 0;
+            bonusCount = player.data.timerbonus as int;
+
+            // Calculate new timer value (60 minutes - 1 minute per bonus used)
+            var newTimerValue = 72000 - (bonusCount * 1200);
+            
+            // Set the new timer value
+            player.world.catenation()
+            .run(function(world, context) {
+                context.data = world.time;
+            })
+            .sleep(100)
+            .then(function(world, context) {
+                server.commandManager.executeCommand(server, "timer @p set " + newTimerValue);
+                server.commandManager.executeCommand(server, "say bonusCount2: " + bonusCount);
+                if(bonusCount == 1){
+                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The Veil whispers of debts unpaid. Your timer bears fresh scars from another's ambition.\",\"color\":\"red\",\"italic\":true}]");
+                }
+                else if(bonusCount == 2){
+                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Phantom screams echo through the ash. " + bonusCount + " minutes torn from your flesh by hands unseen. The Watcher hungers for compounded interest.\",\"color\":\"red\",\"italic\":true}]");
+                }
+                else if(bonusCount == 4){
+                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Reality shudders as " + bonusCount + " minutes are excised from your timeline - another's triumph written in your blood.\",\"color\":\"red\",\"italic\":true}]");
+                }
+                else if(bonusCount == 5){
+                    Commands.call("advancement grant @p only triumph:advancements/journal_entries/chrono_usurpation_entry", player, player.world, true, true);
+                    Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", player, player.world, true, true);
+                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"You awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.\",\"color\":\"red\",\"italic\":true}]");
+                }
+                player.update({timerbonus: 0});
+
+                
+            })
+            .start();
+            
+        }
+    }
+  }
 });

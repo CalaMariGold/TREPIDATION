@@ -47,6 +47,17 @@ import mods.jei.JEI;
 JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with ancient blood, the Soul Anchor hums in the dark, its eerie blue aura a beacon to the lost. Use it, and find yourself forever tethered to its haunting pull. A new life granted, but at what cost? For each return bears a toll on the soul's uncharted map.");
 
 
+// Timer Bonus
+<timeisup:timer_bonus>.displayName = "§cChrono Usurpation";
+<timeisup:timer_bonus>.removeTooltip("Add 1:00 to your timer");
+<timeisup:timer_bonus>.removeTooltip("Cooldown : 1:30");
+<timeisup:timer_bonus>.addTooltip("§3+1:00 to cycle timer | Contaminates timeline");
+<timeisup:timer_bonus>.addTooltip("§oDebt will be paid - but not by you");
+
+
+
+
+
 // Ashen and Infernals
 <contenttweaker:infernal_core>.displayName = "§cInfernal Core";
 <contenttweaker:infernal_core>.addTooltip("§oA core forged in fire and grief, held only by an Ashen who remembers its purpose.");

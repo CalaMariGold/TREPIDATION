@@ -1,0 +1,28 @@
+{
+    "name": "Chrono Usurpation",
+    "icon": "timeisup:timer_bonus",
+    "category": "elara",
+    "advancement": "triumph:advancements/journal_entries/chrono_usurpation_entry",
+    "pages": [
+      {
+        "type": "text",
+        "text": "$(#551012)The air itself carries new arithmetic - this sickly calculus where breaths borrowed from the damned compound in our marrow. I watched a fresh runner collapse under the weight of minutes never lived, their timer hemorrhaging phantom seconds. Their scream harmonized with the Watcher's laughter - a duet scored in stolen heartbeats."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)The poor wretch clutched their wrist where the numbers bled, each vanished minute leaving cauterized glyphs in the flesh. \"Five less than promised,\" they babbled, fingers scrabbling at scars that remembered better cycles. I tasted their confusion - copper and burnt hair - the particular tang of reality's ledger balancing accounts."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)Veilstrium shards nearby wept black tears that evaporated into half-formed faces. Familiar faces. The runner didn't recognize their own features twisted in the steam, but I did - a gallery of creditors from cycles past, their stolen moments accruing interest in our veins."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)What cruel geometry binds us? For every minute clawed from the Devourer's grasp, another's timeline hemorrhages. The runner's dying breath left frost patterns spelling a truth I dare not record - that our survival is measured in increments of mutual annihilation."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)Yet still I pocket the glowing shard. Still I crush it between familiar teeth. Let the next cycle's stranger pay my debt with their unraveling. This is how gods are unmade - not through grand heresies, but a thousand quiet betrayals scribbled in borrowed time.$(br2)—Elara"
+      }
+    ]
+} 
