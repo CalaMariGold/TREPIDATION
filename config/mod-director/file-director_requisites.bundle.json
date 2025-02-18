@@ -23,12 +23,6 @@
 	            }
 	    },
 		{
-	            "url": "https://cdn.modrinth.com/data/65qOM4nb/versions/1m3gvzYh/Nether-API-v1.3.0-mc1.12.2.jar",
-	            "installationPolicy": {
-	                "description": "MANDATORY! Downloads Nether API from Modrinth."
-	            }
-	    },
-		{
 	            "url": "https://cdn.modrinth.com/data/Si3V1hU5/versions/rikVrppT/hitindication-1.12.2-2.0.jar",
 	            "metadata": {
 	                "side": "CLIENT"
