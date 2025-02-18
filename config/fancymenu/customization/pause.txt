@@ -75,6 +75,39 @@ customization {
 }
 
 customization {
+  tickeraction_0_set_variable = tip_variable:{"placeholder":"randomtext","values":{"path":"pause_tips.txt","interval":"1"}}
+  orientation = top-left
+  tick_delay = 0
+  is_async = false
+  x = 66
+  width = 70
+  action = custom_layout_element:fancymenu_customization_item_ticker
+  actionid = a8a95001-3fe7-4d46-a0d5-3c4545b256731739906923177
+  y = 55
+  tick_mode = on_menu_load
+  height = 70
+}
+
+customization {
+  orientation = top-left
+  enable_scrolling = true
+  shadow = true
+  scale = 1.0
+  source = {"placeholder":"getvariable","values":{"name":"tip_variable"}}
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = 2
+  width = 618
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 7a557b60-5f61-4b43-96ee-80f88875ca2f1739907033183
+  y = 3
+  alignment = left
+  height = 15
+}
+
+customization {
   identifier = %id=button_compatibility_id:mc_pausescreen_disconnect_button%
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:d41e21bc-a212-4316-8fb8-51bfbfedc34c1705782865876] = timesup:false
   action = vanilla_button_visibility_requirements

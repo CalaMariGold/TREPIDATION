@@ -1,6 +1,7 @@
 type = cached_variables
 
 variables {
+  tip_variable = Press left ALT to dash. Each dash gives 1 second of invulnerability.
   timesup = false
 }
 
