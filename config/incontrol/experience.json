@@ -1,11 +1,11 @@
 [
     {
         "dimension":5,
-        "multxp": 3
+        "multxp": 10
     },
     {
         "dimension":10,
-        "multxp": 3
+        "multxp": 20
     },
     {
         "dimension":0,

@@ -84,7 +84,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             server.commandManager.executeCommand(server, "sanity add @p 100");
             server.commandManager.executeCommand(server, "playsound cyclicmagic:chaos_reaper master @p ~ ~ ~ 0.6 0.7");
             server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The Veil's debt has been settled.\",\"color\":\"red\",\"italic\":true}]");
-            server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Chrono Usurpation no longer steals time from future runs and now provides other beneficial effects.\",\"color\":\"gold\",\"italic\":false}]");
+            server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Chrono Usurpation now permanently provides increased sanity and absorption.\",\"color\":\"gold\",\"italic\":false}]");
             server.commandManager.executeCommand(server, "gamestage silentadd @p used_chrono_absolution");
             event.player.update({usedChronoAbsolution: true});
             chronoAbsolution.mutable().shrink(1);
@@ -125,32 +125,30 @@ events.onCommand(function(event as crafttweaker.event.CommandEvent) {
             .sleep(100)
             .then(function(world, context) {
                 Commands.call("advancement grant @p only triumph:advancements/hidden/unlock_journal", player, player.world, true, true);
+                server.commandManager.executeCommand(server, "timer @p set " + newTimerValue);
 
-                // Only do the following if the player has not used Chrono Absolution
-                if(player.data.usedChronoAbsolution == false){
-                    server.commandManager.executeCommand(server, "timer @p set " + newTimerValue);
-                    if(bonusCount == 1){
-                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The Veil whispers of debts unpaid. Your timer bears fresh scars from another's ambition.\",\"color\":\"red\",\"italic\":true}]");
-                    }
-                    else if(bonusCount == 2){
-                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Phantom screams echo through the ash. " + bonusCount + " minutes torn from your flesh by hands unseen. The Watcher hungers for compounded interest.\",\"color\":\"red\",\"italic\":true}]");
-                    }
-                    else if(bonusCount == 3){
-                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Reality shudders as " + bonusCount + " minutes are excised from your timeline - another's triumph written in your blood.\",\"color\":\"red\",\"italic\":true}]");
-                    }
-                    else if(bonusCount == 4){
-                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Debt must be paid. " + bonusCount + " minutes are torn from your flesh.\",\"color\":\"red\",\"italic\":true}]");
-                    }
-                    else if(bonusCount == 5){
-                        Commands.call("advancement grant @p only triumph:advancements/journal_entries/chrono_usurpation_entry", player, player.world, true, true);
-                        Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", player, player.world, true, true);
-                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"You awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.\",\"color\":\"red\",\"italic\":true}]");
-                        server.commandManager.executeCommand(server, "gamestage add @p unlocked_chrono_absolution");
-                    }
-                    else if(bonusCount >= 6){
-                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Debt must be paid. " + bonusCount + " minutes are torn from your flesh.\",\"color\":\"red\",\"italic\":true}]");
-                    }
+                if(bonusCount == 1){
+                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The Veil whispers of debts unpaid. Your timer bears fresh scars from another's ambition.\",\"color\":\"red\",\"italic\":true}]");
                 }
+                else if(bonusCount == 2){
+                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Phantom screams echo through the ash. " + bonusCount + " minutes torn from your flesh by hands unseen. The Watcher hungers for compounded interest.\",\"color\":\"red\",\"italic\":true}]");
+                }
+                else if(bonusCount == 3){
+                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Reality shudders as " + bonusCount + " minutes are excised from your timeline - another's triumph written in your blood.\",\"color\":\"red\",\"italic\":true}]");
+                }
+                else if(bonusCount == 4){
+                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Debt must be paid. " + bonusCount + " minutes are torn from your flesh.\",\"color\":\"red\",\"italic\":true}]");
+                }
+                else if(bonusCount == 5){
+                    Commands.call("advancement grant @p only triumph:advancements/journal_entries/chrono_usurpation_entry", player, player.world, true, true);
+                    Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", player, player.world, true, true);
+                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"You awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.\",\"color\":\"red\",\"italic\":true}]");
+                    server.commandManager.executeCommand(server, "gamestage add @p unlocked_chrono_absolution");
+                }
+                else if(bonusCount >= 6){
+                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Debt must be paid. " + bonusCount + " minutes are torn from your flesh.\",\"color\":\"red\",\"italic\":true}]");
+                }
+                
    
             })
             .start();
