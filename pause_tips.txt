@@ -1,24 +1,22 @@
-Press R on an item to view its recipes and U to view its uses.
-Item descriptions provide vital clues to the progression.
+Press R/U on items to reveal their hidden potential through recipes and uses
+Item tooltips & lore text provide vital clues to the progression.
 TREPIDATION's world is filled with mystery and lore. Seek it.
 Each death teaches you something new about TREPIDATION.
 Don't be afraid to reset your runs to apply knowledge you've gained.
 Searching recipes and uses in JEI is vital to progress.
 Progression after the Nether is a placeholder and WIP.
 Some essential progression items are bookmarked in JEI.
-Stock up on food before you head into the Deep Dark.
+Stock up on food before you head into The Mind's Abyss.
 You can dash mid-air continuously to cross lava oceans or caverns.
-Press left ALT to dash. Each dash gives 1 second of invulnerability.
-Press left ALT to dash. Each dash gives 1 second of invulnerability.
-Press left ALT to dash. Each dash gives 1 second of invulnerability.
+Each dash (Left ALT) grants 1s invulnerability - use it to phase through attacks
 Each dash gives 1 second of invulnerability (1s i-frame)
 Double jump to stop fall damage.
-Most foods in the Nether provide beneficial effects.
+Nether foods hold fiery blessings - seek scrambled magma eggs and devil's bread
 Magma eggs and fire charges can be thrown.
 A Nether Wraith Bomb can be crafted to explode blocks.
 You can wall hang by holding shift on a wall.
 Pickaxes, torches, and a few other items never drop on death.
-Use a Soul Anchor to set your spawn after arriving in a new dimension.
+The Soul Anchor's laughter echoes your doomed predecessors - use it to bind your spirit
 Join the Discord to discuss strategies and compete for the world record.
 The current world record for beating the Nether is less than 6 minutes.
 There is no escape.
@@ -29,5 +27,19 @@ Watch the trailer for TREPIDATION on YouTube!
 Support development on Ko-fi!
 In this eternal cycle, you are but fleeting shadows.
 Each step you take is one walked by countless before you, each as insignificant as the last.
-Read your Journal! It contains crucial information and lore.
-Middle-click while in your inventory to sort.
+The Journal at your belt holds forbidden knowledge from countless cycles - read it
+Middle-click to sort - a mind unburdened by clutter survives longer
+The Grimoire grows hungrier with each soul consumed - feed it Traces of Death
+Chrono Usurpation debt will be paid.
+The Ashen Oracle guards knowledge, but not for the reason you think.
+Follow the Soul Compass' mournful glow to reclaim what you've lost
+The Erebus jungles breathe - move quietly and extinguish light sources
+The horrors in the Abyss feast on fear - quicken your step
+It's watching. Always.
+The Dreadswine seek fragments of their past. Their grief may hold secrets.
+Veilstrium armor provides more than just physical protection.
+You're not imagining it.
+The Echo of Betrayal resonates with forgotten structures.
+Infernal Rods are vital for stabilizing certain crafting recipes.
+The barriers between Realms can only be shattered by specific means.
+Some memories persist between cycles, if you know where to look.
