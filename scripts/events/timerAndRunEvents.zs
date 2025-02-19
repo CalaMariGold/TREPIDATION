@@ -85,6 +85,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             server.commandManager.executeCommand(server, "playsound cyclicmagic:chaos_reaper master @p ~ ~ ~ 0.6 0.7");
             server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The Veil's debt has been settled.\",\"color\":\"red\",\"italic\":true}]");
             server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Chrono Usurpation no longer steals time from future runs and now provides other beneficial effects.\",\"color\":\"gold\",\"italic\":false}]");
+            server.commandManager.executeCommand(server, "gamestage silentadd @p used_chrono_absolution");
             event.player.update({usedChronoAbsolution: true});
             chronoAbsolution.mutable().shrink(1);
         }  

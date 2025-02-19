@@ -55,10 +55,13 @@ events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
     }
 });
 
-// Create a scoreboard for timer bonuses used when the player first logs into the game
+// Do things when the player first logs into the game
 events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent) {
 	if (isNull(event.player.data.firstTimeJoin)) {
+        // Create player data to avoid nullpointer exceptions
         event.player.update({timerbonus: 0});
+        event.player.update({usedChronoAbsolution: false});
+        
         server.commandManager.executeCommand(server, "op " + event.player.name);
         Commands.call("advancement grant @p only triumph:advancements/dimensions/start", event.player, event.entity.world, true, true);
 
@@ -263,91 +266,4 @@ events.onEntityLivingUpdate(function(event as crafttweaker.event.EntityLivingUpd
             }
         }
     }
-});
-
-
-// On time is up
-EventManager.getInstance().onTimerTick(function(event as TickEvent){
-    if(event.world.isRemote())
-        return;
-
-    var totalSecs = event.tick/20;
-    if(totalSecs <= 0) {
-        if(!isNull(event.player)){
-            Commands.call("fmvariable set timesup true false", event.player, event.player.world, true, true);
-        }
-    }
-});
-
-
-// Add to the timer bonuses used scoreboard counter when right clicking a timer bonuses
-static timerBonus as IItemStack = <timeisup:timer_bonus>;
-events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
-    if(!event.world.isRemote()){
-        if(!isNull(event.item.definition.id) && event.hand == "MAIN_HAND" && (event.item.definition.id).matches(timerBonus.definition.id)) {
-            if(isNull(event.player.data.timerbonus)){
-                event.player.update({timerbonus: 0});
-            }
-
-            event.player.update({timerbonus: event.player.data.timerbonus + 1});
-        }  
-    }
-});
-
-// Handle run reset and adjust timer based on bonuses used
-events.onCommand(function(event as crafttweaker.event.CommandEvent) {
-    if (event.command.name == "reroll") {
-
-    val sender = event.commandSender;
-    if(!isNull(sender) && !isNull(sender.world)) {
-        val playerName = sender.displayName;
-        
-        // Cast sender to IPlayer if it is a player
-        if (sender instanceof IPlayer) {
-            val player as IPlayer = sender;
-
-            // Reset player data between runs
-            player.update({clickedNetherBarrier: null});
-            player.update({shatteredTraceOfDeath: null});
-            player.update({clickedNetherObelisk: null});
-            player.update({clickedEchoOfBetrayal: null});
-
-            // Get the player's timer bonus count
-            var bonusCount = 0;
-            bonusCount = player.data.timerbonus as int;
-
-            // Calculate new timer value (60 minutes - 1 minute per bonus used)
-            var newTimerValue = 72000 - (bonusCount * 1200);
-            
-            // Set the new timer value
-            player.world.catenation()
-            .run(function(world, context) {
-                context.data = world.time;
-            })
-            .sleep(100)
-            .then(function(world, context) {
-                server.commandManager.executeCommand(server, "timer @p set " + newTimerValue);
-                if(bonusCount == 1){
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The Veil whispers of debts unpaid. Your timer bears fresh scars from another's ambition.\",\"color\":\"red\",\"italic\":true}]");
-                }
-                else if(bonusCount == 2){
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Phantom screams echo through the ash. " + bonusCount + " minutes torn from your flesh by hands unseen. The Watcher hungers for compounded interest.\",\"color\":\"red\",\"italic\":true}]");
-                }
-                else if(bonusCount == 4){
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Reality shudders as " + bonusCount + " minutes are excised from your timeline - another's triumph written in your blood.\",\"color\":\"red\",\"italic\":true}]");
-                }
-                else if(bonusCount == 5){
-                    Commands.call("advancement grant @p only triumph:advancements/journal_entries/chrono_usurpation_entry", player, player.world, true, true);
-                    Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", player, player.world, true, true);
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"You awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.\",\"color\":\"red\",\"italic\":true}]");
-                }
-                player.update({timerbonus: 0});
-
-                
-            })
-            .start();
-            
-        }
-    }
-  }
 });
