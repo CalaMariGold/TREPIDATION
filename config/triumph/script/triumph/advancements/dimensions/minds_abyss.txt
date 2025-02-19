@@ -1,10 +1,10 @@
 setIcon(<beneath:teleporterbeneath>)
 setTitle("Living Shadows")
-setDescription("Reach The Deep Dark")
+setDescription("Reach The Mind's Abyss")
 
 addParent("triumph:advancements/dimensions/erebus")
 
-addRewardFunction("triumph:deepdark")
+addRewardFunction("triumph:minds_abyss")
 
 
 

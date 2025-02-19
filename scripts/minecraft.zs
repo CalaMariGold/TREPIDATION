@@ -11,7 +11,7 @@ import mods.dropt.Dropt;
 JEI.removeAndHide(<minecraft:ender_eye>);
 LootTable.removeGlobalItem("minecraft:ender_eye");
 
-// will be reworked later, maybe deep dark or erebus bow
+// will be reworked later
 recipes.remove(<minecraft:bow>);
 
 recipes.remove(<minecraft:book>);

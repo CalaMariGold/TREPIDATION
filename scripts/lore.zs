@@ -219,7 +219,7 @@ JEI.addDescription(<contenttweaker:vitality_orb>,"The Orb of Veilheart, a miracu
 <nethercraft:ghast_bones>.addTooltip("§oOccasionally harvested from bone blocks floating in the searing lava oceans");
 
 
-// Deep Dark
+// The Mind's Abyss
 <quark:elder_prismarine:2>.displayName = "Deep Stone";
 
 // Misc

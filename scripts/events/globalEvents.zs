@@ -171,11 +171,11 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
         
     }
 
-    // Erebus to Deep Dark
+    // Erebus to The Mind's Abyss
     if((event.from == 5 && event.to == 10)){
         EventManager.getInstance().onTimerTick(function(event as TickEvent){
 
-            if(event.player.hasGameStage("erebus") && event.player.hasGameStage("deepdark")){
+            if(event.player.hasGameStage("erebus") && event.player.hasGameStage("minds_abyss")){
 
                 var player_name = event.player.name;
                 var totalSecs = event.tick/20;
@@ -206,11 +206,11 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
             .start();
     }
 
-    // Deep Dark to Surface
+    // The Mind's Abyss to Surface
     if((event.from == 10 && event.to == 0)){
         EventManager.getInstance().onTimerTick(function(event as TickEvent){
 
-            if(event.player.hasGameStage("deepdark") && event.player.hasGameStage("surface")){
+            if(event.player.hasGameStage("minds_abyss") && event.player.hasGameStage("surface")){
 
                 var player_name = event.player.name;
                 var totalSecs = event.tick/20;
@@ -221,12 +221,12 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
                 var totalSecondsElasped = 3600 - totalSecs;
                 var secondsElasped = totalSecondsElasped % 60;
                 var minutesElasped = (totalSecondsElasped % 3600) / 60;
-                event.player.sendChat("§a" + player_name + " escaped the Deep Dark with " + "§c" + minutes + ":" + seconds + " (" + minutesElasped + ":" + secondsElasped + ")" + " §aleft." );
+                event.player.sendChat("§a" + player_name + " escaped The Mind's Abyss with " + "§c" + minutes + ":" + seconds + " (" + minutesElasped + ":" + secondsElasped + ")" + " §aleft." );
                 if(timerBonusCount > 0){
                     event.player.sendChat("§aTimer Bonuses Used: §4" + timerBonusCount);
                 }
                 Commands.call("sanity add " + event.player.name + " 25", event.player, event.player.world, true, true);
-                server.commandManager.executeCommand(server, "gamestage silentremove @p deepdark");
+                server.commandManager.executeCommand(server, "gamestage silentremove @p minds_abyss");
                 
 
                 event.player.sendChat("§3Developer Note: It's currently not possible to enter the End and beat the modpack. Until then, have fun exploring the Surface...");

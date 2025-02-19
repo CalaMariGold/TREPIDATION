@@ -2,7 +2,7 @@ setIcon(<srparasites:parasitestain, meta:2>)
 setTitle("Natural Selection")
 setDescription("Reach The Surface")
 
-addParent("triumph:advancements/dimensions/deepdark")
+addParent("triumph:advancements/dimensions/minds_abyss")
 
 addRewardFunction("triumph:overworld")
 
