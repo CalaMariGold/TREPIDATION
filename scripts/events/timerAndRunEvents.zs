@@ -62,6 +62,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             }
 
             event.player.update({timerbonus: event.player.data.timerbonus + 1});
+            server.commandManager.executeCommand(server, "playsound timeisup:timer master @p");
 
             // If the player has used Chrono Absolution, timer bonuses now restore health and sanity
             if(event.player.data.usedChronoAbsolution == true){
@@ -82,7 +83,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             
             server.commandManager.executeCommand(server, "effect @p wither 10 1");
             server.commandManager.executeCommand(server, "sanity add @p 100");
-            server.commandManager.executeCommand(server, "playsound cyclicmagic:chaos_reaper master @p ~ ~ ~ 0.6 0.7");
+            server.commandManager.executeCommand(server, "playsound enderskills:animated_stone player @p ~ ~ ~");
             server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The Veil's debt has been settled.\",\"color\":\"red\",\"italic\":true}]");
             server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Chrono Usurpation now permanently provides increased sanity and absorption.\",\"color\":\"gold\",\"italic\":false}]");
             server.commandManager.executeCommand(server, "gamestage silentadd @p used_chrono_absolution");
