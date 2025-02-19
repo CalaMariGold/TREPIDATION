@@ -46,3 +46,7 @@ infernal_core.register();
 val raw_unstable_infernium = mods.contenttweaker.VanillaFactory.createItem("raw_unstable_infernium");
 raw_unstable_infernium.register();
 raw_unstable_infernium.maxStackSize = 256;
+
+val unstable_sand = mods.contenttweaker.VanillaFactory.createItem("unstable_sand");
+unstable_sand.register();
+unstable_sand.maxStackSize = 256;

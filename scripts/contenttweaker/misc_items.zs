@@ -20,3 +20,7 @@ trophy.register();
 
 val trepidation = mods.contenttweaker.VanillaFactory.createItem("trepidation");
 trepidation.register();
+
+val chrono_absolution = mods.contenttweaker.VanillaFactory.createItem("chrono_absolution");
+chrono_absolution.register();
+

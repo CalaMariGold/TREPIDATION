@@ -6,7 +6,8 @@ import crafttweaker.potions.IPotionEffect;
 // Define the items that should cause burning/damage when held
 // Replace these with your actual items
 static burningItems as IItemStack[] = [
-    <contenttweaker:raw_unstable_infernium>
+    <contenttweaker:raw_unstable_infernium>,
+    <contenttweaker:unstable_sand>
 ];
 
 events.onEntityLivingUpdate(function(event as crafttweaker.event.EntityLivingUpdateEvent) {

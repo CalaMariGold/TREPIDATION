@@ -6,7 +6,7 @@
     "pages": [
       {
         "type": "text",
-        "text": "$(#551012)The air itself carries new arithmetic - this sickly calculus where breaths borrowed from the damned compound in our marrow. I watched a fresh runner collapse under the weight of minutes never lived, their timer hemorrhaging phantom seconds. Their scream harmonized with the Watcher's laughter - a duet scored in stolen heartbeats."
+        "text": "$(#551012)Cycle 97, Entry 26$(br2)The air carries new arithmetic - this sickly calculus where breaths borrowed from the damned compound in our marrow. I gazed as a fresh runner collapsed under the weight of minutes never lived, their time hemorrhaging phantom seconds."
       },
       {
         "type": "text",
@@ -22,7 +22,20 @@
       },
       {
         "type": "text",
-        "text": "$(#551012)Yet still I pocket the glowing shard. Still I crush it between familiar teeth. Let the next cycle's stranger pay my debt with their unraveling. This is how gods are unmade - not through grand heresies, but a thousand quiet betrayals scribbled in borrowed time.$(br2)—Elara"
+        "text": "$(#551012)Yet still I pocket the hourglass. Still I crush it between familiar teeth. Let the next cycle's stranger pay my debt with their unraveling. This is how gods are unmade - not through grand heresies, but a thousand quiet betrayals scribbled in borrowed time.$(br2)—Elara"
+      },
+      {
+        "type": "spotlight",
+        "item": "contenttweaker:chrono_absolution",
+        "text": "$(#551012)[Addendum]$(br)The metal's song shifted key - a discordant harmony emerging from Infernium's molten heart veined with scorched grains and quartz. The resulting artifact weeps silver tears that evaporate into half-formed equations."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)To consume this absolution is to let the Veil's accountants carve their tallies directly in one's marrow. The body rebels - a symphony of cracked ribs and cauterized capillaries - but the ledger... the ledger balances."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)Subsequent usurpations now ring hollow, their stolen minutes transformed into vital humors that fortify flesh rather than fracture timelines. But the cure's aftertaste lingers - each healed wound whispers of debts transferred, not dissolved. What fresh damnation have I authored in this desperate arithmetic?"
       }
     ]
 } 
