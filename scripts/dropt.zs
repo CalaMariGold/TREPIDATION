@@ -28,6 +28,22 @@ Dropt.list("fiery_lit1")
 );
 
 
+Dropt.list("sanity_journal_entry")
+  .add(Dropt.rule()
+      .matchBlocks(["quark:elder_prismarine:2"])
+      .matchHarvester(Dropt.harvester()
+        .gameStages("BLACKLIST", "ALL", ["sanity_journal_entry"])
+      )
+      .addDrop(Dropt.drop()
+          .selector(Dropt.weight(99))
+          .items([<quark:elder_prismarine:2>])
+      )
+      .addDrop(Dropt.drop()
+          .selector(Dropt.weight(1))
+          .items([<contenttweaker:sanity_entry>,<quark:elder_prismarine:2>])
+      )
+  );
+
 
 Dropt.list("foulite_dust_journal_entry")
   .add(Dropt.rule()

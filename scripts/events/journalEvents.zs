@@ -53,6 +53,7 @@ static infernium_entry as IItemStack = <contenttweaker:infernium_entry>;
 static glowood_entry as IItemStack = <contenttweaker:glowood_entry>;
 static ashen_oracle_entry as IItemStack = <contenttweaker:ashen_oracle_entry>;
 static ashen_revenant_entry as IItemStack = <contenttweaker:ashen_revenant_entry>;
+static sanity_entry as IItemStack = <contenttweaker:sanity_entry>;
 
 
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
@@ -62,6 +63,14 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
         
         if(!isNull(itemStack1)){
 
+            // Entry #?? - Sanity
+            if (sanity_entry.matches(itemStack1)) {  
+                Commands.call("advancement grant @p only triumph:advancements/journal_entries/sanity_entry", event.player, event.world, true, true);
+                Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
+                Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
+                itemStack1.mutable().shrink(1);
+            }
+            
             // Entry #24 - Ashen Oracle
             if (ashen_oracle_entry.matches(itemStack1)) {  
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/ashen_oracle_entry", event.player, event.world, true, true);

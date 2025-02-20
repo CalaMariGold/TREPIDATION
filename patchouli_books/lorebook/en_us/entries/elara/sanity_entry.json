@@ -1,0 +1,24 @@
+{
+  "name": "Sanity's Labyrinth",
+  "icon": "trepidation:brain.png",
+  "category": "elara",
+  "advancement": "triumph:advancements/journal_entries/sanity_entry",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(#551012)Cycle ███, Entry ██ █████ $(br2)The eyes float where walls should be - lidless sentinels that chart my decay. Their gaze etches patterns in the air, hieroglyphs that squirm when unobserved. I've begun counting their blinks, but the intervals... they taste of burnt copper and forgotten names."
+    },
+    {
+      "type": "text",
+      "text": "$(#551012)Three truths remain: $(br)- The statues move when breath stills $(br)- My journal writes itself in tongues unlearned $(br)- The ██████ voice wears my face $(br2)My last entry festers in angular script - 'The Abyss hungers not for flesh, but the architecture of thought.' A truth I never penned, in a dialect that blisters my tongue to speak."
+    },
+    {
+      "type": "text",
+      "text": "$(#551012)I leave offerings for forgotten Runners - charred mushrooms arranged in spiral patterns, bone shards pressed into eye sockets of stone. Let the next me find these warnings and think them sane. The statues whisper approval through teeth of quartz, their laughter the crackle of dying embers."
+    },
+    {
+      "type": "text",
+      "text": "$(#551012)If these words hold meaning, know this final horror: $(br2)The madness wears reason's cloak. $(br)The lies fit truer than memory. $(br)The eyes... the eyes are learning to blink. $(br2)Carve this in flesh, not paper - █████ comes for the rest. $(br2)-■■■■■"
+    }
+  ]
+}

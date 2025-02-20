@@ -31,6 +31,9 @@ import mods.jei.JEI;
 <contenttweaker:ashen_revenant_entry>.displayName = "§cElara's Journal - Entry #22";
 <contenttweaker:ashen_revenant_entry>.addTooltip("§oA tattered page that was torn from a journal");
 <contenttweaker:ashen_revenant_entry>.addTooltip("§3Right-click to add to your Journal");
+<contenttweaker:sanity_entry>.displayName = "§cElara's Journal - Entry #???";
+<contenttweaker:sanity_entry>.addTooltip("§oA tattered page that was torn from a journal");
+<contenttweaker:sanity_entry>.addTooltip("§3Right-click to add to your Journal");
 
 <corpsecomplex:scroll>.displayName = "§cDreadstone Tablet";
 <corpsecomplex:scroll>.addTooltip("§3Use to teleport to your last death location");
@@ -65,6 +68,8 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 // Chrono Anchor
 <timeisup:timer_anchor>.displayName = "§cChrono Anchor";
 <timeisup:timer_anchor>.removeTooltip("Shift + right click to set to current timer");
+<timeisup:timer_anchor>.removeTooltip("Refill with Ender Pearl");
+
 <timeisup:timer_anchor>.addTooltip("§3Shift-right click to bind to current time and location");
 <timeisup:timer_anchor>.addTooltip("§3Does not drop on death");
 <timeisup:timer_anchor>.addTooltip("§oTime's scales care not which pan holds ash or oblivion");

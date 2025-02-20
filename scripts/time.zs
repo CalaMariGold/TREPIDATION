@@ -24,6 +24,6 @@ mods.recipestages.Recipes.addShapeless("chrono_anchor", "unlocked_chrono_anchor"
     <contenttweaker:soul_anchor>,
     <timeisup:timer_bonus>]);
 
-<timeisup:timer_anchor>.maxDamage = 1;  
+<timeisup:timer_anchor>.maxDamage = 2;  
 
 

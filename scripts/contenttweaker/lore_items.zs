@@ -32,3 +32,7 @@ ashen_oracle_entry.register();
 
 val ashen_revenant_entry = mods.contenttweaker.VanillaFactory.createItem("ashen_revenant_entry");
 ashen_revenant_entry.register();
+
+val sanity_entry = mods.contenttweaker.VanillaFactory.createItem("sanity_entry");
+sanity_entry.register();
+
