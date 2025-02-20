@@ -19,3 +19,11 @@ mods.recipestages.Recipes.addShaped("unstable_sand", "unlocked_chrono_absolution
     [<nethercraft:ghast_bomb>, <minecraft:blaze_powder>, <nethercraft:ghast_bomb>],
     [<contenttweaker:raw_unstable_infernium>, <nethercraft:ghast_bomb>, <contenttweaker:raw_unstable_infernium>]]);
 
+
+mods.recipestages.Recipes.addShapeless("chrono_anchor", "unlocked_chrono_anchor", <timeisup:timer_anchor>,[
+    <contenttweaker:soul_anchor>,
+    <timeisup:timer_bonus>]);
+
+<timeisup:timer_anchor>.maxDamage = 1;  
+
+

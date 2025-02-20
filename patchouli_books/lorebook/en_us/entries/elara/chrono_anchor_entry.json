@@ -1,0 +1,29 @@
+{
+    "name": "Chrono Anchor",
+    "icon": "timeisup:timer_anchor",
+    "category": "elara",
+    "advancement": "triumph:advancements/journal_entries/chrono_anchor_entry",
+    "pages": [
+      {
+        "type": "crafting",
+        "recipe": "crafttweaker:chrono_anchor",
+        "text": "$(#551012)Cycle 199, Entry 36$(br2)The anchors now sing in dissonant harmony - soul's tether married to time's thief."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)This amalgam thrums with paradox, its essence torn between preservation and plunder. To activate it is to become time's creditor and debtor simultaneously - the initial anchor point blooms like a wound in reality's fabric, every subsequent moment accruing interest paid in fractured resurrection. The ritual leaves metallic aftertastes: copper from the usurpation's hunger, ash from the soul-bond's pyre."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)Retracing steps through time's labyrinth exacts a toll that compounds exponentially - the anchors grow heavier with each retrieval, their song warping into a dirge of borrowed moments. The twin components resonate with dangerous synergy. Soul's anchor craves permanence while chrono's grasp devours continuity. Their union births temporal eddies that erode the Veil's already-tenuous fabric."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)If the artifact must be wielded, let it be during moments when the Cycle's teeth gnash closest. My experiments suggest brief anchorings in loci of temporal fragility - where Veilstrium veins surface or Infernal cores still smolder. The resonance lingers longest when set amidst paradox: a death avoided through usurpation's theft, a sanctuary forged from stolen breaths."
+      },
+      {
+        "type": "text",
+        "text": "$(#551012)But mark this - each retrieval leaves the anchored moment more brittle than the last, until finally the memory-sand slips through time's clenched fist. Better to burn bright with one perfect recursion than let the debt compound into existential quicksand.$(br2)—Elara"
+      }
+    ]
+} 

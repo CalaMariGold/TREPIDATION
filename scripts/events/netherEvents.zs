@@ -93,7 +93,7 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
                 }
             } 
             else {
-                if(isNull(event.player.data.clickedEchoOfBetrayal)){  
+                if(isNull(event.player.data.clickedEchoOfBetrayal) || event.player.data.clickedEchoOfBetrayal == false){  
                     server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"As you stare into the eye of this artifact, it seems to draw you to an ancient stone of some kind—a place where buried power might yet be unearthed.\",\"color\":\"red\",\"italic\":true}]");
                     Commands.call("playsound enderskills:contaminate player @p", event.player, event.world, true, true);
                     event.player.update({clickedEchoOfBetrayal: true});
@@ -115,7 +115,7 @@ static glowoodPick as IItemStack = <nethercraft:glowood_pickaxe:*>;
 
 events.onPlayerLeftClickBlock(function(event as crafttweaker.event.PlayerLeftClickBlockEvent){
     if(!event.entity.world.isRemote()){
-        if(isNull(event.player.data.clickedNetherBarrier)){       
+        if(isNull(event.player.data.clickedNetherBarrier) || event.player.data.clickedNetherBarrier == false){       
             val playerHoldItemStack = event.player.currentItem as IItemStack; 
             if(event.block.displayName == "Barrier §4Alpha"){
                 if(!isNull(playerHoldItemStack)){
@@ -239,7 +239,7 @@ events.onPlayerInteractEntity(function(event as crafttweaker.event.PlayerInterac
                         server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your soul has been bound to this position.\",\"color\":\"blue\",\"italic\":true}]");
                 }
                 else {
-                    if(isNull(event.player.data.clickedNetherObelisk)){
+                    if(isNull(event.player.data.clickedNetherObelisk) || event.player.data.clickedNetherObelisk == false){
                         server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"A chill settles as you approach the obelisk, but nothing stirs. Something waits, requiring a relic forged in wrath and memory\",\"color\":\"red\",\"italic\":true}]");
                         event.player.update({clickedNetherObelisk: true});
                     }
@@ -265,7 +265,7 @@ events.onPlayerInteractEntity(function(event as crafttweaker.event.PlayerInterac
             // Dreadstone Fragment
             if (dreadstone_fragment.matches(itemStack1)) {  
                 if(event.target.definition.name == "PigZombie"){
-                    if(isNull(event.player.data.testing)){
+                    if(isNull(event.player.data.testing) || event.player.data.testing == false){
                         itemStack1.mutable().shrink(1);
                         server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"You carefully hand a fragment of the Dreadstone Tablet to the Dreadswine. It grasps the piece with trembling hands, staring at it intensely before carrying on. \",\"color\":\"red\",\"italic\":true}]");
                         event.player.update({testing: true});
@@ -320,7 +320,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
         if(!isNull(itemStack2)){
             if (traceofdeath.matches(itemStack2)) {  
 
-                if(isNull(event.player.data.shatteredTraceOfDeath)){
+                if(isNull(event.player.data.shatteredTraceOfDeath) || event.player.data.shatteredTraceOfDeath == false){
                     server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"As the final pieces of the Trace of Death crumble at your feet, you are suddenly consumed by a rush of spectral energies. The secrets you now possess are both a blessing and a curse, for the shadows that surround you have been stirred, and you cannot escape the feeling that you are being watched by something far beyond your comprehension.\",\"color\":\"red\",\"italic\":true}]");
                     Commands.call("playsound cyclicmagic:chaos_reaper master @p ~ ~ ~ 0.6 0.7", event.player, event.world, true, true);
                     event.player.update({shatteredTraceOfDeath: true});

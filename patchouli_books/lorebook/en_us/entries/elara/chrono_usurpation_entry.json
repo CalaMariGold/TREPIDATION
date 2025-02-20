@@ -25,13 +25,13 @@
         "text": "$(#551012)Yet still I pocket the hourglass. Still I crush it between familiar teeth. Let the next cycle's stranger pay my debt with their unraveling. This is how gods are unmade - not through grand heresies, but a thousand quiet betrayals scribbled in borrowed time.$(br2)—Elara"
       },
       {
-        "type": "spotlight",
-        "item": "contenttweaker:chrono_absolution",
-        "text": "$(#551012)[Addendum]$(br)The metal's song shifted key - a discordant harmony emerging from Infernium's molten heart veined with scorched grains and quartz. The resulting artifact weeps silver tears that evaporate into half-formed equations."
+        "type": "crafting",
+        "recipe": "contenttweaker:chrono_absolution",
+        "text": "$(#551012)[Addendum]$(br)The metal's song shifted key - a discordant harmony emerging from Infernium's molten heart veined with scorched grains and quartz."
       },
       {
         "type": "text",
-        "text": "$(#551012)To consume this absolution is to let the Veil's accountants carve their tallies directly in one's marrow. The body rebels - a symphony of cracked ribs and cauterized capillaries - but the ledger... the ledger balances."
+        "text": "$(#551012)The resulting artifact weeps silver tears that evaporate into half-formed equations. To consume this absolution is to let the Veil's accountants carve their tallies directly in one's marrow. The body rebels - a symphony of cracked ribs and cauterized capillaries - but the ledger... the ledger balances."
       },
       {
         "type": "text",

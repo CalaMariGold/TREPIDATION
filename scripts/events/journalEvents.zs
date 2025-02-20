@@ -128,8 +128,9 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 itemStack1.mutable().shrink(1);
             }
 
-            // Entry #211 - Cycle 211
-            
+            // Entry #26 - Chrono Usurpation
+
+            // Entry #36 - Chrono Anchor
             
         }
     }

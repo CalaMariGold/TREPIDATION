@@ -45,7 +45,25 @@ import crafttweaker.entity.Attribute;
 import crafttweaker.entity.AttributeModifier;
 import mods.contenttweaker.Commands;
 import crafttweaker.event.CommandEvent;
+import crafttweaker.event.PlayerCloneEvent;
 
+
+// Player data gets reset on death
+// This clones it to the new player
+events.onPlayerClone(function(event as crafttweaker.event.PlayerCloneEvent){
+    if(!event.entity.world.isRemote()){
+
+        event.player.update({firstTimeJoin: event.originalPlayer.data.firstTimeJoin});
+        event.player.update({failedRuns: event.originalPlayer.data.failedRuns});
+        event.player.update({timerbonus: event.originalPlayer.data.timerbonus});
+        event.player.update({usedChronoAbsolution: event.originalPlayer.data.usedChronoAbsolution});
+        event.player.update({clickedNetherObelisk: event.originalPlayer.data.clickedNetherObelisk});
+        event.player.update({clickedNetherBarrier: event.originalPlayer.data.clickedNetherBarrier});
+        event.player.update({shatteredTraceOfDeath: event.originalPlayer.data.shatteredTraceOfDeath});
+        event.player.update({clickedEchoOfBetrayal: event.originalPlayer.data.clickedEchoOfBetrayal});
+        event.player.update({testing: event.originalPlayer.data.testing});
+    }
+});
 
 
 // Give player soul compass with curse of vanishing upon death
@@ -58,14 +76,27 @@ events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
 // Do things when the player first logs into the game
 events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent) {
 	if (isNull(event.player.data.firstTimeJoin)) {
+
         // Create player data to avoid nullpointer exceptions
-        event.player.update({timerbonus: 0});
-        event.player.update({usedChronoAbsolution: false});
-        
+        if(!isNull(event.player)){
+            event.player.update({timerbonus: 0 as int});
+            event.player.update({failedRuns: 0 as int});
+            event.player.update({usedChronoAbsolution: false as bool});
+            event.player.update({clickedNetherObelisk: false as bool});
+            event.player.update({clickedNetherBarrier: false as bool});
+            event.player.update({clickedEchoOfBetrayal: false as bool});
+            event.player.update({shatteredTraceOfDeath: false as bool});
+            event.player.update({testing: false as bool});
+        } else {
+            server.commandManager.executeCommand(server, "say Error: Player not found, please report this to the TREPIDATION GitHub. Describe recent events leading up to this.");
+        }
+
+        // Run neccessary starting commands
         server.commandManager.executeCommand(server, "op " + event.player.name);
         Commands.call("advancement grant @p only triumph:advancements/dimensions/start", event.player, event.entity.world, true, true);
 
-        // for some reason, journal entries only unlock after an achievement is granted a few seconds after world start
+
+        // For some reason, journal entries only unlock after an achievement is granted a few seconds after world start
         event.player.world.catenation()
         .run(function(world, context) {
             context.data = world.time;
@@ -73,7 +104,7 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
         .sleep(200)
         .then(function(world, context) {
             Commands.call("advancement grant @p only triumph:advancements/hidden/unlock_journal", event.player, event.entity.world, true, true);
-            server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Disoriented, you awaken to find a journal attached to your belt. As you begin to write, you notice a scar on your left wrist.\",\"color\":\"red\",\"italic\":true}]");
+            server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Disoriented, you awaken to find a journal attached to your belt. As you begin to write, you notice a scar on your left wrist.\",\"color\":\"red\",\"italic\":true}]"); 
         })
         .start();
         
@@ -134,21 +165,6 @@ events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
 
 // Output some neccessary speedrun information in chat when escaping a dimension for the first time
 events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChangedDimensionEvent){
-
-    if((event.to == 684)){
-
-        // visitor in limbo
-        event.player.world.catenation()
-            .run(function(world, context) {
-                context.data = world.time;
-            })
-            .sleep(500)
-            .then(function(world, context) {
-                Commands.call("summon wyrmsofnyrus:thevisitor ~ ~+100 ~", event.player, event.entity.world, true, true);
-                Commands.call("playsound wyrmsofnyrus:visitormessage master @p ~ ~ ~ 10.0 0.5", event.player, event.entity.world, true, true);
-            })
-            .start();
-    }
 
     // Nether to Erebus
     if((event.from == -1 && event.to == 5)){
@@ -234,18 +250,62 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
         });
     }
 
+    // Failed run, send to Limbo
+    if(event.to == 684){
+    
+        Commands.call("clear @p", event.player, event.entity.world, true, true);
+        Commands.call("give @p minecraft:torch", event.player, event.entity.world, true, true);
+        Commands.call("title @p times 40 120 60", event.player, event.entity.world, true, true);
+        Commands.call("title @p subtitle {\"text\":\"There is no escape\", \"color\":\"gray\"}", event.player, event.entity.world, true, true);
+        Commands.call("title @p title {\"text\":\"§kLimbo\", \"bold\":false, \"italic\":false, \"color\":\"white\"}", event.player, event.entity.world, true, true);
 
-    if((event.to == 684)){
-        server.commandManager.executeCommand(server, "clear @p");
-        server.commandManager.executeCommand(server, "give @p minecraft:torch");
-        server.commandManager.executeCommand(server, "title @p times 40 120 60");
-        server.commandManager.executeCommand(server, "title @p subtitle {\"text\":\"There is no escape\", \"color\":\"gray\"}");
-        server.commandManager.executeCommand(server, "title @p title {\"text\":\"§kLimbo\", \"bold\":false, \"italic\":false, \"color\":\"white\"}");
+
+
+        if(!isNull(event.player.data.failedRuns)){
+            if(!isNull(event.player)){
+                event.player.update({failedRuns: event.player.data.failedRuns + 1 as int});
+            } else {
+                server.commandManager.executeCommand(server, "say Error: Player not found, please report this to the TREPIDATION GitHub. Describe recent events leading up to this.");
+            }
+        } else {
+            server.commandManager.executeCommand(server, "say Error: failedRuns data not found. Please report this to the TREPIDATION GitHub. Describe recent events leading up to this.");
+        }
+
+
+        // visitor in limbo
+        event.player.world.catenation()
+        .run(function(world, context) {
+            context.data = world.time;
+        })
+        .sleep(500)
+        .then(function(world, context) {
+            if(event.player.dimension == 684){
+                Commands.call("summon wyrmsofnyrus:thevisitor ~ ~+100 ~", event.player, event.entity.world, true, true);
+                Commands.call("playsound wyrmsofnyrus:visitormessage master @p ~ ~ ~ 10.0 0.5", event.player, event.entity.world, true, true);
+            }
+        })
+        .start();
+
+
+
+        
     }
 
+    // Easter egg for trying to escape Limbo
     if((event.from == 684 && event.to == 1) || (event.from == 684 && event.to == 0)){
         server.commandManager.executeCommand(server, "tpp " + event.player.name + " 684 100 500 100");
         server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"YOUR EFFORT IS MEANINGLESS. THERE IS NO ESCAPE.\",\"color\":\"dark_red\",\"italic\":false}]");
+
+        // dont count this as a failed run
+        if(!isNull(event.player.data.failedRuns)){
+            if(!isNull(event.player)){
+                event.player.update({failedRuns: event.player.data.failedRuns - 1 as int});
+            } else {
+                server.commandManager.executeCommand(server, "say Error: Player not found, please report this to the TREPIDATION GitHub. Describe recent events leading up to this.");
+            }
+        } else {
+            server.commandManager.executeCommand(server, "say Error: failedRuns data not found. Please report this to the TREPIDATION GitHub. Describe recent events leading up to this.");
+        }
     }
 });
 
@@ -255,6 +315,7 @@ events.onEntityLivingUpdate(function(event as crafttweaker.event.EntityLivingUpd
             var player as IPlayer = event.entityLivingBase;
             
             if(player.dimension == 684){
+                
                 server.commandManager.executeCommand(server, "effect @p minecraft:resistance 99999 255");
                 server.commandManager.executeCommand(server, "effect @p minecraft:wither 99999 0");
                 server.commandManager.executeCommand(server, "effect @p minecraft:slowness 99999 1");
