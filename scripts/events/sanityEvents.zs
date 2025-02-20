@@ -27,11 +27,6 @@ static veilstrium_chestplate as IItemStack = <nethercraft:neridium_chestplate:*>
 static veilstrium_leggings as IItemStack = <nethercraft:neridium_leggings:*>;
 static veilstrium_boots as IItemStack = <nethercraft:neridium_boots:*>;
 
-// Store sanity value in player data
-zenClass SanityData {
-    static hasShownTimerWarning as bool = false;
-    static hasTriggeredTimerEnd as bool = false;
-}
 
 
 // Remove sanity on respawn
@@ -54,13 +49,13 @@ EventManager.getInstance().onTimerTick(function(event as TickEvent) {
             Commands.call("sanity remove " + event.player.name + " 1", event.player, event.player.world, true, true);
         }
         // Show message only once when entering the 5-minute threshold
-        if(!SanityData.hasShownTimerWarning) {
+        if(isNull(event.player.data.hasShownTimerWarning) || event.player.data.hasShownTimerWarning == false) {
             server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your grip on reality weakens...\",\"color\":\"dark_red\",\"italic\":true}]");
-            SanityData.hasShownTimerWarning = true;
+            event.player.update({hasShownTimerWarning: true});
         }
     } else {
         // Reset the warning flag when above 5 minutes
-        SanityData.hasShownTimerWarning = false;
+        event.player.update({hasShownTimerWarning: false});
     }
 
     if(minutes == 3) {
@@ -104,9 +99,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
         val itemStack = event.item as IItemStack;
         if(!isNull(itemStack)) {
             if(traceofdeath.matches(itemStack)) {
-                if(!isNull(event.player.data.shatteredTraceOfDeath)) {
-                    Commands.call("sanity remove " + event.player.name + " 10", event.player, event.world, true, true);
-                }
+                Commands.call("sanity remove " + event.player.name + " 10", event.player, event.world, true, true);
             }
         }
     }

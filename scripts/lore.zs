@@ -66,13 +66,15 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <contenttweaker:chrono_absolution>.addTooltip("§oMercy sheathed in thorns, debts forgiven still leave scars");
 
 // Chrono Anchor
-<timeisup:timer_anchor>.displayName = "§cChrono Anchor";
-<timeisup:timer_anchor>.removeTooltip("Shift + right click to set to current timer");
-<timeisup:timer_anchor>.removeTooltip("Refill with Ender Pearl");
+<timeisup:timer_anchor:*>.displayName = "§cChrono Anchor";
+<timeisup:timer_anchor:*>.removeTooltip("Shift + right click to set to current timer");
+<timeisup:timer_anchor:*>.removeTooltip("§aShift + right click to set to current timer");
+<timeisup:timer_anchor:*>.removeTooltip("Refill with Ender Pearl");
 
-<timeisup:timer_anchor>.addTooltip("§3Shift-right click to bind to current time and location");
-<timeisup:timer_anchor>.addTooltip("§3Does not drop on death");
-<timeisup:timer_anchor>.addTooltip("§oTime's scales care not which pan holds ash or oblivion");
+<timeisup:timer_anchor:*>.addTooltip("§3Shift-right click to bind your soul to the current time and location");
+<timeisup:timer_anchor:*>.addTooltip("§3Half of the time past since binding will be recovered");
+<timeisup:timer_anchor:*>.addTooltip("§3Does not drop on death");
+<timeisup:timer_anchor:*>.addTooltip("§oTime's scales care not which pan holds ash or oblivion");
 
 
 
