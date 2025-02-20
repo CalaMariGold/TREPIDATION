@@ -130,9 +130,8 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
 static chronoAnchor as IItemStack = <timeisup:timer_anchor>;
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
     if(!event.world.isRemote()){
-        if(!isNull(event.item.definition.id) && (event.item.definition.id).matches(chronoAnchor.definition.id)) {
-
-            server.commandManager.executeCommand(server, "playsound quark:item.soul_bead.curse player @s ~ ~ ~ 5.0 1.0 1.0");  
+        if((event.item.definition.id).matches(chronoAnchor.definition.id)) {
+            server.commandManager.executeCommand(server, "playsound quark:item.soul_bead.curse player @p ~ ~ ~ 5.0 1.0 1.0");  
         }  
     }
 });

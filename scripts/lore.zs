@@ -67,8 +67,7 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 
 // Chrono Anchor
 <timeisup:timer_anchor:*>.displayName = "§cChrono Anchor";
-<timeisup:timer_anchor:*>.removeTooltip("Shift + right click to set to current timer");
-<timeisup:timer_anchor:*>.removeTooltip("§aShift + right click to set to current timer");
+<timeisup:timer_anchor:*>.removeTooltip(".*Shift.*");
 <timeisup:timer_anchor:*>.removeTooltip("Refill with Ender Pearl");
 
 <timeisup:timer_anchor:*>.addTooltip("§3Shift-right click to bind your soul to the current time and location");
