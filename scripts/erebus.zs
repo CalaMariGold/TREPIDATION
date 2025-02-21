@@ -14,7 +14,24 @@ JEI.removeAndHide(<erebus:silk>);
 JEI.removeAndHide(<erebus:bamboo_bridge>);
 JEI.removeAndHide(<erebus:bamboo_ladder>);
 
+// Remove goggles, wings and larva items
+JEI.removeAndHide(<erebus:compound_goggles>);
+JEI.removeAndHide(<erebus:rein_compound_goggles>);
+JEI.removeAndHide(<erebus:glider_chestplate>);
+JEI.removeAndHide(<erebus:glider_chestplate_powered>);
+JEI.removeAndHide(<erebus:materials:27>);
+JEI.removeAndHide(<erebus:erebus_food:0>); // Beetle larva
+JEI.removeAndHide(<erebus:erebus_food:1>);// Cooked beetle larva  
 
+// Remove varnished blocks
+JEI.removeAndHide(<erebus:stairs_varnished>);
+JEI.removeAndHide(<erebus:slab_planks_varnished>);
+JEI.removeAndHide(<erebus:fence_varnished>);
+JEI.removeAndHide(<erebus:fence_gate_varnished>);
+
+// Remove whetstone
+recipes.remove(<erebus:whetstone>);
+JEI.removeAndHide(<erebus:whetstone>);
 
 val umberstone as IItemStack = <erebus:umberstone>;
 umberstone.hardness = 0.5;
