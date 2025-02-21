@@ -125,6 +125,14 @@
         "random": "0.40",
         "itemcount": "1"
     },
+    {
+        "mod": "erebus",
+        "remove": "erebus:erebus_food:0"
+    },
+    {
+        "mod": "erebus",
+        "remove": "erebus:erebus_food:1"
+    },
 
 
     // Nether
