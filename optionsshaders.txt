@@ -1,5 +1,5 @@
-#Fri Jan 19 10:35:54 EST 2024
-shaderPack=ComplementaryUnbound_r5.1.1.zip
+#Thu Mar 13 17:08:35 EDT 2025
+shaderPack=ComplementaryUnbound_r5.4 + EuphoriaPatches_1.5.2
 antialiasingLevel=0
 normalMapEnabled=true
 specularMapEnabled=true
