@@ -34,18 +34,3 @@ customization {
   height = 24
 }
 
-customization {
-  orientation = element
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
-  orientation_element = vanillabtn:505256
-  buttonaction = opengui;net.optifine.shaders.gui.GuiShaderOptions%btnaction_splitter_fm%
-  x = 0
-  width = 150
-  action = addbutton
-  actionid = 4df5719e-6d46-413e-b74f-0b40c2c6f4911697151855262
-  y = 24
-  label = !! Shader Performance Options !!
-  height = 20
-}
-
