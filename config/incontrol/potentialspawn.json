@@ -22,7 +22,7 @@
     "mobs": [
       {
         "mob": "minecraft:magma_cube",
-        "weight": 20
+        "weight": 17
       }
     ]
   },

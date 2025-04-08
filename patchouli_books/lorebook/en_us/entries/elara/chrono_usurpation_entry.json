@@ -25,8 +25,8 @@
         "text": "$(#551012)Yet still I pocket the hourglass. Still I crush it between familiar teeth. Let the next cycle's stranger pay my debt with their unraveling. This is how gods are unmade - not through grand heresies, but a thousand quiet betrayals scribbled in borrowed time.$(br2)—Elara"
       },
       {
-        "type": "crafting",
-        "recipe": "contenttweaker:chrono_absolution",
+        "type": "spotlight",
+        "item": "contenttweaker:chrono_absolution",
         "text": "$(#551012)[Addendum]$(br)The metal's song shifted key - a discordant harmony emerging from Infernium's molten heart veined with scorched grains and quartz."
       },
       {

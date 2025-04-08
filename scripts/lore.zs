@@ -55,15 +55,19 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <timeisup:timer_bonus>.removeTooltip("Add 1:00 to your timer");
 <timeisup:timer_bonus>.removeTooltip("Cooldown : 1:30");
 <timeisup:timer_bonus>.addTooltip("§3+1:00 to cycle timer | Contaminates timeline");
+<timeisup:timer_bonus>.addTooltip("§3Placeholder Texture! Join the Discord to texture this item.");
 <timeisup:timer_bonus>.addTooltip("§oDebt will be paid - but not by you");
 
 // Unstable Sand
 <contenttweaker:unstable_sand>.displayName = "Unstable Sand";
+<contenttweaker:unstable_sand>.addTooltip("§3Placeholder Texture! Join the Discord to texture this item.");
+
 
 // Chrono Absolution
 <contenttweaker:chrono_absolution>.displayName = "§cChrono Absolution";
 <contenttweaker:chrono_absolution>.addTooltip("§3Reset all stolen time debt");
 <contenttweaker:chrono_absolution>.addTooltip("§oMercy sheathed in thorns, debts forgiven still leave scars");
+<contenttweaker:chrono_absolution>.addTooltip("§3Placeholder Texture! Join the Discord to texture this item.");
 
 // Chrono Anchor
 <timeisup:timer_anchor:*>.displayName = "§cChrono Anchor";
@@ -73,6 +77,7 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <timeisup:timer_anchor:*>.addTooltip("§3Shift-right click to bind your soul to the current time and location");
 <timeisup:timer_anchor:*>.addTooltip("§3Half of the time past since binding will be recovered");
 <timeisup:timer_anchor:*>.addTooltip("§3Does not drop on death");
+<timeisup:timer_anchor:*>.addTooltip("§3Placeholder Texture! Join the Discord to texture this item.");
 <timeisup:timer_anchor:*>.addTooltip("§oTime's scales care not which pan holds ash or oblivion");
 
 
