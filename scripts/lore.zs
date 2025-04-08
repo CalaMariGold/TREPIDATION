@@ -92,6 +92,7 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <da:fire_stone_stairs>.displayName = "Ashen Stone Brick Stairs";
 <da:fire_stone_wall>.displayName = "Ashen Stone Brick Wall";
 <da:fire_stone_half>.displayName = "Ashen Stone Brick Slab";
+// <da:chisled_fire_stone>.displayName = "Ashen Chiseled Stone Brick";
 
 <da:flame_metal_scrap>.displayName = "§fAshen Catalyst";
 <da:flame_metal_scrap>.addTooltip("§o\"To master the Infernals, you must first become their vessel, forged from sacrifice and memory.\"");
