@@ -78,7 +78,7 @@ events.onBlockPlace(function(event as crafttweaker.event.BlockPlaceEvent){
 
 
 // Timer bonus used adds to player data
-static timerBonus as IItemStack = <timeisup:timer_bonus>>;
+static timerBonus as IItemStack = <timeisup:timer_bonus>;
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
     if(!event.world.isRemote()){
         if(!isNull(event.item.definition.id) && (event.item.definition.id).matches(timerBonus.definition.id)) {
