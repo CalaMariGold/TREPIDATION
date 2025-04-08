@@ -25,6 +25,8 @@ recipes.remove(<nethercraft:pyridium_ingot>);
 
 recipes.addShapeless("raw_stable_infernium", <dynaores:raw_pyridium>,[<contenttweaker:raw_unstable_infernium>, <da:flame_metal_scrap>]);
 
+furnace.remove(<nethercraft:pyridium_ingot>, <dynaores:raw_pyridium>);
+furnace.remove(<nethercraft:neridium_ingot>, <dynaores:raw_neridium>);
 furnace.addRecipe(<nethercraft:pyridium_ingot>, <dynaores:raw_pyridium>, 20.0);
 furnace.addRecipe(<nethercraft:neridium_ingot>, <dynaores:raw_neridium>, 10.0);
 
