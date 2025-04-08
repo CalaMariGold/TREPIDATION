@@ -81,9 +81,7 @@ events.onBlockPlace(function(event as crafttweaker.event.BlockPlaceEvent){
 static timerBonus as IItemStack = <timeisup:timer_bonus>;
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
     if(!event.world.isRemote()){
-        if(!isNull(event.item.definition.id) && event.hand == "MAIN_HAND" && (event.item.definition.id).matches(timerBonus.definition.id)) {
-
-            server.commandManager.executeCommand(server, "playsound timeisup:timer master @p");
+        if(!isNull(event.item.definition.id) && (event.item.definition.id).matches(timerBonus.definition.id)) {
 
             // If the player has used Chrono Absolution, timer bonuses now restore health and sanity
             if(event.player.data.usedChronoAbsolution == true){
@@ -93,6 +91,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
 
             // Increase timer bonus count
             if(!isNull(event.player) && !isNull(event.player.data.timerbonus)){
+                Commands.call("playsound timeisup:timer master " + event.player.name, event.player, event.player.world, true, true);
                 event.player.update({timerbonus: event.player.data.timerbonus + 1 as int});
             } else {
                 server.commandManager.executeCommand(server, "say Error: timerbonus data not found. Please report this to the TREPIDATION GitHub. Describe recent events leading up to this.");
@@ -116,7 +115,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             
             server.commandManager.executeCommand(server, "effect @p wither 10 1");
             server.commandManager.executeCommand(server, "sanity add @p 100");
-            server.commandManager.executeCommand(server, "playsound enderskills:animated_stone player @p ~ ~ ~ 5.0");
+            Commands.call("playsound enderskills:animated_stone player " + event.player.name + " ~ ~ ~ 5.0", event.player, event.player.world, true, true);
             server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The Veil's debt has been settled.\",\"color\":\"red\",\"italic\":true}]");
             server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Chrono Usurpation now permanently provides increased sanity and absorption.\",\"color\":\"gold\",\"italic\":false}]");
             server.commandManager.executeCommand(server, "gamestage silentadd @p used_chrono_absolution");
@@ -131,7 +130,7 @@ static chronoAnchor as IItemStack = <timeisup:timer_anchor>;
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
     if(!event.world.isRemote()){
         if((event.item.definition.id).matches(chronoAnchor.definition.id)) {
-            server.commandManager.executeCommand(server, "playsound quark:item.soul_bead.curse player @p ~ ~ ~ 5.0 1.0 1.0");  
+            Commands.call("playsound quark:item.soul_bead.curse player " + event.player.name + " ~ ~ ~ 5.0 1.0 1.0", event.player, event.player.world, true, true);
         }  
     }
 });
@@ -200,6 +199,7 @@ events.onCommand(function(event as crafttweaker.event.CommandEvent) {
                 else if(bonusCount == 4){
                     server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Debt must be paid. " + bonusCount + " minutes are torn from your flesh.\",\"color\":\"red\",\"italic\":true}]");
                 }
+                // Unlock Chrono Absolution
                 else if(bonusCount == 5){
                     Commands.call("advancement grant @p only triumph:advancements/journal_entries/chrono_usurpation_entry", player, player.world, true, true);
                     server.commandManager.executeCommand(server, "gamestage silentadd @p unlocked_chrono_absolution");
