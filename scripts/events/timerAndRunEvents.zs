@@ -78,7 +78,7 @@ events.onBlockPlace(function(event as crafttweaker.event.BlockPlaceEvent){
 
 
 // Timer bonus used adds to player data
-static timerBonus as IItemStack = <timeisup:timer_bonus>;
+static timerBonus as IItemStack = <timeisup:timer_bonus>>;
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
     if(!event.world.isRemote()){
         if(!isNull(event.item.definition.id) && (event.item.definition.id).matches(timerBonus.definition.id)) {
@@ -130,7 +130,7 @@ static chronoAnchor as IItemStack = <timeisup:timer_anchor>;
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
     if(!event.world.isRemote()){
         if((event.item.definition.id).matches(chronoAnchor.definition.id)) {
-            Commands.call("playsound quark:item.soul_bead.curse player " + event.player.name + " ~ ~ ~ 5.0 1.0 1.0", event.player, event.player.world, true, true);
+            event.player.sendChat("§o§cYou awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.");
         }  
     }
 });
@@ -182,22 +182,24 @@ events.onCommand(function(event as crafttweaker.event.CommandEvent) {
                     Commands.call("advancement grant @p only triumph:advancements/journal_entries/chrono_anchor_entry", player, player.world, true, true);
                     server.commandManager.executeCommand(server, "gamestage silentadd @p unlocked_chrono_anchor");
                     Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", player, player.world, true, true);
-
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"You awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.\",\"color\":\"red\",\"italic\":true}]");
+                    player.sendChat("§o§cYou awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.");
                 }
 
                 // Chrono Usurpation uses
                 if(bonusCount == 1){
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The Veil whispers of debts unpaid. Your timer bears fresh scars from another's ambition.\",\"color\":\"red\",\"italic\":true}]");
+                    player.sendChat("§o§cThe Veil whispers of debts unpaid. Your timer bears fresh scars from another's ambition.");
                 }
                 else if(bonusCount == 2){
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"" + bonusCount + " minutes torn from your flesh by hands unseen. It hungers for compounded interest.\",\"color\":\"red\",\"italic\":true}]");
+                    player.sendChat("§o§c" + bonusCount + " minutes torn from your flesh by hands unseen. It hungers for compounded interest.");
                 }
                 else if(bonusCount == 3){
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Reality shudders as " + bonusCount + " minutes are excised from your timeline - another's triumph written in your blood.\",\"color\":\"red\",\"italic\":true}]");
+                    player.sendChat("§o§cReality shudders as " + bonusCount + " minutes are excised from your timeline, another's triumph written in your blood.");
                 }
-                else if(bonusCount == 4){
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Debt must be paid. " + bonusCount + " minutes are torn from your flesh.\",\"color\":\"red\",\"italic\":true}]");
+                else if(bonusCount == 4 || bonusCount >= 6){
+                    player.sendChat("§o§cDebt must be paid. " + bonusCount + " minutes are torn from your flesh.");
+                    Commands.call("advancement grant @p only triumph:advancements/journal_entries/chrono_usurpation_entry", player, player.world, true, true);
+                    server.commandManager.executeCommand(server, "gamestage silentadd @p unlocked_chrono_absolution");
+                    Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", player, player.world, true, true);
                 }
                 // Unlock Chrono Absolution
                 else if(bonusCount == 5){
@@ -205,10 +207,7 @@ events.onCommand(function(event as crafttweaker.event.CommandEvent) {
                     server.commandManager.executeCommand(server, "gamestage silentadd @p unlocked_chrono_absolution");
                     Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", player, player.world, true, true);
 
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"You awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.\",\"color\":\"red\",\"italic\":true}]");
-                }
-                else if(bonusCount >= 6){
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Debt must be paid. " + bonusCount + " minutes are torn from your flesh.\",\"color\":\"red\",\"italic\":true}]");
+                    player.sendChat("§o§cYou awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.");
                 }
             })
             .start();
