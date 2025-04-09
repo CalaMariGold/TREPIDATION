@@ -30,15 +30,6 @@
 	            "installationPolicy": {
 	                "description": "MANDATORY! Downloads Hit Indication from Modrinth."
 	            }
-	    },
-		{
-			"url": "https://cdn.modrinth.com/data/4H6sumDB/versions/nxvKz1g7/EuphoriaPatcher-1.5.2-r5.4-forgeLegacy.jar",
-			"metadata": {
-				"side": "CLIENT"
-			},
-			"installationPolicy": {
-				"description": "MANDATORY! Downloads Euphoria Patches from Modrinth."
-			}
-		}
+	    }
 	]
 }
