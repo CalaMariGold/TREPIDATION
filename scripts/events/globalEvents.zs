@@ -61,17 +61,10 @@ events.onPlayerClone(function(event as crafttweaker.event.PlayerCloneEvent){
         event.player.update({clickedNetherBarrier: event.originalPlayer.data.clickedNetherBarrier});
         event.player.update({shatteredTraceOfDeath: event.originalPlayer.data.shatteredTraceOfDeath});
         event.player.update({clickedEchoOfBetrayal: event.originalPlayer.data.clickedEchoOfBetrayal});
-        event.player.update({testing: event.originalPlayer.data.testing});
+        event.player.update({dreadstoneFragmentClick: event.originalPlayer.data.dreadstoneFragmentClick});
     }
 });
 
-
-// Give player soul compass with curse of vanishing upon death
-events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
-    if(!event.entity.world.isRemote()){
-        event.player.give(<quark:soul_compass>.withTag({ench:[{id:71,lvl:1}]}));
-    }
-});
 
 // Do things when the player first logs into the game
 events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent) {
@@ -86,7 +79,7 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
             event.player.update({clickedNetherBarrier: false as bool});
             event.player.update({clickedEchoOfBetrayal: false as bool});
             event.player.update({shatteredTraceOfDeath: false as bool});
-            event.player.update({testing: false as bool});
+            event.player.update({dreadstoneFragmentClick: false as bool});
         } else {
             server.commandManager.executeCommand(server, "say Error: Player not found, please report this to the TREPIDATION GitHub. Describe recent events leading up to this.");
         }
@@ -104,7 +97,7 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
         .sleep(200)
         .then(function(world, context) {
             Commands.call("advancement grant @p only triumph:advancements/hidden/unlock_journal", event.player, event.entity.world, true, true);
-            server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Disoriented, you awaken to find a journal attached to your belt. As you begin to write, you notice a scar on your left wrist.\",\"color\":\"red\",\"italic\":true}]"); 
+            event.player.sendChat("§o§cDisoriented, you awaken to find a journal attached to your belt. As you begin to write, you notice a scar on your left wrist.");
         })
         .start();
         
@@ -112,6 +105,13 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
     }
 });
 
+
+// Give player soul compass with curse of vanishing upon death
+events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
+    if(!event.entity.world.isRemote()){
+        event.player.give(<quark:soul_compass>.withTag({ench:[{id:71,lvl:1}]}));
+    }
+});
 
 
 // Heart Dust Healing
@@ -139,10 +139,10 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
         if(!isNull(itemstack)){
             if (soul_anchor.matches(itemstack)) {  
                 if (event.player.dimension == -1) {
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Can not be used in the Nether.\",\"color\":\"blue\",\"italic\":false}]");
+                    event.player.sendChat("§9Can not be used in the Nether.");
                 }
                 else {
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your soul has been bound to this position. Be sure not to obstruct this area.\",\"color\":\"dark_red\",\"italic\":true}]");
+                    event.player.sendChat("§4Your soul has been bound to this position. Be sure not to obstruct this area.");
                     Commands.call("setworldspawn ~ ~ ~", event.player, event.world, true, true);
                     Commands.call("spawnpoint @p ~ ~ ~", event.player, event.world, true, true);
                     itemstack.mutable().shrink(1);
@@ -217,7 +217,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
             })
             .sleep(500)
             .then(function(world, context) {
-                server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"You feel a bone-deep chill settle behind your eyes; a dreadful feeling that grows with each passing moment in this realm.\",\"color\":\"red\",\"italic\":true}]");
+                event.player.sendChat("§o§cYou feel a bone-deep chill settle behind your eyes; a dreadful feeling that grows with each passing moment in this realm.");
             })
             .start();
     }
@@ -294,7 +294,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
     // Easter egg for trying to escape Limbo
     if((event.from == 684 && event.to == 1) || (event.from == 684 && event.to == 0)){
         server.commandManager.executeCommand(server, "tpp " + event.player.name + " 684 100 500 100");
-        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"YOUR EFFORT IS MEANINGLESS. THERE IS NO ESCAPE.\",\"color\":\"dark_red\",\"italic\":false}]");
+        event.player.sendChat("§4YOUR EFFORT IS MEANINGLESS. THERE IS NO ESCAPE.");
 
         // dont count this as a failed run
         if(!isNull(event.player.data.failedRuns)){

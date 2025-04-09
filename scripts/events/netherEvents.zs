@@ -266,10 +266,10 @@ events.onPlayerInteractEntity(function(event as crafttweaker.event.PlayerInterac
             // Dreadstone Fragment
             if (dreadstone_fragment.matches(itemStack1)) {  
                 if(event.target.definition.name == "PigZombie"){
-                    if(isNull(event.player.data.testing) || event.player.data.testing == false){
+                    if(isNull(event.player.data.dreadstoneFragmentClick) || event.player.data.dreadstoneFragmentClick == false){
                         itemStack1.mutable().shrink(1);
                         event.player.sendChat("§o§cYou carefully hand a fragment of the Dreadstone Tablet to the Dreadswine. It grasps the piece with trembling hands, staring at it intensely before carrying on. ");
-                        event.player.update({testing: true});
+                        event.player.update({dreadstoneFragmentClick: true});
                     }
                     // really stupid work around for interact event triggering twice (only for the fragment?)
                     event.player.world.catenation()

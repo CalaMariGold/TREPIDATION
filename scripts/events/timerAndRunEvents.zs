@@ -116,8 +116,8 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             server.commandManager.executeCommand(server, "effect @p wither 10 1");
             server.commandManager.executeCommand(server, "sanity add @p 100");
             Commands.call("playsound enderskills:animated_stone player " + event.player.name + " ~ ~ ~ 5.0", event.player, event.player.world, true, true);
-            server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The Veil's debt has been settled.\",\"color\":\"red\",\"italic\":true}]");
-            server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Chrono Usurpation now permanently provides increased sanity and absorption.\",\"color\":\"gold\",\"italic\":false}]");
+            event.player.sendChat("§o§cThe Veil's debt has been settled.");
+            event.player.sendChat("§6Chrono Usurpation now permanently provides increased sanity and absorption.");
             server.commandManager.executeCommand(server, "gamestage silentadd @p used_chrono_absolution");
             event.item.mutable().shrink(1);
             

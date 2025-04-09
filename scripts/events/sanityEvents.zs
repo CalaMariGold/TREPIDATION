@@ -50,7 +50,7 @@ EventManager.getInstance().onTimerTick(function(event as TickEvent) {
         }
         // Show message only once when entering the 5-minute threshold
         if(isNull(event.player.data.hasShownTimerWarning) || event.player.data.hasShownTimerWarning == false) {
-            server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your grip on reality weakens...\",\"color\":\"dark_red\",\"italic\":true}]");
+            event.player.sendChat("§o§4Your grip on reality weakens...");
             event.player.update({hasShownTimerWarning: true});
         }
     } else {
