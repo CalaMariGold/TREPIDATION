@@ -87,14 +87,15 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
 
                 // if player did not kill the oracle, give hint
                 else {
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The artifact pulses weakly against the Infernal brick and dissipates. You sense an ancient power lock secrets behind trial and judgement.\",\"color\":\"red\",\"italic\":true}]");
+                    event.player.sendChat("§o§cThe artifact pulses weakly against the Infernal brick and dissipates. You sense an ancient power lock secrets behind trial and judgement.");
                     Commands.call("playsound enderskills:syphon player @p ~ ~ ~ 100 0.6", event.player, event.world, true, true);
                     itemStack.mutable().shrink(1);
                 }
             } 
             else {
                 if(isNull(event.player.data.clickedEchoOfBetrayal) || event.player.data.clickedEchoOfBetrayal == false){  
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"As you stare into the eye of this artifact, it seems to draw you to an ancient stone of some kind—a place where buried power might yet be unearthed.\",\"color\":\"red\",\"italic\":true}]");
+                    event.player.sendChat("§o§cAs you stare into the eye of this artifact, it seems to draw you to an ancient stone of some kind—a place where buried power might yet be unearthed.");
+                    Commands.call("effect @e[type=da:nether_pyre] glowing", event.player, event.world, true, true);
                     Commands.call("playsound enderskills:contaminate player @p", event.player, event.world, true, true);
                     event.player.update({clickedEchoOfBetrayal: true});
                 }
@@ -235,12 +236,12 @@ events.onPlayerInteractEntity(function(event as crafttweaker.event.PlayerInterac
                         event.player.update({clickedNetherObelisk: true});
                         Commands.call("setworldspawn ~ ~ ~", event.player, event.world, true, true);
                         Commands.call("spawnpoint @a ~ ~ ~", event.player, event.world, true, true);
-                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The air thickens, the embers pulse—once bound by betrayal, the past now rises to face the living.\",\"color\":\"red\",\"italic\":true}]");
-                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your soul has been bound to this position.\",\"color\":\"blue\",\"italic\":true}]");
+                        event.player.sendChat("§o§cThe air thickens, the embers pulse—once bound by betrayal, the past now rises to face the living.");
+                        event.player.sendChat("§o§9Your soul has been bound to this position.");
                 }
                 else {
                     if(isNull(event.player.data.clickedNetherObelisk) || event.player.data.clickedNetherObelisk == false){
-                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"A chill settles as you approach the obelisk, but nothing stirs. Something waits, requiring a relic forged in wrath and memory\",\"color\":\"red\",\"italic\":true}]");
+                        event.player.sendChat("§o§cA chill settles as you approach the obelisk, but nothing stirs. Something waits, requiring a relic forged in wrath and memory");
                         event.player.update({clickedNetherObelisk: true});
                     }
 
@@ -254,7 +255,7 @@ events.onPlayerInteractEntity(function(event as crafttweaker.event.PlayerInterac
             // Dreadstone Tablet
             if (tablet.matches(itemStack1)) {  
                 if(event.target.definition.name == "PigZombie"){
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"As you raise the Dreadstone Tablet to the Dreadswine, it shatters in your hands, releasing a surge of dark energy. You notice faint tear trace down the Dreadswine's face as the fragments of the tablet disintegrate into dust.\",\"color\":\"red\",\"italic\":true}]");
+                    event.player.sendChat("§o§cAs you raise the Dreadstone Tablet to the Dreadswine, it shatters in your hands, releasing a surge of dark energy. You notice faint tear trace down the Dreadswine's face as the fragments of the tablet disintegrate into dust.");
                     Commands.call("playsound enderskills:syphon player @p ~ ~ ~ 100 0.6", event.player, event.world, true, true);
                     Commands.call("sanity remove " + event.player.name + " 5", event.player, event.world, true, true);
                     Commands.call("effect @p wither 5", event.player, event.world, true, true);
@@ -267,7 +268,7 @@ events.onPlayerInteractEntity(function(event as crafttweaker.event.PlayerInterac
                 if(event.target.definition.name == "PigZombie"){
                     if(isNull(event.player.data.testing) || event.player.data.testing == false){
                         itemStack1.mutable().shrink(1);
-                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"You carefully hand a fragment of the Dreadstone Tablet to the Dreadswine. It grasps the piece with trembling hands, staring at it intensely before carrying on. \",\"color\":\"red\",\"italic\":true}]");
+                        event.player.sendChat("§o§cYou carefully hand a fragment of the Dreadstone Tablet to the Dreadswine. It grasps the piece with trembling hands, staring at it intensely before carrying on. ");
                         event.player.update({testing: true});
                     }
                     // really stupid work around for interact event triggering twice (only for the fragment?)
@@ -310,7 +311,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                     itemStack1.mutable().shrink(1);
                 }
                 else
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Only useable in the Nether\",\"color\":\"blue\",\"italic\":false}]");
+                    event.player.sendChat("§9Only useable in the Nether");
             }
         }
 
@@ -321,7 +322,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             if (traceofdeath.matches(itemStack2)) {  
 
                 if(isNull(event.player.data.shatteredTraceOfDeath) || event.player.data.shatteredTraceOfDeath == false){
-                    server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"As the final pieces of the Trace of Death crumble at your feet, you are suddenly consumed by a rush of spectral energies. The secrets you now possess are both a blessing and a curse, for the shadows that surround you have been stirred, and you cannot escape the feeling that you are being watched by something far beyond your comprehension.\",\"color\":\"red\",\"italic\":true}]");
+                    event.player.sendChat("§o§cAs the final pieces of the Trace of Death crumble at your feet, you are suddenly consumed by a rush of spectral energies. The secrets you now possess are both a blessing and a curse, for the shadows that surround you have been stirred, and you cannot escape the feeling that you are being watched by something far beyond your comprehension.");
                     Commands.call("playsound cyclicmagic:chaos_reaper master @p ~ ~ ~ 0.6 0.7", event.player, event.world, true, true);
                     event.player.update({shatteredTraceOfDeath: true});
                     
@@ -331,7 +332,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                     })
                     .sleep(300)
                     .then(function(world, context) {
-                        server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Memories that don't seem to be your own begin to flood your mind. You quickly bring out your notebook to write it down.\",\"color\":\"red\",\"italic\":true}]");
+                        event.player.sendChat("§o§cMemories that don't seem to be your own begin to flood your mind. You quickly bring out your notebook to write it down.");
                         Commands.call("advancement grant @p only triumph:advancements/journal_entries/trace_of_death_entry", event.player, event.world, true, true);
 
                     })
@@ -349,7 +350,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
         if(!isNull(itemStack3)){
             if (scepter.matches(itemStack3)) {  
                 Commands.call("playsound minecraft:item.totem.use player @p", event.player, event.world, true, true);
-                server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"The ground begins to tremble as you tightly grasp the scepter. As the air crackles with anticipation, the scepter dissolves into a swirling vortex of crimson smoke. In the blink of an eye, the smoke weaves itself into the fabric of space as the scepter's essence becomes one with a hellish structure.\",\"color\":\"red\",\"italic\":true}]");
+                event.player.sendChat("§o§cThe ground begins to tremble as you tightly grasp the scepter. As the air crackles with anticipation, the scepter dissolves into a swirling vortex of crimson smoke. In the blink of an eye, the smoke weaves itself into the fabric of space as the scepter's essence becomes one with a hellish structure.");
                 Commands.call("pillar-spawn witherarena ~ 9 ~", event.player, event.world, true, true);
 
                 Commands.call("tp @a ~ 10 ~", event.player, event.world, true, true);
@@ -369,7 +370,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 Commands.call("kill @e[type=minecraft:wither_skeleton]", event.player, event.world, true, true);
                 Commands.call("kill @e[type=minecraft:ghast]", event.player, event.world, true, true);
                 Commands.call("kill @e[type=item]", event.player, event.world, true, true);
-                server.commandManager.executeCommand(server, "tellraw @p [\"\",{\"text\":\"Your soul has been bound to this position.\",\"color\":\"blue\",\"italic\":true}]");
+                event.player.sendChat("§9Your soul has been bound to this position.");
                 
             }
         }
