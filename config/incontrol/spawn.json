@@ -44,7 +44,7 @@
 
     {
         "mod": "srrevenants",
-        "dimension": -1,
+        "dimension": [-1, 5],
         "result": "deny",
         "onjoin":"true"
     },
