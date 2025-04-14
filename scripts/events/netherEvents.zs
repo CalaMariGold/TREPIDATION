@@ -324,6 +324,13 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 if(isNull(event.player.data.shatteredTraceOfDeath) || event.player.data.shatteredTraceOfDeath == false){
                     event.player.sendChat("§o§cAs the final pieces of the Trace of Death crumble at your feet, you are suddenly consumed by a rush of spectral energies. The secrets you now possess are both a blessing and a curse, for the shadows that surround you have been stirred, and you cannot escape the feeling that you are being watched by something far beyond your comprehension.");
                     Commands.call("playsound cyclicmagic:chaos_reaper master @p ~ ~ ~ 0.6 0.7", event.player, event.world, true, true);
+
+                    // Replace mod behavior with our own behavior due to weirdness when granting soul levels
+                    Commands.call("playsound minecraft:entity.splash_potion.break master @p ~ ~ ~ 1.0 0.7", event.player, event.world, true, true);
+                    server.commandManager.executeCommand(server, "es_advancement @p level set 1");
+                    itemStack2.mutable().shrink(1);
+                    event.cancel();
+
                     event.player.update({shatteredTraceOfDeath: true});
                     
                     event.player.world.catenation()
@@ -338,7 +345,6 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                     })
                     .start();
                 }
-                Commands.call("es_advancement @p level add 1", event.player, event.world, true, true);
                 Commands.call("effect @p minecraft:nausea 10", event.player, event.world, true, true);
             }
         }

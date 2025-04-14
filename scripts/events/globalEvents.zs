@@ -87,9 +87,6 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
         // Run neccessary starting commands
         server.commandManager.executeCommand(server, "op " + event.player.name);
         Commands.call("advancement grant @p only triumph:advancements/dimensions/start", event.player, event.entity.world, true, true);
-        // Set souls to 0 instead of 1. Because of this, we have to manually add soul levels on right click
-        Commands.call("es_advancement @p level set 0", event.player, event.entity.world, true, true);
-        
 
         // For some reason, journal entries only unlock after an achievement is granted a few seconds after world start
         event.player.world.catenation()
