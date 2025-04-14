@@ -3,6 +3,10 @@
         "mob":"da:flame_knight",
         "remove": "da:enflamed_meat"
     },
+    {
+        "mob":"da:flame_knight",
+        "remove": "da:flame_metal_scrap"
+    },
     // default flame sword drop has enchantments
     {
         "mob":"da:flame_knight",
@@ -20,7 +24,7 @@
     {
         "mob":"da:flame_knight",
         "item": "da:abberrant_eye",
-        "itemcount": "10-20"
+        "itemcount": "7-12"
     },
     {
         "mob":"da:flame_knight",

@@ -94,7 +94,7 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
             } 
             else {
                 if(isNull(event.player.data.clickedEchoOfBetrayal) || event.player.data.clickedEchoOfBetrayal == false){  
-                    event.player.sendChat("§o§cAs you stare into the eye of this artifact, it seems to draw you to an ancient stone of some kind—a place where buried power might yet be unearthed.");
+                    event.player.sendChat("§o§cAs you stare into the eye of this artifact, it seems to draw you to an ancient stone of some kind—a stone where buried power might yet be unearthed.");
                     Commands.call("effect @e[type=da:nether_pyre] glowing", event.player, event.world, true, true);
                     Commands.call("playsound enderskills:contaminate player @p", event.player, event.world, true, true);
                     event.player.update({clickedEchoOfBetrayal: true});
