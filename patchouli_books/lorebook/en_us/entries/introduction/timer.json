@@ -11,7 +11,7 @@
     },
     {
       "type": "text",
-      "text": "$(#551012)You may have noticed a timer at the bottom left of your screen ticking down.$(br2)$(bold)Do not let that get to 0 or else $(obf)you will be sent to Limbo$()$(#551012).$()"
+      "text": "$(#551012)You may have noticed a timer at the bottom left of your screen ticking down.$(br2)Do not let it get to 0 or $(obf)you will be sent to Limbo$()$(#551012).$()"
     },
     {
       "type": "spotlight",

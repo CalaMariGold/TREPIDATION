@@ -1,0 +1,17 @@
+{
+  "name": "Essential Tips",
+  "icon": "trepidation:info.png",
+  "category": "introduction",
+  "sortnum": 1,
+  "advancement": "triumph:advancements/dimensions/nether",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(#551012)Ensure your volume is on and loud enough. Audio is crucial for gameplay and knowing where enemies are. Headphones are highly recommended.$(br2)Certain important items are pre-bookmarked in JEI, visible on the left side of your inventory. You can bookmark items yourself by pressing $(#104455)A$(#551012).$()"
+    },
+    {
+      "type": "text",
+      "text": "$(#551012)Many items are meant to be used by pressing $(#104455)right-click$(#551012) with it in your hand. However, if you have a weapon/tool in your off-hand, you must $(#104455)shift + right-click$(#551012) to use it.$(br2)Check points occur before every major boss battle and after entering a new dimension. Your spawn point is set when you see this message: $(br)$(#104455)Your soul has been bound to this position.$()"
+    }
+  ]
+}
