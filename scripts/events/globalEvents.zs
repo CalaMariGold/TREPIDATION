@@ -254,6 +254,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
     if(event.to == 684){
     
         Commands.call("clear @p", event.player, event.entity.world, true, true);
+        Commands.call("baubles clear @p", event.player, event.entity.world, true, true);
         Commands.call("give @p minecraft:torch", event.player, event.entity.world, true, true);
         Commands.call("title @p times 40 120 60", event.player, event.entity.world, true, true);
         Commands.call("title @p subtitle {\"text\":\"There is no escape\", \"color\":\"gray\"}", event.player, event.entity.world, true, true);
