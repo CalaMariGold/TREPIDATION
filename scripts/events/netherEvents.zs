@@ -338,6 +338,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                     })
                     .start();
                 }
+                Commands.call("es_advancement @p level add 1", event.player, event.world, true, true);
                 Commands.call("effect @p minecraft:nausea 10", event.player, event.world, true, true);
             }
         }
