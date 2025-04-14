@@ -30,16 +30,6 @@
 	            "installationPolicy": {
 	                "description": "MANDATORY! Downloads Hit Indication from Modrinth."
 	            }
-	    },
-		{
-			"url":"https://github.com/CalaMariGold/TREPIDATION/blob/main/config/Universal%20Tweaks%20-%20Tweaks.cfg",
-			"follows": ["Download raw file"],
-	        "fileName": "Universal Tweaks - Tweaks.cfg",
-			"folder":"config",
-			"installationPolicy": {
-				"downloadAlways":true,
-				"description":"Hotfix advancement screenshot lag"
-			}
-		}
+	    }
 	]
 }
