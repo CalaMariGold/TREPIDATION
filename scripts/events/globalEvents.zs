@@ -322,7 +322,7 @@ events.onEntityLivingUpdate(function(event as crafttweaker.event.EntityLivingUpd
                 server.commandManager.executeCommand(server, "effect @p srparasites:fear 99999 0");
                 server.commandManager.executeCommand(server, "effect @p elenaidodge2:weight 99999 0");
                 server.commandManager.executeCommand(server, "hunger @p 20");
-                server.commandManager.executeCommand(server, "sanity remove @p 1");
+                server.commandManager.executeCommand(server, "sanity set @p 20");
                 player.health = player.health + 1;  
             }
         }
