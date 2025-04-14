@@ -315,15 +315,17 @@ events.onEntityLivingUpdate(function(event as crafttweaker.event.EntityLivingUpd
             var player as IPlayer = event.entityLivingBase;
             
             if(player.dimension == 684){
-                
-                server.commandManager.executeCommand(server, "effect @p minecraft:resistance 99999 255");
-                server.commandManager.executeCommand(server, "effect @p minecraft:wither 99999 0");
-                server.commandManager.executeCommand(server, "effect @p minecraft:slowness 99999 1");
-                server.commandManager.executeCommand(server, "effect @p srparasites:fear 99999 0");
-                server.commandManager.executeCommand(server, "effect @p elenaidodge2:weight 99999 0");
-                server.commandManager.executeCommand(server, "hunger @p 20");
                 server.commandManager.executeCommand(server, "sanity set @p 20");
-                player.health = player.health + 1;  
+                // Only apply effects every 20 ticks (1 second)
+                if (player.world.time % 20 == 0) {
+                    server.commandManager.executeCommand(server, "effect @p minecraft:resistance 99999 255");
+                    server.commandManager.executeCommand(server, "effect @p minecraft:wither 99999 0");
+                    server.commandManager.executeCommand(server, "effect @p minecraft:slowness 99999 1");
+                    server.commandManager.executeCommand(server, "effect @p srparasites:fear 99999 0");
+                    server.commandManager.executeCommand(server, "effect @p elenaidodge2:weight 99999 0");
+                    server.commandManager.executeCommand(server, "hunger @p 20");
+                    player.health = player.health + 1;
+                }
             }
         }
     }
