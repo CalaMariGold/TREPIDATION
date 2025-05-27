@@ -221,16 +221,8 @@ recipes.addShapedMirrored("quartz_bow", <nethercraft:neridium_bow>,
 
 
 
-// new pyridium recipes
-val pyridiumSwordEnchantments as IEnchantmentDefinition[] = [<enchantment:minecraft:fire_aspect>];
-var pyridiumSwordEnchantmentMap as IData = {};
-pyridiumSwordEnchantmentMap += pyridiumSwordEnchantments[0].makeEnchantment(1).makeTag();
 
-val pyridiumBowEnchantments as IEnchantmentDefinition[] = [<enchantment:minecraft:flame>];
-var pyridiumBowEnchantmentMap as IData = {};
-pyridiumBowEnchantmentMap += pyridiumBowEnchantments[0].makeEnchantment(1).makeTag();
-
-
+// new infernium recipes
 recipes.remove(<nethercraft:pyridium_pickaxe>);
 recipes.addShaped("pyridium_pickaxe", <nethercraft:pyridium_pickaxe>,
 [[<contenttweaker:wither_infernium>,<contenttweaker:wither_infernium>,<contenttweaker:wither_infernium>],
@@ -238,11 +230,8 @@ recipes.addShaped("pyridium_pickaxe", <nethercraft:pyridium_pickaxe>,
 [null,<minecraft:blaze_rod>,null]
 ]);
 
-
-
 recipes.remove(<nethercraft:pyridium_sword>);
-recipes.addShaped("pyridium_sword", <nethercraft:pyridium_sword>.withTag(({"Quark:RuneColor": 14, "Quark:RuneAttached": 1 as byte} as IData) + pyridiumSwordEnchantmentMap),
-[[<nethercraft:pyridium_ingot>],[<nethercraft:pyridium_ingot>],[<minecraft:blaze_rod>]]);
+// Recipe creation for Infernium Sword in GroovyScript for Baked Enchants support
 
 recipes.remove(<nethercraft:pyridium_axe>);
 recipes.addShapedMirrored("pyridium_axe", <nethercraft:pyridium_axe>,
@@ -256,11 +245,7 @@ recipes.addShaped("pyridium_shovel", <nethercraft:pyridium_shovel>,
 [[<nethercraft:pyridium_ingot>], [<minecraft:blaze_rod>], [<minecraft:blaze_rod>]]);
 
 recipes.remove(<nethercraft:pyridium_bow>);
-recipes.addShapedMirrored("pyridium_bow", <nethercraft:pyridium_bow>.withTag(({"Quark:RuneColor": 14, "Quark:RuneAttached": 1 as byte} as IData) + pyridiumBowEnchantmentMap),
-[[null,<minecraft:blaze_rod>,<minecraft:string>],
-[<nethercraft:pyridium_ingot>,null,<minecraft:string>],
-[null,<minecraft:blaze_rod>,<minecraft:string>]
-]);
+// Recipe creation for Infernium Bow in GroovyScript for Baked Enchants support
 
 recipes.addShapedMirrored("infernal_fortress_scepter", <contenttweaker:infernal_fortress_scepter>,
 [[null,<nethercraft:pyridium_ingot>,<contenttweaker:infernal_core>],
