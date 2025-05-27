@@ -31,5 +31,19 @@
 	                "description": "MANDATORY! Downloads Hit Indication from Modrinth."
 	            }
 	    }
+	],
+
+	"curse":
+	[
+		{
+			"addonId": 1214490,
+			"fileId": 6515764,
+			"metadata": {
+				"side": "CLIENT"
+			},
+			"installationPolicy": {
+				"description": "Optional! Downloads Cleanroom Relauncher from CurseForge. This mod will load TREPIDATION with Cleanroom Loader, a fork of Forge, allowing for Java 24 to be used along with stability and performance improvements. However, some users have reported a significant performance decrease, especially on older systems. Try it and compare with/without Cleanroom Relauncher. Note that you must have a Java 21+ runtime installation to use this. https://www.graalvm.org/downloads/"
+			}
+		}
 	]
 }
