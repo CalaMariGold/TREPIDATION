@@ -1,9 +1,8 @@
-§lTREPIDATION v0.5.8§r
+§lTREPIDATION v0.5.8.2§r
 
 §eClick the version number on the main menu for full changelog.§r
 
 §a§lKnown Issues§r§r
-- First time launch sometimes crashes the game. Relaunch to fix.
 - Rarely, Erebus structures will spawn high up and replace the barrier
 
 Multiplayer Only:
