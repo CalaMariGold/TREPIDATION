@@ -19,7 +19,7 @@
         "dimension": -1,
         "mob": ["minecraft:blaze"],
         "block": ["minecraft:glowstone"],
-        "random": "0.75",
+        "random": "0.60",
         "result": "allow"
     },
     {
