@@ -54,9 +54,9 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <timeisup:timer_bonus>.displayName = "§cChrono Usurpation";
 <timeisup:timer_bonus>.removeTooltip("Add 1:00 to your timer");
 <timeisup:timer_bonus>.removeTooltip("Cooldown : 1:30");
-<timeisup:timer_bonus>.addTooltip("§3+1:00 to cycle timer | Contaminates timeline");
+<timeisup:timer_bonus>.addTooltip("§3+1:00 to cycle timer");
 <timeisup:timer_bonus>.addTooltip("§9Placeholder Texture! Join the Discord to texture this item.");
-<timeisup:timer_bonus>.addTooltip("§oDebt will be paid - but not by you");
+<timeisup:timer_bonus>.addTooltip("§oDebt will be paid, but not by you");
 
 // Unstable Sand
 <contenttweaker:unstable_sand>.displayName = "Unstable Sand";
