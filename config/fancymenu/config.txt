@@ -30,19 +30,19 @@ S:copyrightcolor = '#ffffff';
 
 ##[loading]
 
-B:allowgameintroskip = 'true';
-B:showanimationloadingstatus = 'true';
+B:allowgameintroskip = 'false';
+B:showanimationloadingstatus = 'false';
 S:gameintroanimation = '';
-B:preloadanimations = 'true';
+B:preloadanimations = 'false';
 S:customgameintroskiptext = '';
 
 
 ##[minecraftwindow]
 
 [A minecraft restart is required after changing this value.]
-S:customwindowtitle = 'TREPIDATION v0.5.8';
+S:customwindowtitle = 'TREPIDATION (0.5.8.2) by CalaMariGold';
 [A minecraft restart is required after changing this value.]
-B:customwindowicon = 'true';
+B:customwindowicon = 'false';
 
 
 ##[layouteditor]
