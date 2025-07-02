@@ -1,4 +1,4 @@
-Press R/U on items to reveal their hidden potential through recipes and uses
+Press R/U on items to reveal their hidden potential through recipes and uses.
 Item tooltips & lore text provide vital clues to the progression.
 TREPIDATION's world is filled with mystery and lore. Seek it.
 Each death teaches you something new about TREPIDATION.
@@ -8,15 +8,15 @@ Progression after the Nether is a placeholder and WIP.
 Some essential progression items are bookmarked in JEI.
 Stock up on food before you head into The Mind's Abyss.
 You can dash mid-air continuously to cross lava oceans or caverns.
-Each dash (Left ALT) grants 1s invulnerability - use it to phase through attacks
-Each dash gives 1 second of invulnerability (1s i-frame)
+Each dash (Left ALT) grants 1s invulnerability, use it to phase through attacks.
+Each dash gives 1 second of invulnerability (1s i-frame).
 Double jump to stop fall damage.
-Nether foods hold fiery blessings - seek scrambled magma eggs and devil's bread
+Nether foods hold fiery blessings. Seek scrambled magma eggs and devil's bread.
 Magma eggs and fire charges can be thrown.
 A Nether Wraith Bomb can be crafted to explode blocks.
 You can wall hang by holding shift on a wall.
 Pickaxes, torches, and a few other items never drop on death.
-The Soul Anchor's laughter echoes your doomed predecessors - use it to bind your spirit
+The Soul Anchor's laughter echoes your doomed predecessors. Use it to bind your spirit.
 Join the Discord to discuss strategies and compete for the world record.
 The current world record for beating the Nether is less than 6 minutes.
 There is no escape.
@@ -27,14 +27,14 @@ Watch the trailer for TREPIDATION on YouTube!
 Support development on Ko-fi!
 In this eternal cycle, you are but fleeting shadows.
 Each step you take is one walked by countless before you, each as insignificant as the last.
-The Journal at your belt holds forbidden knowledge from countless cycles - read it
-Middle-click to sort - a mind unburdened by clutter survives longer
-The Grimoire grows hungrier with each soul consumed - feed it Traces of Death
+The Journal at your belt holds forbidden knowledge from countless cycles. Read it.
+Middle-click to sort - a mind unburdened by clutter survives longer.
+The Grimoire grows hungrier with each soul consumed. Feed it Traces of Death.
 Chrono Usurpation debt will be paid.
 The Ashen Oracle holds knowledge, yet its reasons are not what they seem.
-Follow the Soul Compass' mournful glow to reclaim what you've lost
-The Erebus jungles breathe - move quietly and extinguish light sources
-The horrors in the Abyss feast on fear - quicken your step
+Follow the Soul Compass' mournful glow to reclaim what you've lost.
+The Erebus jungles breathe... move quietly and extinguish light sources.
+The horrors in the Abyss feast on fear. Quicken your step.
 It's watching. Always.
 The Dreadswine seek fragments of their past. Their grief may hold secrets.
 Veilstrium armor provides more than just physical protection.
