@@ -1,4 +1,4 @@
-§lTREPIDATION v0.5.8.3§r
+§lTREPIDATION v0.5.8.4§r
 
 §eClick the version number on the main menu for full changelog.§r
 
