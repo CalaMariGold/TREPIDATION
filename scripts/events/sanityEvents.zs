@@ -86,8 +86,8 @@ EventManager.getInstance().onTimerTick(function(event as TickEvent) {
 events.onPlayerTick(function(event as crafttweaker.event.PlayerTickEvent) {
     if(!event.player.world.isRemote()) {
         if(event.player.dimension == 10) { // The Mind's Abyss dimension ID
-            if(event.player.world.time % 100 == 0) { // Every 5 seconds
-                Commands.call("sanity remove " + event.player.name + " 0.5", event.player, event.player.world, true, true);
+            if(event.player.world.time % 100 == 0) { // Every 5 seconds. At 100 sanity player will be at 0 sanity in ~8 minutes
+                Commands.call("sanity remove " + event.player.name + " 1", event.player, event.player.world, true, true);
             }
         }
     }
