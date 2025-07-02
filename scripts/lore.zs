@@ -132,8 +132,8 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <contenttweaker:deviled_egg_sandwich>.addTooltip("§3Gives Fire Resistance and Strength for 30s");
 
 <nethercraft:slime_eggs>.displayName = "Magma Eggs";
-<nethercraft:slime_eggs>.addTooltip("§oCan be hurled at foes or used to create a balanced meal");
-<nethercraft:devil_bread>.addTooltip("§oA smoldering delicacy, paired exquisitely with Magma Eggs");
+<nethercraft:slime_eggs>.addTooltip("§oCan be thrown or cooked");
+<nethercraft:devil_bread>.addTooltip("§oAn Ashen delicacy, pairs well with Magma Eggs");
 <nethercraft:devil_bread>.addTooltip("§3Gives Strength for 10s");
 <nethercraft:glow_apple>.displayName = "Glow Worm";
 
@@ -203,9 +203,6 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <contenttweaker:infernal_fortress_scepter>.addTooltip("§oA formidable artifact that holds the power to materialize a gargantuan fortress, shrouded in whispers of an ancient and fearsome presence");
 
 
-JEI.addDescription(<minecraft:blaze_rod>,"Infernal rods, obtained by slaying the fearsome Infernals, serve as a potent source of fuel and illumination. When combined with the fiery essence of Infernium, they can be forged into powerful artifacts and weapons that harness intense heat and destructive energy.");
-
-
 <simpleores:tin_pickaxe:*>.displayName = "Quartz Pickaxe";
 <simpleores:tin_pickaxe:*>.addTooltip("§3Bone blocks will always drop 2 nether wraith bones when mined");
 
@@ -223,7 +220,6 @@ JEI.addDescription(<minecraft:blaze_rod>,"Infernal rods, obtained by slaying the
 <mysticstaffs:fire_staff:*>.displayName = "§cStaff of Infernal";
 <mysticstaffs:fire_staff:*>.addTooltip("§oA potent weapon that engulfs nearby enemies in a searing inferno");
 <contenttweaker:vitality_orb>.displayName = "Orb of Veilheart";
-JEI.addDescription(<contenttweaker:vitality_orb>,"The Orb of Veilheart, a miraculous fusion of Veilstrium and Foulite dust, possesses a unique duality that unlocks its potent soul-healing powers. Veilstrium's celestial energies cleanse the spirit, while the Foulite dust's grounding properties restore balance and stability to the physical realm, harmoniously mending both body and soul.");
 
 <mysticstaffs:heal_staff:*>.displayName = "§cStaff of Veilheart";
 <mysticstaffs:heal_staff:*>.addTooltip("§oA benevolent staff that rejuvenates the soul and body of allies");
@@ -242,9 +238,8 @@ JEI.addDescription(<contenttweaker:vitality_orb>,"The Orb of Veilheart, a miracu
 <quark:elder_prismarine:2>.displayName = "Deep Stone";
 
 // Misc
-<quark:soul_compass>.addTooltip("§oA guiding relic, directing you to the site of your most recent demise");
-<minecraft:fire_charge>.addTooltip("§oA blazing projectile, detonating with fiery force upon impact");
-<scalinghealth:healingitem:0>.addTooltip("§oCan be combined to form a medkit for enhanced recovery");
+<quark:soul_compass>.addTooltip("§oA guiding relic, directing you to your most recent demise");
+<minecraft:fire_charge>.addTooltip("§oA blazing throwable, detonating with fiery force upon impact");
 <scalinghealth:heartcontainer>.removeTooltip("Increases maximum health");
 <scalinghealth:heartcontainer>.addTooltip("§oA precious relic of vitality, bestowing its user with a permanently increased life force");
 <scalinghealth:heartcontainer>.addTooltip("§3Uses 2 levels");
