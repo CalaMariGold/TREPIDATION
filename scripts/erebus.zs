@@ -6,6 +6,7 @@ import mods.vanillaanvilrepair.addRepairEntry;
 import moretweaker.erebus.Composter;
 
 
+recipes.removeByRecipeName("erebus:blaze_powder");
 
 
 JEI.removeAndHide(<erebus:bamboo_pipe>);
