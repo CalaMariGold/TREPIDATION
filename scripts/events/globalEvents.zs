@@ -143,9 +143,11 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             if (soul_anchor.matches(itemstack)) {  
                 if (event.player.dimension == -1) {
                     event.player.sendChat("§9Can not be used in the Nether.");
+                    Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.world, true, true);
                 }
                 else {
                     event.player.sendChat("§4Your soul has been bound to this position. Be sure not to obstruct this area.");
+                    Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.world, true, true);
                     Commands.call("setworldspawn ~ ~ ~", event.player, event.world, true, true);
                     Commands.call("spawnpoint @p ~ ~ ~", event.player, event.world, true, true);
                     itemstack.mutable().shrink(1);
@@ -214,6 +216,8 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
                 server.commandManager.executeCommand(server, "gamestage silentremove @p erebus");
             }
         });
+
+        // Sanity warning when entering Mind's Abyss
         event.player.world.catenation()
             .run(function(world, context) {
                 context.data = world.time;
@@ -221,6 +225,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
             .sleep(500)
             .then(function(world, context) {
                 event.player.sendChat("§o§cYou feel a bone-deep chill settle behind your eyes; a dreadful feeling that grows with each passing moment in this realm.");
+                Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.player.world, true, true);
             })
             .start();
     }
@@ -249,6 +254,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
                 
 
                 event.player.sendChat("§3Developer Note: It's currently not possible to enter the End and beat the modpack. Until then, have fun exploring the Surface...");
+                Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.world, true, true);
             }
         });
     }

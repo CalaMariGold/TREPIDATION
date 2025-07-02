@@ -131,6 +131,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
     if(!event.world.isRemote()){
         if((event.item.definition.id).matches(chronoAnchor.definition.id)) {
             event.player.sendChat("§o§cYou awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.");
+            Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.player.world, true, true);
         }  
     }
 });
@@ -183,17 +184,21 @@ events.onCommand(function(event as crafttweaker.event.CommandEvent) {
                     server.commandManager.executeCommand(server, "gamestage silentadd @p unlocked_chrono_anchor");
                     Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", player, player.world, true, true);
                     player.sendChat("§o§cYou awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.");
+                    Commands.call("playsound minecraft:ui.toast.in master @p", player, player.world, true, true);
                 }
 
                 // Chrono Usurpation uses
                 if(bonusCount == 1){
                     player.sendChat("§o§cThe Veil whispers of debts unpaid. Your timer bears fresh scars from another's ambition.");
+                    Commands.call("playsound minecraft:ui.toast.in master @p", player, player.world, true, true);
                 }
                 else if(bonusCount == 2){
                     player.sendChat("§o§c" + bonusCount + " minutes torn from your flesh by hands unseen. It hungers for compounded interest.");
+                    Commands.call("playsound minecraft:ui.toast.in master @p", player, player.world, true, true);
                 }
                 else if(bonusCount == 3){
                     player.sendChat("§o§cReality shudders as " + bonusCount + " minutes are excised from your timeline, another's triumph written in your blood.");
+                    Commands.call("playsound minecraft:ui.toast.in master @p", player, player.world, true, true);
                 }
                 else if(bonusCount == 4 || bonusCount >= 6){
                     player.sendChat("§o§cDebt must be paid. " + bonusCount + " minutes are torn from your flesh.");
