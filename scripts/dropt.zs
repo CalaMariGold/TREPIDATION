@@ -128,6 +128,13 @@ Dropt.list("no_soul_sand_drop")
     .addDrop(Dropt.drop())
   );
 
+Dropt.list("no_nether_wart_drop")
+  .add(Dropt.rule()
+    .matchDrops([(<minecraft:nether_wart>)])
+    .replaceStrategy("REPLACE_ITEMS")
+    .addDrop(Dropt.drop())
+  );
+
 Dropt.list("no_brick_drop")
   .add(Dropt.rule()
     .matchDrops([<minecraft:red_nether_brick>.or(<minecraft:nether_brick>).or(<minecraft:nether_brick_stairs>).or(<minecraft:stone_slab:6>).or(<minecraft:nether_brick_fence>)])
