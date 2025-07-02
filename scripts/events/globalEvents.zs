@@ -100,6 +100,7 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
         .then(function(world, context) {
             Commands.call("advancement grant @p only triumph:advancements/hidden/unlock_journal", event.player, event.entity.world, true, true);
             event.player.sendChat("§o§cDisoriented, you awaken to find a journal attached to your belt. As you begin to write, you notice a scar on your left wrist.");
+            Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.entity.world, true, true);
         })
         .start();
         
