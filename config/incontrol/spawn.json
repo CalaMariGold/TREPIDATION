@@ -32,7 +32,7 @@
         "dimension": -1,
         "mob": ["minecraft:magma_cube"],
         "block": ["nethercraft:nether_dirt","nethercraft:heat_sand"],
-        "random": "0.01",
+        "random": "0.005",
         "result": "allow"
     },
     {
