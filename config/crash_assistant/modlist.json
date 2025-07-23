@@ -1,0 +1,1153 @@
+{
+  "cleanroom-0.3.7-alpha-universal.jar (modloader)": {
+    "jarName": "cleanroom-0.3.7-alpha-universal.jar (modloader)",
+    "modId": "forge",
+    "version": "cleanroom-0.3.7-alpha-universal.jar"
+  },
+  "!!!CrashAssistant-forge-1.12.2-1.9.15.jar": {
+    "jarName": "!!!CrashAssistant-forge-1.12.2-1.9.15.jar",
+    "modId": "crash_assistant",
+    "version": "1.9.15"
+  },
+  "!configanytime-3.0.jar": {
+    "jarName": "!configanytime-3.0.jar",
+    "modId": "configanytime",
+    "version": "3.0"
+  },
+  "!mixinbooter-10.6.jar": {
+    "jarName": "!mixinbooter-10.6.jar",
+    "modId": "mixinbooter",
+    "version": "10.6"
+  },
+  "!mod-director-launchwrapper-1.9.1.jar": {
+    "jarName": "!mod-director-launchwrapper-1.9.1.jar"
+  },
+  "!Red-Core-MC-1.8-1.12-0.6.jar": {
+    "jarName": "!Red-Core-MC-1.8-1.12-0.6.jar",
+    "modId": "redcore",
+    "version": "0.6"
+  },
+  "++relauncher-0.3.12-beta.jar": {
+    "jarName": "++relauncher-0.3.12-beta.jar",
+    "modId": "relauncher",
+    "version": "0.3.12-beta"
+  },
+  "+Fugue-0.19.8.jar": {
+    "jarName": "+Fugue-0.19.8.jar",
+    "modId": "fugue",
+    "version": "0.19.8"
+  },
+  "1.12.Forge.RPG-HUD-3.8.3.jar": {
+    "jarName": "1.12.Forge.RPG-HUD-3.8.3.jar",
+    "modId": "rpghud",
+    "version": "3.8.3"
+  },
+  "_MixinBootstrap-1.1.0.jar": {
+    "jarName": "_MixinBootstrap-1.1.0.jar"
+  },
+  "`FermiumBooter-1.3.1.jar": {
+    "jarName": "`FermiumBooter-1.3.1.jar",
+    "modId": "fermiumbooter",
+    "version": "1.3.1"
+  },
+  "AIReducer-1.12.2-0.3.0.jar": {
+    "jarName": "AIReducer-1.12.2-0.3.0.jar",
+    "modId": "aireducer",
+    "version": "1.12.2-0.3.0"
+  },
+  "Alfheim-1.6.jar": {
+    "jarName": "Alfheim-1.6.jar",
+    "modId": "alfheim",
+    "version": "1.6"
+  },
+  "anothertips-1.0.4.jar": {
+    "jarName": "anothertips-1.0.4.jar",
+    "modId": "anothertips",
+    "version": "1.0.4"
+  },
+  "antighost-1.12-forge14.21.1.2387-1.1.1.jar": {
+    "jarName": "antighost-1.12-forge14.21.1.2387-1.1.1.jar",
+    "modId": "antighost",
+    "version": "1.12-forge14.21.1.2387-1.1.1"
+  },
+  "AppleCore-mc1.12.2-3.4.0.jar": {
+    "jarName": "AppleCore-mc1.12.2-3.4.0.jar"
+  },
+  "AppleSkin-mc1.12-1.0.14.jar": {
+    "jarName": "AppleSkin-mc1.12-1.0.14.jar",
+    "modId": "appleskin",
+    "version": "1.0.14"
+  },
+  "AquaAcrobatics-1.15.4.jar": {
+    "jarName": "AquaAcrobatics-1.15.4.jar",
+    "modId": "aquaacrobatics",
+    "version": "1.15.4"
+  },
+  "arrowharvest-1.12.2-1.0.3.jar": {
+    "jarName": "arrowharvest-1.12.2-1.0.3.jar",
+    "modId": "arrowharvest",
+    "version": "1.12.2-1.0.3"
+  },
+  "athenaeum-1.12.2-1.19.6.jar": {
+    "jarName": "athenaeum-1.12.2-1.19.6.jar",
+    "modId": "athenaeum",
+    "version": "1.12.2-1.19.6"
+  },
+  "Auto-Equip-Merge-1.12.2-1.0.1.jar": {
+    "jarName": "Auto-Equip-Merge-1.12.2-1.0.1.jar",
+    "modId": "Auto Equipment Merge",
+    "version": "1.0.1"
+  },
+  "AutoRegLib-1.3-32.jar": {
+    "jarName": "AutoRegLib-1.3-32.jar",
+    "modId": "autoreglib",
+    "version": "1.3-32"
+  },
+  "bakedenchants-1.12.2-2.1.0.jar": {
+    "jarName": "bakedenchants-1.12.2-2.1.0.jar",
+    "modId": "bakedenchants",
+    "version": "1.12.2-2.1.0"
+  },
+  "base-1.12.2-3.14.0.jar": {
+    "jarName": "base-1.12.2-3.14.0.jar",
+    "modId": "base",
+    "version": "1.12.2-3.14.0"
+  },
+  "BaublesHud-1.12.2-5.0.2.jar": {
+    "jarName": "BaublesHud-1.12.2-5.0.2.jar",
+    "modId": "baubleshud",
+    "version": "5.0.2"
+  },
+  "Baubley-Elytra-v1.3.3-mc1.12.2.jar": {
+    "jarName": "Baubley-Elytra-v1.3.3-mc1.12.2.jar",
+    "modId": "baubleye",
+    "version": "v1.3.3-mc1.12.2"
+  },
+  "BetterAdvancements-1.12.2-0.1.0.77.jar": {
+    "jarName": "BetterAdvancements-1.12.2-0.1.0.77.jar",
+    "modId": "betteradvancements",
+    "version": "0.1.0"
+  },
+  "betteranimals-1.12.2-5.5.0.jar": {
+    "jarName": "betteranimals-1.12.2-5.5.0.jar",
+    "modId": "betteranimals",
+    "version": "1.12.2-5.5.0"
+  },
+  "bettercaves-1.12.2-2.0.4.jar": {
+    "jarName": "bettercaves-1.12.2-2.0.4.jar",
+    "modId": "bettercaves",
+    "version": "1.12.2-2.0.4"
+  },
+  "betterchat-1.4.jar": {
+    "jarName": "betterchat-1.4.jar",
+    "modId": "betterchat",
+    "version": "1.4"
+  },
+  "betterinvisibility-1.12.2-1.0.5.jar": {
+    "jarName": "betterinvisibility-1.12.2-1.0.5.jar",
+    "modId": "betterinvisibility",
+    "version": "1.0.5"
+  },
+  "BetterMineshaftsForge-1.12.2-2.2.1.jar": {
+    "jarName": "BetterMineshaftsForge-1.12.2-2.2.1.jar",
+    "modId": "bettermineshafts",
+    "version": "1.12.2-2.2.1"
+  },
+  "BetterSwim 1.0.0.jar": {
+    "jarName": "BetterSwim 1.0.0.jar",
+    "modId": "betterswim",
+    "version": "1.0.0"
+  },
+  "BetterWaterSplash-1.0.jar": {
+    "jarName": "BetterWaterSplash-1.0.jar",
+    "modId": "BetterWaterSplash",
+    "version": "1.0"
+  },
+  "BiomeTweaker-1.12.2-3.2.369.jar": {
+    "jarName": "BiomeTweaker-1.12.2-3.2.369.jar",
+    "modId": "biometweaker",
+    "version": "3.2"
+  },
+  "BiomeTweakerCore-1.12.2-1.0.39.jar": {
+    "jarName": "BiomeTweakerCore-1.12.2-1.0.39.jar"
+  },
+  "Blur-1.0.4-14.jar": {
+    "jarName": "Blur-1.0.4-14.jar",
+    "modId": "blur",
+    "version": "1.0.4-14"
+  },
+  "BNBGamingCore-1.12.2-0.12.0.jar": {
+    "jarName": "BNBGamingCore-1.12.2-0.12.0.jar"
+  },
+  "BNBGamingLib-1.12.2-2.17.6.jar": {
+    "jarName": "BNBGamingLib-1.12.2-2.17.6.jar",
+    "modId": "bnbgaminglib",
+    "version": "2.17.6"
+  },
+  "Bookshelf-1.12.2-2.3.590.jar": {
+    "jarName": "Bookshelf-1.12.2-2.3.590.jar",
+    "modId": "bookshelf",
+    "version": "2.3.590"
+  },
+  "Bubbles-2.4.4.jar": {
+    "jarName": "Bubbles-2.4.4.jar",
+    "modId": "baubles",
+    "version": "2.4.4"
+  },
+  "CD4017BE_lib-1.12.2-6.5.1.jar": {
+    "jarName": "CD4017BE_lib-1.12.2-6.5.1.jar",
+    "modId": "cd4017be_lib",
+    "version": "6.5.1"
+  },
+  "champions-1.12.2-1.0.11.10.jar": {
+    "jarName": "champions-1.12.2-1.0.11.10.jar",
+    "modId": "champions",
+    "version": "1.12.2-1.0.11.10"
+  },
+  "chargethrower-1.0.1.jar": {
+    "jarName": "chargethrower-1.0.1.jar",
+    "modId": "chargethrower",
+    "version": "1.0.1"
+  },
+  "ChatFlow-1.4-7.jar": {
+    "jarName": "ChatFlow-1.4-7.jar",
+    "modId": "chatflow",
+    "version": "ANT:VERSION"
+  },
+  "cherishedworlds-1.12.2-1.0.1.jar": {
+    "jarName": "cherishedworlds-1.12.2-1.0.1.jar",
+    "modId": "cherishedworlds",
+    "version": "1.12.2-1.0.1"
+  },
+  "ClientTweaks_1.12.2-3.1.11.jar": {
+    "jarName": "ClientTweaks_1.12.2-3.1.11.jar",
+    "modId": "clienttweaks",
+    "version": "3.1.11"
+  },
+  "collective-1.12.2-3.0.jar": {
+    "jarName": "collective-1.12.2-3.0.jar",
+    "modId": "collective",
+    "version": "3.0"
+  },
+  "ColouredTooltips-1.12.2-1.0.9.jar": {
+    "jarName": "ColouredTooltips-1.12.2-1.0.9.jar",
+    "modId": "colouredtooltips",
+    "version": "1.0.9"
+  },
+  "ContentTweaker-1.12.2-4.10.0.jar": {
+    "jarName": "ContentTweaker-1.12.2-4.10.0.jar",
+    "modId": "contenttweaker",
+    "version": "1.12.2-4.10.0"
+  },
+  "copypaste-1.1.jar": {
+    "jarName": "copypaste-1.1.jar",
+    "modId": "copypaste",
+    "version": "1.1"
+  },
+  "coroutil-1.12.1-1.2.37.jar": {
+    "jarName": "coroutil-1.12.1-1.2.37.jar",
+    "modId": "coroutil",
+    "version": "1.12.1-1.2.37"
+  },
+  "corpsecomplex-1.12.2-1.0.12.0.jar": {
+    "jarName": "corpsecomplex-1.12.2-1.0.12.0.jar",
+    "modId": "corpsecomplex",
+    "version": "1.12.2-1.0.12.0"
+  },
+  "CraftTweaker2-1.12-4.1.20.704.jar": {
+    "jarName": "CraftTweaker2-1.12-4.1.20.704.jar",
+    "modId": "crafttweaker",
+    "version": "1.12-4.1.20.704"
+  },
+  "crafttweakerutils-0.7.jar": {
+    "jarName": "crafttweakerutils-0.7.jar",
+    "modId": "examplemod",
+    "version": "0.7"
+  },
+  "CreativeCore_v1.10.71_mc1.12.2.jar": {
+    "jarName": "CreativeCore_v1.10.71_mc1.12.2.jar",
+    "modId": "creativecore",
+    "version": "1.10"
+  },
+  "ctintegration-1.8.0.jar": {
+    "jarName": "ctintegration-1.8.0.jar",
+    "modId": "ctintegration",
+    "version": "1.8.0"
+  },
+  "CTM-MC1.12.2-1.0.2.31.jar": {
+    "jarName": "CTM-MC1.12.2-1.0.2.31.jar",
+    "modId": "ctm",
+    "version": "MC1.12.2-1.0.2.31"
+  },
+  "CustomBackgrounds-MC1.12-1.1.1.jar": {
+    "jarName": "CustomBackgrounds-MC1.12-1.1.1.jar",
+    "modId": "custombackgrounds",
+    "version": "1.1.1"
+  },
+  "CustomLoadingScreen-1.12.2-1.5.9.jar": {
+    "jarName": "CustomLoadingScreen-1.12.2-1.5.9.jar",
+    "modId": "customloadingscreen",
+    "version": "1.12.2-1.5.9"
+  },
+  "Cyclic-1.12.2-1.20.14.jar": {
+    "jarName": "Cyclic-1.12.2-1.20.14.jar",
+    "modId": "cyclicmagic",
+    "version": "1.20.12"
+  },
+  "darkness-forge-1.12.x-0.5.0.jar": {
+    "jarName": "darkness-forge-1.12.x-0.5.0.jar",
+    "modId": "darkness",
+    "version": "0.5.0"
+  },
+  "DarknessLib-1.12.2-1.1.2.jar": {
+    "jarName": "DarknessLib-1.12.2-1.1.2.jar",
+    "modId": "darknesslib",
+    "version": "1.12.2-1.1.2"
+  },
+  "DefaultOptions_1.12.2-9.2.8.jar": {
+    "jarName": "DefaultOptions_1.12.2-9.2.8.jar",
+    "modId": "defaultoptions",
+    "version": "9.2.8"
+  },
+  "DefaultWorldGenerator-port-1.12-2.3.jar": {
+    "jarName": "DefaultWorldGenerator-port-1.12-2.3.jar",
+    "modId": "defaultworldgenerator-port",
+    "version": "1.12-2.3"
+  },
+  "Dimensional Doors-3.2.3.jar": {
+    "jarName": "Dimensional Doors-3.2.3.jar",
+    "modId": "dimdoors",
+    "version": "3.2.3"
+  },
+  "discordrpc-1.3.3-1.12.jar": {
+    "jarName": "discordrpc-1.3.3-1.12.jar",
+    "modId": "discordrpc",
+    "version": "1.3.3"
+  },
+  "dropt-1.12.2-1.19.4.jar": {
+    "jarName": "dropt-1.12.2-1.19.4.jar",
+    "modId": "dropt",
+    "version": "1.12.2-1.19.4"
+  },
+  "Dynamic-Raw-Ores-1.12.2-1.0.3a.jar": {
+    "jarName": "Dynamic-Raw-Ores-1.12.2-1.0.3a.jar",
+    "modId": "dynaores",
+    "version": "1.0.3a"
+  },
+  "DynamicSurroundings-1.12.2-3.6.3.jar": {
+    "jarName": "DynamicSurroundings-1.12.2-3.6.3.jar",
+    "modId": "dsurround",
+    "version": "1.12.2-3.6.3"
+  },
+  "eguilib-0.1.2.jar": {
+    "jarName": "eguilib-0.1.2.jar",
+    "modId": "eguilib",
+    "version": "0.1.0"
+  },
+  "ElenaiDodge2-1.12.2-1.1.0.jar": {
+    "jarName": "ElenaiDodge2-1.12.2-1.1.0.jar",
+    "modId": "elenaidodge2",
+    "version": "1.1.0"
+  },
+  "endermodpacktweaks-0.5.9.jar": {
+    "jarName": "endermodpacktweaks-0.5.9.jar",
+    "modId": "endermodpacktweaks",
+    "version": "0.5.9"
+  },
+  "EnderSkills-1.12.2-1.16.1.4.jar": {
+    "jarName": "EnderSkills-1.12.2-1.16.1.4.jar",
+    "modId": "enderskills",
+    "version": "${version}"
+  },
+  "EnhancedVisuals_v1.4.4_mc1.12.2.jar": {
+    "jarName": "EnhancedVisuals_v1.4.4_mc1.12.2.jar",
+    "modId": "enhancedvisuals",
+    "version": "1.3"
+  },
+  "EntityCulling-1.12.2-6.5.0.jar": {
+    "jarName": "EntityCulling-1.12.2-6.5.0.jar",
+    "modId": "entityculling",
+    "version": "6.5.0"
+  },
+  "EpicSiegeMod-13.169.jar": {
+    "jarName": "EpicSiegeMod-13.169.jar",
+    "modId": "epicsiegemod",
+    "version": "13.169"
+  },
+  "Erebus-1.0.32.jar": {
+    "jarName": "Erebus-1.0.32.jar",
+    "modId": "erebus",
+    "version": "1.0.32"
+  },
+  "eruditetweaks-1.0.6.jar": {
+    "jarName": "eruditetweaks-1.0.6.jar",
+    "modId": "eruditetweaks",
+    "version": "1.0.6"
+  },
+  "EuphoriaPatcher-1.5.2-r5.4-forgeLegacy.jar": {
+    "jarName": "EuphoriaPatcher-1.5.2-r5.4-forgeLegacy.jar",
+    "modId": "euphoria_patcher",
+    "version": "1.5.2-r5.4-forgeLegacy"
+  },
+  "EyesInTheDarkness-0.1.0.jar": {
+    "jarName": "EyesInTheDarkness-0.1.0.jar",
+    "modId": "eyesinthedarkness",
+    "version": "0.1.0"
+  },
+  "fancymenu_forge_2.14.9_MC_1.12-1.12.2.jar": {
+    "jarName": "fancymenu_forge_2.14.9_MC_1.12-1.12.2.jar",
+    "modId": "fancymenu",
+    "version": "2.14.9"
+  },
+  "FantasticLib-1.12.2.051.jar": {
+    "jarName": "FantasticLib-1.12.2.051.jar",
+    "modId": "fantasticlib",
+    "version": "1.12.2.051"
+  },
+  "fermiumasm-5.28.jar": {
+    "jarName": "fermiumasm-5.28.jar",
+    "modId": "normalasm",
+    "version": "5.28"
+  },
+  "FermiumMixins-1.0.4.jar": {
+    "jarName": "FermiumMixins-1.0.4.jar",
+    "modId": "fermiummixins",
+    "version": "1.0.4"
+  },
+  "fireproofitems-1.0.jar": {
+    "jarName": "fireproofitems-1.0.jar",
+    "modId": "fireproofitems",
+    "version": "1.0"
+  },
+  "Fixeroo-2.3.5-hotfix.1.jar": {
+    "jarName": "Fixeroo-2.3.5-hotfix.1.jar",
+    "modId": "xporbclump",
+    "version": "2.3.5-hotfix.1"
+  },
+  "FlexiPause-1.1.jar": {
+    "jarName": "FlexiPause-1.1.jar",
+    "modId": "flexipause",
+    "version": "1.1"
+  },
+  "fogger-1.12.2-1.1.2.0.jar": {
+    "jarName": "fogger-1.12.2-1.1.2.0.jar",
+    "modId": "fogger",
+    "version": "1.12.2-1.1.2.0"
+  },
+  "ForgeEndertech-1.12.2-4.5.6.1-build.0648.jar": {
+    "jarName": "ForgeEndertech-1.12.2-4.5.6.1-build.0648.jar",
+    "modId": "forgeendertech",
+    "version": "1.12.2-4.5.6.1"
+  },
+  "Forgelin-Continuous-2.2.0.0.jar": {
+    "jarName": "Forgelin-Continuous-2.2.0.0.jar",
+    "modId": "forgelin_continuous",
+    "version": "2.1.0.0"
+  },
+  "FpsReducer-mc1.12.2-1.20.jar": {
+    "jarName": "FpsReducer-mc1.12.2-1.20.jar",
+    "modId": "fpsreducer",
+    "version": "mc1.12.2-1.20"
+  },
+  "FurnaceXPStorage-1.1.1.jar": {
+    "jarName": "FurnaceXPStorage-1.1.1.jar",
+    "modId": "furnacexpstorage",
+    "version": "1.1.1"
+  },
+  "GameStages-1.12.2-2.0.123.jar": {
+    "jarName": "GameStages-1.12.2-2.0.123.jar",
+    "modId": "gamestages",
+    "version": "2.0.123"
+  },
+  "geckolib-forge-1.12.2-3.0.31.jar": {
+    "jarName": "geckolib-forge-1.12.2-3.0.31.jar",
+    "modId": "geckolib3",
+    "version": "${version}"
+  },
+  "GlobalGameRules-1.12.2-2.2.7.jar": {
+    "jarName": "GlobalGameRules-1.12.2-2.2.7.jar",
+    "modId": "globalgamerules",
+    "version": "2.2.7"
+  },
+  "gnetum-1.2.6.jar": {
+    "jarName": "gnetum-1.2.6.jar",
+    "modId": "gnetum",
+    "version": "1.2.6"
+  },
+  "groovyscript-1.2.5.jar": {
+    "jarName": "groovyscript-1.2.5.jar",
+    "modId": "groovyscript",
+    "version": "1.2.5"
+  },
+  "Grue-1.12.2-1.8.1.jar": {
+    "jarName": "Grue-1.12.2-1.8.1.jar",
+    "modId": "grue",
+    "version": "1.12.2-1.8.1"
+  },
+  "Highlighter-1.12.2-forge-1.1.7.jar": {
+    "jarName": "Highlighter-1.12.2-forge-1.1.7.jar",
+    "modId": "highlighter",
+    "version": "1.1.7"
+  },
+  "hitindication-1.12.2-2.0.jar": {
+    "jarName": "hitindication-1.12.2-2.0.jar",
+    "modId": "hitindication",
+    "version": "2.0"
+  },
+  "Horror_elements_mod_1.5.2_1.12.2.jar": {
+    "jarName": "Horror_elements_mod_1.5.2_1.12.2.jar",
+    "modId": "horror_elements_mod",
+    "version": "1.0.0"
+  },
+  "Hungering Darkness-1.12.2-1.4.1.jar": {
+    "jarName": "Hungering Darkness-1.12.2-1.4.1.jar",
+    "modId": "hungeringdarkness",
+    "version": "1.12.2-1.4.1"
+  },
+  "HungerTweaker-1.12.2-1.3.0.jar": {
+    "jarName": "HungerTweaker-1.12.2-1.3.0.jar",
+    "modId": "hungertweaker",
+    "version": "1.3.0"
+  },
+  "Hwyla-1.8.26-B41_1.12.2.jar": {
+    "jarName": "Hwyla-1.8.26-B41_1.12.2.jar",
+    "modId": "waila",
+    "version": "1.8.26"
+  },
+  "iChunUtil-1.12.2-7.2.2.jar": {
+    "jarName": "iChunUtil-1.12.2-7.2.2.jar",
+    "modId": "ichunutil",
+    "version": "1.12.2-7.2.2"
+  },
+  "ImmersiveCombat-9-27-2024.jar": {
+    "jarName": "ImmersiveCombat-9-27-2024.jar",
+    "modId": "bettercombat",
+    "version": "1.5.6"
+  },
+  "incontrol-1.12-3.9.18.jar": {
+    "jarName": "incontrol-1.12-3.9.18.jar",
+    "modId": "incontrol",
+    "version": "1.12-3.9.18"
+  },
+  "Into The Dungeons - 1.4.jar": {
+    "jarName": "Into The Dungeons - 1.4.jar",
+    "modId": "da",
+    "version": "1.12.2-0.1.4"
+  },
+  "InventoryTweaks-1.63.jar": {
+    "jarName": "InventoryTweaks-1.63.jar",
+    "modId": "inventorytweaks",
+    "version": "1.63+release.109.220f184"
+  },
+  "InvMove-1.12.2-0.4.6.jar": {
+    "jarName": "InvMove-1.12.2-0.4.6.jar",
+    "modId": "invmove",
+    "version": "0.4.6"
+  },
+  "ItemBorders-1.12.2-forge-1.2.0.jar": {
+    "jarName": "ItemBorders-1.12.2-forge-1.2.0.jar",
+    "modId": "itemborders",
+    "version": "1.2.0"
+  },
+  "jei_1.12.2-4.16.1.1013.jar": {
+    "jarName": "jei_1.12.2-4.16.1.1013.jar",
+    "modId": "jei",
+    "version": "4.16.1.1013"
+  },
+  "JEIHider-1.1c.jar": {
+    "jarName": "JEIHider-1.1c.jar"
+  },
+  "justenoughdimensions-1.12.2-1.6.0-dev.20211009.214847.jar": {
+    "jarName": "justenoughdimensions-1.12.2-1.6.0-dev.20211009.214847.jar",
+    "modId": "justenoughdimensions",
+    "version": "1.6.0-dev.20211009.214847"
+  },
+  "JustEnoughEffects-1.0.3.jar": {
+    "jarName": "JustEnoughEffects-1.0.3.jar",
+    "modId": "effectinfo",
+    "version": "1.0.3"
+  },
+  "KleeSlabs_1.12.2-5.4.12.jar": {
+    "jarName": "KleeSlabs_1.12.2-5.4.12.jar",
+    "modId": "kleeslabs",
+    "version": "5.4.12"
+  },
+  "konkrete_forge_1.6.1_MC_1.12-1.12.2.jar": {
+    "jarName": "konkrete_forge_1.6.1_MC_1.12-1.12.2.jar",
+    "modId": "konkrete",
+    "version": "1.6.1"
+  },
+  "LegendaryTooltips-1.12.2-1.1.11.jar": {
+    "jarName": "LegendaryTooltips-1.12.2-1.1.11.jar",
+    "modId": "legendarytooltips",
+    "version": "1.1.11"
+  },
+  "llibrary-1.7.20-1.12.2.jar": {
+    "jarName": "llibrary-1.7.20-1.12.2.jar",
+    "modId": "llibrary",
+    "version": "1.7.20-1.12.2"
+  },
+  "loadmyresources_forge_1.0.4_MC_1.12-1.12.2.jar": {
+    "jarName": "loadmyresources_forge_1.0.4_MC_1.12-1.12.2.jar",
+    "modId": "loadmyresources",
+    "version": "1.0.4"
+  },
+  "LootTableTweaker-1.12.2-1.1.14.jar": {
+    "jarName": "LootTableTweaker-1.12.2-1.1.14.jar"
+  },
+  "LootTweaker-0.4.1+MC1.12.2.jar": {
+    "jarName": "LootTweaker-0.4.1+MC1.12.2.jar",
+    "modId": "loottweaker",
+    "version": "0.4.1"
+  },
+  "maleksinfinitygauntlet.jar": {
+    "jarName": "maleksinfinitygauntlet.jar",
+    "modId": "maleksinfinitygauntlet",
+    "version": "1.0"
+  },
+  "materialchanger1.0.3-1.12.2.jar": {
+    "jarName": "materialchanger1.0.3-1.12.2.jar",
+    "modId": "materialchanger",
+    "version": "1.0"
+  },
+  "mcmouser-1.12.2-forge-1.0.2.jar": {
+    "jarName": "mcmouser-1.12.2-forge-1.0.2.jar"
+  },
+  "MineMenu-1.12.2-1.6.11-universal.jar": {
+    "jarName": "MineMenu-1.12.2-1.6.11-universal.jar",
+    "modId": "minemenu",
+    "version": "1.12.2-1.6.11"
+  },
+  "MobDismemberment-1.12.2-7.0.0.jar": {
+    "jarName": "MobDismemberment-1.12.2-7.0.0.jar",
+    "modId": "mobdismemberment",
+    "version": "1.12.2-7.0.0"
+  },
+  "MoBends_1.12.2-1.2.1-19.12.21.jar": {
+    "jarName": "MoBends_1.12.2-1.2.1-19.12.21.jar",
+    "modId": "mobends",
+    "version": "1.2.1"
+  },
+  "Modpack Configuration Checker-1.12.2-v1.9.5.jar": {
+    "jarName": "Modpack Configuration Checker-1.12.2-v1.9.5.jar",
+    "modId": "concheckrmd",
+    "version": "1.9.5"
+  },
+  "modtweaker-4.0.20.11.jar": {
+    "jarName": "modtweaker-4.0.20.11.jar",
+    "modId": "modtweaker",
+    "version": "4.0.20.11"
+  },
+  "MoreTweaker-1.0.19.jar": {
+    "jarName": "MoreTweaker-1.0.19.jar",
+    "modId": "moretweaker",
+    "version": "1.0.19"
+  },
+  "mousetweaks-1.12.2-3.1.5.jar": {
+    "jarName": "mousetweaks-1.12.2-3.1.5.jar",
+    "modId": "mousetweaks",
+    "version": "3.1.5"
+  },
+  "mpbasic-1.12.2-1.4.11.jar": {
+    "jarName": "mpbasic-1.12.2-1.4.11.jar",
+    "modId": "mpbasic",
+    "version": "1.4.11"
+  },
+  "MPUtils-1.12.2-1.5.7.jar": {
+    "jarName": "MPUtils-1.12.2-1.5.7.jar",
+    "modId": "mputils",
+    "version": "1.5.7"
+  },
+  "MTLib-3.0.7.jar": {
+    "jarName": "MTLib-3.0.7.jar",
+    "modId": "mtlib",
+    "version": "3.0.7"
+  },
+  "multimob-1.0.5.jar": {
+    "jarName": "multimob-1.0.5.jar",
+    "modId": "multimob",
+    "version": "1.0.4a"
+  },
+  "musictriggers-1.12.2-6.3.1.jar": {
+    "jarName": "musictriggers-1.12.2-6.3.1.jar",
+    "modId": "musictriggers",
+    "version": "1.12.2-6.3.1"
+  },
+  "Mystic-Staffs-2.0.3.jar": {
+    "jarName": "Mystic-Staffs-2.0.3.jar",
+    "modId": "mysticstaffs",
+    "version": "2.0.3"
+  },
+  "naughthirium-2.3.0.jar": {
+    "jarName": "naughthirium-2.3.0.jar",
+    "modId": "naughthirium",
+    "version": "2.3.0"
+  },
+  "nethercraft-1.12.2-1.0.2.jar": {
+    "jarName": "nethercraft-1.12.2-1.0.2.jar",
+    "modId": "nethercraft",
+    "version": "1.0.2"
+  },
+  "neverenoughanimations-1.0.6.jar": {
+    "jarName": "neverenoughanimations-1.0.6.jar",
+    "modId": "neverenoughanimations",
+    "version": "1.0.6"
+  },
+  "noarcher-1.0.0.jar": {
+    "jarName": "noarcher-1.0.0.jar",
+    "modId": "noarcher",
+    "version": ""
+  },
+  "NoiseThreader-1.1.0.jar": {
+    "jarName": "NoiseThreader-1.1.0.jar",
+    "modId": "noisethreader",
+    "version": "1.1.0"
+  },
+  "Nothirium-1.12.2-0.4.7-beta.jar": {
+    "jarName": "Nothirium-1.12.2-0.4.7-beta.jar",
+    "modId": "nothirium",
+    "version": "0.4.7-beta"
+  },
+  "NoWorldgen5You-1.12.2-1.0.6.jar": {
+    "jarName": "NoWorldgen5You-1.12.2-1.0.6.jar",
+    "modId": "noworldgen5you",
+    "version": "1.0.6"
+  },
+  "opticheck-1.12.2-1.0.1.jar": {
+    "jarName": "opticheck-1.12.2-1.0.1.jar",
+    "modId": "opticheck",
+    "version": "1.0.1"
+  },
+  "OptiFine_1.12.2_HD_U_G6_pre1.jar": {
+    "jarName": "OptiFine_1.12.2_HD_U_G6_pre1.jar"
+  },
+  "OreLib-1.12.2-3.6.0.1.jar": {
+    "jarName": "OreLib-1.12.2-3.6.0.1.jar",
+    "modId": "orelib",
+    "version": "1.12.2-3.6.0.1"
+  },
+  "OreStages-1.12.2-2.0.37.jar": {
+    "jarName": "OreStages-1.12.2-2.0.37.jar",
+    "modId": "orestages",
+    "version": "2.0.37"
+  },
+  "particleculling-1.12.2-v1.4.3.jar": {
+    "jarName": "particleculling-1.12.2-v1.4.3.jar",
+    "modId": "particleculling",
+    "version": "1.12.2-v1.4.3"
+  },
+  "PassableLeaves-1.12.2-2.0.0.jar": {
+    "jarName": "PassableLeaves-1.12.2-2.0.0.jar",
+    "modId": "passableleaves",
+    "version": "2.0.0"
+  },
+  "Patchouli-1.0-28.jar": {
+    "jarName": "Patchouli-1.0-28.jar",
+    "modId": "patchouli",
+    "version": "1.0-28"
+  },
+  "patchoulibooks-0.2.5.jar": {
+    "jarName": "patchoulibooks-0.2.5.jar",
+    "modId": "patchoulibooks",
+    "version": "0.2.4"
+  },
+  "PerfectSpawn-MC1.12.2-2.1.jar": {
+    "jarName": "PerfectSpawn-MC1.12.2-2.1.jar",
+    "modId": "perfectspawn",
+    "version": "2.1"
+  },
+  "Pillar-1.2-10.jar": {
+    "jarName": "Pillar-1.2-10.jar",
+    "modId": "pillar",
+    "version": "1.2-10"
+  },
+  "Placebo-1.12.2-1.6.1.jar": {
+    "jarName": "Placebo-1.12.2-1.6.1.jar",
+    "modId": "placebo",
+    "version": "1.12.2-1.6.1"
+  },
+  "PotionCore-1.9_for_1.12.2.jar": {
+    "jarName": "PotionCore-1.9_for_1.12.2.jar",
+    "modId": "potioncore",
+    "version": "1.9_for_1.12.2"
+  },
+  "potiondescriptions-1.12.2-1.2.4.jar": {
+    "jarName": "potiondescriptions-1.12.2-1.2.4.jar",
+    "modId": "potiondescriptions",
+    "version": "1.12.2-1.2.4"
+  },
+  "potionofaiming-1.12.2-1.0.0.jar": {
+    "jarName": "potionofaiming-1.12.2-1.0.0.jar",
+    "modId": "potionofaiming",
+    "version": "1.12.2-1.0.0"
+  },
+  "Prey-1.0.0.jar": {
+    "jarName": "Prey-1.0.0.jar",
+    "modId": "prey",
+    "version": "1.0.0"
+  },
+  "primitivemobs-1.2.3a.jar": {
+    "jarName": "primitivemobs-1.2.3a.jar",
+    "modId": "primitivemobs",
+    "version": "1.2.3a"
+  },
+  "ProbeZS-1.18.7.jar": {
+    "jarName": "ProbeZS-1.18.7.jar",
+    "modId": "probezs",
+    "version": "1.18.7"
+  },
+  "ProportionalDestructionParticles-1.12.2-1.2.4.jar": {
+    "jarName": "ProportionalDestructionParticles-1.12.2-1.2.4.jar",
+    "modId": "pdp",
+    "version": "1.12.2-1.2.4"
+  },
+  "QuarkOddities-1.12.2.jar": {
+    "jarName": "QuarkOddities-1.12.2.jar"
+  },
+  "QuarkRotN-r1.6-190.jar": {
+    "jarName": "QuarkRotN-r1.6-190.jar",
+    "modId": "quark",
+    "version": "r1.6-189"
+  },
+  "ReachFix-1.12.2-1.1.3.jar": {
+    "jarName": "ReachFix-1.12.2-1.1.3.jar",
+    "modId": "reachfix",
+    "version": "1.1.3"
+  },
+  "ReAuth-1.12-Forge-4.0.7.jar": {
+    "jarName": "ReAuth-1.12-Forge-4.0.7.jar",
+    "modId": "reauth",
+    "version": "4.0.7"
+  },
+  "rebind-1.12.2-2.7.5-0.jar": {
+    "jarName": "rebind-1.12.2-2.7.5-0.jar",
+    "modId": "rebind",
+    "version": "2.7.5"
+  },
+  "RecipeStages-1.1.3.8.jar": {
+    "jarName": "RecipeStages-1.1.3.8.jar",
+    "modId": "recipestages",
+    "version": "1.1.3.8"
+  },
+  "RedstoneFlux-1.12-2.1.1.1-universal.jar": {
+    "jarName": "RedstoneFlux-1.12-2.1.1.1-universal.jar",
+    "modId": "redstoneflux",
+    "version": "2.1.1.1"
+  },
+  "RenderLib-1.12.2-1.4.5.jar": {
+    "jarName": "RenderLib-1.12.2-1.4.5.jar",
+    "modId": "renderlib",
+    "version": "1.4.5"
+  },
+  "reroll-1.12.2-1.5.6.jar": {
+    "jarName": "reroll-1.12.2-1.5.6.jar",
+    "modId": "reroll",
+    "version": "1.12.2-1.5.6"
+  },
+  "ResourceLoader-MC1.12.1-1.5.3.jar": {
+    "jarName": "ResourceLoader-MC1.12.1-1.5.3.jar",
+    "modId": "resourceloader",
+    "version": "1.5.3"
+  },
+  "ResourceReloader-1.0.2.5.jar": {
+    "jarName": "ResourceReloader-1.0.2.5.jar",
+    "modId": "resourcereloader",
+    "version": "1.0.2.5"
+  },
+  "RLArtifacts-1.1.2.jar": {
+    "jarName": "RLArtifacts-1.1.2.jar",
+    "modId": "artifacts",
+    "version": "1.1.2"
+  },
+  "RLFoliage-MC1.12-2.4.2.jar": {
+    "jarName": "RLFoliage-MC1.12-2.4.2.jar",
+    "modId": "betterfoliage",
+    "version": "2.4.2"
+  },
+  "RLMixins-1.4.3.jar": {
+    "jarName": "RLMixins-1.4.3.jar",
+    "modId": "rlmixins",
+    "version": "1.4.3"
+  },
+  "RLTweaker-1.12.2-0.6.8.jar": {
+    "jarName": "RLTweaker-1.12.2-0.6.8.jar",
+    "modId": "rltweaker",
+    "version": "0.6.8"
+  },
+  "rockytweaks-1.12.2-0.6.1.jar": {
+    "jarName": "rockytweaks-1.12.2-0.6.1.jar",
+    "modId": "${modid}",
+    "version": "${version}"
+  },
+  "rotm-1.12.2-1.1.4.jar": {
+    "jarName": "rotm-1.12.2-1.1.4.jar",
+    "modId": "rotm",
+    "version": "1.12.2-1.1.4"
+  },
+  "roughmobsrevamped-1.12.2-2.3.23.jar": {
+    "jarName": "roughmobsrevamped-1.12.2-2.3.23.jar",
+    "modId": "roughmobsrevamped",
+    "version": "1.12.2-2.3.23"
+  },
+  "RTGU-1.12.2-1.1.0.jar": {
+    "jarName": "RTGU-1.12.2-1.1.0.jar",
+    "modId": "rtg",
+    "version": "1.1.0"
+  },
+  "sanity-1.2.9.jar": {
+    "jarName": "sanity-1.2.9.jar",
+    "modId": "sanity",
+    "version": "1.2.9"
+  },
+  "scalar-3.6.4.jar": {
+    "jarName": "scalar-3.6.4.jar",
+    "modId": "scalar",
+    "version": "${mod_version}"
+  },
+  "ScalingHealth-1.12.2-1.3.42+147.jar": {
+    "jarName": "ScalingHealth-1.12.2-1.3.42+147.jar",
+    "modId": "scalinghealth",
+    "version": "1.3.42"
+  },
+  "SetBonus-1.12.2.020.jar": {
+    "jarName": "SetBonus-1.12.2.020.jar",
+    "modId": "setbonus",
+    "version": "1.12.2.020"
+  },
+  "shutupmodelloader-1.12.2-1.0.0.jar": {
+    "jarName": "shutupmodelloader-1.12.2-1.0.0.jar",
+    "modId": "shutupmodelloader",
+    "version": "1.0.0"
+  },
+  "SilentLib-1.12.2-3.0.14+168.jar": {
+    "jarName": "SilentLib-1.12.2-3.0.14+168.jar",
+    "modId": "SilentLib",
+    "version": "3.0.14"
+  },
+  "simplecore-1.12.2-1.7.3.4.jar": {
+    "jarName": "simplecore-1.12.2-1.7.3.4.jar",
+    "modId": "simplecore",
+    "version": "1.7.3.4"
+  },
+  "simpleores-1.12.2-1.11.2.2.jar": {
+    "jarName": "simpleores-1.12.2-1.11.2.2.jar",
+    "modId": "simpleores",
+    "version": "1.11.2.2"
+  },
+  "simplyhotsprings-0.2.5.jar": {
+    "jarName": "simplyhotsprings-0.2.5.jar",
+    "modId": "simplyhotsprings",
+    "version": "0.2.5"
+  },
+  "Sledgehammer-1.12.2-2.0.26.jar": {
+    "jarName": "Sledgehammer-1.12.2-2.0.26.jar",
+    "modId": "sledgehammer",
+    "version": "1.12.2-2.0.26"
+  },
+  "SmoothFont-mc1.12.2-2.1.4.jar": {
+    "jarName": "SmoothFont-mc1.12.2-2.1.4.jar",
+    "modId": "smoothfont",
+    "version": "mc1.12.2-2.1.4"
+  },
+  "SoundFilters-0.12.1_for_1.12.jar": {
+    "jarName": "SoundFilters-0.12.1_for_1.12.jar",
+    "modId": "soundfilters",
+    "version": "0.12.1_for_1.12"
+  },
+  "soundreloader-1.2-1.12.2.jar": {
+    "jarName": "soundreloader-1.2-1.12.2.jar",
+    "modId": "soundreloader",
+    "version": "1.2-1.12.2"
+  },
+  "spiderstpo-1.0.4.jar": {
+    "jarName": "spiderstpo-1.0.4.jar",
+    "modId": "spiderstpo",
+    "version": "1.0.4"
+  },
+  "SRParasites-1.12.2v1.9.1.jar": {
+    "jarName": "SRParasites-1.12.2v1.9.1.jar",
+    "modId": "srparasites",
+    "version": "1.9.1"
+  },
+  "SRRevenants-1.12.2v1.0.2.jar": {
+    "jarName": "SRRevenants-1.12.2v1.0.2.jar",
+    "modId": "srrevenants",
+    "version": "1.0.1"
+  },
+  "StackUp-0.2.5.jar": {
+    "jarName": "StackUp-0.2.5.jar",
+    "modId": "stackup",
+    "version": "0.2.5"
+  },
+  "StellarCore-1.5.22.jar": {
+    "jarName": "StellarCore-1.5.22.jar",
+    "modId": "stellar_core",
+    "version": "1.5.22"
+  },
+  "StructureUtils-1.1.0.4.jar": {
+    "jarName": "StructureUtils-1.1.0.4.jar"
+  },
+  "StuffASockInIt-1.12.2-1.1.30.jar": {
+    "jarName": "StuffASockInIt-1.12.2-1.1.30.jar",
+    "modId": "sasit",
+    "version": "1.1.30"
+  },
+  "SuperHostileNightVision-1.0.0.jar": {
+    "jarName": "SuperHostileNightVision-1.0.0.jar",
+    "modId": "shnv",
+    "version": "1.0.0"
+  },
+  "synlib-4.0.jar": {
+    "jarName": "synlib-4.0.jar",
+    "modId": "synlib",
+    "version": "4.0"
+  },
+  "teamsmod-1.12.2-Rfinal-fixed.jar": {
+    "jarName": "teamsmod-1.12.2-Rfinal-fixed.jar",
+    "modId": "teamsmod",
+    "version": "1.12.2-Rfinal-fixed"
+  },
+  "The Beneath-1.12.2-1.7.1.jar": {
+    "jarName": "The Beneath-1.12.2-1.7.1.jar",
+    "modId": "beneath",
+    "version": "1.12.2-1.7.1"
+  },
+  "theimpossiblelibrary-1.12.2-0.3.0.jar": {
+    "jarName": "theimpossiblelibrary-1.12.2-0.3.0.jar",
+    "modId": "theimpossiblelibrary",
+    "version": "1.12.2-0.3.0"
+  },
+  "TimeIsUp-1.12-1.5.3.jar": {
+    "jarName": "TimeIsUp-1.12-1.5.3.jar",
+    "modId": "timeisup",
+    "version": "1.5.3"
+  },
+  "toolprogression-1.12.2-1.6.12.jar": {
+    "jarName": "toolprogression-1.12.2-1.6.12.jar",
+    "modId": "toolprogression",
+    "version": "1.12.2-1.6.12"
+  },
+  "TP+-1.12.2-1.0.1.1.jar": {
+    "jarName": "TP+-1.12.2-1.0.1.1.jar",
+    "modId": "tpp",
+    "version": "1.12.2-1.0.1.1"
+  },
+  "Triumph-1.12.2-3.19.2.jar": {
+    "jarName": "Triumph-1.12.2-3.19.2.jar",
+    "modId": "triumph",
+    "version": "3.19.2"
+  },
+  "UniversalTweaks-1.12.2-1.15.2.jar": {
+    "jarName": "UniversalTweaks-1.12.2-1.15.2.jar",
+    "modId": "universaltweaks",
+    "version": "1.15.2"
+  },
+  "vanillaanvilrepair-1.1.jar": {
+    "jarName": "vanillaanvilrepair-1.1.jar",
+    "modId": "vanillaanvilrepair",
+    "version": "1.1"
+  },
+  "VerticallyStackedDimensions-1.12.2-0.1.9.jar": {
+    "jarName": "VerticallyStackedDimensions-1.12.2-0.1.9.jar",
+    "modId": "dimstack",
+    "version": "0.1.9"
+  },
+  "vintagecam-0.2.0.jar": {
+    "jarName": "vintagecam-0.2.0.jar",
+    "modId": "vintagecam",
+    "version": "0.2.0"
+  },
+  "vintagefix-0.6.2.jar": {
+    "jarName": "vintagefix-0.6.2.jar",
+    "modId": "vintagefix",
+    "version": "0.6.2"
+  },
+  "walljump-1.12.2-1.3.2.jar": {
+    "jarName": "walljump-1.12.2-1.3.2.jar",
+    "modId": "walljump",
+    "version": "1.12.2-1.3.2"
+  },
+  "weakerspiderwebs_1.12.2-2.0.jar": {
+    "jarName": "weakerspiderwebs_1.12.2-2.0.jar",
+    "modId": "weakerspiderwebs",
+    "version": "2.0"
+  },
+  "weeping-angels-46.jar": {
+    "jarName": "weeping-angels-46.jar",
+    "modId": "weeping-angels",
+    "version": "1.12.2-45"
+  },
+  "Wither-Config-1.2.1.jar": {
+    "jarName": "Wither-Config-1.2.1.jar",
+    "modId": "witherconfig",
+    "version": "1.2.1"
+  },
+  "WorseHurtTimer-1.12.2-1.5.0.3.jar": {
+    "jarName": "WorseHurtTimer-1.12.2-1.5.0.3.jar",
+    "modId": "betterhurttimer",
+    "version": "1.12.2-1.5.0.3"
+  },
+  "wyrmsofnyrus-0.7.82.jar": {
+    "jarName": "wyrmsofnyrus-0.7.82.jar",
+    "modId": "wyrmsofnyrus",
+    "version": "0.7.81 BETA"
+  },
+  "zenrecipereloading-1.4.5.jar": {
+    "jarName": "zenrecipereloading-1.4.5.jar",
+    "modId": "zenrecipereloading",
+    "version": "1.4.5"
+  },
+  "zenutils-1.21.11.jar": {
+    "jarName": "zenutils-1.21.11.jar",
+    "modId": "zenutils",
+    "version": "1.21.11"
+  },
+  "AnimEmis_srparasites.zip (resourcepack)": {
+    "jarName": "AnimEmis_srparasites.zip (resourcepack)"
+  },
+  "AudioCraftV1.5.zip (resourcepack)": {
+    "jarName": "AudioCraftV1.5.zip (resourcepack)"
+  },
+  "BetterGhastRemastered[9].zip (resourcepack)": {
+    "jarName": "BetterGhastRemastered[9].zip (resourcepack)"
+  },
+  "Boss Bars+ 1.12.zip (resourcepack)": {
+    "jarName": "Boss Bars+ 1.12.zip (resourcepack)"
+  },
+  "Cine-Ghast.zip (resourcepack)": {
+    "jarName": "Cine-Ghast.zip (resourcepack)"
+  },
+  "EclecticTrove-1.12.2-1.0.1.zip (resourcepack)": {
+    "jarName": "EclecticTrove-1.12.2-1.0.1.zip (resourcepack)"
+  },
+  "Emis_Rlcraft.zip (resourcepack)": {
+    "jarName": "Emis_Rlcraft.zip (resourcepack)"
+  },
+  "Endermen_404.zip (resourcepack)": {
+    "jarName": "Endermen_404.zip (resourcepack)"
+  },
+  "Gray\u0027s Monster Overhaul v1.0 1.19-1.21.zip (resourcepack)": {
+    "jarName": "Gray\u0027s Monster Overhaul v1.0 1.19-1.21.zip (resourcepack)"
+  },
+  "LowOnFire_1.12.zip (resourcepack)": {
+    "jarName": "LowOnFire_1.12.zip (resourcepack)"
+  },
+  "Luminous1.12.2.zip (resourcepack)": {
+    "jarName": "Luminous1.12.2.zip (resourcepack)"
+  },
+  "NewDefault+v1.41[MC1.9-1.12.2].zip (resourcepack)": {
+    "jarName": "NewDefault+v1.41[MC1.9-1.12.2].zip (resourcepack)"
+  },
+  "RotN_Wither_v.3.0.zip (resourcepack)": {
+    "jarName": "RotN_Wither_v.3.0.zip (resourcepack)"
+  },
+  "SRP Emissives.zip (resourcepack)": {
+    "jarName": "SRP Emissives.zip (resourcepack)"
+  },
+  "TREPIDATION Resource Pack (resourcepack)": {
+    "jarName": "TREPIDATION Resource Pack (resourcepack)"
+  },
+  "TZP 1.12.2_2.6.zip (resourcepack)": {
+    "jarName": "TZP 1.12.2_2.6.zip (resourcepack)"
+  }
+}
