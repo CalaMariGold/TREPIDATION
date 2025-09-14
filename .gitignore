@@ -70,7 +70,6 @@ config/fancymenu/user_variables.db
 /mods/1.12.2
 mods/ProbeZS-1.18.7.jar
 config/probezs.cfg
-config/relauncher.json
 /cache
 /relauncher
 time.history
