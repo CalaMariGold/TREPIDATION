@@ -1,8 +1,8 @@
 {
-  "cleanroom-0.3.13-alpha-universal.jar (modloader)": {
-    "jarName": "cleanroom-0.3.13-alpha-universal.jar (modloader)",
+  "universal.jar (modloader)": {
+    "jarName": "universal.jar (modloader)",
     "modId": "forge",
-    "version": "cleanroom-0.3.13-alpha-universal.jar"
+    "version": "universal.jar"
   },
   "!!!CrashAssistant-forge-1.12.2-1.9.15.jar": {
     "jarName": "!!!CrashAssistant-forge-1.12.2-1.9.15.jar",
@@ -13,6 +13,11 @@
     "jarName": "!configanytime-3.0.jar",
     "modId": "configanytime",
     "version": "3.0"
+  },
+  "!improved-relauncher-0.3.0.jar": {
+    "jarName": "!improved-relauncher-0.3.0.jar",
+    "modId": "cleanroom-relauncher",
+    "version": "0.3.0"
   },
   "!mixinbooter-10.6.jar": {
     "jarName": "!mixinbooter-10.6.jar",
@@ -27,15 +32,10 @@
     "modId": "redcore",
     "version": "0.6"
   },
-  "++relauncher-0.3.12-beta.jar": {
-    "jarName": "++relauncher-0.3.12-beta.jar",
-    "modId": "relauncher",
-    "version": "0.3.12-beta"
-  },
-  "+Fugue-0.20.1.jar": {
-    "jarName": "+Fugue-0.20.1.jar",
+  "+Fugue-0.20.3.jar": {
+    "jarName": "+Fugue-0.20.3.jar",
     "modId": "fugue",
-    "version": "0.20.1"
+    "version": "0.20.3"
   },
   "1.12.Forge.RPG-HUD-3.8.3.jar": {
     "jarName": "1.12.Forge.RPG-HUD-3.8.3.jar",
@@ -254,10 +254,10 @@
     "modId": "corpsecomplex",
     "version": "1.12.2-1.0.12.0"
   },
-  "CraftTweaker2-1.12-4.1.20.705.jar": {
-    "jarName": "CraftTweaker2-1.12-4.1.20.705.jar",
+  "CraftTweaker2-1.12-4.1.20.709.jar": {
+    "jarName": "CraftTweaker2-1.12-4.1.20.709.jar",
     "modId": "crafttweaker",
-    "version": "1.12-4.1.20.705"
+    "version": "1.12-4.1.20.709"
   },
   "crafttweakerutils-0.7.jar": {
     "jarName": "crafttweakerutils-0.7.jar",
@@ -329,10 +329,10 @@
     "modId": "dropt",
     "version": "1.12.2-1.19.4"
   },
-  "Dynamic-Raw-Ores-1.12.2-1.0.4.jar": {
-    "jarName": "Dynamic-Raw-Ores-1.12.2-1.0.4.jar",
+  "Dynamic-Raw-Ores-1.12.2-1.0.4a.jar": {
+    "jarName": "Dynamic-Raw-Ores-1.12.2-1.0.4a.jar",
     "modId": "dynaores",
-    "version": "1.0.4"
+    "version": "1.0.4a"
   },
   "DynamicSurroundings-1.12.2-3.6.3.jar": {
     "jarName": "DynamicSurroundings-1.12.2-3.6.3.jar",
@@ -349,10 +349,10 @@
     "modId": "elenaidodge2",
     "version": "1.1.0"
   },
-  "endermodpacktweaks-0.5.10.jar": {
-    "jarName": "endermodpacktweaks-0.5.10.jar",
+  "endermodpacktweaks-0.5.11.jar": {
+    "jarName": "endermodpacktweaks-0.5.11.jar",
     "modId": "endermodpacktweaks",
-    "version": "0.5.10"
+    "version": "0.5.11"
   },
   "EnderSkills-1.12.2-1.16.1.4.jar": {
     "jarName": "EnderSkills-1.12.2-1.16.1.4.jar",
@@ -439,10 +439,10 @@
     "modId": "forgeendertech",
     "version": "1.12.2-4.5.6.1"
   },
-  "Forgelin-Continuous-2.2.0.0.jar": {
-    "jarName": "Forgelin-Continuous-2.2.0.0.jar",
+  "Forgelin-Continuous-2.2.20.0.jar": {
+    "jarName": "Forgelin-Continuous-2.2.20.0.jar",
     "modId": "forgelin_continuous",
-    "version": "2.1.0.0"
+    "version": "2.1.20.0"
   },
   "FpsReducer-mc1.12.2-1.20.jar": {
     "jarName": "FpsReducer-mc1.12.2-1.20.jar",
@@ -791,11 +791,6 @@
     "modId": "primitivemobs",
     "version": "1.2.3a"
   },
-  "ProbeZS-1.18.7.jar": {
-    "jarName": "ProbeZS-1.18.7.jar",
-    "modId": "probezs",
-    "version": "1.18.7"
-  },
   "ProportionalDestructionParticles-1.12.2-1.2.4.jar": {
     "jarName": "ProportionalDestructionParticles-1.12.2-1.2.4.jar",
     "modId": "pdp",
@@ -1037,10 +1032,10 @@
     "modId": "triumph",
     "version": "3.19.2"
   },
-  "UniversalTweaks-1.12.2-1.15.2.jar": {
-    "jarName": "UniversalTweaks-1.12.2-1.15.2.jar",
+  "UniversalTweaks-1.12.2-1.16.0.1.jar": {
+    "jarName": "UniversalTweaks-1.12.2-1.16.0.1.jar",
     "modId": "universaltweaks",
-    "version": "1.15.2"
+    "version": "1.16.0.1"
   },
   "vanillaanvilrepair-1.1.jar": {
     "jarName": "vanillaanvilrepair-1.1.jar",
@@ -1097,10 +1092,10 @@
     "modId": "zenrecipereloading",
     "version": "1.4.5"
   },
-  "zenutils-1.21.11.jar": {
-    "jarName": "zenutils-1.21.11.jar",
+  "zenutils-1.25.8.jar": {
+    "jarName": "zenutils-1.25.8.jar",
     "modId": "zenutils",
-    "version": "1.21.11"
+    "version": "1.25.8"
   },
   "AnimEmis_srparasites.zip (resourcepack)": {
     "jarName": "AnimEmis_srparasites.zip (resourcepack)"
