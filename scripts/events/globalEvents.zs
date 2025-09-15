@@ -91,6 +91,9 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
         // Set souls to 0 instead of 1. Because of this, we have to manually add soul levels on right click
         Commands.call("es_advancement @p level set 0", event.player, event.entity.world, true, true);
 
+        // Resistance on first time join only
+        Commands.call("effect @p resistance 10", event.player, event.entity.world, true, true);
+
         // For some reason, journal entries only unlock after an achievement is granted a few seconds after world start
         event.player.world.catenation()
         .run(function(world, context) {
@@ -113,6 +116,8 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
 events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
     if(!event.entity.world.isRemote()){
         event.player.give(<quark:soul_compass>.withTag({ench:[{id:71,lvl:1}]}));
+
+        Commands.call("effect @p resistance 5", event.player, event.entity.world, true, true);
     }
 });
 
