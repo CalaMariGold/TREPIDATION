@@ -4,8 +4,8 @@
     "oremeta": 0,
     "source": "quark:elder_prismarine",
     "srcmeta": 2,
-    "veins": 24,
-    "size": 32,
+    "veins": 20,
+    "size": 26,
     "miny": 10,
     "maxy": 246
   },
@@ -14,8 +14,8 @@
     "oremeta": 0,
     "source": "quark:elder_prismarine",
     "srcmeta": 2,
-    "veins": 2,
-    "size": 14,
+    "veins": 50,
+    "size": 3,
     "miny": 10,
     "maxy": 246
   }
