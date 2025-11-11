@@ -1,7 +1,7 @@
 mimicbutton:net.minecraft.client.gui.GuiGameOver:button_compatibility_id:mc_deathscreen_respawn_button
 sendmessage: /reroll all
+sendmessage: /fmvariable set timesup false false
+sendmessage: /effect @p minecraft:resistance 10 255
 sendmessage: /tp @a @p
 sendmessage: /setworldspawn
 sendmessage: /spawnpoint @a ~ ~ ~
-sendmessage: /fmvariable set timesup false false
-sendmessage: /effect @p minecraft:resistance 10 255

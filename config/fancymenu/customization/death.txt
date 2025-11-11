@@ -62,27 +62,6 @@ customization {
 customization {
   orientation = top-centered
   restartbackgroundanimations = true
-  delayappearanceseconds = 1.5
-  buttonaction = runscript;rerolldeathMP%btnaction_splitter_fm%
-  description = Resets entire world without having to make a new world.%n%SERVERS ONLY!
-  label = Reset Run (MP)
-  loopbackgroundanimations = true
-  fadein = true
-  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:36e80811-8ec4-4adf-813f-bb1fe4dba9591705784740663] = timesup:false
-  fadeinspeed = 1.0
-  x = -100
-  width = 99
-  action = addbutton
-  actionid = d3718b4b-fd9d-4fd3-8827-0a17f8ad3e811677090866197
-  y = 150
-  delayappearance = true
-  delayappearanceeverytime = true
-  height = 20
-}
-
-customization {
-  orientation = top-centered
-  restartbackgroundanimations = true
   delayappearanceseconds = 1.0
   buttonaction = runscript;continuerun%btnaction_splitter_fm%
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:44cd7438-106e-4eaf-bf93-a79a0775bc591705784685375] = timesup:false
@@ -126,13 +105,14 @@ customization {
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:28f43163-135f-43bb-9cd6-046ee9803c561705784757016] = timesup:false
   delayappearanceseconds = 1.5
   buttonaction = runscript;rerolldeath%btnaction_splitter_fm%
-  description = Resets entire world without having to make a new world.%n%Can't be undone!
-  label = Reset Run (SP)
+  description = Reset the run, no need to create a new world!%n%Allows you to apply what you've learned onto a new run.
+  label = ! Reset Run !
   loopbackgroundanimations = true
+  hoverlabel = ! Reset Run !
   fadein = true
   fadeinspeed = 1.0
-  x = 2
-  width = 99
+  x = -100
+  width = 201
   action = addbutton
   actionid = cb6b82b2-db72-4df8-b918-f5ee67e10d9a1679249886937
   y = 150

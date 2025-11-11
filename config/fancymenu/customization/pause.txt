@@ -31,31 +31,17 @@ customization {
 
 customization {
   orientation = top-centered
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
-  buttonaction = runscript;rerollcontinueMP%btnaction_splitter_fm%set_variable;timesup:false%btnaction_splitter_fm%
-  x = -102
-  width = 100
-  action = addbutton
-  actionid = be03df45-da9b-48bb-82a1-0a4295461af31677092123506
-  y = 260
-  description = Resets entire world without having to make a new world.%n%Can't be undone!%n%SERVERS ONLY!
-  label = Reset Run (MP)
-  height = 20
-}
-
-customization {
-  orientation = top-centered
-  loopbackgroundanimations = true
   restartbackgroundanimations = true
   buttonaction = runscript;rerollcontinue%btnaction_splitter_fm%set_variable;timesup:false%btnaction_splitter_fm%
-  x = 2
-  width = 100
+  description = Resets your run, no need to create a new world!%n%Allows you to apply what you've learned onto a new run.
+  label = ! Reset Run !
+  loopbackgroundanimations = true
+  hoverlabel = ! Reset Run !
+  x = -100
+  width = 200
   action = addbutton
   actionid = 17d8a50f-c355-4069-95ea-04aa2af1bf281679249539213
   y = 260
-  description = Resets entire world without having to make a new world.%n%Can't be undone!
-  label = Reset Run (SP)
   height = 20
 }
 
