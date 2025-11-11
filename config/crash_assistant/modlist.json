@@ -1,23 +1,18 @@
 {
-  "universal.jar (modloader)": {
-    "jarName": "universal.jar (modloader)",
+  "forge-1.12.2-14.23.5.2860.jar (modloader)": {
+    "jarName": "forge-1.12.2-14.23.5.2860.jar (modloader)",
     "modId": "forge",
-    "version": "universal.jar"
+    "version": "forge-1.12.2-14.23.5.2860.jar"
   },
-  "!!!CrashAssistant-forge-1.12.2-1.10.4.jar": {
-    "jarName": "!!!CrashAssistant-forge-1.12.2-1.10.4.jar",
+  "!!!CrashAssistant-forge-1.12.2-1.10.19.jar": {
+    "jarName": "!!!CrashAssistant-forge-1.12.2-1.10.19.jar",
     "modId": "crash_assistant",
-    "version": "1.10.4"
+    "version": "1.10.19"
   },
   "!configanytime-3.0.jar": {
     "jarName": "!configanytime-3.0.jar",
     "modId": "configanytime",
     "version": "3.0"
-  },
-  "!improved-relauncher-0.3.2.jar": {
-    "jarName": "!improved-relauncher-0.3.2.jar",
-    "modId": "improved-relauncher",
-    "version": "0.3.2"
   },
   "!mixinbooter-10.7.jar": {
     "jarName": "!mixinbooter-10.7.jar",
@@ -32,10 +27,10 @@
     "modId": "redcore",
     "version": "0.6"
   },
-  "+Fugue-0.20.4.jar": {
-    "jarName": "+Fugue-0.20.4.jar",
+  "+Fugue-0.21.0.jar": {
+    "jarName": "+Fugue-0.21.0.jar",
     "modId": "fugue",
-    "version": "0.20.4"
+    "version": "0.21.0"
   },
   "1.12.Forge.RPG-HUD-3.8.3.jar": {
     "jarName": "1.12.Forge.RPG-HUD-3.8.3.jar",
@@ -409,10 +404,10 @@
     "modId": "normalasm",
     "version": "5.28"
   },
-  "FermiumMixins-1.0.9.jar": {
-    "jarName": "FermiumMixins-1.0.9.jar",
+  "FermiumMixins-1.0.11.jar": {
+    "jarName": "FermiumMixins-1.0.11.jar",
     "modId": "fermiummixins",
-    "version": "1.0.9"
+    "version": "1.0.11"
   },
   "fireproofitems-1.0.jar": {
     "jarName": "fireproofitems-1.0.jar",
@@ -439,8 +434,8 @@
     "modId": "forgeendertech",
     "version": "1.12.2-4.5.6.1"
   },
-  "Forgelin-Continuous-2.2.20.0.jar": {
-    "jarName": "Forgelin-Continuous-2.2.20.0.jar",
+  "Forgelin-Continuous-2.2.21.0.jar": {
+    "jarName": "Forgelin-Continuous-2.2.21.0.jar",
     "modId": "forgelin_continuous",
     "version": "2.1.20.0"
   },
@@ -469,15 +464,15 @@
     "modId": "globalgamerules",
     "version": "2.2.7"
   },
-  "gnetum-1.2.6.jar": {
-    "jarName": "gnetum-1.2.6.jar",
+  "gnetum-1.3.2.jar": {
+    "jarName": "gnetum-1.3.2.jar",
     "modId": "gnetum",
-    "version": "1.2.6"
+    "version": "1.3.2"
   },
-  "groovyscript-1.2.5.jar": {
-    "jarName": "groovyscript-1.2.5.jar",
+  "groovyscript-1.3.1.jar": {
+    "jarName": "groovyscript-1.3.1.jar",
     "modId": "groovyscript",
-    "version": "1.2.5"
+    "version": "1.3.1"
   },
   "Grue-1.12.2-1.8.1.jar": {
     "jarName": "Grue-1.12.2-1.8.1.jar",
@@ -519,8 +514,8 @@
     "modId": "ichunutil",
     "version": "1.12.2-7.2.2"
   },
-  "ImmersiveCombat-7-29-2025.jar": {
-    "jarName": "ImmersiveCombat-7-29-2025.jar",
+  "ImmersiveCombat-10-10-25.jar": {
+    "jarName": "ImmersiveCombat-10-10-25.jar",
     "modId": "bettercombat",
     "version": "1.5.6"
   },
@@ -703,10 +698,10 @@
     "modId": "noisethreader",
     "version": "1.1.1"
   },
-  "Nothirium-1.12.2-0.4.7-beta.jar": {
-    "jarName": "Nothirium-1.12.2-0.4.7-beta.jar",
+  "Nothirium-1.12.2-0.4.8-beta.jar": {
+    "jarName": "Nothirium-1.12.2-0.4.8-beta.jar",
     "modId": "nothirium",
-    "version": "0.4.7-beta"
+    "version": "0.4.8-beta"
   },
   "NoWorldgen5You-1.12.2-1.0.6.jar": {
     "jarName": "NoWorldgen5You-1.12.2-1.0.6.jar",
