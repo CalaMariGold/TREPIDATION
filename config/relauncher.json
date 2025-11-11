@@ -3,9 +3,9 @@
 
 {
   // Cleanroom version to launch (auto-selected on first run)
-  "selectedVersion": "0.3.17-alpha",
+  "selectedVersion": "0.3.24-alpha",
   // Latest Cleanroom version seen by the relauncher (informational)
-  "latestVersion": "0.3.17-alpha",
+  "latestVersion": "0.3.24-alpha",
   // Preferred Java vendor: "adoptium" (Temurin) or "graalvm" (GraalVM Community JDK).
   // If chosen vendor is unavailable for your OS/arch/version, the relauncher falls back to Adoptium automatically.
   "javaVendor": "adoptium",
@@ -19,5 +19,5 @@
   // Optional absolute path to a Java executable. Leave null/empty to let the relauncher manage Java automatically.
   "javaPath": "",
   // Optional JVM arguments appended when launching Cleanroom.
-  "args": ""
+  "args": "-Xmx5096M -Xms256M"
 }
