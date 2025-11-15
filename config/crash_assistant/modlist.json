@@ -229,6 +229,11 @@
     "modId": "colouredtooltips",
     "version": "1.0.9"
   },
+  "CommandExtras-1.0.1.jar": {
+    "jarName": "CommandExtras-1.0.1.jar",
+    "modId": "commandextras",
+    "version": "1.0.1"
+  },
   "ContentTweaker-1.12.2-4.10.0.jar": {
     "jarName": "ContentTweaker-1.12.2-4.10.0.jar",
     "modId": "contenttweaker",
