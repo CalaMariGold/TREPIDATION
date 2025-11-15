@@ -92,16 +92,25 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
                     itemStack.mutable().shrink(1);
                 }
             } 
-            else {
-                if(isNull(event.player.data.clickedEchoOfBetrayal) || event.player.data.clickedEchoOfBetrayal == false){  
-                    event.player.sendChat("§o§cAs you stare into the eye of this artifact, it seems to draw you to an ancient stone of some kind—a stone where buried power might yet be unearthed.");
+        }  
+        
+    }
+});
+
+events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
+    if(!event.world.isRemote()){
+
+        val itemStack1 = event.item as IItemStack; 
+        if(!isNull(itemStack1)){
+            if (abberrant_mana.matches(itemStack1)) {  
+
+                    event.player.sendChat("§c§oAs you stare into the eye of this artifact, it seems to draw you to an §e§oancient infernal brick§c§o of some kind—a stone where buried power might yet be unearthed.");
                     Commands.call("effect @e[type=da:nether_pyre] glowing", event.player, event.world, true, true);
                     Commands.call("playsound enderskills:contaminate player @p", event.player, event.world, true, true);
                     event.player.update({clickedEchoOfBetrayal: true});
-                }
-            }
-        }  
-        
+                
+        }
+    }
     }
 });
 
