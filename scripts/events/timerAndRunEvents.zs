@@ -116,7 +116,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             server.commandManager.executeCommand(server, "effect @p wither 10 1");
             server.commandManager.executeCommand(server, "sanity add @p 100");
             Commands.call("playsound enderskills:animated_stone player " + event.player.name + " ~ ~ ~ 5.0", event.player, event.player.world, true, true);
-            event.player.sendChat("§o§cThe Veil's debt has been settled.");
+            event.player.sendChat("§c§oThe Veil's debt has been settled.");
             event.player.sendChat("§6Chrono Usurpation now permanently provides increased sanity and absorption.");
             server.commandManager.executeCommand(server, "gamestage silentadd @p used_chrono_absolution");
             event.item.mutable().shrink(1);
@@ -130,7 +130,7 @@ static chronoAnchor as IItemStack = <timeisup:timer_anchor>;
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
     if(!event.world.isRemote()){
         if((event.item.definition.id).matches(chronoAnchor.definition.id)) {
-            event.player.sendChat("§o§cYou awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.");
+            event.player.sendChat("§c§oYou awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.");
             Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.player.world, true, true);
         }  
     }
@@ -183,25 +183,25 @@ events.onCommand(function(event as crafttweaker.event.CommandEvent) {
                     Commands.call("advancement grant @p only triumph:advancements/journal_entries/chrono_anchor_entry", player, player.world, true, true);
                     server.commandManager.executeCommand(server, "gamestage silentadd @p unlocked_chrono_anchor");
                     Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", player, player.world, true, true);
-                    player.sendChat("§o§cYou awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.");
+                    player.sendChat("§c§oYou awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.");
                     Commands.call("playsound minecraft:ui.toast.in master @p", player, player.world, true, true);
                 }
 
                 // Chrono Usurpation uses
                 if(bonusCount == 1){
-                    player.sendChat("§o§cThe Veil whispers of debts unpaid. Your timer bears fresh scars from another's ambition.");
+                    player.sendChat("§c§oThe Veil whispers of debts unpaid. Your timer bears fresh scars from another's ambition.");
                     Commands.call("playsound minecraft:ui.toast.in master @p", player, player.world, true, true);
                 }
                 else if(bonusCount == 2){
-                    player.sendChat("§o§c" + bonusCount + " minutes torn from your flesh by hands unseen. It hungers for compounded interest.");
+                    player.sendChat("§c§o" + bonusCount + " minutes torn from your flesh by hands unseen. It hungers for compounded interest.");
                     Commands.call("playsound minecraft:ui.toast.in master @p", player, player.world, true, true);
                 }
                 else if(bonusCount == 3){
-                    player.sendChat("§o§cReality shudders as " + bonusCount + " minutes are excised from your timeline, another's triumph written in your blood.");
+                    player.sendChat("§c§oReality shudders as " + bonusCount + " minutes are excised from your timeline, another's triumph written in your blood.");
                     Commands.call("playsound minecraft:ui.toast.in master @p", player, player.world, true, true);
                 }
                 else if(bonusCount == 4 || bonusCount >= 6){
-                    player.sendChat("§o§cDebt must be paid. " + bonusCount + " minutes are torn from your flesh.");
+                    player.sendChat("§c§oDebt must be paid. " + bonusCount + " minutes are torn from your flesh.");
                     Commands.call("advancement grant @p only triumph:advancements/journal_entries/chrono_usurpation_entry", player, player.world, true, true);
                     server.commandManager.executeCommand(server, "gamestage silentadd @p unlocked_chrono_absolution");
                     Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", player, player.world, true, true);
@@ -212,7 +212,7 @@ events.onCommand(function(event as crafttweaker.event.CommandEvent) {
                     server.commandManager.executeCommand(server, "gamestage silentadd @p unlocked_chrono_absolution");
                     Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", player, player.world, true, true);
 
-                    player.sendChat("§o§cYou awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.");
+                    player.sendChat("§c§oYou awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.");
                 }
             })
             .start();
