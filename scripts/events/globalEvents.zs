@@ -102,7 +102,7 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
         .sleep(200)
         .then(function(world, context) {
             Commands.call("advancement grant @p only triumph:advancements/hidden/unlock_journal", event.player, event.entity.world, true, true);
-            event.player.sendChat("§o§cDisoriented, you awaken to find a journal attached to your belt. As you begin to write, you notice a scar on your left wrist.");
+            event.player.sendChat("§c§oDisoriented, you awaken to find a journal attached to your belt. As you begin to write, you notice a scar on your left wrist.");
             Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.entity.world, true, true);
         })
         .start();
@@ -229,7 +229,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
             })
             .sleep(500)
             .then(function(world, context) {
-                event.player.sendChat("§o§cYou feel a bone-deep chill settle behind your eyes; a dreadful feeling that grows with each passing moment in this realm.");
+                event.player.sendChat("§c§oYou feel a bone-deep chill settle behind your eyes; a dreadful feeling that grows with each passing moment in this realm.");
                 Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.player.world, true, true);
             })
             .start();

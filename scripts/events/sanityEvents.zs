@@ -50,7 +50,7 @@ EventManager.getInstance().onTimerTick(function(event as TickEvent) {
         }
         // Show message only once when entering the 5-minute threshold
         if(isNull(event.player.data.hasShownTimerWarning) || event.player.data.hasShownTimerWarning == false) {
-            event.player.sendChat("§o§4Your grip on reality weakens...");
+            event.player.sendChat("§4§oYour grip on reality weakens...");
             Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.world, true, true);
             event.player.update({hasShownTimerWarning: true});
         }
