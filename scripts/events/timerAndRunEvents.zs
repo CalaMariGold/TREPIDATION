@@ -148,6 +148,7 @@ events.onCommand(function(event as crafttweaker.event.CommandEvent) {
         if (sender instanceof IPlayer) {
             val player as IPlayer = sender;
 
+            Commands.call("fmvariable set timesup false false", player, player.world, true, true);
 
             // Reset NON-PERSISTANT player data between runs 
             if(!isNull(player)){
