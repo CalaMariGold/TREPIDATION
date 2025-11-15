@@ -1,6 +1,6 @@
 mimicbutton:net.minecraft.client.gui.GuiGameOver:button_compatibility_id:mc_deathscreen_respawn_button
-sendmessage: /reroll all
-sendmessage: /effect @p minecraft:resistance 10 255
-sendmessage: /tp @a @p
-sendmessage: /setworldspawn
-sendmessage: /spawnpoint @a ~ ~ ~
+sendmessage: /commanddelay 10 @p ~ ~ ~ reroll all
+sendmessage: /commanddelay 15 @p ~ ~ ~ effect @p minecraft:resistance 10 255
+sendmessage: /commanddelay 15 @p ~ ~ ~ tp @a @p
+sendmessage: /commanddelay 15 @p ~ ~ ~ setworldspawn
+sendmessage: /commanddelay 15 @p ~ ~ ~ spawnpoint @a ~ ~ ~
