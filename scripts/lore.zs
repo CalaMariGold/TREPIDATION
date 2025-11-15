@@ -109,10 +109,10 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <da:ambition_flame>.removeTooltip("§cUsed to light the floating obelisk in the dungeon");
 <da:ambition_sword:*>.addTooltip("§oThis blade carries not rage, but the weight of what could not be saved");
 <da:ambition_sword:*>.addTooltip("§3Right-click to launch an AOE attack around you");
-<da:ambition_flame>.addTooltip("§oTouch it, and remember what even time could not erase.");
+<da:ambition_flame>.addTooltip("§oTouch it, and remember what Ashen memories could not be erased with time.");
 
 <da:abberrant_eye>.displayName = "§fEcho of Betrayal";
-<da:abberrant_eye>.addTooltip("§oPress it to an ancient stone, and the past will ignite once more");
+<da:abberrant_eye>.addTooltip("§oPress it to an §e§oancient brick§7§o, and the past will ignite once more.");
 
 
 <da:flame_helmet:*>.removeTooltip("Full set gives Strength 1, Fire Resistance 1 and boosts AOE range by the Sword of Ambition");
