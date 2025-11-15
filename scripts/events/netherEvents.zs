@@ -117,6 +117,17 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
 });
 
 
+events.onPlayerAdvancement(function(event as crafttweaker.event.PlayerAdvancementEvent){
+    if(!event.entity.world.isRemote()){
+        if(event.id == "triumph:advancements/hidden/wake_of_fire"){
+            event.player.sendChat("§c§oAs you grip the artifact, visions rapidly surge your mind... a circle of  hooded figures, a tear in the air, shadows writhing, eyes open in the dark. In the background, another, much taller figure stands still, radiating a cold, bitter dissatisfaction. You feel the artifact pulling you towards a §e§odark obelisk§c§o nearby.");
+            Commands.call("playsound enderskills:animated_stone player @p ~ ~ ~ 2.0 1.5", event.player, event.entity.world, true, true);
+            Commands.call("effect @e[type=da:nether_pyre] glowing", event.player, event.entity.world, true, true);
+        }
+    }
+});
+
+
 
 
 static veilstriumPick as IItemStack = <nethercraft:neridium_pickaxe:*>;
