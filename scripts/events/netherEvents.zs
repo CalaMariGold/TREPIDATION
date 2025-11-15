@@ -87,7 +87,7 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
 
                 // clicked stone, but player did not kill the oracle, so give hint
                 else {
-                    event.player.sendChat("§c§oThe artifact pulses weakly against the Infernal brick and dissipates. You sense an ancient power lock secrets behind trial and judgement.");
+                    event.player.sendChat("§c§oThe artifact pulses weakly against the Infernal brick and dissipates. You sense an Ashen power lock secrets behind trial and judgement.");
                     Commands.call("playsound enderskills:syphon player @p ~ ~ ~ 100 0.6", event.player, event.world, true, true);
                     itemStack.mutable().shrink(1);
                 }
@@ -106,7 +106,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             // if player clicks echo of betrayal (not on ancient infernal brick), give hint
             if (abberrant_mana.matches(itemStack1)) {  
                     if(isNull(event.player.data.clickedEchoOfBetrayal) || event.player.data.clickedEchoOfBetrayal == false){
-                    event.player.sendChat("§c§oAs you stare into the eye of this artifact, it seems to draw you to an §e§oancient infernal brick§c§o of some kind—a stone where buried power might yet be unearthed.");
+                    event.player.sendChat("§c§oAs you stare into the eye of this artifact, it seems to draw you to an §e§oancient Infernal brick§c§o of some kind—a stone where buried power might yet be unearthed.");
                     Commands.call("effect @e[type=da:nether_pyre] glowing", event.player, event.world, true, true);
                     Commands.call("playsound enderskills:contaminate player @p", event.player, event.world, true, true);
                     event.player.update({clickedEchoOfBetrayal: true});
