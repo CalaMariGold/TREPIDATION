@@ -331,7 +331,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                     Commands.call("playsound minecraft:item.totem.use player @p", event.player, event.world, true, true);
                     Commands.call("playsound dsurround:wind player @p", event.player, event.world, true, true);
                     Commands.call("pillar-spawn deletebarrier ~ 3 ~", event.player, event.world, true, true);
-                    Commands.call("effect @a potioncore:launch 300", event.player, event.world, true, true);
+                    Commands.call("effect @a potioncore:launch 500", event.player, event.world, true, true);
                     itemStack1.mutable().shrink(1);
                 }
                 else
