@@ -2,6 +2,8 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.player.IPlayer;
 import crafttweaker.potions.IPotionEffect;
+import mods.contenttweaker.Commands;
+
 
 // Define the items that should cause burning/damage when held
 // Replace these with your actual items
@@ -29,3 +31,26 @@ events.onEntityLivingUpdate(function(event as crafttweaker.event.EntityLivingUpd
         }
     }
 }); 
+
+
+
+// Cleansed Veilstrium Ingot
+// Right click heat sand with veilstrium ingot, turns heat sand into soul sand and veilstrium ingot turns into cleansed veilstrium ingot
+static veilstrium_ingot as IItemStack = <nethercraft:neridium_ingot>;
+events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteractBlockEvent){
+    if(!event.world.isRemote()){
+        val itemStack = event.item as IItemStack;     
+        if ((itemStack.definition.id).matches(veilstrium_ingot.definition.id)) {  
+            if(event.block.displayName == "Heat Sand"){
+                
+                Commands.call("setblock " + event.x + " " + event.y + " " + event.z + " minecraft:soul_sand", event.player, event.entity.world, true, true);
+                Commands.call("give @p contenttweaker:cleansed_veilstrium_ingot", event.player, event.entity.world, true, true);
+
+                Commands.call("playsound minecraft:block.soul_sand.place player @p ~ ~ ~ 1.0 1.0 1.0", event.player, event.entity.world, true, true);
+                Commands.call("playsound enderskills:syphon player @p ~ ~ ~ 100 0.6", event.player, event.entity.world, true, true);
+
+                itemStack.mutable().shrink(1);
+            } 
+        }
+    }
+});

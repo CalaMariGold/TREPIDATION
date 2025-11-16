@@ -24,3 +24,5 @@ trepidation.register();
 val chrono_absolution = mods.contenttweaker.VanillaFactory.createItem("chrono_absolution");
 chrono_absolution.register();
 
+val cleansed_veilstrium_ingot = mods.contenttweaker.VanillaFactory.createItem("cleansed_veilstrium_ingot");
+cleansed_veilstrium_ingot.register();

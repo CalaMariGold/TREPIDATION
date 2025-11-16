@@ -155,8 +155,9 @@ events.onPlayerLeftClickBlock(function(event as crafttweaker.event.PlayerLeftCli
 
 events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeathEvent){
     if(!event.entity.world.isRemote()){
-        if(event.entity.definition.id == <entity:da:flame_knight>.id)
-        {
+
+        // Killed Ashen Oracle
+        if(event.entity.definition.id == <entity:da:flame_knight>.id) {
             server.commandManager.executeCommand(server, "gamestage silentadd @a killedOracle");
 
             EventManager.getInstance().onTimerTick(function(event as TickEvent){
@@ -190,8 +191,9 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                 }
             });
         }
-        if(event.entity.definition.id == <entity:minecraft:wither>.id)
-        {
+
+        // Killed Wither
+        if(event.entity.definition.id == <entity:minecraft:wither>.id) {
     
             server.commandManager.executeCommand(server, "gamestage silentadd @a killedWither");
 

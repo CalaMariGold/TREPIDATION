@@ -7,6 +7,13 @@ import mods.jei.JEI;
 import crafttweaker.enchantments.IEnchantmentDefinition;
 import crafttweaker.data.IData;
 
+// gamestaged recipes
+mods.recipestages.Recipes.addShaped("soul_anchor", "unlocked_chrono_anchor", <contenttweaker:soul_anchor>,[
+    [<quark:black_ash>, <ore:stickWood>, null],
+    [<ore:stickWood>, <contenttweaker:cleansed_veilstrium_ingot>, <ore:stickWood>],
+    [null, <ore:stickWood>, null]]
+);
+
 
 // dyna ores
 furnace.remove(<nethercraft:pyridium_ingot>, <nethercraft:pyridium_ore>);
@@ -257,7 +264,7 @@ recipes.addShapedMirrored("infernal_fortress_scepter", <contenttweaker:infernal_
 
 recipes.addShaped("vitality_orb", <contenttweaker:vitality_orb>,
 [[<nethercraft:foulite_dust>,<nethercraft:foulite_dust>,<nethercraft:foulite_dust>],
-[<nethercraft:foulite_dust>,<nethercraft:neridium_ingot>,<nethercraft:foulite_dust>],
+[<nethercraft:foulite_dust>,<contenttweaker:cleansed_veilstrium_ingot>,<nethercraft:foulite_dust>],
 [<nethercraft:foulite_dust>,<nethercraft:foulite_dust>,<nethercraft:foulite_dust>]
 ]);
 

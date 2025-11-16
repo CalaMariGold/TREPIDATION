@@ -294,6 +294,11 @@
         "remove": "quark:black_ash"
     },
     {
+        "mob": "minecraft:wither_skeleton",
+        "gamestage": "unlocked_chrono_anchor",
+        "item": "quark:black_ash"
+    },
+    {
         "mob":"nethercraft:camouflage_spider",
         "player": true,
         "item": "minecraft:string",

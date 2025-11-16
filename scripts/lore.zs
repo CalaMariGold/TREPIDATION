@@ -76,6 +76,12 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <timeisup:timer_anchor:*>.addTooltip("§3Does not drop on death");
 <timeisup:timer_anchor:*>.addTooltip("§oTime's scales care not which pan holds ash or oblivion.");
 
+// Cleansed Veilstrium Ingot
+<contenttweaker:cleansed_veilstrium_ingot>.displayName = "§cCleansed Veilstrium Ingot";
+<contenttweaker:cleansed_veilstrium_ingot>.addTooltip("§oPurified of corrupted energies, Veilstrium can now sing with untainted clarity.");
+<contenttweaker:cleansed_veilstrium_ingot>.addTooltip("§3Right-click Heat Sand with a Veilstrium Ingot to obtain.");
+
+
 
 
 // Ashen and Infernals
