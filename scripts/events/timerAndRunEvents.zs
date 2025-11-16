@@ -175,22 +175,28 @@ events.onCommand(function(event as crafttweaker.event.CommandEvent) {
             })
             .sleep(100)
             .then(function(world, context) {
-                Commands.call("advancement grant @p only triumph:advancements/hidden/unlock_journal", player, player.world, true, true);
                 server.commandManager.executeCommand(server, "timer @p set " + newTimerValue);
 
                 // Chrono Anchor
-                // Unlocks after first failed run and no timer bonuses used
-                if(player.data.failedRuns >= 1 && bonusCount <= 0){
-                    Commands.call("advancement grant @p only triumph:advancements/journal_entries/chrono_anchor_entry", player, player.world, true, true);
-                    server.commandManager.executeCommand(server, "gamestage silentadd @p unlocked_chrono_anchor");
-                    Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", player, player.world, true, true);
-                    player.sendChat("§c§oYou awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.");
-                    Commands.call("playsound minecraft:ui.toast.in master @p", player, player.world, true, true);
+                // Unlocks after first failed run
+                if(player.data.failedRuns >= 1){
+                    if(!player.hasGameStage("unlocked_chrono_anchor")){
+                        server.commandManager.executeCommand(server, "gamestage silentadd @p unlocked_chrono_anchor");
+                        Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", player, player.world, true, true);
+                        player.sendChat("§c§oYou awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.");
+                        player.sendChat("§3Soul Anchor can now be crafted.");
+                        player.sendChat("§3Chrono Anchor can now be crafted.");
+                        Commands.call("playsound minecraft:ui.toast.in master @p", player, player.world, true, true);
+                        Commands.call("advancement grant @p only triumph:advancements/journal_entries/chrono_anchor_entry", player, player.world, true, true);
+                    }
                 }
+
+                // Do more things after more failed runs!!
+                // 
 
                 // Chrono Usurpation uses
                 if(bonusCount == 1){
-                    player.sendChat("§c§oThe Veil whispers of debts unpaid. Your timer bears fresh scars from another's ambition.");
+                    player.sendChat("§c§oThe Veil whispers of debts unpaid. Your timer bears fresh scars from another's ambition. " + bonusCount + " minute is torn from your flesh.");
                     Commands.call("playsound minecraft:ui.toast.in master @p", player, player.world, true, true);
                 }
                 else if(bonusCount == 2){
@@ -198,26 +204,30 @@ events.onCommand(function(event as crafttweaker.event.CommandEvent) {
                     Commands.call("playsound minecraft:ui.toast.in master @p", player, player.world, true, true);
                 }
                 else if(bonusCount == 3){
-                    player.sendChat("§c§oReality shudders as " + bonusCount + " minutes are excised from your timeline, another's triumph written in your blood.");
+                    player.sendChat("§c§o" + bonusCount + " minutes are excised from your timeline, another's triumph written in your blood.");
                     Commands.call("playsound minecraft:ui.toast.in master @p", player, player.world, true, true);
                 }
                 else if(bonusCount == 4 || bonusCount >= 6){
                     player.sendChat("§c§oDebt must be paid. " + bonusCount + " minutes are torn from your flesh.");
-                    Commands.call("advancement grant @p only triumph:advancements/journal_entries/chrono_usurpation_entry", player, player.world, true, true);
-                    server.commandManager.executeCommand(server, "gamestage silentadd @p unlocked_chrono_absolution");
-                    Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", player, player.world, true, true);
+                    Commands.call("playsound minecraft:ui.toast.in master @p", player, player.world, true, true);
                 }
                 // Unlock Chrono Absolution
-                else if(bonusCount == 5){
-                    Commands.call("advancement grant @p only triumph:advancements/journal_entries/chrono_usurpation_entry", player, player.world, true, true);
-                    server.commandManager.executeCommand(server, "gamestage silentadd @p unlocked_chrono_absolution");
-                    Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", player, player.world, true, true);
+                else if(bonusCount >= 5){
+                    if(!player.hasGameStage("unlocked_chrono_absolution")){ 
+                        server.commandManager.executeCommand(server, "gamestage silentadd @p unlocked_chrono_absolution");
+                        Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", player, player.world, true, true);
 
-                    player.sendChat("§c§oYou awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.");
+                        player.sendChat("§3Chrono Absolution can now be crafted.");
+                        player.sendChat("§c§oYou awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.");
+                        Commands.call("advancement grant @p only triumph:advancements/journal_entries/chrono_usurpation_entry", player, player.world, true, true);
+                    }
                 }
             })
             .start();
             
+        }
+        else {
+            server.commandManager.executeCommand(server, "say Error: Command sender is not a player. Please report this to the TREPIDATION GitHub. Describe recent events leading up to this.");
         }
     }
   }
