@@ -75,6 +75,7 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <timeisup:timer_anchor:*>.addTooltip("§3Half of the time past since binding will be recovered");
 <timeisup:timer_anchor:*>.addTooltip("§3Does not drop on death");
 <timeisup:timer_anchor:*>.addTooltip("§oTime's scales care not which pan holds ash or oblivion");
+<timeisup:timer_anchor:*>.addTooltip("§oTime's scales care not which pan holds ash or oblivion.");
 
 
 
@@ -103,7 +104,7 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <da:ambition_flame>.displayName = "§cIn the Wake of Fire, We Were Forsaken";
 <da:ambition_sword:*>.removeTooltip("May it spark you forward! Right clicking launches an AOE attack, and sword is resistant to fire");
 <da:ambition_flame>.removeTooltip("§cUsed to light the floating obelisk in the dungeon");
-<da:ambition_sword:*>.addTooltip("§oThis blade carries not rage, but the weight of what could not be saved");
+<da:ambition_sword:*>.addTooltip("§oThis blade carries not rage, but the weight of what could not be saved.");
 <da:ambition_sword:*>.addTooltip("§3Right-click to launch an AOE attack around you");
 <da:ambition_flame>.addTooltip("§oTouch it, and remember what Ashen memories could not be erased with time.");
 
@@ -128,15 +129,15 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <contenttweaker:deviled_egg_sandwich>.addTooltip("§3Gives Fire Resistance and Strength for 30s");
 
 <nethercraft:slime_eggs>.displayName = "Magma Eggs";
-<nethercraft:slime_eggs>.addTooltip("§oCan be thrown or cooked");
-<nethercraft:devil_bread>.addTooltip("§oAn Ashen delicacy, pairs well with Magma Eggs");
+<nethercraft:slime_eggs>.addTooltip("§3Can be thrown or cooked");
+<nethercraft:devil_bread>.addTooltip("§oAn Ashen delicacy, pairs well with Magma Eggs.");
 <nethercraft:devil_bread>.addTooltip("§3Gives Strength for 10s");
 <nethercraft:glow_apple>.displayName = "Glow Worm";
 
 <contenttweaker:bug_meat>.displayName = "Bug Meat";
-<contenttweaker:bug_meat>.addTooltip("§oA pulsating lump of slimy chitin and twitching legs");
+<contenttweaker:bug_meat>.addTooltip("§oA pulsating lump of slimy chitin and twitching legs.");
 <contenttweaker:cooked_bug_meat>.displayName = "Cooked Bug Meat";
-<contenttweaker:cooked_bug_meat>.addTooltip("§oAlthough cooked, it doesn't taste much better");
+<contenttweaker:cooked_bug_meat>.addTooltip("§oAlthough cooked, it doesn't taste much better.");
 
 // Skills
 <enderskills:token>.displayName = "§cTrace of Death";
@@ -154,11 +155,9 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <nethercraft:pyridium_sword>.displayName = "Infernium Sword";
 
 <contenttweaker:wither_infernium>.displayName = "§cWithering Infernium Ingot";
-<contenttweaker:wither_infernium>.addTooltip("§oA destructive alloy, impossible to craft by mortals. When held, your hands slowly begin to dry and crumble");
+<contenttweaker:wither_infernium>.addTooltip("§oA destructive alloy, impossible to craft by mortals. When held, your hands slowly begin to dry and crumble.");
 <nethercraft:pyridium_pickaxe:*>.displayName = "§cWithering Infernium Pickaxe";
-<nethercraft:pyridium_pickaxe:*>.addTooltip("§oA tool imbued with the power to wither away an otherwise impervious barrier");
-<nethercraft:pyridium_pickaxe:*>.addTooltip("§3When mining the purple barrier, be sure to TAP left click to break it. Don't hold it down.");
-
+<nethercraft:pyridium_pickaxe:*>.addTooltip("§oA tool imbued with the power to wither away an otherwise impervious barrier.");
 
 
 <nethercraft:pyridium_axe>.displayName = "Infernium Axe";
