@@ -8,45 +8,45 @@ import mods.jei.JEI;
 
 // Lore entries
 <contenttweaker:dreadswine_entry>.displayName = "§cElara's Journal - Entry #7";
-<contenttweaker:dreadswine_entry>.addTooltip("§oA tattered page that was torn from a journal");
+<contenttweaker:dreadswine_entry>.addTooltip("§oA tattered page that was torn from a journal.");
 <contenttweaker:dreadswine_entry>.addTooltip("§3Right-click to add to your Journal");
 <contenttweaker:foulite_dust_entry>.displayName = "§cElara's Journal - Entry #9";
-<contenttweaker:foulite_dust_entry>.addTooltip("§oA tattered page that was torn from a journal");
+<contenttweaker:foulite_dust_entry>.addTooltip("§oA tattered page that was torn from a journal.");
 <contenttweaker:foulite_dust_entry>.addTooltip("§3Right-click to add to your Journal");
 <contenttweaker:nether_wraith_entry>.displayName = "§cElara's Journal - Entry #5";
-<contenttweaker:nether_wraith_entry>.addTooltip("§oA tattered page that was torn from a journal");
+<contenttweaker:nether_wraith_entry>.addTooltip("§oA tattered page that was torn from a journal.");
 <contenttweaker:nether_wraith_entry>.addTooltip("§3Right-click to add to your Journal");
 <contenttweaker:veilstrium_entry>.displayName = "§cElara's Journal - Entry #11";
-<contenttweaker:veilstrium_entry>.addTooltip("§oA tattered page that was torn from a journal");
+<contenttweaker:veilstrium_entry>.addTooltip("§oA tattered page that was torn from a journal.");
 <contenttweaker:veilstrium_entry>.addTooltip("§3Right-click to add to your Journal");
 <contenttweaker:infernium_entry>.displayName = "§cElara's Journal - Entry #15";
-<contenttweaker:infernium_entry>.addTooltip("§oA tattered page that was torn from a journal");
+<contenttweaker:infernium_entry>.addTooltip("§oA tattered page that was torn from a journal.");
 <contenttweaker:infernium_entry>.addTooltip("§3Right-click to add to your Journal");
 <contenttweaker:glowood_entry>.displayName = "§cElara's Journal - Entry #2";
-<contenttweaker:glowood_entry>.addTooltip("§oA tattered page that was torn from a journal");
+<contenttweaker:glowood_entry>.addTooltip("§oA tattered page that was torn from a journal.");
 <contenttweaker:glowood_entry>.addTooltip("§3Right-click to add to your Journal");
 <contenttweaker:ashen_oracle_entry>.displayName = "§cElara's Journal - Entry #24";
-<contenttweaker:ashen_oracle_entry>.addTooltip("§oA tattered page that was torn from a journal");
+<contenttweaker:ashen_oracle_entry>.addTooltip("§oA tattered page that was torn from a journal.");
 <contenttweaker:ashen_oracle_entry>.addTooltip("§3Right-click to add to your Journal");
 <contenttweaker:ashen_revenant_entry>.displayName = "§cElara's Journal - Entry #22";
-<contenttweaker:ashen_revenant_entry>.addTooltip("§oA tattered page that was torn from a journal");
+<contenttweaker:ashen_revenant_entry>.addTooltip("§oA tattered page that was torn from a journal.");
 <contenttweaker:ashen_revenant_entry>.addTooltip("§3Right-click to add to your Journal");
 <contenttweaker:sanity_entry>.displayName = "§cElara's Journal - Entry #???";
-<contenttweaker:sanity_entry>.addTooltip("§oA tattered page that was torn from a journal");
+<contenttweaker:sanity_entry>.addTooltip("§oA tattered page that was torn from a journal.");
 <contenttweaker:sanity_entry>.addTooltip("§3Right-click to add to your Journal");
 
 <corpsecomplex:scroll>.displayName = "§cDreadstone Tablet";
 <corpsecomplex:scroll>.addTooltip("§3Use to teleport to your last death location");
 <corpsecomplex:scroll>.removeTooltip("Return to death location");
 <contenttweaker:dreadstone_fragment>.displayName = "Dreadstone Fragment";
-<contenttweaker:dreadstone_fragment>.addTooltip("§oWhen touched, the fragment makes a subtle vibration in sync with the pulse of your heartbeat");
+<contenttweaker:dreadstone_fragment>.addTooltip("§oWhen touched, the fragment makes a subtle vibration in sync with the pulse of your heartbeat.");
 
 
 <contenttweaker:soul_anchor>.displayName = "§cSoul Anchor";
 <contenttweaker:soul_anchor>.addTooltip("§3Use to set your spawn point to where you are standing");
 <contenttweaker:soul_anchor>.addTooltip("§3Does not drop on death");
 <contenttweaker:soul_anchor>.addTooltip("§3SINGLE USE");
-<contenttweaker:soul_anchor>.addTooltip("§oWhen brought to your ear, you can hear faint unsettling laughter");
+<contenttweaker:soul_anchor>.addTooltip("§oWhen brought to your ear, you can hear faint unsettling laughter.");
 JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with ancient blood, the Soul Anchor hums in the dark, its eerie blue aura a beacon to the lost. Use it, and find yourself forever tethered to its haunting pull. A new life granted, but at what cost? For each return bears a toll on the soul's uncharted map.");
 
 
@@ -55,7 +55,7 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <timeisup:timer_bonus>.removeTooltip("Add 1:00 to your timer");
 <timeisup:timer_bonus>.removeTooltip("Cooldown : 1:30");
 <timeisup:timer_bonus>.addTooltip("§3+1:00 to cycle timer");
-<timeisup:timer_bonus>.addTooltip("§oDebt will be paid, but not by you");
+<timeisup:timer_bonus>.addTooltip("§oDebt will be paid, but not by you.");
 
 // Unstable Sand
 <contenttweaker:unstable_sand>.displayName = "Unstable Sand";
@@ -64,7 +64,7 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 // Chrono Absolution
 <contenttweaker:chrono_absolution>.displayName = "§cChrono Absolution";
 <contenttweaker:chrono_absolution>.addTooltip("§3Reset all stolen time debt");
-<contenttweaker:chrono_absolution>.addTooltip("§oMercy sheathed in thorns, debts forgiven still leave scars");
+<contenttweaker:chrono_absolution>.addTooltip("§oMercy sheathed in thorns, debts forgiven still leave scars.");
 
 // Chrono Anchor
 <timeisup:timer_anchor:*>.displayName = "§cChrono Anchor";
@@ -74,7 +74,6 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <timeisup:timer_anchor:*>.addTooltip("§3Shift-right click to bind your soul to the current time and location");
 <timeisup:timer_anchor:*>.addTooltip("§3Half of the time past since binding will be recovered");
 <timeisup:timer_anchor:*>.addTooltip("§3Does not drop on death");
-<timeisup:timer_anchor:*>.addTooltip("§oTime's scales care not which pan holds ash or oblivion");
 <timeisup:timer_anchor:*>.addTooltip("§oTime's scales care not which pan holds ash or oblivion.");
 
 
@@ -191,11 +190,11 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <nethercraft:neridium_boots>.displayName = "Veilstrium Boots";
 
 <contenttweaker:riftbreaker_crystal>.displayName = "§cRiftbreaker Crystal";
-<contenttweaker:riftbreaker_crystal>.addTooltip("§oAn explosive gem that obliterates everything in its vertical path and catapults all allies skyward");
+<contenttweaker:riftbreaker_crystal>.addTooltip("§oAn explosive gem that obliterates everything in its vertical path and catapults all allies skyward.");
 <contenttweaker:riftbreaker_crystal>.addTooltip("§3Only usable in the Nether");
 
 <contenttweaker:infernal_fortress_scepter>.displayName = "§cScepter of Infernal Conjuring";
-<contenttweaker:infernal_fortress_scepter>.addTooltip("§oA formidable artifact that holds the power to materialize a gargantuan fortress, shrouded in whispers of an ancient and fearsome presence");
+<contenttweaker:infernal_fortress_scepter>.addTooltip("§oA formidable artifact that holds the power to materialize a gargantuan fortress, shrouded in whispers of an ancient and fearsome presence.");
 
 
 <simpleores:tin_pickaxe:*>.displayName = "Quartz Pickaxe";
@@ -213,30 +212,30 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 
 
 <mysticstaffs:fire_staff:*>.displayName = "§cStaff of Infernal";
-<mysticstaffs:fire_staff:*>.addTooltip("§oA potent weapon that engulfs nearby enemies in a searing inferno");
+<mysticstaffs:fire_staff:*>.addTooltip("§oA potent weapon that engulfs nearby enemies in a searing inferno.");
 <contenttweaker:vitality_orb>.displayName = "Orb of Veilheart";
 
 <mysticstaffs:heal_staff:*>.displayName = "§cStaff of Veilheart";
-<mysticstaffs:heal_staff:*>.addTooltip("§oA benevolent staff that rejuvenates the soul and body of allies");
+<mysticstaffs:heal_staff:*>.addTooltip("§oA benevolent staff that rejuvenates the soul and body of allies.");
 <mysticstaffs:heal_staff:*>.addTooltip("§3Uses 2 dash feathers");
 
 <nethercraft:ghast_bones>.displayName = "Nether Wraith Bones";
 <nethercraft:ghast_rod>.displayName = "Nether Wraith Rod";
 <nethercraft:ghast_marrow>.displayName = "Nether Wraith Marrow";
 <nethercraft:ghast_bomb>.displayName = "Nether Wraith Bomb";
-<nethercraft:ghast_bomb>.addTooltip("§oA volatile explosive, awaiting ignition by a Quartz Lighter");
-<nethercraft:ghast_marrow>.addTooltip("§oAn unstable substance, harboring explosive potential");
-<nethercraft:ghast_bones>.addTooltip("§oOccasionally harvested from bone blocks floating in the searing lava oceans");
+<nethercraft:ghast_bomb>.addTooltip("§oA volatile explosive, awaiting ignition by a Quartz Lighter.");
+<nethercraft:ghast_marrow>.addTooltip("§oAn unstable substance, harboring explosive potential.");
+<nethercraft:ghast_bones>.addTooltip("§oOccasionally harvested from bone blocks floating in the searing lava oceans.");
 
 
 // The Mind's Abyss
 <quark:elder_prismarine:2>.displayName = "Deep Stone";
 
 // Misc
-<quark:soul_compass>.addTooltip("§oA guiding relic, directing you to your most recent demise");
-<minecraft:fire_charge>.addTooltip("§oA blazing throwable, detonating with fiery force upon impact");
+<quark:soul_compass>.addTooltip("§oA guiding relic, directing you to your most recent demise.");
+<minecraft:fire_charge>.addTooltip("§oA blazing throwable, detonating with fiery force upon impact.");
 <scalinghealth:heartcontainer>.removeTooltip("Increases maximum health");
-<scalinghealth:heartcontainer>.addTooltip("§oA precious relic of vitality, bestowing its user with a permanently increased life force");
+<scalinghealth:heartcontainer>.addTooltip("§oA precious relic of vitality, bestowing its user with a permanently increased life force.");
 <scalinghealth:heartcontainer>.addTooltip("§3Uses 2 levels");
 <scalinghealth:heartdust>.addTooltip("§3Right-click to restore 1 heart");
 
