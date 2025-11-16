@@ -766,11 +766,6 @@
     "modId": "placebo",
     "version": "1.12.2-1.6.1"
   },
-  "PlayerAttributeCommands-1.0.0.jar": {
-    "jarName": "PlayerAttributeCommands-1.0.0.jar",
-    "modId": "playerattributecommands",
-    "version": "1.0.0"
-  },
   "PotionCore-1.9_for_1.12.2.jar": {
     "jarName": "PotionCore-1.9_for_1.12.2.jar",
     "modId": "potioncore",
