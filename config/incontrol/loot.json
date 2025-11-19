@@ -1,4 +1,10 @@
 [
+    // Forgotten Runner
+    {
+        "mob":"srrevenants:for_human",
+        "item": "minecraft:diamond"
+    },
+    
     {
         "mob":"da:flame_knight",
         "remove": "da:enflamed_meat"
