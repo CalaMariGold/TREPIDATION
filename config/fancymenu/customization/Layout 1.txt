@@ -112,8 +112,8 @@ customization {
   description = Click to view changelog
   label = v0.5.9.1
   loopbackgroundanimations = true
-  x = -1
-  width = 33
+  x = 1
+  width = 38
   action = addbutton
   actionid = d8f82b65-ee88-4d7e-b01d-12f917e6955a1624418124568
   y = -13
