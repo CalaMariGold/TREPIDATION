@@ -187,6 +187,17 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                     server.commandManager.executeCommand(server, "give @a scalinghealth:heartcontainer 1");
                     server.commandManager.executeCommand(server, "give @a quark:backpack");
 
+                    event.player.world.catenation()
+                    .run(function(world, context) {
+                        context.data = world.time;
+                    })
+                    .sleep(300)
+                    .then(function(world, context) {
+                        event.player.sendChat("§c§oWith the Ashen's death, you notice certain §e§oancient bricks§c§o begin to glow brighter than before.");
+                        Commands.call("playsound minecraft:ui.toast.in master @p ~ ~ ~ 10", event.player, event.world, true, true);
+                    })
+                    .start();
+
                     server.commandManager.executeCommand(server, "gamestage silentremove @a preOracle");
                 }
             });
