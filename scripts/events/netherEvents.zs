@@ -143,7 +143,7 @@ events.onPlayerLeftClickBlock(function(event as crafttweaker.event.PlayerLeftCli
             if(event.block.displayName == "Barrier §4Alpha"){
                 if(!isNull(playerHoldItemStack)){
                     if (veilstriumPick.matches(playerHoldItemStack) || netherrackPick.matches(playerHoldItemStack) || glowoodPick.matches(playerHoldItemStack)) {  
-                        event.player.sendChat("§cAs you strike the barrier above you, a haunting realization dawns: A tool much stronger than your " + event.player.currentItem.displayName + " will be required to shatter this engimatic veil - one steeped in the essence of Withering, forged by a dark, concealed entity...");
+                        event.player.sendChat("§cAs you strike the barrier above you, a haunting realization dawns: A tool much stronger than your " + event.player.currentItem.displayName + " will be required to shatter this engimatic veil, one steeped in the essence of Withering... You feel a pull towards an ancient fortress nearby.");
                         Commands.call("playsound quark:item.soul_bead.curse player @p ~ ~ ~ 5.0 1.0 1.0", event.player, event.world, true, true);
                         event.player.update({clickedNetherBarrier: true});
                     }
