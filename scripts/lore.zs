@@ -37,6 +37,7 @@ import mods.jei.JEI;
 
 <corpsecomplex:scroll>.displayName = "§cDreadstone Tablet";
 <corpsecomplex:scroll>.addTooltip("§3Use to teleport to your last death location");
+<corpsecomplex:scroll>.addTooltip("§3Also grants significant buffs and greatly increases sanity");
 <corpsecomplex:scroll>.removeTooltip("Return to death location");
 <contenttweaker:dreadstone_fragment>.displayName = "Dreadstone Fragment";
 <contenttweaker:dreadstone_fragment>.addTooltip("§oWhen touched, the fragment makes a subtle vibration in sync with the pulse of your heartbeat.");

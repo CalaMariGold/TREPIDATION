@@ -110,15 +110,8 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
     }
 });
 
-// Dreadstone tablet sanity increase on craft
-events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
-    if(!event.player.world.isRemote()) {
-        if(tablet.matches(event.output)) {
-            Commands.call("sanity add " + event.player.name + " 10", event.player, event.player.world, true, true);
-            event.player.sendChat("§3§oYour grip on reality strengthens...");
-        }
-    }
-});
+// Dreadstone tablet sanity increase in netherEvents.zs
+
 
 // Timer Bonus use sanity increase
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent) {

@@ -47,6 +47,21 @@ import crafttweaker.event.PlayerLeftClickBlockEvent;
 import crafttweaker.util.IRandom;
 
 
+// More effects when player uses Dreadstone Tablet
+static dreadstone_tablet as IItemStack = <corpsecomplex:scroll>;
+events.onEntityLivingUseItemFinish(function(event as Finish){
+    if(!event.entity.world.isRemote()){
+        if(event.isPlayer && dreadstone_tablet.matches(event.item)){
+            Commands.call("effect @p minecraft:instant_health 10", event.player, event.entity.world, true, true);
+            Commands.call("effect @p minecraft:regeneration 30", event.player, event.entity.world, true, true);
+            Commands.call("effect @p minecraft:absorption 30", event.player, event.entity.world, true, true);
+            Commands.call("effect @p elenaidodge2:feathers 30", event.player, event.entity.world, true, true);
+            Commands.call("sanity add " + event.player.name + " 50", event.player, event.entity.world, true, true);
+            event.player.sendChat("§3§oYour grip on reality strengthens...");
+        }
+    }
+});
+
 // echo of betrayal & ancient infernal brick
 static abberrant_mana as IItemStack = <da:abberrant_eye>;
 events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteractBlockEvent){
