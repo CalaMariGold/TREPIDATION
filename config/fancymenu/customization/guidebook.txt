@@ -14,28 +14,28 @@ customization {
 }
 
 customization {
+  identifier = %id=384528%
+  action = hidebutton
+}
+
+customization {
   orientation = element
   enable_scrolling = false
   shadow = true
-  scale = 1.5
+  scale = 3.5
   source = GAME PAUSED
   text_border = 0
   case_mode = normal
   source_mode = direct
   line_spacing = 1
   orientation_element = vanillabtn:491585
-  x = -37
-  width = 106
+  x = -125
+  width = 276
   action = custom_layout_element:fancymenu_customization_item_text
-  actionid = 7fca6ec2-8308-48fa-b520-ff7dc4dd9d6d1729719594622
-  y = -191
-  alignment = left
+  actionid = ae29ea2d-8d23-41ee-830e-5a4d20aed7a11763577855340
+  y = -217
+  alignment = centered
   base_color = 000000
-  height = 14
-}
-
-customization {
-  identifier = %id=384528%
-  action = hidebutton
+  height = 217
 }
 

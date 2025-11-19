@@ -17,20 +17,20 @@ customization {
   orientation = element
   enable_scrolling = false
   shadow = true
-  scale = 1.5
+  scale = 3.5
   source = GAME PAUSED
   text_border = 0
   case_mode = normal
   source_mode = direct
   line_spacing = 1
   orientation_element = vanillabtn:491585
-  x = -37
-  width = 106
+  x = -126
+  width = 276
   action = custom_layout_element:fancymenu_customization_item_text
   actionid = b5d62e20-75b2-4631-8cba-3675c0ca6fcd1729719647365
-  y = -191
-  alignment = left
+  y = -217
+  alignment = centered
   base_color = 000000
-  height = 14
+  height = 217
 }
 
