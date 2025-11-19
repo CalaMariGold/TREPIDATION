@@ -75,13 +75,13 @@ EventManager.getInstance().onTimerTick(function(event as TickEvent) {
         if(event.tick % 40 == 0) { // Every 2 seconds
             Commands.call("sanity remove " + event.player.name + " 1", event.player, event.player.world, true, true);
         }
-    }
+    }*/
     if(totalSecs <= 60) {
         if(event.tick % 20 == 0) { // Every second
             Commands.call("sanity remove " + event.player.name + " 1", event.player, event.player.world, true, true);
         }
     }
-    */
+    
 });
 
 // The Mind's Abyss dimension sanity drain
