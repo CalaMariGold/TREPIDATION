@@ -87,7 +87,7 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
 
                 // clicked stone, but player did not kill the oracle, so give hint
                 else {
-                    event.player.sendChat("§c§oThe artifact pulses weakly against the Infernal brick and dissipates. You sense an Ashen power lock secrets behind trial and judgement.");
+                    event.player.sendChat("§c§oThe artifact pulses weakly against the Infernal brick and dissipates. You sense an §e§oAshen power§c§o lock secrets behind trial and judgement.");
                     Commands.call("playsound enderskills:syphon player @p ~ ~ ~ 100 0.6", event.player, event.world, true, true);
                     itemStack.mutable().shrink(1);
                 }
@@ -106,7 +106,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             // if player clicks echo of betrayal (not on ancient infernal brick), give hint
             if (abberrant_mana.matches(itemStack1)) {  
                     if(isNull(event.player.data.clickedEchoOfBetrayal) || event.player.data.clickedEchoOfBetrayal == false){
-                    event.player.sendChat("§c§oAs you stare into the eye of this artifact, it seems to draw you to an §e§oancient Infernal brick§c§o of some kind—a stone where buried power might yet be unearthed.");
+                    event.player.sendChat("§c§oAs you stare into the eye of this artifact, it seems to draw you to an §e§oancient Infernal brick§c§o of some kind, a stone where buried power might yet\n§c§obe unearthed.");
                     Commands.call("effect @e[type=da:nether_pyre] glowing", event.player, event.world, true, true);
                     Commands.call("playsound enderskills:contaminate player @p", event.player, event.world, true, true);
                     event.player.update({clickedEchoOfBetrayal: true});
@@ -120,7 +120,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
 events.onPlayerAdvancement(function(event as crafttweaker.event.PlayerAdvancementEvent){
     if(!event.entity.world.isRemote()){
         if(event.id == "triumph:advancements/hidden/wake_of_fire"){
-            event.player.sendChat("§c§oAs you grip the artifact, visions rapidly surge your mind... a circle of  hooded figures, a tear in the air, shadows writhing, eyes open in the dark. In the background, another, much taller figure stands still, radiating a cold, bitter dissatisfaction. You feel the artifact pulling you towards a §e§odark obelisk§c§o nearby.");
+            event.player.sendChat("§c§oAs you grip the artifact, visions rapidly surge your mind... a circle of hooded figures, a tear in the air, shadows writhing, eyes open in the dark.\n§c§oIn the background, another, much taller figure stands still, radiating a cold,\n§c§obitter dissatisfaction. You feel the artifact pulling you towards a\n§e§odark obelisk§c§o nearby.");
             Commands.call("playsound enderskills:animated_stone player @p ~ ~ ~ 2.0 1.5", event.player, event.entity.world, true, true);
             Commands.call("effect @e[type=da:nether_pyre] glowing", event.player, event.entity.world, true, true);
         }
@@ -143,7 +143,7 @@ events.onPlayerLeftClickBlock(function(event as crafttweaker.event.PlayerLeftCli
             if(event.block.displayName == "Barrier §4Alpha"){
                 if(!isNull(playerHoldItemStack)){
                     if (veilstriumPick.matches(playerHoldItemStack) || netherrackPick.matches(playerHoldItemStack) || glowoodPick.matches(playerHoldItemStack)) {  
-                        event.player.sendChat("§cAs you strike the barrier above you, a haunting realization dawns: A tool much stronger than your " + event.player.currentItem.displayName + " will be required to shatter this engimatic veil, one steeped in the essence of Withering... You feel a pull towards an ancient fortress nearby.");
+                            event.player.sendChat("§c§oAs you strike the barrier above you, a haunting realization dawns: A tool much stronger than your " + event.player.currentItem.displayName + " will be required to shatter\n§c§othis engimatic veil, one steeped in the essence of Withering... You feel a\n§c§opull towards an §e§oancient fortress§c§o nearby.");
                         Commands.call("playsound quark:item.soul_bead.curse player @p ~ ~ ~ 5.0 1.0 1.0", event.player, event.world, true, true);
                         event.player.update({clickedNetherBarrier: true});
                     }
@@ -279,12 +279,12 @@ events.onPlayerInteractEntity(function(event as crafttweaker.event.PlayerInterac
                         event.player.update({clickedNetherObelisk: true});
                         Commands.call("setworldspawn ~ ~ ~", event.player, event.world, true, true);
                         Commands.call("spawnpoint @a ~ ~ ~", event.player, event.world, true, true);
-                        event.player.sendChat("§c§oThe air thickens, the embers pulse—once bound by betrayal, the past now rises to face the living.");
+                        event.player.sendChat("§c§oThe air thickens, the embers pulse. Once bound by betrayal, the past now rises to face the living.");
                         event.player.sendChat("§9§oYour soul has been bound to this position.");
                 }
                 else {
                     if(isNull(event.player.data.clickedNetherObelisk) || event.player.data.clickedNetherObelisk == false){
-                        event.player.sendChat("§c§oA chill settles as you approach the obelisk, but nothing stirs. Something waits, requiring a relic forged in wrath and memory");
+                        event.player.sendChat("§c§oA chill settles as you approach the obelisk, but nothing stirs. Something waits, requiring a §e§orelic forged in wrath and memory§c§o");
                         Commands.call("playsound minecraft:ui.toast.in master @p ~ ~ ~ 10", event.player, event.world, true, true);
                         event.player.update({clickedNetherObelisk: true});
                     }
@@ -299,7 +299,7 @@ events.onPlayerInteractEntity(function(event as crafttweaker.event.PlayerInterac
             // Dreadstone Tablet
             if (tablet.matches(itemStack1)) {  
                 if(event.target.definition.name == "PigZombie"){
-                    event.player.sendChat("§c§oAs you raise the Dreadstone Tablet to the Dreadswine, it shatters in your hands, releasing a surge of dark energy. You notice faint tear trace down the Dreadswine's face as the fragments of the tablet disintegrate into dust.");
+                    event.player.sendChat("§c§oAs you raise the §e§oDreadstone Tablet§c§o to the Dreadswine, it shatters in your hands, releasing a surge of dark energy. You notice faint tear trace down the Dreadswine's face as the fragments of the tablet disintegrate into dust.");
                     Commands.call("playsound enderskills:syphon player @p ~ ~ ~ 100 0.6", event.player, event.world, true, true);
                     Commands.call("sanity remove " + event.player.name + " 5", event.player, event.world, true, true);
                     Commands.call("effect @p wither 5", event.player, event.world, true, true);
@@ -312,7 +312,7 @@ events.onPlayerInteractEntity(function(event as crafttweaker.event.PlayerInterac
                 if(event.target.definition.name == "PigZombie"){
                     if(isNull(event.player.data.dreadstoneFragmentClick) || event.player.data.dreadstoneFragmentClick == false){
                         itemStack1.mutable().shrink(1);
-                        event.player.sendChat("§c§oYou carefully hand a fragment of the Dreadstone Tablet to the Dreadswine. It grasps the piece with trembling hands, staring at it intensely before carrying on.");
+                        event.player.sendChat("§c§oYou carefully hand a fragment of the §e§oDreadstone Tablet§c§o to the Dreadswine. It grasps the piece with trembling hands, staring at it intensely before carrying on.");
                         Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.world, true, true);
                         event.player.update({dreadstoneFragmentClick: true});
                     }
@@ -368,7 +368,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             if (traceofdeath.matches(itemStack2)) {  
 
                 if(isNull(event.player.data.shatteredTraceOfDeath) || event.player.data.shatteredTraceOfDeath == false){
-                    event.player.sendChat("§c§oAs the final pieces of the Trace of Death crumble at your feet, you are suddenly consumed by a rush of spectral energies. The secrets you now possess are both a blessing and a curse, for the shadows that surround you have been stirred, and you cannot escape the feeling that you are being watched by something far beyond your comprehension.");
+                    event.player.sendChat("§c§oAs the final pieces of the §e§oTrace of Death§c§o crumble at your feet, you are suddenly consumed by a rush of spectral energies. The secrets you now\n§c§opossess are both a blessing and a curse, for the shadows that surround\n§c§oyou have been stirred, and you cannot escape the feeling that you are\n§c§obeing watched by something far beyond your comprehension.");
                     Commands.call("playsound cyclicmagic:chaos_reaper master @p ~ ~ ~ 0.6 0.7", event.player, event.world, true, true);
 
                     // Replace mod behavior with our own behavior due to weirdness when granting soul levels
@@ -385,7 +385,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                     })
                     .sleep(300)
                     .then(function(world, context) {
-                        event.player.sendChat("§c§oMemories that don't seem to be your own begin to flood your mind. You quickly bring out your notebook to write it down.");
+                        event.player.sendChat("§c§oMemories that don't seem to be your own begin to flood your mind. You quickly bring out your §e§ojournal§c§o to write it down.");
                         Commands.call("advancement grant @p only triumph:advancements/journal_entries/trace_of_death_entry", event.player, event.world, true, true);
 
                     })
@@ -403,7 +403,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
         if(!isNull(itemStack3)){
             if (scepter.matches(itemStack3)) {  
                 Commands.call("playsound minecraft:item.totem.use player @p", event.player, event.world, true, true);
-                event.player.sendChat("§c§oThe ground begins to tremble as you tightly grasp the scepter. As the air crackles with anticipation, the scepter dissolves into a swirling vortex of crimson smoke. In the blink of an eye, the smoke weaves itself into the fabric of space as the scepter's essence becomes one with a hellish structure.");
+                event.player.sendChat("§c§oThe ground begins to tremble as you tightly grasp the scepter. As the air crackles with anticipation, the scepter dissolves into a swirling vortex\n§c§oof crimson smoke. In the blink of an eye, the smoke weaves itself into the\n§c§ofabric of space as the scepter's essence becomes one with a hellish structure.");
                 Commands.call("pillar-spawn witherarena ~ 9 ~", event.player, event.world, true, true);
 
                 Commands.call("tp @a ~ 10 ~", event.player, event.world, true, true);
