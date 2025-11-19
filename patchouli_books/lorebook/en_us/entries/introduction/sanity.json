@@ -1,0 +1,17 @@
+{
+  "name": "Sanity",
+  "icon": "trepidation:brain.png",
+  "category": "introduction",
+  "sortnum": 4,
+  "advancement": "triumph:advancements/dimensions/nether",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(#551012)$(bold)Sanity$()$(#551012) is a precious resource in TREPIDATION. A $(#FFFF55)brain icon$(#551012) will appear at the bottom left of your screen when your sanity changes.$(br2)A low sanity will cause you to $(#FFFF55)hallucinate$(#551012) and $(#FFFF55)warp your view$(#551012), so keep it high!"
+    },
+    {
+      "type": "text",
+      "text": "$(#551012)You will know when your sanity is affected when you see these messages:$(br)§4§oYour grip on reality §4§oweakens...$(br)§3§oYour grip on reality §3§ostrengthens...$(br2)$(#551012)There are a few ways to increase your sanity, which you will discover throughout your journey. Keep an eye out for what $(#FFFF55)certain events$(#551012) and $(#FFFF55)items$(#551012) trigger those messages."
+    }
+  ]
+}

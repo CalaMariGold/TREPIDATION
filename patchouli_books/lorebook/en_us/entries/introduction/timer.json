@@ -2,7 +2,7 @@
   "name": "Runs & Timer",
   "icon": "timeisup:timer_bonus",
   "category": "introduction",
-  "sortnum": 1,
+  "sortnum": 3,
   "advancement": "triumph:advancements/dimensions/nether",
   "pages": [
     {

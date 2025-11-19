@@ -3,7 +3,7 @@
   "icon": "enderskills:book",
   "category": "introduction",
   "advancement": "triumph:advancements/journal_entries/skill_book",
-  "sortnum": 4,
+  "sortnum": 5,
   "pages": [
     {
       "type": "spotlight",
