@@ -181,6 +181,10 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                     server.commandManager.executeCommand(server, "effect @a minecraft:glowing 60");
                     event.player.sendChat("§6A mysterious yet benevolent aura surrounds you, granting you temporary invisiblity, for now...");
 
+                    // Increase sanity
+                    Commands.call("sanity add " + event.player.name + " 25", event.player, event.world, true, true);
+                    event.player.sendChat("§3§oYour grip on reality strengthens...");
+
                     server.commandManager.executeCommand(server, "give @a timeisup:timer_bonus 1");
                     server.commandManager.executeCommand(server, "give @a enderskills:book 1");
                     server.commandManager.executeCommand(server, "give @a enderskills:token 1");
@@ -230,6 +234,10 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                     server.commandManager.executeCommand(server, "effect @a potioncore:slow_fall 120");
                     server.commandManager.executeCommand(server, "effect @a minecraft:glowing 120");
                     event.player.sendChat("§6A mysterious yet benevolent aura surrounds you, granting you temporary invisiblity, for now...");
+
+                    // Increase sanity
+                    Commands.call("sanity add " + event.player.name + " 25", event.player, event.world, true, true);
+                    event.player.sendChat("§3§oYour grip on reality strengthens...");
 
                     server.commandManager.executeCommand(server, "give @a timeisup:timer_bonus 2");
                     server.commandManager.executeCommand(server, "give @a enderskills:token 3");
