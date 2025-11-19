@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "text",
-      "text": "$(#551012)I awaken abruptly, disoriented and confused. The heat is overwhelming, and the air is thick with the stench of sulfur and ash. A strange sense of urgency pushes me to move. I don't know where it's coming from but it feels... $(italics)relentless.$()"
+      "text": "$(#551012)$(bold)I awaken abruptly$()$(#551012), disoriented and confused. The heat is overwhelming, and the air is thick with the stench of sulfur and ash. A strange sense of urgency pushes me to move. I don't know where it's coming from but it feels... $(italics)relentless.$()"
     },
     {
       "type": "text",

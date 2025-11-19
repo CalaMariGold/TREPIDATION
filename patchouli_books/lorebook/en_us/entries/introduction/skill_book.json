@@ -12,11 +12,11 @@
     },
     {
       "type": "text",
-      "text": "$(#551012)There are 3 classes you can delve into and combine: $(bold)Defense$()$(#551012), $(bold)Offense$()$(#551012), and $(bold)Mobility$()$(#551012).$(br2)Each have multiple subclasses where you can specialize further to fit your gameplay style.$(br2)Press $(#104455)ALT + [number]$(#551012) to use an ability and $(#104455)G$(#551012) and $(#104455)H$(#551012) to cycle through ability groups. "
+      "text": "$(#551012)There are 3 classes you can delve into and combine: $(#FFFF55)Defense, Offense, and Mobility.$()$(#551012)$(br2)Each have multiple subclasses where you can specialize further to fit your gameplay style.$(br2)Press $(#104455)SHIFT + [number]$(#551012) to use an ability and $(#104455)G$(#551012) and $(#104455)H$(#551012) to cycle through ability groups.$(#551012)$(br2)------------------------------------>"
     },
     {
       "type": "text",
-      "text": "$(#551012)$(l)Skills are kept between runs.$(br2)$()$(#551012)Unlocking skills cost:$(br)- XP (stored between runs)$(br)- Souls (resets every runs)$(br2)You can obtain Souls by breaking $(l)Traces of Death$()$(#551012).$(br2)Soul prices increase as you spend and there is a cap of 9 Souls, so spend wisely.$(br2)You can reset a build once per run."
+      "text": "$(#FFFF55)Skills are kept between runs.$(br2)$(#551012)Unlocking skills cost:$(br)- XP (stored between runs)$(br)- Souls (resets every runs)$(br2)You can obtain Souls by breaking $(#FFFF55)Traces of Death$(#551012).$(br2)Soul prices increase as you spend and there is a cap of 9 Souls, so spend wisely.$(br2)You can reset a build once per run."
     },
     {
       "type": "relations",

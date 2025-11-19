@@ -7,15 +7,15 @@
   "pages": [
     {
       "type": "text",
-      "text": "$(#551012)$(bold)Dashing:$()$(#551012) Tap $(#104455)Left ALT + WASD $(#551012)to dash in the specified direction. Each dash uses up half a feather above your hotbar. Dashing provides 1s invulnerability. You can dash mid-air infinitely to cross large gaps.$(br2)Use dashing frequently to get out of sticky situations and race against the timer."
+      "text": "$(#551012)$(bold)Dashing:$()$(#551012) Tap $(#104455)Left ALT + WASD $(#551012)to dash in the specified direction. Each dash uses up half a feather above your hotbar. $(#FFFF55)Dashing provides 1s invulnerability$(#551012). You can dash $(#FFFF55)mid-air infinitely$(#551012) to cross large gaps.$(br2)Use dashing $(#FFFF55)frequently$(#551012) to get out of sticky situations and race against the timer."
     },
     {
       "type": "text",
-      "text": "$(#551012)$(bold)Double Jump:$()$(#551012) Unlike dashing, double jumping resets your fall damage. Timing your double jump is crucial to take no damage from long falls.$(br2)$(bold)Wall Hang:$()$(#551012) You can hang on walls for a few seconds by holding $(#104455)SHIFT$(#551012). Wall hanging resets your double jump, allowing you to double jump, wall hang, then double jump again."
+      "text": "$(#551012)$(bold)Double Jump:$()$(#551012) Unlike dashing, double jumping $(#FFFF55)resets your fall damage$(#551012). Timing your double jump is crucial to take no damage from long falls.$(br2)$(bold)Wall Hang:$()$(#551012) You can hang on walls for a few seconds by holding $(#104455)SHIFT$(#551012). Wall hanging $(#FFFF55)resets your double jump$(#551012), allowing you to double jump, wall hang, then double jump again.$(br2)------------------------------------>"
     },
     {
       "type": "text",
-      "text": "$(#551012)$(bold)Combat:$()$(#551012) Dual-wielding is recommended and encouraged in TREPIDATION. Equip any tool, weapon, or utility in your off-hand to increase your survivability. More combat options and abilities will unlock as you progress.$()$(#551012) "
+      "text": "$(#551012)$(bold)Combat:$()$(#551012) $(#FFFF55)Dual-wielding is recommended$(#551012) and encouraged in TREPIDATION. Equip any tool, weapon, or utility in your off-hand to increase your survivability. More combat options and abilities will unlock as you progress.$()$(#551012) "
     }
   ]
 }

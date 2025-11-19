@@ -7,16 +7,16 @@
   "pages": [
     {
       "type": "text",
-      "text": "$(#551012)TREPIDATION is a roguelike, meaning that resetting and starting new runs is expected and encouraged.$(br2)You can reset a run by clicking the Reset Run button on the pause menu (SP for singleplayer, MP for multiplayer).$()"
+      "text": "$(#FFFF55)TREPIDATION is a roguelike$(#551012), meaning that $(#FFFF55)resetting and starting new runs$(#551012) is expected and encouraged.$(br2)You can reset a run by clicking the $(#FFFF55)Reset Run button$(#551012) on the pause menu."
     },
     {
       "type": "text",
-      "text": "$(#551012)You may have noticed a timer at the bottom left of your screen ticking down.$(br2)Do not let it get to 0 or $(obf)you will be sent to Limbo$()$(#551012).$()"
+      "text": "$(#551012)You may have noticed a timer at the bottom left of your screen ticking down.$(br2)$(bold)Once at 0:00, you will be $(obf)sent to Limbo for an unknown amount of time, where there will be no escape$()$(#551012). $(br2)Failing a run will unlock new content and lore.$(#551012)$(br2)------------------------------------>"
     },
     {
       "type": "spotlight",
       "item": "timeisup:timer_bonus",
-      "text": "$(#551012)You are given a few timer bonuses throughout your run to add more time. You can also find them scattered in the world.$()"
+      "text": "$(#551012)You are given a few $(#FFFF55)Chrono Usurpations$(#551012) throughout your run, which will add more time to your timer.$()"
     }
   ]
 }

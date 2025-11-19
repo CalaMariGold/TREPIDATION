@@ -1,6 +1,6 @@
 {
   "name": "Introduction",
-  "description": "Vital information you will need in order to escape.$(br2)Note: This category contains gameplay mechanics and explanations written from an out-of-character perspective. All other categories are lore-friendly.",
+  "description": "Vital information you will need in order to escape.$(br2)$(#FFFF55)$(bold)Note:$() This category contains gameplay mechanics and explanations written from an out-of-character perspective. All other categories are lore-friendly.",
   "icon": "contenttweaker:trepidation", 
   "sortnum": 0,
   "advancement": "triumph:advancements/dimensions/nether"
