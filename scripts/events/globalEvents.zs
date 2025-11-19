@@ -92,7 +92,7 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
         Commands.call("es_advancement @p level set 0", event.player, event.entity.world, true, true);
 
         // Resistance on first time join only
-        Commands.call("effect @p resistance 10", event.player, event.entity.world, true, true);
+        Commands.call("effect @p resistance 15 255", event.player, event.entity.world, true, true);
 
         // For some reason, journal entries only unlock after an achievement is granted a few seconds after world start
         event.player.world.catenation()
