@@ -35,6 +35,8 @@ JEI.removeAndHide(<minecraft:stone_pickaxe>);
 JEI.removeAndHide(<minecraft:golden_pickaxe>);
 
 
+val coal_ore as IItemStack = <minecraft:coal_ore:*>;
+coal_ore.hardness = 0.5;
 
 val diamond_ore as IItemStack = <minecraft:diamond_ore:*>;
 diamond_ore.hardness = 100.0;
