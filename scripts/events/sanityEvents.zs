@@ -165,3 +165,26 @@ events.onPlayerTick(function(event as crafttweaker.event.PlayerTickEvent) {
         }
     }
 }); 
+
+
+// Sanity increase when killing Forgotten Runner
+events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeathEvent) {
+    if(!event.entity.world.isRemote()) {
+        if(event.entity.definition.id == <entity:srrevenants:for_human>.id) {
+            var player as IPlayer = event.damageSource.trueSource;
+            Commands.call("sanity add " + player.name + " 25", player, event.entity.world, true, true);
+            player.sendChat("§3§oYour grip on reality strengthens...");
+        }
+    }
+});
+
+// Sanity increase when mining diamond
+static diamond as IItemStack = <minecraft:diamond_ore:*>;
+events.onBlockBreak(function(event as crafttweaker.event.BlockBreakEvent) {
+    if(!event.world.isRemote()) {
+        if(event.block.definition.id == diamond.definition.id) {
+            Commands.call("sanity add " + event.player.name + " 25", event.player, event.world, true, true);
+            event.player.sendChat("§3§oYour grip on reality strengthens...");
+        }
+    }
+});
