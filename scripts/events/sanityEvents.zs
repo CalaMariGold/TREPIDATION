@@ -141,7 +141,7 @@ events.onPlayerTick(function(event as crafttweaker.event.PlayerTickEvent) {
         return;
     }
 
-    if(event.player.world.time % 600 == 0) { // Every 30 seconds
+    if(event.player.world.time % 500 == 0) { // Every 25 seconds
         // Check if wearing full set
         if(!isNull(event.player.getItemInSlot(IEntityEquipmentSlot.head())) && 
             !isNull(event.player.getItemInSlot(IEntityEquipmentSlot.chest())) &&
