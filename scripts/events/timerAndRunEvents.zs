@@ -131,7 +131,7 @@ static chronoAnchor as IItemStack = <timeisup:timer_anchor>;
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
     if(!event.world.isRemote()){
         if((event.item.definition.id).matches(chronoAnchor.definition.id)) {
-            event.player.sendChat("§c§oYou awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.");
+            event.player.sendChat("§c§oYou awaken with someone else's memories burning behind your eyes. You quickly bring out your §e§ojournal§c§o to write it down.");
             Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.player.world, true, true);
         }  
     }
@@ -185,7 +185,7 @@ events.onCommand(function(event as crafttweaker.event.CommandEvent) {
                 if(!player.hasGameStage("unlocked_chrono_anchor")){
                     server.commandManager.executeCommand(server, "gamestage silentadd @p unlocked_chrono_anchor");
                     Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", player, player.world, true, true);
-                    player.sendChat("§c§oYou awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.");
+                    player.sendChat("§c§oYou awaken with someone else's memories burning behind your eyes. You quickly bring out your §e§ojournal§c§o to write it down.");
                     player.sendChat("§3Soul Anchor can now be crafted.");
                     player.sendChat("§3Chrono Anchor can now be crafted.");
                     Commands.call("playsound minecraft:ui.toast.in master @p", player, player.world, true, true);
@@ -220,7 +220,7 @@ events.onCommand(function(event as crafttweaker.event.CommandEvent) {
                     Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", player, player.world, true, true);
 
                     player.sendChat("§3Chrono Absolution can now be crafted.");
-                    player.sendChat("§c§oYou awaken with someone else's memories burning behind your eyes. You quickly bring out your journal to write it down.");
+                    player.sendChat("§c§oYou awaken with someone else's memories burning behind your eyes. You quickly bring out your §e§ojournal§c§o to write it down.");
                     Commands.call("advancement grant @p only triumph:advancements/journal_entries/chrono_usurpation_entry", player, player.world, true, true);
                 }
             }
