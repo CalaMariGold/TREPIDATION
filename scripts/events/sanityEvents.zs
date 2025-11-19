@@ -33,6 +33,7 @@ static veilstrium_boots as IItemStack = <nethercraft:neridium_boots:*>;
 events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent) {
     if(!event.entity.world.isRemote()) {
         Commands.call("sanity remove " + event.player.name + " 5", event.player, event.entity.world, true, true);
+        event.player.sendChat("§4§oYour grip on reality weakens...");
     }
 });
 
@@ -50,7 +51,7 @@ EventManager.getInstance().onTimerTick(function(event as TickEvent) {
         }
         // Show message only once when entering the 5-minute threshold
         if(isNull(event.player.data.hasShownTimerWarning) || event.player.data.hasShownTimerWarning == false) {
-            event.player.sendChat("§4§oYour grip on reality weakens...");
+            event.player.sendChat("§4§oYour grip on reality weakens as your clock nears its end...");
             Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.world, true, true);
             event.player.update({hasShownTimerWarning: true});
         }
@@ -101,6 +102,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
         if(!isNull(itemStack)) {
             if(traceofdeath.matches(itemStack)) {
                 Commands.call("sanity remove " + event.player.name + " 10", event.player, event.world, true, true);
+                event.player.sendChat("§4§oYour grip on reality weakens...");
             }
         }
     }
@@ -111,6 +113,7 @@ events.onPlayerCrafted(function(event as PlayerCraftedEvent) {
     if(!event.player.world.isRemote()) {
         if(tablet.matches(event.output)) {
             Commands.call("sanity add " + event.player.name + " 10", event.player, event.player.world, true, true);
+            event.player.sendChat("§3§oYour grip on reality strengthens...");
         }
     }
 });
@@ -122,6 +125,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
         if(!isNull(itemStack)) {
             if(timerBonus.matches(itemStack)) {
                 Commands.call("sanity add " + event.player.name + " 20", event.player, event.world, true, true);
+                event.player.sendChat("§3§oYour grip on reality strengthens...");
             }
         }
     }
