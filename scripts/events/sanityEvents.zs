@@ -60,6 +60,7 @@ EventManager.getInstance().onTimerTick(function(event as TickEvent) {
         event.player.update({hasShownTimerWarning: false});
     }
 
+    /** I don't really like this anymore, as you're basically blind at 0 sanity
     if(minutes == 3) {
         if(event.tick % 80 == 0) { // Every 4 seconds
             Commands.call("sanity remove " + event.player.name + " 1", event.player, event.player.world, true, true);
@@ -80,6 +81,7 @@ EventManager.getInstance().onTimerTick(function(event as TickEvent) {
             Commands.call("sanity remove " + event.player.name + " 1", event.player, event.player.world, true, true);
         }
     }
+    */
 });
 
 // The Mind's Abyss dimension sanity drain
