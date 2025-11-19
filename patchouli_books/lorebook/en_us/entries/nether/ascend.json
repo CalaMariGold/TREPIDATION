@@ -10,7 +10,11 @@
     },
     {
       "type": "text",
-      "text": "$(#551012)Survival instincts kick in. I need to gather and craft basic equipment from the environment. The mushrooms scattered around look edible, and there might be some food in the trees as well. I have no idea why I'm here, but perhaps I can piece together the mystery. Glancing at my right wrist, I notice a red eye etched into my skin. On my left wrist, a scar spells out \"ASCEND\". Is that my handwriting?"
+      "text": "$(#551012)Survival instincts kick in. I need to $(#FFFF55)gather and craft basic equipment$(#551012) from the environment. The surrounding stone would likely make good tools. The $(#FFFF55)mushrooms$(#551012) scattered around look edible, and there might be some $(#FFFF55)food in the trees$(#551012) as well. I have no idea why I'm here, but perhaps I can piece together this mystery. I notice what looks like an $(#FFFF55)ancient fortress$(#551012) in the distance, I should $(#FFFF55)prepare some gear before...$(#551012)"
+    },
+    {
+      "type": "text",
+      "text": "$(#551012)... I venture closer.$(br2)Glancing at my right wrist, I notice a red eye etched into my skin. On my left wrist, a scar spells out $(#FFFF55)\"ASCEND\"$(#551012). Is that my handwriting?"
     }
   ]
 }
