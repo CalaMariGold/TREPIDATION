@@ -102,7 +102,7 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
         .sleep(200)
         .then(function(world, context) {
             Commands.call("advancement grant @p only triumph:advancements/hidden/unlock_journal", event.player, event.entity.world, true, true);
-            event.player.sendChat("§c§oDisoriented, you awaken to find a journal attached to your belt. As you begin to write, you notice a scar on your left wrist.");
+            event.player.sendChat("§c§oDisoriented, you awaken to find a §e§ojournal§c§o attached to your belt. As you begin to write, you notice a scar on your left wrist.");
             Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.entity.world, true, true);
         })
         .start();
@@ -189,7 +189,8 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
         .sleep(100)
         .then(function(world, context) {
             if(event.player.hasGameStage("killedWither") && event.player.hasGameStage("erebus")){
-                Commands.call("sanity add " + event.player.name + " 25", event.player, event.player.world, true, true);
+                Commands.call("sanity add " + event.player.name + " 100", event.player, event.player.world, true, true);
+                event.player.sendChat("§3§oYour grip on reality strengthens...");
                 server.commandManager.executeCommand(server, "gamestage silentremove @a killedWither");
             }   
         })
@@ -216,7 +217,8 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
                 if(timerBonusCount > 0){
                     event.player.sendChat("§aTimer Bonuses Used: §4" + timerBonusCount);
                 }
-                Commands.call("sanity add " + event.player.name + " 25", event.player, event.player.world, true, true);
+                Commands.call("sanity add " + event.player.name + " 100", event.player, event.player.world, true, true);
+                event.player.sendChat("§3§oYour grip on reality strengthens...");
 
                 server.commandManager.executeCommand(server, "gamestage silentremove @p erebus");
             }
@@ -229,7 +231,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
             })
             .sleep(500)
             .then(function(world, context) {
-                event.player.sendChat("§c§oYou feel a bone-deep chill settle behind your eyes; a dreadful feeling that grows with each passing moment in this realm.");
+                event.player.sendChat("§c§oYou feel a bone-deep chill settle behind your eyes; a dreadful feeling that grows with §e§oeach passing moment§c§o in this realm. You feel a pull towards a §e§oparticular gem§c§o that might calm your mind, harbored in stone or held by a forgotten presence.");
                 Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.player.world, true, true);
             })
             .start();
@@ -255,6 +257,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
                     event.player.sendChat("§aTimer Bonuses Used: §4" + timerBonusCount);
                 }
                 Commands.call("sanity add " + event.player.name + " 25", event.player, event.player.world, true, true);
+                event.player.sendChat("§3§oYour grip on reality strengthens...");
                 server.commandManager.executeCommand(server, "gamestage silentremove @p minds_abyss");
                 
 
