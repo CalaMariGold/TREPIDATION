@@ -21,6 +21,10 @@ var glow_stew = VanillaFactory.createItemFood("glow_stew", 8);
 glow_stew.setSaturation(0.4);
 glow_stew.register();
 
+var sanity_stew = VanillaFactory.createItemFood("sanity_stew", 8);
+sanity_stew.setSaturation(0.5);
+sanity_stew.register();
+
 
 val infernal_fortress_scepter = mods.contenttweaker.VanillaFactory.createItem("infernal_fortress_scepter");
 infernal_fortress_scepter.maxStackSize = 1;

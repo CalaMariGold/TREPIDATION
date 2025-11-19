@@ -14,6 +14,12 @@ mods.recipestages.Recipes.addShaped("soul_anchor", "unlocked_chrono_anchor", <co
     [null, <ore:stickWood>, null]]
 );
 
+// Sanity Stew
+recipes.addShaped("sanity_stew", <contenttweaker:sanity_stew>, [
+    [<nethercraft:foulite_dust>, <nethercraft:foulite_dust>, <nethercraft:foulite_dust>],
+    [<contenttweaker:cleansed_veilstrium_ingot>, <contenttweaker:cleansed_veilstrium_ingot>, <contenttweaker:cleansed_veilstrium_ingot>],
+    [null, <contenttweaker:glow_stew>, null]
+]);
 
 // dyna ores
 furnace.remove(<nethercraft:pyridium_ingot>, <nethercraft:pyridium_ore>);

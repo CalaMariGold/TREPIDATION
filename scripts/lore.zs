@@ -126,6 +126,9 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 
 
 // Food
+<contenttweaker:sanity_stew>.displayName = "§cSanity Stew";
+<contenttweaker:sanity_stew>.addTooltip("§3Cures all effects, restores 25% sanity, and provides invisibility for 10s");
+
 <contenttweaker:glow_stew>.displayName = "Glow Stew";
 
 <contenttweaker:scrambled_magma_eggs>.displayName = "Scrambled Magma Eggs";

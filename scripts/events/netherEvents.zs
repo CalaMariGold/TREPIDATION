@@ -46,6 +46,19 @@ import crafttweaker.entity.IEntityLivingBase;
 import crafttweaker.event.PlayerLeftClickBlockEvent;
 import crafttweaker.util.IRandom;
 
+// Sanity Stew Effects
+static sanity_stew as IItemStack = <contenttweaker:sanity_stew>;
+events.onEntityLivingUseItemFinish(function(event as Finish){
+    if(!event.entity.world.isRemote()){
+        if(event.isPlayer && sanity_stew.matches(event.item)){
+            Commands.call("sanity add " + event.player.name + " 25", event.player, event.entity.world, true, true);
+            Commands.call("effect @p minecraft:invisibility 10", event.player, event.entity.world, true, true);
+            Commands.call("effect @p potioncore:cure 1", event.player, event.entity.world, true, true);
+            event.player.sendChat("§3§oYour grip on reality strengthens...");
+        }
+    }
+});
+
 
 // More effects when player uses Dreadstone Tablet
 static dreadstone_tablet as IItemStack = <corpsecomplex:scroll>;
