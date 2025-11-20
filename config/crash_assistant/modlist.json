@@ -613,11 +613,6 @@
   "mcmouser-1.12.2-forge-1.0.2.jar": {
     "jarName": "mcmouser-1.12.2-forge-1.0.2.jar"
   },
-  "MineMenu-1.12.2-1.6.11-universal.jar": {
-    "jarName": "MineMenu-1.12.2-1.6.11-universal.jar",
-    "modId": "minemenu",
-    "version": "1.12.2-1.6.11"
-  },
   "MobDismemberment-1.12.2-7.0.0.jar": {
     "jarName": "MobDismemberment-1.12.2-7.0.0.jar",
     "modId": "mobdismemberment",
