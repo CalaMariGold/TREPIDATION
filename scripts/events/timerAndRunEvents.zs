@@ -47,7 +47,10 @@ EventManager.getInstance().onTimerTick(function(event as TickEvent){
     var totalSecs = event.tick/20;
     if(totalSecs <= 0) {
         if(!isNull(event.player)){
-            Commands.call("fmvariable set timesup true false", event.player, event.player.world, true, true);
+            // using Commands.call causes "command not found" error on servers only
+            // using executeCommand doesn't fix the issue, but at least doesn't spam with errors
+            // Basically, the time is up FancyMenu sequence doesnt work on servers
+            server.commandManager.executeCommand(server, "fmvariable set timesup true false");
         }
     }
 });
@@ -153,7 +156,7 @@ events.onCommand(function(event as crafttweaker.event.CommandEvent) {
                 continue;
             }
 
-            Commands.call("fmvariable set timesup false false", player, player.world, true, true);
+            server.commandManager.executeCommand(server, "fmvariable set timesup false false");
 
             // Reset NON-PERSISTANT player data between runs
             player.update({clickedNetherBarrier: null});
