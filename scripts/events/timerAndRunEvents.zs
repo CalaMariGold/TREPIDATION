@@ -141,90 +141,92 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
 events.onCommand(function(event as crafttweaker.event.CommandEvent) {
     if (event.command.name == "reroll") {
 
-        if(isNull(event.commandSender)){
-            server.commandManager.executeCommand(server, "say Error: command sender not found. Please report this to the TREPIDATION GitHub. Describe recent events leading up to this.");
+        // Check if we have any players online
+        if(isNull(server.players) || server.players.length == 0){
+            server.commandManager.executeCommand(server, "say Error: No players found online. Please report this to the TREPIDATION GitHub.");
+            return;
         }
 
-        val sender = event.commandSender;
-        val player as IPlayer = sender;
+        // Loop through all online players and apply reroll logic to each
+        for player in server.players {
+            if(isNull(player)){
+                continue;
+            }
 
-        Commands.call("fmvariable set timesup false false", player, player.world, true, true);
+            Commands.call("fmvariable set timesup false false", player, player.world, true, true);
 
-        // Reset NON-PERSISTANT player data between runs 
-        if(!isNull(player)){
+            // Reset NON-PERSISTANT player data between runs
             player.update({clickedNetherBarrier: null});
             player.update({shatteredTraceOfDeath: null});
             player.update({clickedNetherObelisk: null});
             player.update({clickedEchoOfBetrayal: null});
-        } else {
-            server.commandManager.executeCommand(server, "say Error: player data not found. Please report this to the TREPIDATION GitHub. Describe recent events leading up to this.");
+
+            // Get the player's timer bonus count
+            var bonusCount = 0;
+            bonusCount = player.data.timerbonus as int;
+
+            // Calculate new timer value (60 minutes - 1 minute per bonus used)
+            var newTimerValue = 72000 - (bonusCount * 1200);
+
+            // Get the nether world to ensure catenation runs in the correct dimension
+            val netherWorld = IWorld.getFromID(-1);
+                        
+            // Set the new timer value for this player
+            netherWorld.catenation()
+            .run(function(world, context) {
+                context.data = world.time;
+            })
+            .sleep(100)
+            .then(function(world, context) {
+                server.commandManager.executeCommand(server, "timer " + player.name + " set " + newTimerValue);
+
+                // Chrono Anchor
+                // Unlocks after first failed run
+                if(player.data.failedRuns >= 1){
+                    if(!player.hasGameStage("unlocked_chrono_anchor")){
+                        server.commandManager.executeCommand(server, "gamestage silentadd " + player.name + " unlocked_chrono_anchor");
+                        Commands.call("playsound enderskills:page_turn player " + player.name + " ~ ~ ~ 10", player, player.world, true, true);
+                        player.sendChat("§c§oYou awaken with someone else's memories burning behind your eyes. You quickly bring out your §e§ojournal§c§o to write it down.");
+                        player.sendChat("§3Soul Anchor can now be crafted.");
+                        player.sendChat("§3Chrono Anchor can now be crafted.");
+                        Commands.call("playsound minecraft:ui.toast.in master " + player.name, player, player.world, true, true);
+                        Commands.call("advancement grant " + player.name + " only triumph:advancements/journal_entries/chrono_anchor_entry", player, player.world, true, true);
+                    }
+                }
+
+                // Do more things after more failed runs!!
+                // 
+
+                // Chrono Usurpation uses
+                if(bonusCount == 1){
+                    player.sendChat("§c§oThe Veil whispers of debts unpaid. Your timer bears fresh scars from another's ambition. " + bonusCount + " minute is torn from your flesh.");
+                    Commands.call("playsound minecraft:ui.toast.in master " + player.name, player, player.world, true, true);
+                }
+                else if(bonusCount == 2){
+                    player.sendChat("§c§o" + bonusCount + " minutes torn from your flesh by hands unseen. It hungers for compounded interest.");
+                    Commands.call("playsound minecraft:ui.toast.in master " + player.name, player, player.world, true, true);
+                }
+                else if(bonusCount == 3){
+                    player.sendChat("§c§o" + bonusCount + " minutes are excised from your timeline, another's triumph written in your blood.");
+                    Commands.call("playsound minecraft:ui.toast.in master " + player.name, player, player.world, true, true);
+                }
+                else if(bonusCount == 4 || bonusCount >= 6){
+                    player.sendChat("§c§oDebt must be paid. " + bonusCount + " minutes are torn from your flesh.");
+                    Commands.call("playsound minecraft:ui.toast.in master " + player.name, player, player.world, true, true);
+                }
+                // Unlock Chrono Absolution
+                else if(bonusCount >= 5){
+                    if(!player.hasGameStage("unlocked_chrono_absolution")){ 
+                        server.commandManager.executeCommand(server, "gamestage silentadd " + player.name + " unlocked_chrono_absolution");
+                        Commands.call("playsound enderskills:page_turn player " + player.name + " ~ ~ ~ 10", player, player.world, true, true);
+
+                        player.sendChat("§3Chrono Absolution can now be crafted.");
+                        player.sendChat("§c§oYou awaken with someone else's memories burning behind your eyes. You quickly bring out your §e§ojournal§c§o to write it down.");
+                        Commands.call("advancement grant " + player.name + " only triumph:advancements/journal_entries/chrono_usurpation_entry", player, player.world, true, true);
+                    }
+                }
+            })
+            .start(); 
         }
-
-        // Get the player's timer bonus count
-        var bonusCount = 0;
-        bonusCount = player.data.timerbonus as int;
-
-        // Calculate new timer value (60 minutes - 1 minute per bonus used)
-        var newTimerValue = 72000 - (bonusCount * 1200);
-
-        // Get the nether world to ensure catenation runs in the correct dimension
-        val netherWorld = IWorld.getFromID(-1);
-                    
-        // Set the new timer value
-        netherWorld.catenation()
-        .run(function(world, context) {
-            context.data = world.time;
-        })
-        .sleep(100)
-        .then(function(world, context) {
-            server.commandManager.executeCommand(server, "timer @p set " + newTimerValue);
-
-            // Chrono Anchor
-            // Unlocks after first failed run
-            if(player.data.failedRuns >= 1){
-                if(!player.hasGameStage("unlocked_chrono_anchor")){
-                    server.commandManager.executeCommand(server, "gamestage silentadd @p unlocked_chrono_anchor");
-                    Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", player, player.world, true, true);
-                    player.sendChat("§c§oYou awaken with someone else's memories burning behind your eyes. You quickly bring out your §e§ojournal§c§o to write it down.");
-                    player.sendChat("§3Soul Anchor can now be crafted.");
-                    player.sendChat("§3Chrono Anchor can now be crafted.");
-                    Commands.call("playsound minecraft:ui.toast.in master @p", player, player.world, true, true);
-                    Commands.call("advancement grant @p only triumph:advancements/journal_entries/chrono_anchor_entry", player, player.world, true, true);
-                }
-            }
-
-            // Do more things after more failed runs!!
-            // 
-
-            // Chrono Usurpation uses
-            if(bonusCount == 1){
-                player.sendChat("§c§oThe Veil whispers of debts unpaid. Your timer bears fresh scars from another's ambition. " + bonusCount + " minute is torn from your flesh.");
-                Commands.call("playsound minecraft:ui.toast.in master @p", player, player.world, true, true);
-            }
-            else if(bonusCount == 2){
-                player.sendChat("§c§o" + bonusCount + " minutes torn from your flesh by hands unseen. It hungers for compounded interest.");
-                Commands.call("playsound minecraft:ui.toast.in master @p", player, player.world, true, true);
-            }
-            else if(bonusCount == 3){
-                player.sendChat("§c§o" + bonusCount + " minutes are excised from your timeline, another's triumph written in your blood.");
-                Commands.call("playsound minecraft:ui.toast.in master @p", player, player.world, true, true);
-            }
-            else if(bonusCount == 4 || bonusCount >= 6){
-                player.sendChat("§c§oDebt must be paid. " + bonusCount + " minutes are torn from your flesh.");
-                Commands.call("playsound minecraft:ui.toast.in master @p", player, player.world, true, true);
-            }
-            // Unlock Chrono Absolution
-            else if(bonusCount >= 5){
-                if(!player.hasGameStage("unlocked_chrono_absolution")){ 
-                    server.commandManager.executeCommand(server, "gamestage silentadd @p unlocked_chrono_absolution");
-                    Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", player, player.world, true, true);
-
-                    player.sendChat("§3Chrono Absolution can now be crafted.");
-                    player.sendChat("§c§oYou awaken with someone else's memories burning behind your eyes. You quickly bring out your §e§ojournal§c§o to write it down.");
-                    Commands.call("advancement grant @p only triumph:advancements/journal_entries/chrono_usurpation_entry", player, player.world, true, true);
-                }
-            }
-        })
-        .start(); 
   }
 });
