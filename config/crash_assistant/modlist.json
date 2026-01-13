@@ -358,12 +358,12 @@
     "curseForgeHash": 3609650788,
     "modrinthHash": "9eaf0f7e33646774068755fd387e2fcd05e2d08d"
   },
-  "CraftTweaker2-1.12-4.1.20.709.jar": {
-    "jarName": "CraftTweaker2-1.12-4.1.20.709.jar",
+  "CraftTweaker2-1.12-4.1.20.711.jar": {
+    "jarName": "CraftTweaker2-1.12-4.1.20.711.jar",
     "modId": "crafttweaker",
-    "version": "1.12-4.1.20.709",
-    "curseForgeHash": 556926025,
-    "modrinthHash": "15aa4bc8d3e01621e8b045c3a33ccba8058207d5"
+    "version": "1.12-4.1.20.711",
+    "curseForgeHash": 3542576462,
+    "modrinthHash": "4b4d1c646dc7612974412b668dc2d506ae9a6621"
   },
   "crafttweakerutils-0.7.jar": {
     "jarName": "crafttweakerutils-0.7.jar",
