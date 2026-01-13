@@ -179,6 +179,13 @@ events.onCommand(function(event as crafttweaker.event.CommandEvent) {
             .run(function(world, context) {
                 context.data = world.time;
             })
+            // Set spawn location to new reroll position after 20 ticks
+            // This is also done/supposed to be done thru the FancyMenu buttonscript (rerolldeath.txt) but isn't working with CommandDelay for some reason
+            .sleep(20)
+            .then(function(world, context) {
+                Commands.call("setworldspawn ~ ~ ~", player, player.world, true, true);
+                Commands.call("spawnpoint @a ~ ~ ~", player, player.world, true, true);
+            })
             .sleep(100)
             .then(function(world, context) {
                 server.commandManager.executeCommand(server, "timer " + player.name + " set " + newTimerValue);
