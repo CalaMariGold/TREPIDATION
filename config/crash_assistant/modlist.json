@@ -1272,13 +1272,6 @@
     "curseForgeHash": 811736537,
     "modrinthHash": "c853ff68401281fd0ecca4f5769120f42a45ef56"
   },
-  "shutupmodelloader-1.12.2-1.0.0.jar": {
-    "jarName": "shutupmodelloader-1.12.2-1.0.0.jar",
-    "modId": "shutupmodelloader",
-    "version": "1.0.0",
-    "curseForgeHash": 37714550,
-    "modrinthHash": "b8b002739ca94a967c601557cd905cb3f208a87b"
-  },
   "SilentLib-1.12.2-3.0.14+168.jar": {
     "jarName": "SilentLib-1.12.2-3.0.14+168.jar",
     "modId": "SilentLib",
