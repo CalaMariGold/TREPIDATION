@@ -56,6 +56,24 @@ static ashen_revenant_entry as IItemStack = <contenttweaker:ashen_revenant_entry
 static sanity_entry as IItemStack = <contenttweaker:sanity_entry>;
 
 
+// IMPORTANT:
+// Patchouli entries can never be taken away on run resets
+// due to a bug where the journal button will stop working if the player was previously viewing an entry that was removed.
+
+
+/* Intro chapters:
+Always unlocked:
+- Welcome
+- Movement & Combat
+- Essential Tips
+- Runs & Timer
+- Sanity
+
+Unlocked when obtaining skill book:
+- Grimoire of the Veil (via config\triumph\script\triumph\advancements\journal_entries\skill_book.txt)
+*/
+
+
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
     if(!event.world.isRemote()){
         val itemStack1 = event.item as IItemStack; 
@@ -88,6 +106,8 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             }
 
             // Entry #22 - Trace of Death
+            // Unlocked via netherEvents.zs
+            // triumph:advancements/journal_entries/trace_of_death_entry
 
             // Entry #7 - Dreadswine
             if (dreadswine_entry.matches(itemStack1)) {  
@@ -138,9 +158,12 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             }
 
             // Entry #26 - Chrono Usurpation
+            // Unlocked via timerAndRunEvents.zs
+            // triumph:advancements/journal_entries/chrono_usurpation_entry
 
             // Entry #36 - Chrono Anchor
-            
+            // Unlocked via timerAndRunEvents.zs
+            // triumph:advancements/journal_entries/chrono_anchor_entry
         }
     }
 });
