@@ -11,7 +11,7 @@
     },
     {
       "type": "text",
-      "text": "$(#551012)$(bold)Double Jump:$()$(#551012) Unlike dashing, double jumping $(#FFFF55)resets your fall damage$(#551012). Timing your double jump is crucial to take no damage from long falls.$(br2)$(bold)Wall Hang:$()$(#551012) You can hang on walls for a few seconds by holding $(#104455)SHIFT$(#551012). Wall hanging $(#FFFF55)resets your double jump$(#551012), allowing you to double jump, wall hang, then double jump again.$(br2)------------------------------------>"
+      "text": "$(#551012)$(bold)Double Jump:$()$(#551012) Unlike dashing, double jumping $(#FFFF55)resets your fall damage$(#551012). Timing your double jump is crucial to take no damage from long falls.$(br2)$(bold)Wall Hang:$()$(#551012) You can hang on walls for a few seconds by holding $(#104455)SHIFT$(#551012). Wall hanging $(#FFFF55)resets your double jump$(#551012), allowing you to double jump, wall hang, then double jump again."
     },
     {
       "type": "text",

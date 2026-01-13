@@ -12,7 +12,7 @@
     },
     {
       "type": "text",
-      "text": "$(#551012)There are 3 classes you can delve into and combine: $(#FFFF55)Defense, Offense, and Mobility.$()$(#551012)$(br2)Each have multiple subclasses where you can specialize further to fit your gameplay style.$(br2)Press $(#104455)SHIFT + [number]$(#551012) to use an ability and $(#104455)G$(#551012) and $(#104455)H$(#551012) to cycle through ability groups.$(#551012)$(br2)------------------------------------>"
+      "text": "$(#551012)There are 3 classes you can delve into and combine: $(#FFFF55)Defense, Offense, and Mobility.$()$(#551012)$(br2)Each have multiple subclasses where you can specialize further to fit your gameplay style.$(br2)Press $(#104455)SHIFT + [number]$(#551012) to use an ability and $(#104455)G$(#551012) and $(#104455)H$(#551012) to cycle through ability groups.$(#551012)"
     },
     {
       "type": "text",

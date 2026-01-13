@@ -11,7 +11,7 @@
     },
     {
       "type": "text",
-      "text": "$(#551012)Many items are meant to be used by pressing $(#104455)right-click$(#551012) with it in your hand. However, if you have a weapon/tool in your $(#FFFF55)off-hand$(#551012), you must $(#104455)shift + right-click$(#551012) to use it.$(br2)$(#FFFF55)Checkpoints occur$(#551012) before every major boss battle and after entering a new dimension. Your spawn point is set when you see this message: $(br)$(#104455)Your soul has been bound to this position.$(#551012)$(br)------------------------------------>"
+      "text": "$(#551012)Many items are meant to be used by pressing $(#104455)right-click$(#551012) with it in your hand. However, if you have a weapon/tool in your $(#FFFF55)off-hand$(#551012), you must $(#104455)shift + right-click$(#551012) to use it.$(br2)$(#FFFF55)Checkpoints occur$(#551012) before every major boss battle and after entering a new dimension. Your spawn point is set when you see this message: $(br)$(#104455)Your soul has been bound to this position.$(#551012)"
     },
     {
       "type": "text",

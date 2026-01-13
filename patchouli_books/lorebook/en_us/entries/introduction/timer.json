@@ -7,11 +7,11 @@
   "pages": [
     {
       "type": "text",
-      "text": "$(#FFFF55)TREPIDATION is a roguelike$(#551012), meaning that $(#FFFF55)resetting and starting new runs$(#551012) is expected and encouraged.$(br2)You can reset a run by clicking the $(#FFFF55)Reset Run button$(#551012) on the pause menu."
+      "text": "$(#FFFF55)TREPIDATION is a roguelike$(#551012), meaning that $(#FFFF55)resetting and starting new runs$(#551012) is expected and encouraged.$(br2)You can reset a run by clicking the $(#FFFF55)Reset Run button$(#551012) on the pause menu.$(br2)You may have noticed a timer at the bottom left of your screen ticking down."
     },
     {
       "type": "text",
-      "text": "$(#551012)You may have noticed a timer at the bottom left of your screen ticking down.$(br2)$(bold)Once at 0:00, you will be $(obf)sent to Limbo for an unknown amount of time, where there will be no escape$()$(#551012). $(br2)Failing a run will unlock new content and lore.$(#551012)$(br2)------------------------------------>"
+      "text": "$(#551012)$(bold)Once at 0:00, you will be $(obf)sent to Limbo for an unknown amount of time, where there will be no escape$()$(#551012).$(br2)$(#FFFF55)$(bold)YOU ARE SUPPOSED TO FAIL!$()$(br2)$(#551012)Failing a run will unlock new content and lore.$()$(br2)$(#551012)You will not complete the pack on your first run. Keep trying, discover new content, strategies, and secrets.$()"
     },
     {
       "type": "spotlight",
