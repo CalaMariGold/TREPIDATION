@@ -37,12 +37,12 @@
     "curseForgeHash": 2660540505,
     "modrinthHash": "d272efd0c807908138edbac8e6cb2d90127ac01a"
   },
-  "+Fugue-0.22.6.jar": {
-    "jarName": "+Fugue-0.22.6.jar",
+  "+Fugue-0.22.9.jar": {
+    "jarName": "+Fugue-0.22.9.jar",
     "modId": "fugue",
-    "version": "0.22.6",
-    "curseForgeHash": 1455217593,
-    "modrinthHash": "c61eac0a7c0a82071c9093932bd39013a11acc8f"
+    "version": "0.22.9",
+    "curseForgeHash": 2397244607,
+    "modrinthHash": "0cb5bf039cd944285de7f31ab2fbf5795232034f"
   },
   "1.12.Forge.RPG-HUD-3.8.3.jar": {
     "jarName": "1.12.Forge.RPG-HUD-3.8.3.jar",
