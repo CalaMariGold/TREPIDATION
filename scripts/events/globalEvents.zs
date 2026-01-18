@@ -234,7 +234,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
             })
             .sleep(500)
             .then(function(world, context) {
-                event.player.sendChat("§c§oYou feel a bone-deep chill settle behind your eyes; a dreadful feeling that grows with §e§oeach passing moment§c§o in this realm. You feel a pull towards a §e§oparticular gem§c§o that might calm your mind, harbored in stone or held by a forgotten presence.");
+                event.player.sendChat("§c§oYou feel a bone-deep chill settle behind your eyes; a dreadful feeling that\n§c§ogrows with §e§oeach passing moment§c§o in this realm. You feel a pull towards\n§c§oa §e§oparticular gem§c§o that might calm your mind, harbored in stone or held\n§c§oby a forgotten presence.");
                 Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.player.world, true, true);
             })
             .start();
