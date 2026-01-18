@@ -220,6 +220,9 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
                 Commands.call("sanity add " + event.player.name + " 100", event.player, event.player.world, true, true);
                 event.player.sendChat("§3§oYour grip on reality strengthens...");
 
+                // Give player torch in-case they don't have one
+                Commands.call("give @p minecraft:torch", event.player, event.player.world, true, true);
+
                 server.commandManager.executeCommand(server, "gamestage silentremove @p erebus");
             }
         });
