@@ -73,6 +73,26 @@ Unlocked when obtaining skill book:
 - Grimoire of the Veil (via config\triumph\script\triumph\advancements\journal_entries\skill_book.txt)
 */
 
+/* Main chapters:
+- Nether (unlocked at start, \config\triumph\script\triumph\advancements\dimensions\nether.txt)
+- Limbo (unlocked when entering Limbo, \config\triumph\script\triumph\advancements\dimensions\limbo.txt)
+*/
+
+// Chat messages for new main chapters
+events.onPlayerAdvancement(function(event as crafttweaker.event.PlayerAdvancementEvent){
+    if(!event.entity.world.isRemote()){
+                
+        // Limbo chat msg sent in globalEvents.zs
+
+        if(event.player.data.hasJournalEntryNether == false){
+            if(event.id == "triumph:advancements/hidden/unlock_journal"){
+                event.player.sendChat("§3§oA new page was added to your journal. View your journal by clicking the book icon in your inventory.");
+                event.player.update({hasJournalEntryNether: true});
+            }
+        }
+    }
+});
+
 
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
     if(!event.world.isRemote()){
@@ -86,6 +106,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/sanity_entry", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
                 Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
+                event.player.sendChat("§3§oA new page was added to your journal.");
                 itemStack1.mutable().shrink(1);
             }
             
@@ -94,6 +115,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/ashen_oracle_entry", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
                 Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
+                event.player.sendChat("§3§oA new page was added to your journal.");
                 itemStack1.mutable().shrink(1);
             }
 
@@ -102,6 +124,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/ashen_revenant_entry", event.player, event.world, true, true);
                 Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
+                event.player.sendChat("§3§oA new page was added to your journal.");
                 itemStack1.mutable().shrink(1);
             }
 
@@ -114,6 +137,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/dreadswine_entry", event.player, event.world, true, true);
                 Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
+                event.player.sendChat("§3§oA new page was added to your journal.");
                 itemStack1.mutable().shrink(1);
             }
 
@@ -122,6 +146,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/foulite_dust_entry", event.player, event.world, true, true);
                 Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
+                event.player.sendChat("§3§oA new page was added to your journal.");
                 itemStack1.mutable().shrink(1);
             }
 
@@ -130,6 +155,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/nether_wraith_entry", event.player, event.world, true, true);
                 Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
+                event.player.sendChat("§3§oA new page was added to your journal.");
                 itemStack1.mutable().shrink(1);
             }
 
@@ -138,6 +164,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/veilstrium_entry", event.player, event.world, true, true);
                 Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
+                event.player.sendChat("§3§oA new page was added to your journal.");
                 itemStack1.mutable().shrink(1);
             }
 
@@ -146,6 +173,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/infernium_entry", event.player, event.world, true, true);
                 Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
+                event.player.sendChat("§3§oA new page was added to your journal.");
                 itemStack1.mutable().shrink(1);
             }
 
@@ -154,6 +182,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 Commands.call("advancement grant @p only triumph:advancements/journal_entries/glowood_entry", event.player, event.world, true, true);
                 Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
+                event.player.sendChat("§3§oA new page was added to your journal.");
                 itemStack1.mutable().shrink(1);
             }
 

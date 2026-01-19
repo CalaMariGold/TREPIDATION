@@ -80,6 +80,8 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
             event.player.update({clickedEchoOfBetrayal: false as bool});
             event.player.update({shatteredTraceOfDeath: false as bool});
             event.player.update({dreadstoneFragmentClick: false as bool});
+            event.player.update({hasJournalEntryLimbo: false as bool});
+            event.player.update({hasJournalEntryNether: false as bool});
         } else {
             server.commandManager.executeCommand(server, "say Error: Player not found, please report this to the TREPIDATION GitHub. Describe recent events leading up to this.");
         }
@@ -101,9 +103,9 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
         })
         .sleep(200)
         .then(function(world, context) {
-            Commands.call("advancement grant @p only triumph:advancements/hidden/unlock_journal", event.player, event.entity.world, true, true);
             event.player.sendChat("§c§oDisoriented, you awaken to find a §e§ojournal§c§o attached to your belt. As you begin to write, you notice a scar on your left wrist.");
             Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.entity.world, true, true);
+            Commands.call("advancement grant @p only triumph:advancements/hidden/unlock_journal", event.player, event.entity.world, true, true);
         })
         .start();
         

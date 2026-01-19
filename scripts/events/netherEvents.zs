@@ -415,7 +415,8 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                     .then(function(world, context) {
                         event.player.sendChat("§c§oMemories that don't seem to be your own begin to flood your mind. You quickly bring out your §e§ojournal§c§o to write it down.");
                         Commands.call("advancement grant @p only triumph:advancements/journal_entries/trace_of_death_entry", event.player, event.world, true, true);
-
+                        event.player.sendChat("§3§oA new page was added to your journal.");
+                        Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
                     })
                     .start();
                 }

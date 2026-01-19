@@ -201,8 +201,9 @@ events.onCommand(function(event as crafttweaker.event.CommandEvent) {
                         player.sendChat("§c§oYou awaken with someone else's memories burning behind your eyes. You quickly bring out your §e§ojournal§c§o to write it down.");
                         player.sendChat("§3Soul Anchor can now be crafted.");
                         player.sendChat("§3Chrono Anchor can now be crafted.");
-                        Commands.call("playsound minecraft:ui.toast.in master " + player.name, player, player.world, true, true);
+                        Commands.call("playsound enderskills:page_turn player " + player.name + " ~ ~ ~ 10", player, player.world, true, true);
                         Commands.call("advancement grant " + player.name + " only triumph:advancements/journal_entries/chrono_anchor_entry", player, player.world, true, true);
+                        player.sendChat("§3§oA new page was added to your journal.");
                     }
                 }
 
@@ -234,7 +235,9 @@ events.onCommand(function(event as crafttweaker.event.CommandEvent) {
 
                         player.sendChat("§3Chrono Absolution can now be crafted.");
                         player.sendChat("§c§oYou awaken with someone else's memories burning behind your eyes. You quickly bring out your §e§ojournal§c§o to write it down.");
+                        Commands.call("playsound enderskills:page_turn player " + player.name + " ~ ~ ~ 10", player, player.world, true, true);
                         Commands.call("advancement grant " + player.name + " only triumph:advancements/journal_entries/chrono_usurpation_entry", player, player.world, true, true);
+                        player.sendChat("§3§oA new page was added to your journal.");
                     }
                 }
             })
