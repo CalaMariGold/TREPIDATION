@@ -300,7 +300,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
         .run(function(world, context) {
             context.data = world.time;
         })
-        .sleep(100)
+        .sleep(180)
         .then(function(world, context) {
             // Unlock journal entry for Limbo after a delay
             Commands.call("advancement grant @p only triumph:advancements/dimensions/limbo", event.player, event.entity.world, true, true);
