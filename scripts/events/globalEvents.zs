@@ -300,6 +300,14 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
         .run(function(world, context) {
             context.data = world.time;
         })
+        .sleep(100)
+        .then(function(world, context) {
+            // Unlock journal entry for Limbo after a delay
+            Commands.call("advancement grant @p only triumph:advancements/dimensions/limbo", event.player, event.entity.world, true, true);
+            event.player.sendChat("§3§oA new page was added to your journal.");
+            Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.entity.world, true, true);
+            
+        })
         .sleep(500)
         .then(function(world, context) {
             if(event.player.dimension == 684){
