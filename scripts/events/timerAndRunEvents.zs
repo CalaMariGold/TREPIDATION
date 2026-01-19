@@ -133,11 +133,13 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
 
 // Chrono Anchor
 static chronoAnchor as IItemStack = <timeisup:timer_anchor>;
+
+// doesn't work?
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
     if(!event.world.isRemote()){
-        if((event.item.definition.id).matches(chronoAnchor.definition.id)) {
-            event.player.sendChat("§c§oYou awaken with someone else's memories burning behind your eyes. You quickly bring out your §e§ojournal§c§o to write it down.");
-            Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.player.world, true, true);
+        if((event.item.definition.id).matches(chronoAnchor.definition.id)) {   
+
+            server.commandManager.executeCommand(server, "playsound quark:item.soul_bead.curse player @s ~ ~ ~ 5.0 1.0 1.0");  
         }  
     }
 });
