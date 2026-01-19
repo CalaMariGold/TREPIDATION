@@ -48,9 +48,11 @@ EventManager.getInstance().onTimerTick(function(event as TickEvent){
     if(totalSecs <= 0) {
         if(!isNull(event.player)){
             // using Commands.call causes "command not found" error on servers only
-            // using executeCommand doesn't fix the issue, but at least doesn't spam with errors
+            // Commands.call is still needed to work on clients
+            // executeCommand doesn't fix it but keeping it there just in case
             // Basically, the time is up FancyMenu sequence doesnt work on servers
             server.commandManager.executeCommand(server, "fmvariable set timesup true false");
+            Commands.call("fmvariable set timesup true false", event.player, event.player.world, true, true);
         }
     }
 });
