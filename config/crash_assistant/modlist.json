@@ -37,12 +37,12 @@
     "curseForgeHash": 2660540505,
     "modrinthHash": "d272efd0c807908138edbac8e6cb2d90127ac01a"
   },
-  "+Fugue-0.22.9.jar": {
-    "jarName": "+Fugue-0.22.9.jar",
+  "+Fugue-0.22.10.jar": {
+    "jarName": "+Fugue-0.22.10.jar",
     "modId": "fugue",
-    "version": "0.22.9",
-    "curseForgeHash": 2397244607,
-    "modrinthHash": "0cb5bf039cd944285de7f31ab2fbf5795232034f"
+    "version": "0.22.10",
+    "curseForgeHash": 3942893278,
+    "modrinthHash": "35cad1c31eaf4b1134692b49d713212dc91fe099"
   },
   "1.12.Forge.RPG-HUD-3.8.3.jar": {
     "jarName": "1.12.Forge.RPG-HUD-3.8.3.jar",
@@ -680,6 +680,13 @@
     "curseForgeHash": 1251642093,
     "modrinthHash": "81d81156bf76622bfcef20496cb533a7b8403151"
   },
+  "HadEnoughItems_1.12.2-4.29.14.jar": {
+    "jarName": "HadEnoughItems_1.12.2-4.29.14.jar",
+    "modId": "jei",
+    "version": "4.29.14",
+    "curseForgeHash": 1638030778,
+    "modrinthHash": "cb696342e9da001da5d324fab3e705038da2594d"
+  },
   "Highlighter-1.12.2-forge-1.1.7.jar": {
     "jarName": "Highlighter-1.12.2-forge-1.1.7.jar",
     "modId": "highlighter",
@@ -771,12 +778,12 @@
     "curseForgeHash": 1890834000,
     "modrinthHash": "200188ff9b477a615ed556a11a386e3cf816ce5f"
   },
-  "jei_1.12.2-4.16.1.1013.jar": {
-    "jarName": "jei_1.12.2-4.16.1.1013.jar",
-    "modId": "jei",
-    "version": "4.16.1.1013",
-    "curseForgeHash": 974555617,
-    "modrinthHash": "91767806d0329ef91b9277142a359b078c57e92d"
+  "JEI-Utilities-1.12.2-0.2.13.jar": {
+    "jarName": "JEI-Utilities-1.12.2-0.2.13.jar",
+    "modId": "jeiutilities",
+    "version": "0.2.13",
+    "curseForgeHash": 4213826967,
+    "modrinthHash": "453b3e717bc1c522b1d1d1d5385125b73ea239e1"
   },
   "JEIHider-1.1c.jar": {
     "jarName": "JEIHider-1.1c.jar",
@@ -1050,12 +1057,12 @@
     "curseForgeHash": 3667517947,
     "modrinthHash": "28debe44cc06685ca9274cd38441c933ed53836e"
   },
-  "patchoulibooks-0.2.5.jar": {
-    "jarName": "patchoulibooks-0.2.5.jar",
+  "patchoulibooks-0.3.0.jar": {
+    "jarName": "patchoulibooks-0.3.0.jar",
     "modId": "patchoulibooks",
-    "version": "0.2.4",
-    "curseForgeHash": 3011431465,
-    "modrinthHash": "cc4ebb6f3d5f38183b4f2c1cebd44d3c4dcad5ac"
+    "version": "0.3.0",
+    "curseForgeHash": 2199485253,
+    "modrinthHash": "faeabff9f9a0df9e686bb9836519ac85a93cc3d1"
   },
   "PerfectSpawn-MC1.12.2-2.1.jar": {
     "jarName": "PerfectSpawn-MC1.12.2-2.1.jar",
@@ -1529,12 +1536,12 @@
     "curseForgeHash": 3724894852,
     "modrinthHash": "dece84febbf3d97b68421510e5037ba77b93e39b"
   },
-  "zenutils-1.26.13.jar": {
-    "jarName": "zenutils-1.26.13.jar",
+  "zenutils-1.26.14.jar": {
+    "jarName": "zenutils-1.26.14.jar",
     "modId": "zenutils",
-    "version": "1.26.13",
-    "curseForgeHash": 3400025629,
-    "modrinthHash": "cd66e3e6dcec8cbdd2fdbeb7fcd6637bf0d82bde"
+    "version": "1.26.14",
+    "curseForgeHash": 2935523220,
+    "modrinthHash": "473b27eaaeb0eb7e6049a470db46ba3ead46edb5"
   },
   "AnimEmis_srparasites.zip (resourcepack)": {
     "jarName": "AnimEmis_srparasites.zip (resourcepack)"
