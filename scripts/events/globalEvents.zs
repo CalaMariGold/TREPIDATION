@@ -117,8 +117,10 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
 // Give player soul compass with curse of vanishing upon death
 events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
     if(!event.entity.world.isRemote()){
-        event.player.give(<quark:soul_compass>.withTag({ench:[{id:71,lvl:1}]}));
+        // Remove old soul compass since Curse of Vanishing doesn't work, I still put the enchantment in so players know
+        Commands.call("clear @p quark:soul_compass", event.player, event.entity.world, true, true);
 
+        event.player.give(<quark:soul_compass>.withTag({ench:[{id:71,lvl:1}]}));
         Commands.call("effect @p resistance 5", event.player, event.entity.world, true, true);
     }
 });
