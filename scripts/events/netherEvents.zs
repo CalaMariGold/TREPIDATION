@@ -431,7 +431,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
         val itemStack3 = event.item as IItemStack; 
         if(!isNull(itemStack3)){
             if (scepter.matches(itemStack3)) {  
-                Commands.call("playsound minecraft:item.totem.use player @p", event.player, event.world, true, true);
+                Commands.call("playsound minecraft:item.totem.use player @p ~ ~ ~ 10.0 0.5", event.player, event.world, true, true);
                 event.player.sendChat("§c§oThe ground begins to tremble as you tightly grasp the scepter. As the air crackles with anticipation, the scepter dissolves into a swirling vortex\n§c§oof crimson smoke. In the blink of an eye, the smoke weaves itself into the\n§c§ofabric of space as the scepter's essence becomes one with a hellish structure.");
                 Commands.call("pillar-spawn witherarena ~ 9 ~", event.player, event.world, true, true);
 
