@@ -220,31 +220,23 @@ eventManager.listen(EventPriority.HIGHEST) { EntityJoinWorldEvent event ->
     def entity = event.getEntity()
     def babyMult = globalSettings.babyHealthMultiplier
     
-    // Zombie Pigman
+    // Vanilla mobs
     if (entity instanceof EntityPigZombie) {
         applyMobStats(entity, mobConfigs.pigZombie, babyMult)
         return
     }
-    
-    // Wither Skeleton
     if (entity instanceof EntityWitherSkeleton) {
         applyMobStats(entity, mobConfigs.witherSkeleton, babyMult)
         return
     }
-    
-    // Ghast
     if (entity instanceof EntityGhast) {
         applyMobStats(entity, mobConfigs.ghast, babyMult)
         return
     }
-    
-    // Creeper
     if (entity instanceof EntityCreeper) {
         applyMobStats(entity, mobConfigs.creeper, babyMult)
         return
     }
-    
-    // Enderman
     if (entity instanceof EntityEnderman) {
         applyMobStats(entity, mobConfigs.enderman, babyMult)
         return
