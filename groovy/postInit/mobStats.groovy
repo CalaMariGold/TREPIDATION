@@ -122,6 +122,11 @@ def mobConfigs = [
         maxHealth:            100.0,
     ],
     
+    // Nether Aberrant (da:nether_aberant)
+    netherAberrant: [
+        followRange:          16.0,
+    ],
+    
     // Blaze (minecraft:blaze)
     blaze: [
         vanillaHealth:        20.0,
@@ -173,6 +178,7 @@ def flameSpitClass = entity('primitivemobs:flame_spit')?.getEntityClass()
 def festiveCreeperClass = entity('primitivemobs:festive_creeper')?.getEntityClass()
 def blazingJuggernautClass = entity('primitivemobs:blazing_juggernaut')?.getEntityClass()
 def eyesClass = entity('eyesinthedarkness:eyes')?.getEntityClass()
+def netherAberrantClass = entity('da:nether_aberant')?.getEntityClass()
 
 // Helper: Apply stats to a mob
 def applyMobStats(entity, config, babyMult) {
@@ -277,6 +283,10 @@ eventManager.listen(EventPriority.HIGHEST) { EntityJoinWorldEvent event ->
     // Eyes in the Darkness
     else if (entClass == eyesClass && mobConfigs.eyes) {
         applyMobStats(entity, mobConfigs.eyes, babyMult)
+    }
+    // Nether Aberrant (DA)
+    else if (entClass == netherAberrantClass && mobConfigs.netherAberrant) {
+        applyMobStats(entity, mobConfigs.netherAberrant, babyMult)
     }
 
     // Vanilla mobs
