@@ -107,6 +107,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
                 Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 event.player.sendChat("§3§oA new page was added to your journal.");
+                event.player.sendChat("§3§oYour grip on reality strengthens...");
                 itemStack1.mutable().shrink(1);
             }
             
@@ -116,6 +117,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
                 Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 event.player.sendChat("§3§oA new page was added to your journal.");
+                event.player.sendChat("§3§oYour grip on reality strengthens...");
                 itemStack1.mutable().shrink(1);
             }
 
@@ -125,6 +127,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
                 event.player.sendChat("§3§oA new page was added to your journal.");
+                event.player.sendChat("§3§oYour grip on reality strengthens...");
                 itemStack1.mutable().shrink(1);
             }
 
@@ -138,6 +141,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
                 event.player.sendChat("§3§oA new page was added to your journal.");
+                event.player.sendChat("§3§oYour grip on reality strengthens...");
                 itemStack1.mutable().shrink(1);
             }
 
@@ -147,6 +151,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
                 event.player.sendChat("§3§oA new page was added to your journal.");
+                event.player.sendChat("§3§oYour grip on reality strengthens...");
                 itemStack1.mutable().shrink(1);
             }
 
@@ -156,6 +161,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
                 event.player.sendChat("§3§oA new page was added to your journal.");
+                event.player.sendChat("§3§oYour grip on reality strengthens...");
                 itemStack1.mutable().shrink(1);
             }
 
@@ -165,6 +171,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
                 event.player.sendChat("§3§oA new page was added to your journal.");
+                event.player.sendChat("§3§oYour grip on reality strengthens...");
                 itemStack1.mutable().shrink(1);
             }
 
@@ -174,6 +181,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
                 event.player.sendChat("§3§oA new page was added to your journal.");
+                event.player.sendChat("§3§oYour grip on reality strengthens...");
                 itemStack1.mutable().shrink(1);
             }
 
@@ -183,6 +191,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 Commands.call("sanity add " + event.player.name + " 10", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.world, true, true);
                 event.player.sendChat("§3§oA new page was added to your journal.");
+                event.player.sendChat("§3§oYour grip on reality strengthens...");
                 itemStack1.mutable().shrink(1);
             }
 

@@ -28,6 +28,9 @@ static veilstrium_leggings as IItemStack = <nethercraft:neridium_leggings:*>;
 static veilstrium_boots as IItemStack = <nethercraft:neridium_boots:*>;
 
 
+//
+// Sanity granted when using journal entries in journalEvents.zs
+//
 
 // Remove sanity on respawn
 events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent) {
@@ -110,8 +113,9 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
     }
 });
 
+//
 // Dreadstone tablet sanity increase in netherEvents.zs
-
+//
 
 // Timer Bonus use sanity increase
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent) {
@@ -128,9 +132,9 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
 
 
 
-
+//
 // Dimension transition sanity increase in globalEvents.zs
-
+//
 
 
 
