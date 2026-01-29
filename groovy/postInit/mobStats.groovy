@@ -234,7 +234,26 @@ eventManager.listen { LivingHurtEvent event ->
 eventManager.listen(EventPriority.HIGHEST) { EntityJoinWorldEvent event ->
     def entity = event.getEntity()
     def babyMult = globalSettings.babyHealthMultiplier
+
+    // Modded mobs (use cached entity classes)
+    def entClass = entity.getClass()
     
+    // Primitive Mobs (festive creeper handled above before vanilla creeper check)
+    if (entClass == festiveCreeperClass && mobConfigs.festiveCreeper) {
+        applyMobStats(entity, mobConfigs.festiveCreeper, babyMult)
+        return
+    }
+    else if (entClass == flameSpewerClass && mobConfigs.flameSpewer) {
+        applyMobStats(entity, mobConfigs.flameSpewer, babyMult)
+    }
+    else if (entClass == blazingJuggernautClass && mobConfigs.blazingJuggernaut) {
+        applyMobStats(entity, mobConfigs.blazingJuggernaut, babyMult)
+    }
+    // Eyes in the Darkness
+    else if (entClass == eyesClass && mobConfigs.eyes) {
+        applyMobStats(entity, mobConfigs.eyes, babyMult)
+    }
+
     // Vanilla mobs
     if (entity instanceof EntityPigZombie) {
         applyMobStats(entity, mobConfigs.pigZombie, babyMult)
@@ -258,9 +277,6 @@ eventManager.listen(EventPriority.HIGHEST) { EntityJoinWorldEvent event ->
     }
     // Magma cubes handled in LivingUpdateEvent
     
-    // Modded mobs (use cached entity classes)
-    def entClass = entity.getClass()
-    
     // Nethercraft mobs
     if (entClass == darkZombieClass && mobConfigs.darkZombie) {
         applyMobStats(entity, mobConfigs.darkZombie, babyMult)
@@ -271,20 +287,7 @@ eventManager.listen(EventPriority.HIGHEST) { EntityJoinWorldEvent event ->
     else if (entClass == camouflageSpiderClass && mobConfigs.camouflageSpider) {
         applyMobStats(entity, mobConfigs.camouflageSpider, babyMult)
     }
-    // Primitive Mobs
-    else if (entClass == flameSpewerClass && mobConfigs.flameSpewer) {
-        applyMobStats(entity, mobConfigs.flameSpewer, babyMult)
-    }
-    else if (entClass == festiveCreeperClass && mobConfigs.festiveCreeper) {
-        applyMobStats(entity, mobConfigs.festiveCreeper, babyMult)
-    }
-    else if (entClass == blazingJuggernautClass && mobConfigs.blazingJuggernaut) {
-        applyMobStats(entity, mobConfigs.blazingJuggernaut, babyMult)
-    }
-    // Eyes in the Darkness
-    else if (entClass == eyesClass && mobConfigs.eyes) {
-        applyMobStats(entity, mobConfigs.eyes, babyMult)
-    }
+    
 }
 
 // Magma cube stats handler, runs on first tick after spawn
