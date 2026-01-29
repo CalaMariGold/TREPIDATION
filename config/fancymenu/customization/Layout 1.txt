@@ -110,7 +110,7 @@ customization {
   buttonaction = openlink;https://docs.google.com/document/d/1ChK55p_9aA9wusMZYTBIUbV1P_ucuhZCtudwK_244H0/edit#%btnaction_splitter_fm%
   backgroundhovered = resources\trepidation\transparent.png
   description = Click to view changelog
-  label = v1.1
+  label = v1.2
   loopbackgroundanimations = true
   x = 0
   width = 25
