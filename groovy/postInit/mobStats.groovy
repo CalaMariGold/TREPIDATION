@@ -121,6 +121,14 @@ def mobConfigs = [
     blaze: [
         fireballDamageMultiplier: 0.1, // Fireball damage × this value (1.0 = normal)
     ],
+    
+    // Magma Cube (minecraft:magma_cube)
+    // Specify large (size 4) stats, smaller sizes auto-scale using vanilla ratios
+    magmaCube: [
+        largeMaxHealth:      16.0, // Vanilla: 16 (Medium: 4, Small: 1)
+        largeOverrideDamage: 4.0,  // Vanilla: 6 (Medium: 4, Small: 3)
+        largeMovementSpeed:  0.5, // Vanilla: 0.6 (Medium: 0.4, Small: 0.3)
+    ],
 ]
 
 // =============================================================================
@@ -128,6 +136,7 @@ def mobConfigs = [
 // =============================================================================
 
 import net.minecraftforge.event.entity.living.LivingHurtEvent
+import net.minecraftforge.event.entity.living.LivingEvent
 import net.minecraft.entity.projectile.EntitySmallFireball
 import net.minecraft.entity.monster.EntityBlaze
 import net.minecraft.entity.SharedMonsterAttributes
@@ -136,6 +145,7 @@ import net.minecraft.entity.monster.EntityWitherSkeleton
 import net.minecraft.entity.monster.EntityGhast
 import net.minecraft.entity.monster.EntityCreeper
 import net.minecraft.entity.monster.EntityEnderman
+import net.minecraft.entity.monster.EntityMagmaCube
 import net.minecraft.entity.EntityLivingBase
 import net.minecraftforge.event.entity.EntityJoinWorldEvent
 import net.minecraft.util.ResourceLocation
@@ -213,6 +223,14 @@ eventManager.listen { LivingHurtEvent event ->
             event.setAmount((float)(mobConfigs.bloodyZombie.overrideDamage))
         }
     }
+    
+    // Magma cube damage override (they don't have ATTACK_DAMAGE attribute)
+    if (attacker instanceof EntityMagmaCube && mobConfigs.magmaCube?.largeOverrideDamage != null) {
+        def size = attacker.getSlimeSize()
+        // Scale using vanilla ratio: (size+2)/6 (since large is 4+2 = 6)
+        def damage = mobConfigs.magmaCube.largeOverrideDamage * (size + 2) / 6.0
+        event.setAmount((float) damage)
+    }
 }
 
 // Mob spawn handler
@@ -241,6 +259,7 @@ eventManager.listen(EventPriority.HIGHEST) { EntityJoinWorldEvent event ->
         applyMobStats(entity, mobConfigs.enderman, babyMult)
         return
     }
+    // Magma cubes handled in LivingUpdateEvent
     
     // Nethercraft mobs
     def entityId = getEntityId(entity)
@@ -268,5 +287,45 @@ eventManager.listen(EventPriority.HIGHEST) { EntityJoinWorldEvent event ->
     // Eyes in the Darkness
     else if (entityId == "eyesinthedarkness:eyes" && mobConfigs.eyes) {
         applyMobStats(entity, mobConfigs.eyes, babyMult)
+    }
+}
+
+// Magma cube stats handler, runs on first tick after spawn
+// needed because setSlimeSize() overwrites attributes after EntityJoinWorldEvent
+eventManager.listen { LivingEvent.LivingUpdateEvent event ->
+    def entity = event.getEntityLiving()
+    
+    if (entity instanceof EntityMagmaCube) {
+        def config = mobConfigs.magmaCube
+        def size = entity.getSlimeSize()
+        
+        // Health: vanilla formula is size² (1, 4, 16)
+        if (config?.largeMaxHealth) {
+            def vanillaHealth = (size * size) as double
+            def targetHealth = config.largeMaxHealth * vanillaHealth / 16.0
+            
+            // Only modify if target differs from vanilla AND current is still vanilla
+            if (Math.abs(targetHealth - vanillaHealth) > 0.01) {
+                def currentMaxHealth = entity.getMaxHealth()
+                if (Math.abs(currentMaxHealth - vanillaHealth) < 0.01) {
+                    entity.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(targetHealth)
+                    entity.setHealth((float) targetHealth)
+                }
+            }
+        }
+        
+        // Movement speed: vanilla formula is 0.2 + 0.1 * size (0.3, 0.4, 0.6)
+        if (config?.largeMovementSpeed) {
+            def vanillaSpeed = 0.2d + 0.1d * size
+            def targetSpeed = config.largeMovementSpeed * vanillaSpeed / 0.6d
+            
+            // Only modify if target differs from vanilla AND current is still vanilla
+            if (Math.abs(targetSpeed - vanillaSpeed) > 0.001) {
+                def currentSpeed = entity.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).getBaseValue()
+                if (Math.abs(currentSpeed - vanillaSpeed) < 0.001) {
+                    entity.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(targetSpeed)
+                }
+            }
+        }
     }
 }
