@@ -122,6 +122,9 @@ events.onPlayerRespawn(function(event as crafttweaker.event.PlayerRespawnEvent){
 
         event.player.give(<quark:soul_compass>.withTag({ench:[{id:71,lvl:1}]}));
         Commands.call("effect @p resistance 5", event.player, event.entity.world, true, true);
+
+        // Players respawn with 0 feathers, this grants 4 full feathers temporarily to help out
+        Commands.call("effect @p elenaidodge2:feathers 30 0", event.player, event.entity.world, true, true);
     }
 });
 
