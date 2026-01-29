@@ -71,6 +71,8 @@ def mobConfigs = [
     ghast: [
         vanillaHealth:        10.0,
         maxHealth:            3.0,
+        followRange:          52.0, // Vanilla: 64
+        motionMultiplier:     0.8,  // Scales motion vectors (1.0 = normal, 0.5 = half speed, 2.0 = double)
     ],
     
     // Camouflage Spider (nethercraft:camouflage_spider)
@@ -294,21 +296,32 @@ eventManager.listen(EventPriority.HIGHEST) { EntityJoinWorldEvent event ->
     
 }
 
-// Magma cube stats handler, runs on first tick after spawn
-// needed because setSlimeSize() overwrites attributes after EntityJoinWorldEvent
+// Cache config lookups at script load (avoid repeated map access every tick)
+def ghastMotionMult = mobConfigs.ghast?.motionMultiplier as Double
+def ghastNeedsMotionScale = ghastMotionMult != null && ghastMotionMult != 1.0d
+def magmaCubeConfig = mobConfigs.magmaCube
+
+// Combined tick handler for ghasts and magma cubes
 eventManager.listen { LivingEvent.LivingUpdateEvent event ->
     def entity = event.getEntityLiving()
     
+    // Ghast motion - bypasses GhastMoveControl by scaling motion vectors directly
+    if (ghastNeedsMotionScale && entity instanceof EntityGhast) {
+        entity.motionX *= ghastMotionMult
+        entity.motionY *= ghastMotionMult
+        entity.motionZ *= ghastMotionMult
+        return
+    }
+    
+    // Magma cube stats - runs each tick because setSlimeSize() overwrites attributes
     if (entity instanceof EntityMagmaCube) {
-        def config = mobConfigs.magmaCube
         def size = entity.getSlimeSize()
         
         // Health: vanilla formula is size² (1, 4, 16)
-        if (config?.largeMaxHealth) {
+        if (magmaCubeConfig?.largeMaxHealth) {
             def vanillaHealth = (size * size) as double
-            def targetHealth = config.largeMaxHealth * vanillaHealth / 16.0
+            def targetHealth = magmaCubeConfig.largeMaxHealth * vanillaHealth / 16.0
             
-            // Only modify if target differs from vanilla AND current is still vanilla
             if (Math.abs(targetHealth - vanillaHealth) > 0.01) {
                 def currentMaxHealth = entity.getMaxHealth()
                 if (Math.abs(currentMaxHealth - vanillaHealth) < 0.01) {
@@ -319,11 +332,10 @@ eventManager.listen { LivingEvent.LivingUpdateEvent event ->
         }
         
         // Movement speed: vanilla formula is 0.2 + 0.1 * size (0.3, 0.4, 0.6)
-        if (config?.largeMovementSpeed) {
+        if (magmaCubeConfig?.largeMovementSpeed) {
             def vanillaSpeed = 0.2d + 0.1d * size
-            def targetSpeed = config.largeMovementSpeed * vanillaSpeed / 0.6d
+            def targetSpeed = magmaCubeConfig.largeMovementSpeed * vanillaSpeed / 0.6d
             
-            // Only modify if target differs from vanilla AND current is still vanilla
             if (Math.abs(targetSpeed - vanillaSpeed) > 0.001) {
                 def currentSpeed = entity.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).getBaseValue()
                 if (Math.abs(currentSpeed - vanillaSpeed) < 0.001) {
