@@ -56,6 +56,19 @@ static ashen_oracle_entry as IItemStack = <contenttweaker:ashen_oracle_entry>;
 static ashen_revenant_entry as IItemStack = <contenttweaker:ashen_revenant_entry>;
 static sanity_entry as IItemStack = <contenttweaker:sanity_entry>;
 
+// Entry items limited to 1 per player
+static uniqueEntryItems as IItemStack[] = [
+    dreadswine_entry,
+    foulite_dust_entry,
+    nether_wraith_entry,
+    veilstrium_entry,
+    infernium_entry,
+    glowood_entry,
+    ashen_oracle_entry,
+    ashen_revenant_entry,
+    sanity_entry
+] as IItemStack[];
+
 
 // IMPORTANT:
 // Patchouli entries can never be taken away on run resets
@@ -213,26 +226,13 @@ events.onPlayerPickupItem(function(event as PlayerPickupItemEvent){
     if(!event.player.world.isRemote()){
         val pickedUpItem = event.item.item;
         
-        // entry items to limit to 1
-        val entryItems = [
-            dreadswine_entry,
-            foulite_dust_entry,
-            nether_wraith_entry,
-            veilstrium_entry,
-            infernium_entry,
-            glowood_entry,
-            ashen_oracle_entry,
-            ashen_revenant_entry,
-            sanity_entry
-        ] as IItemStack[];
-        
         // Check if the picked up item is a journal entry
-        for entryItem in entryItems {
+        for entryItem in uniqueEntryItems {
             if(entryItem.matches(pickedUpItem)){
                 // Check if player already has one in inventory
                 for i in 0 to event.player.inventorySize {
-                    val slot = event.player.getInventoryStack(i);
-                    if(!isNull(slot) && entryItem.matches(slot)){
+                    val stackInSlot = event.player.getInventoryStack(i);
+                    if(!isNull(stackInSlot) && entryItem.matches(stackInSlot)){
                         // Player already has this entry, cancel pickup and delete the item
                         event.cancel();
                         event.item.setDead();
