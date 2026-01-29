@@ -44,6 +44,7 @@ import mods.contenttweaker.ActionResult;
 import crafttweaker.event.EntityLivingDeathEvent;
 import crafttweaker.entity.IEntityLivingBase;
 import crafttweaker.event.PlayerLeftClickBlockEvent;
+import crafttweaker.event.PlayerPickupItemEvent;
 
 static dreadswine_entry as IItemStack = <contenttweaker:dreadswine_entry>;
 static foulite_dust_entry as IItemStack = <contenttweaker:foulite_dust_entry>;
@@ -206,4 +207,41 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
     }
 });
 
+
+// Limit journal entries to max 1 per player (delete duplicates)
+events.onPlayerPickupItem(function(event as PlayerPickupItemEvent){
+    if(!event.player.world.isRemote()){
+        val pickedUpItem = event.item.item;
+        
+        // entry items to limit to 1
+        val entryItems = [
+            dreadswine_entry,
+            foulite_dust_entry,
+            nether_wraith_entry,
+            veilstrium_entry,
+            infernium_entry,
+            glowood_entry,
+            ashen_oracle_entry,
+            ashen_revenant_entry,
+            sanity_entry
+        ] as IItemStack[];
+        
+        // Check if the picked up item is a journal entry
+        for entryItem in entryItems {
+            if(entryItem.matches(pickedUpItem)){
+                // Check if player already has one in inventory
+                for i in 0 to event.player.inventorySize {
+                    val slot = event.player.getInventoryStack(i);
+                    if(!isNull(slot) && entryItem.matches(slot)){
+                        // Player already has this entry, cancel pickup and delete the item
+                        event.cancel();
+                        event.item.setDead();
+                        return;
+                    }
+                }
+                break; // Found match, dont check other entry types
+            }
+        }
+    }
+});
 
