@@ -118,29 +118,11 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
                     event.player.sendChat("§c§oThe artifact pulses weakly against the Infernal brick and dissipates. You sense an §e§oAshen power§c§o lock secrets behind trial and judgement.");
                     Commands.call("playsound enderskills:syphon player @p ~ ~ ~ 100 0.6", event.player, event.world, true, true);
                     itemStack.mutable().shrink(1);
+                    event.player.update({clickedEchoOfBetrayal: true});
                 }
             } 
         }  
         
-    }
-});
-
-events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
-    if(!event.world.isRemote()){
-
-        val itemStack1 = event.item as IItemStack; 
-        if(!isNull(itemStack1)){
-
-            // if player clicks echo of betrayal (not on ancient infernal brick), give hint
-            if (abberrant_mana.matches(itemStack1)) {  
-                    if(isNull(event.player.data.clickedEchoOfBetrayal) || event.player.data.clickedEchoOfBetrayal == false){
-                    event.player.sendChat("§c§oAs you stare into the eye of this artifact, it seems to draw you to an §e§oancient Infernal brick§c§o of some kind, a stone where buried power might yet\n§c§obe unearthed.");
-                    Commands.call("effect @e[type=da:nether_pyre] glowing", event.player, event.world, true, true);
-                    Commands.call("playsound enderskills:contaminate player @p", event.player, event.world, true, true);
-                    event.player.update({clickedEchoOfBetrayal: true});
-                }
-            }
-        }
     }
 });
 
@@ -370,18 +352,34 @@ static scepter as IItemStack = <contenttweaker:infernal_fortress_scepter>;
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
     if(!event.world.isRemote()){
 
-        // Riftbreaker Crystal
-        // Summons a structure when right clicked, gives player launch effect
+        // Echo of Betrayal
+        // Gives hint to direct player to ancient infernal brick
         val itemStack1 = event.item as IItemStack; 
         if(!isNull(itemStack1)){
-            if (riftbreaker.matches(itemStack1)) {  
+            if (abberrant_mana.matches(itemStack1)) {  
+                    if(isNull(event.player.data.clickedEchoOfBetrayal) || event.player.data.clickedEchoOfBetrayal == false){
+
+                        event.player.sendChat("§c§oAs you stare into the eye of this artifact, it seems to draw you to an §e§oancient Infernal brick§c§o of some kind, a stone where buried power might yet\n§c§obe unearthed.");
+                        Commands.call("effect @e[type=da:nether_pyre] glowing", event.player, event.world, true, true);
+                        Commands.call("playsound enderskills:contaminate player @p", event.player, event.world, true, true);
+                        event.player.update({clickedEchoOfBetrayal: true});
+                    }
+                }
+            }
+        }
+
+        // Riftbreaker Crystal
+        // Summons a structure when right clicked, gives player launch effect
+        val itemStack2 = event.item as IItemStack; 
+        if(!isNull(itemStack2)){
+            if (riftbreaker.matches(itemStack2)) {  
 
                 if(event.player.dimension == -1){
                     Commands.call("playsound minecraft:item.totem.use player @p", event.player, event.world, true, true);
                     Commands.call("playsound dsurround:wind player @p", event.player, event.world, true, true);
                     Commands.call("pillar-spawn deletebarrier ~ 3 ~", event.player, event.world, true, true);
                     Commands.call("effect @a potioncore:launch 500", event.player, event.world, true, true);
-                    itemStack1.mutable().shrink(1);
+                    itemStack2.mutable().shrink(1);
                 }
                 else
                     event.player.sendChat("§9Only useable in the Nether");
@@ -391,9 +389,9 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
 
 
         // Trace of Death first time right-clicking
-        val itemStack2 = event.item as IItemStack; 
-        if(!isNull(itemStack2)){
-            if (traceofdeath.matches(itemStack2)) {  
+        val itemStack3 = event.item as IItemStack; 
+        if(!isNull(itemStack3)){
+            if (traceofdeath.matches(itemStack3)) {  
 
                 if(isNull(event.player.data.shatteredTraceOfDeath) || event.player.data.shatteredTraceOfDeath == false){
                     event.player.sendChat("§c§oAs the final pieces of the §e§oTrace of Death§c§o crumble at your feet, you are suddenly consumed by a rush of spectral energies. The secrets you now\n§c§opossess are both a blessing and a curse, for the shadows that surround\n§c§oyou have been stirred, and you cannot escape the feeling that you are\n§c§obeing watched by something far beyond your comprehension.");
@@ -402,7 +400,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                     // Replace mod behavior with our own behavior due to weirdness when granting soul levels
                     Commands.call("playsound minecraft:entity.splash_potion.break master @p ~ ~ ~ 1.0 0.7", event.player, event.world, true, true);
                     server.commandManager.executeCommand(server, "es_advancement @p level set 1");
-                    itemStack2.mutable().shrink(1);
+                    itemStack3.mutable().shrink(1);
                     event.cancel();
 
                     event.player.update({shatteredTraceOfDeath: true});
@@ -428,16 +426,16 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
 
         // Scepter of Infernal Conjuring
         // Summons a structure when right clicked
-        val itemStack3 = event.item as IItemStack; 
-        if(!isNull(itemStack3)){
-            if (scepter.matches(itemStack3)) {  
+        val itemStack4 = event.item as IItemStack; 
+        if(!isNull(itemStack4)){
+            if (scepter.matches(itemStack4)) {  
                 Commands.call("playsound minecraft:item.totem.use player @p ~ ~ ~ 10.0 0.5", event.player, event.world, true, true);
                 event.player.sendChat("§c§oThe ground begins to tremble as you tightly grasp the scepter. As the air crackles with anticipation, the scepter dissolves into a swirling vortex\n§c§oof crimson smoke. In the blink of an eye, the smoke weaves itself into the\n§c§ofabric of space as the scepter's essence becomes one with a hellish structure.");
                 Commands.call("pillar-spawn witherarena ~ 9 ~", event.player, event.world, true, true);
 
                 Commands.call("tp @a ~ 10 ~", event.player, event.world, true, true);
                 Commands.call("playsound enderskills:portal_active player @p", event.player, event.world, true, true);
-                itemStack3.mutable().shrink(1);
+                itemStack4.mutable().shrink(1);
                 Commands.call("setworldspawn ~ ~ ~", event.player, event.world, true, true);
                 Commands.call("spawnpoint @a ~ ~ ~", event.player, event.world, true, true);
                 Commands.call("kill @e[type=nethercraft:dark_zombie]", event.player, event.world, true, true);
