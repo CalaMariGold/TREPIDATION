@@ -141,7 +141,7 @@ def mobConfigs = [
     // Specify large (size 4) stats, smaller sizes auto-scale using vanilla ratios
     magmaCube: [
         largeMaxHealth:      16.0, // Vanilla: 16 (Medium: 4, Small: 1)
-        largeOverrideDamage: 4.0,  // Vanilla: 6 (Medium: 4, Small: 3)
+        largeOverrideDamage: 5.0,  // Vanilla: 6 (Medium: 4, Small: 3)
         largeMovementSpeed:  0.5, // Vanilla: 0.6 (Medium: 0.4, Small: 0.3)
     ],
 ]
