@@ -85,6 +85,9 @@ def mobConfigs = [
     flameSpewer: [
         vanillaHealth:        20.0,
         maxHealth:            3.0,
+        movementSpeed:        0.5,
+        followRange:          48.0,
+        fireballDamageMultiplier: 0.1, // Fireball damage × this value (1.0 = normal)
     ],
     
     // Festive Creeper (primitivemobs:festive_creeper)
@@ -155,6 +158,7 @@ def darkZombieClass = entity('nethercraft:dark_zombie')?.getEntityClass()
 def bloodyZombieClass = entity('nethercraft:bloody_zombie')?.getEntityClass()
 def camouflageSpiderClass = entity('nethercraft:camouflage_spider')?.getEntityClass()
 def flameSpewerClass = entity('primitivemobs:flame_spewer')?.getEntityClass()
+def flameSpitClass = entity('primitivemobs:flame_spit')?.getEntityClass()
 def festiveCreeperClass = entity('primitivemobs:festive_creeper')?.getEntityClass()
 def blazingJuggernautClass = entity('primitivemobs:blazing_juggernaut')?.getEntityClass()
 def eyesClass = entity('eyesinthedarkness:eyes')?.getEntityClass()
@@ -212,12 +216,16 @@ def applyMobStats(entity, config, babyMult) {
 eventManager.listen { LivingHurtEvent event ->
     def source = event.getSource()
     def attacker = source.getTrueSource()
+    def immediate = source.getImmediateSource()
     
     // Blaze fireball damage
-    if (mobConfigs.blaze?.fireballDamageMultiplier != null &&
-        source.getImmediateSource() instanceof EntitySmallFireball && 
-        attacker instanceof EntityBlaze) {
+    if (immediate instanceof EntitySmallFireball && attacker instanceof EntityBlaze && mobConfigs.blaze?.fireballDamageMultiplier != null) {
         event.setAmount((float)(event.getAmount() * mobConfigs.blaze.fireballDamageMultiplier))
+    }
+    
+    // Flame Spewer damage
+    if (immediate?.getClass() == flameSpitClass && mobConfigs.flameSpewer?.fireballDamageMultiplier != null) {
+        event.setAmount((float)(event.getAmount() * mobConfigs.flameSpewer.fireballDamageMultiplier))
     }
     
     // Override damage for specific mobs
