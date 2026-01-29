@@ -124,7 +124,17 @@ def mobConfigs = [
     
     // Blaze (minecraft:blaze)
     blaze: [
+        vanillaHealth:        20.0,
+        maxHealth:            5.0,
+        movementSpeed:        0.0, // Vanilla: 0.23
+        followRange:          32.0, // Vanilla: 48
         fireballDamageMultiplier: 0.1, // Fireball damage × this value (1.0 = normal)
+    ],
+    
+    // Silverfish (minecraft:silverfish)
+    silverfish: [
+        vanillaHealth:        8.0,
+        maxHealth:            5.0, // Vanilla: 8
     ],
     
     // Magma Cube (minecraft:magma_cube)
@@ -151,6 +161,7 @@ import net.minecraft.entity.monster.EntityGhast
 import net.minecraft.entity.monster.EntityCreeper
 import net.minecraft.entity.monster.EntityEnderman
 import net.minecraft.entity.monster.EntityMagmaCube
+import net.minecraft.entity.monster.EntitySilverfish
 import net.minecraft.entity.EntityLivingBase
 import net.minecraftforge.event.entity.EntityJoinWorldEvent
 
@@ -228,7 +239,7 @@ eventManager.listen { LivingHurtEvent event ->
         event.setAmount((float)(event.getAmount() * mobConfigs.flameSpewer.fireballDamageMultiplier))
     }
     
-    // Override damage for specific mobs
+    // Bloody Zombie damage
     if (attacker != null && source.getDamageType() == "mob") {
         if (attacker.getClass() == bloodyZombieClass && mobConfigs.bloodyZombie?.overrideDamage != null) {
             event.setAmount((float)(mobConfigs.bloodyZombie.overrideDamage))
@@ -287,6 +298,14 @@ eventManager.listen(EventPriority.HIGHEST) { EntityJoinWorldEvent event ->
     }
     if (entity instanceof EntityEnderman) {
         applyMobStats(entity, mobConfigs.enderman, babyMult)
+        return
+    }
+    if (entity instanceof EntitySilverfish) {
+        applyMobStats(entity, mobConfigs.silverfish, babyMult)
+        return
+    }
+    if (entity instanceof EntityBlaze) {
+        applyMobStats(entity, mobConfigs.blaze, babyMult)
         return
     }
     // Magma cubes handled in LivingUpdateEvent
