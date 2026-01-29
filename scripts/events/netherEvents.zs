@@ -357,16 +357,16 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
         val itemStack1 = event.item as IItemStack; 
         if(!isNull(itemStack1)){
             if (abberrant_mana.matches(itemStack1)) {  
-                    if(isNull(event.player.data.clickedEchoOfBetrayal) || event.player.data.clickedEchoOfBetrayal == false){
+                if(isNull(event.player.data.clickedEchoOfBetrayal) || event.player.data.clickedEchoOfBetrayal == false){
 
-                        event.player.sendChat("§c§oAs you stare into the eye of this artifact, it seems to draw you to an §e§oancient Infernal brick§c§o of some kind, a stone where buried power might yet\n§c§obe unearthed.");
-                        Commands.call("effect @e[type=da:nether_pyre] glowing", event.player, event.world, true, true);
-                        Commands.call("playsound enderskills:contaminate player @p", event.player, event.world, true, true);
-                        event.player.update({clickedEchoOfBetrayal: true});
-                    }
+                    event.player.sendChat("§c§oAs you stare into the eye of this artifact, it seems to draw you to an §e§oancient Infernal brick§c§o of some kind, a stone where buried power might yet\n§c§obe unearthed.");
+                    Commands.call("effect @e[type=da:nether_pyre] glowing", event.player, event.world, true, true);
+                    Commands.call("playsound enderskills:contaminate player @p", event.player, event.world, true, true);
+                    event.player.update({clickedEchoOfBetrayal: true});
                 }
             }
         }
+        
 
         // Riftbreaker Crystal
         // Summons a structure when right clicked, gives player launch effect
