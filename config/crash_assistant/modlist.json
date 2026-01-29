@@ -512,6 +512,13 @@
     "curseForgeHash": 2460595711,
     "modrinthHash": "2028fa47c9b0cf2904d3179d86ce9054009af6a0"
   },
+  "Entifier-2.0.0.jar": {
+    "jarName": "Entifier-2.0.0.jar",
+    "modId": "thiccentities",
+    "version": "2.0.0",
+    "curseForgeHash": 3926613661,
+    "modrinthHash": "df6c0c4c780f53449d1f6e06d11120ea05f0e0ec"
+  },
   "EntityCulling-1.12.2-6.5.0.jar": {
     "jarName": "EntityCulling-1.12.2-6.5.0.jar",
     "modId": "entityculling",
@@ -666,12 +673,12 @@
     "curseForgeHash": 2389495816,
     "modrinthHash": "cabac512662aeba85bfc827f511902290c2e41e6"
   },
-  "groovyscript-1.3.1.jar": {
-    "jarName": "groovyscript-1.3.1.jar",
+  "groovyscript-1.3.4.jar": {
+    "jarName": "groovyscript-1.3.4.jar",
     "modId": "groovyscript",
-    "version": "1.3.1",
-    "curseForgeHash": 1566330210,
-    "modrinthHash": "4bc1c90a1c2b2b3a213e3fd59075c5571aa5f50d"
+    "version": "1.3.4",
+    "curseForgeHash": 2776295586,
+    "modrinthHash": "c53adbfba5c2a98c2103274abaa6a348087a03c8"
   },
   "Grue-1.12.2-1.8.1.jar": {
     "jarName": "Grue-1.12.2-1.8.1.jar",
@@ -680,12 +687,12 @@
     "curseForgeHash": 1251642093,
     "modrinthHash": "81d81156bf76622bfcef20496cb533a7b8403151"
   },
-  "HadEnoughItems_1.12.2-4.29.14.jar": {
-    "jarName": "HadEnoughItems_1.12.2-4.29.14.jar",
+  "HadEnoughItems_1.12.2-4.29.15.jar": {
+    "jarName": "HadEnoughItems_1.12.2-4.29.15.jar",
     "modId": "jei",
-    "version": "4.29.14",
-    "curseForgeHash": 1638030778,
-    "modrinthHash": "cb696342e9da001da5d324fab3e705038da2594d"
+    "version": "4.29.15",
+    "curseForgeHash": 3758786409,
+    "modrinthHash": "fd9311a4bf189b6f9c99183d9a2dae8485b80dc7"
   },
   "Highlighter-1.12.2-forge-1.1.7.jar": {
     "jarName": "Highlighter-1.12.2-forge-1.1.7.jar",
@@ -756,6 +763,13 @@
     "version": "1.12.2-0.1.4",
     "curseForgeHash": 3905816436,
     "modrinthHash": "5ddb53268b81e5e21cfae421b7018e58fba0546f"
+  },
+  "InventoryHUD-1.12.2.forge-3.4.4.jar": {
+    "jarName": "InventoryHUD-1.12.2.forge-3.4.4.jar",
+    "modId": "inventoryhud",
+    "version": "3.4.4",
+    "curseForgeHash": 1087526166,
+    "modrinthHash": "b2ce2d6fdb0842139b892b27af08b3aaec7f2d19"
   },
   "InventoryTweaks-1.63.jar": {
     "jarName": "InventoryTweaks-1.63.jar",
