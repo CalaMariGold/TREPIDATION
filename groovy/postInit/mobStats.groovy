@@ -148,15 +148,14 @@ import net.minecraft.entity.monster.EntityEnderman
 import net.minecraft.entity.monster.EntityMagmaCube
 import net.minecraft.entity.EntityLivingBase
 import net.minecraftforge.event.entity.EntityJoinWorldEvent
-import net.minecraft.util.ResourceLocation
-import net.minecraftforge.fml.common.registry.EntityEntry
-import net.minecraftforge.fml.common.registry.ForgeRegistries
 
-// Helper: Get entity registry name
-def getEntityId(entity) {
-    def entry = ForgeRegistries.ENTITIES.getEntries().find { it.getValue().getEntityClass() == entity.getClass() }
-    return entry?.getKey()?.toString()
-}
+def darkZombieClass = entity('nethercraft:dark_zombie')?.getEntityClass()
+def bloodyZombieClass = entity('nethercraft:bloody_zombie')?.getEntityClass()
+def camouflageSpiderClass = entity('nethercraft:camouflage_spider')?.getEntityClass()
+def flameSpewerClass = entity('primitivemobs:flame_spewer')?.getEntityClass()
+def festiveCreeperClass = entity('primitivemobs:festive_creeper')?.getEntityClass()
+def blazingJuggernautClass = entity('primitivemobs:blazing_juggernaut')?.getEntityClass()
+def eyesClass = entity('eyesinthedarkness:eyes')?.getEntityClass()
 
 // Helper: Apply stats to a mob
 def applyMobStats(entity, config, babyMult) {
@@ -217,9 +216,7 @@ eventManager.listen { LivingHurtEvent event ->
     
     // Override damage for specific mobs
     if (attacker != null && source.getDamageType() == "mob") {
-        def attackerId = getEntityId(attacker)
-        
-        if (attackerId == "nethercraft:bloody_zombie" && mobConfigs.bloodyZombie?.overrideDamage != null) {
+        if (attacker.getClass() == bloodyZombieClass && mobConfigs.bloodyZombie?.overrideDamage != null) {
             event.setAmount((float)(mobConfigs.bloodyZombie.overrideDamage))
         }
     }
@@ -261,31 +258,31 @@ eventManager.listen(EventPriority.HIGHEST) { EntityJoinWorldEvent event ->
     }
     // Magma cubes handled in LivingUpdateEvent
     
-    // Nethercraft mobs
-    def entityId = getEntityId(entity)
+    // Modded mobs (use cached entity classes)
+    def entClass = entity.getClass()
     
-    if (entityId == "nethercraft:dark_zombie" && mobConfigs.darkZombie) {
+    // Nethercraft mobs
+    if (entClass == darkZombieClass && mobConfigs.darkZombie) {
         applyMobStats(entity, mobConfigs.darkZombie, babyMult)
     }
-    else if (entityId == "nethercraft:bloody_zombie" && mobConfigs.bloodyZombie) {
+    else if (entClass == bloodyZombieClass && mobConfigs.bloodyZombie) {
         applyMobStats(entity, mobConfigs.bloodyZombie, babyMult)
     }
-    else if (entityId == "nethercraft:camouflage_spider" && mobConfigs.camouflageSpider) {
+    else if (entClass == camouflageSpiderClass && mobConfigs.camouflageSpider) {
         applyMobStats(entity, mobConfigs.camouflageSpider, babyMult)
     }
-
     // Primitive Mobs
-    else if (entityId == "primitivemobs:flame_spewer" && mobConfigs.flameSpewer) {
+    else if (entClass == flameSpewerClass && mobConfigs.flameSpewer) {
         applyMobStats(entity, mobConfigs.flameSpewer, babyMult)
     }
-    else if (entityId == "primitivemobs:festive_creeper" && mobConfigs.festiveCreeper) {
+    else if (entClass == festiveCreeperClass && mobConfigs.festiveCreeper) {
         applyMobStats(entity, mobConfigs.festiveCreeper, babyMult)
     }
-    else if (entityId == "primitivemobs:blazing_juggernaut" && mobConfigs.blazingJuggernaut) {
+    else if (entClass == blazingJuggernautClass && mobConfigs.blazingJuggernaut) {
         applyMobStats(entity, mobConfigs.blazingJuggernaut, babyMult)
     }
     // Eyes in the Darkness
-    else if (entityId == "eyesinthedarkness:eyes" && mobConfigs.eyes) {
+    else if (entClass == eyesClass && mobConfigs.eyes) {
         applyMobStats(entity, mobConfigs.eyes, babyMult)
     }
 }
