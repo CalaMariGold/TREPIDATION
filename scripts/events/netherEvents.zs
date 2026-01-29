@@ -205,7 +205,7 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                     .run(function(world, context) {
                         context.data = world.time;
                     })
-                    .sleep(300)
+                    .sleep(500)
                     .then(function(world, context) {
                         event.player.sendChat("§c§oWith the Ashen's death, you notice certain §e§oancient bricks§c§o begin to glow brighter than before.");
                         Commands.call("playsound minecraft:ui.toast.in master @p ~ ~ ~ 10", event.player, event.world, true, true);
