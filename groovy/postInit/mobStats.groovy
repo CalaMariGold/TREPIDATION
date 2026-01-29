@@ -75,7 +75,7 @@ def mobConfigs = [
     
     // Camouflage Spider (nethercraft:camouflage_spider)
     camouflageSpider: [
-        vanillaHealth:        35.0,
+        vanillaHealth:        [35.0, 40.0], // for some reason, these can spawn as either
         maxHealth:            10.0,
     ],
     
@@ -127,7 +127,7 @@ def mobConfigs = [
     magmaCube: [
         largeMaxHealth:      16.0, // Vanilla: 16 (Medium: 4, Small: 1)
         largeOverrideDamage: 4.0,  // Vanilla: 6 (Medium: 4, Small: 3)
-        largeMovementSpeed:  0.6, // Vanilla: 0.6 (Medium: 0.4, Small: 0.3)
+        largeMovementSpeed:  0.5, // Vanilla: 0.6 (Medium: 0.4, Small: 0.3)
     ],
 ]
 
@@ -165,20 +165,24 @@ def applyMobStats(entity, config, babyMult) {
     if (config.maxHealth != null) {
         def healthAttr = entity.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH)
         def currentMax = entity.getMaxHealth()
-        def vanillaHealth = (config.vanillaHealth ?: 20.0d) as double
         def health = config.maxHealth as double
+        
+        // Support single value or list of valid vanilla health values
+        def vanillaHealthList = config.vanillaHealth instanceof List ? config.vanillaHealth : [config.vanillaHealth ?: 20.0d]
+        def primaryVanillaHealth = vanillaHealthList[0] as double
+        def isVanillaHealth = vanillaHealthList.any { (currentMax as double) == (it as double) }
         
         if (isBaby) {
             health = health * babyMult
             healthAttr.setBaseValue(health)
             entity.setHealth((float) entity.getMaxHealth())
-        } else if (currentMax == vanillaHealth) {
+        } else if (isVanillaHealth) {
             // Adults with vanilla health: apply our config
             healthAttr.setBaseValue(health)
             entity.setHealth((float) entity.getMaxHealth())
         } else {
             // Champions modified health with percentage scaling
-            def ratio = currentMax / vanillaHealth
+            def ratio = currentMax / primaryVanillaHealth
             def newHealth = health * ratio
             healthAttr.setBaseValue(newHealth)
             entity.setHealth((float) entity.getMaxHealth())
