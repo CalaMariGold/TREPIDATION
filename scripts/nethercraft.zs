@@ -67,6 +67,8 @@ JEI.removeAndHide(<nethercraft:nether_painting>);
 
 recipes.remove(<nethercraft:devil_bread>);
 furnace.remove(<nethercraft:heat_glass>);
+recipes.remove(<nethercraft:lava_paper>);
+
 
 recipes.remove(<minecraft:magma_cream>);
 recipes.addShapeless("magma_cream", <minecraft:magma_cream>,[<minecraft:blaze_powder>, <nethercraft:slime_eggs>]);
@@ -82,8 +84,7 @@ recipes.addShapeless("deviled_egg_sandwich", <contenttweaker:deviled_egg_sandwic
 recipes.remove(<corpsecomplex:scroll>);
 recipes.addShapeless("dreadstone_tablet", <corpsecomplex:scroll>,[<contenttweaker:dreadstone_fragment>, <contenttweaker:dreadstone_fragment>,<contenttweaker:dreadstone_fragment>, <nethercraft:foulite_dust>]);
 
-recipes.remove(<nethercraft:lava_paper>);
-recipes.addShapeless("lava_paper", <nethercraft:lava_paper>, [<nethercraft:lava_reeds_item>,<nethercraft:lava_reeds_item>,<nethercraft:lava_reeds_item>]);
+
 
 
 

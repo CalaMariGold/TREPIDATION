@@ -25,8 +25,9 @@ coalOreDict.add(<nethercraft:foulite_dust>);
 coalOreDict.add(<minecraft:coal>);
 coalOreDict.add(<minecraft:coal:1>);
 
-val paperOreDict = <ore:paper>;
-paperOreDict.add(<nethercraft:lava_paper>);
+// not used atm
+// val paperOreDict = <ore:paper>;
+// paperOreDict.add(<nethercraft:lava_paper>);
 
 val arrow_ingredientOreDict = <ore:arrowIngredient>;
 arrow_ingredientOreDict.add(<minecraft:flint>, <minecraft:quartz>, <erebus:materials:2>);
