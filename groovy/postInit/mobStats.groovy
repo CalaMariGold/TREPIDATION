@@ -168,17 +168,19 @@ import net.minecraft.entity.monster.EntityEnderman
 import net.minecraft.entity.monster.EntityMagmaCube
 import net.minecraft.entity.monster.EntitySilverfish
 import net.minecraft.entity.EntityLivingBase
+import net.minecraft.entity.EntityList
 import net.minecraftforge.event.entity.EntityJoinWorldEvent
 
-def darkZombieClass = entity('nethercraft:dark_zombie')?.getEntityClass()
-def bloodyZombieClass = entity('nethercraft:bloody_zombie')?.getEntityClass()
-def camouflageSpiderClass = entity('nethercraft:camouflage_spider')?.getEntityClass()
-def flameSpewerClass = entity('primitivemobs:flame_spewer')?.getEntityClass()
+// Helper to get entity registry name as string. Wrap in try-catch when calling for modded
+// entities: some mod entity classes trigger Groovy introspection that loads client-only
+// classes (e.g. RenderManager) on dedicated servers
+def getEntityId(ent) {
+    def key = EntityList.getKey(ent.getClass())
+    return key?.toString()
+}
+
+// Cache entity class for flame_spit projectile (projectiles don't have client render dependencies)
 def flameSpitClass = entity('primitivemobs:flame_spit')?.getEntityClass()
-def festiveCreeperClass = entity('primitivemobs:festive_creeper')?.getEntityClass()
-def blazingJuggernautClass = entity('primitivemobs:blazing_juggernaut')?.getEntityClass()
-def eyesClass = entity('eyesinthedarkness:eyes')?.getEntityClass()
-def netherAberrantClass = entity('da:nether_aberant')?.getEntityClass()
 
 // Helper: Apply stats to a mob
 def applyMobStats(entity, config, babyMult) {
@@ -229,64 +231,94 @@ def applyMobStats(entity, config, babyMult) {
     }
 }
 
-// Damage modification handler
+// Damage modification handler. Wrapped in try-catch: when a mod entity (e.g. DA nether aberrant)
+// damages the player, any use of its class (getClass(), getEntityId()) can trigger Groovy
+// introspection and NoClassDefFoundError for client-only RenderManager on servers, we catch
+// so damage is applied and the entity is not removed.
 eventManager.listen { LivingHurtEvent event ->
-    def source = event.getSource()
-    def attacker = source.getTrueSource()
-    def immediate = source.getImmediateSource()
-    
-    // Blaze fireball damage
-    if (immediate instanceof EntitySmallFireball && attacker instanceof EntityBlaze && mobConfigs.blaze?.fireballDamageMultiplier != null) {
-        event.setAmount((float)(event.getAmount() * mobConfigs.blaze.fireballDamageMultiplier))
-    }
-    
-    // Flame Spewer damage
-    if (immediate?.getClass() == flameSpitClass && mobConfigs.flameSpewer?.fireballDamageMultiplier != null) {
-        event.setAmount((float)(event.getAmount() * mobConfigs.flameSpewer.fireballDamageMultiplier))
-    }
-    
-    // Bloody Zombie damage
-    if (attacker != null && source.getDamageType() == "mob") {
-        if (attacker.getClass() == bloodyZombieClass && mobConfigs.bloodyZombie?.overrideDamage != null) {
-            event.setAmount((float)(mobConfigs.bloodyZombie.overrideDamage))
+    try {
+        def source = event.getSource()
+        def attacker = source.getTrueSource()
+        def immediate = source.getImmediateSource()
+        
+        // Blaze fireball damage
+        if (immediate instanceof EntitySmallFireball && attacker instanceof EntityBlaze && mobConfigs.blaze?.fireballDamageMultiplier != null) {
+            event.setAmount((float)(event.getAmount() * mobConfigs.blaze.fireballDamageMultiplier))
+            return
         }
-    }
-    
-    // Magma cube damage override (they don't have ATTACK_DAMAGE attribute)
-    if (attacker instanceof EntityMagmaCube && mobConfigs.magmaCube?.largeOverrideDamage != null) {
-        def size = attacker.getSlimeSize()
-        // Scale using vanilla ratio: (size+2)/6 (since large is 4+2 = 6)
-        def damage = mobConfigs.magmaCube.largeOverrideDamage * (size + 2) / 6.0
-        event.setAmount((float) damage)
+        
+        // Flame Spewer damage (class check can trigger introspection if immediate is a mod entity)
+        if (immediate != null && mobConfigs.flameSpewer?.fireballDamageMultiplier != null) {
+            if (immediate.getClass() == flameSpitClass) {
+                event.setAmount((float)(event.getAmount() * mobConfigs.flameSpewer.fireballDamageMultiplier))
+                return
+            }
+        }
+        
+        // Bloody Zombie damage
+        if (attacker != null && source.getDamageType() == "mob" && mobConfigs.bloodyZombie?.overrideDamage != null) {
+            if (getEntityId(attacker) == 'nethercraft:bloody_zombie') {
+                event.setAmount((float)(mobConfigs.bloodyZombie.overrideDamage))
+                return
+            }
+        }
+        
+        // Magma cube damage override (they don't have ATTACK_DAMAGE attribute)
+        if (attacker instanceof EntityMagmaCube && mobConfigs.magmaCube?.largeOverrideDamage != null) {
+            def size = attacker.getSlimeSize()
+            def damage = mobConfigs.magmaCube.largeOverrideDamage * (size + 2) / 6.0
+            event.setAmount((float) damage)
+        }
+    } catch (Throwable t) {
+        // e.g. NoClassDefFoundError when attacker/immediate is a mod entity with client-only deps
     }
 }
 
 // Mob spawn handler
 eventManager.listen(EventPriority.HIGHEST) { EntityJoinWorldEvent event ->
     def entity = event.getEntity()
+    
+    // Only process living entities (skip items, projectiles, etc.)
+    if (!(entity instanceof EntityLivingBase)) return
+    
     def babyMult = globalSettings.babyHealthMultiplier
 
-    // Modded mobs (use cached entity classes)
-    def entClass = entity.getClass()
-    
-    // Primitive Mobs (festive creeper handled above before vanilla creeper check)
-    if (entClass == festiveCreeperClass && mobConfigs.festiveCreeper) {
-        applyMobStats(entity, mobConfigs.festiveCreeper, babyMult)
-        return
+    // Modded mobs - getEntityId() can throw NoClassDefFoundError on servers when the entity
+    // class triggers Groovy introspection of client-only code (e.g. DA nether aberrant).
+    // Catch so the entity stays spawned; we just skip applying our stats for that entity.
+    def entId = null
+    try {
+        entId = getEntityId(entity)
+    } catch (Throwable t) {
+        return  // entity stays, no stats applied
     }
-    else if (entClass == flameSpewerClass && mobConfigs.flameSpewer) {
-        applyMobStats(entity, mobConfigs.flameSpewer, babyMult)
-    }
-    else if (entClass == blazingJuggernautClass && mobConfigs.blazingJuggernaut) {
-        applyMobStats(entity, mobConfigs.blazingJuggernaut, babyMult)
-    }
-    // Eyes in the Darkness
-    else if (entClass == eyesClass && mobConfigs.eyes) {
-        applyMobStats(entity, mobConfigs.eyes, babyMult)
-    }
-    // Nether Aberrant (DA)
-    else if (entClass == netherAberrantClass && mobConfigs.netherAberrant) {
-        applyMobStats(entity, mobConfigs.netherAberrant, babyMult)
+    if (entId == null) return
+
+    switch (entId) {
+        case 'primitivemobs:festive_creeper':
+            if (mobConfigs.festiveCreeper) applyMobStats(entity, mobConfigs.festiveCreeper, babyMult)
+            return
+        case 'primitivemobs:flame_spewer':
+            if (mobConfigs.flameSpewer) applyMobStats(entity, mobConfigs.flameSpewer, babyMult)
+            return
+        case 'primitivemobs:blazing_juggernaut':
+            if (mobConfigs.blazingJuggernaut) applyMobStats(entity, mobConfigs.blazingJuggernaut, babyMult)
+            return
+        case 'eyesinthedarkness:eyes':
+            if (mobConfigs.eyes) applyMobStats(entity, mobConfigs.eyes, babyMult)
+            return
+        case 'da:nether_aberant':
+            if (mobConfigs.netherAberrant) applyMobStats(entity, mobConfigs.netherAberrant, babyMult)
+            return
+        case 'nethercraft:dark_zombie':
+            if (mobConfigs.darkZombie) applyMobStats(entity, mobConfigs.darkZombie, babyMult)
+            return
+        case 'nethercraft:bloody_zombie':
+            if (mobConfigs.bloodyZombie) applyMobStats(entity, mobConfigs.bloodyZombie, babyMult)
+            return
+        case 'nethercraft:camouflage_spider':
+            if (mobConfigs.camouflageSpider) applyMobStats(entity, mobConfigs.camouflageSpider, babyMult)
+            return
     }
 
     // Vanilla mobs
@@ -319,17 +351,6 @@ eventManager.listen(EventPriority.HIGHEST) { EntityJoinWorldEvent event ->
         return
     }
     // Magma cubes handled in LivingUpdateEvent
-    
-    // Nethercraft mobs
-    if (entClass == darkZombieClass && mobConfigs.darkZombie) {
-        applyMobStats(entity, mobConfigs.darkZombie, babyMult)
-    }
-    else if (entClass == bloodyZombieClass && mobConfigs.bloodyZombie) {
-        applyMobStats(entity, mobConfigs.bloodyZombie, babyMult)
-    }
-    else if (entClass == camouflageSpiderClass && mobConfigs.camouflageSpider) {
-        applyMobStats(entity, mobConfigs.camouflageSpider, babyMult)
-    }
     
 }
 
