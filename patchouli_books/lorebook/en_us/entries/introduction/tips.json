@@ -15,7 +15,7 @@
     },
     {
       "type": "text",
-      "text": "$(#551012)You can move while in your inventory and most GUIs!$()"
+      "text": "$(#551012)You can $(#FFFF55)move$(#551012) while in your inventory and most GUIs!$()$(br2)$(#551012)Identical equipment such as armor and weapons are $(#FFFF55)merged$(#551012) when looted."
     }
   ]
 }
