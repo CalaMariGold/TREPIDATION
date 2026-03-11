@@ -954,6 +954,13 @@
     "curseForgeHash": 2815907424,
     "modrinthHash": "dcc3b8718743521d4251bce1e7a4c91e3ba89079"
   },
+  "musictriggers-1.12.2-6.3.1.jar": {
+    "jarName": "musictriggers-1.12.2-6.3.1.jar",
+    "modId": "musictriggers",
+    "version": "1.12.2-6.3.1",
+    "curseForgeHash": 1999937949,
+    "modrinthHash": "49be8fab2b547b445c1b8296ee0d0f3f79813e03"
+  },
   "Mystic-Staffs-2.0.3.jar": {
     "jarName": "Mystic-Staffs-2.0.3.jar",
     "modId": "mysticstaffs",
@@ -1423,6 +1430,13 @@
     "version": "1.12.2-1.7.1",
     "curseForgeHash": 3480632174,
     "modrinthHash": "1d14c60730c947fb261218649e32d9d38b2f2db3"
+  },
+  "theimpossiblelibrary-1.12.2-0.3.0.jar": {
+    "jarName": "theimpossiblelibrary-1.12.2-0.3.0.jar",
+    "modId": "theimpossiblelibrary",
+    "version": "1.12.2-0.3.0",
+    "curseForgeHash": 1621445286,
+    "modrinthHash": "137dc740e35e1299060c5aa33866b02e2d6b7719"
   },
   "TimeIsUp-1.12-1.5.3.jar": {
     "jarName": "TimeIsUp-1.12-1.5.3.jar",
