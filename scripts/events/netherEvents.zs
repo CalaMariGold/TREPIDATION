@@ -323,7 +323,7 @@ events.onPlayerInteractEntity(function(event as crafttweaker.event.PlayerInterac
                     if(isNull(event.player.data.dreadstoneFragmentClick) || event.player.data.dreadstoneFragmentClick == false){
                         itemStack1.mutable().shrink(1);
                         event.player.sendChat("§c§oYou carefully hand a fragment of the §e§oDreadstone Tablet§c§o to the Dreadswine. It grasps the piece with trembling hands, staring at it intensely before carrying on.");
-                        Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.world, true, true);
+                        Commands.call("playsound minecraft:ui.toast.in master @p ~ ~ ~ 10", event.player, event.world, true, true);
                         event.player.update({dreadstoneFragmentClick: true});
                     }
                     // really stupid work around for interact event triggering twice (only for the fragment?)
@@ -383,7 +383,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
                 }
                 else
                     event.player.sendChat("§9Only useable in the Nether");
-                    Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.world, true, true);
+                    Commands.call("playsound minecraft:ui.toast.in master @p ~ ~ ~ 10", event.player, event.world, true, true);
             }
         }
 

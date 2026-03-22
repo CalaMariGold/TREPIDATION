@@ -55,7 +55,7 @@ EventManager.getInstance().onTimerTick(function(event as TickEvent) {
         // Show message only once when entering the 5-minute threshold
         if(isNull(event.player.data.hasShownTimerWarning) || event.player.data.hasShownTimerWarning == false) {
             event.player.sendChat("§4§oYour grip on reality weakens as your clock nears its end...");
-            Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.world, true, true);
+            Commands.call("playsound minecraft:ui.toast.in master @p ~ ~ ~ 10", event.player, event.world, true, true);
             event.player.update({hasShownTimerWarning: true});
         }
     } else {
@@ -171,6 +171,7 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
             var player as IPlayer = event.damageSource.trueSource;
             Commands.call("sanity add " + player.name + " 25", player, event.entity.world, true, true);
             player.sendChat("§3§oYour grip on reality strengthens...");
+            Commands.call("playsound minecraft:ui.toast.in master @p ~ ~ ~ 10", player, event.entity.world, true, true);
         }
     }
 });
@@ -182,6 +183,7 @@ events.onBlockBreak(function(event as crafttweaker.event.BlockBreakEvent) {
         if(event.block.definition.id == diamond.definition.id) {
             Commands.call("sanity add " + event.player.name + " 25", event.player, event.world, true, true);
             event.player.sendChat("§3§oYour grip on reality strengthens...");
+            Commands.call("playsound minecraft:ui.toast.in master @p ~ ~ ~ 10", event.player, event.world, true, true);
         }
     }
 });

@@ -155,11 +155,11 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             if (soul_anchor.matches(itemstack)) {  
                 if (event.player.dimension == -1) {
                     event.player.sendChat("§9Can not be used in the Nether.");
-                    Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.world, true, true);
+                    Commands.call("playsound minecraft:ui.toast.in master @p ~ ~ ~ 10", event.player, event.world, true, true);
                 }
                 else {
                     event.player.sendChat("§4Your soul has been bound to this position. Be sure not to obstruct this area.");
-                    Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.world, true, true);
+                    Commands.call("playsound minecraft:ui.toast.in master @p ~ ~ ~ 10", event.player, event.world, true, true);
                     Commands.call("setworldspawn ~ ~ ~", event.player, event.world, true, true);
                     Commands.call("spawnpoint @p ~ ~ ~", event.player, event.world, true, true);
                     itemstack.mutable().shrink(1);
@@ -198,14 +198,14 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
             if(event.player.hasGameStage("killedWither") && event.player.hasGameStage("erebus")){
                 Commands.call("sanity add " + event.player.name + " 100", event.player, event.player.world, true, true);
                 event.player.sendChat("§3§oYour grip on reality strengthens...");
-                Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.player.world, true, true);
+                Commands.call("playsound minecraft:ui.toast.in master @p ~ ~ ~ 10", event.player, event.player.world, true, true);
                 server.commandManager.executeCommand(server, "gamestage silentremove @a killedWither");
             }   
         })
         .sleep(300)
         .then(function(world, context) {
                 event.player.sendChat("§c§oAs you emerge from the Nether, you experience faint visions of a §e§ogreen gem§c§o, one that many critters in this Realm seem to possess.");
-                Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.player.world, true, true);
+                Commands.call("playsound minecraft:ui.toast.in master @p ~ ~ ~ 10", event.player, event.player.world, true, true);
             })
         .start();
     }
@@ -231,7 +231,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
                 }
                 Commands.call("sanity add " + event.player.name + " 100", event.player, event.player.world, true, true);
                 event.player.sendChat("§3§oYour grip on reality strengthens...");
-                Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.player.world, true, true);
+                Commands.call("playsound minecraft:ui.toast.in master @p ~ ~ ~ 10", event.player, event.player.world, true, true);
 
                 // Give player torch in-case they don't have one
                 Commands.call("give @p minecraft:torch", event.player, event.player.world, true, true);
@@ -248,7 +248,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
             .sleep(500)
             .then(function(world, context) {
                 event.player.sendChat("§c§oYou feel a bone-deep chill settle behind your eyes; a dreadful feeling that\n§c§ogrows with §e§oeach passing moment§c§o in this realm. You feel a pull towards\n§c§oa §e§oparticular gem§c§o that might calm your mind, harbored in stone or held\n§c§oby a forgotten presence.");
-                Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.player.world, true, true);
+                Commands.call("playsound minecraft:ui.toast.in master @p ~ ~ ~ 10", event.player, event.player.world, true, true);
             })
             .start();
     }
@@ -278,7 +278,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
                 
 
                 event.player.sendChat("§3Developer Note: It's currently not possible to enter the End and beat the modpack. Until then, have fun exploring the Surface...");
-                Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.world, true, true);
+                Commands.call("playsound minecraft:ui.toast.in master @p ~ ~ ~ 10", event.player, event.world, true, true);
             }
         });
     }
