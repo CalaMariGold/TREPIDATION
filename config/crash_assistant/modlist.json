@@ -4,12 +4,12 @@
     "modId": "forge",
     "version": "forge-1.12.2-14.23.5.2860.jar"
   },
-  "!!!CrashAssistant-forge-1.12.2-1.11.0.jar": {
-    "jarName": "!!!CrashAssistant-forge-1.12.2-1.11.0.jar",
+  "!!!CrashAssistant-forge-1.12.2-1.11.3.jar": {
+    "jarName": "!!!CrashAssistant-forge-1.12.2-1.11.3.jar",
     "modId": "crash_assistant",
-    "version": "1.11.0",
-    "curseForgeHash": 974601628,
-    "modrinthHash": "885196455e5421b692937ecaf0506b05d6aea098"
+    "version": "1.11.3",
+    "curseForgeHash": 3055315995,
+    "modrinthHash": "de1d18575feb221a4950b392eaa334dc35e39fe3"
   },
   "!configanytime-3.0.jar": {
     "jarName": "!configanytime-3.0.jar",
@@ -37,12 +37,12 @@
     "curseForgeHash": 2660540505,
     "modrinthHash": "d272efd0c807908138edbac8e6cb2d90127ac01a"
   },
-  "+Fugue-0.23.2.jar": {
-    "jarName": "+Fugue-0.23.2.jar",
+  "+Fugue-0.23.3.jar": {
+    "jarName": "+Fugue-0.23.3.jar",
     "modId": "fugue",
-    "version": "0.23.2",
-    "curseForgeHash": 1717462198,
-    "modrinthHash": "af07026bfd1a3239350805b2e8a002f583983d7d"
+    "version": "0.23.3",
+    "curseForgeHash": 2455151293,
+    "modrinthHash": "988a18c12c24fe501b9d2bf3291d7242a0ce6530"
   },
   "1.12.Forge.RPG-HUD-3.8.3.jar": {
     "jarName": "1.12.Forge.RPG-HUD-3.8.3.jar",
@@ -853,13 +853,6 @@
     "curseForgeHash": 4229284541,
     "modrinthHash": "fba97f9dbe750f17904c00db8ff58291595106b8"
   },
-  "loadmyresources_forge_1.0.4_MC_1.12-1.12.2.jar": {
-    "jarName": "loadmyresources_forge_1.0.4_MC_1.12-1.12.2.jar",
-    "modId": "loadmyresources",
-    "version": "1.0.4",
-    "curseForgeHash": 3562607931,
-    "modrinthHash": "a858ea488dcc2194715f1564f1b13a1382d047cc"
-  },
   "LootTableTweaker-1.12.2-1.1.14.jar": {
     "jarName": "LootTableTweaker-1.12.2-1.1.14.jar",
     "curseForgeHash": 2368967896,
@@ -1550,12 +1543,12 @@
     "curseForgeHash": 3724894852,
     "modrinthHash": "dece84febbf3d97b68421510e5037ba77b93e39b"
   },
-  "zenutils-1.26.16.jar": {
-    "jarName": "zenutils-1.26.16.jar",
+  "zenutils-1.26.18.jar": {
+    "jarName": "zenutils-1.26.18.jar",
     "modId": "zenutils",
-    "version": "1.26.16",
-    "curseForgeHash": 79566219,
-    "modrinthHash": "26598b5f78d74d75660934f9318a7b2fc248423a"
+    "version": "1.26.18",
+    "curseForgeHash": 383736035,
+    "modrinthHash": "5bdb9a2d2152635fc7c14c044cd341fa5971871e"
   },
   "AnimEmis_srparasites.zip (resourcepack)": {
     "jarName": "AnimEmis_srparasites.zip (resourcepack)"
