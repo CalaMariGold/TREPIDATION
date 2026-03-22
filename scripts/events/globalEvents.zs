@@ -198,11 +198,16 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
             if(event.player.hasGameStage("killedWither") && event.player.hasGameStage("erebus")){
                 Commands.call("sanity add " + event.player.name + " 100", event.player, event.player.world, true, true);
                 event.player.sendChat("§3§oYour grip on reality strengthens...");
+                Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.player.world, true, true);
                 server.commandManager.executeCommand(server, "gamestage silentremove @a killedWither");
             }   
         })
+        .sleep(300)
+        .then(function(world, context) {
+                event.player.sendChat("§c§oAs you emerge from the Nether, you experience faint visions of a §e§ogreen gem§c§o, one that many critters in this Realm seem to possess.");
+                Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.player.world, true, true);
+            })
         .start();
-        
     }
 
     // Erebus to The Mind's Abyss
@@ -226,6 +231,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
                 }
                 Commands.call("sanity add " + event.player.name + " 100", event.player, event.player.world, true, true);
                 event.player.sendChat("§3§oYour grip on reality strengthens...");
+                Commands.call("playsound minecraft:ui.toast.in master @p", event.player, event.player.world, true, true);
 
                 // Give player torch in-case they don't have one
                 Commands.call("give @p minecraft:torch", event.player, event.player.world, true, true);
