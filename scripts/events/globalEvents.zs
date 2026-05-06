@@ -46,6 +46,8 @@ import crafttweaker.entity.AttributeModifier;
 import mods.contenttweaker.Commands;
 import crafttweaker.event.CommandEvent;
 import crafttweaker.event.PlayerCloneEvent;
+import crafttweaker.event.PlayerPickupItemEvent;
+
 
 
 // Player data gets reset on death
@@ -112,6 +114,28 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
         event.player.update({firstTimeJoin: true});
     }
 });
+
+
+static iron_pickaxe as IItemStack = <minecraft:iron_pickaxe:*>;
+static golden_sword as IItemStack = <minecraft:golden_sword:*>;
+static cantpickupItems as IItemStack[] = [
+    golden_sword,
+    iron_pickaxe
+] as IItemStack[];
+events.onPlayerPickupItem(function(event as PlayerPickupItemEvent){
+    if(!event.player.world.isRemote()){
+        val pickedUpItem = event.item.item;
+        
+        // Check picked up item
+        for entryItem in cantpickupItems {
+            if(entryItem.matches(pickedUpItem)){
+                event.cancel();
+                event.item.setDead();
+            }
+        }
+    }
+});
+
 
 
 // Give player soul compass with curse of vanishing upon death
