@@ -148,8 +148,19 @@ static glowoodPick as IItemStack = <nethercraft:glowood_pickaxe:*>;
 
 events.onPlayerLeftClickBlock(function(event as crafttweaker.event.PlayerLeftClickBlockEvent){
     if(!event.entity.world.isRemote()){
+        val playerHoldItemStack = event.player.currentItem as IItemStack; 
+        if(isNull(event.player.data.clickedAncientBrick) || event.player.data.clickedAncientBrick == false){   
+            if(event.block.displayName == "§cAncient Infernal Brick"){
+                if(!isNull(playerHoldItemStack)){
+                    if (veilstriumPick.matches(playerHoldItemStack) || netherrackPick.matches(playerHoldItemStack) || glowoodPick.matches(playerHoldItemStack)) {  
+                        event.player.sendChat("§c§oThe ancient brick appears impenetrable as you strike it. You feel a surge of anger from nearby Ashen Revenants.");
+                        Commands.call("playsound quark:item.soul_bead.curse player @p ~ ~ ~ 5.0 1.0 1.0", event.player, event.world, true, true);
+                        event.player.update({clickedAncientBrick: true});
+                    }
+                }
+            }
+        }
         if(isNull(event.player.data.clickedNetherBarrier) || event.player.data.clickedNetherBarrier == false){       
-            val playerHoldItemStack = event.player.currentItem as IItemStack; 
             if(event.block.displayName == "Barrier §4Alpha"){
                 if(!isNull(playerHoldItemStack)){
                     if (veilstriumPick.matches(playerHoldItemStack) || netherrackPick.matches(playerHoldItemStack) || glowoodPick.matches(playerHoldItemStack)) {  
@@ -159,6 +170,7 @@ events.onPlayerLeftClickBlock(function(event as crafttweaker.event.PlayerLeftCli
                     }
                 }
             }
+
         }
     }
 });
@@ -207,7 +219,7 @@ events.onEntityLivingDeath(function(event as crafttweaker.event.EntityLivingDeat
                     })
                     .sleep(500)
                     .then(function(world, context) {
-                        event.player.sendChat("§c§oWith the Ashen's death, you notice certain §e§oancient bricks§c§o begin to glow brighter than before.");
+                        event.player.sendChat("§c§oWith the Ashen's death, you notice certain §e§oAncient Infernal Bricks§c§o begin to glow brighter than before.");
                         Commands.call("playsound minecraft:ui.toast.in master @p ~ ~ ~ 10", event.player, event.world, true, true);
                     })
                     .start();
@@ -359,7 +371,7 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
             if (abberrant_mana.matches(itemStack1)) {  
                 if(isNull(event.player.data.clickedEchoOfBetrayal) || event.player.data.clickedEchoOfBetrayal == false){
 
-                    event.player.sendChat("§c§oAs you stare into the eye of this artifact, it seems to draw you to an §e§oancient Infernal brick§c§o of some kind, a stone where buried power might yet\n§c§obe unearthed.");
+                    event.player.sendChat("§c§oAs you stare into the eye of this artifact, it seems to draw you to nearby §e§oAncient Infernal Bricks§c§o, a stone where buried power might yet be unearthed.");
                     Commands.call("effect @e[type=da:nether_pyre] glowing", event.player, event.world, true, true);
                     Commands.call("playsound enderskills:contaminate player @p", event.player, event.world, true, true);
                     event.player.update({clickedEchoOfBetrayal: true});

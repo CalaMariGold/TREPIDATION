@@ -99,6 +99,8 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <da:flame_leggings:*>.displayName = "§cInfernal Ashen Leggings";
 
 <da:fire_stone_lit>.displayName = "§cAncient Infernal Brick";
+<da:fire_stone_lit>.removeTooltip("§cWhen mined it drops various Nether related items");
+
 <da:fire_stone>.displayName = "Ashen Stone Brick";
 <da:fire_stone_stairs>.displayName = "Ashen Stone Brick Stairs";
 <da:fire_stone_wall>.displayName = "Ashen Stone Brick Wall";
@@ -118,7 +120,7 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 <da:ambition_flame>.addTooltip("§oTouch it, and remember what Ashen memories could not be erased with time.");
 
 <da:abberrant_eye>.displayName = "§fEcho of Betrayal";
-<da:abberrant_eye>.addTooltip("§oPress it to an §e§oancient brick§7§o, and the past will ignite once more.");
+<da:abberrant_eye>.addTooltip("§oPress it to an §e§oAncient Infernal Brick§7§o, and the past will ignite once more.");
 
 
 <da:flame_helmet:*>.removeTooltip("Full set gives Strength 1, Fire Resistance 1 and boosts AOE range by the Sword of Ambition");

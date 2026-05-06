@@ -164,6 +164,7 @@ events.onCommand(function(event as crafttweaker.event.CommandEvent) {
 
             // Reset NON-PERSISTANT player data between runs
             player.update({clickedNetherBarrier: null});
+            player.update({clickedAncientBrick: null});
             player.update({shatteredTraceOfDeath: null});
             player.update({clickedNetherObelisk: null});
             player.update({clickedEchoOfBetrayal: null});

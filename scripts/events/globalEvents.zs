@@ -61,6 +61,7 @@ events.onPlayerClone(function(event as crafttweaker.event.PlayerCloneEvent){
         event.player.update({usedChronoAbsolution: event.originalPlayer.data.usedChronoAbsolution});
         event.player.update({clickedNetherObelisk: event.originalPlayer.data.clickedNetherObelisk});
         event.player.update({clickedNetherBarrier: event.originalPlayer.data.clickedNetherBarrier});
+        event.player.update({clickedAncientBrick: event.originalPlayer.data.clickedAncientBrick});
         event.player.update({shatteredTraceOfDeath: event.originalPlayer.data.shatteredTraceOfDeath});
         event.player.update({clickedEchoOfBetrayal: event.originalPlayer.data.clickedEchoOfBetrayal});
         event.player.update({dreadstoneFragmentClick: event.originalPlayer.data.dreadstoneFragmentClick});
@@ -79,6 +80,7 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
             event.player.update({usedChronoAbsolution: false as bool});
             event.player.update({clickedNetherObelisk: false as bool});
             event.player.update({clickedNetherBarrier: false as bool});
+            event.player.update({clickedAncientBrick: false as bool});
             event.player.update({clickedEchoOfBetrayal: false as bool});
             event.player.update({shatteredTraceOfDeath: false as bool});
             event.player.update({dreadstoneFragmentClick: false as bool});
