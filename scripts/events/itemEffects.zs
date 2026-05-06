@@ -5,8 +5,7 @@ import crafttweaker.potions.IPotionEffect;
 import mods.contenttweaker.Commands;
 
 
-// Define the items that should cause burning/damage when held
-// Replace these with your actual items
+// Items that cause burning/damage when held
 static burningItems as IItemStack[] = [
     <contenttweaker:raw_unstable_infernium>,
     <contenttweaker:unstable_sand>

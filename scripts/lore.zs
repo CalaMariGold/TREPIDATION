@@ -161,6 +161,10 @@ JEI.addDescription(<contenttweaker:soul_anchor>,"Bound in wood and sealed with a
 
 // Infernium
 <contenttweaker:raw_unstable_infernium>.displayName = "Raw Unstable Infernium";
+<contenttweaker:raw_unstable_infernium>.addTooltip("§oHot to touch!");
+<dynaores:raw_pyridium>.addTooltip("§oHot to touch!");
+
+
 <nethercraft:pyridium_ore>.displayName = "Unstable Infernium Ore";
 <nethercraft:pyridium_ingot>.displayName = "Stable Infernium Ingot";
 
