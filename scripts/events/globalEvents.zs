@@ -336,7 +336,7 @@ events.onPlayerChangedDimension(function(event as crafttweaker.event.PlayerChang
     // Easter egg for trying to escape Limbo
     if((event.from == 684 && event.to == 1) || (event.from == 684 && event.to == 0)){
         server.commandManager.executeCommand(server, "tpp " + event.player.name + " 684 100 500 100");
-        event.player.sendChat("§4YOUR EFFORT IS MEANINGLESS. THERE IS NO ESCAPE.");
+        event.player.sendChat("§4§lYOUR EFFORT IS MEANINGLESS. THERE IS NO ESCAPE.");
 
         // dont count this as a failed run
         if(!isNull(event.player.data.failedRuns)){
