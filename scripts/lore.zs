@@ -5,6 +5,9 @@ import crafttweaker.item.IItemStack;
 import mods.jei.JEI;
 
 
+// Erebus
+<erebus:materials:1>.addTooltip("§3Chance to drop from all Erebus mobs");
+
 
 // Lore entries
 <contenttweaker:dreadswine_entry>.displayName = "§cElara's Journal - Entry #7";
