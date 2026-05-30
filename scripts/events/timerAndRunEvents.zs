@@ -161,6 +161,9 @@ events.onCommand(function(event as crafttweaker.event.CommandEvent) {
             }
 
             server.commandManager.executeCommand(server, "fmvariable set timesup false false");
+        
+            Commands.call("advancement grant @p only triumph:advancements/dimensions/start", player, player.world, true, true);
+            Commands.call("advancement grant @p only triumph:advancements/dimensions/nether", player, player.world, true, true);
 
             // Reset NON-PERSISTANT player data between runs
             player.update({clickedNetherBarrier: null});
