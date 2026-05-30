@@ -149,3 +149,4 @@ key_key.betterfoliage.gui:0
 key_keys.baubleshud.config:0
 key_Quick Commands:0
 key_ChatFlow:0
+key_key.aquaacrobatics.toggle_crawling:47
