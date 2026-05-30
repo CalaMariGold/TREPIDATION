@@ -92,26 +92,9 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
 
         // Run neccessary starting commands
         server.commandManager.executeCommand(server, "op " + event.player.name);
-        Commands.call("advancement grant @p only triumph:advancements/dimensions/start", event.player, event.entity.world, true, true);
 
         // Set souls to 0 instead of 1. Because of this, we have to manually add soul levels on right click
         Commands.call("es_advancement @p level set 0", event.player, event.entity.world, true, true);
-
-        // Resistance on first time join only
-        Commands.call("effect @p resistance 15 255", event.player, event.entity.world, true, true);
-
-        // For some reason, journal entries only unlock after an achievement is granted a few seconds after world start
-        event.player.world.catenation()
-        .run(function(world, context) {
-            context.data = world.time;
-        })
-        .sleep(200)
-        .then(function(world, context) {
-            event.player.sendChat("§c§oDisoriented, you awaken to find a §e§ojournal§c§o attached to your belt. As you begin to write, you notice a scar on your left wrist.");
-            Commands.call("playsound enderskills:page_turn player @p ~ ~ ~ 10", event.player, event.entity.world, true, true);
-            Commands.call("advancement grant @p only triumph:advancements/hidden/unlock_journal", event.player, event.entity.world, true, true);
-        })
-        .start();
         
         event.player.update({firstTimeJoin: true});
     }
@@ -120,8 +103,10 @@ events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent
 
 static iron_pickaxe as IItemStack = <minecraft:iron_pickaxe:*>;
 static golden_sword as IItemStack = <minecraft:golden_sword:*>;
+static stone_sword as IItemStack = <minecraft:stone_sword:*>;
 static cantpickupItems as IItemStack[] = [
     golden_sword,
+    stone_sword,
     iron_pickaxe
 ] as IItemStack[];
 events.onPlayerPickupItem(function(event as PlayerPickupItemEvent){

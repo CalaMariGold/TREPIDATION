@@ -7,7 +7,7 @@ addParent("triumph:advancements/dimensions/root")
 addRewardFunction("triumph:nether")
 
 
-addCriteria("location", "minecraft:location")
+addCriteria("impossible", "minecraft:impossible")
 
 
 //criteria = addCriteria("entered_nether", "triumph:changed_dimension")
