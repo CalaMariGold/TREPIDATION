@@ -4,13 +4,13 @@
     "modId": "forge",
     "version": "forge-1.12.2-14.23.5.2860.jar"
   },
-  "!!!CrashAssistant-forge-1.12.2-1.11.8.jar": {
-    "jarName": "!!!CrashAssistant-forge-1.12.2-1.11.8.jar",
+  "!!!CrashAssistant-forge-1.12.2-1.11.9.jar": {
+    "jarName": "!!!CrashAssistant-forge-1.12.2-1.11.9.jar",
     "modId": "crash_assistant",
     "name": "Crash Assistant",
-    "version": "1.11.8",
-    "curseForgeHash": 2305784281,
-    "modrinthHash": "6a90ca55bff45580a2d5455899e6fc21f9f3a2a4"
+    "version": "1.11.9",
+    "curseForgeHash": 2809995661,
+    "modrinthHash": "453e2c12f8726d1af243988a1a571e44574e93fb"
   },
   "!configanytime-3.0.jar": {
     "jarName": "!configanytime-3.0.jar",
@@ -781,13 +781,13 @@
     "curseForgeHash": 1251642093,
     "modrinthHash": "81d81156bf76622bfcef20496cb533a7b8403151"
   },
-  "HadEnoughItems_1.12.2-4.31.1.jar": {
-    "jarName": "HadEnoughItems_1.12.2-4.31.1.jar",
+  "HadEnoughItems_1.12.2-4.31.2.jar": {
+    "jarName": "HadEnoughItems_1.12.2-4.31.2.jar",
     "modId": "jei",
     "name": "Had Enough Items",
-    "version": "4.31.1",
-    "curseForgeHash": 2988369726,
-    "modrinthHash": "a26bba13e0558478e2e6816b38bcfd3fdf81cde4"
+    "version": "4.31.2",
+    "curseForgeHash": 4218448053,
+    "modrinthHash": "8fadd6aba6ab128540be2a8a36b86f80c0c21afa"
   },
   "Highlighter-1.12.2-forge-1.1.7.jar": {
     "jarName": "Highlighter-1.12.2-forge-1.1.7.jar",
@@ -1478,6 +1478,14 @@
     "curseForgeHash": 1654160717,
     "modrinthHash": "4bf4e49967d60b1fd74d8107f1bbe896a0909228"
   },
+  "SimpleIntro-2.0.0.jar": {
+    "jarName": "SimpleIntro-2.0.0.jar",
+    "modId": "simpleintro",
+    "name": "SimpleIntro",
+    "version": "2.0.0",
+    "curseForgeHash": 2454017828,
+    "modrinthHash": "14f421f2007f6f679249b2876446450056f9e35b"
+  },
   "simpleores-1.12.2-1.11.2.2.jar": {
     "jarName": "simpleores-1.12.2-1.11.2.2.jar",
     "modId": "simpleores",
@@ -1651,13 +1659,13 @@
     "curseForgeHash": 3275259596,
     "modrinthHash": "2741423e8aeba105d4f9877aacc152ec611b8959"
   },
-  "UniversalTweaks-1.12.2-1.19.1.jar": {
-    "jarName": "UniversalTweaks-1.12.2-1.19.1.jar",
+  "UniversalTweaks-1.12.2-1.20.0.jar": {
+    "jarName": "UniversalTweaks-1.12.2-1.20.0.jar",
     "modId": "universaltweaks",
     "name": "Universal Tweaks",
-    "version": "1.19.1",
-    "curseForgeHash": 2174474861,
-    "modrinthHash": "2c0b5d34bf6346990ba5a10b76ec3de159adeaa2"
+    "version": "1.20.0",
+    "curseForgeHash": 1576929921,
+    "modrinthHash": "85bdffcafb2888cc235580f62fa5c110b5f7b19c"
   },
   "vanillaanvilrepair-1.1.jar": {
     "jarName": "vanillaanvilrepair-1.1.jar",
