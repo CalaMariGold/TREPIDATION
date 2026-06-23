@@ -1478,13 +1478,13 @@
     "curseForgeHash": 1654160717,
     "modrinthHash": "4bf4e49967d60b1fd74d8107f1bbe896a0909228"
   },
-  "SimpleIntro-2.0.0.jar": {
-    "jarName": "SimpleIntro-2.0.0.jar",
+  "SimpleIntro-2.0.1.jar": {
+    "jarName": "SimpleIntro-2.0.1.jar",
     "modId": "simpleintro",
     "name": "SimpleIntro",
-    "version": "2.0.0",
-    "curseForgeHash": 2454017828,
-    "modrinthHash": "14f421f2007f6f679249b2876446450056f9e35b"
+    "version": "2.0.1",
+    "curseForgeHash": 1231702088,
+    "modrinthHash": "cd683912932e4e74a96ea78301ff7009a251699c"
   },
   "simpleores-1.12.2-1.11.2.2.jar": {
     "jarName": "simpleores-1.12.2-1.11.2.2.jar",
