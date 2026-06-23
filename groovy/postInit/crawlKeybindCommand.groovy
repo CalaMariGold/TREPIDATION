@@ -1,4 +1,5 @@
-import net.minecraftforge.fml.common.FMLCommonHandler
+// side: client
+
 import net.minecraftforge.fml.common.gameevent.InputEvent
 import net.minecraft.client.Minecraft
 import net.minecraft.client.settings.KeyBinding
@@ -15,8 +16,6 @@ def COMMANDS = [
 
 ]
 def KEY_DESCRIPTION = 'key.aquaacrobatics.toggle_crawling'
-
-if (FMLCommonHandler.instance().getSide().isServer()) return
 
 def mc = Minecraft.getMinecraft()
 
